@@ -1,0 +1,184 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+	
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<link rel=Edit-Time-Data href="tasks_files/editdata.mso">
+<title>AJDT UI Design</title>
+<!--<link rel=Stylesheet type="text/css" media=all href="http://www.eclipse.org/default_style.css">-->
+<STYLE TYPE="text/css">
+<!--
+
+.smallParagraph {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif
+}
+
+BODY { 
+	background-color:white;
+	margin-left: 10px; 
+} 
+
+P {	
+	margin-left: 10px;
+	margin-right: 10px;
+	font:13px Verdana, Arial, Helvetica, sans-serif; 
+}
+
+PRE { font:13px "Courier", sans-serif; }  
+
+B { font-weight:bold; }
+STRONG { font-weight:bold; }
+CODE { font:13px "Courier", sans-serif; }
+
+H1 { font:20px Verdana, Helvetica, sans-serif; 
+	color:black; 
+	font-weight:bold; 
+	text-decoration: underline;
+	margin-left: 10px;
+}	
+
+H2 { font:16px Verdana, Arial, Helvetica, sans-serif; 
+	color:black; 
+	font-weight:bold; 
+	margin-left: 10px;
+}
+
+H3 { font:14px Verdana, Arial, Helvetica, sans-serif; 
+	color:black; 
+	font-weight:bold; 
+	margin-left: 10px;
+}
+
+H4 {  font:14px Verdana, Arial, Helvetica, sans-serif; 
+	color:black; 
+	margin-left: 10px;
+}
+-->
+</STYLE>
+
+</head>
+
+<body>
+
+<table border=0 cellspacing=5 cellpadding=0 width="100%"
+ style='width:100.0%;'>
+ <tr>
+  <td width="60%" style='width:60.0%;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p><b><span style='font-size:24.0pt;font-family:Verdana;
+  '>ajdt </b><font size="6"><b>
+	<span style="font-family: Verdana">ui design</b><span
+  style='font-size:10.0pt;font-family:Arial'><br>
+  <a href="http://eclipse.org/ajdt"><font size="1">
+	a</a><span style='font-size:7.5pt;font-family:Arial;color:#8080FF'><a href="http://eclipse.org/ajdt">spectj
+  development tools subproject</a></span></p>
+  </td>
+ </tr>
+</table>
+
+<p>
+The following 
+UI enhancements are being planned for AJDT, and are relevant to any IDE plugin 
+for AspectJ. The UI design process benefits greatly from user participation. To 
+comment, please follow the link to the bug report and submit a comment to the 
+bugzilla DB.&nbsp; Note that the listing here only captures a summary. For 
+details and screenshots refer to the bug report.</p>
+
+<table border=0 cellspacing=4 cellpadding=4 width="100%">
+ <tr>
+  <td bgcolor="#DDE2EC" class="smallParagraph" align="center">
+	<a href="https://bugs.eclipse.org/bugs/post_bug.cgi"><b>Improve how 
+	crosscutting is surfaced in the editor and structure views (Bug 54240)</b></a>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>There are 
+	two ways in which crosscutting structure appears across the views that 
+	augment the structure navigable from the AspectJ editor:</p>
+	<ul>
+		<li>
+		<p>
+		links in the document outline</li>
+		<li>
+		<p>
+		markers in the left editor gutter</li>
+	</ul>
+	<p>There 
+	are also additional ways in which the crosscutting could surface:</p>
+	<ul>
+		<li>
+		<p>
+		editor annotations </li>
+	<li>
+	<p>right 
+	editor gutter annotations</li>
+	<li>
+	<p>
+	crosscutting-centric navigator</li>
+	<li>
+	<p>new 
+	view dedicated to showing crosscutting at current join point shadow</li>
+	<li>
+	<p>inline views</li>
+	</ul>
+	<p>For 
+	these views we need to consider text labels, icons, annotation styles, 
+	filters, and actions. 
+	The goal should be to surface crosscutting in all of the places where it 
+	applies, ensuring when possible to be consistent with JDT UI mechanisms and 
+	conventions.</td>
+ </tr>
+ <tr>
+  <td bgcolor="#DDE2EC" class="smallParagraph" align="center">
+	<b>
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=50928">
+	Show advice 
+execution ordering at join points (Bug 50928)</a></b>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p align="left">AspectJ precedence rules
+	<a href="http://dev.eclipse.org/viewcvs/indextech.cgi/~checkout~/aspectj-home/doc/progguide/semantics-advice.html#d0e5867">
+	documentation...</a><p align="left"><img src="images/ui-precedence-ordering-mockup.gif"></td>
+ </tr>
+ <tr>
+  <td bgcolor="#DDE2EC" class="smallParagraph" align="center">
+	<b>
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=50929">Show effects of cflow advice on call graph (Bug 50929)</a></b>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <img src="images/ui-advised-cflow-mockup.gif"></td>
+ </tr>
+ <tr>
+  <td bgcolor="#DDE2EC" class="smallParagraph" align="center">
+	<b>
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=50931">Augmenting views 
+that expose inheritance with aspect-declared structure (Bug 50931)</a></b>
+  </td>
+ </tr>
+	<tr>
+  <td>
+  <img src="images/ui-type-hierarchy-annotation-mockup.gif"></td>
+ </tr>
+ <tr>
+  <td bgcolor="#DDE2EC" class="smallParagraph" align="center">
+	<b><a href="http://eclipse.org/ajdt">Provide crosscutting-specific 
+content assist (not started)</a></b>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p align="left">[not started]</td>
+ </tr>
+
+
+</table>
+
+
+</body>
+
+</html>

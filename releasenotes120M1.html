@@ -1,0 +1,102 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>AJDT Release Notes for 1.2.0M1</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+</head>
+<body bgcolor="#FFFFFF">
+
+<h2>AJDT Release Notes for 1.2.0M1</h2>
+
+<p>This document contains migration information and known
+limitations. It will be updated as necessary as any new problems and
+workarounds are discovered.</p>
+
+<p><i>Last updated: 26 October 2004.</i></p>
+
+<h3>Migration issues</h3>
+
+<p>It is easiest to install 1.2.0M1 with a new, empty workspace, and
+check-out your projects into that. However when that isn't possible or
+desirable, you can upgrade an existing workspace, as long as you are
+aware of the following issues.</p>
+
+<p><b>Open Editors.</b> The AspectJ Editor has a different Eclipse
+identifier. This means that any files open with the editor from a
+previous version of AJDT
+will not be restored after upgrading to 1.2.0M1, and you will get a
+"Problem restoring workbench layout" message about this. It is therefore
+recommended that you close all open editors before performing the
+upgrade.</p>
+  
+<p><b>PDE Projects.</b> If you have AspectJ-enabled plugin projects,
+you need to change the dependency on the org.aspectj.ajde plugin to be
+org.aspectj.runtime instead. You can of course do this after
+performing the upgrade.</p>
+
+<p><b>Resource filters for .aj files.</b> If you have defined your own
+custom filter settings in the package explorer before installing 1.2.0M1,
+you will get a warning dialog about the ".aj resource filter" being disabled.
+If you see this please follow the instructions listed in the dialog, otherwise
+any .aj files will appear twice in the package explorer - once as compilation
+units and again as plain files.</p>
+
+<h3>Known limitations and workarounds</h3>
+
+<p><b>Supported versions of Eclipse.</b> This release does not work well with
+any Eclipse 3.1 milestone builds. For the most stable environment please
+use Eclipse 3.0.0 or Eclipse 3.0.1.</p>
+
+<p><b>Generating ajdoc.</b> This capability is not working due to
+restructuring of the AJDE plugin. See
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=76903">bug 76903</a>. This
+problem has been fixed in the <a href="http://dev.eclipse.org/viewcvs/indextech.cgi/~checkout~/ajdt-home/download.html#devbuilds">latest development build.</a></p>
+
+<p><b>Moving .aj files within the package explorer.</b> Most files can
+be dragged to new locations within the package explorer, but
+unfortunately this isn't currently possible with .aj files.  You
+should however be able to copy and paste an .aj file to a new
+location. You can also drag and drop .aj files from the package
+explorer to applications outside of Eclipse, and back again.</p>
+
+<p><b>File conversion wizard with excluded inner aspects.</b> The
+default mode of this wizard converts source files containing aspects
+to .aj files. This includes Java classes which contain innner
+aspects. However inner aspects are currently only detected in classes
+which are included in the current build configuration. Therefore if
+you're using this mode of the wizard you are recommended to make sure
+any classes with inner aspects are first included in the current
+configuration.</p>
+
+<p><b>Organise imports with imported aspects.</b> As noted in the new
+and noteworthy, this operation is possible for aspects contained in
+.aj files, but it isn't aware of imported aspects. So if your aspect
+is extending an abstract aspect which is in a different package, you
+need to import it. But running organise imports will not add it, and
+if it is there already, it will unhelpfully remove it! You can at
+least do an undo to get it back. Similiarly, the add import action
+will not work for imported aspects.</p>
+
+<p><b>Checking out AspectJ projects from CVS.</b> Previously, if you
+had Java projects which depend on AspectJ projects, and you checked
+out all of the projects from CVS, then the dependent Java projects
+would say that they can't be built until their prerequisite projects
+have been rebuilt. Rebuilding the AspectJ projects in this case does
+not fix the problem. This issue has been reported as bug <a
+href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=73435">73435</a>. This
+release contains a workaround for this problem, which is to detect
+this situation and then disable the Eclipse preference "Abort build
+when build path errors occur", which is located under Preferences &gt;
+Java &gt; Compiler &gt; Build Path. This results in both the AspectJ
+projects and the Java projects building. Note that if the dependent
+java projects use project settings rather than workspace settings,
+then it is these which are updated to not abort a build when there are
+classpath errors and you are able to revert your workspace settings
+without seeing the problem marker against your java projects. If you
+don't want your workbench settings to change, then converting your
+AspectJ projects to Java projects then back to AspectJ projects also
+solves this problem.</p>
+
+</body>
+</html>

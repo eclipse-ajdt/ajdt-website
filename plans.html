@@ -1,0 +1,614 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+	
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="plans_files/filelist.xml">
+<link rel=Edit-Time-Data href="plans_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Aspect J Development Tools</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author> </o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Adrian Colyer</o:LastAuthor>
+  <o:Revision>55</o:Revision>
+  <o:TotalTime>264</o:TotalTime>
+  <o:Created>2003-03-26T10:55:00Z</o:Created>
+  <o:LastSaved>2003-11-12T13:23:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>608</o:Words>
+  <o:Characters>3468</o:Characters>
+  <o:Company>IBM</o:Company>
+  <o:Lines>28</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4068</o:CharactersWithSpaces>
+  <o:Version>10.4219</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<link rel=Stylesheet type="text/css" media=all
+href="http://www.eclipse.org/default_style.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-believe-normal-left:yes;}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:21.0pt;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-line-height-alt:10.5pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-fareast-font-family:"Times New Roman";}
+code
+	{mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	mso-fareast-font-family:"Times New Roman";}
+p.indextop, li.indextop, div.indextop
+	{mso-style-name:indextop;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:24.0pt;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.indexsub, li.indexsub, div.indexsub
+	{mso-style-name:indexsub;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:7.5pt;
+	mso-fareast-font-family:"Times New Roman";}
+p.jump, li.jump, div.jump
+	{mso-style-name:jump;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-fareast-font-family:"Times New Roman";}
+p.smallparagraph, li.smallparagraph, div.smallparagraph
+	{mso-style-name:smallparagraph;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:235214829;
+	mso-list-template-ids:629057500;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:280888228;
+	mso-list-template-ids:-1602554846;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:981614354;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2106853518 -1543351372 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Arial;}
+@list l2:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:1075860701;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-289495000 709928088 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:47.5pt;
+	mso-level-number-position:left;
+	margin-left:47.5pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	color:windowtext;}
+@list l4
+	{mso-list-id:1377587276;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-929251688 67698711 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5
+	{mso-list-id:1735202848;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1452689804 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l6
+	{mso-list-id:1774666005;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-307614134 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:47.5pt;
+	mso-level-number-position:left;
+	margin-left:47.5pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:1901283520;
+	mso-list-template-ids:-307614134;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:47.5pt;
+	mso-level-number-position:left;
+	margin-left:47.5pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:83.5pt;
+	mso-level-number-position:left;
+	margin-left:83.5pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l7:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:119.5pt;
+	mso-level-number-position:left;
+	margin-left:119.5pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l7:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:155.5pt;
+	mso-level-number-position:left;
+	margin-left:155.5pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:191.5pt;
+	mso-level-number-position:left;
+	margin-left:191.5pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l7:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:227.5pt;
+	mso-level-number-position:left;
+	margin-left:227.5pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l7:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:263.5pt;
+	mso-level-number-position:left;
+	margin-left:263.5pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:299.5pt;
+	mso-level-number-position:left;
+	margin-left:299.5pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l7:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:335.5pt;
+	mso-level-number-position:left;
+	margin-left:335.5pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><![if mso 9]>
+<style>
+p.MsoNormal
+	{margin-left:8.5pt;}
+</style>
+<![endif]>
+</head>
+
+	
+
+<body lang=EN-US link=blue vlink=blue style='tab-interval:36.0pt;margin-left:
+8.5pt;margin-top:14.2pt'>
+
+<div class=Section1>
+
+<table class=MsoNormalTable border=0 cellspacing=5 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:3.7pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td width="58%" style='width:58.78%;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b><span style='font-size:24.0pt;font-family:Verdana;
+  mso-bidi-font-family:Arial'>ajdt plans</span></b><span
+  style='font-size:10.0pt;font-family:Arial'><br>
+  </span><span style='font-size:7.5pt;font-family:Arial;color:#8080FF'>aspectJ development
+  tools subproject</span><span style='font-size:10.0pt;font-family:Arial'><o:p></o:p></span></p>
+  </td>
+  <td width="39%" style='width:39.18%;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><img
+  width=120 height=86 id="_x0000_i1025"
+  src="http://www.eclipse.org/images/Idea.jpg" hspace=50 align=center><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p>The next release of AJDT is 1.2.0. The major goals of this release are:</p>
+
+<p style='margin-left:47.5pt;text-indent:-18.0pt;mso-list:l3 level1 lfo11;
+tab-stops:list 47.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>to put in place a solid, heavily unit tested
+foundation (to meet the quality needs of teams using AspectJ for serious
+development projects) </p>
+
+<p style='margin-left:47.5pt;text-indent:-18.0pt;mso-list:l3 level1 lfo11;
+tab-stops:list 47.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>to support incremental compilation and structure
+model generation as the default<span style='mso-spacerun:yes'>  </span>mode of
+operation</p>
+
+<p style='margin-left:47.5pt;text-indent:-18.0pt;mso-list:l3 level1 lfo11;
+tab-stops:list 47.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>to provide a comparable editing experience to
+that offered by the JDT for Java source (including things like code
+completion). </p>
+
+<p>This release is being built as an AspectJ project using AJDT - this
+is a great way for us to ensure that the AJDT tools work well as an everyday
+development environment on a reasonable sized team project.<o:p></o:p></p>
+
+<p>Here are the key items in the plan:</p>
+
+<!--
+<p><u>Restructure:</u> <o:p></o:p></p>
+
+<p>We are undertaking another restructure of the core AJDT plugins, to move
+AJDT into the realm of product-level quality. The new AJDT plugin structure
+mimics that of the JDT tools. <st1:City><st1:place>Lancaster</st1:place></st1:City>
+is being built around a solid unit test foundation, and is itself an AspectJ
+project. To ensure we get this right, we're working from a new codebase,
+carefully pulling function across from the existing source where we can. The
+new AJDT sources can be found in CVS at dev.eclipse.org/home/technology, rooted
+in org.eclipse.ajdt/AJDT_GEN3.<o:p></o:p></p>
+-->
+
+<p><u>AspectJ Model :</u> <o:p></o:p></p>
+
+<p>Eclipse's JDT provides a JavaModel that contains information about all the
+Java resources in the workspace. We are building an AspectJModel that serves
+the equivalent function for AspectJ resources. The model serves as the foundation
+from which AspectJ structure can be presented in views, and as the reference
+point for supporting code completions, searching and browsing. It adapts the
+Ajde IDE support provided by AspectJ to present it in an Eclipse-friendly
+format.<o:p></o:p></p>
+
+<p><u>AspectJEditor rewrite:<o:p></o:p></u></p>
+
+<p>The current AspectJEditor supports syntax highlighting and code templates,
+but is lacking many of the features of the Java Editor. We are re-designing the
+editor as a more principled extension of the JavaEditor. The new AspectJEditor
+will support hover-help, auto-indentation, bracket matching, code-formatting,
+syntax highlighting, content assist, context-sensitive help, organize imports,
+and reconciling.<span style='mso-spacerun:yes'>  </span>The associated outline
+view will eagerly update rather than requiring a compilation.<o:p></o:p></p>
+
+<p><u>AJDT Scalability:</u> <o:p></o:p></p>
+
+<p>AJDT should be usable on large projects, without consuming excessive memory,
+and retaining good user responsiveness.<o:p></o:p></p>
+
+<p><u>Cross-Reference View:</u> <o:p></o:p></p>
+
+<p>We've been working on a separate view that shows crosscutting structure, so
+that this information will be available from any selected item in any view, not
+just in the outline. It should also be better for navigation. <o:p></o:p></p>
+
+<p><u>New Aspect Wizard:</u> <o:p></o:p></p>
+
+<p>For various reasons (complex) it is not possible to create aspects using the
+&quot;.aj&quot; extension from the current new aspect wizard (which is a
+subclass of the new class wizard). If you look closely, the wizard also has
+some options that are not strictly appropriate. The new aspect wizard has been
+rewritten to avoid this problem, and a preference added to indicate whether .aj
+or .java extension is preferred. <o:p></o:p></p>
+
+<p><u>Integrated Samples:</u> <o:p></o:p></p>
+
+<p>The AspectJ samples and examples will be integrated via a simple &quot;new
+-&gt; examples -&gt; aspectj examples&quot; wizard. It is easy to add new
+examples into the plugin with no extra programming. <o:p></o:p></p>
+
+<p><u>Pointcut Wizard:</u> <o:p></o:p></p>
+
+<p>We've begun work on a set of wizard pages that make it easy(/ier)<span
+style='mso-spacerun:yes'>  </span>to enter pointcut definitions, These will be
+packaged into a new -&gt; pointcut wizard. <o:p></o:p></p>
+
+<p><u>Crosscutting Delta View:</u> <o:p></o:p></p>
+
+<p>This compares the results of a project build to the previous compilation.
+Tells the user of any new aspects, and any differences in advice / inter-type
+declaration matching since the last compilation. <o:p></o:p></p>
+
+<p><u>Debugging:</u> <o:p></o:p></p>
+
+<p>Build on the JDT debug support, but filter out aj-synthetic items. More step
+options? (eg step with/without advice) <o:p></o:p></p>
+
+<p>Design discussion for AJDT developers (and other interested parties) is
+taking place on the ajdt-dev <span style='mso-spacerun:yes'> </span>mailing
+list.<o:p></o:p></p>
+
+<p><span style='display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<p><span style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

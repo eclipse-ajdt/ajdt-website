@@ -1,0 +1,99 @@
+AJDT AspectJ Upgrader
+=====================
+
+We want to support our users on Eclipse 2.1 who are currently using AJDT v1.1.4 or the
+developer version 1.1.6.  
+
+This document will show you how to upgrade an installation AJDT v1.1.4 or v1.1.6 by importing
+a new version of the AspectJ compiler.  The latest version of AspectJ (version 1.2) includes
+many many bugfixes and enhancements that we know users would like to use in an Eclipse 2.1
+environment.
+
+
+To upgrade, we'll be on the command line.  You will need:
+
+1. An installation of ANT.
+2. An installation of Java.
+3. An installation of AspectJ1.2 (or whichever recent version of the compiler you want to upgrade to)
+   Get the latest AspectJ from the downloads page accessible from http://eclipse.org/aspectj
+
+Ensure you have ant and java (jar command actually) available on your PATH.
+
+
+Upgrading 1.1.4
+===============
+
+Step(1) Backup the two plugins that will be modified during the upgrade process.  
+  In your eclipse/plugins directory, run these two commands to do a backup:
+      jar -cvMf ajde114.jar org.aspectj.ajde_1.1.4
+      jar -cvMf ajdt064.jar org.eclipse.ajdt.ui_0.6.4
+  You don't *have* to do this backup step, as the upgrade script is straightforward but I
+  thought I'd spell out the steps in case the unthinkable happens.
+
+Step(2) Download Updater114.zip from http://dev.eclipse.org/viewcvs/indextech.cgi/~checkout~/org.eclipse.ajdt/Updater114.zip
+
+Step(3) Unzip Updater114.zip into the directory eclipse/plugins/org.aspectj.ajde_1.1.4
+  This will give you two new files in that directory: build.xml and patch.jar
+  
+Step(4) If you haven't got your new aspectj installed at c:/aspectj1.2 (the default location) then
+  go into eclipse/plugins/org.aspectj.ajde_1.1.4 and modify build.xml.  Modify the aspectj.dir entry 
+  at the top of the script to point to wherever you have installed it.
+  
+Step(5) In the eclipse/plugins/org.aspectj.ajde_1.1.4 run ANT
+  Don't specify a target, the default target is fine.
+  
+Step(6) Restart eclipse.  How do you know if you have the new version?
+  Type in this new aspect and compile it.
+		public aspect C {
+  			before(String s): call(* *(..)) && args(s) || args(s) {
+  			}
+		}
+  If you have successfully imported the new AspectJ, you will get an error because of the duplicate
+  args() entry - this is a new compiler error from AspectJ 1.2.
+
+Step(7) If anything goes wrong during the update, you can go back to what you had before going 
+  into the eclipse/plugins directory and running:
+      jar -xvf ajde114.jar
+      jar -xvf ajdt064.jar
+ 
+
+====================================================================================================
+====================================================================================================
+Upgrading 1.1.6
+===============
+
+Step(1) Backup the two plugins that will be modified during the upgrade process.  
+  In your eclipse/plugins directory, run these two commands to do a backup:
+      jar -cvMf ajde116.jar org.aspectj.ajde_1.1.6
+      jar -cvMf ajdt065.jar org.eclipse.ajdt.ui_0.6.5
+  You don't *have* to do this backup step, as the upgrade script is straightforward but I
+  thought I'd spell out the steps in case the unthinkable happens.
+
+Step(2) Download Updater116.zip from http://dev.eclipse.org/viewcvs/indextech.cgi/~checkout~/org.eclipse.ajdt/Updater116.zip
+
+Step(3) Unzip Updater116.zip into the directory eclipse/plugins/org.aspectj.ajde_1.1.6
+  This will give you two new files in that directory: build.xml and patch.jar
+  
+Step(4) If you haven't got your new aspectj installed at c:/aspectj1.2 (the default location) then
+  go into eclipse/plugins/org.aspectj.ajde_1.1.4 and modify build.xml.  Modify the aspectj.dir entry 
+  at the top of the script to point to wherever you have installed it.
+  
+Step(5) In the eclipse/plugins/org.aspectj.ajde_1.1.6 run ANT
+  Don't specify a target, the default target is fine.
+  
+Step(6) Restart eclipse.  How do you know if you have the new version?
+  Type in this new aspect and compile it.
+		public aspect C {
+  			before(String s): call(* *(..)) && args(s) || args(s) {
+  			}
+		}
+  If you have successfully imported the new AspectJ, you will get an error because of the duplicate
+  args() entry - this is a new compiler error from AspectJ 1.2.
+
+Step(7) If anything goes wrong, you can go back to what you had before going into the eclipse/plugins
+  directory and running:
+      jar -xvf ajde116.jar
+      jar -xvf ajdt065.jar
+ 
+====================================================================================================
+====================================================================================================
