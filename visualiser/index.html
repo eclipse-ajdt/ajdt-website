@@ -12,8 +12,7 @@
     <td ALIGN=LEFT width="60%" valign="top"><font class=indextop>the visualiser</font><br>
 <font class=indexsub>aspectJ development tools subproject</font>
 </td>
-    <td WIDTH="40%"><img
-  src="VisIcon.png" align=center></td>
+    <td WIDTH="40%"><img width="125" height="75" src="vislogo.png" align="center"></td>
   </tr>
 </table>
 
@@ -25,8 +24,18 @@
   <tr>
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
 
-       <p>The Visualiser is ...</p>
-
+       <p>The Visualiser is an extensible Eclipse plugin that can be used to 
+       visualize anything that lends itself to a 'bars and stripes' style representation. 
+       It began as the Aspect Visualiser, which was a part of AJDT. 
+       It was originally created to visualize how aspects were 
+       affecting classes in a project. It has since been extracted 
+       to become its own plug-in and given extension points in order that 
+       other types of information can be visualized.</p>
+       
+       <p>An on-line demo showing how to use the Visualiser with AJDT is available
+        from the 
+       <a href="http://www.eclipse.org/ajdt/demos/index.html#VISUALISER-DEMO">AJDT demos page.</a>
+       </p>
     </td>
   </tr>
 
@@ -68,9 +77,18 @@
   <tr>
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
 
-       <p>The following providers are included with the Visualser plugin itself:</p>
+       <p>The following providers are included with the Visualiser plugin itself:</p>
        
-       <p>...</p>
+       <p>
+       <ul>
+         <li>A simple file-based provider that reads bar and stripe information from two files.</li> 
+		 <li>A resources and markers provider that responds to selections in the workbench 
+			and displays files as bars, with associated Eclipse markers as stripes.</li> 
+		 <li>An Eclipse JDT search results provider that displays Java classes as bars and the results 
+			of the most recent Java search as stripes. </li>
+	    </ul>
+		
+	   </p>
        
        <p>The following providers are available separately:</p>
        
