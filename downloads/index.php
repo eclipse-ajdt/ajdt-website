@@ -215,8 +215,7 @@ get the right one!</p>
 <!--    <td><a href="http://download.eclipse.org/technology/ajdt/30/dev/update/ajdt_1.2.0.DEVELOPMENT.zip">ajdt_1.2.0.DEVELOPMENT.zip</a></td> -->
 <td>
 <?php
-system("hostname");
-system("ls /");
+system("ls /home");
 //foreach (glob("/") as $filename) {
 //  echo $filename . " \n";
 //}
