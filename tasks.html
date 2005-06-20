@@ -4,6 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>AspectJ Development Tools</title>
 <link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+<STYLE TYPE="text/css">
+  .tasklist td { background-color: #EEEEEE; padding: .3em; }
+  .tasklist th { color: white; background-color: #999999 }
+</STYLE>
 </head>
 <body bgcolor="#FFFFFF">
 
@@ -17,9 +21,9 @@
   </tr>
 </table>
 
-<p>This page contains a list of feature development tasks pending for
-AJDT. Anyone is welcome to contribute to the project, either by
-picking one of these tasks and working on it, or by adding new
+<p>This page contains a list of AJDT feature development tasks pending or
+recently completed. Anyone is welcome to contribute to the project, either
+by picking one of these tasks and working on it, or by adding new
 features, enhancements and bug fixes not on this list. If you would
 like to see a new item on this list please let us know by
 raising an enhancement request in bugzilla. We use bugzilla to track
@@ -30,410 +34,234 @@ example) so that we don’t duplicate effort. If you have a great idea
 for an AJDT feature or enhancement that’s not on the list, let us know
 and we’ll add it!</p>
 
+<div class="tasklist"">
 <table width="95%" align="center" border="0" cellspacing="4">
+<tr>
+<th>Description of task</th>
+<th>Status</th>
+<th>Owner</th>
+<th>Release</th>
+</tr>
 
-<tr style='mso-yfti-irow:0'>
-    <td width="57%" style='width:57.62%;background:#999999;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'><b><span
-    style='color:white'>Description of task</span></b></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#999999;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'><b
-    style='mso-bidi-font-weight:normal'><span style='color:white'>Status<o:p></o:p></span></b></p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#999999;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'><b
-    style='mso-bidi-font-weight:normal'><span style='color:white'><span
-    style='mso-spacerun:yes'> </span>Owner<o:p></o:p></span></b></p>
-    </td>
-   </tr>
+<tr>
+<td><h4>Launch support for Load Time Weaving</h4>
+We now have AspectJ run configuration support. We need to determine
+what to add to this to support load time weaving.
+</td>
+<td>In progress (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=71066">bug&nbsp;71066</a>)</td>
+<td>Sian January</td>
+<td>1.3.0</td>
+</tr>
 
-<!-- empty row -->
+<tr>
+<td><h4>Cross Reference View</h4>
+New view which shows the crosscutting relationships of the current item
+</td>
+<td>Completed</td>
+<td>Helen Hawkins</td>
+<td>1.2.0</td>
+</tr>
+
+<tr>
+<td><h4>Store project options</h4>
+Store AspectJ project options in a visible file, which can then be checked
+in. This would include injar and aspectpath settings etc. JDT has added an
+mechanism for this in Eclipse 3.1.
+</td>
+<td>Completed</td>
+<td>Matt Chapman</td>
+<td>1.2.0</td>
+</tr>
+
+<tr>
+<td><h4>Outline view</h4>
+The outline view needs to use the structure from the eager parser, like the
+package explorer.
+</td>
+<td>Completed</td>
+<td>Matt Chapman</td>
+<td>1.2.0</td>
+</tr>
+
+<tr>
+<td><h4>Crosscutting Changes View</h4>
+This view update would update after a build with details of any new
+crosscutting relationships, as well as any relationships which no
+longer exisit e.g. method XX was previously advised but isn't any
+more. This could be useful when refactoring.
+</td>
+<td>In progress (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=90490">bug&nbsp;90490</a>)</td>
+<td>Matt Chapman</td>
+<td>1.2.1</td>
+</tr>
+
+<tr>
+<td><h4>Symmetric advises / advised by markers</h4>
+Add editor markers linking advice to the places being advised.
+</td>
+<td>Completed (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=78962">bug&nbsp;78962</a>)</td>
+<td>Matt Chapman</td>
+<td>1.2.0</td>
+</tr>
+
+<tr>
+<td><h4>Pointcut navigator</h4>
+Provide a view for navigating the uses pointcut and advises relationships
+for a particular build, and visually diff that structure against previous
+builds.
+</td>
+<td>In progress (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=78997">bug&nbsp;78997</a>)</td>
+<td>Mik Kersten</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Incremental Compilation</h4>
+Make incremental compilation the default mode. It is currently off by
+default, with a preference page option to turn it on. When incremental
+is enabled, do we still need the AspectJ build button? (It would be
+nice to get rid of it if we can).
+</td>
+<td>Completed</td>
+<td>Andy Clement</td>
+<td>1.2.0</td>
+</tr>
+
+<tr>
+<td><h4>AspectJ Search</h4>
+Support searching for AspectJ constructs within the JDT search dialog.
+</td>
+<td>Not yet assigned (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=71073">bug&nbsp;71073</a>)</td>
+<td>Not yet assigned</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Content Assist (Ctrl + space)</h4>
+Content assist now works well in many cases. This is implemented by getting
+JDT to provide completions for modified versions of the buffer. We're close
+to the limits of this approach - for full aspect aware code assist, e.g.
+completions on pointcut names and parameters following the beginning of an
+advice statement, we need our own completion processor.
+</td>
+<td>Not yet assigned</td>
+<td>Not yet assigned</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Tooltip descriptions (F2)</h4>
+For AspectJ keywords show an expanded version of the AspectJ Quick
+Reference summary for that construct. For AspectJ declarations, show the
+javadoc (ajdoc) comment and signature for those declarations.
+</td>
+<td>Not yet assigned</td>
+<td>Not yet assigned</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Parameter Hints (Ctrl + shift + space)</h4>
+For pointcuts, shows the possible matching points – e.g. call([visibility]
+return_type TypePattern.MethodNamePattern( ArgsPattern ).
+To be investigated to see whether this would be useful or not.
+</td>
+<td>Not yet assigned</td>
+<td>Not yet assigned</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Refactoring Support</h4>
+There are two pieces to this: the first is to ensure that existing
+refactorings in Eclipse work correctly in the presence of aspects; the
+second is to add aspect-specific refactorings. There are several research
+groups looking into these problems.
+</td>
+<td>Not yet assigned</td>
+<td>Not yet assigned</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Complete debugging support</h4>
+The remaining work in this area is to tidy up the stack, to avoid
+exposing internal compiler generated names.
+</td>
+<td>Not yet assigned</td>
+<td>Not yet assigned</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Pointcut Matcher</h4>
+This view would allow you to enter a (static?) pointcut expression – either
+by directly typing or by using the pointcut wizard and see the matches in
+a search results list and also in a visualiser like view. Optionally may
+support naming and saving of queries.
+</td>
+<td>In progress</td>
+<td>Julie&nbsp;Waterhouse, Mik&nbsp;Kersten</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Pointcut Wizard</h4>
+The pointcut wizard guides you step by step through the process of creating
+a pointcut that does what you want. It encourages good style, teaches an AO
+way of thinking about pointcuts, and has knowledge of common idioms.
+</td>
+<td>Not yet assigned</td>
+<td>Not yet assigned</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Pointcut Reader</h4>
+This is a sophisticated form of tooltip for a pointcut declaration
+which “reads” the pointcut in plain English.
+</td>
+<td>Not yet assigned</td>
+<td>Not yet assigned</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>Aspect Refactoring Verification</h4>
+Compares a query (for example “call(void Canvas.updateHistory(..))” ) against
+an aspect supplying advice (for example, “after() returning:
+execution(* FigureElement+.set*(..)) { Canvas.updateHistory(); }” ) and
+shows the places the query catches that the aspect doesn’t, and
+vice-versa. Very useful support as part of the “Extract to Aspect” refactoring.
+</td>
+<td>In progress</td>
+<td>Charles&nbsp;Zhang, Julie&nbsp;Waterhouse</td>
+<td>Not yet planned</td>
+</tr>
+
+<tr>
+<td><h4>AspectJ AST</h4>
+Make the AspectJ structure model easily available to extenders
+</td>
+<td>Assigned (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=88861">bug&nbsp;88861</a>)</td>
+<td>Andy Clement</td>
+<td>Not yet planned</td>
+</tr>
+
 <!--
-   <tr style='mso-yfti-irow:2'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Title<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'>Description</p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center
-    style='text-align:center'>Not yet assigned</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'><p class=smallparagraph align=center
-    style='text-align:center'></p>
-    </td>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 -->
 
-   <tr style='mso-yfti-irow:2'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Launch support for Load
-    Time Weaving<o:p></o:p></span></b></p>
-    
-    <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'>We now have AspectJ run
-    configuration support. We need to determine what to add to this to
-    support load time weaving.</p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center
-    style='text-align:center'>In progress</p>
-    <p class=smallparagraph align=center style='text-align:center'>(bug 71066)</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'><p align="center">Sian January</p>
-    </td>
-
-   <tr style='mso-yfti-irow:2'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Cross Reference View<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'>New view which shows the crosscutting relationships of the current item</p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center
-    style='text-align:center'>Completed</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'><p class=smallparagraph align=center
-    style='text-align:center'>Helen Hawkins</p>
-    </td>
-
-   <tr style='mso-yfti-irow:2'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Store project options<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'>Store AspectJ project options in a visible file, which can then be checked in. This would include injar and aspectpath settings etc. JDT has added an mechanism for this in Eclipse 3.1.</p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center
-    style='text-align:center'>Completed</p>
-    <p class=smallparagraph align=center style='text-align:center'>(bug 40446)</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'><p class=smallparagraph align=center
-    style='text-align:center'>Matt Chapman</p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:2'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Outline view<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'>The outline view needs to use the structure from the eager parser, like the package explorer.</p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center
-    style='text-align:center'>Completed</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'><p class=smallparagraph align=center
-    style='text-align:center'>Matt Chapman</p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:2'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Crosscutting Changes View<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'>This view update would
-    update after a build with details of any new crosscutting
-    relationships, as well as any relationships which no longer exisit
-    e.g. method XX was previously advised but isn't any more. This
-    could be useful when refactoring.</p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center
-    style='text-align:center'>In progress</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'><p class=smallparagraph align=center
-    style='text-align:center'>Matt Chapman</p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:2'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Symmetric advises / advised by markers<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'>Add editor markers linking advice to the places being advised.</p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center
-    style='text-align:center'>Completed</p>
-    <p class=smallparagraph align=center style='text-align:center'>(bug 78962)</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'><p class=smallparagraph align=center
-    style='text-align:center'>Matt Chapman</p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:2'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Pointcut navigator<o:p></o:p></span></b></p>
-    
-    <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'>Provide a view for
-    navigating the uses pointcut and advises relationships for a
-    particular build, and visually diff that structure against
-    previous builds.</p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center
-    style='text-align:center'>In progress</p>
-    <p class=smallparagraph align=center style='text-align:center'>(bug 78997)</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'><p class=smallparagraph align=center
-    style='text-align:center'>Mik Kersten</p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:2'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Incremental
-    Compilation<o:p></o:p></span></b></p> <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'> Make incremental
-    compilation the default mode. It is currently off by default, with
-    a preference page option to turn it on. When incremental is
-    enabled, do we still need the AspectJ build button? (It would be
-    nice to get rid of it if we can).<o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center
-    style='text-align:center'>Now enabled as the default</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'>Andy Clement<o:p></o:p></span></p>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:14'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Search Engine<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>Support
-    searching for AspectJ constructs within the JDT search dialog. <o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Not yet assigned<o:p>&nbsp;</o:p></p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:16'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Content Assist (Ctrl + space)<o:p></o:p></span></b></p>
-    
-  <p class=MsoNormal><span
-  style='font-size:10.0pt;font-family:Arial'>Content assist now works
-  well in many cases. This is implemented by getting JDT to provide
-  completions for modified versions of the buffer. We're close to the
-  limits of this approach - for full aspect aware code assist,
-  e.g. completions on pointcut names and parameters following the
-  beginning of an advice statement, we need our own completion
-  processor.<o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Not yet assigned</p>
-    <p class=smallparagraph align=center style='text-align:center'>(bug 74419)</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:17'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Tooltip descriptions (F2)<o:p></o:p></span></b></p>
-    <ul style='margin-top:0cm' type=disc>
-     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
-         style='font-size:10.0pt;font-family:Arial'>For AspectJ keywords should
-         contain an expanded version of the AspectJ Quick Reference summary for
-         that construct.<o:p></o:p></span></li>
-     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
-         style='font-size:10.0pt;font-family:Arial'>For AspectJ declarations,
-         should show the javadoc (ajdoc) comment and signature for those
-         declarations<o:p></o:p></span></li>
-    </ul>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Not yet
-    assigned</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:18'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Parameter Hints (Ctrl + shift +
-    space)<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>For
-    pointcuts, shows the possible matching points &#8211; e.g. <span
-    class=GramE>call(</span>[visibility] return_type
-    TypePattern.MethodNamePattern( ArgsPattern ).<o:p></o:p></span></p>
-    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>To be investigated
-    to see whether this would be useful or not.<o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Not yet
-    assigned</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:23'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Refactoring Support<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>There
-    are two pieces to this: the first is to ensure that existing refactorings
-    in Eclipse work correctly in the presence of aspects; the second is to add
-    aspect-specific refactorings. There are several research groups looking
-    into these problems. <o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Not yet
-    assigned</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
-    </td>
-   </tr>
-
-
-   <tr style='mso-yfti-irow:26'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Complete debugging support<o:p></o:p></span></b></p>
-    <p>The remaining work in this area is to tidy up the stack, to
-    avoid exposing internal compiler generated names.</p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Not yet assigned</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:27'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Pointcut Matcher<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>This
-    view would allow you to enter a (static?) pointcut expression &#8211; either
-    by directly typing or by using the pointcut wizard and see the matches in a
-    search results list and also in a visualiser like view. Optionally may
-    support naming and saving of queries. <o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Assigned</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'><o:p>Julie Waterhouse Park,</p> <p class=smallparagraph align=center style='text-align:center'>Mik Kersten</p>
-    </td>
-   </tr>
-   <tr style='mso-yfti-irow:28'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Pointcut Wizard<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>The
-    pointcut wizard guides you step by step through the process of creating a
-    pointcut that does what you want. It encourages good style, teaches an AO
-    way of thinking about pointcuts, and has knowledge of common idioms.<o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Not yet
-    assigned</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
-    </td>
-   </tr>
-   <tr style='mso-yfti-irow:29'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Pointcut Reader<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>This is
-    a sophisticated form of tooltip for a pointcut declaration which
-    &#8220;reads&#8221; the pointcut in plain English. <o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Not yet
-    assigned</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
-    </td>
-   </tr>
-   <tr style='mso-yfti-irow:30'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>Aspect Refactorization Verification<o:p></o:p></span></b></p>
-    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>Compares
-    a query (for example &#8220;<span class=GramE>call(</span>void
-    Canvas.updateHistory(..))&#8221; ) against an aspect supplying advice (for
-    example, &#8220;after() returning: execution(* FigureElement+.set*(..)) <span
-    class=GramE>{ Canvas.updateHistory</span>(); }&#8221; ) and shows the
-    places the query catches that the aspect doesn&#8217;t, and vice-versa.
-    Very useful support as part of the &#8220;Extract to Asspect&#8221;
-    refactoring.<o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Being
-    researched at University of Toronto</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'>Julie Waterhouse Park,<o:p></o:p></span></p>
-    <p class=MsoNormal align=center style='text-align:center'><span
-    style='font-size:10.0pt;font-family:Arial'>Charles Zhang<o:p></o:p></span></p>
-    </td>
-   </tr>
-
-   <tr style='mso-yfti-irow:13'>
-    <td width="57%" style='width:57.62%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
-    style='font-size:10.0pt;font-family:Arial'>AspectJ AST<o:p></o:p></span></b></p>
-
-    <p class=MsoNormal><span
-    style='font-size:10.0pt;font-family:Arial'>Make the AspectJ
-    structure model easily available to
-    extenders<o:p></o:p></span></p>
-    </td>
-    <td width="17%" style='width:17.04%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    <p class=smallparagraph align=center style='text-align:center'>Not yet
-    assigned</p>
-    </td>
-    <td width="23%" style='width:23.94%;background:#EEEEEE;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
-    </td>
-   </tr>
-
-
 </table>
+</div>
+
+<p></p>
+
 
 </body>
 </html>
