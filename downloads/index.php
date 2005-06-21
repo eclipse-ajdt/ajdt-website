@@ -31,7 +31,8 @@ function GetDevBuildsIn($dir){
       }
    }
    usort($files, "date_cmp");
-   foreach ($files[] as $file) {
+   @closedir($dir31);
+   foreach ($files as $file) {
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          echo "$file<br>";
          $datestr = $matches[1];
@@ -53,7 +54,7 @@ function GetDevBuildsIn($dir){
          echo $builddate . "<br>";    
       }      
    }
-   @closedir($dir31);
+   
 
    echo "<br>";
 }
