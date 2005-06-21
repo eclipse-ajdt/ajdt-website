@@ -19,7 +19,7 @@ function date_cmp($f1, $f2) {
 // return entries in the directory that represent dev builds
 function GetDevBuildsIn($dir){
    ini_set("max_execution_time",10);
-   echo "version 6" . "<br>";
+   echo "version 7" . "<br>";
    
    $dir31="$dir/31/dev/update/";
    $root=opendir($dir31) or die("Check $dir31 !");
@@ -33,7 +33,11 @@ function GetDevBuildsIn($dir){
          echo "date string = " . $datestr . "<br>";
          $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
          $datetime = strtotime($dashes);
-         echo date("F jS, Y",$datetime) . "<br>";    
+         $hours = substr($datestr,8,2);
+         $mins = substr($datestr,10,2);
+         echo date("D, j M Y",$datetime) . "<br>";    
+         echo date("F jS, Y",$datetime) . "<br>";  
+         echo "hours = $hours   mins = $mins <br>";  
       }      
    }
    @closedir($dir31);
