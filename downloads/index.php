@@ -17,9 +17,8 @@ function date_cmp($f1, $f2) {
    return $f2stats[9]-$f1stats[9];
 }
 // return entries in the directory that represent dev builds
-function GetDevBuildsIn($dir){
+function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
-   echo "version 10" . "<br>";
    
    $dir30="$dir/30/dev/update";
    $root=opendir($dir30) or die("Check $dir30 !");
@@ -43,7 +42,9 @@ function GetDevBuildsIn($dir){
    @closedir($dir31);
    foreach ($files as $file) {
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
-         echo "$file<br>";
+         echo "<tr><td>\n";
+         echo "$file";
+         echo "</td>\n<td>";
          $datestr = $matches[1];
          #echo "date string = " . $datestr . "<br>";
          $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
@@ -60,7 +61,7 @@ function GetDevBuildsIn($dir){
          }
          #echo "hours = $hours   mins = $mins <br>";  
          $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
-         echo $builddate . "<br>";      
+         echo $builddate . "</td></tr>";      
    }
    
    echo "<br>";
@@ -406,18 +407,12 @@ available via the following Eclipse Update Sites and zip files:</p>
     <th>Build Name</th>
     <th>Build Date</th>
   </tr>
-  
-  <tr>
-    <td>
-  
+   
 <?php
-  #$devbuilds=GetDevBuildsIn('e:/tmp/31/dev/update');
-  $devbuilds=GetDevBuildsIn('/home/data/httpd/download.eclipse.org/technology/ajdt');  
-  #echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=/technology/aspectj/dev/$justthefirstfile\">$justthefirstfile</a><br><br>(size: $stats[7] bytes)";
+  ListDevBuilds('/home/data/httpd/download.eclipse.org/technology/ajdt');  
 ?>
 
-    </td>
-  </tr>
+</table>
 
 <table width="80%">
   <tr align="left">
