@@ -425,15 +425,10 @@ out any old versions, go to "Manage configuration", and then press the
 toggle to show disabled features, then use the "Uninstall" option as
 required.</p>
 
+<p></p>
 
     </td>
   </tr>
-
-
-
-
-
-
 
   <tr>
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
