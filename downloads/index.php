@@ -21,21 +21,32 @@ function GetDevBuildsIn($dir){
    ini_set("max_execution_time",10);
    echo "version 3" . "<br>";
    
-   foreach (glob("$dir/31/dev/update/*.zip") as $filename) {
-   echo "$filename " . "<br>";
-   preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$filename, $matches);
-   $datestr = $matches[1];
-   echo "date string = " . $datestr . "<br>";
+   $root=opendir("$dir/31/dev/update/") or die("Check $dir !");
+   while (false!== ($file=readdir($root))) {
+     if($file=="." || $file=="..") {continue;}
+      echo "$file<br>";
+      if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$filename, $matches)) {
+         echo "matched<br>";
+         print_r ($matches);
+      }      
+   }
+   @closedir("$dir/31/dev/update/");
+   
+   #foreach (glob("$dir/31/dev/update/*.zip") as $filename) {
+   #echo "$filename " . "<br>";
+   #preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$filename, $matches);
+   #$datestr = $matches[1];
+   #echo "date string = " . $datestr . "<br>";
 
-   $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
+   #$dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
 
-   $datetime = strtotime($dashes);
+   #$datetime = strtotime($dashes);
 
-   echo date("F jS, Y",$datetime) . "<br>";
+   #echo date("F jS, Y",$datetime) . "<br>";
 
    echo "<br>";
 }
-
+function OrigGetDevBuildsIn($dir){
    $devtag="aspectj-DEVELOPMENT-2";
    $root=opendir($dir) or die("Check $dir !");
    while (false!== ($file=readdir($root))) {
