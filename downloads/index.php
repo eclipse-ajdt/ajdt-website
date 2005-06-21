@@ -41,10 +41,14 @@ function ListDevBuilds($dir){
    @closedir($dir30);
    @closedir($dir31);
    foreach ($files as $file) {
-         preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          echo "<tr><td>\n";
-         echo "$file";
+         
+         preg_match('/(technology/.*ajdt_(.*)_archive.zip/)',$file, $matches);
+         $path = $matches[1];
+         $name = $matches[2];
+         echo "<a href=\"$path\">$name</a>";
          echo "</td>\n<td>";
+         preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          $datestr = $matches[1];
          #echo "date string = " . $datestr . "<br>";
          $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
