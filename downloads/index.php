@@ -43,13 +43,13 @@ function ListDevBuilds($dir){
    foreach ($files as $file) {
          echo "<tr><td>\n";
          
-         preg_match('/\/(technology\/.*\.zip)/',$file, $matches);
+         preg_match('/(\/technology\/.*\.zip)/',$file, $matches);
          $path = $matches[1];
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1];
-         echo "path = $path <br>";
-         echo "name = $name <br>";
-         echo "<a href=\"$path\">$name</a>";
+         #echo "path = $path <br>";
+         #echo "name = $name <br>";
+         echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
          echo "</td>\n<td>";
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          $datestr = $matches[1];
@@ -411,7 +411,7 @@ available via the following Eclipse Update Sites and zip files:</p>
 
 <table width="80%">
   <tr align="left">
-    <th>Build Name 2</th>
+    <th>Build Name</th>
     <th>Build Date</th>
   </tr>
    
