@@ -45,8 +45,15 @@ function ListDevBuilds($dir){
          
          preg_match('/(\/technology\/.*\.zip)/',$file, $matches);
          $path = $matches[1];
+		 preg_match('/ajdt\/(\\d\\d)\/dev/',$file, $matches);
+		 $eclipse = $matches[1];
+		 if ($eclipse == "30") {
+		   $eclipsename = "3.0";
+		 } else {
+		   $eclipsename = "3.1RC2/RC3";
+		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
-		 $name = $matches[1];
+		 $name = $matches[1] . "for Eclipse " . $eclipsename;
          #echo "path = $path <br>";
          #echo "name = $name <br>";
          echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
@@ -61,7 +68,8 @@ function ListDevBuilds($dir){
          # can only determine local daylight savings, which is not necessarily
          # the same as the daylight savings where the build was done
          $daylightsavings = date("I");
-         if ($daylightsaving == "1") {
+         echo "ds = |" . $daylightsavings . "| <br>";
+         if ($daylightsavings == "1") {
            $tzstr = " (+0100)";
          } else {
            $tzstr = " (+0000)";
