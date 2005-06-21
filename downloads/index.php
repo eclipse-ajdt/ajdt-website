@@ -35,24 +35,18 @@ function GetDevBuildsIn($dir){
          $datetime = strtotime($dashes);
          $hours = substr($datestr,8,2);
          $mins = substr($datestr,10,2);
-         echo date("D, j M Y",$datetime) . "<br>";    
-         echo date("F jS, Y",$datetime) . "<br>";  
-         echo "hours = $hours   mins = $mins <br>";  
+         $daylightsavings = date("I",$datetime);
+         if ($daylightsaving == "1") {
+           $tzstr = " (+0100)";
+         } else {
+           $tzstr = " (+0000)";
+         }
+         #echo "hours = $hours   mins = $mins <br>";  
+         $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
+         echo $builddate . "<br>";    
       }      
    }
    @closedir($dir31);
-   
-   #foreach (glob("$dir/31/dev/update/*.zip") as $filename) {
-   #echo "$filename " . "<br>";
-   #preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$filename, $matches);
-   #$datestr = $matches[1];
-   #echo "date string = " . $datestr . "<br>";
-
-   #$dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
-
-   #$datetime = strtotime($dashes);
-
-   #echo date("F jS, Y",$datetime) . "<br>";
 
    echo "<br>";
 }
