@@ -19,7 +19,7 @@ function date_cmp($f1, $f2) {
 // return entries in the directory that represent dev builds
 function GetDevBuildsIn($dir){
    ini_set("max_execution_time",10);
-   echo "version 7" . "<br>";
+   echo "version 8" . "<br>";
    
    $dir31="$dir/31/dev/update/";
    $root=opendir($dir31) or die("Check $dir31 !");
@@ -27,15 +27,22 @@ function GetDevBuildsIn($dir){
      if($file=="." || $file=="..") {continue;}
       #echo "$file<br>";
       if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
-         #echo "matched<br>";
+         $files[]="$dir/$file";
+      }
+   }
+   usort($files, "date_cmp");
+   foreach ($files[] as $file) {
+         preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          echo "$file<br>";
          $datestr = $matches[1];
          echo "date string = " . $datestr . "<br>";
          $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
          $datetime = strtotime($dashes);
          $hours = substr($datestr,8,2);
-         $mins = substr($datestr,10,2);
-         $daylightsavings = date("I",$datetime);
+         $mins = substr($datestr,10,2);         
+         # can only determine local daylight savings, which is not necessarily
+         # the same as the daylight savings where the build was done
+         $daylightsavings = date("I");
          if ($daylightsaving == "1") {
            $tzstr = " (+0100)";
          } else {
