@@ -19,7 +19,7 @@ function date_cmp($f1, $f2) {
 // return entries in the directory that represent dev builds
 function GetDevBuildsIn($dir){
    ini_set("max_execution_time",10);
-   echo "version 8" . "<br>";
+   echo "version 9" . "<br>";
    
    $dir31="$dir/31/dev/update/";
    $root=opendir($dir31) or die("Check $dir31 !");
@@ -27,7 +27,7 @@ function GetDevBuildsIn($dir){
      if($file=="." || $file=="..") {continue;}
       #echo "$file<br>";
       if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
-         $files[]="$dir/$file";
+         $files[]="$dir31/$file";
       }
    }
    usort($files, "date_cmp");
@@ -36,7 +36,7 @@ function GetDevBuildsIn($dir){
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          echo "$file<br>";
          $datestr = $matches[1];
-         echo "date string = " . $datestr . "<br>";
+         #echo "date string = " . $datestr . "<br>";
          $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
          $datetime = strtotime($dashes);
          $hours = substr($datestr,8,2);
