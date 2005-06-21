@@ -53,7 +53,7 @@ function ListDevBuilds($dir){
 		   $eclipsename = "3.1RC2/RC3";
 		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
-		 $name = $matches[1] . "for Eclipse " . $eclipsename;
+		 $name = $matches[1] . " for Eclipse " . $eclipsename;
          #echo "path = $path <br>";
          #echo "name = $name <br>";
          echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
@@ -67,8 +67,7 @@ function ListDevBuilds($dir){
          $mins = substr($datestr,10,2);         
          # can only determine local daylight savings, which is not necessarily
          # the same as the daylight savings where the build was done
-         $daylightsavings = date("I");
-         echo "ds = |" . $daylightsavings . "| <br>";
+         $daylightsavings = date("I",$datestr);
          if ($daylightsavings == "1") {
            $tzstr = " (+0100)";
          } else {
