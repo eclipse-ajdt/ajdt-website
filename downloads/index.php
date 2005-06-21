@@ -19,9 +19,10 @@ function date_cmp($f1, $f2) {
 // return entries in the directory that represent dev builds
 function GetDevBuildsIn($dir){
    ini_set("max_execution_time",10);
-   echo "version 3" . "<br>";
+   echo "version 4" . "<br>";
    
-   $root=opendir("$dir/31/dev/update/") or die("Check $dir !");
+   $dir31="$dir/31/dev/update/";
+   $root=opendir($dir31) or die("Check $dir31 !");
    while (false!== ($file=readdir($root))) {
      if($file=="." || $file=="..") {continue;}
       echo "$file<br>";
@@ -30,7 +31,7 @@ function GetDevBuildsIn($dir){
          print_r ($matches);
       }      
    }
-   @closedir("$dir/31/dev/update/");
+   @closedir($dir31);
    
    #foreach (glob("$dir/31/dev/update/*.zip") as $filename) {
    #echo "$filename " . "<br>";
@@ -392,9 +393,8 @@ available via the following Eclipse Update Sites and zip files:</p>
     <td>
   
 <?php
-phpinfo();
   #$devbuilds=GetDevBuildsIn('e:/tmp/31/dev/update');
-  $devbuilds=GetDevBuildsIn('/home/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');  
+  $devbuilds=GetDevBuildsIn('/home/data/httpd/download.eclipse.org/technology/ajdt');  
   #echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=/technology/aspectj/dev/$justthefirstfile\">$justthefirstfile</a><br><br>(size: $stats[7] bytes)";
 ?>
 
