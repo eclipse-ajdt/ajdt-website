@@ -19,18 +19,27 @@ function date_cmp($f1, $f2) {
 // return entries in the directory that represent dev builds
 function GetDevBuildsIn($dir){
    ini_set("max_execution_time",10);
-   echo "version 9" . "<br>";
+   echo "version 10" . "<br>";
    
-   $dir31="$dir/31/dev/update/";
+   $dir30="$dir/30/dev/update";
+   $root=opendir($dir30) or die("Check $dir30 !");
+   while (false!== ($file=readdir($root))) {
+     if($file=="." || $file=="..") {continue;}
+      if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
+         $files[]="$dir30/$file";
+      }
+   } 
+   $dir31="$dir/31/dev/update";
    $root=opendir($dir31) or die("Check $dir31 !");
    while (false!== ($file=readdir($root))) {
      if($file=="." || $file=="..") {continue;}
-      #echo "$file<br>";
       if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
          $files[]="$dir31/$file";
       }
    }
+
    usort($files, "date_cmp");
+   @closedir($dir30);
    @closedir($dir31);
    foreach ($files as $file) {
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
