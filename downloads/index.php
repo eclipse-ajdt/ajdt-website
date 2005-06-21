@@ -43,9 +43,9 @@ function ListDevBuilds($dir){
    foreach ($files as $file) {
          echo "<tr><td>\n";
          
-         preg_match('/(technology/.*ajdt_.*_archive.zip)/',$file, $matches);
+         preg_match('/\/(technology\/.*\.zip)/',$file, $matches);
          $path = $matches[1];
-         preg_match('/technology/.*ajdt_(.*)_archive.zip/',$file, $matches);
+         preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1];
          echo "path = $path <br>";
          echo "name = $name <br>";
@@ -411,7 +411,7 @@ available via the following Eclipse Update Sites and zip files:</p>
 
 <table width="80%">
   <tr align="left">
-    <th>Build Name</th>
+    <th>Build Name 2</th>
     <th>Build Date</th>
   </tr>
    
