@@ -46,6 +46,8 @@ function ListDevBuilds($dir){
          preg_match('/(technology/.*ajdt_(.*)_archive.zip/)',$file, $matches);
          $path = $matches[1];
          $name = $matches[2];
+         echo "path = $path <br>";
+         echo "name = $name <br>";
          echo "<a href=\"$path\">$name</a>";
          echo "</td>\n<td>";
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
