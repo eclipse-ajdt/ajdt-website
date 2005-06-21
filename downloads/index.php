@@ -67,7 +67,7 @@ function ListDevBuilds($dir){
          $mins = substr($datestr,10,2);         
          # can only determine local daylight savings, which is not necessarily
          # the same as the daylight savings where the build was done
-         $daylightsavings = date("I",$datestr);
+         $daylightsavings = date("I");
          if ($daylightsavings == "1") {
            $tzstr = " (+0100)";
          } else {
@@ -77,24 +77,7 @@ function ListDevBuilds($dir){
          $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
          echo $builddate . "</td></tr>";      
    }
-   
-   echo "<br>";
 }
-function OrigGetDevBuildsIn($dir){
-   $devtag="aspectj-DEVELOPMENT-2";
-   $root=opendir($dir) or die("Check $dir !");
-   while (false!== ($file=readdir($root))) {
-     if($file=="." || $file=="..") {continue;}
-      echo "$file<br>";
-     //if (substr($file,0,21) == $devtag) {
-       $files[]="$dir/$file";
-    // }
-   }
-   @closedir($dir);
-   usort($files, "date_cmp");
-   return $files;
-}
-
 ?>
 
 </head>
@@ -414,8 +397,6 @@ available via the following Eclipse Update Sites and zip files:</p>
 </table>
 
 <p>
-
-
 <table width="80%">
   <tr align="left">
     <th>Build Name</th>
@@ -428,36 +409,6 @@ available via the following Eclipse Update Sites and zip files:</p>
 
 </table>
 
-<table width="80%">
-  <tr align="left">
-    <th>Build Name</th>
-    <th>Build Date</th>
-  </tr>
-  
-  <!--
-  <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/dev/update/ajdt_1.2.1.20050617114713_archive.zip">1.2.1.20050617114713 for Eclipse 3.0</a></td>
-    <td>Fri, 17 June 2005 -- 11:47</td>
-  </tr>
--->
-
-  <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/dev/update/ajdt_1.2.1.20050617114713_archive.zip">1.2.1.20050617114713 for Eclipse 3.1RC2/RC3</a></td>
-    <td>Fri, 17 June 2005 -- 11:47</td>
-  </tr>
-
-<!--
-  <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/dev/update/ajdt_1.2.1.20050615132409_archive.zip">1.2.1.20050615132409 for Eclipse 3.0</a></td>
-    <td>Wed, 15 June 2005 -- 13:24</td>
-  </tr>
--->
-
-  <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/dev/update/ajdt_1.2.1.20050615132409_archive.zip">1.2.1.20050615132409 for Eclipse 3.1RC2/RC3</a></td>
-    <td>Wed, 15 June 2005 -- 13:24</td>
-  </tr>
-</table>
 </p>
 
 <p>Note that only builds which pass the automated test suite are
@@ -493,7 +444,7 @@ required.</p>
   <tr>
     <td>
 
-      <p>To define an update site in Eclipse 3.0:</p>
+      <p>To define an update site in Eclipse 3.0 onwards:</p>
       <ul>
 
         <li>Start Eclipse, and from the Help menu choose "Software
