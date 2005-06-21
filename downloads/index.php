@@ -51,11 +51,9 @@ function GetDevBuildsIn($dir){
          }
          #echo "hours = $hours   mins = $mins <br>";  
          $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
-         echo $builddate . "<br>";    
-      }      
+         echo $builddate . "<br>";      
    }
    
-
    echo "<br>";
 }
 function OrigGetDevBuildsIn($dir){
