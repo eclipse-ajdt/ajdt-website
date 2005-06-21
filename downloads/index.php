@@ -19,17 +19,15 @@ function date_cmp($f1, $f2) {
 // return entries in the directory that represent dev builds
 function GetDevBuildsIn($dir){
    ini_set("max_execution_time",10);
+   echo "version 2" . "<br>";
    
    foreach (glob($dir . "/31/dev/update/*.zip") as $filename) {
    echo "$filename " . "<br>";
-   preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',
-$filename, $matches);
+   preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$filename, $matches);
    $datestr = $matches[1];
    echo "date string = " . $datestr . "<br>";
 
-   $dashes =
-preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/',
-'${1}-${2}-${3}', $datestr);
+   $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
 
    $datetime = strtotime($dashes);
 
