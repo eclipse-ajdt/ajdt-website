@@ -381,6 +381,7 @@ available via the following Eclipse Update Sites and zip files:</p>
     <td>
   
 <?php
+phpinfo();
   #$devbuilds=GetDevBuildsIn('e:/tmp/31/dev/update');
   $devbuilds=GetDevBuildsIn('/home/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');  
   #echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=/technology/aspectj/dev/$justthefirstfile\">$justthefirstfile</a><br><br>(size: $stats[7] bytes)";
