@@ -19,16 +19,21 @@ function date_cmp($f1, $f2) {
 // return entries in the directory that represent dev builds
 function GetDevBuildsIn($dir){
    ini_set("max_execution_time",10);
-   echo "version 5" . "<br>";
+   echo "version 6" . "<br>";
    
    $dir31="$dir/31/dev/update/";
    $root=opendir($dir31) or die("Check $dir31 !");
    while (false!== ($file=readdir($root))) {
      if($file=="." || $file=="..") {continue;}
-      echo "$file<br>";
+      #echo "$file<br>";
       if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
-         echo "matched<br>";
-         print_r ($matches);
+         #echo "matched<br>";
+         echo "$file<br>";
+         $datestr = $matches[1];
+         echo "date string = " . $datestr . "<br>";
+         $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
+         $datetime = strtotime($dashes);
+         echo date("F jS, Y",$datetime) . "<br>";    
       }      
    }
    @closedir($dir31);
