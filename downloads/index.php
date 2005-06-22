@@ -134,7 +134,7 @@ found).<br><br></p>
     <th>Eclipse Version:</th><td>3.0.2</td>
   </tr>
   <tr>
-    <th>Update Site URL:</th>
+    <th>Update&nbsp;Site&nbsp;URL:</th>
     <td><code>http://download.eclipse.org/technology/ajdt/30/update</code></td>
   </tr>
   <tr>
@@ -382,16 +382,16 @@ available via the following Eclipse Update Sites and zip files:</p>
 
 <table class="tasklist" width="80%">
   <tr align="left">
-    <th>Eclipse version</th>
+    <th>Eclipse&nbsp;version</th>
     <th>Update Site URL</th>
   </tr>
   <tr>
-    <td>Eclipse 3.0</td>
+    <td>Eclipse&nbsp;3.0</td>
     <td><code>http://download.eclipse.org/technology/ajdt/30/dev/update</code></td>
   </tr>
 
   <tr>
-    <td>Eclipse 3.1RC3</td>
+    <td>Eclipse&nbsp;3.1RC3</td>
     <td><code>http://download.eclipse.org/technology/ajdt/31/dev/update</code></td>
   </tr>
 </table>
