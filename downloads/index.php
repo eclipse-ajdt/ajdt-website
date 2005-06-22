@@ -159,7 +159,7 @@ found).<br><br></p>
     <th>Eclipse Version:</th><td>3.0.0</td>
   </tr>
   <tr>
-    <th>Update Site URL:</th>
+    <th>Update&nbsp;Site&nbsp;URL:</th>
     <td><code>http://download.eclipse.org/technology/ajdt/30/update</code></td>
   </tr>
   <tr>
@@ -184,7 +184,7 @@ found).<br><br></p>
     <th>Eclipse Version:</th><td>2.1</td>
   </tr>
   <tr>
-    <th>Update Site URL:</th>
+    <th>Update&nbsp;Site&nbsp;URL:</th>
     <td><code>http://download.eclipse.org/technology/ajdt/update</code></td>
   </tr>
   <tr>
