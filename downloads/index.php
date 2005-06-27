@@ -50,7 +50,7 @@ function ListDevBuilds($dir){
 		 if ($eclipse == "30") {
 		   $eclipsename = "3.0";
 		 } else {
-		   $eclipsename = "3.1RC2/RC3";
+		   $eclipsename = "3.1RC2/RC3/RC4";
 		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
