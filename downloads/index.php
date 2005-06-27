@@ -391,7 +391,7 @@ available via the following Eclipse Update Sites and zip files:</p>
   </tr>
 
   <tr>
-    <td>Eclipse&nbsp;3.1RC3</td>
+    <td>Eclipse&nbsp;3.1RC4</td>
     <td><code>http://download.eclipse.org/technology/ajdt/31/dev/update</code></td>
   </tr>
 </table>
