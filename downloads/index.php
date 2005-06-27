@@ -371,8 +371,7 @@ found).<br><br></p>
   </tr>
 
   <tr>
-    <a name="dev"/>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#999999"><b><font color="#FFFFFF" face="Arial,Helvetica">Development Builds</font></b></td>
+    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#999999"><b><font color="#FFFFFF" face="Arial,Helvetica"><a name="dev"/>Development Builds</font></b></td>
   </tr>
 
   <tr>
