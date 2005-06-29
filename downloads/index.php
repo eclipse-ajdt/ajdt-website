@@ -50,7 +50,7 @@ function ListDevBuilds($dir){
 		 if ($eclipse == "30") {
 		   $eclipsename = "3.0";
 		 } else {
-		   $eclipsename = "3.1RC2/RC3/RC4";
+		   $eclipsename = "3.1";
 		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
@@ -391,7 +391,7 @@ available via the following Eclipse Update Sites and zip files:</p>
   </tr>
 
   <tr>
-    <td>Eclipse&nbsp;3.1RC4</td>
+    <td>Eclipse&nbsp;3.1</td>
     <td><code>http://download.eclipse.org/technology/ajdt/31/dev/update</code></td>
   </tr>
 </table>
