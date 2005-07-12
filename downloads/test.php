@@ -60,7 +60,7 @@ function ListDevBuilds($dir){
          echo "</td>\n<td>";
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          $datestr = $matches[1];
-         echo "date string = " . $datestr . "<br>";
+         #echo "date string = " . $datestr . "<br>";
          $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
          $datetime = strtotime($dashes);
          $hours = substr($datestr,8,2);
@@ -75,15 +75,18 @@ function ListDevBuilds($dir){
          }
          #echo "hours = $hours   mins = $mins <br>";  
          $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
-         echo $builddate . "</td></tr>";  
+         echo $builddate . "</td>";  
          
          $base = dirname($file);
-         echo "base = $base <br>";
-         $changes = $base . "/changes-" . $datestr . ".html";
-         echo "changes file = $changes";
-         if (file_exists($changes)) {
-             echo "found changes file <br>";
-         }    
+         #echo "base = $base <br>";
+         $changesName = changes-" . $datestr . ".html";
+         $changesFile = $base . "/" . $changesName;
+         #echo "changes file = $changesFile";
+         if (file_exists($changesFile)) {
+             echo "<td><a href=\"$changesFile\">$changesName</a></td></tr>\n";
+         } else {
+             echo "<td><i>not available</i></td></tr>\n";
+         }
    }
 }
 ?>
@@ -409,6 +412,7 @@ available via the following Eclipse Update Sites and zip files:</p>
   <tr align="left">
     <th>Build Name</th>
     <th>Build Date</th>
+    <th>Build Report</th>
   </tr>
    
 <?php
