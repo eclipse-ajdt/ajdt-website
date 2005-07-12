@@ -79,7 +79,7 @@ function ListDevBuilds($dir){
          
          $base = dirname($file);
          #echo "base = $base <br>";
-         $changesName = changes-" . $datestr . ".html";
+         $changesName = "changes-" . $datestr . ".html";
          $changesFile = $base . "/" . $changesName;
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {
