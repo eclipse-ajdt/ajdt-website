@@ -20,6 +20,8 @@ function date_cmp($f1, $f2) {
 function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
    
+   echo "cwd: " . getcwd() . "\n";
+   
    $dir30="$dir/30/dev/update";
    $root=opendir($dir30) or die("Check $dir30 !");
    while (false!== ($file=readdir($root))) {
