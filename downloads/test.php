@@ -20,7 +20,9 @@ function date_cmp($f1, $f2) {
 function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
    
-   echo "cwd: " . getcwd() . "\n";
+   echo "cwd: " . getcwd() . "<br>\n";
+   $f = getcdw() . "../../../download.eclipse.org/technology/ajdt/30/dev/update/changes-20050713135647.html";
+   echo "<a href=\"". $f . "\">test.html</a><br>\n";
    
    $dir30="$dir/30/dev/update";
    $root=opendir($dir30) or die("Check $dir30 !");
