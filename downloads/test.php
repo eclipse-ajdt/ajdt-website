@@ -83,15 +83,12 @@ function ListDevBuilds($dir){
          $changesFile = $base . "/" . $changesName;
          $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName;
          #echo "changes file = $changesFile";
-         if (file_exists($changesFile)) {
-             echo "<td><a href=\"$changesURL\">$changesName</a>";
+         if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
-   				echo 'readable ';
-			} else {
-   				echo 'not readable ';
-			}
-			echo substr(sprintf('%o', fileperms($changesFile)), -4);
-			echo "</td></tr>\n";
+   				echo "<td><a href=\"$changesURL\">$changesName</a></td></tr>\n";
+			 } else {
+   				echo "<td><i>pending...</i></td></tr>\n";
+			 }
          } else {
              echo "<td><i>not available</i></td></tr>\n";
          }
