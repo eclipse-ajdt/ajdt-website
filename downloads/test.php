@@ -19,12 +19,7 @@ function date_cmp($f1, $f2) {
 // return entries in the directory that represent dev builds
 function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
-   
-   echo "cwd: " . getcwd() . "<br>\n";
-   $f = getcwd() . "/../../../../download.eclipse.org/technology/ajdt/30/dev/update/changes-20050713135647.html";
-   echo "f: " . $f . "<br>\n";
-   echo "<a href=\"$f\">test.html</a><br>\n";
-   
+      
    $dir30="$dir/30/dev/update";
    $root=opendir($dir30) or die("Check $dir30 !");
    while (false!== ($file=readdir($root))) {
@@ -89,7 +84,14 @@ function ListDevBuilds($dir){
          $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName;
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {
-             echo "<td><a href=\"$changesURL\">$changesName</a></td></tr>\n";
+             echo "<td><a href=\"$changesURL\">$changesName</a>";
+             if (is_readable($changesFile)) {
+   				echo 'readable ';
+			} else {
+   				echo 'not readable ';
+			}
+			echo substr(sprintf('%o', fileperms($changesFile)), -4);
+			echo "</td></tr>\n";
          } else {
              echo "<td><i>not available</i></td></tr>\n";
          }
