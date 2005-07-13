@@ -85,7 +85,9 @@ function ListDevBuilds($dir){
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
-   				echo "<td><a href=\"$changesURL\">$changesName</a></td></tr>\n";
+   				echo "<td><a href=\"$changesURL\">$changesName</a>";
+   				echo substr(sprintf('%o', fileperms($changesFile)), -4);
+   				echo "</td></tr>\n";
 			 } else {
    				echo "<td><i>pending...</i></td></tr>\n";
 			 }
