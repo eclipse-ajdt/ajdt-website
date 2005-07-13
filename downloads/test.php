@@ -21,7 +21,8 @@ function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
    
    echo "cwd: " . getcwd() . "<br>\n";
-   #$f = getcdw() . "../../../download.eclipse.org/technology/ajdt/30/dev/update/changes-20050713135647.html";
+   $f=getcdw() . "../../../download.eclipse.org/technology/ajdt/30/dev/update/changes-20050713135647.html";
+   echo "f: " . $f . "<br>\n";
    #echo "<a href=\"$f\">test.html</a><br>\n";
    
    $dir30="$dir/30/dev/update";
