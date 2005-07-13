@@ -81,9 +81,10 @@ function ListDevBuilds($dir){
          #echo "base = $base <br>";
          $changesName = "changes-" . $datestr . ".html";
          $changesFile = $base . "/" . $changesName;
+         $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName;
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {
-             echo "<td><a href=\"$changesFile\">$changesName</a></td></tr>\n";
+             echo "<td><a href=\"$changesURL\">$changesName</a></td></tr>\n";
          } else {
              echo "<td><i>not available</i></td></tr>\n";
          }
