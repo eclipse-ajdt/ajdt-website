@@ -75,7 +75,25 @@ function ListDevBuilds($dir){
          }
          #echo "hours = $hours   mins = $mins <br>";  
          $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
-         echo $builddate . "</td></tr>";      
+         echo $builddate . "</td>";  
+         
+         $base = dirname($file);
+         #echo "base = $base <br>";
+         $changesName = "changes-" . $datestr . ".html";
+         $changesFile = $base . "/" . $changesName;
+         $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName;
+         #echo "changes file = $changesFile";
+         if (file_exists($changesFile)) {            
+             if (is_readable($changesFile)) {
+   				echo "<td><a href=\"$changesURL\">$changesName</a>";
+   				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
+   				echo "</td></tr>\n";
+			 } else {
+   				echo "<td><i>pending...</i></td></tr>\n";
+			 }
+         } else {
+             echo "<td><i>not available</i></td></tr>\n";
+         }
    }
 }
 ?>
@@ -401,10 +419,11 @@ available via the following Eclipse Update Sites and zip files:</p>
   <tr align="left">
     <th>Build Name</th>
     <th>Build Date</th>
+    <th>Build Report</th>
   </tr>
    
 <?php
-  ListDevBuilds('/home/data/httpd/download.eclipse.org/technology/ajdt');  
+  ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt');  
 ?>
 
 </table>
