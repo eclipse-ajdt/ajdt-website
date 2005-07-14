@@ -423,7 +423,7 @@ available via the following Eclipse Update Sites and zip files:</p>
   </tr>
    
 <?php
-  ListDevBuilds('/home/data/httpd/download.eclipse.org/technology/ajdt');  
+  ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt');  
 ?>
 
 </table>
