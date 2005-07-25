@@ -398,7 +398,7 @@ found).<br><br></p>
 <p>The latest development builds for different versions of Eclipse are
 available via the following Eclipse Update Sites and zip files:</p>
 
-<table class="tasklist" width="80%">
+<table class="tasklist" width="90%">
   <tr align="left">
     <th>Eclipse&nbsp;version</th>
     <th>Update Site URL</th>
@@ -416,7 +416,7 @@ available via the following Eclipse Update Sites and zip files:</p>
 
 <p>
 <b>Eclipse 3.1 builds</b><br>
-<table class="tasklist" width="80%">
+<table class="tasklist" width="90%">
   <tr align="left">
     <th>Build Name</th>
     <th>Build Date</th>
@@ -432,7 +432,7 @@ available via the following Eclipse Update Sites and zip files:</p>
 
 <p>
 <b>Eclipse 3.0 builds</b></br>
-<table class="tasklist" width="80%">
+<table class="tasklist" width="90%">
   <tr align="left">
     <th>Build Name</th>
     <th>Build Date</th>
