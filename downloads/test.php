@@ -414,8 +414,8 @@ available via the following Eclipse Update Sites and zip files:</p>
   </tr>
 </table>
 
-<p>Eclipse 3.1 builds</p>
 <p>
+<b>Eclipse 3.1 builds</b><br>
 <table class="tasklist" width="80%">
   <tr align="left">
     <th>Build Name</th>
@@ -430,9 +430,9 @@ available via the following Eclipse Update Sites and zip files:</p>
 </table>
 </p>
 
-<p>Eclipse 3.0 builds</p>
 <p>
-<table class="tasklist width="80%">
+<b>Eclipse 3.0 builds</b></br>
+<table class="tasklist" width="80%">
   <tr align="left">
     <th>Build Name</th>
     <th>Build Date</th>
