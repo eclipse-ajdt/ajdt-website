@@ -317,8 +317,11 @@
 				href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt/"> root
 				of the AJDT source tree online</a>.
 				AJDT is organized in subdirectories under org.eclipse.ajdt. The main source
-				tree is in the &#8220;AJDT_src&#8221; subdirectory, and contains the
-				following plug-ins:
+				tree is in the &#8220;AJDT_src&#8221; subdirectory.
+				The source code for the Eclipse 3.1 version of AJDT is contained in
+				CVS HEAD, and the source code for the Eclipse 3.0 version is contained
+				in the "ajdt1_2" branch. Here is a description of the various AJDT
+				plug-ins:
 			</p>
 				
 				<table>
@@ -426,24 +429,37 @@
 			    <p>There are several stages to this: building AJDT, running the
 			    correctness tests, running the performance tests, and creating an
 			    Eclipse update site. The first two stages are probably sufficient
-			    for most purposes. Note that the steps required for the first
-			    stage depend on whether you are using Eclipse 3.0 or 3.1.</p>
+			    for most purposes.
+			    Note that an additional step is required for Eclipse 3.0.2, as
+			    the source code is contained in a CVS branch.</p>
 			
 			    <h4>Building AJDT</h4>
 			
-			    <p>Note first of all that in order to build AJDT you may
+			    <p>Note first of all that in order to build AJDT you will probably
 			    need to increase the memory available to Eclipse. This is
-			    typically done by passing something like <code>"-vmargs -Xmx256m"</code> to
+			    typically done by passing something like <code>"-vmargs -Xmx512m"</code> to
 			    the Eclipse launcher.</p>
 			
-			    <p>Start with a clean workspace under Eclipse 3.0.1 or the latest
-			    milestone build of Eclipse 3.1. Now open the CVS Repository Exploring 
+			    <p>Start with a clean workspace under Eclipse 3.0.2 or
+			    Eclipse 3.1. Now open the CVS Repository Exploring 
 			    perspective. Right-click on the CVS Repositories view, then click "New" > "Repository
 			    Location". Host = dev.eclipse.org, Repository path =
 			    /home/technology, Username = anonymous, password should be left
-			    blank. Connection type = pserver. Click "Finish". Use the CVS
-			    Repositories view to navigate to
-			    org.eclipse.ajdt/AJDT_src. Select the following projects,
+			    blank. Connection type = pserver. Click "Finish".
+			    Use the CVS Repositories view to navigate to
+			    HEAD/org.eclipse.ajdt/AJDT_src. </p>
+			    
+			    <p>If you are using Eclipse 3.0.2 you now need to switch to the
+			    "ajdt1_2" branch in CVS. To discover the branch, you need to
+			    right-click on org.eclipse.ajdt and select "Configure Branches
+			    and Versions...", and in the dialog that opens navigate to
+			    AJDT_src/org.aspect.ajde/.project. Various tags should appear in
+			    the right hand side of the dialog. Press "Add Checked Tags", then
+			    "OK". Back in the CVS Repositories view you should now be able to
+			    navigate to Branches/ajdt1_2/org.eclipse.ajdt ajdt1_2/AJDT_src.
+			    </p>
+			    
+			    <p>Select the following projects,
 			    right-click and select "Check out" from the context menu:</p>
 			 
 			    <ul>
@@ -457,32 +473,8 @@
 			      <li>org.eclipse.contribution.xref.ui.</li>
 			    </ul>
 			
-			    <p>Eclipse will build the projects as you import them. Some
-			    projects contain source code for both Eclipse 3.0 and 3.1, so the
-			    next step is to ensure the correct build configurations are being
-			    used:</p>
-			
-			   <ul>
-			     <li>Expand each of the following projects in the package explorer
-			     in turn: org.eclipse.ajdt.core, and org.eclipse.ajdt.ui.</li>
-			
-			     <li>Eclipse 3.0: Locate the build30.ajproperties file in each
-			     project, then right-click and select "Activate this
-			     configuration", if it is not the active configuration
-			     already. This will ensure that the 3.0.x versions of all files
-			     are being built. If you installed a recent version of AJDT, the
-			     build30.ajproperties files should be activated by default.</li>
-			
-			     <li>Eclipse 3.1: Locate the build31.ajproperties file in each
-			     project, then right-click and select "Activate this
-			     configuration", if it is not the active configuration
-			     already. This will ensure that the 3.1 versions of all files are
-			     being built. If you installed a recent version of AJDT, you will
-			     need to activate all of the build31.ajproperties files, because
-			     the Eclipse 3.0 versions will be chosen as the default ones.</li>
-			   </ul>
-			
-			   <p>Now you're ready to run the plugins inside Eclipse:</p>
+			    <p>Eclipse will build the projects as you import them, after
+			    which should you be ready to run the plugins inside Eclipse:</p>
 			
 			   <ul>
 			     <li>Switch to the Java Perspective if you're not already in
