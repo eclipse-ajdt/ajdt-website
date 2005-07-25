@@ -20,26 +20,26 @@ function date_cmp($f1, $f2) {
 function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
    
-   $dir30="$dir/30/dev/update";
-   $root=opendir($dir30) or die("Check $dir30 !");
+   #$dir30="$dir/30/dev/update";
+   $root=opendir($dir) or die("Check $dir !");
    while (false!== ($file=readdir($root))) {
      if($file=="." || $file=="..") {continue;}
       if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
-         $files[]="$dir30/$file";
+         $files[]="$dir/$file";
       }
    } 
-   $dir31="$dir/31/dev/update";
-   $root=opendir($dir31) or die("Check $dir31 !");
-   while (false!== ($file=readdir($root))) {
-     if($file=="." || $file=="..") {continue;}
-      if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
-         $files[]="$dir31/$file";
-      }
-   }
+   #$dir31="$dir/31/dev/update";
+   #$root=opendir($dir31) or die("Check $dir31 !");
+   #while (false!== ($file=readdir($root))) {
+   #  if($file=="." || $file=="..") {continue;}
+   #   if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
+   #      $files[]="$dir31/$file";
+   #   }
+   #}
 
    usort($files, "date_cmp");
-   @closedir($dir30);
-   @closedir($dir31);
+   @closedir($dir);
+   #@closedir($dir31);
    foreach ($files as $file) {
          echo "<tr><td>\n";
          
@@ -415,7 +415,8 @@ available via the following Eclipse Update Sites and zip files:</p>
 </table>
 
 <p>
-<table width="80%">
+<b>Eclipse 3.1 builds</b><br>
+<table class="tasklist" width="80%">
   <tr align="left">
     <th>Build Name</th>
     <th>Build Date</th>
@@ -423,11 +424,26 @@ available via the following Eclipse Update Sites and zip files:</p>
   </tr>
    
 <?php
-  ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt');  
+  ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');  
 ?>
 
 </table>
+</p>
 
+<p>
+<b>Eclipse 3.0 builds</b></br>
+<table class="tasklist" width="80%">
+  <tr align="left">
+    <th>Build Name</th>
+    <th>Build Date</th>
+    <th>Build Report</th>
+  </tr>
+   
+<?php
+  ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');  
+?>
+
+</table>
 </p>
 
 <p>Note that only builds which pass the automated test suite are
