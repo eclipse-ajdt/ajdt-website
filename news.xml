@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+
+<channel>
+
+<title>AJDT News</title>
+<description>The latest news and developments for AJDT, the Eclipse tooling
+for AspectJ.</description>
+<link>http://www.eclipse.org/ajdt/</link>
+
+<item>
+  <title>New features in AJDT: Pointcut navigation and source hovers</title>
+  <description>
+       Find out more about the latest new features added to AJDT
+       development builds from the New Features page,
+       starting this week with support for navigation and source hovers for
+       pointcuts.
+  </description>
+  <link>http://www.eclipse.org/ajdt/newfeatures/</link>
+</item>
+
+<item>
+  <title>developerWorks article published: New AJDT releases ease AOP development</title>
+  <description>
+      This article explores AJDT 1.2 and 1.3, the latest releases of the AspectJ development
+      tools for Eclipse 3.0 and 3.1, respectively. The major focus of these releases is to
+      more closely integrate AspectJ with the Eclipse platform and to offer AspectJ developers
+      more of the advanced tooling support available to Java™ developers using Eclipse.
+  </description>
+  <link>http://www.ibm.com/developerworks/java/library/j-aopwork9/</link>
+</item>
+
+<item>
+  <title>AJDT 1.2 released for Eclipse 3.0</title>
+  <description>
+       The stable release is now here! See the New and Noteworthy for a summary of the
+       changes since version 1.1. The release is available from the update site and as
+       a zip file. See the AJDT download page for more information.
+  </description>   
+  <link>http://www.eclipse.org/ajdt/whatsnew12/</link>
+</item>
+
+</channel>
+
+</rss>
