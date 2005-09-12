@@ -9,6 +9,16 @@ for AspectJ.</description>
 <link>http://www.eclipse.org/ajdt/</link>
 
 <item>
+  <title>More new features in AJDT: Cross References Filter and upgraded compiler</title>
+  <description>
+       The New Features page has been updated
+       to cover the filtering capability added to the Cross References view. The version of the
+       AspectJ compiler included in AJDT has also been updated to the latest development build.
+  </description>
+  <link>http://www.eclipse.org/ajdt/newfeatures/#xrefFilter</link>
+</item>
+
+<item>
   <title>New features in AJDT: Pointcut navigation and source hovers</title>
   <description>
        Find out more about the latest new features added to AJDT
