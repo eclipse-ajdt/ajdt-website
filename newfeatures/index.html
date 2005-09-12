@@ -18,7 +18,7 @@
 </table>
 
 <p>
-<i>Last updated: 6 September 2005</i>
+<i>Last updated: September 12, 2005</i>
 </p>
 
 <p>This page gives details of the latest new features added to the development
@@ -30,15 +30,126 @@ or for further discussion or suggestions please visit the
 - first <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">request a password</a> if you don't have one).
 </p>
 
+<p>
+
+   <ul>
+     <li>September 12, 2005: 
+     <a href="#compiler20050912">Updated AspectJ Compiler</a> 
+     </li>
+     <li>September 12, 2005: 
+     <a href="#xrefFilter">Relationship Filter for Cross References View</a> 
+     </li>
+     <li>September 6, 2005: 
+     <a href="#pointcuts">Navigation and source hover support for pointcuts</a> 
+     </li>
+   </ul>
+
+</p>
+
 <table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
+
+   <tr>
+     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
+     <a name="compiler20050912"/>
+
+     <b>
+     <font color="#FFFFFF" face="Arial,Helvetica">September 12, 2005:</font>
+     <a href="#compiler20050912">
+     <font color="#FFFFFF" face="Arial,Helvetica">Updated AspectJ Compiler</font>
+     </a>
+     </b></td>
+   </tr>
+
+   <tr>
+     <td>
+        <p>
+           The AspectJ build included in AJDT has been updated in the following development builds:
+           <br>1.2.1.20050912170252 for Eclipse 3.0
+           <br>1.3.0.20050912140848 for Eclipse 3.1
+        </p>
+        <p>
+           The timestamp of the included AspectJ build is 20050912122907.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2005-08-27&chfieldto=2005-09-12&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+           list of AspectJ bugs fixed in this build since M3a.</a>
+        </p>
+     </td>
+   </tr>
+            
+          
+   <tr>
+     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
+     <a name="xrefFilter"/>
+
+     <b>
+     <font color="#FFFFFF" face="Arial,Helvetica">September 12, 2005:</font>
+     <a href="#xrefilter">
+     <font color="#FFFFFF" face="Arial,Helvetica">Relationship Filter for Cross References View</font>
+     </a>
+     </b></td>
+   </tr>
+
+   <tr>
+     <td>
+        This was added a while ago, but in case you missed it, it is available in recent
+        development builds of 1.2.1 for Eclipse 3.0 and 1.3.0 for Eclipse 3.1.
+		See the
+		<a href="http://www.eclipse.org/ajdt/downloads/#dev">download page</a> to
+		obtain the latest builds.
+		
+		<p>
+		   
+		   <ul>
+		     <li>
+		     <p>
+		     <b>Cross References View</b> (enhancement <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=95724">95724</a>)
+		     <br>
+		     A new 'Filters...' button has been added to the Cross References view menu which can be
+		     accessed via the drop down toggle button on the toolbar or by pressing the key
+		     combination Ctrl + F10.
+			 <br><img src="xRefViewMenu.PNG" width="545" height="181" alt="Screenshot showing the Cross References view menu">
+		     </p>
+		     <p>
+		     This presents a dialog containing the various types of relationship which can be excluded
+		     from the view.
+		     <br><img src="xRefFilterDialog.PNG" width="301" height="135" alt="Screenshot showing the Cross References filter dialog">
+		     </p>
+		    
+		     <p>
+             Checking relationships in the dialog and clicking OK will see any relationships of this
+             type filtered from the view.
+		     <br><img src="xRefViewFiltered.PNG" width="545" height="131" alt="Screenshot showing the filtered Cross References view">
+		     </p>
+
+		     </li>
+
+		     <li>
+		     <p>
+		     <b>Cross References In-place View</b> (Ctrl+Alt+X)
+             	     <br>
+		     The same functionality is available in the quick form of the Cross References view
+		     which appears over the editor. The filters applied to each view are independent of each
+		     another.
+		     <br><img src="xRefInplaceViewMenu.PNG" width="531" height="157" alt="Screenshot showing the Cross References in-place view menu">
+		     </p>
+
+		     </li>		   
+		   </ul>
+		</p>
+     </td>
+   </tr>
+
+
 
    <tr>
      <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
      <a name="pointcuts"/>
      <b>
+     <font color="#FFFFFF" face="Arial,Helvetica">September 6, 2005: </font>
      <a href="#pointcuts">
-     <font color="#FFFFFF" face="Arial,Helvetica">&nbsp;Navigation and source hover support for pointcuts</font></b></td>
+     <font color="#FFFFFF" face="Arial,Helvetica">Navigation and source hover support for pointcuts</font>
      </a>
+     </b></td>
+     
    </tr>
 
    <tr>
