@@ -430,17 +430,22 @@
 			    correctness tests, running the performance tests, and creating an
 			    Eclipse update site. The first two stages are probably sufficient
 			    for most purposes.
-			    Note that an additional step is required for Eclipse 3.0.2, as
+			    Note that an additional step is required for Eclipse 3.0, as
 			    the source code is contained in a CVS branch.</p>
 			
 			    <h4>Building AJDT</h4>
 			
-			    <p>Note first of all that in order to build AJDT you will probably
+				<p>Many of the plugins which implement AJDT contain aspects, and so are
+				AspectJ projects themselves. This means that you first need to install
+				a recent build of AJDT into your development environment from the
+				update site or zip file.</p>
+							
+			    <p>Note also that in order to build AJDT from source you will probably
 			    need to increase the memory available to Eclipse. This is
 			    typically done by passing something like <code>"-vmargs -Xmx512m"</code> to
 			    the Eclipse launcher.</p>
 			
-			    <p>Start with a clean workspace under Eclipse 3.0.2 or
+			    <p>Start with a clean workspace under Eclipse 3.0 or
 			    Eclipse 3.1. Now open the CVS Repository Exploring 
 			    perspective. Right-click on the CVS Repositories view, then click "New" > "Repository
 			    Location". Host = dev.eclipse.org, Repository path =
@@ -449,7 +454,7 @@
 			    Use the CVS Repositories view to navigate to
 			    HEAD/org.eclipse.ajdt/AJDT_src. </p>
 			    
-			    <p>If you are using Eclipse 3.0.2 you now need to switch to the
+			    <p>If you are using Eclipse 3.0 you now need to switch to the
 			    "ajdt1_2" branch in CVS. To discover the branch, you need to
 			    right-click on org.eclipse.ajdt and select "Configure Branches
 			    and Versions...", and in the dialog that opens navigate to
