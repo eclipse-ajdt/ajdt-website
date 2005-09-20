@@ -9,6 +9,15 @@ for AspectJ.</description>
 <link>http://www.eclipse.org/ajdt/</link>
 
 <item>
+  <title>This week's new AJDT feature: Updated New Aspect Wizard</title>
+  <description>
+       The New Aspect wizard now more closely matches the appearance and
+       functionality of the New Class wizard, plus it can generate stubs
+       for pointcuts inherited from an abstract aspect.</description>
+  <link>http://www.eclipse.org/ajdt/newfeatures/#newaspect</link>
+</item>
+
+<item>
   <title>More new features in AJDT: Cross References Filter and upgraded compiler</title>
   <description>
        The New Features page has been updated
