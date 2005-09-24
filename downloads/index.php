@@ -425,7 +425,7 @@ available via the following Eclipse Update Sites and zip files:</p>
 
   <tr>
     <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20050923175100_archive.zip">1.3.0.20050923175100 for Eclipse 3.2M2</a></td>
-    <td wisth="30%">Fri, 23 Sep 2005 -- 17:51 (+0100)</td>
+    <td width="30%">Fri, 23 Sep 2005 -- 17:51 (+0100)</td>
     <td width="30%"><i>not available</i></td>
   </tr>
 
