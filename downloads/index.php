@@ -57,7 +57,7 @@ function ListDevBuilds($dir){
          #echo "path = $path <br>";
          #echo "name = $name <br>";
          echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
-         echo "</td>\n<td>";
+         echo "</td>\n<td width=\"30%\">";
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          $datestr = $matches[1];
          #echo "date string = " . $datestr . "<br>";
@@ -85,14 +85,14 @@ function ListDevBuilds($dir){
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
-   				echo "<td><a href=\"$changesURL\">$changesName</a>";
+   				echo "<td width=\"30%\"><a href=\"$changesURL\">$changesName</a>";
    				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
    				echo "</td></tr>\n";
 			 } else {
-   			    echo "<td><i>pending...</i></td></tr>\n";
+   			    echo "<td width=\"30%\"><i>pending...</i></td></tr>\n";
 			 }
          } else {
-             echo "<td><i>not available</i></td></tr>\n";
+             echo "<td width=\"30%\"><i>not available</i></td></tr>\n";
          }
    }
 }
@@ -425,7 +425,7 @@ available via the following Eclipse Update Sites and zip files:</p>
 
   <tr>
     <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20050923175100_archive.zip">1.3.0.20050923175100 for Eclipse 3.2M2</a></td>
-    <td>Fri, 23 Sep 2005 -- 17:51 (+0100)</td>
+    <td wisth="30%">Fri, 23 Sep 2005 -- 17:51 (+0100)</td>
     <td width="30%"><i>not available</i></td>
   </tr>
 
