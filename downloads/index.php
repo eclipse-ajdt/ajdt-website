@@ -415,6 +415,24 @@ available via the following Eclipse Update Sites and zip files:</p>
 </table>
 
 <p>
+<b>Eclipse 3.2 builds</b><br>
+<table class="tasklist" width="90%">
+  <tr align="left">
+    <th>Build Name</th>
+    <th>Build Date</th>
+    <th>Build Report</th>
+  </tr>
+
+  <tr>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20050923175100_archive.zip">1.3.0.20050923175100 for Eclipse 3.2M2</a></td>
+    <td>Fri, 23 Sep 2005 -- 17:51 (+0100)</td>
+    <td><i>not available</i></td>
+  </tr>
+
+</table>
+</p>
+
+<p>
 <b>Eclipse 3.1 builds</b><br>
 <table class="tasklist" width="90%">
   <tr align="left">
