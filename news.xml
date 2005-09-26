@@ -9,6 +9,15 @@ for AspectJ.</description>
 <link>http://www.eclipse.org/ajdt/</link>
 
 <item>
+  <title>Another new feature: Crosscutting Comparison view</title>
+  <description>
+       This new view and related functionality helps you manage changes
+       to the crosscutting structure of your project.  
+  </description>
+  <link>http://www.eclipse.org/ajdt/newfeatures/#comparison</link>
+</item>
+       
+<item>
   <title>This week's new AJDT feature: Updated New Aspect Wizard</title>
   <description>
        The New Aspect wizard now more closely matches the appearance and
