@@ -9,6 +9,16 @@ for AspectJ.</description>
 <link>http://www.eclipse.org/ajdt/</link>
 
 <item>
+  <title>Internationalization - call for help!</title>
+  <description>
+  		Recently we have been focusing on support for message translations in AJDT. But we need
+		your help with this - please see the New Features page for
+		details of how you can help.
+  </description>
+  <link>http://www.eclipse.org/ajdt/newfeatures/#i18n</link>
+</item>
+
+<item>
   <title>Another new feature: Crosscutting Comparison view</title>
   <description>
        This new view and related functionality helps you manage changes
