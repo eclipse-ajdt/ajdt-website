@@ -9,6 +9,16 @@ for AspectJ.</description>
 <link>http://www.eclipse.org/ajdt/</link>
 
 <item>
+  <title>AspectJ 5 M4</title>
+  <description>
+  		The latest AspectJ milestone release is now included in AJDT development
+		builds. Please see the New Features page for
+		more details.
+  </description>
+  <link>http://www.eclipse.org/ajdt/newfeatures/#compilerM4</link>
+</item>
+
+<item>
   <title>Internationalization - call for help!</title>
   <description>
   		Recently we have been focusing on support for message translations in AJDT. But we need
