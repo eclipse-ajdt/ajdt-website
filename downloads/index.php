@@ -474,6 +474,35 @@ available via the following Eclipse Update Sites and zip files:</p>
 </table>
 </p>
 
+<p>
+<b>AJDT builds with AspectJ 1.5.0 M4</b><br>
+<table class="tasklist" width="90%">
+  <tr align="left">
+    <th>Build Name</th>
+    <th>Build Date</th>
+    <th>Build Report</th>
+  </tr>
+
+  <tr>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051013194900_archive.zip">1.3.0.20051013194900 for Eclipse 3.2M2</a></td>
+    <td width="30%">Thu, 13 Oct 2005 -- 19:49 (+0100)</td>
+    <td width="30%"><i>not available</i></td>
+  </tr>
+  <tr>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/dev/update/ajdt_1.3.0.20051011134207_archive.zip">1.3.0.20051011134207 for Eclipse 3.1</a></td>
+    <td width="30%">Tue, 11 Oct 2005 -- 13:42 (+0100)</td>
+    <td width="30%"><i>not available</i></td>
+  </tr>
+  <tr>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/dev/update/ajdt_1.2.1.20051007170626_archive.zip">1.2.1.20051007170626 for Eclipse 3.0</a></td>
+    <td width="30%">Fri, 7 Oct 2005 -- 17:06 (+0100)</td>
+    <td width="30%"><i>not available</i></td>
+  </tr>
+
+</table>
+</p>
+
+
 <p>Note that only builds which pass the automated test suite are
 published, but they might still be unstable or incomplete in other
 ways. If you find a problem, please still raise a bug, but first make
