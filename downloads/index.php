@@ -489,12 +489,12 @@ available via the following Eclipse Update Sites and zip files:</p>
     <td width="30%"><i>not available</i></td>
   </tr>
   <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/dev/update/ajdt_1.3.0.20051011134207_archive.zip">1.3.0.20051011134207 for Eclipse 3.1</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/dev/update/old/ajdt_1.3.0.20051011134207_archive.zip">1.3.0.20051011134207 for Eclipse 3.1</a></td>
     <td width="30%">Tue, 11 Oct 2005 -- 13:42 (+0100)</td>
     <td width="30%"><i>not available</i></td>
   </tr>
   <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/dev/update/ajdt_1.2.1.20051007170626_archive.zip">1.2.1.20051007170626 for Eclipse 3.0</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/dev/update/old/ajdt_1.2.1.20051007170626_archive.zip">1.2.1.20051007170626 for Eclipse 3.0</a></td>
     <td width="30%">Fri, 7 Oct 2005 -- 17:06 (+0100)</td>
     <td width="30%"><i>not available</i></td>
   </tr>
