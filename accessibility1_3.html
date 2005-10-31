@@ -1,0 +1,287 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <link rel="stylesheet" href="http://dev.eclipse.org/default_style.css" type="text/css">
+ <title>AJDT 1.3 Accessibility Review</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+ <body>
+
+<!-- Title -->
+
+<table cellSpacing="0" cellPadding="5" border="0" style="border-collapse: collapse" bordercolor="#111111">
+  <tr>
+    <td width="743" colSpan="4" height="32"><b>
+   
+    <p align="center">IBM Software Accessibility Checklist - 
+    Version 3.5.1<br>
+    </b>(from
+    <a href="http://www.ibm.com/able/guidelines/software/accesssoftware.html">
+    http://www.ibm.com/able/guidelines/software/accesssoftware.html</a>)</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">1</b></td>
+    <td height="64"><b><i>Keyboard access</i></b></td>
+    <td align="middle"><b>
+    <p align="center">Yes<br>
+    No<br>
+    Planned<br>
+    N/A</b></td>
+    <td>
+    <p align="left"><b>Comments</b></td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">1.1</b></td>
+    <td height="14">Provide <u>
+    keyboard equivalents</u> 
+    for all actions.</td>
+    <td align="middle">
+    <p align="center">Yes</td>
+    <td>Found a problem with the Crosscutting Comparison view.
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111051">Bug 111051</a>
+     raised and fixed</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">1.2</b></td>
+    <td height="30">Do not interfere with
+    <u>keyboard accessibility 
+    features</u> built into the 
+    operating system.</td>
+    <td align="middle">Yes</td>
+    <td>Found a problem with some of the key combinations used.  
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111334">Bug 111334</a>
+    raised and fixed.</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">2</b></td>
+    <td height="60"><b><i>Object Information</i></b></td>
+    <td align="middle">
+    <p align="center"><b>Yes<br>
+    No<br>
+    Planned<br>
+    N/A</b></td>
+    <td><b>Comments</b></td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">2.1</b></td>
+    <td height="45">Provide a <u>
+    visual focus indicator</u> 
+    that moves among interactive objects as the input focus changes. This focus 
+    indicator must be programmatically exposed to assistive technology.</td>
+    <td align="middle">Yes</td>
+    <td>A problem was found in the Visualiser selection mechanism in high-contrast mode.
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111052">Bug 111052</a>
+    raised and fixed.</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">2.2</b></td>
+    <td height="48">Provide semantic 
+    <u>information about user interface 
+    objects</u>. When an image 
+    represents a program element, the information conveyed by the image must 
+    also be available in text.</td>
+    <td align="middle">Yes</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">2.3</b></td>
+    <td height="45">Associate<u> 
+    labels</u> with controls, 
+    objects, icons and images. If an image is used to identify programmatic 
+    elements, the meaning of the image must be consistent throughout the 
+    application.</td>
+    <td align="middle">Yes</td>
+    <td>Filter button on the Crosscutting Comparison view was 
+    missing a tooltip. Now fixed.  Visualiser preferences preview image was missing a tooltip.
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111328">Bug 111328</a>
+    raised and fixed.  Visualiser color selection buttons were missing tooltips.  Also fixed.</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">2.4</b></td>
+    <td height="60">When electronic 
+    <u>forms</u> 
+    are used, the form shall allow people using assistive technology to access 
+    the information, field elements and functionality required for completion 
+    and submission of the form, including all directions and cues.</td>
+    <td align="middle">N/A&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">3</b></td>
+    <td height="60"><b><i>Sounds and 
+    Multimedia</i></b></td>
+    <td align="middle">
+    <p align="center"><b>Yes<br>
+    No<br>
+    Planned<br>
+    N/A</b></td>
+    <td><b>Comments</b></td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">3.1</b></td>
+    <td height="16">Provide an option to 
+    display a <u>visual cue for all 
+    audio alerts</u>.</td>
+    <td align="middle">N/A&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">3.2</b></td>
+    <td height="16">Provide accessible 
+    alternatives to significant <u>
+    audio and video</u>.</td>
+    <td align="middle">N/A&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">3.3</b></td>
+    <td height="16">Provide an option to
+    <u>adjust the volume</u>.</td>
+    <td align="middle">N/A&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">4</b></td>
+    <td height="60"><b><i>Display</i></b></td>
+    <td>
+    <p align="center"><b>Yes<br>
+    No<br>
+    Planned<br>
+    N/A</b></td>
+    <td><b>Comments</b></td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">4.1</b></td>
+    <td height="45">Provide <u>
+    text</u> 
+    through standard system function calls or through an API (application 
+    programming interface) which supports interaction with assistive technology.</td>
+    <td align="middle">
+    <p align="center">&nbsp;Yes<sup>*</sup></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">4.2</b></td>
+    <td height="30">Use <u>
+    color</u> 
+    as an enhancement, not as the only way to convey information or indicate an 
+    action.</td>
+    <td align="middle">Yes</td>
+    <td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=101854">Bug 101854</a>
+    relating to the Visualiser was raised and fixed.  Several icons, including the build icon,
+    open AspectJ type icon and pointcut icons were found to be only distinguishable by color 
+    and were changed.</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">4.3</b></td>
+    <td height="30">Support system settings 
+    for <u>high contrast</u> 
+    for all user interface controls and client area content.</td>
+    <td align="middle">Yes</td>
+    <td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=101854">Bug 101854</a> already mentioned.</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">4.4</b></td>
+    <td height="30">When color customization 
+    is supported, provide a <u>
+    variety</u> of color selections 
+    capable of producing a range of contrast levels.</td>
+    <td align="middle">Yes</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">4.5</b></td>
+    <td height="30">Inherit <u>
+    system settings for font, size, and 
+    color</u> for all user interface 
+    controls.</td>
+    <td align="middle">Yes</td>
+    <td>In the case of Dialogs, the font it determined by a 
+    Workbench preference, not the OS.</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">4.6</b></td>
+    <td height="30">Provide an option to 
+    display <u>animation</u> 
+    in a non-animated presentation mode.</td>
+    <td align="middle">N/A</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">5</b></td>
+    <td height="60"><b><i>Timing</i></b></td>
+    <td align="middle">
+    <p align="center"><b>Yes<br>
+    No<br>
+    Planned<br>
+    N/A</b></td>
+    <td><b>Comments</b></td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">5.1</b></td>
+    <td height="30">Provide an option to 
+    adjust the <u>response times</u> 
+    on timed instructions or allow the instructions to persist.</td>
+    <td align="middle">N/A</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">5.2</b></td>
+    <td height="16">Do not use 
+    <u>flashing or blinking text, 
+    objects, or other elements</u> having a flash 
+    or blink frequency greater than 2 Hz and lower than 55 Hz.</td>
+    <td align="middle">N/A</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">6</b></td>
+    <td height="60"><b><i>Verify 
+    Accessibility</i></b></td>
+    <td>
+    <p align="center"><b>Yes<br>
+    No<br>
+    Planned<br>
+    N/A</b></td>
+    <td><b>Comments</b></td>
+  </tr>
+  <tr>
+    <td><b>
+    <p align="center">6.1</b></td>
+    <td height="16"><u>Test</u> 
+    for accessibility using available tools.</td>
+    <td align="middle">Planned</td>
+    <td>Already tested manually with and without a mouse.  Plan to test with a screen reader</td>
+  </tr>
+</table>
+
+<p>Other bugs raised and fixed in relation to this accessibility review are 
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111053">111053</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111060">111060</a> and
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111063">111063</a>.</p>
+
+</body>
+</html>
