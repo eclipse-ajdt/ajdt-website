@@ -9,6 +9,15 @@ for AspectJ.</description>
 <link>http://www.eclipse.org/ajdt/</link>
 
 <item>
+  <title>Accessibility</title>
+  <description>
+  		AJDT 1.3 has undergone a full accessibility review in anticipation of the upcoming release. 
+		Please see the New Features page for more details.
+  </description>
+  <link>http://www.eclipse.org/ajdt/newfeatures/#accessibility</link>
+</item>
+
+<item>
   <title>AspectJ 5 M4</title>
   <description>
   		The latest AspectJ milestone release is now included in AJDT development
