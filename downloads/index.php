@@ -471,6 +471,29 @@ available via the following Eclipse Update Sites and zip files:</p>
 </p>
 
 <p>
+<b>AJDT builds with AspectJ 1.5.0 M5</b><br>
+<table class="tasklist" width="90%">
+  <tr align="left">
+    <th>Build Name</th>
+    <th>Build Date</th>
+    <th>Build Report</th>
+  </tr>
+
+  <tr>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/dev/update/ajdt_1.3.0.20051116143457_archive.zip">1.3.0.20051116143457 for Eclipse 3.1</a></td>
+    <td width="30%">Wed, 16 Nov 2005 -- 14:34 (+0000)</td>
+    <td width="30%"><i>not available</i></td>
+  </tr>
+  <tr>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/dev/update/ajdt_1.2.1.20051116165827_archive.zip">1.2.1.20051116165827 for Eclipse 3.0</a></td>
+    <td width="30%">Wed, 16 Nov 2005 -- 16:58 (+0000)</td>
+    <td width="30%"><i>not available</i></td>
+  </tr>
+
+</table>
+</p>
+
+<p>
 <b>AJDT builds with AspectJ 1.5.0 M4</b><br>
 <table class="tasklist" width="90%">
   <tr align="left">
