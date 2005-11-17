@@ -9,6 +9,16 @@ for AspectJ.</description>
 <link>http://www.eclipse.org/ajdt/</link>
 
 <item>
+  <title>AspectJ 5 M5</title>
+  <description>
+  		The latest AspectJ milestone release is now included in AJDT development
+		builds. Please see the New Features page for
+		more details.
+  </description>
+  <link>http://www.eclipse.org/ajdt/newfeatures/#compilerM5</link>
+</item>
+
+<item>
   <title>Load-time weaving</title>
   <description>
 	AJDT 1.2.1 and 1.3 now provide support for load-time weaving your applications in Eclipse. 
