@@ -34,6 +34,8 @@
 	  			<li><a href="#q:breakpoints">Why don't breakpoints in around advice work?</a> </li>
 	  			<li><a href="#q:visualiser">How does the Visualiser work?</a> </li>
 	  			<li><a href="#q:errors">Why do I sometimes see errors in the editor but not in the problems view?</a> </li>
+	  			<li><a href="#q:ajfiles">What problems are there for types in .aj files?</a> </li>
+	  			<li><a href="#q:aspectsinjava">What happens if I write my aspects in .java files?</a> </li>
 	  			<li><a href="#q:ant">How do I use Ant to build my AspectJ projects in AJDT?</a> </li>	 
 	  			<li><a href="#q:upgrade">Can I upgrade my AspectJ version?</a> </li>
 			</ol>
@@ -223,6 +225,38 @@
 				Select <em>.java</em> in the right-hand window, then use the section below to change the 
 				default editor.
 			</p>
+		    </li>	
+
+		<a name="q:ajfiles"></a>
+			<li><em>What problems are there for types in .aj files?</em>
+			<p>
+				There are several known issues for types contained in .aj files.
+		
+				<ul>
+				<li>They are not found when using code assist (Ctrl+Space).</li>
+				<li>They are not found when using add import (Ctrl+Shift+M).</li>
+				<li>They are not found when using organize imports (Ctrl+Shift+O).</li>
+				<li>There are no quick fixes available (Ctrl+1).</li>
+				<li>They are not included in Java searches.</li>
+				<li>They are not included in Call Hierarchy lists.</li>		
+				<li>It is not possible to run JUnit tests written in .aj files.</li>		
+				</ul>
+		    </p>
+		    </li>
+	
+		<a name="q:aspectsinjava"></a>
+			<li><em>What happens if I write my aspects in .java files?</em>
+			<p>
+				AJDT does not support aspects written in .java files. Although
+				the compiler will compile them correctly, you will find some
+				loss of functionality in AJDT if you do use .java files for your aspects: 
+				
+				<ul>
+					<li>The Outline and Package Explorer views will not show aspects or their contents.</li>
+					<li>The Cross References view will not show any information for an aspect in a .java file, although it will
+					show information for any classes advised by that aspect.</li>		
+				</ul>
+		    </p>
 		    </li>	
 		    
 		<a name="q:ant"></a>
