@@ -424,16 +424,24 @@ available via the following Eclipse Update Sites and zip files:</p>
   </tr>
 
   <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051108173500_archive.zip">1.3.0.20051108173500 for Eclipse 3.2M3</a></td>
-    <td width="30%">Tue, 8 Nov 2005 -- 17:35 (+0000)</td>
-    <td width="30%"><i>***M<b>3</b> only***</i></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051117105200_archive.zip">1.3.0.20051117105200 for Eclipse 3.2M3</a></td>
+    <td width="30%">Thu, 17 Nov 2005 -- 10:52 (+0000)</td>
+    <td width="30%"><i>***Eclipse M<b>3</b> only***</i></td>
   </tr>
   
+  <tr>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051108173500_archive.zip">1.3.0.20051108173500 for Eclipse 3.2M3</a></td>
+    <td width="30%">Tue, 8 Nov 2005 -- 17:35 (+0000)</td>
+    <td width="30%"><i>***Eclipse M<b>3</b> only***</i></td>
+  </tr>
+  
+  <!--
   <tr>
     <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051013194900_archive.zip">1.3.0.20051013194900 for Eclipse 3.2M2</a></td>
     <td width="30%">Thu, 13 Oct 2005 -- 19:49 (+0100)</td>
     <td width="30%"><i>***M<b>2</b> only***</i></td>
   </tr>
+-->
 
 </table>
 </p>
