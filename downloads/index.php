@@ -68,10 +68,18 @@ function ListDevBuilds($dir){
          # can only determine local daylight savings, which is not necessarily
          # the same as the daylight savings where the build was done
          $daylightsavings = date("I");
-         if ($daylightsavings == "1") {
-           $tzstr = " (+0100)";
+         if ($eclipse == "30") {
+           if ($daylightsavings == "1") {
+             $tzstr = " (+0100)";
+           } else {
+             $tzstr = " (+0000)";
+           }
          } else {
-           $tzstr = " (+0000)";
+            if ($daylightsavings == "1") {
+             $tzstr = " (-0400)";
+           } else {
+             $tzstr = " (-0500)";
+           }       
          }
          #echo "hours = $hours   mins = $mins <br>";  
          $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
