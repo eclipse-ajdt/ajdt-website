@@ -603,21 +603,18 @@
 			   build that builds an entire update site structure in its "dist"
 			   directory. To run the build.xml file inside Eclipse, you need to do
 			   "Run As > Ant Build..." to bring up the run configuration dialog,
-			   then go to the "JRE" tab and select "Run in the same JRE as the
-			   workspace". This is required for the "eclipse.incrementalBuild" Ant
-			   task to work.</p>
+			   then go to the "JRE" tab and choose to run in a separate JRE.</p>
 			
-			   <p>You can now test the built update site as follows:</p>
-			
-			   <ul>
-			     <li>Copy the contents of the dist directory to a clean directory,
-			     outside of your workspace. For example, "ajupdate."</li>
-			
-			     <li>From the help menu of the Eclipse in which you wish to
-			     install the AspectJ feature, choose "Help" &gt; "Software
-			     Updates" &gt; "Find and Install..." and follow the steps outlined
-			     earlier in this section.</li>
-			   </ul>
+			   <p>Those plugins that use aspects in their implementation need
+			   to be built using the AspectJ compiler. To do this the
+			   "iajc" Ant task is used in each of the relevant build.xml files.
+			   For this to run successfully, it needs to be able to locate
+			   the org.aspectj.ajde and org.aspectj.weaver plugins from the
+			   installed version of AJDT. Each build.xml file refers to the
+			   specific version on AJDT installed on the build machine, so unless
+			   you have exactly the same version installed, you need to uncomment
+			   and override the "aspectj.plugin.home" and "aspectj.weaver.home"
+			   properties in the build.xml file from the "UpdateSite" project.</p>
 		    </li>
 		
 		<a name="q:packaging"></a>
