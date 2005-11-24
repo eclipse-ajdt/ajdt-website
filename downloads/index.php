@@ -501,12 +501,12 @@ available via the following Eclipse Update Sites and zip files:</p>
     <td width="30%"><i>not available</i></td>
   </tr>
   <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/dev/update/ajdt_1.3.0.20051116143457_archive.zip">1.3.0.20051116143457 for Eclipse 3.1</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/dev/update/old/ajdt_1.3.0.20051116143457_archive.zip">1.3.0.20051116143457 for Eclipse 3.1</a></td>
     <td width="30%">Wed, 16 Nov 2005 -- 14:34 (+0000)</td>
     <td width="30%"><i>not available</i></td>
   </tr>
   <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/dev/update/ajdt_1.2.1.20051116165827_archive.zip">1.2.1.20051116165827 for Eclipse 3.0</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/dev/update/old/ajdt_1.2.1.20051116165827_archive.zip">1.2.1.20051116165827 for Eclipse 3.0</a></td>
     <td width="30%">Wed, 16 Nov 2005 -- 16:58 (+0000)</td>
     <td width="30%"><i>not available</i></td>
   </tr>
