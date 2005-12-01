@@ -124,8 +124,8 @@ function ListDevBuilds($dir){
 	# End: page-specific settings
 	#
 	
-	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');  
-	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');  
+	# $builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');  
+	# $builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');  
 		
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
