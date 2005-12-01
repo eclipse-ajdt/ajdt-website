@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "AspectJ Development Tools (AJDT)";
+	$pageTitle 		= "AJDT New Features";
 	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development";
 	$pageAuthor		= "Matt Chapman";
 	
@@ -100,6 +100,30 @@ or for further discussion or suggestions please visit the
    </ul>
 
 </p>
+
+	<div class="homeitem3col">
+	<h3>New Features</h3>
+		<ul>
+			<li>
+				<h6>Updated AspectJ Compiler</h6>
+				
+		<p>
+           The AspectJ build included in AJDT has been updated in the following development builds:
+           <br>1.2.1.20051130152622 for Eclipse 3.0
+           <br>1.3.0.20051130095036 for Eclipse 3.1
+        </p>
+        <p>
+           The timestamp of the included AspectJ 5 build is 20051130133549.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2005-11-29&chfieldto=2005-11-30&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
+           list of AspectJ bugs fixed in this build since yesterdays update.</a> This build also includes further
+           work for <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=116679">aspectj bug 116679</a>.
+        </p>
+        
+			</li>
+		</ul>
+	</div>
+
+<br>
 
 <table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
 
