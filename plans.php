@@ -42,24 +42,25 @@
 </p>
 
 <p>
-  Here are some details of recent and upcoming AJDT releases. These are plotted on the
+  Here are some details of recent and upcoming AJDT releases.
+  
+  <!--
+  These are plotted on the
   <a href="http://www.eclipse.org/org/processes/master-timeline.php">Eclipse timeline</a>.
+  -->
+  
   See also the <a href="tasks.html">AJDT Tasks page</a> for some of the features we hope to implement
   in a future release.
 </p>
 
-<table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
-
-    <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">&nbsp;AJDT 1.2</font></b></td>
-  </tr>
-
-   <tr>
-     <td>
+<div class="homeitem3col">
+	<h3>AJDT 1.2</h3>
+		<p>
         Status: Released 10 June 2005<br>
         Eclipse version: 3.0.2<br>
         Platforms: Windows XP, Linux, Mac OS X
-
+		</p>
+		
         <p>
           Release themes:
         </p>
@@ -75,23 +76,16 @@
            for Eclipse 3.0 as necessary, starting with 1.2.1.
         </p>
         
-		<br>
-    
-     </td>
-   </tr>
+</div>
 
-
-    <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">&nbsp;AJDT 1.3</font></b></td>
-  </tr>
-
-   <tr>
-     <td>
-
-        Status: Planned for December 2005 (after the AspectJ 5 release, see <a href="http://www.eclipse.org/aspectj/plans.php">AspectJ plans page</a>)<br>
+<div class="homeitem3col">
+	<h3>AJDT 1.3</h3>
+		<p>
+		Status: Planned for December 2005 (after the AspectJ 5 release, see <a href="http://www.eclipse.org/aspectj/plans.php">AspectJ plans page</a>)<br>
         Eclipse version: 3.1<br>
         Platforms: Windows XP, Linux, Mac OS X
-
+		</p>
+		
         <p>
           Release themes:
         </p>
@@ -102,12 +96,7 @@
            <li>To build on AJDT 1.2 with bug fixes and enhanced function</li>
         </ul>
 
-     
-     </td>
-   </tr>
-
-  
-</table>
+</div>
 
 		<hr class="clearer" />
 	</div>
