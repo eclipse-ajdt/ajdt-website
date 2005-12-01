@@ -76,8 +76,8 @@ function ListDevBuilds($dir){
          
          $base = dirname($file);
          #echo "base = $base <br>";
-         $changesName = "changes-" . $datestr . ".html";
-         $changesFile = $base . "/" . $changesName;
+         $changesName = "changes-" . $datestr;
+         $changesFile = $base . "/" . $changesName . ".html";
          $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName;
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
