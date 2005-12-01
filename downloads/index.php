@@ -129,7 +129,7 @@ function ListDevBuilds($dir){
 
 <STYLE TYPE="text/css">
   .tasklist td { background-color: #EEEEEE; padding: .1em }
-  .tasklist th { color: white; background-color: #0080C0; padding: .1em }
+  .tasklist th { padding: .1em }
 </STYLE>
 
 <div id="maincontent">
