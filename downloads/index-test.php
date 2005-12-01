@@ -30,7 +30,7 @@ function ListDevBuilds($dir){
    @closedir($dir);
    #@closedir($dir31);
    foreach ($files as $file) {
-         echo "<tr><td>\n";
+         $str = $str . "<tr><td>\n";
          
          preg_match('/(\/technology\/.*\.zip)/',$file, $matches);
          $path = $matches[1];
@@ -45,8 +45,8 @@ function ListDevBuilds($dir){
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
          #echo "path = $path <br>";
          #echo "name = $name <br>";
-         echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
-         echo "</td>\n<td width=\"30%\">";
+         $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
+         $str = $str . "</td>\n<td width=\"30%\">";
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          $datestr = $matches[1];
          #echo "date string = " . $datestr . "<br>";
@@ -72,7 +72,7 @@ function ListDevBuilds($dir){
          }
          #echo "hours = $hours   mins = $mins <br>";  
          $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
-         echo $builddate . "</td>";  
+         $str = $str . $builddate . "</td>";  
          
          $base = dirname($file);
          #echo "base = $base <br>";
@@ -82,16 +82,17 @@ function ListDevBuilds($dir){
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
-   				echo "<td width=\"30%\"><a href=\"$changesURL\">$changesName</a>";
+   				$str = $str . "<td width=\"30%\"><a href=\"$changesURL\">$changesName</a>";
    				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
-   				echo "</td></tr>\n";
+   				$str = $str . "</td></tr>\n";
 			 } else {
-   			    echo "<td width=\"30%\"><i>pending...</i></td></tr>\n";
+   			    $str = $str . "<td width=\"30%\"><i>pending...</i></td></tr>\n";
 			 }
          } else {
-             echo "<td width=\"30%\"><i>not available</i></td></tr>\n";
+             $str = $str . "<td width=\"30%\"><i>not available</i></td></tr>\n";
          }
    }
+   return $str;
 }
 	#*****************************************************************************
 	#
@@ -119,6 +120,8 @@ function ListDevBuilds($dir){
 
 	# End: page-specific settings
 	#
+	
+	$test = "hello";
 		
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
@@ -128,7 +131,7 @@ function ListDevBuilds($dir){
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 
-<p>hello 3</p>
+<p>hello 4 $test</p>
 
 	</div>
 </div>
