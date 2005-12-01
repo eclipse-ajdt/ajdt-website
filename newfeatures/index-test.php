@@ -58,6 +58,8 @@ or for further discussion or suggestions please visit the
 <td>
 <p>
 
+<div class="midlist">
+
    <ul>
      <li>November 30, 2005: 
      <a href="#compiler20051130">Updated AspectJ Compiler</a> 
@@ -105,6 +107,8 @@ or for further discussion or suggestions please visit the
      <a href="#pointcuts">Navigation and source hover support for pointcuts</a> 
      </li>
    </ul>
+
+</div>
    
 </p>
 </td>
@@ -115,8 +119,7 @@ or for further discussion or suggestions please visit the
 	<h3>New Features</h3>
 		<ul>
 			<li>
-				<a name="compiler20051130"/>
-				<b>Updated AspectJ Compiler</b>
+				<a name="compiler20051130">Updated AspectJ Compiler</a>
 				
 		<p>
            The AspectJ build included in AJDT has been updated in the following development builds:
@@ -133,8 +136,7 @@ or for further discussion or suggestions please visit the
 			</li>
 			
 			<li>
-			<a name="compiler20051129"/>
-			<b>Updated AspectJ Compiler</b>
+			<a name="compiler20051129">Updated AspectJ Compiler</a>
 			        <p>
            The AspectJ build included in AJDT has been updated in the following development builds:
            <br>1.2.1.20051129174701 for Eclipse 3.0
