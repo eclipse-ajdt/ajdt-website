@@ -26,7 +26,7 @@
 
 	# End: page-specific settings
 
-	$rightcolumn = file_get_contents("rightcolumn.html");
+	$rightcolumn = file_get_contents("../rightcolumn.html");
 		
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML

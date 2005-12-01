@@ -120,7 +120,7 @@ function ListDevBuilds($dir){
 
 	# End: page-specific settings
 
-	$rightcolumn = file_get_contents("rightcolumn.html");
+	$rightcolumn = file_get_contents("../rightcolumn.html");
 	
 	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
 	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
