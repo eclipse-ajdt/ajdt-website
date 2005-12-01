@@ -67,24 +67,24 @@
 			  <li>
       			<a href="newfeatures/#compilerM5">AspectJ 5 M5 now included in AJDT 
 				development builds</a>
-				posted <span class="dates">17-11-05</span>
+				<span class="dates">posted 17-11-05</span>
 			  </li>
 			  
 			  <li>
 			    <a href="newfeatures/#ltw">Support for Load-Time Weaving
 				</a>
-				posted <span class="dates">09-11-05</span>
+				<span class="dates">posted 09-11-05</span>
 			  </li>
 			  
 			  <li>
 			    <a href="newfeatures/#accessibility">Accessibility review
 				</a>
-				posted <span class="dates">31-10-05</span>
+				<span class="dates">posted 31-10-05</span>
 			  </li>
 
 			  <li>
 			    <a href="newfeatures/#i18n">Internationalization: Help Needed!</a>
-				posted <span class="dates">03-10-05</span>
+				<span class="dates">posted 03-10-05</span>
 			  </li>
 
 			  <li>
@@ -92,13 +92,13 @@
        			to help manage changes to the crosscutting structure
        			of your projects.
        			</a>
-       			posted <span class="dates">26-09-05</span>
+       			<span class="dates">posted 26-09-05</span>
 			  </li>
 
 			  <li>
        			<a href="newfeatures/#pointcuts">Navigation and source hovers for pointcuts.
        			</a>
-       			posted <span class="dates">06-09-05</span>			  
+       			<span class="dates">posted 06-09-05</span>			  
 			  </li>
 
 
@@ -109,22 +109,28 @@
 			<h3>Other News and Events</h3>
 			<ul>
 			  <li>
+			    EclipseCon 2006 proposals: <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=227">AJDT talk</a> and
+			    <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=141">AspectJ tutorial</a>
+			    <span class="dates">posted 01-12-05</span>
+			  </li>
+			  
+			  <li>
 			    <a href="http://www.ibm.com/developerworks/java/library/j-aopwork9/">
        			developerWorks article: New AJDT releases ease AOP development</a>
-       			posted <span class="dates">15-08-05</span>
+       			<span class="dates">posted 15-08-05</span>
 			  </li>
 
 			  <li>
  				<a href="http://aosd.net/conference">AOSD'06: Join us at the
  				fifth international conference on AOSD!
  				</a>
- 				posted <span class="dates">13-07-05</span>
+ 				<span class="dates">posted 13-07-05</span>
           	  </li>
           
 			  <li>
 			    <a href="downloads/">AJDT 1.2 released for Eclipse 3.0</a>
 			    See also <a href="whatsnew12/">New and Noteworthy for 1.2</a>
- 			  	posted <span class="dates">10-06-05</span>
+ 			  	<span class="dates">posted 10-06-05</span>
 			  </li>
 			</ul>
 		</div>
