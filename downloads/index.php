@@ -127,6 +127,11 @@ function ListDevBuilds($dir){
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
 
+<STYLE TYPE="text/css">
+  .tasklist td { background-color: #EEEEEE; padding: .1em }
+  .tasklist th { color: white; background-color: #0080C0; padding: .1em }
+</STYLE>
+
 <div id="maincontent">
 	<div id="midcolumn">
 	
