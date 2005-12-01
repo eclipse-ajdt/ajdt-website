@@ -32,8 +32,14 @@
 
 <div id="maincontent">
 	<div id="midcolumn">
-		<h1>$pageTitle</h1>
-		
+	
+	<div align="center"><h1>$pageTitle</h1></div>
+		<table border="0" cellpadding="4">
+          <tr>
+          	<td valign="top"><img border=0 src="logo.gif" width="164" height="229" alt="AJDT screenshot"></td>
+          	<td valign="top">&nbsp;</td>
+            <td valign="top">
+
 		<p>
 		Some aspects of system implementation, such as logging, error
 		handling, standards enforcement and feature variations are
@@ -49,7 +55,12 @@
 		layer between the AspectJ Development Environment Framework and
 		Eclipse/JDT extension points.
 		</p>
-		 
+
+		  	</td>
+          </tr>
+
+        </table>
+			 
 		<div class="homeitem3col">
 			<h3>What's New</h3>
 			<ul>
@@ -76,13 +87,6 @@
 			  </li>
 
 			  <li>
-			    <b>October 11, 2005: AspectJ 5 M4:</b>
-				The latest AspectJ milestone release is now included in AJDT development
-				builds. Please see the <a href="newfeatures/#compilerM4">New Features page</a>
-				for more details.
-			  </li>
-
-			  <li>
 			    <b>October 3, 2005: Internationalization:</b>
 				Recently we have been focusing on improving support for message translations in AJDT. But we need
 				your help with this! Please see the <a href="newfeatures/#i18n">New Features page</a>
@@ -94,22 +98,6 @@
        			The <a href="newfeatures/#comparison">Crosscutting Comparison view</a>
        			and related functionality helps you manage changes to the crosscutting structure
        			of your project.
-			  </li>
-
-			  <li>
-			    <b>September 20, 2005: This week's new AJDT feature:</b>
-       			The <a href="newfeatures/#newaspect">New Aspect wizard</a> now more
-       			closely matches the appearance and
-       			functionality of the New Class wizard, plus it can generate stubs
-       			for pointcuts inherited from an abstract aspect. The version of the
-       			AspectJ compiler included in AJDT has also been updated.
-			  </li>
-
-			  <li>
-			    <b>September 12, 2005: More new features in AJDT:</b>
-       			The <a href="newfeatures/">New Features</a> page has been updated
-       			to cover the filtering capability added to the Cross References view. The version of the
-       			AspectJ compiler included in AJDT has also been updated to the latest development build.
 			  </li>
 
 			  <li>
