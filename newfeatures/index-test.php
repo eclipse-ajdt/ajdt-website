@@ -35,6 +35,8 @@
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 
+<table>
+<tr><td>
 <p>
 <i>Last updated: November 17, 2005</i>
 </p>
@@ -49,7 +51,11 @@ or for further discussion or suggestions please visit the
 - first <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">request a password</a> if you don't have one).
 </p>
 
-<div>
+</td>
+</tr>
+
+<tr>
+<td>
 <p>
 
    <ul>
@@ -99,16 +105,18 @@ or for further discussion or suggestions please visit the
      <a href="#pointcuts">Navigation and source hover support for pointcuts</a> 
      </li>
    </ul>
-
+   
 </p>
-</div>
+</td>
+</tr>
+</table>
 
 	<div class="homeitem3col">
 	<h3>New Features</h3>
 		<ul>
 			<li>
 				<a name="compiler20051130"/>
-				<h5>Updated AspectJ Compiler</h5>
+				<b>Updated AspectJ Compiler</b>
 				
 		<p>
            The AspectJ build included in AJDT has been updated in the following development builds:
@@ -126,7 +134,7 @@ or for further discussion or suggestions please visit the
 			
 			<li>
 			<a name="compiler20051129"/>
-			<h5>Updated AspectJ Compiler</h5>
+			<b>Updated AspectJ Compiler</b>
 			        <p>
            The AspectJ build included in AJDT has been updated in the following development builds:
            <br>1.2.1.20051129174701 for Eclipse 3.0
@@ -141,7 +149,7 @@ or for further discussion or suggestions please visit the
 			
 			<li>
 			<a name="compiler20051124"/>
-			<h5>Updated AspectJ Compiler</h5>
+			<b>Updated AspectJ Compiler</b>
 			        <p>
            The AspectJ build included in AJDT has been updated in the following development builds:
            <br>1.2.1.20051124105700 for Eclipse 3.0
@@ -155,7 +163,19 @@ or for further discussion or suggestions please visit the
 			</li>
 			
 			<li>
-			
+			     <a name="compilerM5"/>
+				<b>AspectJ 5 M5</b>
+
+        <p>
+           AJDT now includes AspectJ 5 M5 as of the following development builds:
+           <br>1.3.0.20051117105200 for Eclipse 3.2M3
+           <br>1.3.0.20051116143457 for Eclipse 3.1
+           <br>1.2.1.20051116165827 for Eclipse 3.0
+        </p>
+        <p>
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&bug_status=RESOLVED&chfieldfrom=2005-10-07&chfieldto=2005-11-16">
+           complete list of resolved issues since M4.</a>
+        </p>
 			</li>
 			
 			<li>
@@ -180,89 +200,6 @@ or for further discussion or suggestions please visit the
 <br>
 
 <table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
-
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="compiler20051130"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">November 30, 2005:</font>
-     <a href="#compiler20051130">
-     <font color="#FFFFFF" face="Arial,Helvetica">Updated AspectJ Compiler</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
-        <p>
-           The AspectJ build included in AJDT has been updated in the following development builds:
-           <br>1.2.1.20051130152622 for Eclipse 3.0
-           <br>1.3.0.20051130095036 for Eclipse 3.1
-        </p>
-        <p>
-           The timestamp of the included AspectJ 5 build is 20051130133549.
-           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2005-11-29&chfieldto=2005-11-30&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
-           list of AspectJ bugs fixed in this build since yesterdays update.</a> This build also includes further
-           work for <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=116679">aspectj bug 116679</a>.
-        </p>
-     </td>
-   </tr>
-
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="compiler20051129"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">November 29, 2005:</font>
-     <a href="#compiler20051129">
-     <font color="#FFFFFF" face="Arial,Helvetica">Updated AspectJ Compiler</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
-        <p>
-           The AspectJ build included in AJDT has been updated in the following development builds:
-           <br>1.2.1.20051129174701 for Eclipse 3.0
-           <br>1.3.0.20051129121844 for Eclipse 3.1
-        </p>
-        <p>
-           The timestamp of the included AspectJ 5 build is 20051129161753.
-           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2005-11-24&chfieldto=2005-11-29&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
-           list of AspectJ bugs fixed in this build since last weeks update.</a>
-        </p>
-     </td>
-   </tr>
-
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="compiler20051124"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">November 24, 2005:</font>
-     <a href="#compiler20051124">
-     <font color="#FFFFFF" face="Arial,Helvetica">Updated AspectJ Compiler</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
-        <p>
-           The AspectJ build included in AJDT has been updated in the following development builds:
-           <br>1.2.1.20051124105700 for Eclipse 3.0
-           <br>1.3.0.20051124045634 for Eclipse 3.1
-        </p>
-        <p>
-           The timestamp of the included AspectJ 5 build is 20051124084452.
-           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2005-11-16&chfieldto=2005-11-24&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
-           list of AspectJ bugs fixed in this build since M5.</a>
-        </p>
-     </td>
-   </tr>
-
    
      <tr>
      <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
