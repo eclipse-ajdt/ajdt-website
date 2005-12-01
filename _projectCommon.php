@@ -7,9 +7,10 @@
 
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
-	$Nav->addNavSeparator("Project Home", 	"downloads.php");
-	$Nav->addCustomNav("Downloads", 	"downloads.php", 	"_self", 2);
-	$Nav->addCustomNav("Installation", 	"install.php", 		"_self", 2);
-	$Nav->addCustomNav("FAQ", 			"faq.php", 			"_self", 2);
+	$Nav->addNavSeparator("AJDT Technology Project", 	"_self");
+	$Nav->addCustomNav("Downloads", 	"downloads/", 	"_self", 2);
+	$Nav->addCustomNav("New Features", 	"newfeatures/", "_self", 2);
+	$Nav->addCustomNav("Demos", 		"demos/", 		"_self", 2);
+	$Nav->addCustomNav("FAQ", 			"faq.html", 	"_self", 2);
 
 ?>

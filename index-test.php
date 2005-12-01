@@ -139,29 +139,32 @@
 	</div>
 	<div id="rightcolumn">
 		<div class="sideitem">
-			<h6>New to Eclipse?</h6>
+			<h6>Links</h6>
 			<ul>
-				<li><a href="#">Community Resources</a></li>
-				<li><a href="#">News Corner</a></li>
-				<li><a href="#">Newsgroup</a></li>
-				<li><a href="#">Registration</a></li>
-				<li><a href="#">Downloads</a></li>
-				<li><a href="#">Legal</a></li>
-				<li><a href="#">Eclipse Roadmap</a></li>
-				<li><a href="#">Document</a></li>
+				<li><a href="http://eclipse.org/aspectj">AspectJ</a></li>
 			</ul>
 		</div>
 		<div class="sideitem">
-			<h6>Project Links</h6>
+			<h6>Developer Resources</h6>
 			<ul>
-				<li><a href="#">Business Intelligence and Reporting</a></li>
-				<li><a href="#">Platform</a></li>
-				<li><a href="#">Technology Project</a></li>
-				<li><a href="#">Test &amp; Performance Tools Platform</a></li>
-				<li><a href="#">Web Tools</a></li>
-				<li><a href="#">Project Proposals</a></li>
-				<li><img src="images/jdj.jpg" width="40" height="42" class="inset" /><a href="#">Cast your vote for Eclipse</a></li>
-				<li><a href="#">Eclipse wins Jolt Award</a><br /><img src="images/jolt.jpg" width="100" height="68" /></li>
+				<li>
+					<a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt">CVS Repository</a>
+				</li>
+				<li>
+					<a href="http://dev.eclipse.org/mailman/listinfo/ajdt-dev">Mailing List</a>
+				</li>
+				<li>
+					<a href="plans.html">Plans</a>
+				</li>
+				<li>
+					<a href="ui.html">UI Design</a>
+				</li>
+				<li>
+					<a href="tasks.html">Work tasks</a>
+				</li>
+				<li>
+					<a href="contributors.html">Contributors</a>
+				</li>
 			</ul>
 		</div>
 	</div>
