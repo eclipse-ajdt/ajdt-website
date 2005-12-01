@@ -145,6 +145,20 @@
 			</ul>
 		</div>
 		<div class="sideitem">
+			<h6>User Resources</h6>
+			<ul>
+				<li>
+					<a href="news://eclipse.org/eclipse.technology.ajdt">Newsgroup</a> (<a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.ajdt">web interface</a>)
+				</li>
+				<li>
+					<a href="http://bugs.eclipse.org/bugs">Bugzilla</a>
+				</li>
+				<li>
+					<a href="http://www.eclipse.org/ajdt/visualiser/">The Visualiser</a>
+				</li>
+			</ul>
+		</div>
+		<div class="sideitem">
 			<h6>Developer Resources</h6>
 			<ul>
 				<li>
