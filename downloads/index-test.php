@@ -1,4 +1,10 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+// Sorts by newest first
+function date_cmp($f1, $f2) {
+   $f1stats=stat($f1);
+   $f2stats=stat($f2);
+   return $f2stats[9]-$f1stats[9];
+}
 
 	#*****************************************************************************
 	#
@@ -35,7 +41,7 @@
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 
-<p>hello</p>
+<p>hello 2</p>
 
 	</div>
 </div>
