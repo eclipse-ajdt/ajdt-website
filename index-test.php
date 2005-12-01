@@ -50,7 +50,7 @@
 		Eclipse/JDT extension points.
 		</p>
 		 
-		<div class="homeitem">
+		<div class="homeitem3col">
 			<h3>What's New</h3>
 			<ul>
 			  <li>
