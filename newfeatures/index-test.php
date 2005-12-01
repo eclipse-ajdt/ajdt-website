@@ -35,12 +35,6 @@
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 
-<table>
-<tr><td>
-<p>
-<i>Last updated: November 17, 2005</i>
-</p>
-
 <p>This page gives details of the latest new features added to the
 <a href="http://www.eclipse.org/ajdt/downloads/#dev">development builds</a>
 of AJDT. If you find any problems with these new features please
@@ -50,13 +44,6 @@ or for further discussion or suggestions please visit the
 (<a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.ajdt">web interface</a> 
 - first <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">request a password</a> if you don't have one).
 </p>
-
-</td>
-</tr>
-
-<tr>
-<td>
-<p>
 
 <div class="midlist">
 
@@ -98,9 +85,6 @@ or for further discussion or suggestions please visit the
      <a href="#newaspect">Updated New Aspect Wizard</a> 
      </li>
      <li>September 12, 2005: 
-     <a href="#compiler20050912">Updated AspectJ Compiler</a> 
-     </li>
-     <li>September 12, 2005: 
      <a href="#xrefFilter">Relationship Filter for Cross References View</a> 
      </li>
      <li>September 6, 2005: 
@@ -109,11 +93,6 @@ or for further discussion or suggestions please visit the
    </ul>
 
 </div>
-   
-</p>
-</td>
-</tr>
-</table>
 
 	<div class="homeitem3col">
 	<h3>New Features</h3>
@@ -150,8 +129,7 @@ or for further discussion or suggestions please visit the
 			</li>
 			
 			<li>
-			<a name="compiler20051124"/>
-			<b>Updated AspectJ Compiler</b>
+			<a name="compiler20051124">Updated AspectJ Compiler</a>
 			        <p>
            The AspectJ build included in AJDT has been updated in the following development builds:
            <br>1.2.1.20051124105700 for Eclipse 3.0
@@ -165,8 +143,7 @@ or for further discussion or suggestions please visit the
 			</li>
 			
 			<li>
-			     <a name="compilerM5"/>
-				<b>AspectJ 5 M5</b>
+			     <a name="compilerM5">AspectJ 5 M5</a>
 
         <p>
            AJDT now includes AspectJ 5 M5 as of the following development builds:
@@ -181,93 +158,20 @@ or for further discussion or suggestions please visit the
 			</li>
 			
 			<li>
-			
-			</li>
-			
-			<li>
-			
-			</li>
-			
-			<li>
-			
-			</li>
-			
-			<li>
-			
-			</li>
-			
-		</ul>
-	</div>
+				<a name="ltw">Load-time Weaving in AJDT</a>
 
-<br>
-
-<table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
-   
-     <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="compilerM5"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">November 17, 2005:</font>
-     <a href="#compilerM5">
-     <font color="#FFFFFF" face="Arial,Helvetica">AspectJ 5 M5</font>
-     </a>
-     </b></td>
-   </tr>
-   
-   <tr>
-     <td>
-        <p>
-           AJDT now includes AspectJ 5 M5 as of the following development builds:
-           <br>1.3.0.20051117105200 for Eclipse 3.2M3
-           <br>1.3.0.20051116143457 for Eclipse 3.1
-           <br>1.2.1.20051116165827 for Eclipse 3.0
-        </p>
-        <p>
-           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&bug_status=RESOLVED&chfieldfrom=2005-10-07&chfieldto=2005-11-16">
-           complete list of resolved issues since M4.</a>
-        </p>
-     </td>
-   </tr>
-   
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="ltw"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">November 9, 2005:</font>
-     <a href="#ltw">
-     <font color="#FFFFFF" face="Arial,Helvetica">Load-time Weaving in AJDT</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
-        <p>
+		<p>
            AJDT now contains support for load-time weaving in both 1.2.1 and 1.3.0.
            We have also created an animated demo to demonstrate this new feature.
            See the <a href="../demos/index.html#LTW-DEMO">demos page</a> for details.
         </p>
        <p><img src="ltwscreenshot.png" width="666" height="580" alt="Screenshot showing the load-time weaving launch configuration"></p>
-		
-     </td>
-   </tr>
-   
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="compiler20051107"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">November 8, 2005:</font>
-     <a href="#compiler20051107">
-     <font color="#FFFFFF" face="Arial,Helvetica">Updated AspectJ Compiler and single JAR files</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
+			
+			</li>
+			
+			<li>
+   				<a name="compiler20051107">Updated AspectJ Compiler and single JAR files</a>
+ 
         <p>
            The AspectJ build included in AJDT has been updated in the following development builds:
            <br>1.2.1.20051108115442 for Eclipse 3.0
@@ -287,23 +191,11 @@ or for further discussion or suggestions please visit the
           be considered
           <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=113948">later.</a>  
         </p>
-     </td>
-   </tr>
-   
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="accessibility"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">October 31, 2005:</font>
-     <a href="#accessibility">
-     <font color="#FFFFFF" face="Arial,Helvetica">Accessibility Review</font>
-     </a>
-     </b></td>
-   </tr>
-   
-   <tr>
-     <td>
+			
+			</li>
+			
+			<li>
+			   <a name="accessibility">Accessibility Review</a>
         <p>
            AJDT 1.3 is now accessibility compliant after undergoing a full review against the
            IBM accessibility checklist.
@@ -318,23 +210,11 @@ or for further discussion or suggestions please visit the
         <p>
         	If you think you have found an accessibility related bug please <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=AJDT">raise a bug</a>
         	with "[Accessibility]" at the start of the summary.
-     </td>
-   </tr>
-
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="compilerM4"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">October 11, 2005:</font>
-     <a href="#compilerM4">
-     <font color="#FFFFFF" face="Arial,Helvetica">AspectJ 5 M4</font>
-     </a>
-     </b></td>
-   </tr>
-   
-   <tr>
-     <td>
+		</p>
+			</li>
+			
+			<li>
+			   <a name="compilerM4">AspectJ 5 M4</a>
         <p>
            AJDT now includes AspectJ 5 M4 as of the following development builds:
            <br>1.3.0.20051011134207 for Eclipse 3.1
@@ -349,23 +229,10 @@ or for further discussion or suggestions please visit the
           change should be that the source code zip files have been moved out from each plug-in, into a separate
           org.eclipse.ajdt.source plug-in.
         </p>
-     </td>
-   </tr>
-   
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="i18n"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">October 3, 2005:</font>
-     <a href="#i18n">
-     <font color="#FFFFFF" face="Arial,Helvetica">Improved internationalization support & call for help!</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
+			</li>
+			
+			<li>
+				<a name="i18n">Improved internationalization support & call for help!</a>
         <p>
         We have made sure that all end-user messages in AJDT are stored in properties
         files instead of being hardcoded. This
@@ -387,23 +254,10 @@ or for further discussion or suggestions please visit the
         200509301030, fixing
         <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2005-09-20&chfieldto=2005-09-30&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">these bugs.</a>
         </p>
-     </td>
-   </tr>
-
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="comparison"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">September 26, 2005:</font>
-     <a href="#comparison">
-     <font color="#FFFFFF" face="Arial,Helvetica">Crosscutting Comparison view</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
+			</li>
+			
+			<li>
+				<a name="comparison">Crosscutting Comparison view</a>
         <p>This feature has been in the development builds of AJDT 1.2.1 and 1.3 for a little while,
         but in case you missed it or are unsure how to use it we've created an
         <a href="../demos/index.html#COMPARISON-DEMO">animated demo</a> available from the AJDT demos page.</p>
@@ -421,24 +275,10 @@ or for further discussion or suggestions please visit the
         <p><img src="comparison.png" width="565" height="165" alt="screenshot showing the Crosscutting Comparison view"></p>
 		</li>
 		</ul>
-     </td>
-   </tr>
-
-
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="compiler20050921"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">September 21, 2005:</font>
-     <a href="#compiler20050921">
-     <font color="#FFFFFF" face="Arial,Helvetica">Updated AspectJ Compiler and new weaver plugin</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
+			</li>
+			
+			<li>
+				<a name="compiler20050921">Updated AspectJ Compiler and new weaver plugin</a>
         <p>
            The AspectJ build included in AJDT has been updated in the following development builds:
            <br>1.2.1.20050921121359 for Eclipse 3.0
@@ -462,24 +302,11 @@ or for further discussion or suggestions please visit the
           directly to the ajde.jar file (from an Ant build file for example)
           you will need to add aspectjweaver.jar from the org.aspectj.weaver
           plugin.
-        </p>
-     </td>
-   </tr>
-
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="newaspect"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">September 20, 2005:</font>
-     <a href="#newaspect">
-     <font color="#FFFFFF" face="Arial,Helvetica">Updated New Aspect Wizard</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
+        </p>			
+			</li>
+			
+			<li>
+				<a name="newaspect">Updated New Aspect Wizard</a>
         <p>
            A new version of the New Aspect wizard is included as of the following development builds:
            <br>1.2.1.20050919172634 for Eclipse 3.0
@@ -505,52 +332,12 @@ or for further discussion or suggestions please visit the
               <br><img src="generatedAspect.png" width="479" height="218" alt="screenshot showing a generated aspect">
            </li>
            </ul>
-        </p>
-     </td>
-   </tr>
  
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="compiler20050912"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">September 12, 2005:</font>
-     <a href="#compiler20050912">
-     <font color="#FFFFFF" face="Arial,Helvetica">Updated AspectJ Compiler</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
-        <p>
-           The AspectJ build included in AJDT has been updated in the following development builds:
-           <br>1.2.1.20050912170252 for Eclipse 3.0
-           <br>1.3.0.20050912140848 for Eclipse 3.1
-        </p>
-        <p>
-           The timestamp of the included AspectJ 5 build is 20050912122907.
-           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2005-08-27&chfieldto=2005-09-12&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-           list of AspectJ bugs fixed in this build since M3a.</a>
-        </p>
-     </td>
-   </tr>
-            
-          
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="xrefFilter"/>
-
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">September 12, 2005:</font>
-     <a href="#xrefilter">
-     <font color="#FFFFFF" face="Arial,Helvetica">Relationship Filter for Cross References View</font>
-     </a>
-     </b></td>
-   </tr>
-
-   <tr>
-     <td>
+ 			</li>
+			
+			<li>
+				<a name="xrefFilter">Relationship Filter for Cross References View</a>
+		<p>
         This was added a while ago, but in case you missed it, it is available in recent
         development builds of 1.2.1 for Eclipse 3.0 and 1.3.0 for Eclipse 3.1.
 		See the
@@ -558,7 +345,6 @@ or for further discussion or suggestions please visit the
 		obtain the latest builds.
 		
 		<p>
-		   
 		   <ul>
 		     <li>
 		     <p>
@@ -596,29 +382,16 @@ or for further discussion or suggestions please visit the
 		     </li>		   
 		   </ul>
 		</p>
-     </td>
-   </tr>
-
-
-
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0">
-     <a name="pointcuts"/>
-     <b>
-     <font color="#FFFFFF" face="Arial,Helvetica">September 6, 2005: </font>
-     <a href="#pointcuts">
-     <font color="#FFFFFF" face="Arial,Helvetica">Navigation and source hover support for pointcuts</font>
-     </a>
-     </b></td>
-     
-   </tr>
-
-   <tr>
-     <td>
+			</li>
+			
+			<li>
+			   <a name="pointcuts">Navigation and source hover support for pointcuts</a>
+		<p>
 		Available in development builds: 1.2.1.20050905225434 for Eclipse 3.0 and
 		1.3.0.20050905154239 for Eclipse 3.1 or later. See the
 		<a href="http://www.eclipse.org/ajdt/downloads/#dev">download page</a> to
 		obtain the latest builds.
+		</p>
 		
 		<p>
 		   This is really 3 features in 1:
@@ -664,15 +437,11 @@ or for further discussion or suggestions please visit the
 		<p>
 		   There may be some limited cases where the referenced pointcut cannot be resolved. Please raise
 		   a bug if you find any, or if anything else goes wrong.
-		</p>
-     </td>
-   </tr>
-
-   <tr>
-     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">&nbsp;</font></b></td>
-   </tr>
-  
-</table>
+		</p>			
+			</li>
+			
+		</ul>
+	</div>
 			
 		<hr class="clearer" />
 	</div>
