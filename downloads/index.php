@@ -78,7 +78,7 @@ function ListDevBuilds($dir){
          #echo "base = $base <br>";
          $changesName = "changes-" . $datestr;
          $changesFile = $base . "/" . $changesName . ".html";
-         $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName;
+         $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName . ".html";
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
