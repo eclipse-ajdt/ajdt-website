@@ -308,7 +308,7 @@ available via the following Eclipse Update Sites and zip files:</p>
 
 EOHTML;
 
-$html2 = <<<EOHTML
+$html2 = <<<EOHTML2
 
 </table>
 </p>
@@ -322,9 +322,9 @@ $html2 = <<<EOHTML
     <th>Build Report</th>
   </tr>
 
-EOHTML;
+EOHTML2;
 
-$html3 = <<<EOHTML
+$html3 = <<<EOHTML3
 
 </table>
 </p>
@@ -485,9 +485,9 @@ required.</p>
 </div>
 
 
-EOHTML;
+EOHTML3;
 
-	$html = $html . $builds31 . $html2 . $builds30 . $html3;
+	# $html = $html . $builds31 . $html2 . $builds30 . $html3;
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
