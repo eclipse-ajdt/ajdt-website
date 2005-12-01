@@ -15,7 +15,7 @@
 	#
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "AJDT New Features";
-	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development";
+	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development, Eclipse";
 	$pageAuthor		= "Matt Chapman";
 	
 	# Add page-specific Nav bars here
