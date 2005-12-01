@@ -119,7 +119,8 @@ function ListDevBuilds($dir){
 	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank", 3);
 
 	# End: page-specific settings
-	#
+
+	$rightcolumn = file_get_contents("rightcolumn.html");
 	
 	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
 	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
@@ -330,51 +331,9 @@ $builds30
 		
 		<hr class="clearer" />
 	</div>
-	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>Links</h6>
-			<ul>
-				<li><a href="http://eclipse.org/aspectj">AspectJ</a></li>
-			</ul>
-		</div>
-		<div class="sideitem">
-			<h6>User Resources</h6>
-			<ul>
-				<li>
-					<a href="news://eclipse.org/eclipse.technology.ajdt">Newsgroup</a> (<a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.ajdt">web interface</a>)
-				</li>
-				<li>
-					<a href="http://bugs.eclipse.org/bugs">Bugzilla</a>
-				</li>
-				<li>
-					<a href="http://www.eclipse.org/ajdt/visualiser/">The Visualiser</a>
-				</li>
-			</ul>
-		</div>
-		<div class="sideitem">
-			<h6>Developer Resources</h6>
-			<ul>
-				<li>
-					<a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt">CVS Repository</a>
-				</li>
-				<li>
-					<a href="http://dev.eclipse.org/mailman/listinfo/ajdt-dev">Mailing List</a>
-				</li>
-				<li>
-					<a href="plans.html">Plans</a>
-				</li>
-				<li>
-					<a href="ui.html">UI Design</a>
-				</li>
-				<li>
-					<a href="tasks.html">Work tasks</a>
-				</li>
-				<li>
-					<a href="contributors.html">Contributors</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+
+$rightcolumn
+
 </div>
 
 EOHTML;
