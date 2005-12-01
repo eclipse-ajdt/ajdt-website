@@ -136,8 +136,30 @@ function ListDevBuilds($dir){
 	<h3>Development builds</h3>
 	<ul>
 		<li>
+			<a>Eclipse 3.2 builds</a>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Build Name</th>
+    			<th>Build Date</th>
+    			<th>Notes</th>
+  			</tr>
+
+  			<tr>
+    			<td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051117105200_archive.zip">1.3.0.20051117105200 for Eclipse 3.2M3</a></td>
+    			<td width="30%">Thu, 17 Nov 2005 -- 10:52 (+0000)</td>
+    			<td width="30%"><i>***Eclipse M<b>3</b> only***</i></td>
+  			</tr>
+  
+  			<tr>
+    			<td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051108173500_archive.zip">1.3.0.20051108173500 for Eclipse 3.2M3</a></td>
+    			<td width="30%">Tue, 8 Nov 2005 -- 17:35 (+0000)</td>
+    			<td width="30%"><i>***Eclipse M<b>3</b> only***</i></td>
+  			</tr>
+  		</li>
+	
+		<li>
 			<a>Eclipse 3.1 builds</a>
-			<table class="tasklist" width="90%">
+			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Build Name</th>
     			<th>Build Date</th>
@@ -151,7 +173,7 @@ $builds31
 		
 		<li>
 			<a>Eclipse 3.0 builds</a>
-			<table class="tasklist" width="90%">
+			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Build Name</th>
     			<th>Build Date</th>
