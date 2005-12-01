@@ -9,6 +9,8 @@ function date_cmp($f1, $f2) {
 function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
    
+   $str="";
+   
    #$dir30="$dir/30/dev/update";
    $root=opendir($dir) or die("Check $dir !");
    while (false!== ($file=readdir($root))) {
@@ -30,7 +32,7 @@ function ListDevBuilds($dir){
    @closedir($dir);
    #@closedir($dir31);
    foreach ($files as $file) {
-         echo "<tr><td>\n";
+         $str = $str . "<tr><td>\n";
          
          preg_match('/(\/technology\/.*\.zip)/',$file, $matches);
          $path = $matches[1];
@@ -45,8 +47,8 @@ function ListDevBuilds($dir){
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
          #echo "path = $path <br>";
          #echo "name = $name <br>";
-         echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
-         echo "</td>\n<td width=\"30%\">";
+         $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
+         $str = $str . "</td>\n<td width=\"30%\">";
          preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
          $datestr = $matches[1];
          #echo "date string = " . $datestr . "<br>";
@@ -72,7 +74,7 @@ function ListDevBuilds($dir){
          }
          #echo "hours = $hours   mins = $mins <br>";  
          $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
-         echo $builddate . "</td>";  
+         $str = $str . $builddate . "</td>";  
          
          $base = dirname($file);
          #echo "base = $base <br>";
@@ -82,19 +84,18 @@ function ListDevBuilds($dir){
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
-   				echo "<td width=\"30%\"><a href=\"$changesURL\">$changesName</a>";
+   				$str = $str . "<td width=\"30%\"><a href=\"$changesURL\">$changesName</a>";
    				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
-   				echo "</td></tr>\n";
+   				$str = $str . "</td></tr>\n";
 			 } else {
-   			    echo "<td width=\"30%\"><i>pending...</i></td></tr>\n";
+   			    $str = $str . "<td width=\"30%\"><i>pending...</i></td></tr>\n";
 			 }
          } else {
-             echo "<td width=\"30%\"><i>not available</i></td></tr>\n";
+             $str = $str . "<td width=\"30%\"><i>not available</i></td></tr>\n";
          }
    }
+   return $str;
 }
-?>
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
 	#
@@ -122,6 +123,9 @@ function ListDevBuilds($dir){
 
 	# End: page-specific settings
 	#
+	
+	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');  
+	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');  
 		
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
@@ -238,171 +242,6 @@ found).<br><br></p>
     </td>
   </tr>
 
-<!--  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="999999"><b><font color="#FFFFFF" face="Arial,Helvetica">Milestone Builds</font></b></td>
-  </tr>
-
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
-
-<p>Note that there are two builds of 1.2.0M3 and 1.2.0M2, one for Eclipse 3.0, and one for Eclipse 3.1. Please be sure to use the right one.</p>
-
-<table border="1" cellpadding="3" cellspacing="0" width="90%">
-  <tr>
-    <td BGCOLOR="#0080C0"" width="25%"><b><font color="#FFFFFF">AJDT Version:</font></b></td><td colspan="2">1.2.0RC2 for Eclipse 3.0.2</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Release Date:</font></b></td><td colspan="2">June 3, 2005</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Eclipse Version:</font></b></td><td colspan="2">3.0.2</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Zip file:</font></b></td>
-    <td colspan="2"><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.0RC2_archive.zip">ajdt_1.2.0RC2_archive.zip</a></td>
-  </tr>
-
-</table>
-
-<p></p>
-
-<table border="1" cellpadding="3" cellspacing="0" width="90%">
-  <tr>
-    <td BGCOLOR="#0080C0"" width="25%"><b><font color="#FFFFFF">AJDT Version:</font></b></td><td colspan="2">1.2.0RC1 for Eclipse 3.0.2</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Release Date:</font></b></td><td colspan="2">May 17, 2005</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Eclipse Version:</font></b></td><td colspan="2">3.0.2</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Zip file:</font></b></td>
-    <td colspan="2"><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.0RC1_archive.zip">ajdt_1.2.0RC1_archive.zip</a></td>
-  </tr>
-
-</table>
-
-
-<p></p>
-
-<table border="1" cellpadding="3" cellspacing="0" width="90%">
-  <tr>
-    <td BGCOLOR="#0080C0"" width="25%"><b><font color="#FFFFFF">AJDT Version:</font></b></td><td colspan="2">1.2.0M3 for Eclipse 3.0.2</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Release Date:</font></b></td><td colspan="2">April 13, 2005</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Eclipse Version:</font></b></td><td colspan="2">3.0.2</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Zip file:</font></b></td>
-    <td colspan="2"><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.0M3_archive.zip">ajdt_1.2.0M3_archive.zip</a></td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0""><b><font color="#FFFFFF">More info:</font></b></td><td><a href="http://www.eclipse.org/ajdt/whatsnew120M3/">New & Noteworthy</a></td><td><a href="http://www.eclipse.org/ajdt/releasenotes120M3.html">Release Notes</a></td>
-  </tr>
-
-</table>
-
-
-<p></p>
-
-
-<table border="1" cellpadding="3" cellspacing="0" width="90%">
-  <tr>
-    <td BGCOLOR="#0080C0"" width="25%"><b><font color="#FFFFFF">AJDT Version:</font></b></td><td colspan="2">1.2.0M3 for Eclipse 3.1M6</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Release Date:</font></b></td><td colspan="2">April 13, 2005</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Eclipse Version:</font></b></td><td colspan="2">3.1M6 only</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Update Site URL:</font></b></td>
-    <td colspan="2"><code>http://download.eclipse.org/technology/ajdt/31/update</code></td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Zip file:</font></b></td>
-    <td colspan="2"><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.2.0M3_archive.zip">ajdt_1.2.0M3_archive.zip</a></td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0""><b><font color="#FFFFFF">More info:</font></b></td><td><a href="http://www.eclipse.org/ajdt/whatsnew120M3/">New & Noteworthy</a></td><td><a href="http://www.eclipse.org/ajdt/releasenotes120M3.html">Release Notes</a></td>
-  </tr>
-</table>
-
-
-<p></p>
-
-
-<table border="1" cellpadding="3" cellspacing="0" width="90%">
-  <tr>
-    <td BGCOLOR="#0080C0"" width="25%"><b><font color="#FFFFFF">AJDT Version:</font></b></td><td colspan="2">1.2.0M2 for Eclipse 3.0.1</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Release Date:</font></b></td><td colspan="2">December 14, 2004</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Eclipse Version:</font></b></td><td colspan="2">3.0.1</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Zip file:</font></b></td>
-    <td colspan="2"><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.0M2_archive.zip">ajdt_1.2.0M2_archive.zip</a></td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0""><b><font color="#FFFFFF">More info:</font></b></td><td><a href="http://www.eclipse.org/ajdt/whatsnew120M2/">New & Noteworthy</a></td><td><a href="http://www.eclipse.org/ajdt/releasenotes120M2.html">Release Notes</a></td>
-  </tr>
-
-</table>
-
-
-<p></p>
-
-
-<table border="1" cellpadding="3" cellspacing="0" width="90%">
-  <tr>
-    <td BGCOLOR="#0080C0"" width="25%"><b><font color="#FFFFFF">AJDT Version:</font></b></td><td colspan="2">1.2.0M2 for Eclipse 3.1M3</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Release Date:</font></b></td><td colspan="2">December 14, 2004</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Eclipse Version:</font></b></td><td colspan="2">3.1M3 (M3 only, no other 3.1 milestone build will work, earlier or later)</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Zip file:</font></b></td>
-    <td colspan="2"><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.2.0M2_archive.zip">ajdt_1.2.0M2_archive.zip</a></td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0""><b><font color="#FFFFFF">More info:</font></b></td><td><a href="http://www.eclipse.org/ajdt/whatsnew120M2/">New & Noteworthy</a></td><td><a href="http://www.eclipse.org/ajdt/releasenotes120M2.html">Release Notes</a></td>
-  </tr>
-</table>
-
-
-<p></p>
-
-
-<table border="1" cellpadding="3" cellspacing="0" width="90%">
-  <tr>
-    <td BGCOLOR="#0080C0"" width="25%"><b><font color="#FFFFFF">AJDT Version:</font></b></td><td colspan="2">1.2.0M1 for Eclipse 3.0.1</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Release Date:</font></b></td><td colspan="2">October 13, 2004</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Eclipse Version:</font></b></td><td colspan="2">3.0.1</td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0"><b><font color="#FFFFFF">Zip file:</font></b></td>
-    <td colspan="2"><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.0M1_archive.zip">ajdt_1.2.0M1_archive.zip</a></td>
-  </tr>
-  <tr>
-    <td BGCOLOR="#0080C0""><b><font color="#FFFFFF">More info:</font></b></td><td><a href="http://www.eclipse.org/ajdt/whatsnew120M1/">New & Noteworthy</a></td><td><a href="http://www.eclipse.org/ajdt/releasenotes120M1.html">Release Notes</a></td>
-  </tr>
-</table>-->
-
 <p></p>
 
     </td>
@@ -454,14 +293,6 @@ available via the following Eclipse Update Sites and zip files:</p>
     <td width="30%">Tue, 8 Nov 2005 -- 17:35 (+0000)</td>
     <td width="30%"><i>***Eclipse M<b>3</b> only***</i></td>
   </tr>
-  
-  <!--
-  <tr>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051013194900_archive.zip">1.3.0.20051013194900 for Eclipse 3.2M2</a></td>
-    <td width="30%">Thu, 13 Oct 2005 -- 19:49 (+0100)</td>
-    <td width="30%"><i>***M<b>2</b> only***</i></td>
-  </tr>
--->
 
 </table>
 </p>
@@ -474,10 +305,10 @@ available via the following Eclipse Update Sites and zip files:</p>
     <th>Build Date</th>
     <th>Build Report</th>
   </tr>
-   
-<?php
-  ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');  
-?>
+
+EOHTML;
+
+$html = $html . $builds31 . <<<EOHTML
 
 </table>
 </p>
@@ -490,10 +321,10 @@ available via the following Eclipse Update Sites and zip files:</p>
     <th>Build Date</th>
     <th>Build Report</th>
   </tr>
-   
-<?php
-  ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');  
-?>
+
+EOHTML;
+
+$html = $html . $builds30 . <<<EOHTML
 
 </table>
 </p>
