@@ -36,6 +36,7 @@
 	<div align="center"><h1>$pageTitle</h1></div>
 
 <p>This page contains four AJDT demonstrations:
+<div class="midlist">
 <ul>
  <li>A very simple <a href="#HELLOWORLD-DEMO">HelloWorld</a> demo.</li>
  <li>A tour of the <a href="#VISUALISER-DEMO">Visualiser.</a></li>
@@ -47,6 +48,7 @@
      a common component.
  </li>
 </ul>
+</div>
 </p>
 
 
