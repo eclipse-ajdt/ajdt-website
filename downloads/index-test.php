@@ -5,7 +5,94 @@ function date_cmp($f1, $f2) {
    $f2stats=stat($f2);
    return $f2stats[9]-$f1stats[9];
 }
+// return entries in the directory that represent dev builds
+function ListDevBuilds($dir){
+   ini_set("max_execution_time",10);
+   
+   #$dir30="$dir/30/dev/update";
+   $root=opendir($dir) or die("Check $dir !");
+   while (false!== ($file=readdir($root))) {
+     if($file=="." || $file=="..") {continue;}
+      if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
+         $files[]="$dir/$file";
+      }
+   } 
+   #$dir31="$dir/31/dev/update";
+   #$root=opendir($dir31) or die("Check $dir31 !");
+   #while (false!== ($file=readdir($root))) {
+   #  if($file=="." || $file=="..") {continue;}
+   #   if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
+   #      $files[]="$dir31/$file";
+   #   }
+   #}
 
+   usort($files, "date_cmp");
+   @closedir($dir);
+   #@closedir($dir31);
+   foreach ($files as $file) {
+         echo "<tr><td>\n";
+         
+         preg_match('/(\/technology\/.*\.zip)/',$file, $matches);
+         $path = $matches[1];
+		 preg_match('/ajdt\/(\\d\\d)\/dev/',$file, $matches);
+		 $eclipse = $matches[1];
+		 if ($eclipse == "30") {
+		   $eclipsename = "3.0";
+		 } else {
+		   $eclipsename = "3.1";
+		 }
+         preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
+		 $name = $matches[1] . " for Eclipse " . $eclipsename;
+         #echo "path = $path <br>";
+         #echo "name = $name <br>";
+         echo "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
+         echo "</td>\n<td width=\"30%\">";
+         preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
+         $datestr = $matches[1];
+         #echo "date string = " . $datestr . "<br>";
+         $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
+         $datetime = strtotime($dashes);
+         $hours = substr($datestr,8,2);
+         $mins = substr($datestr,10,2);         
+         # can only determine local daylight savings, which is not necessarily
+         # the same as the daylight savings where the build was done
+         $daylightsavings = date("I");
+         if ($eclipse == "30") {
+           if ($daylightsavings == "1") {
+             $tzstr = " (+0100)";
+           } else {
+             $tzstr = " (+0000)";
+           }
+         } else {
+            if ($daylightsavings == "1") {
+             $tzstr = " (-0400)";
+           } else {
+             $tzstr = " (-0500)";
+           }       
+         }
+         #echo "hours = $hours   mins = $mins <br>";  
+         $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
+         echo $builddate . "</td>";  
+         
+         $base = dirname($file);
+         #echo "base = $base <br>";
+         $changesName = "changes-" . $datestr . ".html";
+         $changesFile = $base . "/" . $changesName;
+         $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName;
+         #echo "changes file = $changesFile";
+         if (file_exists($changesFile)) {            
+             if (is_readable($changesFile)) {
+   				echo "<td width=\"30%\"><a href=\"$changesURL\">$changesName</a>";
+   				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
+   				echo "</td></tr>\n";
+			 } else {
+   			    echo "<td width=\"30%\"><i>pending...</i></td></tr>\n";
+			 }
+         } else {
+             echo "<td width=\"30%\"><i>not available</i></td></tr>\n";
+         }
+   }
+}
 	#*****************************************************************************
 	#
 	# template.php
@@ -41,7 +128,7 @@ function date_cmp($f1, $f2) {
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 
-<p>hello 2</p>
+<p>hello 3</p>
 
 	</div>
 </div>
