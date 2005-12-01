@@ -49,6 +49,7 @@ or for further discussion or suggestions please visit the
 - first <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">request a password</a> if you don't have one).
 </p>
 
+<div>
 <p>
 
    <ul>
@@ -100,12 +101,14 @@ or for further discussion or suggestions please visit the
    </ul>
 
 </p>
+</div>
 
 	<div class="homeitem3col">
 	<h3>New Features</h3>
 		<ul>
 			<li>
-				<h6>Updated AspectJ Compiler</h6>
+				<a name="compiler20051130"/>
+				<h5>Updated AspectJ Compiler</h5>
 				
 		<p>
            The AspectJ build included in AJDT has been updated in the following development builds:
@@ -120,6 +123,57 @@ or for further discussion or suggestions please visit the
         </p>
         
 			</li>
+			
+			<li>
+			<a name="compiler20051129"/>
+			<h5>Updated AspectJ Compiler</h5>
+			        <p>
+           The AspectJ build included in AJDT has been updated in the following development builds:
+           <br>1.2.1.20051129174701 for Eclipse 3.0
+           <br>1.3.0.20051129121844 for Eclipse 3.1
+        </p>
+        <p>
+           The timestamp of the included AspectJ 5 build is 20051129161753.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2005-11-24&chfieldto=2005-11-29&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
+           list of AspectJ bugs fixed in this build since last weeks update.</a>
+        </p>
+			</li>
+			
+			<li>
+			<a name="compiler20051124"/>
+			<h5>Updated AspectJ Compiler</h5>
+			        <p>
+           The AspectJ build included in AJDT has been updated in the following development builds:
+           <br>1.2.1.20051124105700 for Eclipse 3.0
+           <br>1.3.0.20051124045634 for Eclipse 3.1
+        </p>
+        <p>
+           The timestamp of the included AspectJ 5 build is 20051124084452.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2005-11-16&chfieldto=2005-11-24&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
+           list of AspectJ bugs fixed in this build since M5.</a>
+        </p>
+			</li>
+			
+			<li>
+			
+			</li>
+			
+			<li>
+			
+			</li>
+			
+			<li>
+			
+			</li>
+			
+			<li>
+			
+			</li>
+			
+			<li>
+			
+			</li>
+			
 		</ul>
 	</div>
 
