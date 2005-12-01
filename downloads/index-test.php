@@ -133,6 +133,92 @@ function ListDevBuilds($dir){
 	<div align="center"><h1>$pageTitle</h1></div>
 
 	<div class="homeitem3col">
+	<h3>Release builds</h3>
+	<ul>
+		<li>
+			<a>AJDT 1.2</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th width="25%">AJDT Version:</th><td>1.2 for Eclipse 3.0</td>
+  </tr>
+  <tr>
+    <th>Release Date:</th><td>June 10, 2005</td>
+  </tr>
+  <tr>
+    <th>Eclipse Version:</th><td>3.0.2</td>
+  </tr>
+  <tr>
+    <th>Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/technology/ajdt/30/update</code></td>
+  </tr>
+  <tr>
+    <th>Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2_for_eclipse_3.0.zip">ajdt_1.2_for_eclipse_3.0.zip</a></td>
+  </tr>
+  <tr>
+    <th>More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew12/">New & Noteworthy</a></td>
+  </tr>
+</table>
+
+		</li>
+
+		<li>
+			<a>AJDT 1.1.12</a>
+			
+<table class="tasklist" width="80%">
+  <tr>
+    <th width="25%">AJDT Version:</th><td>1.1.12 for Eclipse 3.0</td>
+  </tr>
+  <tr>
+    <th>Release Date:</th><td>August 13, 2004</td>
+  </tr>
+  <tr>
+    <th>Eclipse Version:</th><td>3.0.0</td>
+  </tr>
+  <tr>
+    <th>Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/technology/ajdt/30/update</code></td>
+  </tr>
+  <tr>
+    <th>Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.1.12_archive.zip">ajdt_1.1.12_archive.zip</a></td>
+  </tr>
+  <tr>
+    <th>More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew1112/">New & Noteworthy</a></td>
+  </tr>
+</table>
+		
+		</li>
+
+		<li>
+			<a>AJDT 1.1.12</a>
+			
+<table class="tasklist" width="80%">
+  <tr>
+    <th width="25%">AJDT Version:</th><td>1.1.4 for Eclipse 2.1</td>
+  </tr>
+  <tr>
+    <th>Release Date:</th><td>September 22, 2003</td>
+  </tr>
+  <tr>
+    <th>Eclipse Version:</th><td>2.1</td>
+  </tr>
+  <tr>
+    <th>Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/technology/ajdt/update</code></td>
+  </tr>
+  <tr>
+    <th>Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/update/ajdt_1.1.4_archive.zip">ajdt_1.1.4_archive.zip</a></td>
+  </tr>
+</table>
+
+		</li>
+	</ul>
+	</div>
+	
+	<div class="homeitem3col">
 	<h3>Development builds</h3>
 	<ul>
 		<li>
@@ -140,14 +226,14 @@ function ListDevBuilds($dir){
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Build Name</th>
-    			<th>Build Date</th>
-    			<th>Notes</th>
+    			<th width="30%">Build Date</th>
+    			<th width="30%">Notes</th>
   			</tr>
 
   			<tr>
     			<td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051117105200_archive.zip">1.3.0.20051117105200 for Eclipse 3.2M3</a></td>
-    			<td width="30%">Thu, 17 Nov 2005 -- 10:52 (+0000)</td>
-    			<td width="30%"><i>***Eclipse M<b>3</b> only***</i></td>
+    			<td>Thu, 17 Nov 2005 -- 10:52 (+0000)</td>
+    			<td><i>***Eclipse M<b>3</b> only***</i></td>
   			</tr>
   
   			<tr>
@@ -162,8 +248,8 @@ function ListDevBuilds($dir){
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Build Name</th>
-    			<th>Build Date</th>
-    			<th>Build Report</th>
+    			<th width="30%">Build Date</th>
+    			<th width="30%">Build Report</th>
   			</tr>
 
 $builds31
@@ -176,8 +262,8 @@ $builds31
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Build Name</th>
-    			<th>Build Date</th>
-    			<th>Build Report</th>
+    			<th width="30%">Build Date</th>
+    			<th width="30%">Build Report</th>
   			</tr>
 
 $builds30
@@ -185,9 +271,7 @@ $builds30
 			</table>
 		</li>
 	</ul>
-
-
-</p>
+	</div>
 
 	</div>
 </div>
