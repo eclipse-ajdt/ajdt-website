@@ -68,7 +68,7 @@
 We now have AspectJ run configuration support. We need to determine
 what to add to this to support load time weaving.
 </td>
-<td>Completed</td>
+<td>Completed (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=71066">bug&nbsp;71066</a>)</td>
 <td>Sian January</td>
 <td>1.2.1</td>
 </tr>
