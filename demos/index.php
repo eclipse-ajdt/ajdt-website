@@ -189,6 +189,7 @@ of your project. Click on the image below to start the demo.</p>
         change and evolve an aspect-based tracing policy. 
 
 </li></ul>
+</div>
 
 		<hr class="clearer" />
 	</div>
