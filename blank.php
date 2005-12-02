@@ -37,6 +37,8 @@
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 
+<!-- Insert contents here -->
+
 		<hr class="clearer" />
 	</div>
 
