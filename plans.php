@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "AspectJ Development Tools (AJDT)";
+	$pageTitle 		= "AJDT Plans";
 	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development, Eclipse";
 	$pageAuthor		= "Matt Chapman";
 	
