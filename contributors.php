@@ -40,7 +40,7 @@
 	<p> We are grateful to the following for their contributions to the AJDT project:<br>
 	</p>
 
-	<div class="homeitem3col">
+	<div class="homeitem">
 		<h3>Core Contributors</h3>
 		<div align="center">
 			<table border="1" cellpadding="2">
@@ -98,7 +98,7 @@
 		</div>
 	</div>
 
-	<div class="homeitem3col">
+	<div class="homeitem">
 		<h3>Other Contributors</h3>
 		<div align="center">
 			<table border="1" cellpadding="2">
