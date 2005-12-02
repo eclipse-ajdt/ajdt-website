@@ -53,8 +53,7 @@
 </p>
 
 	<div class="homeitem3col">
-	<h3>Demonstration: HelloWorld</h3>
-	<a name="HELLOWORLD-DEMO"/>
+	<h3><a name="HELLOWORLD-DEMO">Demonstration: HelloWorld</a></h3>
 		
 	<p>This very small demo (about 1MB) gives you a first look at
 	AJDT. Click on the image below to go to the demo.</p>
@@ -62,8 +61,10 @@
 <p align=center>
 <a href="HelloWorldDemo.html"><img src="HelloWorldDemo.png" width="450" height="354" border="0"></a>
 </p>
-    
-    <h3><a name="VISUALISER-DEMO"/>Demonstration: The Visualiser</h3>
+
+</div>    
+<div class="homeitem3col">
+	    <h3><a name="VISUALISER-DEMO">Demonstration: The Visualiser</a></h3>
   
 <p>This small demo (just over 1MB) shows you how to use the Visualiser with your AspectJ projects.
 It shows the latest look and feel from AJDT 1.2.0M1. Click on the image below to go to the demo.</p>
@@ -72,13 +73,13 @@ It shows the latest look and feel from AJDT 1.2.0M1. Click on the image below to
 <a href="VisualiserDemo.html"><img src="VisualiserDemo.png" width="450" height="321" border="0"></a>
 </p>
 
-    <h3><a name="COMPARISON-DEMO"/>Demonstration: The Crosscutting Comparison view</h3>
+
+</div>    
+<div class="homeitem3col">
+    <h3><a name="COMPARISON-DEMO">Demonstration: The Crosscutting Comparison view</a></h3>
   
 
-  
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
-
-<p>This demo (about 2MB) shows how to use the Crosscutting Comparison view from AJDT 1.2.1 and 1.3.
+  <p>This demo (about 2MB) shows how to use the Crosscutting Comparison view from AJDT 1.2.1 and 1.3.
 This feature is designed to help you detect and keep track of changes to the crosscutting structure
 of your project. Click on the image below to start the demo.</p>
 
@@ -86,16 +87,10 @@ of your project. Click on the image below to start the demo.</p>
 <a href="comparison.html"><img src="ComparisonDemo.png" width="450" height="336" border="0"></a>
 </p>
     
+</div>    
+<div class="homeitem3col">
+    <h3><a name="LTW-DEMO">Demonstration: Load-time Weaving</a></h3>
   
-
-  
-  
-    <h3><a name="LTW-DEMO"/>Demonstration: Load-time Weaving</h3>
-  
-
-  
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
-
 <p>This demo (about 1MB) shows how do load-time weaving in AJDT 1.2.1 and 1.3.
  Click on the image below to start the demo.</p>
 
@@ -103,9 +98,10 @@ of your project. Click on the image below to start the demo.</p>
 <a href="LTWDemo.html"><img src="LTWDemo.png" width="450" height="353" border="0"></a>
 </p>
     
-  
-  
-    <h3><a name="OBSERVER-DEMO"/>Demonstration: Developing with AspectJ and AJDT</h3>
+
+</div>    
+<div class="homeitem3col">  
+    <h3><a name="OBSERVER-DEMO">Demonstration: Developing with AspectJ and AJDT</a></h3>
    
     
        <p>This demonstration shows the use of AspectJ and AJDT to
@@ -147,14 +143,11 @@ of your project. Click on the image below to start the demo.</p>
        cannot be accidently comprised by subsequent program maintenance.
 </li></ul>       
 
+</div>    
+<div class="homeitem3col">  
+      <h3><a name="WSIF-DEMO">Demonstration: Using an Aspect Library</a></h3>
 
-
-  
-    <h3><a name="WSIF-DEMO"/>Demonstration: Using an Aspect Library</h3>
-
-
-  
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
+      <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
 
        <p>This demonstration shows the use of AspectJ and AJDT with
        aspects from an aspect library to add WebSphere common services to
