@@ -14,8 +14,8 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "AspectJ Development Tools (AJDT)";
-	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development, Eclipse";
+	$pageTitle 		= "AJDT Tasks";
+	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development, Eclipse, Tasks";
 	$pageAuthor		= "Matt Chapman";
 	
 	# Add page-specific Nav bars here
@@ -36,8 +36,6 @@
 	<div id="midcolumn">
 	
 	<div align="center"><h1>$pageTitle</h1></div>
-
-<!-- Insert contents here -->
 
 		<p>This page contains a list of AJDT feature development tasks pending or
 		recently completed. Anyone is welcome to contribute to the project, either
