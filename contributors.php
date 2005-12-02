@@ -101,7 +101,7 @@
 	<div class="homeitem">
 		<h3>Other Contributors</h3>
 		<div align="center">
-			<table border="1" cellpadding="2">
+			<table>
 <tr>
         <td>Ben Dalziel
 	    </td>
