@@ -52,48 +52,30 @@
 </div>
 </p>
 
-
-<table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
-
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica"><a name="HELLOWORLD-DEMO"/>&nbsp;Demonstration: HelloWorld</font></b></td>
-  </tr>
-
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
-
-<p>This very small demo (about 1MB) gives you a first look at
-AJDT. Click on the image below to go to the demo.</p>
+	<div class="homeitem3col">
+	<h3>Demonstration: HelloWorld</h3>
+	<a name="HELLOWORLD-DEMO"/>
+		
+	<p>This very small demo (about 1MB) gives you a first look at
+	AJDT. Click on the image below to go to the demo.</p>
 
 <p align=center>
 <a href="HelloWorldDemo.html"><img src="HelloWorldDemo.png" width="450" height="354" border="0"></a>
 </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica"><a name="VISUALISER-DEMO"/>&nbsp;Demonstration: The Visualiser</font></b></td>
-  </tr>
-
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
-
+    
+    <h3><a name="VISUALISER-DEMO"/>Demonstration: The Visualiser</h3>
+  
 <p>This small demo (just over 1MB) shows you how to use the Visualiser with your AspectJ projects.
 It shows the latest look and feel from AJDT 1.2.0M1. Click on the image below to go to the demo.</p>
 
 <p align=center>
 <a href="VisualiserDemo.html"><img src="VisualiserDemo.png" width="450" height="321" border="0"></a>
 </p>
-    </td>
-  </tr>
 
+    <h3><a name="COMPARISON-DEMO"/>Demonstration: The Crosscutting Comparison view</h3>
+  
 
-
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica"><a name="COMPARISON-DEMO"/>&nbsp;Demonstration: The Crosscutting Comparison view</font></b></td>
-  </tr>
-
-  <tr>
+  
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
 
 <p>This demo (about 2MB) shows how to use the Crosscutting Comparison view from AJDT 1.2.1 and 1.3.
@@ -103,15 +85,15 @@ of your project. Click on the image below to start the demo.</p>
 <p align=center>
 <a href="comparison.html"><img src="ComparisonDemo.png" width="450" height="336" border="0"></a>
 </p>
-    </td>
-  </tr>
+    
+  
 
   
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica"><a name="LTW-DEMO"/>&nbsp;Demonstration: Load-time Weaving</font></b></td>
-  </tr>
+  
+    <h3><a name="LTW-DEMO"/>Demonstration: Load-time Weaving</h3>
+  
 
-  <tr>
+  
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
 
 <p>This demo (about 1MB) shows how do load-time weaving in AJDT 1.2.1 and 1.3.
@@ -120,18 +102,12 @@ of your project. Click on the image below to start the demo.</p>
 <p align=center>
 <a href="LTWDemo.html"><img src="LTWDemo.png" width="450" height="353" border="0"></a>
 </p>
-    </td>
-  </tr>
-
-
-
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica"><a name="OBSERVER-DEMO"/>&nbsp;Demonstration: Developing with AspectJ and AJDT</font></b></td>
-  </tr>
-
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
-
+    
+  
+  
+    <h3><a name="OBSERVER-DEMO"/>Demonstration: Developing with AspectJ and AJDT</h3>
+   
+    
        <p>This demonstration shows the use of AspectJ and AJDT to
        refactor a crosscutting concern (view notification) in a simple
        insurance application. The demo is about 18MB in size (split
@@ -143,73 +119,41 @@ of your project. Click on the image below to start the demo.</p>
        </a>
        </p>
 
-       <table cellSpacing="5" cellPadding="2" width="100%" border="0">
-
-	<tr>
-          <td vAlign="top" align="left" height="12" width="23">
-          <img src="http://eclipse.org/images/Adarrow.gif" border="0" 
-               width="16" height="16"></td>
-          <td colspan="2"  valign="top">
-
+<ul><li>
        In <a href="ajdt-ins1.html">part 1</a>, we introduce the insurance 
        application and show you how to
        convert an existing Java project in the Eclipse workspace to an 
        AspectJ project. We also demonstrate how to create a new aspect using
        the New Aspect Wizard.
+</li><li>
 
-          </td>
-       </tr>
-	<tr>
-          <td vAlign="top" align="left" height="12" width="23">
-          <img src="http://eclipse.org/images/Adarrow.gif" border="0" 
-               width="16" height="16"></td>
-          <td colspan="2"  valign="top">
-
+          
        In <a href="ajdt-ins2.html">part 2</a>, we show how to use the 
        <code>declare warning</code> 
        construct to find all the places in the Insurance application
        concerned with view notification.
-
-          </td>
-       </tr>
-	<tr>
-          <td vAlign="top" align="left" height="12" width="23">
-          <img src="http://eclipse.org/images/Adarrow.gif" border="0" 
-               width="16" height="16"></td>
-          <td colspan="2"  valign="top">
+</li><li>
 
        In <a href="ajdt-ins3.html">part 3</a>, the implementation of view 
        notification is modularized
        in the aspect, and we show you how to use the AspectJ Development 
        Tools (AJDT) to navigate around the structure of the program.
-
-          </td>
-       </tr>
-	<tr>
-          <td vAlign="top" align="left" height="12" width="23">
-          <img src="http://eclipse.org/images/Adarrow.gif" border="0" 
-               width="16" height="16"></td>
-          <td colspan="2"  valign="top">
+</li><li>
 
        In <a href="ajdt-ins4.html">part 4</a>, we complete the 
        implementation by ensuring that the
        test suite still passes, and leave behind a guard so that the 
        modular implementation of view notification we just put in place 
        cannot be accidently comprised by subsequent program maintenance.
-         </td>
-      </tr>
-    </table>
-    </td>
-  </tr>
+</li></ul>       
 
-</table>
 
-<table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica"><a name="WSIF-DEMO"/>&nbsp;Demonstration: Using an Aspect Library</font></b></td>
-  </tr>
 
-  <tr>
+  
+    <h3><a name="WSIF-DEMO"/>Demonstration: Using an Aspect Library</h3>
+
+
+  
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF">
 
        <p>This demonstration shows the use of AspectJ and AJDT with
@@ -223,64 +167,28 @@ of your project. Click on the image below to start the demo.</p>
        </a>
        </p>
 
-       <table cellSpacing="5" cellPadding="2" width="100%" border="0">
-
-	<tr>
-          <td vAlign="top" align="left" height="12" width="23">
-          <img src="http://eclipse.org/images/Adarrow.gif" border="0" 
-               width="16" height="16"></td>
-          <td colspan="2"  valign="top">
+<ul><li>
 
        In <a href="wsif1.html">part 1</a>, we introduce the Web Services 
        Invocation Framework (WSIF) and
        the scenario that we are trying to address with AspectJ - the creation
        of a small "product-line" with WebSphere and non-WebSphere versions of
        WSIF created from the same source code base.
-
-          </td>
-       </tr>
-	<tr>
-          <td vAlign="top" align="left" height="12" width="23">
-          <img src="http://eclipse.org/images/Adarrow.gif" border="0" 
-               width="16" height="16"></td>
-          <td colspan="2"  valign="top">
-
+</li><li>
        In <a href="wsif2.html">part 2</a>, we show the aspect library 
        project and how the WSIF
        project is configured to use it. Then we add a first-failure data
        capture handling facility to WSIF and visualize the results.
-
-          </td>
-       </tr>
-	<tr>
-          <td vAlign="top" align="left" height="12" width="23">
-          <img src="http://eclipse.org/images/Adarrow.gif" border="0" 
-               width="16" height="16"></td>
-          <td colspan="2"  valign="top">
+</li><li>
 
        In <a href="wsif3.html">part 3</a>, we add a monitoring and 
        statistics gathering capability to WSIF.
-
-          </td>
-       </tr>
-	<tr>
-          <td vAlign="top" align="left" height="12" width="23">
-          <img src="http://eclipse.org/images/Adarrow.gif" border="0" 
-               width="16" height="16"></td>
-          <td colspan="2"  valign="top">
-
+</li><li>
         In <a href="wsif4.html">part 4</a>, we add a tracing facility, and 
 	show how easy it is to
         change and evolve an aspect-based tracing policy. 
 
-         </td>
-      </tr>
-    </table>
-    </td>
-  </tr>
-
-
-</table>
+</li></ul>
 
 		<hr class="clearer" />
 	</div>
