@@ -42,6 +42,7 @@
 
 	<div class="homeitem">
 		<h3>Core Contributors</h3>
+		<div align="center">
 			<table border="1" cellpadding="2">
 <tr>
         <td>Matt Chapman
@@ -94,10 +95,12 @@
 	    </td>
       </tr>			
 			</table>
+		</div>
 	</div>
 
 	<div class="homeitem">
 		<h3>Other Contributors</h3>
+		<div align="center">
 			<table border="1" cellpadding="2">
 <tr>
         <td>Ben Dalziel
@@ -156,6 +159,7 @@
 	    </td>
       </tr>     		
 			</table>
+		</div>
 	</div>		
 		<hr class="clearer" />
 	</div>
