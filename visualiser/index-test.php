@@ -78,8 +78,8 @@
 </table>
 		</div>
 		
-		<p>The following providers are included with the Visualiser plugin itself:</p>
-       
+       <div class="homeitem3col">
+       <h3>Providers included with the Visualiser</h3>
        <p>
        <ul>
          <li>A simple file-based provider that reads bar and stripe information from two files.</li> 
@@ -90,11 +90,10 @@
 	    </ul>
 		
 	   </p>
-       
-       <p>The following providers are available separately:</p>
-              
+	   </div>
+      
        <div class="homeitem3col">
-       <h3></h3>
+       <h3>Providers available separately</h3>
        
        <table class="tasklist" width="80%">
   <tr>
