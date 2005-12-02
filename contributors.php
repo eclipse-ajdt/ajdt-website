@@ -43,7 +43,7 @@
 	<div class="homeitem">
 		<h3>Core Contributors</h3>
 		<div align="center">
-			<table border="1" cellpadding="2">
+			<table>
 <tr>
         <td>Matt Chapman
 	    </td>
