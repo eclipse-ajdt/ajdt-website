@@ -166,7 +166,8 @@ or for further discussion or suggestions please visit the
            We have also created an animated demo to demonstrate this new feature.
            See the <a href="../demos/index.html#LTW-DEMO">demos page</a> for details.
         </p>
-       <p><img src="ltwscreenshot.png" width="666" height="580" alt="Screenshot showing the load-time weaving launch configuration"></p>
+       <p><a href="ltwscreenshot.png">
+       <img src="ltwscreenshot450.png" width="450" height="392" alt="Screenshot showing the load-time weaving launch configuration"></a></p>
 			
 			</li>
 			
@@ -273,7 +274,8 @@ or for further discussion or suggestions please visit the
         spot this purely from the editor markers, Cross References view, and Visualiser view offered by
         AJDT. These views show you the current state of the crosscutting but not how it has changed --
         this is where the Crosscutting Comparison view comes in.</p>
-        <p><img src="comparison.png" width="565" height="165" alt="screenshot showing the Crosscutting Comparison view"></p>
+        <p><a href="comparison.png">
+        <img src="comparison450.png" width="450" height="131" alt="screenshot showing the Crosscutting Comparison view"></a></p>
 		</li>
 		</ul>
 			</li>
@@ -324,13 +326,14 @@ or for further discussion or suggestions please visit the
            applicable to aspects, code completion is available for package names,
            and when extending an abstract aspect, stubs can be created for any
            inherited abstract pointcuts.
-              <br><img src="NewAspect.png" width="495" height="625" alt="screenshot showing the New Aspect wizard">
+              <br><a href="NewAspect.png">
+              <img src="NewAspect450.png" width="450" height="568" alt="screenshot showing the New Aspect wizard"></a>
            </li>
            <li>The comments generated and formatting
            used for new aspects matches the Eclipse settings for new
            classes - for example on Eclipse 3.1 the default is not to
            generate comments.
-              <br><img src="generatedAspect.png" width="479" height="218" alt="screenshot showing a generated aspect">
+              <br><img src="generatedAspect.png" width="450" height="218" alt="screenshot showing a generated aspect">
            </li>
            </ul>
  
@@ -354,7 +357,7 @@ or for further discussion or suggestions please visit the
 		     A new 'Filters...' button has been added to the Cross References view menu which can be
 		     accessed via the drop down toggle button on the toolbar or by pressing the key
 		     combination Ctrl + F10.
-			 <br><img src="xRefViewMenu.PNG" width="545" height="181" alt="Screenshot showing the Cross References view menu">
+			 <br><img src="xRefViewMenu.PNG" width="450" height="181" alt="Screenshot showing the Cross References view menu">
 		     </p>
 		     <p>
 		     This presents a dialog containing the various types of relationship which can be excluded
@@ -365,7 +368,7 @@ or for further discussion or suggestions please visit the
 		     <p>
              Checking relationships in the dialog and clicking OK will see any relationships of this
              type filtered from the view.
-		     <br><img src="xRefViewFiltered.PNG" width="545" height="131" alt="Screenshot showing the filtered Cross References view">
+		     <br><img src="xRefViewFiltered.PNG" width="450" height="131" alt="Screenshot showing the filtered Cross References view">
 		     </p>
 
 		     </li>
@@ -377,7 +380,7 @@ or for further discussion or suggestions please visit the
 		     The same functionality is available in the quick form of the Cross References view
 		     which appears over the editor. The filters applied to each view are independent of each
 		     another.
-		     <br><img src="xRefInplaceViewMenu.PNG" width="531" height="157" alt="Screenshot showing the Cross References in-place view menu">
+		     <br><img src="xRefInplaceViewMenu.PNG" width="450" height="157" alt="Screenshot showing the Cross References in-place view menu">
 		     </p>
 
 		     </li>		   
@@ -419,7 +422,7 @@ or for further discussion or suggestions please visit the
              pointcuts, which now appear as hyperlinks, so that you can click to
              navigate to the pointcut definition. Note that the implementation of this
              hyperlink feature uses Eclipse 3.1 API and so is not available on AJDT 1.2.1 for Eclipse 3.0.
-		     <br><img src="hyperlink.png" width="599" height="93" alt="Screenshot showing a control-click hyperlink">		     
+		     <br><img src="hyperlink.png" width="450" height="93" alt="Screenshot showing a control-click hyperlink"> 
 		     </p>
 		     </li>
 
@@ -430,7 +433,7 @@ or for further discussion or suggestions please visit the
 		     <br>As an alternative of navigating to a pointcut's definition, you can also
 		     hover over the use of the pointcut, and the source code for it will
 		     appear as a tooltip.
-		     <br><img src="sourcehover.png" width="599" height="127" alt="Screenshot showing a pointcut source hover">
+		     <br><img src="sourcehover.png" width="450" height="127" alt="Screenshot showing a pointcut source hover">
 		     </p>
 		     </li>		   
 		   </ul>
