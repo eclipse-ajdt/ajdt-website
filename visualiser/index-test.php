@@ -27,10 +27,15 @@
 	# End: page-specific settings
 	#
 		
-	$rightcolumn = file_get_contents("rightcolumn.html");
+	$rightcolumn = file_get_contents("../rightcolumn.html");
 		
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
+
+<STYLE TYPE="text/css">
+  .tasklist td { background-color: #EEEEEE; padding: .1em }
+  .tasklist th { padding: .1em }
+</STYLE>
 
 <div id="maincontent">
 	<div id="midcolumn">
@@ -59,12 +64,10 @@
        <div class="homeitem3col">
 			<h3>Download</h3>
 <ul>
-<li>			
+<li>
+<a>Visualiser 2.1.0</a>			
 		<table class="tasklist" width="80%">
-  <tr>
-    <th align="left">Visualiser Version</th>
-    <td>2.1.0</td>
-  </tr>
+  
   <tr>
     <th align="left">Release Date:</th>
     <td>December 14, 2004</td>
