@@ -60,7 +60,7 @@
        
        <p>An on-line demo showing how to use the Visualiser with AJDT is available
         from the 
-       <a href="http://www.eclipse.org/ajdt/demos/index.html#VISUALISER-DEMO">AJDT demos page.</a>
+       <a href="http://www.eclipse.org/ajdt/demos/index.php#VISUALISER-DEMO">AJDT demos page.</a>
        </p>
        
        <p>A tutorial exploring the Visualiser in detail, and describing the process
