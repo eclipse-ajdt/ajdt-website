@@ -264,8 +264,7 @@ or for further discussion or suggestions please visit the
         but in case you missed it or are unsure how to use it we've created an
         <a href="../demos/index.html#COMPARISON-DEMO">animated demo</a> available from the AJDT demos page.</p>
         
-        <ul>
-        <li>
+        
         <p>The goal of this new functionality is to answer the "What's changed?" question in relation
         to the aspect-oriented structure of your application. Say you make a release of your project
         and then you do some refactoring such as renaming some methods, adding new methods, optimizing
@@ -276,8 +275,7 @@ or for further discussion or suggestions please visit the
         this is where the Crosscutting Comparison view comes in.</p>
         <p><a href="comparison.png">
         <img src="comparison450.png" width="450" height="131" alt="screenshot showing the Crosscutting Comparison view"></a></p>
-		</li>
-		</ul>
+		
 			</li>
 			
 			<li>
@@ -318,8 +316,6 @@ or for further discussion or suggestions please visit the
         <p>
         
         <p>
-           <ul>
-           <li>
            The <b>New Aspect wizard</b> now more closely matches the appearance and
            functionality of the current version of the New Class wizard.
            In addition to supporting the modifiers and extra instantiation options
@@ -328,14 +324,13 @@ or for further discussion or suggestions please visit the
            inherited abstract pointcuts.
               <br><a href="NewAspect.png">
               <img src="NewAspect450.png" width="450" height="568" alt="screenshot showing the New Aspect wizard"></a>
-           </li>
-           <li>The comments generated and formatting
+           </p>
+           <p>The comments generated and formatting
            used for new aspects matches the Eclipse settings for new
            classes - for example on Eclipse 3.1 the default is not to
            generate comments.
               <br><img src="generatedAspect.png" width="450" height="218" alt="screenshot showing a generated aspect">
-           </li>
-           </ul>
+           </p>
  
  			</li>
 			
@@ -348,10 +343,8 @@ or for further discussion or suggestions please visit the
 		<a href="http://www.eclipse.org/ajdt/downloads/#dev">download page</a> to
 		obtain the latest builds.
 		
-		<p>
-		   <ul>
-		     <li>
-		     <p>
+
+		   <p>
 		     <b>Cross References View</b> (enhancement <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=95724">95724</a>)
 		     <br>
 		     A new 'Filters...' button has been added to the Cross References view menu which can be
@@ -370,10 +363,6 @@ or for further discussion or suggestions please visit the
              type filtered from the view.
 		     <br><img src="xRefViewFiltered.PNG" width="450" height="131" alt="Screenshot showing the filtered Cross References view">
 		     </p>
-
-		     </li>
-
-		     <li>
 		     <p>
 		     <b>Cross References In-place View</b> (Ctrl+Alt+X)
              	     <br>
@@ -383,9 +372,6 @@ or for further discussion or suggestions please visit the
 		     <br><img src="xRefInplaceViewMenu.PNG" width="450" height="157" alt="Screenshot showing the Cross References in-place view menu">
 		     </p>
 
-		     </li>		   
-		   </ul>
-		</p>
 			</li>
 			
 			<li>
@@ -400,8 +386,6 @@ or for further discussion or suggestions please visit the
 		<p>
 		   This is really 3 features in 1:
 		   
-		   <ul>
-		     <li>
 		     <p>
 		     <b>F3 "open declaration" action for pointcuts</b>
 		     (enhancement <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=107582">107582</a>)
@@ -412,9 +396,7 @@ or for further discussion or suggestions please visit the
 		     have assigned to the "Open Declaration" action) to jump to the definition
 		     of that pointcut.
 		     </p>
-		     </li>
 
-		     <li>
 		     <p>
 		     <b>Control-click hyperlink navigation for pointcuts</b>
 		     (enhancement <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=108341">108341</a>)
@@ -424,9 +406,7 @@ or for further discussion or suggestions please visit the
              hyperlink feature uses Eclipse 3.1 API and so is not available on AJDT 1.2.1 for Eclipse 3.0.
 		     <br><img src="hyperlink.png" width="450" height="93" alt="Screenshot showing a control-click hyperlink"> 
 		     </p>
-		     </li>
 
-		     <li>
 		     <p>
 		     <b>Source hover for pointcuts</b>
 		     (enhancement <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=108730">108730</a>)
@@ -435,8 +415,6 @@ or for further discussion or suggestions please visit the
 		     appear as a tooltip.
 		     <br><img src="sourcehover.png" width="450" height="127" alt="Screenshot showing a pointcut source hover">
 		     </p>
-		     </li>		   
-		   </ul>
 		</p>
 		<p>
 		   There may be some limited cases where the referenced pointcut cannot be resolved. Please raise
