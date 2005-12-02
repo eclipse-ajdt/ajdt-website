@@ -66,7 +66,7 @@
 AJDT. Click on the image below to go to the demo.</p>
 
 <p align=center>
-<a href="HelloWorldDemo.html"><img src="HelloWorldDemo.JPG" width="525" height="413" border="0"></a>
+<a href="HelloWorldDemo.html"><img src="HelloWorldDemo.png" width="450" height="354" border="0"></a>
 </p>
     </td>
   </tr>
@@ -82,7 +82,7 @@ AJDT. Click on the image below to go to the demo.</p>
 It shows the latest look and feel from AJDT 1.2.0M1. Click on the image below to go to the demo.</p>
 
 <p align=center>
-<a href="VisualiserDemo.html"><img src="VisualiserDemo.JPG" width="525" height="375" border="0"></a>
+<a href="VisualiserDemo.html"><img src="VisualiserDemo.png" width="450" height="321" border="0"></a>
 </p>
     </td>
   </tr>
@@ -101,7 +101,7 @@ This feature is designed to help you detect and keep track of changes to the cro
 of your project. Click on the image below to start the demo.</p>
 
 <p align=center>
-<a href="comparison.html"><img src="ComparisonDemo.jpg" width="564" height="422" border="0"></a>
+<a href="comparison.html"><img src="ComparisonDemo.png" width="450" height="336" border="0"></a>
 </p>
     </td>
   </tr>
@@ -118,7 +118,7 @@ of your project. Click on the image below to start the demo.</p>
  Click on the image below to start the demo.</p>
 
 <p align=center>
-<a href="LTWDemo.html"><img src="LTWDemo.JPG" width="550" height="431" border="0"></a>
+<a href="LTWDemo.html"><img src="LTWDemo.png" width="450" height="353" border="0"></a>
 </p>
     </td>
   </tr>
@@ -139,7 +139,7 @@ of your project. Click on the image below to start the demo.</p>
 
        <p align="center">
        <a href="ajdt-ins1.html">
-       <img src="ins-demo.JPG" width="642" height="462" border="0" align="center"/>
+       <img src="ins-demo.png" width="450" height="323" border="0" align="center"/>
        </a>
        </p>
 
@@ -219,7 +219,7 @@ of your project. Click on the image below to start the demo.</p>
 
        <p align="center">
        <a href="wsif1.html">
-       <img src="wsif-demo.JPG" width="643" height="464" border="0" align="center"/>
+       <img src="wsif-demo.png" width="450" height="324" border="0" align="center"/>
        </a>
        </p>
 
