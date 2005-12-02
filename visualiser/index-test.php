@@ -58,6 +58,8 @@
        
        <div class="homeitem3col">
 			<h3>Download</h3>
+<ul>
+<li>			
 		<table class="tasklist" width="80%">
   <tr>
     <th align="left">Visualiser Version</th>
@@ -76,6 +78,8 @@
     <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/visualiser/visualiser_2.1.0_archive.zip">visualiser_2.1.0_archive.zip</a></td>
   </tr>
 </table>
+</li>
+</ul>
 		</div>
 		
        <div class="homeitem3col">
@@ -94,49 +98,50 @@
       
        <div class="homeitem3col">
        <h3>Providers available separately</h3>
-       
-       <table class="tasklist" width="80%">
+ 	<ul>
+		<li>
+			<a>Visualize the results of Google searches</a>
+<table class="tasklist" width="80%">
   <tr>
-    <td>Provider:</td><td>Visualize the results of Google searches</td>
+    <th align="left">Version:</th><td>1.0.0</td>
   </tr>
   <tr>
-    <td>Version:</td><td>1.0.0</td>
+    <th align="left">Release Date:</th><td>January 5, 2005</td>
   </tr>
   <tr>
-    <td>Release Date:</td><td>January 5, 2005</td>
+    <th align="left">Eclipse Versions:</th><td>3.0 or 3.1</td>
   </tr>
   <tr>
-    <td>Eclipse Versions:</td><td>3.0 or 3.1</td>
+    <th align="left">Dependencies:</th><td>License key and googleapi.jar from <a href="http://www.google.com/apis/">Google Web APIs</a></td>
   </tr>
   <tr>
-    <td>Dependencies:</td><td>License key and googleapi.jar from <a href="http://www.google.com/apis/">Google Web APIs</a></td>
-  </tr>
-  <tr>
-    <td>Zip file:</td>
+    <th align="left">Zip file:</th>
     <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/visualiser/googleprovider_1.0.0_archive.zip">googleprovider_1.0.0_archive.zip</a></td>
   </tr>
 </table>
+</li>
 
-<p></p>
+<li>
+	<a>Visualize the CVS history of files in your workspace</a>
 
 <table class="tasklist" width="80%">
   <tr>
-    <td>Provider:</td><td>Visualize the CVS history of files in your workspace</td>
+    <th align="left">Version:</th><td>0.1.1</td>
   </tr>
   <tr>
-    <td>Version:</td><td>0.1.1</td>
+    <th align="left">Release Date:</th><td>February 14, 2005</td>
   </tr>
   <tr>
-    <td>Release Date:</td><td>February 14, 2005</td>
+    <th align="left">Eclipse Versions:</th><td>3.0 or 3.1</td>
   </tr>
   <tr>
-    <td>Eclipse Versions:</td><td>3.0 or 3.1</td>
-  </tr>
-  <tr>
-    <td>Zip file:</td>
+    <th align="left">Zip file:</th>
     <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/visualiser/cvsprovider_0.1.1_archive.zip">cvsprovider_0.1.1_archive.zip</a></td>
   </tr>
 </table>
+<li>
+</ul>
+
 
 	</div>
 
