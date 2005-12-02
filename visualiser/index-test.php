@@ -42,6 +42,14 @@
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 
+<table border="0" cellpadding="4">
+      <tr>
+      	<td valign="top"><img border=0 src="vislogo.png" width="125" height="75" alt="Visualiser screenshot"></td>
+      	<td valign="top">&nbsp;</td>
+        <td valign="top">
+
+
+
 	<p>The Visualiser is an extensible Eclipse plugin that can be used to 
        visualize anything that lends itself to a 'bars and stripes' style representation. 
        It began as the Aspect Visualiser, which was a part of AJDT. 
@@ -60,6 +68,11 @@
        is available from developerWorks:
        <a href="http://www.ibm.com/developerworks/edu/j-dw-java-visual-i.html">Create your own visualisations in Eclipse.</a>
        </p>
+   
+   		  	</td>
+      </tr>
+
+    </table>
        
        <div class="homeitem3col">
 			<h3>Download</h3>
@@ -142,7 +155,7 @@
     <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/visualiser/cvsprovider_0.1.1_archive.zip">cvsprovider_0.1.1_archive.zip</a></td>
   </tr>
 </table>
-<li>
+</li>
 </ul>
 
 
