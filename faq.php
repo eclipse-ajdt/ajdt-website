@@ -176,7 +176,7 @@
 				Informal requests can be posted to the <a href="news://eclipse.org/eclipse.technology.ajdt">newsgroup</a> 
 			     or <a href="mailto:ajdt-dev@dev.eclipse.org">mailing list.</a> Formal requests can 
 			     be made by raising an 
-			     <a href="http://bugs.eclipse.org/bugs/enter_bug.cgi?product=AJDT&version=unspecified&rep_platform=PC&op_sys=Windows+2000&priority=P3&bug_severity=enhancement&bug_status=NEW&assigned_to=&cc=&bug_file_loc=&short_desc=&comment=&maketemplate=Remember+values+as+bookmarkable+template&form_name=enter_bug">AJDT enhancement request</a>
+			     <a href="http://bugs.eclipse.org/bugs/enter_bug.cgi?product=AJDT&version=unspecified&priority=P3&bug_severity=enhancement&bug_status=NEW&assigned_to=&cc=&bug_file_loc=&short_desc=&comment=&maketemplate=Remember+values+as+bookmarkable+template&form_name=enter_bug">AJDT enhancement request</a>
 			     on Bugzilla.
  		    </p>
 		    </li>
@@ -362,9 +362,9 @@
 			    You can also contribute sample code showing interesting uses of AspectJ, by adding 
 			    entries to the example plug-in.
 				All contributions must be made available under the 
-				<a href="http://www.eclipse.org/legal/termsofuse.html">terms of the Eclipse website</a> see
+				<a href="http://www.eclipse.org/legal/termsofuse.php">terms of the Eclipse website</a> see
 				the Eclipse 
-				<a href="http://www.eclipse.org/legal/legalfaq.html#contributions">contribution and participation FAQ</a>. Sorry, but for legal reasons
+				<a href="http://www.eclipse.org/legal/legalfaq.php#contributions">contribution and participation FAQ</a>. Sorry, but for legal reasons
 				we are unable to accept patches emailed directly to developers, and will
 				 normally ask you to resubmit these either via Bugzilla or the mailing list.
 				AJDT development is run as a meritocracy, developers who have a track 

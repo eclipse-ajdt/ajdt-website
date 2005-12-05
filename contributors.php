@@ -128,7 +128,7 @@
 	    </td>
       </tr>
       <tr>
-        <td>Mathew Webster
+        <td>Matthew Webster
 	    </td>
         <td>
           IBM UK Ltd
