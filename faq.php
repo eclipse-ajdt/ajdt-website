@@ -533,8 +533,8 @@
 			    navigate to Branches/ajdt1_2/org.eclipse.ajdt ajdt1_2/AJDT_src.
 			    </p>
 			    
-			    <p>If you are using Eclipse 3.1 you need to instead switch
-			    to the "ajdt1_3" branch.</p>
+			    <p>If you are using Eclipse 3.1 you need to switch
+			    to the "ajdt1_3" branch instead.</p>
 			    
 			    <p>Select the following projects,
 			    right-click and select "Check out" from the context menu:</p>
