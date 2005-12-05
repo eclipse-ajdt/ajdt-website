@@ -104,7 +104,7 @@
 			<li><em>Who develops AJDT?</em>
 			<p>
 		      AJDT is an open-source project hosted on eclipse.org, 
-			 <a href="http://www.eclipse.org/ajdt/contributors.html">current contributors</a> 
+			 <a href="http://www.eclipse.org/ajdt/contributors.php">current contributors</a> 
 		      are listed on the website. Anyone can get involved, see
 		      <a href="#q:contribute">How can I contribute to the AJDT project?</a>
 		    </p>
@@ -381,7 +381,7 @@
 				AJDT is organized in subdirectories under org.eclipse.ajdt. The main source
 				tree is in the &#8220;AJDT_src&#8221; subdirectory.
 				The source code for the Eclipse 3.1 version of AJDT is contained in
-				CVS HEAD, and the source code for the Eclipse 3.0 version is contained
+				the "ajdt1_3" branch, and the source code for the Eclipse 3.0 version is contained
 				in the "ajdt1_2" branch. Here is a description of the various AJDT
 				plug-ins:
 			</p>
@@ -410,7 +410,7 @@
 				 
 				 <tr>
 				  <td>org.eclipse.ajdt.build</td>				   
-				  <td>Automatic build plug-in &#8211; only used by the build process</td>				   
+				  <td>Automatic build plug-in &#8211; only used by the build process (AJDT 1.2 only)</td>				   
 				 </tr>
 				 
 				 <tr>
@@ -498,11 +498,9 @@
 		<a name="q:develop"></a>
 			<li><em>How do I setup an AJDT development environment in Eclipse?</em>
 			    <p>There are several stages to this: building AJDT, running the
-			    correctness tests, running the performance tests, and creating an
+			    correctness tests, and creating an
 			    Eclipse update site. The first two stages are probably sufficient
-			    for most purposes.
-			    Note that an additional step is required for Eclipse 3.0, as
-			    the source code is contained in a CVS branch.</p>
+			    for most purposes.</p>
 			
 			    <h4>Building AJDT</h4>
 			
@@ -534,6 +532,9 @@
 			    "OK". Back in the CVS Repositories view you should now be able to
 			    navigate to Branches/ajdt1_2/org.eclipse.ajdt ajdt1_2/AJDT_src.
 			    </p>
+			    
+			    <p>If you are using Eclipse 3.1 you need to instead switch
+			    to the "ajdt1_3" branch.</p>
 			    
 			    <p>Select the following projects,
 			    right-click and select "Check out" from the context menu:</p>
@@ -682,14 +683,14 @@
 		<a name="q:future"></a>
 			<li><em>Where do I find out about future releases of AJDT?</em>
 		    <p>
-		       See the <a href="http://www.eclipse.org/ajdt/plans.html">plans</a> page for information about future releases.
+		       See the <a href="http://www.eclipse.org/ajdt/plans.php">plans</a> page for information about future releases.
 			</p>
 		    </li>		
 		
 		<a name="q:next"></a>
 			<li><em>What new AJDT features are being worked on at the moment?</em>
 		    <p>
-				See the <a href="http://www.eclipse.org/ajdt/tasks.html">task list</a> on our project home page.
+				See the <a href="http://www.eclipse.org/ajdt/tasks.php">task list</a> on our project home page.
 		    </p>
 		    </li>
 
