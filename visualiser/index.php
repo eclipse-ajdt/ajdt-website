@@ -95,6 +95,24 @@
   </tr>
 </table>
 </li>
+<li>
+<a>Visualiser 2.2.0</a>			
+		<table class="tasklist" width="80%">
+  
+  <tr>
+    <th align="left">Release Date:</th>
+    <td>December 06, 2005</td>
+  </tr>
+  <tr>
+    <th align="left">Eclipse Versions:</th>
+    <td>3.1 or 3.2</td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/visualiser/org.eclipse.contribution.visualiser_2.2.0_archive.zip">org.eclipse.contribution.visualiser_2.2.0_archive.zip</a></td>
+  </tr>
+</table>
+</li>
 </ul>
 		</div>
 		
