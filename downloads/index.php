@@ -154,7 +154,7 @@ function ListDevBuilds($dir){
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.3.0RC1_archive.zip">ajdt_1.3.0RC1_archive.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3.0RC1_archive.zip">ajdt_1.3.0RC1_archive.zip</a></td>
   </tr>
 </table>
 
