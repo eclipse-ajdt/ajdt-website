@@ -142,6 +142,45 @@ function ListDevBuilds($dir){
 	<h3>Release builds</h3>
 	<ul>
 		<li>
+			<a>AJDT 1.3.0 RC1 for Eclipse 3.1</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th align="left">Release Date:</th><td>December 14, 2005</td>
+  </tr>
+  <tr>
+    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/technology/ajdt/31/update</code></td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.3.0RC1_archive.zip">ajdt_1.3.0RC1_archive.zip</a></td>
+  </tr>
+</table>
+
+		</li>
+
+		<li>
+			<a>AJDT 1.2.1 RC1 for Eclipse 3.0</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th align="left">Release Date:</th><td>December 14, 2005</td>
+  </tr>
+  <tr>
+    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/technology/ajdt/30/update</code></td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.1RC1_archive.zip">ajdt_1.2.1RC1_archive.zip</a></td>
+  </tr>
+</table>
+
+		</li>
+
+
+		<li>
 			<a>AJDT 1.2 for Eclipse 3.0</a>
 		
 <table class="tasklist" width="80%">
