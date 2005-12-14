@@ -66,6 +66,13 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+      			<a href="newfeatures/#compilerRC1">AspectJ 5 RC1 now included in AJDT 
+				development builds</a>
+				<span class="dates">posted 14-12-05</span>
+			  </li>
+			
+			
+			  <li>
       			<a href="newfeatures/#compilerM5">AspectJ 5 M5 now included in AJDT 
 				development builds</a>
 				<span class="dates">posted 17-11-05</span>

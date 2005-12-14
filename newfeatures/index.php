@@ -49,6 +49,9 @@ or for further discussion or suggestions please visit the
 <div class="midlist">
 
    <ul>
+     <li>December 14, 2005: 
+     <a href="#compilerRC1">AspectJ 5 RC1</a> 
+     </li>
      <li>December 6, 2005: 
      <a href="#compiler20051206">Updated AspectJ Compiler</a> 
      </li>
@@ -101,7 +104,19 @@ or for further discussion or suggestions please visit the
 	<div class="homeitem3col">
 	<h3>New Features</h3>
 		<ul>
-		
+		<li>
+		   <a name="compilerRC1">AspectJ 5 RC1</a>
+
+        <p>
+           AJDT now includes AspectJ 5 RC1 as of the following development builds:
+           <br>1.3.0.20051214100409 for Eclipse 3.1
+           <br>1.2.1.20051214160017 for Eclipse 3.0
+        </p>
+        <p>
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&bug_status=RESOLVED&chfieldfrom=2005-11-17&chfieldto=2005-12-14">
+           complete list of resolved issues since M5.</a>
+        </p>
+			</li>
 		<li>
 			<a name="compiler20051206">Updated AspectJ Compiler</a>	
 		<p>
