@@ -149,6 +149,9 @@ function ListDevBuilds($dir){
     <th align="left">Release Date:</th><td>December 14, 2005</td>
   </tr>
   <tr>
+    <th align="left">AspectJ Version:</th><td>1.5.0 RC1</td>
+  </tr>
+  <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
     <td><code>http://download.eclipse.org/technology/ajdt/31/update</code></td>
   </tr>
@@ -166,6 +169,9 @@ function ListDevBuilds($dir){
 <table class="tasklist" width="80%">
   <tr>
     <th align="left">Release Date:</th><td>December 14, 2005</td>
+  </tr>
+    <tr>
+    <th align="left">AspectJ Version:</th><td>1.5.0 RC1</td>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
@@ -318,8 +324,27 @@ $builds30
 
 
 	<div class="homeitem3col">
-	<h3>Development builds with AspectJ milestone releases</h3>
+	<h3>Development builds with AspectJ milestone and release candidate builds</h3>
 	<ul>
+	
+			<li>
+			<a>AspectJ 1.5.0 RC1</a>
+<table class="tasklist" width="100%">
+  <tr align="left">
+    <th>Build Name</th>
+    <th width="50%">Build Date</th>
+  </tr>
+   <tr>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/dev/update/ajdt_1.3.0.20051214100409_archive.zip">1.3.0.20051214100409 for Eclipse 3.1</a></td>
+    <td>Wed, 14 Dec 2005 -- 10:04 (-0500)</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/dev/update/ajdt_1.2.1.20051214160017_archive.zip">1.2.1.20051214160017 for Eclipse 3.0</a></td>
+    <td>Wed, 14 Dec 2005 -- 16:00 (+0000)</td>
+  </tr>
+</table>
+		</li>
+	
 		<li>
 			<a>AspectJ 1.5.0 M5</a>
 <table class="tasklist" width="100%">
