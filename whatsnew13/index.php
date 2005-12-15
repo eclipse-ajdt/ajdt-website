@@ -65,10 +65,10 @@ everything described here applies to both, except where noted otherwise.</p>
 		which includes support for Java 5 features, enhancements to load-time weaving,
 		and support for an annotation-based development style for aspects.
 		
-		<br>
+		<p>
 		Note however that AJDT 1.2.1 is for Eclipse 3.0, which doesn't support Java 5.
 		For this you need AJDT 1.3 for Eclipse 3.1.
-
+		</p>
     </td>
   </tr>
 
