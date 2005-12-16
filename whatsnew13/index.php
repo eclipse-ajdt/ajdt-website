@@ -191,21 +191,12 @@ everything described here applies to both, except where noted otherwise.</p>
 
     </td>
   </tr>
-  
- 
-  <tr>
-    <td valign="top" align="left"><b></b></td>
-    <td>
-
-    </td>
-  </tr>
-  
+   
   <tr>
     <td valign="top" align="left"><b>Bug fixes</b></td>
     <td>
 		This release contains a large number of bug fixes. The full list is available via
 <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AJDT&target_milestone=1.2.1&target_milestone=1.3.0&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">this CVS query.</a>
- 
     </td>
   </tr>
   
