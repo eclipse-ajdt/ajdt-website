@@ -48,7 +48,7 @@ AspectJ Development Tools since the 1.2 release (see the
 page for the changes in that release).</p>
 
 <p>AJDT 1.2.1 is for Eclipse 3.0 only and AJDT 1.3 is for Eclipse 3.1 only. The
-functionality of both releases has been kept as similar as possible. Therefore
+content of both releases has been kept as similar as possible. Therefore
 everything described here applies to both, except where noted otherwise.</p>
 
 <table border="1" cellpadding="10" cellspacing="0" width="600">
@@ -136,7 +136,7 @@ everything described here applies to both, except where noted otherwise.</p>
   <tr>
     <td valign="top" align="left"><b>Crosscutting Comparison view</b></td>
     <td>
-    	The goal of this new functionality is to answer the "What's changed?" question in relation
+    	The goal of this new view is to answer the "What's changed?" question in relation
         to the aspect-oriented structure of your application. Say you make a release of your project
         and then you do some refactoring such as renaming some methods, adding new methods, optimizing
         pointcuts etc. The advice in your project may now be matching in different places (or in
