@@ -38,8 +38,10 @@ function ListDevBuilds($dir){
 		 $eclipse = $matches[1];
 		 if ($eclipse == "30") {
 		   $eclipsename = "3.0";
-		 } else {
+		 } else if ($eclipse == "31") {
 		   $eclipsename = "3.1";
+		 } else {
+		   $eclipsename = "3.2M4";
 		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
@@ -122,6 +124,7 @@ function ListDevBuilds($dir){
 
 	$rightcolumn = file_get_contents("../rightcolumn.html");
 	
+	$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/32/dev/update');
 	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
 	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
 
@@ -257,30 +260,21 @@ function ListDevBuilds($dir){
 		<li>
 			<a>Eclipse 3.2 builds</a>
 			<br>Update Site URL:<br>
-			<code><i>Not yet available</i></code>
+			<code>http://download.eclipse.org/technology/ajdt/32/dev/update</code>
 			</p>
 			<p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Build Name</th>
     			<th width="30%">Build Date</th>
-    			<th width="30%">Notes</th>
+    			<th width="30%">Build Report</th>
   			</tr>
 
-  			<tr>
-    			<td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051117105200_archive.zip">1.3.0.20051117105200 for Eclipse 3.2M3</a></td>
-    			<td>Thu, 17 Nov 2005 -- 10:52 (+0000)</td>
-    			<td><i>***Eclipse M<b>3</b> only***</i></td>
-  			</tr>
-  
-  			<tr>
-    			<td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/ajdt_1.3.0.20051108173500_archive.zip">1.3.0.20051108173500 for Eclipse 3.2M3</a></td>
-    			<td width="30%">Tue, 8 Nov 2005 -- 17:35 (+0000)</td>
-    			<td width="30%"><i>***Eclipse M<b>3</b> only***</i></td>
-  			</tr>
-  			</table>
+$builds32
+
+			</table>
 			</p>
-  		</li>
+		</li>
 	
 		<li>
 			<a>Eclipse 3.1 builds</a>
