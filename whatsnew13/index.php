@@ -178,7 +178,7 @@ everything described here applies to both, except where noted otherwise.</p>
     <td>
 
            The <b>New Aspect wizard</b> now more closely matches the appearance and
-           functionality of the current version of the New Class wizard.
+           behaviour of the current version of the New Class wizard.
            In addition to supporting the modifiers and extra instantiation options
            applicable to aspects, code completion is available for package names,
            and when extending an abstract aspect, stubs can be created for any
