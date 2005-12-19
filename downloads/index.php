@@ -322,7 +322,7 @@ $builds30
 	</ul>
 	</div>
 
-
+<!--
 	<div class="homeitem3col">
 	<h3>Development builds with AspectJ milestone and release candidate builds</h3>
 	<ul>
@@ -392,6 +392,8 @@ $builds30
 		</li>
 	</ul>
 	</div>
+		
+-->		
 		
 		<hr class="clearer" />
 	</div>
