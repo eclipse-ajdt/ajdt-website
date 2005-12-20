@@ -145,14 +145,14 @@ function ListDevBuilds($dir){
 	<h3>Release builds</h3>
 	<ul>
 		<li>
-			<a>AJDT 1.3.0 RC1 for Eclipse 3.1</a>
+			<a>AJDT 1.3 for Eclipse 3.1</a>
 		
 <table class="tasklist" width="80%">
   <tr>
-    <th align="left">Release Date:</th><td>December 14, 2005</td>
+    <th align="left">Release Date:</th><td>December 20, 2005</td>
   </tr>
   <tr>
-    <th align="left">AspectJ Version:</th><td>1.5.0 RC1</td>
+    <th align="left">AspectJ Version:</th><td>1.5.0</td>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
@@ -160,21 +160,24 @@ function ListDevBuilds($dir){
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3.0RC1_archive.zip">ajdt_1.3.0RC1_archive.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3_for_eclipse_3.1.zip">ajdt_1.3_for_eclipse_3.1.zip</a></td>
+  </tr>
+  <tr>
+    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew13/">New & Noteworthy</a></td>
   </tr>
 </table>
 
 		</li>
 
 		<li>
-			<a>AJDT 1.2.1 RC1 for Eclipse 3.0</a>
+			<a>AJDT 1.2.1 for Eclipse 3.0</a>
 		
 <table class="tasklist" width="80%">
   <tr>
-    <th align="left">Release Date:</th><td>December 14, 2005</td>
+    <th align="left">Release Date:</th><td>December 20, 2005</td>
   </tr>
     <tr>
-    <th align="left">AspectJ Version:</th><td>1.5.0 RC1</td>
+    <th align="left">AspectJ Version:</th><td>1.5.0</td>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
@@ -182,7 +185,10 @@ function ListDevBuilds($dir){
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.1RC1_archive.zip">ajdt_1.2.1RC1_archive.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.1_for_eclipse_3.0.zip">ajdt_1.2.1_for_eclipse_3.0.zip</a></td>
+  </tr>
+  <tr>
+    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew13/">New & Noteworthy</a></td>
   </tr>
 </table>
 
