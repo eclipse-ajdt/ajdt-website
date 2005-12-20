@@ -67,8 +67,15 @@
 			<ul>
 
 			  <li>
-      			<a href="downloads/">AJDT 1.2.1RC1 and 1.3.0RC1 
+      			<a href="downloads/">AJDT 1.2.1 and 1.3
 				released!</a>
+				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
+				<span class="dates">posted 20-12-05</span>
+			  </li>
+
+			  <li>
+      			<a href="downloads/">AJDT 1.2.1RC1 and 1.3.0RC1 
+				released</a>
 				<span class="dates">posted 14-12-05</span>
 			  </li>
 			  
