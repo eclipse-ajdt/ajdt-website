@@ -268,6 +268,8 @@
 				<li>They are not included in Java searches.</li>
 				<li>They are not included in Call Hierarchy lists.</li>		
 				<li>It is not possible to run JUnit tests written in .aj files.</li>		
+				<li><strong>Refactor &gt; Move</strong> and drag and drop will not work for .aj files. Use Ctrl+C and Ctrl+V instead.</li>
+				<li><strong>Refactor &gt; Rename</strong> will not work for .aj files. Use <strong>Rename</strong> from the context menu instead.</li>
 				</ul>
 		    </p>
 		    </li>
