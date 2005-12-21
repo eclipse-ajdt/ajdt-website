@@ -38,7 +38,7 @@
 	<div align="center"><h1>$pageTitle</h1></div>
 
 <p>
-<i>Last updated: 4 November 2005</i>
+<i>Last updated: 21 December 2005</i>
 </p>
 
 <p>
@@ -54,9 +54,37 @@
 </p>
 
 <div class="homeitem3col">
+	<h3>AJDT 1.4</h3>
+		<p>
+		Status: Planned for July 2006 (after Eclipse 3.2)<br>
+        Eclipse version: 3.2<br>
+        Platforms: Windows XP, Linux, Mac OS X
+		</p>
+</div>
+
+<div class="homeitem3col">
+	<h3>AJDT 1.3</h3>
+		<p>
+		Status: 1.3 Released 20 December 2005, 1.3.1 planned for shortly after AspectJ 5.1<br>
+        Eclipse version: 3.1<br>
+        Platforms: Windows XP, Linux, Mac OS X
+		</p>
+		
+        <p>
+          Release themes:
+        </p>
+
+        <ul>
+           <li>To support AspectJ 5</li>        
+           <li>To support and benefit from Eclipse 3.1</li>
+           <li>To build on AJDT 1.2 with bug fixes and enhanced function</li>
+        </ul>
+</div>
+
+<div class="homeitem3col">
 	<h3>AJDT 1.2</h3>
 		<p>
-        Status: Released 10 June 2005<br>
+        Status: 1.2 Released 10 June 2005, 1.2.1 Released 20 December 2005<br>
         Eclipse version: 3.0.2<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -72,31 +100,10 @@
         </ul>
 
         <p>
-           Update: Following the 1.2 release there will be further releases
-           for Eclipse 3.0 as necessary, starting with 1.2.1.
-        </p>
-        
+           Update: The 1.2 release was updated with 1.2.1 to include the release version of AspectJ 5, and most of the features from AJDT 1.3.
+        </p>      
 </div>
 
-<div class="homeitem3col">
-	<h3>AJDT 1.3</h3>
-		<p>
-		Status: Planned for December 2005 (after the AspectJ 5 release, see <a href="http://www.eclipse.org/aspectj/plans.php">AspectJ plans page</a>)<br>
-        Eclipse version: 3.1<br>
-        Platforms: Windows XP, Linux, Mac OS X
-		</p>
-		
-        <p>
-          Release themes:
-        </p>
-
-        <ul>
-           <li>To support AspectJ 5</li>        
-           <li>To support and benefit from Eclipse 3.1</li>
-           <li>To build on AJDT 1.2 with bug fixes and enhanced function</li>
-        </ul>
-
-</div>
 
 		<hr class="clearer" />
 	</div>
