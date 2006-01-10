@@ -65,7 +65,11 @@
 		<div class="homeitem">
 			<h3>New Features</h3>
 			<ul>
-
+			  <li>
+      			<a href="downloads/">Translations for AJDT 1.3.0 available</a>
+				<span class="dates">posted 10-01-06</span>
+			  </li>
+			  
 			  <li>
       			<a href="downloads/">AJDT 1.2.1 and 1.3
 				released!</a>

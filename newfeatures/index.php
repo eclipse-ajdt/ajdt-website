@@ -49,6 +49,9 @@ or for further discussion or suggestions please visit the
 <div class="midlist">
 
    <ul>
+     <li>January 10, 2006: 
+     <a href="#translations">Translations available</a> 
+     </li>
      <li>December 14, 2005: 
      <a href="#compilerRC1">AspectJ 5 RC1</a> 
      </li>
@@ -104,6 +107,17 @@ or for further discussion or suggestions please visit the
 	<div class="homeitem3col">
 	<h3>New Features</h3>
 		<ul>
+		<li>
+		   <a name="translations">Translations Available</a>
+
+        <p>
+           Hungarian and Japanese translations have been contributed for AJDT 1.3.0 and are
+           now available for download on the <a href="../downloads/index.php">downloads page</a>.
+        </p>
+	     <p>
+	     <img src="xref_ja.png" width="311" height="278" alt="Screenshot showing the Cross References view with Japanese text">
+	     </p>
+		</li>
 		<li>
 		   <a name="compilerRC1">AspectJ 5 RC1</a>
 

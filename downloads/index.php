@@ -165,6 +165,9 @@ function ListDevBuilds($dir){
   <tr>
     <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew13/">New & Noteworthy</a></td>
   </tr>
+  <tr>
+    <th align="left">Translations (Hungarian and Japanese):</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3_nls_fragment.zip">ajdt_1.3_nls_fragment.zip</a></td>
+  </tr>
 </table>
 
 		</li>
