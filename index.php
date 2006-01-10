@@ -66,7 +66,7 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
-      			<a href="newfeatures/#translations/">Translations for AJDT 1.3.0 available</a>
+      			<a href="newfeatures/#translations">Translations for AJDT 1.3.0 available</a>
 				<span class="dates">posted 10-01-06</span>
 			  </li>
 			  
