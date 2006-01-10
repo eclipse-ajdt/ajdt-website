@@ -50,7 +50,7 @@ or for further discussion or suggestions please visit the
 
    <ul>
      <li>January 10, 2006: 
-     <a href="#translations">Translations available</a> 
+     <a href="#translations">Translations Available</a> 
      </li>
      <li>December 14, 2005: 
      <a href="#compilerRC1">AspectJ 5 RC1</a> 
@@ -111,7 +111,7 @@ or for further discussion or suggestions please visit the
 		   <a name="translations">Translations Available</a>
 
         <p>
-           Hungarian and Japanese translations have been contributed for AJDT 1.3.0 and are
+           Hungarian and Japanese translations have been contributed for AJDT 1.3 and are
            now available for download on the <a href="../downloads/index.php">downloads page</a>.
         </p>
 	     <p>
