@@ -76,24 +76,6 @@
 				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
 				<span class="dates">posted 20-12-05</span>
 			  </li>
-
-			  <li>
-      			<a href="downloads/">AJDT 1.2.1RC1 and 1.3.0RC1 
-				released</a>
-				<span class="dates">posted 14-12-05</span>
-			  </li>
-			  
-			  <li>
-      			<a href="newfeatures/#compilerRC1">AspectJ 5 RC1 now included in AJDT 
-				development builds</a>
-				<span class="dates">posted 14-12-05</span>
-			  </li>			
-			
-			  <li>
-      			<a href="newfeatures/#compilerM5">AspectJ 5 M5 now included in AJDT 
-				development builds</a>
-				<span class="dates">posted 17-11-05</span>
-			  </li>
 			  
 			  <li>
 			    <a href="newfeatures/#ltw">Support for Load-Time Weaving
@@ -134,8 +116,9 @@
 			<h3>Other News and Events</h3>
 			<ul>
 			  <li>
-			    EclipseCon 2006 proposals: <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=227">AJDT talk</a> and
-			    <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=141">AspectJ tutorial</a>
+			    EclipseCon 2006 proposals: <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=389">AJDT demo,</a> 
+			    <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=141">AspectJ tutorial,</a> and
+			    <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=390">Extending JDT short talk</a>
 			    <span class="dates">posted 01-12-05</span>
 			  </li>
 			  
