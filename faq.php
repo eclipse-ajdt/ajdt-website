@@ -595,9 +595,8 @@
 			   <p>To run the AJDT core specific tests expand the
 			   org.eclipse.ajdt.core.tests project, then the src folder, then the
 			   org.eclipse.ajdt.core.tests package. Now select the AllCoreTests.java file,
-			   right-click and select "Run As" &gt; "JUnit Plug-in Test". A new
-			   runtime workbench should then be launched and the tests run inside
-			   that. Progress and test results can be observed from the JUnit
+			   right-click and select "Run As" &gt; "JUnit Plug-in Test". 
+			   Progress and test results can be observed from the JUnit
 			   Eclipse view.</p>
 			   
 			   <p>You can then run all of the remaining tests by expanding the
