@@ -7,10 +7,10 @@
 	<leaders url="/ajdt/committers.php"/>
 	
 	<cvs repository="/cvsroot/technology/">
-		<module path="org.eclipse.ajdt"/>
+		<module path="org.eclipse.ajdt/AJDT_src"/>
 	</cvs>
 
-	<description paragraph-url="/ajdt/project-info/project-page-paragraph.html"/>
+	<description url="/ajdt/description.php" paragraph-url="/ajdt/project-info/project-page-paragraph.html"/>
 
 	<summary paragraph-url="/ajdt/project-info/executive-summary.html"/>
 
