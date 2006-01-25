@@ -1,4 +1,5 @@
 <project>
+	<short-name>AJDT</short-name>
 	<bugzilla>
 		<product name="AJDT"/>
 	</bugzilla>
