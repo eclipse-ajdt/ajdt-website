@@ -1,0 +1,36 @@
+<project>
+	<bugzilla>
+		<product name="AJDT"/>
+	</bugzilla>
+	<committers url="/ajdt/contributors.php"/>
+	<!--
+	<contributors url="/webtools/people/contributors.html"/>
+	<leaders url="/eclipse/team-leaders.html"/>
+	-->
+	
+	<cvs repository="/cvsroot/technology/">
+		<module path="org.eclipse.ajdt"/>
+	</cvs>
+
+	<description paragraph-url="/ajdt/project-info/project-page-paragraph.html"/>
+
+	<summary paragraph-url="/ajdt/project-info/executive-summary.html"/>
+
+	<!--
+	<getting-started url=""/>
+	-->
+
+	<!--
+	<ip-log url=""/>
+	-->
+	
+	<mailing-lists>
+		<list name="ajdt-dev"/>
+	</mailing-lists>
+	
+	<project-plan url="/ajdt/plans.php"/>
+	
+	<releases>
+		<release status="completed" name="1.3" date="20/12/2005" download="/ajdt/downloads/"/>
+	</releases>
+</project>
