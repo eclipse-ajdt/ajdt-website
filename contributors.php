@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "AJDT Contributors";
+	$pageTitle 		= "AJDT Commiters and Contributors";
 	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development, Eclipse, Contributors";
 	$pageAuthor		= "Matt Chapman";
 	
@@ -37,64 +37,9 @@
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 	
-	<p> We are grateful to the following for their contributions to the AJDT project:<br>
+	<p> We are grateful to the following for their contributions to the AJDT project.
+	See also the list of <a href="committers.php">core committers.</a><br>
 	</p>
-
-	<div class="homeitem">
-		<h3>Core Contributors</h3>
-			<table cellpadding="2">
-<tr>
-        <td>Matt Chapman
-	    </td>
-        <td>
-          IBM UK Ltd
-	    </td>
-      </tr>
-      <tr>
-        <td>Andy Clement
-	    </td>
-        <td>
-          IBM UK Ltd
-	    </td>
-      </tr>
-      <tr>
-        <td>Adrian Colyer
-	    </td>
-        <td>
-          IBM UK Ltd
-	    </td>
-      </tr>
-      <tr>
-        <td>Helen Hawkins
-	    </td>
-        <td>
-          IBM UK Ltd
-	    </td>
-      </tr>
-      <tr>
-        <td>Sian January
-	    </td>
-        <td>
-          IBM UK Ltd
-	    </td>
-      </tr>
-      <tr>
-        <td>
-		<a href="http://kerstens.org/mik">Mik Kersten</a>
-	    </td>
-        <td>
-          PARC
-	    </td>
-      </tr>
-      <tr>
-        <td>Julie Waterhouse
-	    </td>
-        <td>
-          IBM Canada
-	    </td>
-      </tr>			
-			</table>
-	</div>
 
 	<div class="homeitem">
 		<h3>Other Contributors</h3>
@@ -160,7 +105,6 @@
 		<hr class="clearer" />
 	</div>
 
-	$rightcolumn
 </div>
 
 

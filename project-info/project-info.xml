@@ -2,9 +2,9 @@
 	<bugzilla>
 		<product name="AJDT"/>
 	</bugzilla>
-	<committers url="/ajdt/project-info/committers.php"/>
-	<contributors url="/ajdt/project-info/contributors.php"/>
-	<leaders url="/ajdt/project-info/committers.php"/>
+	<committers url="/ajdt/committers.php"/>
+	<contributors url="/ajdt/contributors.php"/>
+	<leaders url="/ajdt/committers.php"/>
 	
 	<cvs repository="/cvsroot/technology/">
 		<module path="org.eclipse.ajdt"/>
@@ -14,7 +14,7 @@
 
 	<summary paragraph-url="/ajdt/project-info/executive-summary.html"/>
 
-	<getting-started url="/ajdt/faq.php/"/>
+	<getting-started url="/ajdt/faq.php"/>
 
 	<!--
 	<ip-log url=""/>
