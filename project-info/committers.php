@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "AJDT Contributors";
+	$pageTitle 		= "AJDT Commiters and Contributors";
 	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development, Eclipse, Contributors";
 	$pageAuthor		= "Matt Chapman";
 	
@@ -45,7 +45,7 @@
 		<h3>Committers</h3>
 			<table cellpadding="2">
 <tr>
-        <td>Matt Chapman
+        <td>Matt Chapman (project lead)
 	    </td>
         <td>
           IBM UK Ltd

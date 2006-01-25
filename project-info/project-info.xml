@@ -14,7 +14,7 @@
 
 	<summary paragraph-url="/ajdt/project-info/executive-summary.html"/>
 
-	<getting-started url="/ajdt/demos/"/>
+	<getting-started url="/ajdt/faq.php/"/>
 
 	<!--
 	<ip-log url=""/>
@@ -28,5 +28,6 @@
 	
 	<releases>
 		<release status="completed" name="1.3" date="20/12/2005" download="/ajdt/downloads/"/>
+		<release status="tentative" name="1.4" date="06/2006"/>
 	</releases>
 </project>

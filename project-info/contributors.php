@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "AJDT Contributors";
+	$pageTitle 		= "AJDT Commiters and Contributors";
 	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development, Eclipse, Contributors";
 	$pageAuthor		= "Matt Chapman";
 	
@@ -40,8 +40,6 @@
 	<p> We are grateful to the following for their contributions to the AJDT project.
 	See also the list of <a href="committers.php">core committers.</a><br>
 	</p>
-
-	<div class="homeitem">
 
 	<div class="homeitem">
 		<h3>Other Contributors</h3>
@@ -107,7 +105,6 @@
 		<hr class="clearer" />
 	</div>
 
-	$rightcolumn
 </div>
 
 
