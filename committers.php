@@ -84,7 +84,7 @@
 		<a href="http://kerstens.org/mik">Mik Kersten</a>
 	    </td>
         <td>
-          PARC
+          University of British Columbia
 	    </td>
       </tr>
       <tr>
