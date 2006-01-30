@@ -71,12 +71,13 @@
 	access this via <code>Help &gt; Software Updates &gt; Find And Install...</code>
 	</p>
 	
+	<!--
 	<p><em>How do I use it?</em>
 	</p>
 
 	<p><em>What else should I know?</em>
 	</p>
-	
+	-->
 	
 		<hr class="clearer" />
 	</div>
