@@ -128,11 +128,11 @@
 			  
 			  <li>
  				<a href="http://aosd.net/conference">AOSD'06: Join us at the
- 				fifth international conference on AOSD!
- 				</a> The <a href="http://www.aosd.net/2006/program/index.php">Conference program</a>
+ 				fifth international conference on AOSD!</a><br>
+ 				The <a href="http://www.aosd.net/2006/program/index.php">Conference program</a>
  				has now been published. Look out for the AspectJ 5 tutorial,
  				AJDT demo, and an industry talk covering lessons learned from
- 				developing AJDT.
+ 				developing AJDT.<br>
  				<span class="dates">posted 30-01-06</span>
  				
  				<a href="http://aosd.net/conference?ref_url=http://www.eclipse.org/ajdt/" target="_blank">
