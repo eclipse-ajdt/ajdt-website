@@ -93,20 +93,26 @@
 		<div class="homeitem">
 			<h3>Other News and Events</h3>
 			<ul>
+			  <li>EclipseCon 2006: The <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">AspectJ tutorial</a>
+			  and <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT demo</a> have been accepted!
+			  <span class="dates">posted 30-01-05</span>
+			  </li>
+			  
+			  <li>EclipseCon 2006: Please vote for the following AspectJ/AJDT
+			  related proposals still under consideration:
+			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=56">Integrating Load-Time Weaving into OSGi,</a>
+			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=229">Implementing Aspect-Oriented RCP-Applications,</a> and
+			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=390">Extending JDT to support Java-like languages.</a>
+			  <span class="dates">posted 30-01-05</span>
+			  </li>
+			  
 			  <li>
       			<a href="downloads/">AJDT 1.2.1 and 1.3
 				released!</a>
 				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
 				<span class="dates">posted 20-12-05</span>
 			  </li>
-			
-			  <li>
-			    EclipseCon 2006 proposals: <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=389">AJDT demo,</a> 
-			    <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=141">AspectJ tutorial,</a> and
-			    <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=390">Extending JDT short talk</a>
-			    <span class="dates">posted 01-12-05</span>
-			  </li>
-			  
+						  
 			  <li>
 			    <a href="http://www.ibm.com/developerworks/java/library/j-aopwork9/">
        			developerWorks article: New AJDT releases ease AOP development</a>
