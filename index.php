@@ -89,8 +89,28 @@
 
 			</ul>
 		</div>
-		
+				
 		<div class="homeitem">
+		<h3>Releases and articles</h3>
+			<ul>
+			  <li>
+      			<a href="downloads/">AJDT 1.2.1 and 1.3
+				released!</a>
+				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
+				<span class="dates">posted 20-12-05</span>
+			  </li>
+						  
+			  <li>
+			    <a href="http://www.ibm.com/developerworks/java/library/j-aopwork9/">
+       			developerWorks article: New AJDT releases ease AOP development</a>
+       			<span class="dates">posted 15-08-05</span>
+			  </li>
+			</ul>
+		</div>
+		
+		<hr class="clearer" />
+		
+		<div class="homeitem3col">
 			<h3>Upcoming Events</h3>
 			<ul>
 			  <li>EclipseCon 2006: The <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">AspectJ tutorial</a>
@@ -119,24 +139,6 @@
 				</a>				
           	  </li>
 
-			</ul>
-		</div>
-		
-		<div class="homeitem">
-		<h3>Releases and articles</h3>
-			<ul>
-			  <li>
-      			<a href="downloads/">AJDT 1.2.1 and 1.3
-				released!</a>
-				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
-				<span class="dates">posted 20-12-05</span>
-			  </li>
-						  
-			  <li>
-			    <a href="http://www.ibm.com/developerworks/java/library/j-aopwork9/">
-       			developerWorks article: New AJDT releases ease AOP development</a>
-       			<span class="dates">posted 15-08-05</span>
-			  </li>
 			</ul>
 		</div>
 		
