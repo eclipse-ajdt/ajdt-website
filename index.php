@@ -114,7 +114,7 @@
 			<h3>Upcoming Events</h3>
 			<ul>
 			  <li>EclipseCon 2006: The <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">AspectJ tutorial</a>
-			  and <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT demo</a> have been accepted!
+			  and <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT demo</a> have been accepted!<br>
 			  <span class="dates">posted 30-01-06</span>
 			  </li>
 			  
