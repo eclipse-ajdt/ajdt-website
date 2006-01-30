@@ -133,10 +133,10 @@
  				has now been published. Look out for the AspectJ 5 tutorial,
  				AJDT demo, and an industry talk covering lessons learned from
  				developing AJDT.<br>
- 				<span class="dates">posted 30-01-06</span>
+ 				<span class="dates">posted 30-01-06</span><br>
  				
  				<a href="http://aosd.net/conference?ref_url=http://www.eclipse.org/ajdt/" target="_blank">
-  				<img src="http://aosd.net/2006/publicity/AOSD06_Button.gif" 
+  				<img align="right">src="http://aosd.net/2006/publicity/AOSD06_Button.gif" 
     				border="0" alt="AOSD.06 March 20-24: Bonn, Germany" 
     				title="AOSD.06"/>
 				</a>				
