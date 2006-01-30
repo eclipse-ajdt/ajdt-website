@@ -36,20 +36,16 @@
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 
-		<ol>
-		<li> Contributing
-			<ol>
+	<h2>Contributing</h2>
+	<ol>
 	  			<li><a href="#q:contribute">How can I contribute to the AJDT project?</a> </li>
 	  			<li><a href="#q:source">Where will I find the source for AJDT? </a> </li>
 	  			<li><a href="#q:develop">How do I setup an AJDT development environment in Eclipse? </a> </li>
 	  			<li><a href="#q:packaging">How can I package my sample code for contribution to the examples plug-in?</a> </li>
-			</ol>
-		</li>
-		</ol>
+	</ol>
 	
 	<hr>
 			
-	<h2>Contributing</h2>
 		<ol>
 		<a name="q:contribute"></a>
 			<li><em>How can I contribute to the AJDT project?</em>

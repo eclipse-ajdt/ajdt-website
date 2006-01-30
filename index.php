@@ -69,14 +69,7 @@
       			<a href="newfeatures/#translations">Translations for AJDT 1.3 available</a>
 				<span class="dates">posted 10-01-06</span>
 			  </li>
-			  
-			  <li>
-      			<a href="downloads/">AJDT 1.2.1 and 1.3
-				released!</a>
-				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
-				<span class="dates">posted 20-12-05</span>
-			  </li>
-			  
+			  			  
 			  <li>
 			    <a href="newfeatures/#ltw">Support for Load-Time Weaving
 				</a>
@@ -94,27 +87,19 @@
 				<span class="dates">posted 03-10-05</span>
 			  </li>
 
-			  <li>
-       			<a href="newfeatures/#comparison">Crosscutting Comparison view
-       			to help manage changes to the crosscutting structure
-       			of your projects.
-       			</a>
-       			<span class="dates">posted 26-09-05</span>
-			  </li>
-
-			  <li>
-       			<a href="newfeatures/#pointcuts">Navigation and source hovers for pointcuts.
-       			</a>
-       			<span class="dates">posted 06-09-05</span>			  
-			  </li>
-
-
 			</ul>
 		</div>
 		
 		<div class="homeitem">
 			<h3>Other News and Events</h3>
 			<ul>
+			  <li>
+      			<a href="downloads/">AJDT 1.2.1 and 1.3
+				released!</a>
+				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
+				<span class="dates">posted 20-12-05</span>
+			  </li>
+			
 			  <li>
 			    EclipseCon 2006 proposals: <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=389">AJDT demo,</a> 
 			    <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=141">AspectJ tutorial,</a> and
@@ -140,12 +125,7 @@
     				title="AOSD.06"/>
 				</a>				
           	  </li>
-          
-			  <li>
-			    <a href="downloads/">AJDT 1.2 released for Eclipse 3.0</a>
-			    See also <a href="whatsnew12/">New and Noteworthy for 1.2</a>
- 			  	<span class="dates">posted 10-06-05</span>
-			  </li>
+
 			</ul>
 		</div>
 			

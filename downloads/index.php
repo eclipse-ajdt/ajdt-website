@@ -132,8 +132,9 @@ function ListDevBuilds($dir){
 	$html = <<<EOHTML
 
 <STYLE TYPE="text/css">
-  .tasklist td { background-color: #EEEEEE; padding: .1em }
-  .tasklist th { padding: .1em }
+  .tasklist td { background-color: #EEEEEE; padding: .05em }
+  .tasklist th { padding: .05em }
+  .tasklist code { font-size: 80% }
 </STYLE>
 
 <div id="maincontent">
