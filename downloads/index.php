@@ -134,7 +134,7 @@ function ListDevBuilds($dir){
 <STYLE TYPE="text/css">
   .tasklist td { background-color: #EEEEEE; padding: .05em }
   .tasklist th { padding: .05em }
-  .tasklist code { font-size: 80% }
+  .tasklist code { font-size: 90% }
 </STYLE>
 
 <div id="maincontent">
@@ -265,7 +265,7 @@ function ListDevBuilds($dir){
 	</div>
 	
 	<div class="homeitem3col">
-	<h3>Development builds</h3>
+	<h3 class="tasklist">Development builds</h3>
 	<ul>
 		<li>
 			<a>Eclipse 3.2 builds</a>
