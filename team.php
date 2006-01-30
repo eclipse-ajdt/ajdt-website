@@ -160,6 +160,8 @@
 		<hr class="clearer" />
 	</div>
 
+$rightcolumn
+
 </div>
 
 

@@ -18,7 +18,7 @@
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Team", "/ajdt/team.php", 	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Plans", "/ajdt/plans.php", 	"_self", 1);
 
-	$Nav->addNavSeparator("Users", "/ajdt/users.php", "_self", 1);
+	$Nav->addNavSeparator("Users", "", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Getting Started", 	"/ajdt/gettingstarted.php", 	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Downloads", 	"/ajdt/downloads/", 	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Bugs", "http://bugs.eclipse.org/bugs", 	"_self", 1);
