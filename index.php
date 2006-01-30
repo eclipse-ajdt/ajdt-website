@@ -91,7 +91,7 @@
 		</div>
 		
 		<div class="homeitem">
-			<h3>Other News and Events</h3>
+			<h3>Upcoming Events</h3>
 			<ul>
 			  <li>EclipseCon 2006: The <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">AspectJ tutorial</a>
 			  and <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT demo</a> have been accepted!
@@ -99,26 +99,13 @@
 			  </li>
 			  
 			  <li>EclipseCon 2006: Please vote for the following AspectJ/AJDT
-			  related proposals still under consideration:
-			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=56">Integrating Load-Time Weaving into OSGi,</a>
-			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=229">Implementing Aspect-Oriented RCP-Applications,</a> and
-			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=390">Extending JDT to support Java-like languages.</a>
+			  related proposals still under consideration:<br>
+			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=56">Integrating Load-Time Weaving into OSGi,</a><br>
+			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=229">Implementing Aspect-Oriented RCP-Applications,</a><br>
+			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=390">Extending JDT to support Java-like languages.</a><br>
 			  <span class="dates">posted 30-01-05</span>
 			  </li>
 			  
-			  <li>
-      			<a href="downloads/">AJDT 1.2.1 and 1.3
-				released!</a>
-				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
-				<span class="dates">posted 20-12-05</span>
-			  </li>
-						  
-			  <li>
-			    <a href="http://www.ibm.com/developerworks/java/library/j-aopwork9/">
-       			developerWorks article: New AJDT releases ease AOP development</a>
-       			<span class="dates">posted 15-08-05</span>
-			  </li>
-
 			  <li>
  				<a href="http://aosd.net/conference">AOSD'06: Join us at the
  				fifth international conference on AOSD!
@@ -134,7 +121,25 @@
 
 			</ul>
 		</div>
-			
+		
+		<div class="homeitem">
+		<h3>Releases and articles</h3>
+			<ul>
+			  <li>
+      			<a href="downloads/">AJDT 1.2.1 and 1.3
+				released!</a>
+				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
+				<span class="dates">posted 20-12-05</span>
+			  </li>
+						  
+			  <li>
+			    <a href="http://www.ibm.com/developerworks/java/library/j-aopwork9/">
+       			developerWorks article: New AJDT releases ease AOP development</a>
+       			<span class="dates">posted 15-08-05</span>
+			  </li>
+			</ul>
+		</div>
+		
 		<hr class="clearer" />
 	</div>
 
