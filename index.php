@@ -127,7 +127,7 @@
 			  </li>
 			  
 			  <li>
- 				<a href="http://aosd.net/conference">AOSD'06: Join us at the
+ 				<a href="http://aosd.net/conference?ref_url=http://www.eclipse.org/ajdt/">AOSD'06: Join us at the
  				fifth international conference on AOSD!</a><br>
  				The <a href="http://www.aosd.net/2006/program/index.php">Conference program</a>
  				has now been published. Look out for the AspectJ 5 tutorial,
