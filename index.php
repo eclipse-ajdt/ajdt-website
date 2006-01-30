@@ -115,7 +115,7 @@
 			<ul>
 			  <li>EclipseCon 2006: The <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">AspectJ tutorial</a>
 			  and <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT demo</a> have been accepted!
-			  <span class="dates">posted 30-01-05</span>
+			  <span class="dates">posted 30-01-06</span>
 			  </li>
 			  
 			  <li>EclipseCon 2006: Please vote for the following AspectJ/AJDT
@@ -123,14 +123,17 @@
 			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=56">Integrating Load-Time Weaving into OSGi,</a><br>
 			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=229">Implementing Aspect-Oriented RCP-Applications,</a><br>
 			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=390">Extending JDT to support Java-like languages.</a><br>
-			  <span class="dates">posted 30-01-05</span>
+			  <span class="dates">posted 30-01-06</span>
 			  </li>
 			  
 			  <li>
  				<a href="http://aosd.net/conference">AOSD'06: Join us at the
  				fifth international conference on AOSD!
- 				</a>
- 				<span class="dates">posted 13-07-05</span>
+ 				</a> The <a href="http://www.aosd.net/2006/program/index.php">Conference program</a>
+ 				has now been published. Look out for the AspectJ 5 tutorial,
+ 				AJDT demo, and an industry talk covering lessons learned from
+ 				developing AJDT.
+ 				<span class="dates">posted 30-01-06</span>
  				
  				<a href="http://aosd.net/conference?ref_url=http://www.eclipse.org/ajdt/" target="_blank">
   				<img src="http://aosd.net/2006/publicity/AOSD06_Button.gif" 
