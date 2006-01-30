@@ -27,7 +27,7 @@
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;New Features", "/ajdt/newfeatures/", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Newsgroup", "http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.ajdt", "_self", 1);
 
-	$Nav->addNavSeparator("Developers", "/ajdt/developers.php", "_self", 1);
+	$Nav->addNavSeparator("Developers", "", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Contributing", "/ajdt/developers.php", 	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;CVS", "http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt/AJDT_src/", 	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Mailing list", "http://dev.eclipse.org/mailman/listinfo/ajdt-dev", 	"_self", 1);
