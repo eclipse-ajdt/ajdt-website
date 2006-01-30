@@ -139,7 +139,8 @@
   				<img align="right" src="http://aosd.net/2006/publicity/AOSD06_Button.gif" 
     				border="0" alt="AOSD.06 March 20-24: Bonn, Germany" 
     				title="AOSD.06"/>
-				</a>				
+				</a>
+				<br>				
           	  </li>
 
 			</ul>
