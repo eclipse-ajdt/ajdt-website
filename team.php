@@ -37,9 +37,7 @@
 	
 	<div align="center"><h1>$pageTitle</h1></div>
 	
-	<p> Below is the list of core committers for the AJDT project.
-	See also the list of <a href="contributors.php">contributors.</a>
-	</p>
+	<p>We are grateful to the following for their contributions to the AJDT project:</p>
 
 	<div class="homeitem">
 		<h3>Committers</h3>
@@ -98,7 +96,7 @@
 	</div>
 	
 		<div class="homeitem">
-		<h3>Other Contributors</h3>
+		<h3>Contributors</h3>
 			<table cellpadding="2">
 <tr>
         <td>Ben Dalziel
