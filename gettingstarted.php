@@ -42,7 +42,8 @@
 	available, and also includes a few tips along the way.
 	</p>
 	
-	<p><em>What is it?</em> Essentially, AJDT enables you to write AspectJ
+	<h3>What is it?</h3>
+	<p>Essentially, AJDT enables you to write AspectJ
 	code in Eclipse. You can read a bit more about this on the
 	<a href="description.php">description page.</a> If phrases like
 	"modularization of crosscutting concerns" sound a bit mysterious to you,
@@ -53,12 +54,14 @@
 	the <a href="/aspectj/docs.php">Documentation page.</a>
 	</p>
 	
-	<p><em>What does it look like?</em> You'll see the odd screenshot dotted
+	<h3>What does it look like?</h3>
+	<p>You'll see the odd screenshot dotted
 	about here and there, but it's better to see AJDT in action by
 	viewing some of the <a href="demos/">animated demos</a>.
 	</p>
 	
-	<p><em>How can I get it?</em> So you've read the blurb and watched the
+	<h3>How can I get it?</h3>
+	<p>So you've read the blurb and watched the
 	demos. Now would be the perfect time to try it out for yourself!
 	If you're not already running Eclipse, <a href="/downloads/">install that
 	first</a> (go for the latest stable release). Then visit the
