@@ -63,12 +63,7 @@ or for further discussion or suggestions please visit the
            list of AspectJ bugs fixed in this build since AspectJ 1.5.0 final.</a>
         </p>        
 		</li>
-		</ul>
-	</div>	
 		
-	<div class="homeitem3col">
-	<h3>New Features prior to AJDT 1.3 release</h3>
-		<ul>
 		<li>
 		   <a name="translations">Translations Available</a>
            <span class="dates">(posted 10-01-06)</span>
@@ -80,8 +75,16 @@ or for further discussion or suggestions please visit the
 	     <img src="xref_ja.png" width="311" height="278" alt="Screenshot showing the Cross References view with Japanese text">
 	     </p>
 		</li>
+		
+		</ul>
+	</div>	
+		
+	<div class="homeitem3col">
+	<h3>New Features prior to AJDT 1.3 release</h3>
+		<ul>
 		<li>
 		   <a name="compilerRC1">AspectJ 5 RC1</a>
+           <span class="dates">(posted 14-12-05)</span>
 
         <p>
            AJDT now includes AspectJ 5 RC1 as of the following development builds:
