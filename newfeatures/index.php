@@ -46,69 +46,8 @@ or for further discussion or suggestions please visit the
 - first <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">request a password</a> if you don't have one).
 </p>
 
-<div class="midlist">
-
-   <ul>
-     <li>February 1, 2006: 
-     <a href="#compiler20060201">Updated AspectJ Compiler</a>
-     </li>
-     <li>January 10, 2006: 
-     <a href="#translations">Translations Available</a> 
-     </li>
-     <li>December 14, 2005: 
-     <a href="#compilerRC1">AspectJ 5 RC1</a> 
-     </li>
-     <li>December 6, 2005: 
-     <a href="#compiler20051206">Updated AspectJ Compiler</a> 
-     </li>
-     <li>November 30, 2005: 
-     <a href="#compiler20051130">Updated AspectJ Compiler</a> 
-     </li>
-     <li>November 29, 2005: 
-     <a href="#compiler20051129">Updated AspectJ Compiler</a> 
-     </li>
-     <li>November 24, 2005: 
-     <a href="#compiler20051124">Updated AspectJ Compiler</a> 
-     </li>
-     <li>November 17, 2005: 
-     <a href="#compilerM5">AspectJ 5 M5</a> 
-     </li>
-     <li>November 9, 2005: 
-     <a href="#ltw">Load-time Weaving in AJDT</a> 
-     </li>
-     <li>November 8, 2005: 
-     <a href="#compiler20051107">Updated AspectJ Compiler and single JAR files</a> 
-     </li>
-     <li>October 31, 2005: 
-     <a href="#accessibility">Accessibility Review</a> 
-     </li>
-     <li>October 11, 2005: 
-     <a href="#compilerM4">AspectJ 5 M4</a> 
-     </li>
-     <li>October 3, 2005: 
-     <a href="#i18n">Improved internationalization support & call for help!</a> 
-     </li>
-     <li>September 26, 2005: 
-     <a href="#comparison">Crosscutting Comparison view</a> 
-     </li>
-     <li>September 21, 2005: 
-     <a href="#compiler20050921">Updated AspectJ Compiler and new weaver plugin</a> 
-     </li>
-     <li>September 20, 2005: 
-     <a href="#newaspect">Updated New Aspect Wizard</a> 
-     </li>
-     <li>September 12, 2005: 
-     <a href="#xrefFilter">Relationship Filter for Cross References View</a> 
-     </li>
-     <li>September 6, 2005: 
-     <a href="#pointcuts">Navigation and source hover support for pointcuts</a> 
-     </li>
-   </ul>
-
-</div>
-
 	<div class="homeitem3col">
-	<h3>New Features</h3>
+	<h3>New Features since AJDT 1.3 release</h3>
 		<ul>
 		<li>
 			<a name="compiler20060201">Updated AspectJ Compiler</a>	
@@ -123,7 +62,12 @@ or for further discussion or suggestions please visit the
            list of AspectJ bugs fixed in this build since AspectJ 1.5.0 final.</a>
         </p>        
 		</li>
+		</ul>
+	</div>	
 		
+	<div class="homeitem3col">
+	<h3>New Features prior to AJDT 1.3 release</h3>
+		<ul>
 		<li>
 		   <a name="translations">Translations Available</a>
 
