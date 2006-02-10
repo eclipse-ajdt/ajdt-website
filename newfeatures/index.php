@@ -51,6 +51,7 @@ or for further discussion or suggestions please visit the
 		<ul>
 		<li>
 			<a name="compiler20060201">Updated AspectJ Compiler</a>	
+			<span class="dates">posted 01-02-06</span>
 		<p>
            The AspectJ build included in AJDT has been updated in the following development builds:
            <br>1.3.1.20060131093325 for Eclipse 3.1
