@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#m5">Support for Eclipse 3.2M5</a>
+			    <span class="dates">posted 19-02-06</span>
+			  </li>
+			
+			  <li>
       			<a href="newfeatures/#translations">Translations for AJDT 1.3 available</a>
 				<span class="dates">posted 10-01-06</span>
 			  </li>
@@ -80,11 +85,6 @@
 			    <a href="newfeatures/#accessibility">Accessibility review
 				</a>
 				<span class="dates">posted 31-10-05</span>
-			  </li>
-
-			  <li>
-			    <a href="newfeatures/#i18n">Internationalization: Help Needed!</a>
-				<span class="dates">posted 03-10-05</span>
 			  </li>
 
 			</ul>

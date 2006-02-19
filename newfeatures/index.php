@@ -50,6 +50,17 @@ or for further discussion or suggestions please visit the
 	<h3>New Features since AJDT 1.3 release</h3>
 		<ul>
 		<li>
+		   <a name="m5">Support for Eclipse 3.2M5</a>	
+			<span class="dates">(posted 19-02-06)</span>
+		<p>
+		   To use AJDT with the latest Eclipse milestone release you need to install
+		   development build 1.4.0.20060219125111 or later. Earlier builds will not work
+		   with 3.2M5, and builds from this one onwards will not work with the previous
+		   milestone, 3.2M4.
+        </p>
+		</li>
+		
+		<li>
 			<a name="compiler20060201">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 01-02-06)</span>
 		<p>
