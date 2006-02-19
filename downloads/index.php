@@ -41,7 +41,7 @@ function ListDevBuilds($dir){
 		 } else if ($eclipse == "31") {
 		   $eclipsename = "3.1";
 		 } else {
-		   $eclipsename = "3.2M4";
+		   $eclipsename = "3.2M5";
 		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
@@ -281,6 +281,11 @@ function ListDevBuilds($dir){
   			</tr>
 
 $builds32
+
+<!-- an old M4 build -->
+<tr><td>
+<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/m4/ajdt_1.4.0.20060209002800_archive.zip">1.4.0.20060209002800 for Eclipse 3.2M4</a></td>
+<td width="30%">Thu, 9 Feb 2006 -- 00:28 (-0500)</td><td width="30%"><a href="http://download.eclipse.org/technology/ajdt/32/dev/update/m4/changes-20060209002800.html">changes-20060209002800</a></td></tr>
 
 			</table>
 			</p>
