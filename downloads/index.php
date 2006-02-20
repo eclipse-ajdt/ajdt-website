@@ -265,7 +265,9 @@ function ListDevBuilds($dir){
 	</div>
 	
 	<div class="homeitem3col">
+	<a name="dev">
 	<h3 class="tasklist">Development builds</h3>
+	</a>
 	<ul>
 		<li>
 			<a>Eclipse 3.2 builds</a>
