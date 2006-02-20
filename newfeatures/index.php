@@ -54,7 +54,9 @@ or for further discussion or suggestions please visit the
 			<span class="dates">(posted 20-02-06)</span>
 		  <p>
 		    The process of including and excluding files from the build
-		    in AspectJ projects is now the same as with plain Java projects.
+		    in AspectJ projects is now the same as with plain Java projects,
+		    when using development build 1.4.0.20060219125111 or later and
+		    Eclipse 3.2M5.
 		    This is a significant change, but one which improves the integration
 		    of AJDT with the rest of Eclipse and resolves a number of long
 		    standing issues. More detail and background information is given below.

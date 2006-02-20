@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#buildconfig">Integrated build configurations</a>
+			    <span class="dates">posted 20-02-06</span>
+			  </li>
+			
+			  <li>
 			    <a href="newfeatures/#m5">Support for Eclipse 3.2M5</a>
 			    <span class="dates">posted 19-02-06</span>
 			  </li>
@@ -81,12 +86,6 @@
 				<span class="dates">posted 09-11-05</span>
 			  </li>
 			  
-			  <li>
-			    <a href="newfeatures/#accessibility">Accessibility review
-				</a>
-				<span class="dates">posted 31-10-05</span>
-			  </li>
-
 			</ul>
 		</div>
 				
