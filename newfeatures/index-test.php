@@ -62,7 +62,7 @@ or for further discussion or suggestions please visit the
 		  <h4>How does it work?</h4>
 		  <ul>
 		    <li>
-		      Simple select one or more files or packages in the package
+		      Simply select one or more files or packages in the package
 		      explorer, right-click and select entries such as "Include"
 		      and "Exclude" from the "Build Path" context menu.
 		    </li>
@@ -71,13 +71,23 @@ or for further discussion or suggestions please visit the
 		      .aj files too.
 		    </li>
 		    <li>
-		      Support for storing a defined set of includes and excluses
+		      Support for storing a defined set of includes and excludes
 		      in a file for later use is still available, although it
 		      works a little differently now. The same ".ajproperties" files
 		      are used, with the same syntax. Previously, one of these files
 		      in a project was the "active" one. But now the active configuration
-		      is now the one defined by the currently included and excluded files
+		      is defined by the currently included and excluded files
 		      (and stored in the project's .classpath file). 
+		    </li>
+		    <li>
+		      To make use of the set of includes and excludes in
+		      a .ajproperties file, right-click on it and select
+		      <b>AspectJ Tools &gt; Apply Build Configuration</b>
+		    </li>
+		    <li>
+		      To store the current set of included and excluded
+		      files in a .ajproperties file, select the project, right-click
+		      and select <b>AspectJ Tools &gt; Save Build Configuration As...</b>
 		    </li>
 		    <li>
 		      As .ajproperties files are no longer used to store the
@@ -100,7 +110,7 @@ or for further discussion or suggestions please visit the
 		     not wish to support stored configurations, so AJDT will
 		     continue to support this via .ajproperties files.
 		  </p>
-		<li>
+		</li>
 		
 		<li>
 		   <a name="m5">Support for Eclipse 3.2M5</a>	
