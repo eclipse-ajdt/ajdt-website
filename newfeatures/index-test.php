@@ -63,26 +63,26 @@ or for further discussion or suggestions please visit the
 		  <ul>
 		    <li>
 		      Simply select one or more files or packages in the package
-		      explorer, right-click and select entries such as "Include"
-		      and "Exclude" from the "Build Path" context menu.
+		      explorer, right-click and select entries such as <b>Include</b>
+		      and <b>Exclude</b> from the <b>Build Path</b> context menu.
 		    </li>
 		    <li>
-		      This is just the same as with Java projects. It works with
+		      This is just the same as with Java projects, only it works with
 		      .aj files too.
 		    </li>
 		    <li>
-		      Support for storing a defined set of includes and excludes
+		      Support for storing a set of includes and excludes
 		      in a file for later use is still available, although it
 		      works a little differently now. The same ".ajproperties" files
 		      are used, with the same syntax. Previously, one of these files
 		      in a project was the "active" one. But now the active configuration
 		      is defined by the currently included and excluded files
-		      (and stored in the project's .classpath file). 
+		      (which is stored in the project's .classpath file). 
 		    </li>
 		    <li>
-		      To make use of the set of includes and excludes in
+		      To make use of the includes and excludes stored in
 		      a .ajproperties file, right-click on it and select
-		      <b>AspectJ Tools &gt; Apply Build Configuration</b>
+		      <b>AspectJ Tools &gt; Apply Build Configuration.</b>
 		    </li>
 		    <li>
 		      To store the current set of included and excluded
@@ -105,10 +105,22 @@ or for further discussion or suggestions please visit the
 		     We could not bring the two closer together before now
 		     because the JDT mechanism did not work for .aj files. We
 		     have worked with the JDT team to add support for compilation
-		     units with extensions other than .java in 3.2M5, and this
-		     has enabled us to do this integration. However, JDT does
-		     not wish to support stored configurations, so AJDT will
-		     continue to support this via .ajproperties files.
+		     units with extensions other than .java in Eclipse 3.2M5
+		     (see <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=89977">bug 89977</a>),
+		     which has enabled this integration. However, JDT does not wish to
+		     support stored configurations
+		     (see <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=122611">bug 122611</a>), so
+		     AJDT will continue to do this via .ajproperties files.
+		  </p>
+		  <p>
+		    As well as being more intuitive to new users, the mechanism
+		    is faster and more efficient. It also fixes a number of
+		    limitations including
+		    <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=98214">JUnit
+		    looking for excluded tests</a> and
+		    <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=104688">JUnit
+		    runner fails for .aj files.</a>
+		 
 		  </p>
 		</li>
 		
