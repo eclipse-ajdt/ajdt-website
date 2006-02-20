@@ -50,6 +50,81 @@ or for further discussion or suggestions please visit the
 	<h3>New Features since AJDT 1.3 release</h3>
 		<ul>
 		<li>
+		  <a name="buildconfig">Integrated build configurations</a>	
+			<span class="dates">(posted 20-02-06)</span>
+		  <p>
+		    The process of including and excluding files from the build
+		    in AspectJ projects is now the same as with plain Java projects.
+		    This is a significant change, but one which improves the integration
+		    of AJDT with the rest of Eclipse and resolves a number of long
+		    standing issues. More detail and background information is given below.
+		  </p>
+		  <h4>How does it work?</h4>
+		  <ul>
+		    <li>
+		      Simply select one or more files or packages in the package
+		      explorer, right-click and select entries such as <b>Include</b>
+		      and <b>Exclude</b> from the <b>Build Path</b> context menu.
+		    </li>
+		    <li>
+		      This is just the same as with Java projects, only it works with
+		      .aj files too.
+		    </li>
+		    <li>
+		      Support for storing a set of includes and excludes
+		      in a file for later use is still available, although it
+		      works a little differently now. The same ".ajproperties" files
+		      are used, with the same syntax. Previously, one of these files
+		      in a project was the "active" one. But now the active configuration
+		      is defined by the currently included and excluded files
+		      (which is stored in the project's .classpath file). 
+		    </li>
+		    <li>
+		      To make use of the includes and excludes stored in
+		      a .ajproperties file, right-click on it and select
+		      <b>AspectJ Tools &gt; Apply Build Configuration.</b>
+		    </li>
+		    <li>
+		      To store the current set of included and excluded
+		      files in a .ajproperties file, select the project, right-click
+		      and select <b>AspectJ Tools &gt; Save Build Configuration As...</b>
+		    </li>
+		    <li>
+		      As .ajproperties files are no longer used to store the
+		      current build path configuration, there is no need for a 
+		      project to contain any such files. A "build.ajproperties" file
+		      is no longer created automatically for new projects.
+		    </li>
+		  </ul>
+		  <h4>Some background</h4>
+		  <p>
+		     The reason for AJDT having a different build path
+		     mechanism was historical - it was implemented at a time
+		     when JDT had no context menu entries for including and
+		     excluding files and no support for stored configurations.
+		     We could not bring the two closer together before now
+		     because the JDT mechanism did not work for .aj files. We
+		     have worked with the JDT team to add support for compilation
+		     units with extensions other than .java in Eclipse 3.2M5
+		     (see <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=89977">bug 89977</a>),
+		     which has enabled this integration. However, JDT does not wish to
+		     support stored configurations
+		     (see <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=122611">bug 122611</a>), so
+		     AJDT will continue to do this via .ajproperties files.
+		  </p>
+		  <p>
+		    As well as being more intuitive to new users, the mechanism
+		    is faster and more efficient. It also fixes a number of
+		    limitations including
+		    <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=98214">JUnit
+		    looking for excluded tests</a> and
+		    <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=104688">JUnit
+		    runner fails for .aj files.</a>
+		 
+		  </p>
+		</li>
+		
+		<li>
 		   <a name="m5">Support for Eclipse 3.2M5</a>	
 			<span class="dates">(posted 19-02-06)</span>
 		<p>
