@@ -112,19 +112,16 @@
 		<div class="homeitem3col">
 			<h3>Upcoming Events</h3>
 			<ul>
-			  <li>EclipseCon 2006: The <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">AspectJ tutorial</a>
-			  and <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT demo</a> have been accepted!<br>
-			  <span class="dates">posted 30-01-06</span>
+			  <li>EclipseCon 2006: This year's conference is going to have a stronger than ever AOSD presence:
+			  	<ul>
+			  	  <li>Tutorial: <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">Aspect-Oriented Programming with AspectJ</a></li>
+			  	  <li>Demo: <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT: The AspectJ Development Tools</a></li>
+			  	  <li>Demo: <a href="http://www.eclipsecon.org/2006/Sub.do?id=56"></a>Integrating Load-Time Weaving into OSGi</li>
+			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=229">Implementing Aspect-Oriented RCP-Applications</a></li>
+			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=390">Extending JDT to support Java-like languages</a></li>
+			  	</ul>			  
 			  </li>
-			  
-			  <li>EclipseCon 2006: Please vote for the following AspectJ/AJDT
-			  related proposals still under consideration:<br>
-			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=56">Integrating Load-Time Weaving into OSGi,</a><br>
-			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=229">Implementing Aspect-Oriented RCP-Applications,</a><br>
-			  <a href="http://canuck.gda.itesm.mx/eclipsezilla/show_bug.cgi?id=390">Extending JDT to support Java-like languages.</a><br>
-			  <span class="dates">posted 30-01-06</span>
-			  </li>
-			  
+			  			  
 			  <li>
  				<a href="http://aosd.net/conference?ref_url=http://www.eclipse.org/ajdt/">AOSD'06: Join us at the
  				fifth international conference on AOSD!</a><br>
