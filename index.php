@@ -116,7 +116,7 @@
 			  	<ul>
 			  	  <li>Tutorial: <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">Aspect-Oriented Programming with AspectJ</a></li>
 			  	  <li>Demo: <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT: The AspectJ Development Tools</a></li>
-			  	  <li>Demo: <a href="http://www.eclipsecon.org/2006/Sub.do?id=56"></a>Integrating Load-Time Weaving into OSGi</li>
+			  	  <li>Demo: <a href="http://www.eclipsecon.org/2006/Sub.do?id=56">Integrating Load-Time Weaving into OSGi</a></li>
 			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=229">Implementing Aspect-Oriented RCP-Applications</a></li>
 			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=390">Extending JDT to support Java-like languages</a></li>
 			  	</ul>			  
