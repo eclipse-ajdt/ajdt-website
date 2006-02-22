@@ -119,7 +119,8 @@
 			  	  <li>Demo: <a href="http://www.eclipsecon.org/2006/Sub.do?id=56">Integrating Load-Time Weaving into OSGi</a></li>
 			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=229">Implementing Aspect-Oriented RCP-Applications</a></li>
 			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=390">Extending JDT to support Java-like languages</a></li>
-			  	</ul>			  
+			  	</ul>
+			  	<br><span class="dates">posted 22-02-06</span><br>		  
 			  </li>
 			  			  
 			  <li>
