@@ -120,6 +120,7 @@
 			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=229">Implementing Aspect-Oriented RCP-Applications</a></li>
 			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=390">Extending JDT to support Java-like languages</a></li>
 			  	</ul>
+			  	These sessions can all be found in the <a href="http://www.eclipsecon.org/2006/Sub.do?id=522">AOP Track.</a>
 			  	<br><span class="dates">posted 22-02-06</span><br>		  
 			  </li>
 			  			  
