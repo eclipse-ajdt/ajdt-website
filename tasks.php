@@ -241,9 +241,9 @@ execution(* FigureElement+.set*(..)) { Canvas.updateHistory(); }” ) and
 shows the places the query catches that the aspect doesn’t, and
 vice-versa. Very useful support as part of the “Extract to Aspect” refactoring.
 </td>
-<td>In progress</td>
+<td>In progress (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=113723">bug&nbsp;113723</a>)</td>
 <td>Charles&nbsp;Zhang, Julie&nbsp;Waterhouse</td>
-<td>Not yet planned</td>
+<td>1.4.0</td>
 </tr>
 
 <tr>
