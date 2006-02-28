@@ -1,0 +1,84 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>AspectJ Development Tools</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+</head>
+<body bgcolor="#FFFFFF">
+
+<h2>Additional Crosscutting Comparison functionality</h2>
+
+<p>
+  The following new features are available in development builds
+  1.4.0.20060228072358 or later, for Eclipse 3.2M5a.
+</p>
+
+<p>
+  A <b>Propagate Up</b> toggle button has been added to the Crosscutting
+  Comparison view. The sources and targets of relationships shown in the view
+  can be methods, types, and join points within methods, such as calls to
+  other methods and catch blocks. Pressing the toggle button increases
+  the level of granularity by replacing these sub-method elements with their
+  enclosing method. This means that a comparison between two locations
+  within the same method would normally show as a difference, but with the
+  toggle selected, they would be considered the same.
+</p>
+
+<p>
+  The original crosscutting comparison functionality allows comparison
+  between two projects (or more usually two versions of the same project).
+  It is now possible to compare two elements within the same project. These
+  elements can be either advice statements or declare error/warning statements.
+  For example, to see whether two advice statements affect the same
+  locations, select them both in the outline view (or package explorer) and select
+  <b>Comparing Crosscutting With &gt; Each Other</b> from the context-menu.
+</p>
+<img src="arv1.png" width="425" height="354"
+alt="Screenshot showing the compare menu">
+
+<p>
+  The Crosscutting Comparison view will then show the differences between
+  the locations affected. One use of this would be when refactoring a
+  pointcut from one which lists the join points to match individually, to
+  one which attempts to match the same join points but with a more robust
+  property-based pointcut.
+</p>
+<img src="arv2.png" width="612" height="162"
+alt="Screenshot showing the results of comparing two advice elements">
+
+<p>
+  You can also compare two declare error/warning statements, or
+  compare one declare statement with an advice statement. This second
+  combination can be particularly useful when refactoring code to
+  use aspects. You might first use a declare warning statement to identify
+  behaviour that is going to be handled by an aspect, such as certain
+  calls to a method. You then write some advice to capture that policy,
+  by advising the relevant methods. But you need to check that the advice is
+  accurate, in that it affects the same locations identified by the declare
+  warning. Such a comparison might look like this: 
+</p>
+<img src="arv3.png" width="612" height="162"
+alt="Screenshot showing the results of comparing declare warning with advice">
+
+<p>
+  On its own this is not that useful (particularly when the number of advised
+  locations is large), because the declare warning targets
+  specific method calls, but the advice targets the execution of methods,
+  so they all appear as differences in the comparison. This is where the
+  <b>Propagate Up</b> button comes in! By selecting this the granularity
+  of comparison is raised to the level of enclosing methods. This makes
+  the significant difference between the two elements clear:
+</p>
+<img src="arv4.png" width="612" height="162"
+alt="Screenshot showing the results after propagating up to enclosing methods">
+
+<p>
+  This shows that the declare warning affects a method (in this case it is
+  a method call within that method) which is not also affected by the after
+  advice. Naturally comparisons like this are most useful with large projects,
+  where the crosscutting is more wide-spread.
+</p>
+
+</body>
+</html>
