@@ -50,6 +50,96 @@ or for further discussion or suggestions please visit the
 	<h3>New Features since AJDT 1.3 release</h3>
 		<ul>
 		<li>
+		<a name="arv">Additional Crosscutting Comparison functionality</a>	
+			<span class="dates">(posted 02-03-06)</span>
+
+<p>
+  The following new features are available in development builds
+  1.4.0.20060228083332 or later, for Eclipse 3.2M5a. Click on the
+  images for full-sized versions.
+</p>
+
+<p>
+  A <b>Propagate Up</b> toggle button has been added to the Crosscutting
+  Comparison view. The sources and targets of relationships shown in the view
+  can be methods, types, and join points within methods, such as calls to
+  other methods and catch blocks. Pressing the toggle button increases
+  the level of granularity by replacing these sub-method elements with their
+  enclosing method. This means that a comparison between two locations
+  within the same method would normally show as a difference, but with the
+  toggle selected, they would be considered the same.
+</p>
+
+<p>
+  The original crosscutting comparison functionality allows comparison
+  between two projects (or more usually two versions of the same project).
+  It is now possible to compare two elements within the same project. These
+  elements can be either advice statements or declare error/warning statements.
+  For example, to see whether two advice statements affect the same
+  locations, select them both in the outline view (or package explorer) and select
+  <b>Comparing Crosscutting With &gt; Each Other</b> from the context-menu.
+</p>
+<a href="arv1.png">
+<img src="arv1_sm.png" width="312" height="260"
+alt="Screenshot showing the compare menu"></a>
+
+<p>
+  The Crosscutting Comparison view will then show the differences between
+  the locations affected. One use of this would be when refactoring a
+  pointcut from one which lists the join points to match individually, to
+  one which attempts to match the same join points but with a more robust
+  property-based pointcut.
+</p>
+<a href="arv2.png">
+<img src="arv2_sm.png" width="450" height="119"
+alt="Screenshot showing the results of comparing two advice elements"></a>
+
+<p>
+  You can also compare two declare error/warning statements, or
+  compare one declare statement with an advice statement. This second
+  combination can be particularly useful when refactoring code to
+  use aspects. You might first use a declare warning statement to identify
+  behaviour that is going to be handled by an aspect, such as certain
+  calls to a method. You then write some advice to capture that policy,
+  by advising the relevant methods. But you need to check that the advice is
+  accurate, in that it affects the same locations identified by the declare
+  warning. Such a comparison might look like this: 
+</p>
+<a href="arv3.png">
+<img src="arv3_sm.png" width="450" height="119"
+alt="Screenshot showing the results of comparing declare warning with advice"></a>
+
+<p>
+  On its own this is not that useful (particularly when the number of advised
+  locations is large), because the declare warning targets
+  specific method calls, but the advice targets the execution of methods,
+  so they all appear as differences in the comparison. This is where the
+  <b>Propagate Up</b> button comes in! By selecting this the granularity
+  of comparison is raised to the level of enclosing methods. This makes
+  the significant difference between the two elements clear:
+</p>
+<a href="arv4.png">
+<img src="arv4_sm.png" width="450" height="119"
+alt="Screenshot showing the results after propagating up to enclosing methods"></a>
+
+<p>
+  This shows that the declare warning affects a method (in this case it is
+  a method call within that method) which is not also affected by the after
+  advice. Naturally comparisons like this are most useful with large projects,
+  where the crosscutting is more wide-spread.
+</p>
+
+<p>
+  <b>Note:</b> We are very grateful to Charles Zhang, Irum Godil,
+  and Arno Jacobsen of the Middleware Systems Research Group at the University
+  of Toronto for contributing this functionality, as part of their 
+  research into "Aspect Refactoring Verification" sponsored by the IBM
+  CAS fellowship.
+</p>
+
+		</li>
+		
+		<li>
 		  <a name="buildconfig">Integrated build configurations</a>	
 			<span class="dates">(posted 20-02-06)</span>
 		  <p>

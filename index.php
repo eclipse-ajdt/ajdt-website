@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#arv">Additional Crosscutting Comparison functionality</a>
+			    <span class="dates">posted 02-03-06</span>
+			  </li>
+
+			  <li>
 			    <a href="newfeatures/#buildconfig">Integrated build configurations</a>
 			    <span class="dates">posted 20-02-06</span>
 			  </li>
