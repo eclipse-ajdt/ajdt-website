@@ -91,7 +91,7 @@ alt="Screenshot showing the compare menu"></a>
   property-based pointcut.
 </p>
 <a href="arv2.png">
-<img src="arv2_sm.png" width="450" height="1119"
+<img src="arv2_sm.png" width="450" height="119"
 alt="Screenshot showing the results of comparing two advice elements"></a>
 
 <p>
