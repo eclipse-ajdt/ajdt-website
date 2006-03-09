@@ -50,7 +50,7 @@ or for further discussion or suggestions please visit the
 	<h3>New Features since AJDT 1.3 release</h3>
 		<ul>
 		<li>
-		<a name="arv">Greater Control Over Advice Markers</a>	
+		<a name="arv">Greater control over Advice Markers</a>	
 			<span class="dates">(posted 09-03-06)</span>
 
 <p>	
@@ -79,7 +79,7 @@ particular aspect.</p>
 <img src="markers_sm.png" width="350" height="340"
 alt="Screenshot showing the Configure Advice Markers dialog"></a>
 		
-<p>Images can be selected from a list of samples, or from .gif files
+<p>Images can be selected from a list of samples, or from .gif or .png files
 contained in the project.  If you want to provide your own they should
 be 12 pixels wide and no more than 14 pixels high and ideally have
 a transparent background.  If you think you

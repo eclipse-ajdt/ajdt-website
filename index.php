@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#markers">Greater control over advice markers</a>
+			    <span class="dates">posted 09-03-06</span>
+			  </li>
+			  
+			  <li>
 			    <a href="newfeatures/#arv">Additional Crosscutting Comparison functionality</a>
 			    <span class="dates">posted 02-03-06</span>
 			  </li>
