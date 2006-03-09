@@ -50,6 +50,47 @@ or for further discussion or suggestions please visit the
 	<h3>New Features since AJDT 1.3 release</h3>
 		<ul>
 		<li>
+		<a name="markers">Greater control over advice markers</a>	
+			<span class="dates">(posted 09-03-06)</span>
+
+<p>	
+	  This new feature is available in development builds
+  1.4.0.20060303064646 or later, for Eclipse 3.2M5a. Click on the
+  images for full-sized versions.	
+</p>	
+<p>
+In AJDT you can now change the icons used for advice
+markers or stop advice markers being shown altogether.  This is configured
+on a per-aspect basis and the settings are persisted so that they
+can be shared with a team (e.g through CVS).
+</p>	
+
+<p>
+To change the image for advice markers relating to an aspect 
+select the aspect, file or project in the Package Explorer, 
+right click and select <b>AspectJ Tools > Configure Advice Markers...</b> from the context menu. 
+Alternatively, right click on one of the markers in the margin of the editor. Select 
+<b>AspectJ Tools > Configure Advice Markers...</b> from the context menu there instead. </p>
+
+<p>You can also choose to have no image for advice markers for a 
+particular aspect.</p>
+
+<a href="markers.png">
+<img src="markers_sm.png" width="350" height="340"
+alt="Screenshot showing the Configure Advice Markers dialog"></a>
+		
+<p>Images can be selected from a list of samples, or from .gif or .png files
+contained in the project.  If you want to provide your own they should
+be 12 pixels wide and no more than 14 pixels high and ideally have
+a transparent background.  If you think you
+have created a generally useful icon feel free to submit it for inclusion
+in AJDT.</p>
+
+<img src="markers2.png" width="450" height="283"
+alt="Screenshot showing custom advice markers">
+		
+		</li>
+		<li>
 		<a name="arv">Additional Crosscutting Comparison functionality</a>	
 			<span class="dates">(posted 02-03-06)</span>
 
