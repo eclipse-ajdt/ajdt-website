@@ -68,8 +68,10 @@ select the aspect, file or project in the Package Explorer,
 right click and select <b>AspectJ Tools > Configure Advice Markers...</b> from the context menu. 
 Alternatively, right click on one of the markers in the margin of the editor. Select 
 <b>AspectJ Tools > Configure Advice Markers...</b> from the context menu there instead. </p>
-<img src="markers.png" width="506" height="491"
-alt="Screenshot showing the Configure Advice Markers dialog">
+
+<a href="markers.png">
+<img src="markers.png" width="350" height="339"
+alt="Screenshot showing the Configure Advice Markers dialog"></a>
 		
 <p>Images can be selected from a list of samples, or from .gif files
 contained in the project.  If you want to provide your own they should
@@ -81,7 +83,7 @@ in AJDT.</p>
 <p>You can also choose to have no image for advice markers for a 
 particular aspect.</p>
 
-<img src="markers2.png" width="484" height="286"
+<img src="markers2.png" width="450" height="283"
 alt="Screenshot showing custom advice markers">
 		
 		</li>
