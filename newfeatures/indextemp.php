@@ -55,11 +55,14 @@ or for further discussion or suggestions please visit the
 
 <p>	
 	  This new feature is available in development builds
-  1.4.0.20060303064646 or later, for Eclipse 3.2M5a. 	
+  1.4.0.20060303064646 or later, for Eclipse 3.2M5a. Click on the
+  images for full-sized versions.	
 </p>	
 <p>
-We have added to AJDT the ability to change the icons used for advice
-markers or to stop advice markers being shown altogether.  
+In AJDT you can now change the icons used for advice
+markers or stop advice markers being shown altogether.  This is configured
+on a per-aspect basis and the settings are persisted so that they
+can be shared with a team (e.g through CVS).
 </p>	
 
 <p>
@@ -70,7 +73,7 @@ Alternatively, right click on one of the markers in the margin of the editor. Se
 <b>AspectJ Tools > Configure Advice Markers...</b> from the context menu there instead. </p>
 
 <a href="markers.png">
-<img src="markers.png" width="350" height="339"
+<img src="markers_sm.png" width="350" height="340"
 alt="Screenshot showing the Configure Advice Markers dialog"></a>
 		
 <p>Images can be selected from a list of samples, or from .gif files
