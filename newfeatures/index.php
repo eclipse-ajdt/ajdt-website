@@ -49,6 +49,23 @@ or for further discussion or suggestions please visit the
 	<div class="homeitem3col">
 	<h3>New Features since AJDT 1.3 release</h3>
 		<ul>
+		
+		<li>
+			<a name="compiler20060309">Updated AspectJ Compiler</a>	
+			<span class="dates">(posted 09-03-13)</span>
+		<p>
+           The AspectJ build included in AJDT has been updated in the following development builds:
+           <br>1.3.1.20060131093325 for Eclipse 3.1
+           <br>1.4.0.20060310120028 for Eclipse 3.2M5a
+        </p>
+        <p>
+           The timestamp of the included AspectJ 5 build is 20060309143651.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2006-02-01&chfieldto=2006-03-10&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
+           list of AspectJ bugs fixed in this build since the last compiler update.</a>
+        </p>        
+		</li>
+		
+		
 		<li>
 		<a name="markers">Greater control over advice markers</a>	
 			<span class="dates">(posted 09-03-06)</span>
