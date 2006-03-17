@@ -349,35 +349,15 @@ whenever an attempt is made to set one of <code>Point</code>'s
 
 <p> This should make the test case of <code>tests.Test2a</code> pass,
 which wouldn't without your aspect.  So before compiling in the
-aspect,
+aspect:
 </p>
-<div class="instruction"> <strong>Note</strong>: From here onwards
-(to save space!) we are showing how the test runs and failures
-look if run from the command line, you should get similar output
-using the Eclipse JUnit views.</div>
 
-<pre>
-$ java tests.Test2a
-.F..F....
-Time: 0.04
-There were 2 failures:
-1) testTooSmall(tests.Test2a)junit.framework.AssertionFailedError: should have thrown IllegalArgumentException
-2) testMove(tests.Test2a)junit.framework.AssertionFailedError: should have thrown IllegalArgumentException
-
-FAILURES!!!
-Tests run: 7,  Failures: 2,  Errors: 0
-</pre>
+<p align="center"><img src="shots/fail.png"></p>
 
 <p> But after compiling in the aspect...
 </p>
 
-<pre>
-$ java tests.Test2a
-.......
-Time: 0.04
-
-OK (7 tests)
-</pre>
+<p align="center"><img src="shots/pass.png"></p>
 
 <p> <strong>Answer:</strong>
 </p>
