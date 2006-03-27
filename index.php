@@ -120,9 +120,15 @@
 		<hr class="clearer" />
 		
 		<div class="homeitem3col">
-			<h3>Upcoming Events</h3>
+			<h3>Recent Events</h3>
 			<ul>
-			  <li>EclipseCon 2006: This year's conference is going to have a stronger than ever AOSD presence:
+			  <li>EclipseCon 2006: This year's conference contained
+			  a well attended <a href="http://www.eclipsecon.org/2006/Sub.do?id=522">AOP Track.</a>
+			  See the individual sessions for presentation materials, where available. 
+			  Also, the <a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt/demos/EclipseCon2006/">AJDT
+			  demo projects can be found in CVS.</a>
+			  
+			  This year's conference is going to have a stronger than ever AOSD presence:
 			  	<ul>
 			  	  <li>Tutorial: <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">Aspect-Oriented Programming with AspectJ</a></li>
 			  	  <li>Demo: <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT: The AspectJ Development Tools</a></li>
@@ -130,25 +136,15 @@
 			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=229">Implementing Aspect-Oriented RCP-Applications</a></li>
 			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=390">Extending JDT to support Java-like languages</a></li>
 			  	</ul>
-			  	These sessions can all be found in the <a href="http://www.eclipsecon.org/2006/Sub.do?id=522">AOP Track.</a>
-			  	<br><span class="dates">posted 22-02-06</span><br>		  
+			  	These sessions can all be found in the 
+			  	<br><span class="dates">posted 27-03-06</span><br>		  
 			  </li>
 			  			  
-			  <li>
- 				<a href="http://aosd.net/conference?ref_url=http://www.eclipse.org/ajdt/">AOSD'06: Join us at the
- 				fifth international conference on AOSD!</a><br>
- 				The <a href="http://www.aosd.net/2006/program/index.php">Conference program</a>
- 				has now been published. Look out for the AspectJ 5 tutorial,
- 				AJDT demo, and an industry talk covering lessons learned from
- 				developing AJDT.<br>
- 				<span class="dates">posted 30-01-06</span><br>
- 				
- 				<a href="http://aosd.net/conference?ref_url=http://www.eclipse.org/ajdt/" target="_blank">
-  				<img src="http://aosd.net/2006/publicity/AOSD06_Button.gif" 
-    				border="0" alt="AOSD.06 March 20-24: Bonn, Germany" 
-    				title="AOSD.06"/>
-				</a>
-				<br>				
+			  <li>AOSD'06: Check out the <a href="http://www.aosd.net/2006/program/">
+			  conference program</a> to see the various AJDT/AspectJ sessions that
+			  took place at this year's conference.
+			  Presentation materials will be added shortly in some cases.
+ 			  <span class="dates">posted 27-03-06</span><br>				
           	  </li>
 
 			</ul>
