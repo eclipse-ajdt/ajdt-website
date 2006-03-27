@@ -125,8 +125,10 @@
 			  <li>EclipseCon 2006: This year's conference contained
 			  a well attended <a href="http://www.eclipsecon.org/2006/Sub.do?id=522">AOP Track.</a>
 			  See the individual sessions for presentation materials, where available. 
-			  Also, the <a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt/demos/EclipseCon2006/">AJDT
-			  demo projects can be found in CVS.</a>
+			  The <a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt/demos/EclipseCon2006/">AJDT
+			  demo projects can be found in CVS. </a> The <a href="http://www.eclipse.org/ajdt/EclipseCon2006/">AspectJ
+			  tutorial handouts</a> are also available, which include a link to the plug-in
+			  containing the exercise projects.
 			  
 			  This year's conference is going to have a stronger than ever AOSD presence:
 			  	<ul>
