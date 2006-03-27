@@ -129,16 +129,6 @@
 			  demo projects can be found in CVS. </a> The <a href="http://www.eclipse.org/ajdt/EclipseCon2006/">AspectJ
 			  tutorial handouts</a> are also available, which include a link to the plug-in
 			  containing the exercise projects.
-			  
-			  This year's conference is going to have a stronger than ever AOSD presence:
-			  	<ul>
-			  	  <li>Tutorial: <a href="http://www.eclipsecon.org/2006/Sub.do?id=141">Aspect-Oriented Programming with AspectJ</a></li>
-			  	  <li>Demo: <a href="http://www.eclipsecon.org/2006/Sub.do?id=389">AJDT: The AspectJ Development Tools</a></li>
-			  	  <li>Demo: <a href="http://www.eclipsecon.org/2006/Sub.do?id=56">Integrating Load-Time Weaving into OSGi</a></li>
-			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=229">Implementing Aspect-Oriented RCP-Applications</a></li>
-			  	  <li>Short talk: <a href="http://www.eclipsecon.org/2006/Sub.do?id=390">Extending JDT to support Java-like languages</a></li>
-			  	</ul>
-			  	These sessions can all be found in the 
 			  	<br><span class="dates">posted 27-03-06</span><br>		  
 			  </li>
 			  			  
@@ -146,7 +136,7 @@
 			  conference program</a> to see the various AJDT/AspectJ sessions that
 			  took place at this year's conference.
 			  Presentation materials will be added shortly in some cases.
- 			  <span class="dates">posted 27-03-06</span><br>				
+ 			    <br><span class="dates">posted 27-03-06</span><br>				
           	  </li>
 
 			</ul>
