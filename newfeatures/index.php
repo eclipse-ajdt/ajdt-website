@@ -49,6 +49,18 @@ or for further discussion or suggestions please visit the
 	<div class="homeitem3col">
 	<h3>New Features since AJDT 1.3 release</h3>
 		<ul>
+		
+		<li>
+		   <a name="m6">Support for Eclipse 3.2M6</a>	
+			<span class="dates">(posted 03-04-06)</span>
+		<p>
+		   Eclipse 3.2M6 is now supported by AJDT, as of development build
+		   1.4.0.20060403091136. Earlier builds will not work
+		   with 3.2M6, and builds from this one onwards will not work with any previous
+		   milestones.
+        </p>
+		</li>
+		
 		<li>
 			<a name="compiler20060321">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 21-03-06)</span>

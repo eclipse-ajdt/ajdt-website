@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#m6">Support for Eclipse 3.2M6</a>
+			    <span class="dates">posted 03-04-06</span>
+			  </li>
+			
+			  <li>
 			    <a href="newfeatures/#markers">Greater control over advice markers</a>
 			    <span class="dates">posted 09-03-06</span>
 			  </li>
@@ -78,22 +83,6 @@
 			  <li>
 			    <a href="newfeatures/#buildconfig">Integrated build configurations</a>
 			    <span class="dates">posted 20-02-06</span>
-			  </li>
-			
-			  <li>
-			    <a href="newfeatures/#m5">Support for Eclipse 3.2M5</a>
-			    <span class="dates">posted 19-02-06</span>
-			  </li>
-			
-			  <li>
-      			<a href="newfeatures/#translations">Translations for AJDT 1.3 available</a>
-				<span class="dates">posted 10-01-06</span>
-			  </li>
-			  			  
-			  <li>
-			    <a href="newfeatures/#ltw">Support for Load-Time Weaving
-				</a>
-				<span class="dates">posted 09-11-05</span>
 			  </li>
 			  
 			</ul>
