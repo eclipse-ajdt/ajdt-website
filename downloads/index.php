@@ -146,6 +146,30 @@ function ListDevBuilds($dir){
 	<h3>Release builds</h3>
 	<ul>
 		<li>
+			<a>AJDT 1.3.1 for Eclipse 3.1</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th align="left">Release Date:</th><td>April 5, 2005</td>
+  </tr>
+  <tr>
+    <th align="left">AspectJ Version:</th><td>1.5.1</td>
+  </tr>
+  <tr>
+    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/technology/ajdt/31/update</code></td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3.1_for_eclipse_3.1.zip">ajdt_1.3.1_for_eclipse_3.1.zip</a></td>
+  </tr>
+  <tr>
+    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew131/">Release notes</a></td>
+  </tr>
+</table>
+		</li>
+
+		<li>
 			<a>AJDT 1.3 for Eclipse 3.1</a>
 		
 <table class="tasklist" width="80%">
@@ -170,7 +194,6 @@ function ListDevBuilds($dir){
     <th align="left">Translations:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3_nls_fragment.zip">ajdt_1.3_nls_fragment.zip</a> (Hungarian and Japanese)</td>
   </tr>
 </table>
-
 		</li>
 
 		<li>
