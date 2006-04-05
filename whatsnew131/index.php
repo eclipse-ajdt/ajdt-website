@@ -69,7 +69,7 @@ also been included in the development builds of AJDT 1.4 for Eclipse 3.2.</p>
 		<p>To measure these improvements we used JConsole (available in
 		J2SE 5.0) to profile memory usage during five full build cycles
 		of a workspace, forcing a garbage collection between each run
-		(plus a slight pause to separate each build cycle). The test
+		(plus a slight pause to separate each cycle). The test
 		workspace was the main codebase of AJDT 1.3.1 itself, which consists
 		of ten source code projects, with a total of around 130,000 lines
 		of code. Here are the results comparing AJDT 1.3.1 against AJDT 1.3,
@@ -83,7 +83,7 @@ also been included in the development builds of AJDT 1.4 for Eclipse 3.2.</p>
 		the same scale. Whilst preserving similar compile times, memory usage
 		has been improved in two ways in this scenario: peak usage is down from
 		around 550Mb to around 250Mb, and residual usage between compiles is down
-		from between 300 - 330Mb to slightly over 100Mb (this is for the whole
+		from 300 - 330Mb to just over 100Mb (this is for the entire
 		JVM so includes the rest of Eclipse).
 		</p>
     </td>
