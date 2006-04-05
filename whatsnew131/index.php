@@ -42,13 +42,13 @@
       What's new in AJDT 1.3.1
     </h1>
 
-<p>The release of the AspectJ Development Tools incorporates the latest AspectJ 1.5.1
+<p>This release of the AspectJ Development Tools incorporates the latest AspectJ 1.5.1
 release, and includes a number of bug fixes since the AJDT 1.3 release
 (see the <a href="http://www.eclipse.org/ajdt/whatsnew12/">What's new in AJDT 1.3</a>
 page for the changes in that release).</p>
 
 <p>AJDT 1.3.1 is for Eclipse 3.1.2 only. The same bug fixes and AspectJ release have
-also been included in the development builds of AJDT 1.4 for Eclipse 3.2.</p>
+also been included in development builds of AJDT 1.4 for Eclipse 3.2.</p>
 
 <table border="1" cellpadding="10" cellspacing="0" width="600">
   <colgroup>
@@ -60,7 +60,7 @@ also been included in the development builds of AJDT 1.4 for Eclipse 3.2.</p>
   <tr>
     <td valign="top" align="left"><b>Reduced memory usage</b></td>
     <td>
-		<p>This release of AJDT incorporates the AspectJ 1.5.1 release,
+		<p>This release of AJDT incorporates AspectJ 1.5.1,
 		which includes bug fixes and dramatic improvements to memory usage.
 		Combined with improvements in AJDT, overall memory usage is now
 		typically <b>less than half</b> that of AJDT 1.3!
