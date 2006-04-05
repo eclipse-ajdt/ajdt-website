@@ -145,6 +145,7 @@ function ListDevBuilds($dir){
 	<div class="homeitem3col">
 	<h3>Release builds</h3>
 	<ul>
+	<!-- HOLD ON A SEC 
 		<li>
 			<a>AJDT 1.3.1 for Eclipse 3.1</a>
 		
@@ -168,6 +169,7 @@ function ListDevBuilds($dir){
   </tr>
 </table>
 		</li>
+-->
 
 		<li>
 			<a>AJDT 1.3 for Eclipse 3.1</a>
