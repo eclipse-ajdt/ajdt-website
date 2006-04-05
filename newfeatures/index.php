@@ -51,6 +51,21 @@ or for further discussion or suggestions please visit the
 		<ul>
 		
 		<li>
+		   <a name="compiler151">AspectJ 1.5.1</a>
+           <span class="dates">(posted 05-04-06)</span>
+
+        <p>
+           AJDT now includes AspectJ 1.5.1 as of the following development builds:
+           <br>1.4.0.20060405055725 for Eclipse 3.2M6
+           <br>1.3.1.20060405045058 for Eclipse 3.1
+        </p>
+        <p>
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=AspectJ&target_milestone=1.5.1&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED">
+           list of AspectJ bugs and enhancements resolved since AspectJ 1.5.</a>
+        </p>
+		</li>
+			
+		<li>
 		   <a name="m6">Support for Eclipse 3.2M6</a>	
 			<span class="dates">(posted 03-04-06)</span>
 		<p>
