@@ -97,6 +97,12 @@
 		<h3>Releases and articles</h3>
 			<ul>
 			  <li>
+      			<a href="downloads/">AJDT 1.3.1 released!</a>
+				See the <a href="whatsnew131/">Release notes</a>
+				<span class="dates">posted 10-04-06</span>
+			  </li>
+
+			  <li>
       			<a href="downloads/">AJDT 1.2.1 and 1.3
 				released!</a>
 				See also <a href="whatsnew13/">New and Noteworthy for 1.2.1 and 1.3</a>
