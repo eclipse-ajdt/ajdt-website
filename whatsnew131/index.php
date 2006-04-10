@@ -60,7 +60,7 @@ also been included in development builds of AJDT 1.4 for Eclipse 3.2.</p>
   <tr>
     <td valign="top" align="left"><b>Reduced memory usage</b></td>
     <td>
-		<p>This release of AJDT incorporates AspectJ 1.5.1,
+		<p>This release of AJDT incorporates AspectJ 1.5.1a,
 		which includes bug fixes and dramatic improvements to memory usage.
 		Combined with improvements in AJDT, overall memory usage is now
 		typically <b>less than half</b> that of AJDT 1.3!
