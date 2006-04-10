@@ -145,16 +145,16 @@ function ListDevBuilds($dir){
 	<div class="homeitem3col">
 	<h3>Release builds</h3>
 	<ul>
-	<!-- HOLD ON A SEC 
+
 		<li>
 			<a>AJDT 1.3.1 for Eclipse 3.1</a>
 		
 <table class="tasklist" width="80%">
   <tr>
-    <th align="left">Release Date:</th><td>April 5, 2005</td>
+    <th align="left">Release Date:</th><td>April 10, 2005</td>
   </tr>
   <tr>
-    <th align="left">AspectJ Version:</th><td>1.5.1</td>
+    <th align="left">AspectJ Version:</th><td>1.5.1a</td>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
@@ -169,7 +169,6 @@ function ListDevBuilds($dir){
   </tr>
 </table>
 		</li>
--->
 
 		<li>
 			<a>AJDT 1.3 for Eclipse 3.1</a>
