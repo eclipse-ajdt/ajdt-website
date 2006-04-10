@@ -44,7 +44,7 @@
 
 <p>This release of the AspectJ Development Tools incorporates the latest AspectJ 1.5.1
 release, and includes a number of bug fixes since the AJDT 1.3 release
-(see the <a href="http://www.eclipse.org/ajdt/whatsnew12/">What's new in AJDT 1.3</a>
+(see the <a href="http://www.eclipse.org/ajdt/whatsnew13/">What's new in AJDT 1.3</a>
 page for the changes in that release).</p>
 
 <p>AJDT 1.3.1 is for Eclipse 3.1.2 only. The same bug fixes and AspectJ release have
