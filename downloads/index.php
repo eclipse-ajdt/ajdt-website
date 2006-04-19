@@ -308,6 +308,11 @@ function ListDevBuilds($dir){
 
 $builds32
 
+<!-- an old M6 build -->
+<tr><td>
+<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/m6/ajdt_1.4.0.20060413082832_archive.zip">1.4.0.20060413082832 for Eclipse 3.2M6</a></td>
+<td width="30%">Thu, 13 Apr 2006 -- 08:28 (-0400)</td><td width="30%"><a href="http://download.eclipse.org/technology/ajdt/32/dev/update/m6/changes-20060413082832.html">changes-20060413082832</a></td></tr>
+
 <!-- an old M5a build -->
 <tr><td>
 <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/m5/ajdt_1.4.0.20060324064654_archive.zip">1.4.0.20060324064654 for Eclipse 3.2M5a</a></td>
