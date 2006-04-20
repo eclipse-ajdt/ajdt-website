@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#rc1">Support for Eclipse 3.2RC1</a>
+			    <span class="dates">posted 20-04-06</span>
+			  </li>
+			
+			  <li>
 			    <a href="newfeatures/#compiler151">AspectJ 1.5.1</a>
 			    <span class="dates">posted 05-04-06</span>
 			  </li>

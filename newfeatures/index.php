@@ -51,6 +51,16 @@ or for further discussion or suggestions please visit the
 		<ul>
 		
 		<li>
+		   <a name="m6">Support for Eclipse 3.2RC1</a>	
+			<span class="dates">(posted 20-04-06)</span>
+		<p>
+		   Development builds from 1.4.0.20060420091148 onwards
+		   require Eclipse 3.2RC1. They will not work properly on 3.2M6
+		   or earlier builds.
+        </p>
+		</li>
+		
+		<li>
 		   <a name="compiler151">AspectJ 1.5.1</a>
            <span class="dates">(posted 05-04-06)</span>
 
