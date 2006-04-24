@@ -148,6 +148,11 @@
 		</div>
 		
 		<hr class="clearer" />
+		
+		<p>
+			The AspectJ compiler is developed by the <a href="http://eclipse.org/aspectj">Eclipse AspectJ project</a>
+			based on original research conducted at <a href="http://www.parc.xerox.com/research/projects/aspectj/default.html">PARC.</a>			
+		</p>
 	</div>
 
 $rightcolumn
