@@ -49,6 +49,23 @@ or for further discussion or suggestions please visit the
 	<div class="homeitem3col">
 	<h3>New Features since AJDT 1.3 release</h3>
 		<ul>
+
+		<li>
+		   <a name="product">Eclipse Product Export Wizard</a>	
+			<span class="dates">(posted 27-04-06)</span>
+		<p>
+		   As of development build 1.4.0.20060426123658 for Eclipse 3.2RC1,
+		   there is a new export wizard called <b>Export Eclipse product
+		   with AspectJ support.</b> This is exactly the same as the regular
+		   version, except it handles AspectJ-enabled plug-in
+		   projects. This means the AspectJ compiler is used to build the
+		   project, and .aj files are treated as source code.
+        </p>
+        
+        <img src="exportwizard.png" width="379" height="430"
+           alt="Export Wizard with AspectJ support">
+        
+		</li>
 		
 		<li>
 		   <a name="rc1">Support for Eclipse 3.2RC1</a>	
