@@ -59,7 +59,7 @@ or for further discussion or suggestions please visit the
 		   with AspectJ support.</b> This is exactly the same as the regular
 		   version, except it handles AspectJ-enabled plug-in
 		   projects. This means the AspectJ compiler is used to build the
-		   project, and .aj files are treated as source code.
+		   project, and .aj files are correctly treated as source code.
         </p>
         
         <img src="exportwizard.png" width="379" height="430"

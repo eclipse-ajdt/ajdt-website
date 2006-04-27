@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#product">Eclipse Product Export Wizard</a>
+			    <span class="dates">posted 27-04-06</span>
+			  </li>
+
+			  <li>
 			    <a href="newfeatures/#rc1">Support for Eclipse 3.2RC1</a>
 			    <span class="dates">posted 20-04-06</span>
 			  </li>
@@ -73,26 +78,6 @@
 			  <li>
 			    <a href="newfeatures/#compiler151">AspectJ 1.5.1</a>
 			    <span class="dates">posted 05-04-06</span>
-			  </li>
-
-			  <li>
-			    <a href="newfeatures/#m6">Support for Eclipse 3.2M6</a>
-			    <span class="dates">posted 03-04-06</span>
-			  </li>
-			
-			  <li>
-			    <a href="newfeatures/#markers">Greater control over advice markers</a>
-			    <span class="dates">posted 09-03-06</span>
-			  </li>
-			  
-			  <li>
-			    <a href="newfeatures/#arv">Additional Crosscutting Comparison functionality</a>
-			    <span class="dates">posted 02-03-06</span>
-			  </li>
-
-			  <li>
-			    <a href="newfeatures/#buildconfig">Integrated build configurations</a>
-			    <span class="dates">posted 20-02-06</span>
 			  </li>
 			  
 			</ul>
