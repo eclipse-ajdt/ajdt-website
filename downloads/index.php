@@ -41,7 +41,7 @@ function ListDevBuilds($dir){
 		 } else if ($eclipse == "31") {
 		   $eclipsename = "3.1";
 		 } else {
-		   $eclipsename = "3.2RC1";
+		   $eclipsename = "3.2RC2";
 		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
@@ -307,6 +307,11 @@ function ListDevBuilds($dir){
   			</tr>
 
 $builds32
+
+<!-- an old RC1 build -->
+<tr><td>
+<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/dev/update/rc1/ajdt_1.4.0.20060428095024_archive.zip">1.4.0.20060428095024 for Eclipse 3.2RC1</a></td>
+<td width="30%">Fri, 28 Apr 2006 -- 09:50 (-0400)</td><td width="30%"><a href="http://download.eclipse.org/technology/ajdt/32/dev/update/rc1/changes-20060428095024.html">changes-20060428095024</a></td></tr>
 
 <!-- an old M6 build -->
 <tr><td>
