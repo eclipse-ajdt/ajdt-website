@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#rc2">Support for Eclipse 3.2RC2</a>
+			    <span class="dates">posted 02-05-06</span>
+			  </li>
+
+			  <li>
 			    <a href="newfeatures/#product">Eclipse Product Export Wizard</a>
 			    <span class="dates">posted 27-04-06</span>
 			  </li>

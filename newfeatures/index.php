@@ -51,6 +51,16 @@ or for further discussion or suggestions please visit the
 		<ul>
 
 		<li>
+		   <a name="rc2">Support for Eclipse 3.2RC2</a>	
+			<span class="dates">(posted 02-05-06)</span>
+		<p>
+		   If you are using Eclipse 3.2RC2, please make sure you
+		   are using a development build from 1.4.0.20060502080233
+		   onwards.
+        </p>
+		</li>
+		
+		<li>
 		   <a name="product">Eclipse Product Export Wizard</a>	
 			<span class="dates">(posted 27-04-06)</span>
 		<p>
