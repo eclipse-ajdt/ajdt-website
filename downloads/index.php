@@ -126,7 +126,7 @@ function ListDevBuilds($dir){
 	
 	$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/32/dev/update');
 	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
-	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
+	# $builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
@@ -375,7 +375,8 @@ $builds31
 			</table>
 			</p>
 		</li>
-		
+
+<!--		
 		<li>
 			<a>Eclipse 3.0 builds</a>
 			<br>Update Site URL:<br>
@@ -394,7 +395,7 @@ $builds30
 			</table>
 			</p>
 		</li>
-		
+-->	
 		
 	</ul>
 	</div>
