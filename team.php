@@ -137,21 +137,21 @@
         <td>Rory Slaney
 	    </td>
         <td>
-          IBM UK Ltd (<a href="http://www.ibm.com/extremeblue">Extreme Blue</a> team member)
+          IBM UK Ltd (<a href="http://www.ibm.com/extremeblue">Extreme Blue</a> team member, 2002)
 	    </td>
       </tr>
       <tr>
         <td>Jonathan Davies
 	    </td>
         <td>
-          IBM UK Ltd (<a href="http://www.ibm.com/extremeblue">Extreme Blue</a> team member)
+          IBM UK Ltd (<a href="http://www.ibm.com/extremeblue">Extreme Blue</a> team member, 2002)
 	    </td>
       </tr>
       <tr>
         <td>Nick Huismans
 	    </td>
         <td>
-          IBM UK Ltd (<a href="http://www.ibm.com/extremeblue">Extreme Blue</a> team member)
+          IBM UK Ltd (<a href="http://www.ibm.com/extremeblue">Extreme Blue</a> team member, 2002)
 	    </td>
       </tr>     		
 			</table>
