@@ -38,16 +38,13 @@
 	<div align="center"><h1>$pageTitle</h1></div>
 
 <p>
-<i>Last updated: 21 December 2005</i>
+<i>Last updated: 11 May 2006</i>
 </p>
 
 <p>
   Here are some details of recent and upcoming AJDT releases.
-  
-  <!--
-  These are plotted on the
-  <a href="http://www.eclipse.org/org/processes/master-timeline.php">Eclipse timeline</a>.
-  -->
+  The major releases are plotted on the
+  <a href="http://www.eclipse.org/projects/timeline/">Eclipse timeline</a>.
   
   See also the <a href="tasks.html">AJDT Tasks page</a> for some of the features we hope to implement
   in a future release.
@@ -60,12 +57,24 @@
         Eclipse version: 3.2<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
+		
+		<p>
+          Release themes:
+        </p>
+
+        <ul>
+           <li>Scaling up: Improve support for working with large workspaces, and
+           with projects containing many aspects.</li>
+           <li>Improve tracing capabilities to better diagnose problems</li>
+           <li>Incorporate latest AspectJ release</li>        
+           <li>To support and benefit from Eclipse 3.2</li>
+        </ul>
 </div>
 
 <div class="homeitem3col">
 	<h3>AJDT 1.3</h3>
 		<p>
-		Status: 1.3 Released 20 December 2005, 1.3.1 planned for shortly after AspectJ 5.1<br>
+		Status: 1.3 Released 20 December 2005, 1.3.1 released 10 April 2006<br>
         Eclipse version: 3.1<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -79,12 +88,17 @@
            <li>To support and benefit from Eclipse 3.1</li>
            <li>To build on AJDT 1.2 with bug fixes and enhanced function</li>
         </ul>
+        
+        <p>
+        	Update: The 1.3 release was updated with 1.3.1 to include bug fixes and
+        	AspectJ 1.5.1a.
+        </p>
 </div>
 
 <div class="homeitem3col">
 	<h3>AJDT 1.2</h3>
 		<p>
-        Status: 1.2 Released 10 June 2005, 1.2.1 Released 20 December 2005<br>
+        Status: 1.2 released 10 June 2005, 1.2.1 released 20 December 2005, 1.2.2 released 2 May 2006<br>
         Eclipse version: 3.0.2<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -101,6 +115,7 @@
 
         <p>
            Update: The 1.2 release was updated with 1.2.1 to include the release version of AspectJ 5, and most of the features from AJDT 1.3.
+           This has been further updated to 1.2.2 to include AspectJ 1.5.1a.
         </p>      
 </div>
 
