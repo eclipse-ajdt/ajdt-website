@@ -102,21 +102,21 @@
         <td>Ben Dalziel
 	    </td>
         <td>
-          IBM UK Ltd
+          IBM UK Ltd (student placement, 2005)
 	    </td>
       </tr>
       <tr>
         <td>Luzius Meisser
 	    </td>
         <td>
-          IBM UK Ltd
+          IBM UK Ltd (student placement, 2004)
 	    </td>
       </tr>
       <tr>
         <td>Ian McGrath
 	    </td>
         <td>
-          IBM UK Ltd
+          IBM UK Ltd (student placement, 2004)
 	    </td>
       </tr>
       <tr>
