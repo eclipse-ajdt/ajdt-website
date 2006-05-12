@@ -51,6 +51,38 @@ or for further discussion or suggestions please visit the
 		<ul>
 
 		<li>
+			<a name="compiler20060512">Updated AspectJ Compiler</a>	
+			<span class="dates">(posted 12-05-06)</span>
+		<p>
+           The AspectJ build included in AJDT has been updated in the following development build:
+           <br>1.4.0.20060512045122 for Eclipse 3.2RC2 / RC3
+        </p>
+        <p>
+           The timestamp of the included AspectJ 5 build is 20060511130959.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2006-04-10&chfieldto=2006-05-12&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
+           list of AspectJ bugs fixed in this build since the last compiler update.</a>
+        </p>        
+        <p>
+           In particular, this build includes fixes for two important problems:
+           <ul>
+		    <li>
+		      on making some kinds of change to an aspect and saving it, the
+			  gutter markers related to the aspect were disappearing (the code on
+              the disk was still fine...).
+		    </li>
+		    <li>
+		      some errors in projects were not being reported to the user and had
+			  to be discovered through the AJDT event trace view or by doing an Ant
+              build of the code.
+		    </li>
+		   </ul>
+		   We have fixed the scenarios we know about that caused these problems -
+           if these fixes don't seem to work for your scenario, please let us
+           know.
+        </p>
+		</li>	
+
+		<li>
 		   <a name="rc2">Support for Eclipse 3.2RC2</a>	
 			<span class="dates">(posted 02-05-06)</span>
 		<p>
