@@ -54,8 +54,8 @@ or for further discussion or suggestions please visit the
 			<a name="compiler20060512">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 12-05-06)</span>
 		<p>
-           The AspectJ build included in AJDT has been updated in the following development build:
-           <br>1.4.0.20060512045122 for Eclipse 3.2RC2 / RC3
+           The AspectJ build included in AJDT has been updated in development build
+           <br>1.4.0.20060512045122 for Eclipse 3.2RC2 / RC3</br>
         </p>
         <p>
            The timestamp of the included AspectJ 5 build is 20060511130959.
@@ -76,10 +76,13 @@ or for further discussion or suggestions please visit the
               build of the code.
 		    </li>
 		   </ul>
-		   We have fixed the scenarios we know about that caused these problems -
+        </p>
+        <p>
+           We have fixed the scenarios we know about that caused these problems -
            if these fixes don't seem to work for your scenario, please let us
            know.
         </p>
+  
 		</li>	
 
 		<li>
