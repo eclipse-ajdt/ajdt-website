@@ -55,7 +55,7 @@ or for further discussion or suggestions please visit the
 			<span class="dates">(posted 12-05-06)</span>
 		<p>
            The AspectJ build included in AJDT has been updated in development build
-           <br>1.4.0.20060512045122 for Eclipse 3.2RC2 / RC3</br>
+           <b>1.4.0.20060512045122 for Eclipse 3.2RC2 / RC3</b>
         </p>
         <p>
            The timestamp of the included AspectJ 5 build is 20060511130959.
