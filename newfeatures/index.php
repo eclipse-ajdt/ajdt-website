@@ -57,6 +57,10 @@ or for further discussion or suggestions please visit the
 		   Moving an aspect to a new package via drag and drop now works!
         </p>
 		<img src="AspectDnD.gif" width="177" height="137" alt="animation showing drag and drop of an aspects">
+		<p>
+		   This capability is available as of development build
+		   AJDT 1.4.0.20060518035008 for Eclipse 3.2RC4.
+		</p>
 		</li>
 
 		<li>
