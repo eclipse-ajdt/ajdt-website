@@ -51,6 +51,15 @@ or for further discussion or suggestions please visit the
 		<ul>
 
 		<li>
+			<a name="dnd">Drag and Drop Aspects</a>	
+			<span class="dates">(posted 19-05-06)</span>
+		<p>
+		   Moving an aspect to a new package via drag and drop now works!
+        </p>
+		<img src="AspectDnD.gif" width="177" height="137" alt="animation showing drag and drop of an aspects">
+		</li>
+
+		<li>
 			<a name="compiler20060518">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 18-05-06)</span>
 		<p>
