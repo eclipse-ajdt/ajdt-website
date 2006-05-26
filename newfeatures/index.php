@@ -51,6 +51,26 @@ or for further discussion or suggestions please visit the
 		<ul>
 
 		<li>
+			<a name="pluginexample">New Plug-in Example</a>	
+			<span class="dates">(posted 26-05-06)</span>
+		<p>
+			A new example project has been added to demonstrate the use of
+			aspects in Eclipse plug-in projects. The example checks for
+			proper usage of the Eclipse IProgressMonitor interface.
+		</p>
+		<img src="pluginexample.png" width="377" height="393" alt="new plug-in example">
+		<p>
+		   This example is available as of development build
+		   AJDT 1.4.0.20060525055413 for Eclipse 3.2RC4 or RC5. Please
+		   let us know via the <a href="news://eclipse.org/eclipse.technology.ajdt">newsgroup</a>
+		   or <a href="http://dev.eclipse.org/mailman/listinfo/ajdt-dev">dev list</a> if you have any
+		   feedback on this project, or if you have any suggestions or
+		   requests for additional examples (or maybe you would like to
+		   contribute one).
+		</p>
+		</li>
+
+		<li>
 			<a name="dnd">Drag and Drop Aspects</a>	
 			<span class="dates">(posted 19-05-06)</span>
 		<p>
