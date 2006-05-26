@@ -56,7 +56,9 @@ or for further discussion or suggestions please visit the
 		<p>
 			A new example project has been added to demonstrate the use of
 			aspects in Eclipse plug-in projects. The example checks for
-			proper usage of the Eclipse IProgressMonitor interface.
+			improper usage of the Eclipse IProgressMonitor interface, such
+			as calling beginTask() twice on the same instance, or over-reporting
+			progress.
 		</p>
 		<img src="pluginexample.png" width="377" height="393" alt="new plug-in example">
 		<p>

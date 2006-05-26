@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#pluginexample">New Plug-in Example</a>
+			    <span class="dates">posted 26-05-06</span>
+			  </li>
+
+			  <li>
 			    <a href="newfeatures/#dnd">Drag and Drop Aspects</a>
 			    <span class="dates">posted 19-05-06</span>
 			  </li>
@@ -78,11 +83,6 @@
 			  <li>
 			    <a href="newfeatures/#product">Eclipse Product Export Wizard</a>
 			    <span class="dates">posted 27-04-06</span>
-			  </li>
-
-			  <li>
-			    <a href="newfeatures/#rc1">Support for Eclipse 3.2RC1</a>
-			    <span class="dates">posted 20-04-06</span>
 			  </li>
 			  
 			</ul>
