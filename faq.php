@@ -378,6 +378,7 @@
 		<a name="q:packaging"></a>
 			<li><em>How can I package my sample code for contribution to the examples plug-in?</em>
 				<p>
+		           See the <a href="developers.php">Developer FAQ</a>
 			    </p>
 		    </li>
 	</ol>
