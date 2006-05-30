@@ -70,7 +70,7 @@
 		<a name="q:source"></a>
 			<li><em>Where will I find the source for AJDT?</em>
 			<p>
-				AJDT source is held in the Eclipse CVS repository under /home/technology, see the <a
+				AJDT source is held in the Eclipse CVS repository under /cvsroot/technology, see the <a
 				href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt/"> root
 				of the AJDT source tree online</a>.
 				AJDT is organized in subdirectories under org.eclipse.ajdt. The main source
