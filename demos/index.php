@@ -55,11 +55,12 @@
 	<div class="homeitem3col">
 	<h3><a name="HELLOWORLD-DEMO">Demonstration: HelloWorld</a></h3>
 		
-	<p>This very small demo (about 1MB) gives you a first look at
-	AJDT. Click on the image below to go to the demo.</p>
+	<p>This small demo (about 3MB) gives you a first look at
+	AJDT. Click on the image below to go to the demo. It has been
+	updated to show AJDT 1.4 on Eclipse 3.2.</p>
 
 <p align=center>
-<a href="HelloWorldDemo.html"><img src="HelloWorldDemo.png" width="450" height="354" border="0"></a>
+<a href="HelloWorldAspectJ.html"><img src="HelloWorldAspectJ.png" width="450" height="338" border="0"></a>
 </p>
 
 </div>    
