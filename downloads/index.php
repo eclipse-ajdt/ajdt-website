@@ -151,7 +151,7 @@ function ListDevBuilds($dir){
 		
 <table class="tasklist" width="80%">
   <tr>
-    <th align="left">Release Date:</th><td>April 10, 2005</td>
+    <th align="left">Release Date:</th><td>April 10, 2006</td>
   </tr>
   <tr>
     <th align="left">AspectJ Version:</th><td>1.5.1a</td>
