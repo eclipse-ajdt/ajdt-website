@@ -51,6 +51,18 @@ or for further discussion or suggestions please visit the
 		<ul>
 
 		<li>
+			<a name="ajrc1">AJDT 1.4 RC1 and AspectJ 1.5.2 RC1</a>	
+			<span class="dates">(posted 26-06-06)</span>
+
+		<p>
+			AJDT development build 1.4.0.20060626090402 for Eclipse 3.2
+			is the Release Candidate build for AJDT 1.4. It has been
+			updated to contain AspectJ 1.5.2 RC1.
+		</p>
+		
+		</li>
+		
+		<li>
 			<a name="compiler20060622">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 22-06-06)</span>
 		<p>

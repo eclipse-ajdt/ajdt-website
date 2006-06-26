@@ -66,6 +66,11 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+			    <a href="newfeatures/#ajrc1">AJDT 1.4 RC1</a>
+			    <span class="dates">posted 26-06-06</span>
+			  </li>
+
+			  <li>
 			    <a href="newfeatures/#pluginexample">New Plug-in Example</a>
 			    <span class="dates">posted 26-05-06</span>
 			  </li>
