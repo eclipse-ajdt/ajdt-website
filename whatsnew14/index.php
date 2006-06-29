@@ -254,13 +254,6 @@ alt="Screenshot showing the results after propagating up to enclosing methods"><
    
  
   <tr>
-    <td valign="top" align="left"><b></b></td>
-    <td>
-
-    </td>
-  </tr>
-  
-  <tr>
     <td valign="top" align="left"><b>Bug fixes</b></td>
     <td>
 		This release contains a large number of bug fixes. The full list is available via
