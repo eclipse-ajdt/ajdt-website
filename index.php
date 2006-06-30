@@ -97,6 +97,12 @@
 		<h3>Releases and articles</h3>
 			<ul>
 			  <li>
+      			<a href="downloads/">AJDT 1.4 for Eclipse 3.2 released!</a>
+				See the <a href="whatsnew14/">New and Noteworthy/a>
+				<span class="dates">posted 30-06-06</span>
+			  </li>
+
+			  <li>
       			<a href="downloads/">AJDT 1.2.2 for Eclipse 3.0 released!</a>
 				This release contains an upgraded version of AspectJ.
 				<span class="dates">posted 02-05-06</span>
