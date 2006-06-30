@@ -125,7 +125,7 @@ function ListDevBuilds($dir){
 	$rightcolumn = file_get_contents("../rightcolumn.html");
 	
 	$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/32/dev/update');
-	# $builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
+	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
 	# $builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
 
 	# Paste your HTML content between the EOHTML markers!	
@@ -361,7 +361,7 @@ $builds32
 			</p>
 		</li>
 
-<!--	
+	
 		<li>
 			<a>Eclipse 3.1 builds</a>
 			<br>Update Site URL:<br>
@@ -380,7 +380,7 @@ $builds31
 			</table>
 			</p>
 		</li>
--->
+
 
 <!--		
 		<li>
