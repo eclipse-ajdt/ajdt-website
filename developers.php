@@ -75,12 +75,12 @@
 				of the AJDT source tree online</a>.
 				AJDT is organized in subdirectories under org.eclipse.ajdt. The main source
 				tree is in the &#8220;AJDT_src&#8221; subdirectory.
-				The source code for the Eclipse 3.1 version of AJDT is contained in
-				the "ajdt1_3" branch, and the source code for the Eclipse 3.0 version is contained
-				in the "ajdt1_2" branch. Here is a description of the various AJDT
+				The source code for the Eclipse 3.2 version of AJDT is contained in
+				the "ajdt1_4" branch, and the source code for the Eclipse 3.1 version is contained
+				in the "ajdt1_3" branch. Here is a description of the various AJDT
 				plug-ins:
 			</p>
-				
+
 				<table>
 				
 				 <tr>
@@ -209,7 +209,7 @@
 			    typically done by passing something like <code>"-vmargs -Xmx512m"</code> to
 			    the Eclipse launcher.</p>
 			
-			    <p>Start with a clean workspace under Eclipse 3.0 or
+			    <p>Start with a clean workspace under Eclipse 3.2 or
 			    Eclipse 3.1. Now open the CVS Repository Exploring 
 			    perspective. Right-click on the CVS Repositories view, then click "New" > "Repository
 			    Location". Host = dev.eclipse.org, Repository path =
@@ -218,14 +218,14 @@
 			    Use the CVS Repositories view to navigate to
 			    HEAD/org.eclipse.ajdt/AJDT_src. </p>
 			    
-			    <p>If you are using Eclipse 3.0 you now need to switch to the
-			    "ajdt1_2" branch in CVS. To discover the branch, you need to
+			    <p>If you are using Eclipse 3.2 you now need to switch to the
+			    "ajdt1_4" branch in CVS. To discover the branch, you need to
 			    right-click on org.eclipse.ajdt and select "Configure Branches
 			    and Versions...", and in the dialog that opens navigate to
 			    AJDT_src/org.aspect.ajde/.project. Various tags should appear in
 			    the right hand side of the dialog. Press "Add Checked Tags", then
 			    "OK". Back in the CVS Repositories view you should now be able to
-			    navigate to Branches/ajdt1_2/org.eclipse.ajdt ajdt1_2/AJDT_src.
+			    navigate to Branches/ajdt1_4/org.eclipse.ajdt ajdt1_4/AJDT_src.
 			    </p>
 			    
 			    <p>If you are using Eclipse 3.1 you need to switch
@@ -255,8 +255,7 @@
 			
 			     <li>From the run menu select "Run..."</li>
 			
-			     <li>Select "Run-time workbench" (this is called "Eclipse
-			     Application" on Eclipse 3.1) and click new</li>
+			     <li>Select "Eclipse Application" and click new</li>
 			
 			     <li>Give your launch configuration a name, and click "Run"</li>
 			
@@ -308,14 +307,15 @@
 			   also be run, and new tests written to accompany fixes or new
 			   features.</p>
 			
-			   <h4>Running the performance tests</h4>
+			   <h4>Running the ui visual tests</h4>
 			
-			   <p>Work is underway on a new plugin,
-			   org.eclipse.ajdt.tests.performance, to monitor the performance of
-			   every build of AJDT. This plugin has dependencies on a number of
-			   Eclipse test projects, which are not shipped in the base Eclipse
-			   SDK. These instructions will be updated later when the plugin is
-			   fully up and running.
+				<p>Along with the ui tests in the org.eclipse.ajdt.ui.tests project,
+				there are visual ui tests in the org.eclipse.ajdt.ui.tests.visual package.
+				A new runtime work bench will launch and the tests will run inside of that; 
+				although be warned that you will not be able to do anything else while the tests
+				are running (even switching to the other workbench) as the tests will fail.
+                This is because keyboard events are generated in order to drive the user
+                interface.</p>
 			
 			   <h4>Creating an update site</h4>
 			
