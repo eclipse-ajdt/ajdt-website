@@ -59,12 +59,10 @@ or for further discussion or suggestions please visit the
 		    development build 1.4.0.20060721111048 for Eclipse 3.2,
 		    this was handled via the ASPECTJRT_LIB classpath variable.
 		    Now when projects are built, this entry will be changed to
-		    a "AspectJ Runtime Library" classpath container, similiar
+		    a more flexible "AspectJ Runtime Library" classpath container, similiar
 		    to the classpath container used for JRE libraries. This change
-		    should be almost transparent, but it is more flexible as it would
-		    allow the runtime library to consist of multiple jar files. Each
-		    project's .classpath file will be updated by the automatic
-		    migration process to reflect this change.	     
+		    should be close to transparent, except that each
+		    project's .classpath file will be updated by the conversion.
 		</p>
 		</li>
 
