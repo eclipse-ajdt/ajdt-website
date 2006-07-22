@@ -66,35 +66,15 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+      			<a href="newfeatures/#container">Classpath container</a>
+				<br><span class="dates">posted 21-07-06</span>
+			  </li>
+			  <li>
       			<a href="downloads/">AJDT 1.4 for Eclipse 3.2 released!</a>
 				See the <a href="whatsnew14/">New and Noteworthy</a>
 				<br><span class="dates">posted 30-06-06</span>
 			  </li>
-			  <li>
-			    <a href="newfeatures/#ajrc1">AJDT 1.4 RC1</a>
-			    <br><span class="dates">posted 26-06-06</span>
-			  </li>
 
-			  <li>
-			    <a href="newfeatures/#pluginexample">New Plug-in Example</a>
-			    <br><span class="dates">posted 26-05-06</span>
-			  </li>
-
-			  <li>
-			    <a href="newfeatures/#dnd">Drag and Drop Aspects</a>
-			    <br><span class="dates">posted 19-05-06</span>
-			  </li>
-
-			  <li>
-			    <a href="newfeatures/#rc2">Support for Eclipse 3.2RC2</a>
-			    <br><span class="dates">posted 02-05-06</span>
-			  </li>
-
-			  <li>
-			    <a href="newfeatures/#product">Eclipse Product Export Wizard</a>
-			    <br><span class="dates">posted 27-04-06</span>
-			  </li>
-			  
 			</ul>
 		</div>
 				
