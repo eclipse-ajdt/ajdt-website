@@ -66,7 +66,7 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
-      			<a href="newfeatures/#container">Classpath container</a>
+      			<a href="newfeatures/#container">Classpath container for AspectJRT</a>
 				<br><span class="dates">posted 21-07-06</span>
 			  </li>
 			  <li>
