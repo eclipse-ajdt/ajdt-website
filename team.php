@@ -98,7 +98,14 @@
 		<div class="homeitem">
 		<h3>Contributors</h3>
 			<table cellpadding="2">
-<tr>
+     <tr>
+        <td>Matthew Ford
+	    </td>
+        <td>
+          IBM UK Ltd (student placement, 2006)
+	    </td>
+      </tr>
+      <tr>
         <td>Ben Dalziel
 	    </td>
         <td>
