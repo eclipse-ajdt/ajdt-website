@@ -60,7 +60,7 @@
         <td>Adrian Colyer
 	    </td>
         <td>
-          IBM UK Ltd
+          Interface21 Ltd
 	    </td>
       </tr>
       <tr>
