@@ -38,7 +38,7 @@
 	<div align="center"><h1>$pageTitle</h1></div>
 
 <p>
-<i>Last updated: 11 May 2006</i>
+<i>Last updated: 27 July 2006</i>
 </p>
 
 <p>
@@ -53,7 +53,7 @@
 <div class="homeitem3col">
 	<h3>AJDT 1.4</h3>
 		<p>
-		Status: Planned for July 2006 (after Eclipse 3.2)<br>
+		Status: 1.4 Released 30 June 2006.<br>
         Eclipse version: 3.2<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -95,6 +95,7 @@
         </p>
 </div>
 
+<!--
 <div class="homeitem3col">
 	<h3>AJDT 1.2</h3>
 		<p>
@@ -118,7 +119,7 @@
            This has been further updated to 1.2.2 to include AspectJ 1.5.1a.
         </p>      
 </div>
-
+-->
 
 		<hr class="clearer" />
 	</div>
