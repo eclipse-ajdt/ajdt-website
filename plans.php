@@ -46,7 +46,7 @@
   The major releases are plotted on the
   <a href="http://www.eclipse.org/projects/timeline/">Eclipse timeline</a>.
   
-  See also the <a href="tasks.html">AJDT Tasks page</a> for some of the features we hope to implement
+  See also the <a href="tasks.php">AJDT Tasks page</a> for some of the features we hope to implement
   in a future release.
 </p>
 
