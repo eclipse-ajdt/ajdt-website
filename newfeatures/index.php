@@ -34,7 +34,7 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
+	<h1>New Features</h1>
 
 <p>This page gives details of the latest new features added to the
 <a href="http://www.eclipse.org/ajdt/downloads/#dev">development builds</a>

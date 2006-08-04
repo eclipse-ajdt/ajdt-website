@@ -141,7 +141,7 @@ function ListDevBuilds($dir){
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
+	<h1>Downloads</h1>
 
 	<div class="homeitem3col">
 	<h3>Release builds for Eclipse 3.2</h3>
