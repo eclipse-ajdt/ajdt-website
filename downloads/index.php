@@ -49,8 +49,9 @@ function ListDevBuilds($dir){
          #echo "name = $name <br>";
          $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
          $str = $str . "</td>\n<td width=\"30%\">";
-         preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches);
-         $datestr = $matches[1];
+         preg_match('/.*ajdt_([0-9]*\.[0-9]*\.[0-9]*)\.(.*)_archive.zip/',$file, $matches);
+         $version = $matches[1];
+         $datestr = $matches[2];
          #echo "date string = " . $datestr . "<br>";
          $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
          $datetime = strtotime($dashes);
@@ -78,7 +79,7 @@ function ListDevBuilds($dir){
          
          $base = dirname($file);
          #echo "base = $base <br>";
-         $changesName = "changes-" . $datestr;
+         $changesName = "changes-" . $version . "." . $datestr;
          $changesFile = $base . "/" . $changesName . ".html";
          $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName . ".html";
          #echo "changes file = $changesFile";
