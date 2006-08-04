@@ -3,7 +3,7 @@
 	# Set the theme for your project's web pages.
 	# See the Committer Tools "How Do I" for list of themes
 	# https://dev.eclipse.org/committers/ 
-	$theme = "Phoenix";
+	$theme = "Lazarus";
 
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
 	#$projectInfo = new ProjectInfo("technology.ajdt");
