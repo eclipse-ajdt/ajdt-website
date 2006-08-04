@@ -34,7 +34,8 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
+	<h2>About</h2>
+	
 		<table border="0" cellpadding="4">
           <tr>
           	<td valign="top"><img border=0 src="logo.gif" width="164" height="229" alt="AJDT screenshot"></td>

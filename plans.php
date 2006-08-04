@@ -35,7 +35,7 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
+	<h1>$pageTitle</h1>
 
 <p>
 <i>Last updated: 27 July 2006</i>
