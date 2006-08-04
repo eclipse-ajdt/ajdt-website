@@ -144,7 +144,7 @@ function ListDevBuilds($dir){
 	<div align="center"><h1>$pageTitle</h1></div>
 
 	<div class="homeitem3col">
-	<h3>Release builds</h3>
+	<h3>Release builds for Eclipse 3.2</h3>
 	<ul>
 
 		<li>
@@ -170,6 +170,12 @@ function ListDevBuilds($dir){
   </tr>
 </table>
 		</li>
+    </ul>
+    </div>
+
+	<div class="homeitem3col">
+	<h3>Release builds for Eclipse 3.1</h3>
+	<ul>
 
 		<li>
 			<a>AJDT 1.3.1 for Eclipse 3.1</a>
@@ -221,6 +227,13 @@ function ListDevBuilds($dir){
   </tr>
 </table>
 		</li>
+
+    </ul>
+    </div>
+
+	<div class="homeitem3col">
+	<h3>Release builds for Eclipse 3.0</h3>
+	<ul>
 
 		<li>
 			<a>AJDT 1.2.2 for Eclipse 3.0</a>
@@ -317,6 +330,7 @@ function ListDevBuilds($dir){
 		
 		</li>
 
+<!--
 		<li>
 			<a>AJDT 1.1.4 for Eclipse 2.1</a>
 			
@@ -335,6 +349,9 @@ function ListDevBuilds($dir){
 </table>
 
 		</li>
+		
+		-->
+		
 	</ul>
 	</div>
 	
