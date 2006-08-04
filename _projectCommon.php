@@ -12,6 +12,7 @@
 $branding = <<<EOBRANDING
 <STYLE TYPE="text/css">
   .sideitem { border-width: 1px 1px; }
+  #midcolumn { margin-top: 5px; }
 </STYLE>
 
 <div id="branding">

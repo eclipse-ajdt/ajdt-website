@@ -34,8 +34,6 @@
 <div id="maincontent">
 	<div id="midcolumn">
 
-	<h1>Welcome</h1>
-	
 		<table border="0" cellpadding="4">
           <tr>
           	<td valign="top"><img border=0 src="logo.gif" width="164" height="229" alt="AJDT screenshot"></td>
@@ -83,6 +81,11 @@
 		<h3>Releases and articles</h3>
 			<ul>
 			  <li>
+      			<a href="downloads/">AJDT 1.3.2 for Eclipse 3.1 released!</a>
+				<br><span class="dates">posted 04-08-06</span>
+			  </li>
+
+			  <li>
       			<a href="downloads/">AJDT 1.4 for Eclipse 3.2 released!</a>
 				See the <a href="whatsnew14/">New and Noteworthy</a>
 				<br><span class="dates">posted 30-06-06</span>
@@ -94,12 +97,6 @@
 				<br><span class="dates">posted 02-05-06</span>
 			  </li>
 			
-			  <li>
-      			<a href="downloads/">AJDT 1.3.1 for Eclipse 3.1 released!</a>
-				See the <a href="whatsnew131/">Release notes</a>
-				<br><span class="dates">posted 10-04-06</span>
-			  </li>
-
 <!--
 			  <li>
       			<a href="downloads/">AJDT 1.2.1 and 1.3
