@@ -9,6 +9,13 @@
 	#$projectInfo = new ProjectInfo("technology.ajdt");
 	#$projectInfo->generate_common_nav( $Nav );
 
+$branding = <<<EOBRANDING
+<div id="branding">
+<h1>AJDT: AspectJ Development Tools</h1>
+</div>
+EOBRANDING;
+$Menu->setProjectBranding($branding);
+
 	$Nav->setLinkList(array());
 
 	# Define your project-wide Nav bars here.
