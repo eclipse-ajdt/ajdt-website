@@ -35,7 +35,7 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
+	<h1>$pageTitle</h1>
 	
 	<p>Welcome to this gentle introduction to AJDT, the AspectJ Development
 	Tools. It aims to serve as a guided reference to the other many resources

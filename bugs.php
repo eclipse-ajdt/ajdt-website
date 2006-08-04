@@ -35,7 +35,7 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
+	<h1>Bugs</h1>
 
 <p>The best way to report a problem or request a new feature in AJDT
 is to use the Bugzilla system. Here are some useful links to get you

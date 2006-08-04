@@ -35,7 +35,7 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
+	<h1>Team</h1>
 	
 	<p>We are grateful to the following for their contributions to the AJDT project:</p>
 

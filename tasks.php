@@ -35,7 +35,7 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
+	<h1>Tasks</h1>
 
 		<p>This page contains a list of AJDT feature development tasks pending or
 		recently completed. Anyone is welcome to contribute to the project, either

@@ -34,7 +34,7 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<h2>About</h2>
+	<h1>About</h1>
 	
 		<table border="0" cellpadding="4">
           <tr>

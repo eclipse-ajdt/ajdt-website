@@ -34,7 +34,7 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
+	<h1>Frequently Asked Questions</h1>
 
 		<ol>
 		<li> Overview
