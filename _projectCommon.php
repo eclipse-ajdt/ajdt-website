@@ -10,6 +10,10 @@
 	#$projectInfo->generate_common_nav( $Nav );
 
 $branding = <<<EOBRANDING
+<STYLE TYPE="text/css">
+  .sideitem { border-width: 1px 1px; }
+</STYLE>
+
 <div id="branding">
 <h1>AJDT: AspectJ Development Tools</h1>
 </div>
