@@ -51,6 +51,36 @@ or for further discussion or suggestions please visit the
 		<ul>
 
 		<li>
+			<a name="compiler20060728">Updated AspectJ Compiler</a>	
+			<span class="dates">(posted 02-08-06)</span>
+		<p>
+           The AspectJ build included in AJDT has been updated in development build
+           <b>1.4.1.20060802071129 for Eclipse 3.2</b>
+        </p>
+        <p>
+           The version of the included AspectJ 5 build is 1.5.3.20060801132048.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2006-07-26&chfieldto=2006-08-01&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
+           list of AspectJ bugs fixed in this build since the last compiler update.</a>
+        </p>        
+  
+		</li>
+
+		<li>
+			<a name="compiler20060726">Updated AspectJ Compiler</a>	
+			<span class="dates">(posted 26-07-06)</span>
+		<p>
+           The AspectJ build included in AJDT has been updated in development build
+           <b>1.4.1.20060726064959 for Eclipse 3.2</b>
+        </p>
+        <p>
+           The version of the included AspectJ 5 build is 1.5.3.20060726092219.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2006-06-30&chfieldto=2006-07-26&chfield=bug_status&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=&field0-1-0=noop&type0-1-0=noop&value0-1-0=&field0-1-1=noop&type0-1-1=noop&value0-1-1=&field1-0-0=noop&type1-0-0=noop&value1-0-0=">
+           list of AspectJ bugs fixed in this build since AspectJ 1.5.2.</a>
+        </p>        
+  
+		</li>
+
+		<li>
 			<a name="container">Classpath container for AspectJ Runtime Library</a>	
 			<span class="dates">(posted 21-07-06)</span>
 		<p>
