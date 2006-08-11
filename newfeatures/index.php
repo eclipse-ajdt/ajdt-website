@@ -59,9 +59,9 @@ or for further discussion or suggestions please visit the
 			not as well tested as the development builds for Eclipse 3.2.
 		</p>
 		<p>
-			Development focus for AJDT will remain on 3.2 for now, but the
+			Development focus for AJDT will remain on Eclipse 3.2 for now, but the
 			development builds for 3.3 will be updated regularly with
-			changes made in the AJDT 1.4.1 for 3.2 line.
+			changes made in the AJDT 1.4.1 for Eclipse 3.2 line.
 		</p>
 		
 		</li>
