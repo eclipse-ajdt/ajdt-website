@@ -138,7 +138,7 @@ function ListDevBuilds($dir){
 	
 	<h1>Downloads</h1>
 
-<p>Please make sure you use a version of AJDT which matches the version
+<p>Please make sure you pick a version of AJDT which matches the version
 of Eclipse you are using.</p>
 
 	<div class="homeitem3col">
