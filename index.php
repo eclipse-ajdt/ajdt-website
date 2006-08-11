@@ -65,6 +65,10 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+      			<a href="newfeatures/#33M1">Support for Eclipse 3.3M1</a>
+				<br><span class="dates">posted 11-08-06</span>
+			  </li>
+			  <li>
       			<a href="newfeatures/#container">Classpath container for AspectJRT</a>
 				<br><span class="dates">posted 21-07-06</span>
 			  </li>

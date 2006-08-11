@@ -51,6 +51,22 @@ or for further discussion or suggestions please visit the
 		<ul>
 
 		<li>
+			<a name="33M1">New release stream for Eclipse 3.3M1</a>	
+			<span class="dates">(posted 11-08-06)</span>
+		<p>
+			New development builds of AJDT 1.5 have been created to
+			support the development of Eclipse 3.3. Not that these are
+			not as well tested as the development builds for Eclipse 3.2.
+		</p>
+		<p>
+			Development focus for AJDT will remain on 3.2 for now, but the
+			development builds for 3.3 will be updated regularly with
+			changes made in the AJDT 1.4.1 for 3.2 line.
+		</p>
+		
+		</li>
+		
+		<li>
 			<a name="compiler20060728">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 02-08-06)</span>
 		<p>
