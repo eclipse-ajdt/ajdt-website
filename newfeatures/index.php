@@ -47,7 +47,7 @@ or for further discussion or suggestions please visit the
 </p>
 
     <div class="homeitem3col">
-	<h3>New Features added during AJDT 1.4.1 development</h3>
+	<h3>New Features added during AJDT 1.5 and 1.4.1 development</h3>
 		<ul>
 
 		<li>

@@ -51,9 +51,7 @@
 		Eclipse platform based tool support for AOSD with AspectJ. Our goal
 		is to deliver a user experience that is consistent with the Java
 		Development Tools (JDT) when working with AspectJ projects and
-		resources. This will be accomplished by developing an integration
-		layer between the AspectJ Development Environment Framework and
-		Eclipse/JDT extension points.
+		resources.
 		</p>
 
 		  	</td>
