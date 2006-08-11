@@ -9,7 +9,6 @@ function date_cmp($f1, $f2) {
 function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
    
-   #$dir30="$dir/30/dev/update";
    $root=opendir($dir) or die("Check $dir !");
    while (false!== ($file=readdir($root))) {
      if($file=="." || $file=="..") {continue;}
@@ -17,18 +16,9 @@ function ListDevBuilds($dir){
          $files[]="$dir/$file";
       }
    } 
-   #$dir31="$dir/31/dev/update";
-   #$root=opendir($dir31) or die("Check $dir31 !");
-   #while (false!== ($file=readdir($root))) {
-   #  if($file=="." || $file=="..") {continue;}
-   #   if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
-   #      $files[]="$dir31/$file";
-   #   }
-   #}
 
    usort($files, "date_cmp");
    @closedir($dir);
-   #@closedir($dir31);
    foreach ($files as $file) {
          $str = $str . "<tr><td>\n";
          
@@ -40,8 +30,12 @@ function ListDevBuilds($dir){
 		   $eclipsename = "3.0";
 		 } else if ($eclipse == "31") {
 		   $eclipsename = "3.1";
-		 } else {
+		 } else if ($eclipse == "32") {
 		   $eclipsename = "3.2";
+		 } else if ($eclipse == "33") {
+		   $eclipsename = "3.3M1";
+		 } else {
+		   $eclipsename = "";
 		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
@@ -125,6 +119,7 @@ function ListDevBuilds($dir){
 
 	$rightcolumn = file_get_contents("../rightcolumn.html");
 	
+	$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/33/dev/update');
 	$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/32/dev/update');
 	# $builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
 	# $builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
@@ -142,6 +137,9 @@ function ListDevBuilds($dir){
 	<div id="midcolumn">
 	
 	<h1>Downloads</h1>
+
+<p>Please make sure you use a version of AJDT which matches the version
+of Eclipse you are using.</p>
 
 	<div class="homeitem3col">
 	<h3>Release builds for Eclipse 3.2</h3>
@@ -381,6 +379,26 @@ function ListDevBuilds($dir){
 	<h3 class="tasklist">Development builds</h3>
 	</a>
 	<ul>
+			<li>
+			<a>Eclipse 3.3 builds</a>
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/technology/ajdt/33/dev/update</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Build Name</th>
+    			<th width="30%">Build Date</th>
+    			<th width="30%">Build Report</th>
+  			</tr>
+
+$builds33
+
+			</table>
+			</p>
+		</li>
+		
+		
 		<li>
 			<a>Eclipse 3.2 builds</a>
 			<br>Update Site URL:<br>
