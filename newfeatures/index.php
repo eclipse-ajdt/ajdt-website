@@ -55,7 +55,7 @@ or for further discussion or suggestions please visit the
 			<span class="dates">(posted 11-08-06)</span>
 		<p>
 			New development builds of AJDT 1.5 have been created to
-			support the development of Eclipse 3.3. Not that these are
+			support the development of Eclipse 3.3. Note that these are
 			not as well tested as the development builds for Eclipse 3.2.
 		</p>
 		<p>
