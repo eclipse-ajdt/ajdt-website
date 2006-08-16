@@ -51,6 +51,32 @@ or for further discussion or suggestions please visit the
 		<ul>
 
 		<li>
+			<a name="PDE">Build Automation for AspectJ-enabled plug-ins</a>	
+			<span class="dates">(posted 16-08-06)</span>
+		<p>
+			As of development builds 1.4.1.200608161046 for Eclipse 3.2
+			and 1.5.0.200608161216 for Eclipse 3.3M1, AJDT now includes
+			a replacement pdebuild-ant.jar file to enable the AspectJ
+			compiler to be used by automated PDE builds. This can be
+			found in the org.eclipse.ajdt.pde.build project, along with
+			a README.txt file containing more information.
+		</p>
+		<p>
+		    Note also that AJDT itself is now built using the PDE
+		    build process and the replacement jar file. As a side-effect
+		    of this change, the version of the AspectJ plug-ins now
+		    matches the actual version of AspectJ included, rather
+		    than the version of the AJDT build. This means
+		    that when upgrading to a newer version of AJDT using the
+		    Eclipse Update Manager, if the version of AJDT has changed
+		    but not the included version of AspectJ, the AspectJ
+		    plug-ins will not be downloaded again. It is therefore
+		    more efficient to use the Update Manager than installing
+		    from zip files.
+		</p>
+		</li>
+		
+		<li>
 			<a name="33M1">New release stream for Eclipse 3.3M1</a>	
 			<span class="dates">(posted 11-08-06)</span>
 		<p>
