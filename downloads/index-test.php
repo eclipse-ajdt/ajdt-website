@@ -83,10 +83,10 @@ function ListDevBuilds($dir){
    				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
    				$str = $str . "</td>";
 			 } else {
-   			    $str = $str . "<td width=\"25%\"><i>pending...</i></td>";
+   			    $str = $str . "<td><i>pending...</i></td>";
 			 }
          } else {
-             $str = $str . "<td width=\"25%\"><i>not available</i></td>";
+             $str = $str . "<td><i>not available</i></td>";
          }
          
          # look for AspectJ version file
@@ -421,9 +421,9 @@ $builds33
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
-    			<th width="25%">Build&nbsp;Date</th>
-    			<th width="25%">Build&nbsp;Report</th>
-    			<th width="25%">AspectJ&nbsp;Version</th>
+    			<th>Build&nbsp;Date</th>
+    			<th>Build&nbsp;Report</th>
+    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 
 $builds32
