@@ -79,7 +79,7 @@ function ListDevBuilds($dir){
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
-   				$str = $str . "<td width=\"25%\"><a href=\"$changesURL\">changes</a>";
+   				$str = $str . "<td><a href=\"$changesURL\">changes</a>";
    				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
    				$str = $str . "</td>";
 			 } else {
@@ -91,7 +91,7 @@ function ListDevBuilds($dir){
          
          # look for AspectJ version file
          $ajversionFile = $base . "/ajversion-" . $version . "." . $datestr . ".txt";
-         $str = $str . "<td width=\"25%\">";
+         $str = $str . "<td>";
          if (file_exists($ajversionFile) && is_readable($ajversionFile)) {
             $ajv = file_get_contents($ajversionFile);
             $str = $str . $ajv;
@@ -399,10 +399,10 @@ of Eclipse you are using.</p>
 			<p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
-    			<th>Build Name</th>
-    			<th width="25%">Build Date</th>
-    			<th width="25%">Build Report</th>
-    			<th width="25%">AspectJ Version</th>
+    			<th>Zip file</th>
+    			<th>Build Date</th>
+    			<th>Build Report</th>
+    			<th>AspectJ Version</th>
   			</tr>
 
 $builds33
@@ -420,7 +420,7 @@ $builds33
 			<p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
-    			<th>Build Name</th>
+    			<th>Zip file</th>
     			<th width="25%">Build Date</th>
     			<th width="25%">Build Report</th>
     			<th width="25%">AspectJ Version</th>
