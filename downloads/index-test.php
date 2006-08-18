@@ -92,12 +92,11 @@ function ListDevBuilds($dir){
          # look for AspectJ version file
          $ajversionFile = $base . "/ajversion-" . $version . "." . $datestr . ".txt";
          $str = $str . "<td width=\"25%\">";
-         $str = $str . $ajversionFile;
          if (file_exists($ajversionFile) && is_readable($ajversionFile)) {
             $ajv = file_get_contents($ajversionFile);
             $str = $str . $ajv;
          } else {
-            $src = $src . "<i>unknown</i>";
+            $str = $str . "<i>unknown</i>";
          }
          $str = $str . "</td>";
          $str = $str . "</tr>\n";
