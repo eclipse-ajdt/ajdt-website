@@ -399,10 +399,10 @@ of Eclipse you are using.</p>
 			<p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
-    			<th>Zip file</th>
-    			<th>Build Date</th>
-    			<th>Build Report</th>
-    			<th>AspectJ Version</th>
+    			<th>Zip&nbsp;file</th>
+    			<th>Build&nbsp;Date</th>
+    			<th>Build&nbsp;Report</th>
+    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 
 $builds33
@@ -420,10 +420,10 @@ $builds33
 			<p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
-    			<th>Zip file</th>
-    			<th width="25%">Build Date</th>
-    			<th width="25%">Build Report</th>
-    			<th width="25%">AspectJ Version</th>
+    			<th>Zip&nbsp;file</th>
+    			<th width="25%">Build&nbsp;Date</th>
+    			<th width="25%">Build&nbsp;Report</th>
+    			<th width="25%">AspectJ&nbsp;Version</th>
   			</tr>
 
 $builds32
