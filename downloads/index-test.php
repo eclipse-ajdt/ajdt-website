@@ -79,22 +79,25 @@ function ListDevBuilds($dir){
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
-   				$str = $str . "<td width=\"30%\"><a href=\"$changesURL\">$changesName</a>";
+   				$str = $str . "<td width=\"25%\"><a href=\"$changesURL\">$changesName</a>";
    				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
    				$str = $str . "</td>";
 			 } else {
-   			    $str = $str . "<td width=\"30%\"><i>pending...</i></td>";
+   			    $str = $str . "<td width=\"25%\"><i>pending...</i></td>";
 			 }
          } else {
-             $str = $str . "<td width=\"30%\"><i>not available</i></td>";
+             $str = $str . "<td width=\"25%\"><i>not available</i></td>";
          }
          
          # look for AspectJ version file
          $ajversionFile = $base . "/ajversion-" . $version . "." . $datestr . ".txt";
-         $str = $str . "<td>";
+         $str = $str . "<td width=\"25%\">";
          $str = $str . $ajversionFile;
          if (file_exists($ajversionFile) && is_readable($ajversionFile)) {
-            $str = $str . "  (exists)";
+            $ajv = file_get_contents($ajversionFile);
+            $str = $str . $ajv;
+         } else {
+            $src = $src . "<i>unknown</i>";
          }
          $str = $str . "</td>";
          $str = $str . "</tr>\n";
