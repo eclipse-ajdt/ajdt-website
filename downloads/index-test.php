@@ -79,7 +79,7 @@ function ListDevBuilds($dir){
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
-   				$str = $str . "<td width=\"25%\"><a href=\"$changesURL\">$changesName</a>";
+   				$str = $str . "<td width=\"25%\"><a href=\"$changesURL\">changes</a>";
    				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
    				$str = $str . "</td>";
 			 } else {
