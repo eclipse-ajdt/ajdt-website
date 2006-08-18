@@ -90,14 +90,14 @@ function ListDevBuilds($dir){
          }
          
          # look for AspectJ version file
-         $ajversionFile = $base . "/ajversion-" . $version . ".txt";
-         echo "<td>";
-         echo $ajversionFile;
+         $ajversionFile = $base . "/ajversion-" . $version "." . $datestr . ".txt";
+         $str = $str . "<td>";
+         $str = $str . $ajversionFile;
          if (file_exists($ajversionFile) && is_readable($ajversionFile)) {
-            echo "  exists";
+            $str = $str . "  (exists)";
          }
-         echo "</td>";
-         echo "</tr>\n";
+         $str = $str . "</td>";
+         $str = $str . "</tr>\n";
    }
    return $str;
 }
