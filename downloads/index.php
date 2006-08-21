@@ -79,15 +79,27 @@ function ListDevBuilds($dir){
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
-   				$str = $str . "<td width=\"30%\"><a href=\"$changesURL\">$changesName</a>";
+   				$str = $str . "<td><a href=\"$changesURL\">changes</a>";
    				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
-   				$str = $str . "</td></tr>\n";
+   				$str = $str . "</td>";
 			 } else {
-   			    $str = $str . "<td width=\"30%\"><i>pending...</i></td></tr>\n";
+   			    $str = $str . "<td><i>pending...</i></td>";
 			 }
          } else {
-             $str = $str . "<td width=\"30%\"><i>not available</i></td></tr>\n";
+             $str = $str . "<td><i>not available</i></td>";
          }
+         
+         # look for AspectJ version file
+         $ajversionFile = $base . "/ajversion-" . $version . "." . $datestr . ".txt";
+         $str = $str . "<td>";
+         if (file_exists($ajversionFile) && is_readable($ajversionFile)) {
+            $ajv = file_get_contents($ajversionFile);
+            $str = $str . $ajv;
+         } else {
+            $str = $str . "<i>unknown</i>";
+         }
+         $str = $str . "</td>";
+         $str = $str . "</tr>\n";
    }
    return $str;
 }
@@ -387,9 +399,10 @@ of Eclipse you are using.</p>
 			<p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
-    			<th>Build Name</th>
-    			<th width="30%">Build Date</th>
-    			<th width="30%">Build Report</th>
+    			<th>Zip&nbsp;file</th>
+    			<th>Build&nbsp;Date</th>
+    			<th>Build&nbsp;Report</th>
+    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 
 $builds33
@@ -407,9 +420,10 @@ $builds33
 			<p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
-    			<th>Build Name</th>
-    			<th width="30%">Build Date</th>
-    			<th width="30%">Build Report</th>
+    			<th>Zip&nbsp;file</th>
+    			<th>Build&nbsp;Date</th>
+    			<th>Build&nbsp;Report</th>
+    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 
 $builds32
