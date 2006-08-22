@@ -54,9 +54,9 @@ or for further discussion or suggestions please visit the
 			<span class="dates">(posted 22-08-06)</span>
 		<p>
            The AspectJ build included in AJDT has been updated in the following 
-           development builds
-           <b>1.4.1.200608210736 for Eclipse 3.2</b>
-           <b>1.5.0.200608211312 for Eclipse 3.3M1</b>
+           development builds:
+           <br>1.4.1.200608210736 for Eclipse 3.2
+           <br>1.5.0.200608211312 for Eclipse 3.3M1
         </p>
         <p>
            The version of the included AspectJ 5 build is 1.5.3.200608210847.
