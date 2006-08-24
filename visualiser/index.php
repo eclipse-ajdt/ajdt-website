@@ -68,6 +68,10 @@
        is available from developerWorks:
        <a href="http://www.ibm.com/developerworks/edu/j-dw-java-visual-i.html">Create your own visualisations in Eclipse.</a>
        </p>
+
+		<p>A new provider has been developed by the University of Alabama at Birmingham:
+		<a href="http://www.cis.uab.edu/tairasr/visual/">Visualization of Clone Detection Results</a>
+		</p>
    
    		  	</td>
       </tr>
