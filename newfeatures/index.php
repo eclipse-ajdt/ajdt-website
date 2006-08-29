@@ -50,6 +50,22 @@ or for further discussion or suggestions please visit the
 	<h3>New Features added during AJDT 1.5 and 1.4.1 development</h3>
 		<ul>
 		<li>
+			<a name="compiler20060829">Updated AspectJ Compiler</a>	
+			<span class="dates">(posted 29-08-06)</span>
+		<p>
+           The AspectJ build included in AJDT has been updated in the following 
+           development builds:
+           <br>1.4.1.200608290806 for Eclipse 3.2
+           <br>1.5.0.200608290906 for Eclipse 3.3M1
+        </p>
+        <p>
+           The version of the included AspectJ 5 build is 1.5.3.200608290814.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2006-08-21&chfieldto=2006-08-29&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+           list of AspectJ bugs fixed in this build since the last compiler update.</a>
+        </p>        
+  
+		</li>
+		<li>
 			<a name="compiler20060821">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 22-08-06)</span>
 		<p>
