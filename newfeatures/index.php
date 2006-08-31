@@ -54,10 +54,10 @@ or for further discussion or suggestions please visit the
 			<span class="dates">(posted 31-08-06)</span>
 		<p>
 		  The project properties pages for configuring a project's
-		  inpath, aspect path, and output jar settings have been
+		  inpath, aspect path, and output jar have been
 		  organised into a single <b>AspectJ Build</b> page.
 		</p>
-		<img src="ajbuildprops.png" width="506" height="179" alt="new AspectJ build properties page">
+		<img src="ajbuildprops.png" width="390" height="179" alt="new AspectJ build properties page">
 		<p>
 	      There is an <b>AspectJ Tools &gt; Configure AspectJ Build Path...</b>
 		  shortcut to this page, available by right-clicking on a project. It
