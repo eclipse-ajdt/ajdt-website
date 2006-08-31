@@ -50,6 +50,28 @@ or for further discussion or suggestions please visit the
 	<h3>New Features added during AJDT 1.5 and 1.4.1 development</h3>
 		<ul>
 		<li>
+			<a name="ajbuild">Improved AspectJ Build Properties</a>	
+			<span class="dates">(posted 31-08-06)</span>
+		<p>
+		  The project properties pages for configuring a project's
+		  inpath, aspect path, and output jar settings have been
+		  organised into a single <b>AspectJ Build</b> page.
+		</p>
+		<img src="ajbuildprops.png" width="506" height="179" alt="new AspectJ build properties page">
+		<p>
+	      There is an <b>AspectJ Tools &gt; Configure AspectJ Build Path...</b>
+		  shortcut to this page, available by right-clicking on a project. It
+		  is also now possible to right-click on a JAR or ZIP file in a project
+		  and select to add it to the in-path or aspect path, or remove it.
+		</p>
+		<p>
+		  All of these changes are in development builds
+		  1.4.1.200608301425 for Eclipse 3.2 and
+		  1.5.0.200608301302 for Eclipse 3.3M1.
+		</p>	
+		</li>
+		
+		<li>
 			<a name="compiler20060829">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 29-08-06)</span>
 		<p>
