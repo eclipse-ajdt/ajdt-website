@@ -50,6 +50,35 @@ or for further discussion or suggestions please visit the
 	<h3>New Features added during AJDT 1.5 and 1.4.1 development</h3>
 		<ul>
 		<li>
+			<a name="binaryweaving">Improved Binary Weaving support</a>	
+			<span class="dates">(posted 11-09-06)</span>
+		<p>
+			With AJDT 1.4, if you have a project containing some aspects, and you
+			add the output folder to the aspect path of another
+			project, the advised locations will show as being advised
+			by a binary aspect and no navigation to the advise is
+			possible. Also there are no "advises" relationships shown
+			in the project containing the aspects, as the weaving
+			is done in the other project. Now AJDT looks for these
+			binary aspects in your workspace, and locates the
+			corresponding source code. The appropriate relationships
+			and markers can then be shown (for both the source and
+			target of the advice) in the same way as for source
+			weaving within a single project.
+		</p>
+		<img src="binaryweaving.gif" width="450" height="248" alt="Improve support for binary weaving">
+		<p>
+		  To try out this support, make sure you are using either
+		  1.4.1.200609111054 for Eclipse 3.2 or
+		  1.5.0.200609111120 for Eclipse 3.3M1, or any more recent
+		  builds. It should work when either a class folder or
+		  a JAR file is added to the aspect path, so long as
+		  the containing project has a source folder containing the
+		  code for the relevant aspects.
+		</p>
+		</li>
+
+		<li>
 			<a name="ajbuild">Improved AspectJ Build Properties</a>	
 			<span class="dates">(posted 31-08-06)</span>
 		<p>
