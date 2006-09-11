@@ -63,6 +63,10 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+      			<a href="newfeatures/#binaryweaving">Improved Binary Weaving support</a>
+				<br><span class="dates">posted 11-09-06</span>
+			  </li>
+			  <li>
       			<a href="newfeatures/#ajbuild">Improved AspectJ Build Properties</a>
 				<br><span class="dates">posted 31-08-06</span>
 			  </li>
@@ -74,12 +78,6 @@
       			<a href="newfeatures/#33M1">Support for Eclipse 3.3M1</a>
 				<br><span class="dates">posted 11-08-06</span>
 			  </li>
-			  <li>
-      			<a href="downloads/">AJDT 1.4 for Eclipse 3.2 released!</a>
-				See the <a href="whatsnew14/">New and Noteworthy</a>
-				<br><span class="dates">posted 30-06-06</span>
-			  </li>
-
 			</ul>
 		</div>
 				

@@ -56,7 +56,7 @@ or for further discussion or suggestions please visit the
 			With AJDT 1.4, if you have a project containing some aspects, and you
 			add the output folder to the aspect path of another
 			project, the advised locations will show as being advised
-			by a binary aspect and no navigation to the advise is
+			by a binary aspect and no navigation to the advice is
 			possible. Also there are no "advises" relationships shown
 			in the project containing the aspects, as the weaving
 			is done in the other project. Now AJDT looks for these
