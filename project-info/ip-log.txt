@@ -1,0 +1,39 @@
+Committers
+mchapman,hawkins,sjanuary,mkersten,aclement,acolyer,jwaterh
+
+Developers
+
+For AJDT 1.4.1:
+component,			bug#,		name,				size,		committer,			description
+org.eclipse.ajdt,	104334,		Matthew Ford,		<2000,		mchapman,			properties pages
+org.eclipse.ajdt,	107010,		Matthew Ford,		<2000,		mchapman,			menu shortcuts
+org.eclipse.ajdt,	149675,		Matthew Ford,		<1000,		mchapman,			event trace settings
+org.eclipse.ajdt,	150936,		Matthew Ford,		<100,		mchapman,			bug fix
+org.eclipse.ajdt,	151259,		Matthew Ford,		<1000,		mchapman,			properties pages
+org.eclipse.ajdt,	151707,		Matthew Ford,		<1000,		mchapman,			compiler options
+org.eclipse.ajdt,	154857,		Matthew Ford,		<2000,		mchapman,			load time weaving config
+org.eclipse.ajdt,	71700,		Matthew Ford,		<1000,		mchapman,			option validation
+
+
+Prior to AJDT 1.4.1:
+component,			bug#,		name,				size,		committer,			description
+org.eclipse.ajdt,	113723,		Charles Zhang,		<2000,		mchapman,			aspect refactoring verifier
+org.eclipse.ajdt,	113723,		Irum Godil,			<2000,		mchapman,			aspect refactoring verifier
+org.eclipse.ajdt,	113723,		Arno Jacobsen,		<2000,		mchapman,			aspect refactoring verifier
+org.eclipse.ajdt,	112320,		Kentaro Matsumae,	<1000,		mchapman,			Japanese translations
+org.eclipse.ajdt,	112320,		Csaba Kabai,		<1000,		mchapman,			Hungarian translations
+org.eclipse.ajdt,	various,	Ben Dalziel,		unknown,	mchapman,			contributions made during an IBM student placement, 2005
+org.eclipse.ajdt,	96276,		Thomas Klaeger		<300,		mchapman,			cleanup
+org.eclipse.ajdt,	79313,		Linton Ye			<300,		mchapman,			new test
+org.eclipse.ajdt,	various,	Luzius Meisser,		unknown,	mchapman,			contributions made during an IBM student placement, 2004
+org.eclipse.ajdt,	various,	Ian McGrath,		unknown,	mchapman,			contributions made during an IBM student placement, 2004
+org.eclipse.ajdt,	various,	George Harley,		unknown,	mchapman/aclement,	various contributons made as an IBM employee, 2002 - 2005
+org.eclipse.ajdt,	various,	Matthew Webster,	unknown,	mchapman/aclement,	various contributons made as an IBM employee, 2002 - 2006
+org.eclipse.ajdt,	various,	Tracy Gardner,		unknown,	aclement,			various contributons made as an IBM employee, 2002
+org.eclipse.contribution.visualiser, various, Rory Slaney, unknown, aclement,		contributons made as an IBM Extreme Blue member, 2002
+org.eclipse.contribution.visualiser, various, Jonathan Davies, unknown, aclement,	contributons made as an IBM Extreme Blue member, 2002
+org.eclipse.contribution.visualiser, various, Nick Huismans, unknown, aclement,		contributons made as an IBM Extreme Blue member, 2002
+
+
+Third Party Software
+None used directly, but AJDT includes AspectJ so see IP Log for AspectJ
