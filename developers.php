@@ -274,6 +274,7 @@
 			   <ul>
 			     <li>org.eclipse.ajdt.core.tests</li>
 			     <li>org.eclipse.ajdt.ui.tests</li>
+			     <li>org.eclipse.ajdt.ui.visual.tests</li>			     
 			     <li>org.eclipse.contribution.visualiser.tests</li>
 			     <li>org.eclipse.contribution.xref.core.tests</li>
 			     <li>org.eclipse.contribution.xref.ui.tests</li>
@@ -310,34 +311,15 @@
 			   <h4>Running the ui visual tests</h4>
 			
 				<p>Along with the ui tests in the org.eclipse.ajdt.ui.tests project,
-				there are visual ui tests in the org.eclipse.ajdt.ui.tests.visual package.
+				there are visual ui tests in the org.eclipse.ajdt.ui.visual.tests project.
+				Select the AllVisualTests.java file, right-click and select "Run As" &gt; 
+				"JUnit Plug-in Test".
 				A new runtime work bench will launch and the tests will run inside of that; 
 				although be warned that you will not be able to do anything else while the tests
 				are running (even switching to the other workbench) as the tests will fail.
                 This is because keyboard events are generated in order to drive the user
                 interface.</p>
-			
-			   <h4>Creating an update site</h4>
-			
-			   <p>Each of the AJDT plugin projects also contains an Ant build
-			   file, "build.xml." The default target builds a packaged version of
-			   the project in question. Check-out the "UpdateSite" project from
-			   CVS, and use the build.xml file in that project to invoke a master
-			   build that builds an entire update site structure in its "dist"
-			   directory. To run the build.xml file inside Eclipse, you need to do
-			   "Run As > Ant Build..." to bring up the run configuration dialog,
-			   then go to the "JRE" tab and choose to run in a separate JRE.</p>
-			
-			   <p>Those plugins that use aspects in their implementation need
-			   to be built using the AspectJ compiler. To do this the
-			   "iajc" Ant task is used in each of the relevant build.xml files.
-			   For this to run successfully, it needs to be able to locate
-			   the org.aspectj.ajde and org.aspectj.weaver plugins from the
-			   installed version of AJDT. Each build.xml file refers to the
-			   specific version on AJDT installed on the build machine, so unless
-			   you have exactly the same version installed, you need to uncomment
-			   and override the "aspectj.plugin.home" and "aspectj.weaver.home"
-			   properties in the build.xml file from the "UpdateSite" project.</p>
+
 		    </li>
 		
 		<a name="q:packaging"></a>
