@@ -27,12 +27,12 @@ org.eclipse.ajdt,	96276,		Thomas Klaeger		<300,		mchapman,			cleanup
 org.eclipse.ajdt,	79313,		Linton Ye			<300,		mchapman,			new test
 org.eclipse.ajdt,	various,	Luzius Meisser,		unknown,	mchapman,			contributions made during an IBM student placement, 2004
 org.eclipse.ajdt,	various,	Ian McGrath,		unknown,	mchapman,			contributions made during an IBM student placement, 2004
-org.eclipse.ajdt,	various,	George Harley,		unknown,	mchapman/aclement,	various contributons made as an IBM employee, 2002 - 2005
-org.eclipse.ajdt,	various,	Matthew Webster,	unknown,	mchapman/aclement,	various contributons made as an IBM employee, 2002 - 2006
-org.eclipse.ajdt,	various,	Tracy Gardner,		unknown,	aclement,			various contributons made as an IBM employee, 2002
-org.eclipse.contribution.visualiser, various, Rory Slaney, unknown, aclement,		contributons made as an IBM Extreme Blue member, 2002
-org.eclipse.contribution.visualiser, various, Jonathan Davies, unknown, aclement,	contributons made as an IBM Extreme Blue member, 2002
-org.eclipse.contribution.visualiser, various, Nick Huismans, unknown, aclement,		contributons made as an IBM Extreme Blue member, 2002
+org.eclipse.ajdt,	various,	George Harley,		unknown,	mchapman/aclement,	various contributions made as an IBM employee, 2002 - 2005
+org.eclipse.ajdt,	various,	Matthew Webster,	unknown,	mchapman/aclement,	various contributions made as an IBM employee, 2002 - 2006
+org.eclipse.ajdt,	various,	Tracy Gardner,		unknown,	aclement,			various contributions made as an IBM employee, 2002
+org.eclipse.contribution.visualiser, various, Rory Slaney, unknown, aclement,		contributions made as an IBM Extreme Blue member, 2002
+org.eclipse.contribution.visualiser, various, Jonathan Davies, unknown, aclement,	contributions made as an IBM Extreme Blue member, 2002
+org.eclipse.contribution.visualiser, various, Nick Huismans, unknown, aclement,		contributions made as an IBM Extreme Blue member, 2002
 
 
 Third Party Software
