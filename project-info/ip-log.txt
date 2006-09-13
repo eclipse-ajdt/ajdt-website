@@ -4,7 +4,7 @@ mchapman,hawkins,sjanuary,mkersten,aclement,acolyer,jwaterh
 Developers
 
 For AJDT 1.4.1:
-component,			bug#,		name,				size,		committer,			description
+component,          bug#,       name,               size,       committer,          description
 org.eclipse.ajdt,	104334,		Matthew Ford,		<2000,		mchapman,			properties pages
 org.eclipse.ajdt,	107010,		Matthew Ford,		<2000,		mchapman,			menu shortcuts
 org.eclipse.ajdt,	149675,		Matthew Ford,		<1000,		mchapman,			event trace settings
@@ -16,7 +16,7 @@ org.eclipse.ajdt,	71700,		Matthew Ford,		<1000,		mchapman,			option validation
 
 
 Prior to AJDT 1.4.1:
-component,			bug#,		name,				size,		committer,			description
+component,          bug#,       name,               size,       committer,          description
 org.eclipse.ajdt,	113723,		Charles Zhang,		<2000,		mchapman,			aspect refactoring verifier
 org.eclipse.ajdt,	113723,		Irum Godil,			<2000,		mchapman,			aspect refactoring verifier
 org.eclipse.ajdt,	113723,		Arno Jacobsen,		<2000,		mchapman,			aspect refactoring verifier
