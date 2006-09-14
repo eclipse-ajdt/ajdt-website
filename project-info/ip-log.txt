@@ -5,6 +5,7 @@ Developers
 
 For AJDT 1.4.1:
 component,          bug#,       name,               size,       committer,          description
+org.eclipse.ajdt,	135060,		Matthew Ford,		<10,		mchapman,			bug fix
 org.eclipse.ajdt,	104334,		Matthew Ford,		<2000,		mchapman,			properties pages
 org.eclipse.ajdt,	107010,		Matthew Ford,		<2000,		mchapman,			menu shortcuts
 org.eclipse.ajdt,	149675,		Matthew Ford,		<1000,		mchapman,			event trace settings
