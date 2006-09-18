@@ -11,7 +11,7 @@
 
 $branding = <<<EOBRANDING
 <STYLE TYPE="text/css">
-  .sideitem { border-width: 1px 1px; }
+  .sideitem { border-width: 1px 1px; margin: 20px 0; }
   #midcolumn { margin-top: 5px; }
   body { font-size: small; }
 </STYLE>
