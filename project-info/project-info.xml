@@ -7,7 +7,7 @@
 	<contributors url="/ajdt/contributors.php"/>
 	<leaders url="/ajdt/committers.php"/>
 	
-	<cvs repository="/cvsroot/technology/">
+	<cvs repository="/cvsroot/tools/">
 		<module path="org.eclipse.ajdt/AJDT_src"/>
 	</cvs>
 
