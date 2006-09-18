@@ -4,16 +4,17 @@ mchapman,hawkins,sjanuary,mkersten,aclement,acolyer,jwaterh
 Developers
 
 For AJDT 1.4.1:
-component,          bug#,       name,               size,       committer,          description
-org.eclipse.ajdt,	135060,		Matthew Ford,		<10,		mchapman,			bug fix
-org.eclipse.ajdt,	104334,		Matthew Ford,		<2000,		mchapman,			properties pages
-org.eclipse.ajdt,	107010,		Matthew Ford,		<2000,		mchapman,			menu shortcuts
-org.eclipse.ajdt,	149675,		Matthew Ford,		<1000,		mchapman,			event trace settings
-org.eclipse.ajdt,	150936,		Matthew Ford,		<100,		mchapman,			bug fix
-org.eclipse.ajdt,	151259,		Matthew Ford,		<1000,		mchapman,			properties pages
-org.eclipse.ajdt,	151707,		Matthew Ford,		<1000,		mchapman,			compiler options
-org.eclipse.ajdt,	154857,		Matthew Ford,		<2000,		mchapman,			load time weaving config
-org.eclipse.ajdt,	71700,		Matthew Ford,		<1000,		mchapman,			option validation
+component,          	bug#,       name,               size,       committer,          description
+org.eclipse.ajdt.core,	157313,		Matthew Webster,	<100,		mchapman,			update aspectjrt container
+org.eclipse.ajdt.ui,	135060,		Matthew Ford,		<10,		mchapman,			bug fix
+org.eclipse.ajdt.ui,	104334,		Matthew Ford,		<2000,		mchapman,			properties pages
+org.eclipse.ajdt.ui,	107010,		Matthew Ford,		<2000,		mchapman,			menu shortcuts
+org.eclipse.ajdt.ui,	149675,		Matthew Ford,		<1000,		mchapman,			event trace settings
+org.eclipse.ajdt.ui,	150936,		Matthew Ford,		<100,		mchapman,			bug fix
+org.eclipse.ajdt.ui,	151259,		Matthew Ford,		<1000,		mchapman,			properties pages
+org.eclipse.ajdt.ui,	151707,		Matthew Ford,		<1000,		mchapman,			compiler options
+org.eclipse.ajdt.ui,	154857,		Matthew Ford,		<2000,		mchapman,			load time weaving config
+org.eclipse.ajdt.ui,	71700,		Matthew Ford,		<1000,		mchapman,			option validation
 
 
 Prior to AJDT 1.4.1:
