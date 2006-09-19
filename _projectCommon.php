@@ -42,7 +42,7 @@ $Menu->setProjectBranding($branding);
 
 	$Nav->addNavSeparator("Developers", "", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Contributing", "/ajdt/developers.php", 	"_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;CVS", "http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt/AJDT_src/", 	"_self", 1);
+	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;CVS", "http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.ajdt/AJDT_src/?cvsroot=Tools_Project", 	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Mailing list", "http://dev.eclipse.org/mailman/listinfo/ajdt-dev", 	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Work tasks", "/ajdt/tasks.php", 	"_self", 1);
 
