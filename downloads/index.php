@@ -22,7 +22,7 @@ function ListDevBuilds($dir){
    foreach ($files as $file) {
          $str = $str . "<tr><td>\n";
          
-         preg_match('/(\/technology\/.*\.zip)/',$file, $matches);
+         preg_match('/(\/tools\/.*\.zip)/',$file, $matches);
          $path = $matches[1];
 		 preg_match('/ajdt\/(\\d\\d)\/dev/',$file, $matches);
 		 $eclipse = $matches[1];
@@ -75,7 +75,7 @@ function ListDevBuilds($dir){
          #echo "base = $base <br>";
          $changesName = "changes-" . $version . "." . $datestr;
          $changesFile = $base . "/" . $changesName . ".html";
-         $changesURL = "http://download.eclipse.org/technology/ajdt/" . $eclipse . "/dev/update/" . $changesName . ".html";
+         $changesURL = "http://download.eclipse.org/tools/ajdt/" . $eclipse . "/dev/update/" . $changesName . ".html";
          #echo "changes file = $changesFile";
          if (file_exists($changesFile)) {            
              if (is_readable($changesFile)) {
@@ -131,10 +131,10 @@ function ListDevBuilds($dir){
 
 	$rightcolumn = file_get_contents("../rightcolumn.html");
 	
-	$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/33/dev/update');
-	$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/32/dev/update');
-	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
-	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
+	$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/33/dev/update');
+	$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
+	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/31/dev/update');
+	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/30/dev/update');
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
@@ -169,11 +169,11 @@ of Eclipse you are using.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/technology/ajdt/32/update</code></td>
+    <td><code>http://download.eclipse.org/tools/ajdt/32/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/32/update/ajdt_1.4_for_eclipse_3.2.zip">ajdt_1.4_for_eclipse_3.2.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/32/update/ajdt_1.4_for_eclipse_3.2.zip">ajdt_1.4_for_eclipse_3.2.zip</a></td>
   </tr>
   <tr>
     <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew14/">New & Noteworthy</a></td>
@@ -199,11 +199,11 @@ of Eclipse you are using.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/technology/ajdt/31/update</code></td>
+    <td><code>http://download.eclipse.org/tools/ajdt/31/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3.2_for_eclipse_3.1.zip">ajdt_1.3.2_for_eclipse_3.1.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/31/update/ajdt_1.3.2_for_eclipse_3.1.zip">ajdt_1.3.2_for_eclipse_3.1.zip</a></td>
   </tr>
 </table>
 		</li>
@@ -220,11 +220,11 @@ of Eclipse you are using.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/technology/ajdt/31/update</code></td>
+    <td><code>http://download.eclipse.org/tools/ajdt/31/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3.1_for_eclipse_3.1.zip">ajdt_1.3.1_for_eclipse_3.1.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/31/update/ajdt_1.3.1_for_eclipse_3.1.zip">ajdt_1.3.1_for_eclipse_3.1.zip</a></td>
   </tr>
   <tr>
     <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew131/">Release notes</a></td>
@@ -244,17 +244,17 @@ of Eclipse you are using.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/technology/ajdt/31/update</code></td>
+    <td><code>http://download.eclipse.org/tools/ajdt/31/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3_for_eclipse_3.1.zip">ajdt_1.3_for_eclipse_3.1.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/31/update/ajdt_1.3_for_eclipse_3.1.zip">ajdt_1.3_for_eclipse_3.1.zip</a></td>
   </tr>
   <tr>
     <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew13/">New & Noteworthy</a></td>
   </tr>
   <tr>
-    <th align="left">Translations:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/31/update/ajdt_1.3_nls_fragment.zip">ajdt_1.3_nls_fragment.zip</a> (Hungarian and Japanese)</td>
+    <th align="left">Translations:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/31/update/ajdt_1.3_nls_fragment.zip">ajdt_1.3_nls_fragment.zip</a> (Hungarian and Japanese)</td>
   </tr>
 </table>
 		</li>
@@ -278,11 +278,11 @@ of Eclipse you are using.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/technology/ajdt/30/update</code></td>
+    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.2_for_eclipse_3.0.zip">ajdt_1.2.2_for_eclipse_3.0.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/30/update/ajdt_1.2.2_for_eclipse_3.0.zip">ajdt_1.2.2_for_eclipse_3.0.zip</a></td>
   </tr>
   <tr>
     <th align="left">More info:</th><td>The only changes since 1.2.1 relate to upgrading the AspectJ version.</td>
@@ -303,11 +303,11 @@ of Eclipse you are using.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/technology/ajdt/30/update</code></td>
+    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2.1_for_eclipse_3.0.zip">ajdt_1.2.1_for_eclipse_3.0.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/30/update/ajdt_1.2.1_for_eclipse_3.0.zip">ajdt_1.2.1_for_eclipse_3.0.zip</a></td>
   </tr>
   <tr>
     <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew13/">New & Noteworthy</a></td>
@@ -326,11 +326,11 @@ of Eclipse you are using.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/technology/ajdt/30/update</code></td>
+    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.2_for_eclipse_3.0.zip">ajdt_1.2_for_eclipse_3.0.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/30/update/ajdt_1.2_for_eclipse_3.0.zip">ajdt_1.2_for_eclipse_3.0.zip</a></td>
   </tr>
   <tr>
     <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew12/">New & Noteworthy</a></td>
@@ -348,11 +348,11 @@ of Eclipse you are using.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/technology/ajdt/30/update</code></td>
+    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/30/update/ajdt_1.1.12_archive.zip">ajdt_1.1.12_archive.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/30/update/ajdt_1.1.12_archive.zip">ajdt_1.1.12_archive.zip</a></td>
   </tr>
   <tr>
     <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew1112/">New & Noteworthy</a></td>
@@ -371,11 +371,11 @@ of Eclipse you are using.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/technology/ajdt/update</code></td>
+    <td><code>http://download.eclipse.org/tools/ajdt/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/update/ajdt_1.1.4_archive.zip">ajdt_1.1.4_archive.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/update/ajdt_1.1.4_archive.zip">ajdt_1.1.4_archive.zip</a></td>
   </tr>
 </table>
 
@@ -394,7 +394,7 @@ of Eclipse you are using.</p>
 			<li>
 			<a>Eclipse 3.3 builds</a>
 			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/technology/ajdt/33/dev/update</code>
+			<code>http://download.eclipse.org/tools/ajdt/33/dev/update</code>
 			</p>
 			<p>
 			<table class="tasklist" width="100%">
@@ -415,7 +415,7 @@ $builds33
 		<li>
 			<a>Eclipse 3.2 builds</a>
 			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/technology/ajdt/32/dev/update</code>
+			<code>http://download.eclipse.org/tools/ajdt/32/dev/update</code>
 			</p>
 			<p>
 			<table class="tasklist" width="100%">
@@ -435,7 +435,7 @@ $builds32
 		<li>
 			<a>Eclipse 3.1 builds</a>
 			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/technology/ajdt/31/dev/update</code>
+			<code>http://download.eclipse.org/tools/ajdt/31/dev/update</code>
 			</p>
 			<p>
 			<table class="tasklist" width="100%">
@@ -455,7 +455,7 @@ $builds31
 		<li>
 			<a>Eclipse 3.0 builds</a>
 			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/technology/ajdt/30/dev/update</code>
+			<code>http://download.eclipse.org/tools/ajdt/30/dev/update</code>
 			</p>
 			<p>
 			<table class="tasklist" width="100%">
