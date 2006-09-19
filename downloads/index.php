@@ -133,8 +133,8 @@ function ListDevBuilds($dir){
 	
 	$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/33/dev/update');
 	$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/32/dev/update');
-	# $builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
-	# $builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
+	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/31/dev/update');
+	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/technology/ajdt/30/dev/update');
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
@@ -431,8 +431,7 @@ $builds32
 			</table>
 			</p>
 		</li>
-
-<!--	
+	
 		<li>
 			<a>Eclipse 3.1 builds</a>
 			<br>Update Site URL:<br>
@@ -441,9 +440,10 @@ $builds32
 			<p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
-    			<th>Build Name</th>
-    			<th width="30%">Build Date</th>
-    			<th width="30%">Build Report</th>
+    			<th>Zip&nbsp;file</th>
+    			<th>Build&nbsp;Date</th>
+    			<th>Build&nbsp;Report</th>
+    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 
 $builds31
@@ -451,9 +451,7 @@ $builds31
 			</table>
 			</p>
 		</li>
--->
-
-<!--		
+		
 		<li>
 			<a>Eclipse 3.0 builds</a>
 			<br>Update Site URL:<br>
@@ -462,9 +460,10 @@ $builds31
 			<p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
-    			<th>Build Name</th>
-    			<th width="30%">Build Date</th>
-    			<th width="30%">Build Report</th>
+    			<th>Zip&nbsp;file</th>
+    			<th>Build&nbsp;Date</th>
+    			<th>Build&nbsp;Report</th>
+    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 
 $builds30
@@ -472,7 +471,6 @@ $builds30
 			</table>
 			</p>
 		</li>
--->	
 		
 	</ul>
 	</div>
