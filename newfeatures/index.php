@@ -55,7 +55,7 @@ or for further discussion or suggestions please visit the
 			<span class="dates">(posted 23-09-06)</span>
 		<p>
 			Development build 1.5.0.200609210841 supports Eclipse 3.3M2.
-			(it also works on 3.3M1, but future development builds may not).
+			(It also works on 3.3M1, but future development builds may not).
 		</p>		
 		</li>
 		
