@@ -51,6 +51,15 @@ or for further discussion or suggestions please visit the
 		<ul>
 		
 		<li>
+			<a name="33M2">Support for Eclipse 3.3M2</a>	
+			<span class="dates">(posted 23-09-06)</span>
+		<p>
+			Development build 1.5.0.200609210841 supports Eclipse 3.3M2.
+			(it also works on 3.3M1, but future development builds may not).
+		</p>		
+		</li>
+		
+		<li>
 			<a name="compiler20060921">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 21-09-06)</span>
 		<p>
