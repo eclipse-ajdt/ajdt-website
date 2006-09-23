@@ -35,7 +35,7 @@ function ListDevBuilds($dir){
 		 } else if ($eclipse == "32") {
 		   $eclipsename = "3.2";
 		 } else if ($eclipse == "33") {
-		   $eclipsename = "3.3M1";
+		   $eclipsename = "3.3M2";
 		 } else {
 		   $eclipsename = "";
 		 }
