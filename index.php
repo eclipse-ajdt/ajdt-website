@@ -126,7 +126,7 @@
 			<ul>
 				<li>AJDT and AspectJ have been promoted to Eclipse Tools
 				projects! Read more at
-				<a href="http://www.infoq.com/news/aspectj-ajdt-eclipse-tools">InfoQ</a></li>
+				<a href="http://www.infoq.com/news/aspectj-ajdt-eclipse-tools">InfoQ</a>
 				<br><span class="dates">posted 22-09-06</span><br>
 				</li>
 			</ul>
