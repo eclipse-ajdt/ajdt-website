@@ -63,7 +63,7 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
-      			<a href="newfeatures/#33M2">Refactoring participant</a>
+      			<a href="newfeatures/#rename">Refactoring participant</a>
 				<br><span class="dates">posted 02-10-06</span>
 			  </li>
 			  <li>
@@ -126,7 +126,7 @@
 			<ul>
 				<li>AJDT and AspectJ have been promoted to Eclipse Tools
 				projects! Read more at
-				<a href="http://www.infoq.com/news/aspectj-ajdt-eclipse-tools">InfoQ</a>
+				<a href="http://www.infoq.com/news/aspectj-ajdt-eclipse-tools">InfoQ.</a>
 				<br><span class="dates">posted 22-09-06</span><br>
 				</li>
 			</ul>
