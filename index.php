@@ -63,6 +63,10 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
+      			<a href="newfeatures/#33M2">Refactoring participant</a>
+				<br><span class="dates">posted 02-10-06</span>
+			  </li>
+			  <li>
       			<a href="newfeatures/#33M2">Support for Eclipse 3.3M2</a>
 				<br><span class="dates">posted 23-09-06</span>
 			  </li>
@@ -73,10 +77,6 @@
 			  <li>
       			<a href="newfeatures/#ajbuild">Improved AspectJ Build Properties</a>
 				<br><span class="dates">posted 31-08-06</span>
-			  </li>
-			  <li>
-      			<a href="newfeatures/#PDE">Build Automation for AspectJ-enabled plug-ins</a>
-				<br><span class="dates">posted 16-08-06</span>
 			  </li>
 			</ul>
 		</div>
@@ -122,6 +122,18 @@
 		<hr class="clearer" />
 		
 		<div class="homeitem3col">
+			<h3>News</h3>
+			<ul>
+				<li>AJDT and AspectJ have been promoted to Eclipse Tools
+				projects! Read more at
+				<a href="http://www.infoq.com/news/aspectj-ajdt-eclipse-tools">InfoQ</a></li>
+				<br><span class="dates">posted 22-09-06</span><br>
+				</li>
+			</ul>
+		</div>
+		
+		<!--
+		<div class="homeitem3col">
 			<h3>Recent Events</h3>
 			<ul>
 			  <li>EclipseCon 2006: This year's conference contained
@@ -141,8 +153,10 @@
  			    <br><span class="dates">posted 27-03-06</span><br>				
           	  </li>
 
-			</ul>
+			</ul>			
 		</div>
+		-->
+
 		
 		<hr class="clearer" />
 		

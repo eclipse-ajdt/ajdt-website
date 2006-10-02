@@ -51,6 +51,24 @@ or for further discussion or suggestions please visit the
 		<ul>
 
 		<li>
+			<a name="rename">Refactoring participant</a>	
+			<span class="dates">(posted 29-09-06)</span>
+		<p>
+			When you rename a Java class, there is now an aspect
+			rename participant that will search for and update
+			references to that class from any aspects in the same
+			project.
+        </p>
+        <img src="renameparticipant.png" width="442" height="261" alt="Rename type participant">      
+        <p>
+            This new functionality is included in development builds           
+            1.4.1.200610010506 for Eclipse 3.2 and
+            1.5.0.200609291129 for Eclipse 3.3M2.
+        </p>        
+  
+		</li>
+
+		<li>
 			<a name="compiler20060927">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 28-09-06)</span>
 		<p>
