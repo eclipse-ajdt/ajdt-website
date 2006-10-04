@@ -131,7 +131,7 @@ function ListDevBuilds($dir){
 
 	# End: page-specific settings
 
-	$rightcolumn = file_get_contents("../rightcolumn.html");
+	#$rightcolumn = file_get_contents("../rightcolumn.html");
 	
 	$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/33/dev/update');
 	$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
@@ -489,8 +489,6 @@ $builds30
 		
 		<hr class="clearer" />
 	</div>
-
-$rightcolumn
 
 </div>
 
