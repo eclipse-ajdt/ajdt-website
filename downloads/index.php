@@ -148,7 +148,7 @@ function ListDevBuilds($dir){
 </STYLE>
 
 <div id="maincontent">
-	<div id="midcolumn" style="width: 80%">
+	<div id="midcolumn" style="width: 70%">
 	
 	<h1>Downloads</h1>
 
