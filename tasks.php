@@ -112,7 +112,7 @@ refactorings in Eclipse work correctly in the presence of aspects.
 </td>
 <td>Started with Rename participation (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=158954">bug&nbsp;158954</a>)</td>
 <td>Matt Chapman</td>
-<td>1.4.1</td>
+<td>1.4.1 / 1.5</td>
 </tr>
 
 <tr>
@@ -202,7 +202,7 @@ New view which shows the crosscutting relationships of the current item
 </td>
 <td>Completed</td>
 <td>Helen Hawkins</td>
-<td>1.2.0</td>
+<td>1.2</td>
 </tr>
 
 <tr>
@@ -213,7 +213,7 @@ mechanism for this in Eclipse 3.1.
 </td>
 <td>Completed</td>
 <td>Matt Chapman</td>
-<td>1.2.0</td>
+<td>1.2</td>
 </tr>
 
 <tr>
@@ -223,7 +223,7 @@ package explorer.
 </td>
 <td>Completed</td>
 <td>Matt Chapman</td>
-<td>1.2.0</td>
+<td>1.2</td>
 </tr>
 
 <tr>
@@ -244,7 +244,7 @@ Add editor markers linking advice to the places being advised.
 </td>
 <td>Completed (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=78962">bug&nbsp;78962</a>)</td>
 <td>Matt Chapman</td>
-<td>1.2.0</td>
+<td>1.2</td>
 </tr>
 
 <tr>
@@ -256,7 +256,7 @@ nice to get rid of it if we can).
 </td>
 <td>Completed</td>
 <td>Andy Clement</td>
-<td>1.2.0</td>
+<td>1.2</td>
 </tr>
 
 <tr>
@@ -269,7 +269,7 @@ vice-versa. Very useful support as part of the “Extract to Aspect” refactoring.
 </td>
 <td>Completed (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=113723">bug&nbsp;113723</a>)</td>
 <td>Charles&nbsp;Zhang, Julie&nbsp;Waterhouse</td>
-<td>1.4.0</td>
+<td>1.4</td>
 </tr>
 
 <tr>
