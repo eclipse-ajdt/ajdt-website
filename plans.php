@@ -38,7 +38,7 @@
 	<h1>Plans</h1>
 
 <p>
-<i>Last updated: 27 July 2006</i>
+<i>Last updated: 9 October 2006</i>
 </p>
 
 <p>
@@ -49,6 +49,16 @@
   See also the <a href="tasks.php">AJDT Tasks page</a> for some of the features we hope to implement
   in a future release.
 </p>
+
+<div class="homeitem3col">
+	<h3>AJDT 1.5</h3>
+		<p>
+		Status: 1.5 planned for June 2006<br>
+        Eclipse version: 3.3<br>
+        Platforms: Windows XP, Linux, Mac OS X
+		</p>
+
+</div>
 
 <div class="homeitem3col">
 	<h3>AJDT 1.4</h3>
