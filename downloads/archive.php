@@ -43,7 +43,7 @@
 for current releases.</p>
 
 	<div class="homeitem3col">
-	<h3>Release builds for Eclipse 3.1</h3>
+	<h3>Archived Release builds for Eclipse 3.1</h3>
 	<ul>
 
 		<li>
@@ -101,7 +101,7 @@ for current releases.</p>
     </div>
 
 	<div class="homeitem3col">
-	<h3>Release builds for Eclipse 3.0</h3>
+	<h3>Archived Release builds for Eclipse 3.0</h3>
 	<ul>
 
 		<li>
@@ -176,7 +176,7 @@ for current releases.</p>
 	</div>
 
 	<div class="homeitem3col">
-	<h3>Release builds for Eclipse 2.1</h3>
+	<h3>Archived Release builds for Eclipse 2.1</h3>
 	<ul>
 
 		<li>
