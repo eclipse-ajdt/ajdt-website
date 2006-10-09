@@ -144,7 +144,6 @@ function ListDevBuilds($dir){
 <STYLE TYPE="text/css">
   .tasklist td { background-color: #EEEEEE; padding: .05em }
   .tasklist th { padding: .05em }
-  .tasklist code { font-size: 90% }
 </STYLE>
 
 <div id="maincontent">
@@ -154,6 +153,9 @@ function ListDevBuilds($dir){
 
 <p>Please make sure you pick a version of AJDT which matches the version
 of Eclipse you are using.</p>
+
+<p>Note also that the Update Sites are now under /tools instead
+of /technolgy, since AJDT become a Tools project.</p>
 
 	<div class="homeitem3col">
 	<h3>Release builds for Eclipse 3.2</h3>
