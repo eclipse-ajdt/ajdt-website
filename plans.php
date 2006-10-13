@@ -53,7 +53,7 @@
 <div class="homeitem3col">
 	<h3>AJDT 1.5</h3>
 		<p>
-		Status: 1.5 planned for June 2006<br>
+		Status: 1.5 planned for June 2007<br>
         Eclipse version: 3.3<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
