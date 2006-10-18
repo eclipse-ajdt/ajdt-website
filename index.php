@@ -85,6 +85,12 @@
 		<h3>Releases and articles</h3>
 			<ul>
 			  <li>
+			    <a href="http://www.eclipse.org/articles/Article-Introducing-AJDT/article.html">
+       			Eclipse Corner article: Introducing AJDT: The AspectJ Development Tools</a>
+       			<br><span class="dates">posted 18-10-06</span>
+			  </li>
+			  
+			  <li>
       			<a href="downloads/">AJDT 1.3.2 for Eclipse 3.1 released!</a>
 				<br><span class="dates">posted 04-08-06</span>
 			  </li>
@@ -110,12 +116,13 @@
 				<br><span class="dates">posted 20-12-05</span>
 			  </li>
 -->
-						  
+<!--						  
 			  <li>
 			    <a href="http://www.ibm.com/developerworks/java/library/j-aopwork9/">
        			developerWorks article: New AJDT releases ease AOP development</a>
        			<br><span class="dates">posted 15-08-05</span>
 			  </li>
+-->
 			</ul>
 		</div>
 		
