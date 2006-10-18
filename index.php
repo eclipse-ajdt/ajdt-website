@@ -85,6 +85,7 @@
 		<h3>Releases and articles</h3>
 			<ul>
 			  <li>
+<img src="images/new.gif" width="11" height="16">
 			    <a href="http://www.eclipse.org/articles/Article-Introducing-AJDT/article.html">
        			Eclipse Corner article: Introducing AJDT: The AspectJ Development Tools</a>
        			<br><span class="dates">posted 18-10-06</span>
