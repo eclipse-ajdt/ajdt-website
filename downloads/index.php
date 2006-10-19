@@ -21,6 +21,7 @@ function ListDevBuilds($dir){
 
    usort($files, "date_cmp");
    @closedir($dir);
+   $str = "";
    foreach ($files as $file) {
          $str = $str . "<tr><td>\n";
          
