@@ -294,51 +294,63 @@
 			<p>
 		     To use Ant to build an AspectJ project you need to use the iajc Ant task instead of the javac task.
 		     The definition of this is found in ajde.jar in the org.aspectj.ajde plug-in.  In addition you will
-		     need some other plug-ins on the classpath.  A simple example written on Eclipse 3.0.2 is shown below.  
+		     need some other plug-ins on the classpath.  A simple example written for Eclipse 3.2.1 is shown below.  
 		     Note that paths and version numbers will be different on different machines and different Eclipse versions.
-		     Using Ant outside of AJDT will be slightly different - see the 
+		     Using Ant independently from Eclipse will be slightly different - see the 
 		     <a href="http://www.eclipse.org/aspectj/doc/released/devguide/antTasks-iajc.html">AspectJ development guide</a> for more details
 		     and for more information about the iajc Ant task.
 		    </p>
 		    
 		    <p><code>
 			&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br><br>
-			&lt;project name="Spacewar Example" default="spacewar" basedir="."&gt;<br><br>				
-				
-			&nbsp;&nbsp; &lt;target name="init" depends="init.variables,init.taskdefs" /&gt; <br><br>
-					
-			&nbsp;&nbsp; &lt;target name="init.variables" description="init variables"&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp; &lt;property name="plugins.dir" location="${basedir}/../../plugins" /&gt; <br>
-			&nbsp;&nbsp;&nbsp;&nbsp; &lt;property name="aspectjrt.jar" location="${plugins.dir}/org.aspectj.runtime_1.5.0.20050517150219/aspectjrt.jar" /&gt; <br>
-			&nbsp;&nbsp;&nbsp;&nbsp; &lt;property name="ajde.jar" location="${plugins.dir}/org.aspectj.ajde_1.5.0.20050517150219/ajde.jar" /&gt; <br>				
-			&nbsp;&nbsp; &lt;/target&gt;<br><br>				
-					
-			&nbsp;&nbsp; &lt;target name="init.taskdefs" depends="init.variables" unless="taskdefs.init"&gt;<br>				 
-			&nbsp;&nbsp;&nbsp;&nbsp; &lt;taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties"&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;classpath&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;pathelement path="${ajde.jar}" /&gt; <br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/classpath&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp; &lt;/taskdef&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp; &lt;property name="taskdefs.init" value="true" /&gt; <br>
-			&nbsp;&nbsp; &lt;/target&gt;<br><br>
-					
-			&nbsp;&nbsp; &lt;target name="spacewar" depends="init" description="build spacewar example"&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp; &lt;iajc destDir="${basedir}/bin" classpath="${aspectjrt.jar}" fork="true"&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;forkclasspath&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;pathelement path="${plugins.dir}/org.eclipse.core.boot_3.0.0/boot.jar"/&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;pathelement path="${plugins.dir}/org.eclipse.core.resources_3.0.2/resources.jar"/&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;pathelement path="${plugins.dir}/org.eclipse.core.runtime_3.0.2/runtime.jar"/&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;pathelement path="${plugins.dir}/org.eclipse.core.runtime.compatibility_3.0.2/compatibility.jar"/&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;pathelement path="${plugins.dir}/org.apache.ant_1.6.2/lib/ant.jar"/&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;pathelement path="${ajde.jar}" /&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/forkclasspath&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;srcdir&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;pathelement path="src/" /&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/srcdir&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;	&lt;/iajc&gt;<br>
-			&nbsp;&nbsp; &lt;/target&gt;<br><br>
-					
+			&lt;project name="My Project" default="build" basedir="."&gt;<br><br>				
+							
+			&lt;target name="init"&gt;<br>
+		&nbsp;&nbsp;&lt;path id="ajde.classpath"&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.resources_3.2.1.R32x_v20060914.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.runtime.compatibility_3.1.100.v20060603.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.runtime_3.2.0.v20060603.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.osgi_3.2.1.R32x_v20060919.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.equinox.common_3.2.0.v20060603.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.jobs_3.2.0.v20060603.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.equinox.preferences_3.2.1.R32x_v20060717.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.contenttype_3.2.0.v20060603.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.runtime.compatibility.auth_3.2.0.v20060601.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.update.configurator_3.2.1.v20092006.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.ant.core_3.1.100.v20060531.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.variables_3.1.100.v20060605.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.expressions_3.2.1.r321_v20060721.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.filesystem_1.0.0.v20060603.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.text_3.2.0.v20060605-1400.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.eclipse.core.commands_3.2.0.I20060605-1400.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.aspectj.ajde_1.5.3.200610201049/ajde.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.aspectj.weaver_1.5.3.200610201049/aspectjweaver.jar"/&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;pathelement path="../../plugins/org.aspectj.runtime_1.5.3.200610201049/aspectjrt.jar"/&gt;<br>
+		&nbsp;&nbsp;&lt;/path&gt;<br>
+		&nbsp;&nbsp;&lt;taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties"&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;classpath refid="ajde.classpath" /&gt;<br>
+		&nbsp;&nbsp;&lt;/taskdef&gt;<br>
+	&lt;/target&gt;<br><br>
+	
+	&lt;target name="build" depends="init"&gt;<br>
+		&nbsp;&nbsp;&lt;delete dir="${basedir}/bin"/&gt;<br>
+		&nbsp;&nbsp;&lt;mkdir dir="${basedir}/bin"/&gt;<br>
+		&nbsp;&nbsp;&lt;path id="user.classpath"&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;!-- add additional classpath entries here --&gt;<br>
+		&nbsp;&nbsp;&lt;/path&gt;<br>
+		&nbsp;&nbsp;&lt;!-- read additional ajc options from a file if required --&gt;<br>
+		&nbsp;&nbsp;&lt;property name="ajcArgFile" value=""/&gt;<br>
+		&nbsp;&nbsp;&lt;!-- fork the compiler --&gt;<br>
+		&nbsp;&nbsp;&lt;iajc destDir="${basedir}/bin" failonerror="true" argfiles="${ajcArgFile}"<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;verbose="true" fork="true" maxmem="512m"&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;forkclasspath refid="ajde.classpath" /&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;forkclasspath refid="user.classpath" /&gt;<br>
+		&nbsp;&nbsp;	&nbsp;&nbsp;&lt;src path="src/"/&gt;<br>
+		&nbsp;&nbsp;&lt;/iajc&gt;<br>
+		&lt;/target&gt;<br><br>				
 			&lt;/project&gt;		<br><br>    
+
 			</code></p>
 		    </li>	
 		    
