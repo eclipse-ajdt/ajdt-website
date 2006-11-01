@@ -5,6 +5,7 @@ Developers
 
 For AJDT 1.4.1:
 component,          	bug#,       name,               size,       committer,          description
+org.eclipse.ajdt.ui,	159704,		Steve Young,		<100,		mchapman,			add property page options
 org.eclipse.ajdt.ui,	157776,		Steve Young,		<1000,		mchapman,			bug fix
 org.eclipse.ajdt.ui,	154339,		Matthew Ford,		<100,		mchapman,			bug fix
 org.eclipse.ajdt.core,	157313,		Matthew Webster,	<100,		mchapman,			update aspectjrt container
