@@ -50,7 +50,7 @@ started:</p>
 			Show open enhancement requests</a></li> 
 			<li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=AJDT">
 			Report a new bug</a></li>
-			<li><a href="https://bugs.eclipse.org/bugs/enter_feature.cgi?product=AJDT">
+			<li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=AJDT&bug_severity=enhancement">
 			Enter a new enhancement request</a></li>
 
 			<li>
