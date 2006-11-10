@@ -38,7 +38,7 @@
 	<h1>Plans</h1>
 
 <p>
-<i>Last updated: 9 October 2006</i>
+<i>Last updated: 10 November 2006</i>
 </p>
 
 <p>
@@ -53,7 +53,7 @@
 <div class="homeitem3col">
 	<h3>AJDT 1.5</h3>
 		<p>
-		Status: 1.5 planned for June 2007<br>
+		Status: 1.5 planned for June 2007 (as part of the Europa Simultaneous Release)<br>
         Eclipse version: 3.3<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -63,7 +63,7 @@
 <div class="homeitem3col">
 	<h3>AJDT 1.4</h3>
 		<p>
-		Status: 1.4 Released 30 June 2006, 1.4.1 planned for October 2006<br>
+		Status: 1.4 Released 30 June 2006, 1.4.1 planned for November 2006<br>
         Eclipse version: 3.2<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
