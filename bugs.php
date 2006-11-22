@@ -55,7 +55,7 @@ started:</p>
 
 			<li>
 			<form method="get" action="https://bugs.eclipse.org/bugs/show_bug.cgi">			
-			Seach by bug # <input class="txt" name="id" size="6">
+			Search by bug # <input class="txt" name="id" size="6">
             <input class="btn" type="submit" value="Find">
 			</form>
 			</li>
