@@ -388,10 +388,6 @@ of /technolgy, since AJDT become a Tools project.</p>
 
 $builds33
 
-<tr><td>
-<a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/dev/update/m2/ajdt_1.5.0.200611021330_archive.zip">1.5.0.200611021330 for Eclipse 3.3M2</a></td>
-<td width="30%">Thu, 2 Nov 2006 -- 13:30 (-0500)</td><td><a href="http://download.eclipse.org/tools/ajdt/33/dev/update/m2/changes-1.5.0.200611021330.html">changes</a></td><td>1.5.3.200610201049</td></tr>
-
 			</table>
 			</p>
 		</li>
