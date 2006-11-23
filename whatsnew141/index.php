@@ -35,8 +35,6 @@
 <div id="maincontent">
 	<div id="midcolumn">
 	
-	<div align="center"><h1>$pageTitle</h1></div>
-
 <!-- Insert contents here -->
     <h1>
       What's new in AJDT 1.4.1
