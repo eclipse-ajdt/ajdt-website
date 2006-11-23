@@ -67,10 +67,6 @@
 				<br><span class="dates">posted 02-10-06</span>
 			  </li>
 			  <li>
-      			<a href="newfeatures/#33M2">Support for Eclipse 3.3M2</a>
-				<br><span class="dates">posted 23-09-06</span>
-			  </li>
-			  <li>
       			<a href="newfeatures/#binaryweaving">Improved Binary Weaving support</a>
 				<br><span class="dates">posted 11-09-06</span>
 			  </li>
