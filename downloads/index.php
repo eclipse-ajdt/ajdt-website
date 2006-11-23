@@ -352,7 +352,7 @@ of /technolgy, since AJDT become a Tools project.</p>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/30/update/ajdt_1.5M3_for_eclipse_3.3M3.zip">ajdt_1.5M3_for_eclipse_3.3M3.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5M3_for_eclipse_3.3M3.zip">ajdt_1.5M3_for_eclipse_3.3M3.zip</a></td>
   </tr>
   <tr>
     <th align="left">More info:</th><td>This milestone release contains the same features as <a href="http://www.eclipse.org/ajdt/whatsnew141/">AJDT 1.4.1.</a></td>
