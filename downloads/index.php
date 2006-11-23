@@ -163,6 +163,30 @@ of /technolgy, since AJDT become a Tools project.</p>
 	<ul>
 
 		<li>
+			<a>AJDT 1.4.1 for Eclipse 3.2</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th align="left">Release Date:</th><td>November 23, 2006</td>
+  </tr>
+  <tr>
+    <th align="left">AspectJ Version:</th><td>1.5.3</td>
+  </tr>
+  <tr>
+    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/tools/ajdt/32/update</code></td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/32/update/ajdt_1.4.1_for_eclipse_3.2.zip">ajdt_1.4.1_for_eclipse_3.2.zip</a></td>
+  </tr>
+  <tr>
+    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew141/">New & Noteworthy</a></td>
+  </tr>
+</table>
+		</li>
+		
+		<li>
 			<a>AJDT 1.4 for Eclipse 3.2</a>
 		
 <table class="tasklist" width="80%">
@@ -304,6 +328,42 @@ of /technolgy, since AJDT become a Tools project.</p>
 		
 	</ul>
 	</div>
+
+<!--
+	<div class="homeitem3col">
+	<a name="milestone">
+	<h3 class="tasklist">Milestone builds for Eclipse 3.3</h3>
+	</a>
+	<ul>
+	
+			<li>
+			<a>AJDT 1.5M3 for Eclipse 3.3M3</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th align="left">Release Date:</th><td>November 23, 2006</td>
+  </tr>
+    <tr>
+    <th align="left">AspectJ Version:</th><td>1.5.3</td>
+  </tr>
+  <tr>
+    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/tools/ajdt/33/update</code></td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/30/update/ajdt_1.5M3_for_eclipse_3.3M3.zip">ajdt_1.5M3_for_eclipse_3.3M3.zip</a></td>
+  </tr>
+  <tr>
+    <th align="left">More info:</th><td>This milestone release contains the same features as AJDT 1.4.1 for Eclipse 3.2.</td>
+  </tr>
+</table>
+
+		</li>
+		
+	</ul>
+	</div>
+-->
 	
 	<div class="homeitem3col">
 	<a name="dev">
