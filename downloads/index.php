@@ -134,10 +134,10 @@ function ListDevBuilds($dir){
 
 	#$rightcolumn = file_get_contents("../rightcolumn.html");
 	
-	$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/33/dev/update');
-	$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
-	$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/31/dev/update');
-	$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/30/dev/update');
+	#$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/33/dev/update');
+	#$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
+	#$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/31/dev/update');
+	#$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/30/dev/update');
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
@@ -329,7 +329,7 @@ of /technolgy, since AJDT become a Tools project.</p>
 	</ul>
 	</div>
 
-<!--
+
 	<div class="homeitem3col">
 	<a name="milestone">
 	<h3 class="tasklist">Milestone builds for Eclipse 3.3</h3>
@@ -355,7 +355,7 @@ of /technolgy, since AJDT become a Tools project.</p>
     <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/30/update/ajdt_1.5M3_for_eclipse_3.3M3.zip">ajdt_1.5M3_for_eclipse_3.3M3.zip</a></td>
   </tr>
   <tr>
-    <th align="left">More info:</th><td>This milestone release contains the same features as AJDT 1.4.1 for Eclipse 3.2.</td>
+    <th align="left">More info:</th><td>This milestone release contains the same features as <a href="http://www.eclipse.org/ajdt/whatsnew141/">AJDT 1.4.1.</a></td>
   </tr>
 </table>
 
@@ -363,12 +363,14 @@ of /technolgy, since AJDT become a Tools project.</p>
 		
 	</ul>
 	</div>
--->
+
 	
 	<div class="homeitem3col">
 	<a name="dev">
 	<h3 class="tasklist">Development builds</h3>
 	</a>
+
+<!--
 	<ul>
 			<li>
 			<a>Eclipse 3.3 builds</a>
@@ -456,17 +458,11 @@ $builds30
 		</li>
 		
 	</ul>
+	
+	-->
+	
 	</div>
-
-<!--
-	<div class="homeitem3col">
-	<h3>Development builds with AspectJ milestone and release candidate builds</h3>
-	<ul>
-	</ul>
-	</div>
-		
--->		
-		
+	
 		
 		<hr class="clearer" />
 	</div>
