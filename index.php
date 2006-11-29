@@ -76,8 +76,7 @@
 				<br><span class="dates">posted 11-09-06</span>
 			  </li>
 			  <li>
-      			<a href="newfeatures/#ajbuild">Improved AspectJ Build Properties</a>
-				<br><span class="dates">posted 31-08-06</span>
+			  	<a href="newfeatures/">See all New Features...</a>
 			  </li>
 			</ul>
 		</div>
