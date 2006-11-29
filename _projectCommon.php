@@ -9,13 +9,13 @@
 	#$projectInfo = new ProjectInfo("technology.ajdt");
 	#$projectInfo->generate_common_nav( $Nav );
 
-$branding = <<<EOBRANDING
-<STYLE TYPE="text/css">
-  .sideitem { border-width: 1px 1px; margin: 20px 0; }
-  #midcolumn { margin-top: 5px; }
-  body { font-size: small; }
-</STYLE>
+#<STYLE TYPE="text/css">
+#  .sideitem { border-width: 1px 1px; margin: 20px 0; }
+#  #midcolumn { margin-top: 5px; }
+#  body { font-size: small; }
+#</STYLE>
 
+$branding = <<<EOBRANDING
 <div id="branding">
 <h1>AJDT: AspectJ Development Tools</h1>
 </div>
