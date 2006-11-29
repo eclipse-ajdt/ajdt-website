@@ -38,7 +38,7 @@
 	<h1>Plans</h1>
 
 <p>
-<i>Last updated: 10 November 2006</i>
+<i>Last updated: 29 November 2006</i>
 </p>
 
 <p>
@@ -63,7 +63,7 @@
 <div class="homeitem3col">
 	<h3>AJDT 1.4</h3>
 		<p>
-		Status: 1.4 Released 30 June 2006, 1.4.1 planned for November 2006<br>
+		Status: 1.4 released 30 June 2006, 1.4.1 released 23 November 2006<br>
         Eclipse version: 3.2<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -84,7 +84,8 @@
 <div class="homeitem3col">
 	<h3>AJDT 1.3</h3>
 		<p>
-		Status: 1.3 Released 20 December 2005, 1.3.1 released 10 April 2006<br>
+		Status: 1.3 released 20 December 2005, 1.3.1 released 10 April 2006,
+		1.3.2 released 4 August 2006, 1.3.3 released 23 November 2006<br>
         Eclipse version: 3.1<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -100,16 +101,15 @@
         </ul>
         
         <p>
-        	Update: The 1.3 release was updated with 1.3.1 to include bug fixes and
-        	AspectJ 1.5.1a.
+        	Update: The 1.3.3 release updated the included level of AspectJ to 1.5.3.
         </p>
 </div>
 
-<!--
 <div class="homeitem3col">
 	<h3>AJDT 1.2</h3>
 		<p>
-        Status: 1.2 released 10 June 2005, 1.2.1 released 20 December 2005, 1.2.2 released 2 May 2006<br>
+        Status: 1.2 released 10 June 2005, 1.2.1 released 20 December 2005, 1.2.2 released 2 May 2006,
+        1.2.3 released 23 November 2006<br>
         Eclipse version: 3.0.2<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -124,12 +124,10 @@
            <li>To provide a comparable editing experience to that offered by the JDT for Java source </li>
         </ul>
 
-        <p>
-           Update: The 1.2 release was updated with 1.2.1 to include the release version of AspectJ 5, and most of the features from AJDT 1.3.
-           This has been further updated to 1.2.2 to include AspectJ 1.5.1a.
+       <p>
+        	Update: The 1.2.3 release updated the included level of AspectJ to 1.5.3.
         </p>      
 </div>
--->
 
 		<hr class="clearer" />
 	</div>
