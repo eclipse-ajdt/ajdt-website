@@ -134,7 +134,7 @@ function ListDevBuilds($dir){
 
 	#$rightcolumn = file_get_contents("../rightcolumn.html");
 	
-	#$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/33/dev/update');
+	$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/33/dev/update');
 	#$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
 	#$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/31/dev/update');
 	#$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/30/dev/update');
@@ -370,7 +370,6 @@ of /technolgy, since AJDT become a Tools project.</p>
 	<h3 class="tasklist">Development builds</h3>
 	</a>
 
-<!--
 	<ul>
 			<li>
 			<a>Eclipse 3.3 builds</a>
@@ -392,6 +391,7 @@ $builds33
 			</p>
 		</li>
 		
+<!--
 		
 		<li>
 			<a>Eclipse 3.2 builds</a>
