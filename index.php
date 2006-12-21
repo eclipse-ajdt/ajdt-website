@@ -64,16 +64,16 @@
 			<ul>
 			  <li>
 			  	<img src="images/new.gif" width="11" height="11">
-      			<a href="newfeatures/#xrefcopy">Select and copy from the Cross References view</a>
+      			<a href="newfeatures/#attributes">AspectJ build path configuration</a>
+				<br><span class="dates">posted 21-12-06</span>
+			  </li>
+			  <li>
+     			<a href="newfeatures/#xrefcopy">Select and copy from the Cross References view</a>
 				<br><span class="dates">posted 29-11-06</span>
 			  </li>
 			  <li>
       			<a href="newfeatures/#rename">Refactoring participant</a>
 				<br><span class="dates">posted 02-10-06</span>
-			  </li>
-			  <li>
-      			<a href="newfeatures/#binaryweaving">Improved Binary Weaving support</a>
-				<br><span class="dates">posted 11-09-06</span>
 			  </li>
 			  <li>
 			  	<a href="newfeatures/">See all New Features...</a>

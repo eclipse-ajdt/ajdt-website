@@ -50,6 +50,41 @@ or for further discussion or suggestions please visit the
 	<h3>New Features added during 1.5 development</h3>
 
 	<ul>
+
+		<li>
+			<a name="attributes">AspectJ build path configuration</a>	
+				<span class="dates">(posted 21-12-06)</span>
+			<p>
+				Previously entries on the AspectJ aspectpath and inpath were stored
+				as Eclipse preferences in a ".settings" folder. Now, as of development
+				build 1.5.0.xxx for Eclipse 3.3M4, these settings are instead stored
+				in the ".classpath" file. They appear as regular classpath entries with
+				the addition of a custom attribute which indicates if that entries is
+				on the aspectpath or inpath.
+			</p>
+			
+			<p>
+			    The same AspectJ build path properties page and context menu entries
+			    are available for configuring the aspectpath and inpath settings. Any
+			    old preferences settings will be automatically migrated
+			    to the new .classpath format (which will not be recognised by
+			    older versions of AJDT).
+			</p>
+			<p>
+			    When entries are added to the aspectpath or inpath, they are now also
+			    added to the classpath. Note that removing entries from the classpath
+			    will mean they are also removed from the aspectpath or inpath. But
+			    removing entries from the aspectpath or inpath will NOT remove them from
+			    the build path. This can be considered as a move away from the "3 paths"
+			    model toward one where there is a single path, the regular classpath, and
+			    some entries on this path can be given additional properties.
+			</p>
+			<p>
+			    The AJDT image decorator is now used to indicate which build path
+			    entries are also on the aspectpath or inpath.
+			</p>
+			<img src="ajbuildpath.png" width="339" height="167" alt="Aspectpath and inpath entries">     
+		</li>
 	
 		<li>
 			<a name="xrefcopy">Select and copy from the Cross References view</a>	
