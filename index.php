@@ -64,7 +64,7 @@
 			<ul>
 			  <li>
 			  	<img src="images/new.gif" width="11" height="11">
-      			<a href="newfeatures/#attributes">AspectJ build path configuration</a>
+      			<a href="newfeatures/#attributes">AspectJ Build Path configuration</a>
 				<br><span class="dates">posted 21-12-06</span>
 			  </li>
 			  <li>

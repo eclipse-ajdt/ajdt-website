@@ -64,7 +64,7 @@ or for further discussion or suggestions please visit the
 			</p>
 			
 			<p>
-			    The same AspectJ build path properties page and context menu entries
+			    The same AspectJ Build properties page and context menu entries
 			    are available for configuring the aspectpath and inpath settings. Any
 			    old preferences settings will be automatically migrated
 			    to the new .classpath format (which will then not be recognised by
