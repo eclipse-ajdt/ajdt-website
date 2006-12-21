@@ -57,7 +57,7 @@ or for further discussion or suggestions please visit the
 			<p>
 				Previously entries on the AspectJ aspectpath and inpath were stored
 				as Eclipse preferences in a ".settings" folder. Now, as of development
-				build 1.5.0.xxx for Eclipse 3.3M4, these settings are instead stored
+				build 1.5.0.200612211200 for Eclipse 3.3M4, these settings are instead stored
 				in the ".classpath" file. They appear as regular classpath entries with
 				the addition of a custom attribute which indicates if that entries is
 				on the aspectpath or inpath.
