@@ -52,7 +52,7 @@ or for further discussion or suggestions please visit the
 	<ul>
 
 		<li>
-			<a name="attributes">AspectJ build path configuration</a>	
+			<a name="attributes">AspectJ Build Path configuration</a>	
 				<span class="dates">(posted 21-12-06)</span>
 			<p>
 				Previously entries on the AspectJ aspectpath and inpath were stored
