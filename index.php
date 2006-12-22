@@ -111,16 +111,20 @@
 		<div class="homeitem3col">
 			<h3>News and Releases</h3>
 			<ul>
+
+			  <li>
+			  	<img src="images/new.gif" width="11" height="11">
+      			<a href="downloads/#milestone">AJDT 1.5M4 for Eclipse 3.3M4 released!</a>
+				<br><span class="dates">posted 22-12-06</span>
+			  </li>
 			
 			  <li>
-				<img src="images/new.gif" width="11" height="11">
       			<a href="downloads/">AJDT 1.4.1 for Eclipse 3.2 and AJDT 1.5M3 for Eclipse 3.3M3 released!</a>
 				See the <a href="whatsnew141/">New and Noteworthy</a>
 				<br><span class="dates">posted 23-11-06</span>
 			  </li>
 
 			  <li>
-				<img src="images/new.gif" width="11" height="11">
       			<a href="downloads/">AJDT 1.2.3 for Eclipse 3.0 and AJDT 1.3.3 for Eclipse 3.1 released!</a>
 				These releases update the 1.2.2 and 1.3.2 releases with the latest AspectJ 1.5.3 release.
 				<br><span class="dates">posted 23-11-06</span>

@@ -156,7 +156,7 @@ function ListDevBuilds($dir){
 of Eclipse you are using.</p>
 
 <p>Note also that the Update Sites are now under /tools instead
-of /technolgy, since AJDT become a Tools project.</p>
+of /technology, since AJDT become a Tools project.</p>
 
 	<div class="homeitem3col">
 	<h3>Release builds for Eclipse 3.2</h3>
@@ -270,8 +270,33 @@ of /technolgy, since AJDT become a Tools project.</p>
 	<h3 class="tasklist">Milestone builds for Eclipse 3.3</h3>
 	</a>
 	<ul>
-	
-			<li>
+
+		<li>
+			<a>AJDT 1.5M4 for Eclipse 3.3M4</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th align="left">Release Date:</th><td>December 22, 2006</td>
+  </tr>
+    <tr>
+    <th align="left">AspectJ Version:</th><td>1.5.3</td>
+  </tr>
+  <tr>
+    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/tools/ajdt/33/update</code></td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5M4_for_eclipse_3.3M4.zip">ajdt_1.5M4_for_eclipse_3.3M4.zip</a></td>
+  </tr>
+  <tr>
+    <th align="left">More info:</th><td>See the <a href="http://www.eclipse.org/ajdt/newfeatures/">New Features</a> page</td>
+  </tr>
+</table>
+
+		</li>
+			
+		<li>
 			<a>AJDT 1.5M3 for Eclipse 3.3M3</a>
 		
 <table class="tasklist" width="80%">
