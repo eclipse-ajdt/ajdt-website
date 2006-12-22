@@ -279,7 +279,7 @@ of /technology, since AJDT become a Tools project.</p>
     <th align="left">Release Date:</th><td>December 22, 2006</td>
   </tr>
     <tr>
-    <th align="left">AspectJ Version:</th><td>1.5.3</td>
+    <th align="left">AspectJ Version:</th><td>1.5.3.200612081116</td>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
