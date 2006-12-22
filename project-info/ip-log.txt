@@ -3,6 +3,11 @@ mchapman,hawkins,sjanuary,mkersten,aclement,acolyer,jwaterh
 
 Developers
 
+For AJDT 1.5:
+component,          	bug#,       name,               size,       committer,          description
+org.eclipse.ajdt.ui,	151731,		Steve Young,		<1000		mchapman,			Cross Reference view triggering
+org.eclipse.ajdt.ui,	158988,		Steve Young,		<100		mchapman,			update visualization perspective
+
 For AJDT 1.4.1:
 component,          	bug#,       name,               size,       committer,          description
 org.eclipse.ajdt.ui,	159704,		Steve Young,		<300,		mchapman,			add property page options
