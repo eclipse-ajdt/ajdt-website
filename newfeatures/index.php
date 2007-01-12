@@ -50,6 +50,27 @@ or for further discussion or suggestions please visit the
 	<h3>New Features added during 1.5 development</h3>
 
 	<ul>
+	
+		<li>
+			<a name="ccmaps">Crosscutting Maps</a>
+			    <span class="dates">(posted 21-12-07)</span>
+			<p>
+			    A number of minor improvements have been added recently related
+			    to crosscutting maps and the crosscutting comparison view:
+			</p>
+			<ul>
+			  <li>Two entries have to added to the filters dialog in the crosscutting
+			  comparison view, to allow all added relationships or all removed
+			  relationships to be filtered from the view.</li>
+			  <li>The columns of the view now resize accordinly as the view is resized.</li>
+			  <li>Settings in the view, such as the state of the "Propagate Up"
+			  button are persisted across workspace sessions.</li>
+			  <li>The editor for crosscutting map files (with the ".ajmap" extension)
+			  has been enhanced to show more information, including the date the
+			  file was created or modified, and the number of relationships stored
+			  in the file.</li>
+			</ul>
+		</li>
 
 		<li>
 			<a name="attributes">AspectJ Build Path configuration</a>	
