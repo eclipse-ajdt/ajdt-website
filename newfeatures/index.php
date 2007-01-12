@@ -52,11 +52,11 @@ or for further discussion or suggestions please visit the
 	<ul>
 	
 		<li>
-			<a name="ccmaps">Crosscutting Maps and View</a>
-			    <span class="dates">(posted 21-12-07)</span>
+			<a name="ccmaps">Crosscutting Maps and View changes</a>
+			    <span class="dates">(posted 12-01-07)</span>
 			<p>
 			    Several minor improvements have been added recently
-			    (since 1.5.0.200701100718 for Eclipse 3.3M4) relating
+			    (1.5.0.200701100718 for Eclipse 3.3M4) relating
 			    to crosscutting maps and the crosscutting comparison view:
 			</p>
 			<ul>

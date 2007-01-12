@@ -76,10 +76,6 @@
 				<br><span class="dates">posted 29-11-06</span>
 			  </li>
 			  <li>
-      			<a href="newfeatures/#rename">Refactoring participant</a>
-				<br><span class="dates">posted 02-10-06</span>
-			  </li>
-			  <li>
 			  	<a href="newfeatures/">See all New Features...</a>
 			  </li>
 			</ul>
