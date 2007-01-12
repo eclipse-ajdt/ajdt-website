@@ -64,6 +64,10 @@
 			<ul>
 			  <li>
 			  	<img src="images/new.gif" width="11" height="11">
+      			<a href="newfeatures/#ccmaps">Crosscutting Maps and View changes</a>
+				<br><span class="dates">posted 12-01-07</span>
+			  </li>
+			  <li>
       			<a href="newfeatures/#attributes">AspectJ Build Path configuration</a>
 				<br><span class="dates">posted 21-12-06</span>
 			  </li>
