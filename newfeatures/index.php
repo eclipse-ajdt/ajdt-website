@@ -51,6 +51,31 @@ or for further discussion or suggestions please visit the
 
 	<ul>
 	
+	   <li>
+			<a name="compiler20070116">Updated AspectJ Compiler</a>	
+			<span class="dates">(posted 16-01-07)</span>
+		<p>
+           The AspectJ build included in AJDT has been updated in the following 
+           development builds:
+           <br>1.5.0.200701160615 for Eclipse 3.3M4
+        </p>
+        <p>
+           The version of the included AspectJ 5 build is 1.5.4.200701151324.
+           See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2006-11-23&chfieldto=2007-01-15&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+           list of AspectJ bugs fixed in this build since the 1.5.3 release.</a>
+        </p>        
+        <p>
+           This build also contains significant changes in the interface between AJDT and the compiler, as described in
+           <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=148190">bug 148190.</a> One benefit is
+           is improved performance, which is noticeable when incrementally building a number
+           of projects. In a test involving five AspectJ projects (from the implementation of AJDT),
+           the average time taken to build all of these projects in response to a simple non-structural change
+           went down from 3.3s to 2.8s, as measured by the AJDT Event Trace view (there is an overhead caused
+           by this view being open, but the overhead should be consistent in each case).
+        </p>
+  
+		</li>
+		
 		<li>
 			<a name="ccmaps">Crosscutting Maps and View changes</a>
 			    <span class="dates">(posted 12-01-07)</span>
