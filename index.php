@@ -64,16 +64,16 @@
 			<ul>
 			  <li>
 			  	<img src="images/new.gif" width="11" height="11">
+      			<a href="newfeatures/#compiler20070116">Updated AspectJ Compiler</a>
+				<br><span class="dates">posted 16-01-07</span>
+			  </li>
+			  <li>
       			<a href="newfeatures/#ccmaps">Crosscutting Maps and View changes</a>
 				<br><span class="dates">posted 12-01-07</span>
 			  </li>
 			  <li>
       			<a href="newfeatures/#attributes">AspectJ Build Path configuration</a>
 				<br><span class="dates">posted 21-12-06</span>
-			  </li>
-			  <li>
-     			<a href="newfeatures/#xrefcopy">Select and copy from the Cross References view</a>
-				<br><span class="dates">posted 29-11-06</span>
 			  </li>
 			  <li>
 			  	<a href="newfeatures/">See all New Features...</a>
