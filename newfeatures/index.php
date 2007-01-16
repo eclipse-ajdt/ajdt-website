@@ -66,7 +66,7 @@ or for further discussion or suggestions please visit the
         <p>
            This build also contains significant changes in the interface between AJDT and the compiler, as described in
            <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=148190">bug 148190.</a> One benefit is
-           is improved performance, which is noticeable when incrementally building a number
+           improved performance, which is noticeable when incrementally building a number
            of projects. In a test involving five AspectJ projects (from the implementation of AJDT),
            the average time taken to build all of these projects in response to a simple non-structural change
            went down from 3.3s to 2.8s, as measured by the AJDT Event Trace view (there is an overhead caused
