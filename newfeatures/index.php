@@ -55,9 +55,8 @@ or for further discussion or suggestions please visit the
 			<a name="compiler20070116">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 16-01-07)</span>
 		<p>
-           The AspectJ build included in AJDT has been updated in the following 
-           development builds:
-           <br>1.5.0.200701160615 for Eclipse 3.3M4
+           The AspectJ build included in AJDT has been updated in
+           development build 1.5.0.200701160615 for Eclipse 3.3M4
         </p>
         <p>
            The version of the included AspectJ 5 build is 1.5.4.200701151324.
