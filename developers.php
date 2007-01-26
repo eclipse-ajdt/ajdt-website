@@ -42,6 +42,8 @@
 	  			<li><a href="#q:source">Where will I find the source for AJDT? </a> </li>
 	  			<li><a href="#q:develop">How do I setup an AJDT development environment in Eclipse? </a> </li>
 	  			<li><a href="#q:packaging">How can I package my sample code for contribution to the examples plug-in?</a> </li>
+	  			<li><a href="#q:extend">How can I build tools which extend AJDT?</a> </li>
+	  			
 	</ol>
 	
 	<hr>
@@ -351,6 +353,17 @@
 				    </ul>
 			    </p>
 		    </li>
+		    
+		    
+		<a name="q:extend"></a>
+			<li><em>How can I build tools which extend AJDT?</em>
+		    <p>
+		       See this Eclipsepedia page: <a href="http://wiki.eclipse.org/index.php/Developer%27s_guide_to_building_tools_on_top_of_AJDT_and_AspectJ">Developer's Guide To Building Tools On Top Of AJDT and AspectJ.</a>
+		    </p>
+		    </li>
+		
+	</ol>
+	
 	</ol>
 
 		<hr class="clearer" />

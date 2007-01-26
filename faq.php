@@ -69,6 +69,12 @@
 			</ol>
 		</li>
 
+		<li> Extending
+		  <ol>
+		    <li><a href="#q:extend">How can I build tools which extend AJDT?</a> </li>
+		  </ol>
+		</li>
+
 		<li> Contributing
 			<ol>
 	  			<li><a href="#q:contribute">How can I contribute to the AJDT project?</a> </li>
@@ -364,8 +370,20 @@
 		    </li>	
 	</ol>	
 		
+		
+	<h2>Extending</h2>
+	<ol>
+		<a name="q:extend"></a>
+			<li><em>How can I build tools which extend AJDT?</em>
+		    <p>
+		       See this Eclipsepedia page: <a href="http://wiki.eclipse.org/index.php/Developer%27s_guide_to_building_tools_on_top_of_AJDT_and_AspectJ">Developer's Guide To Building Tools On Top Of AJDT and AspectJ.</a>
+		    </p>
+		    </li>
+		
+	</ol>
+	
 	<h2>Contributing</h2>
-		<ol>
+	<ol>
 		<a name="q:contribute"></a>
 			<li><em>How can I contribute to the AJDT project?</em>
 		    <p>
