@@ -354,7 +354,7 @@
 			    </p>
 		    </li>
 		    
-		    
+		    <br><br>
 		<a name="q:extend"></a>
 			<li><em>How can I build tools which extend AJDT?</em>
 		    <p>
