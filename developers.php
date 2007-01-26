@@ -358,7 +358,7 @@
 		<a name="q:extend"></a>
 			<li><em>How can I build tools which extend AJDT?</em>
 		    <p>
-		       See this Eclipsepedia page: <a href="http://wiki.eclipse.org/index.php/Developer%27s_guide_to_building_tools_on_top_of_AJDT_and_AspectJ">Developer's Guide To Building Tools On Top Of AJDT and AspectJ.</a>
+		       See this Eclipsepedia page: <a href="http://wiki.eclipse.org/index.php/Developer%27s_guide_to_building_tools_on_top_of_AJDT_and_AspectJ">Developer's guide to building tools on top of AJDT and AspectJ.</a>
 		    </p>
 		    </li>
 		
