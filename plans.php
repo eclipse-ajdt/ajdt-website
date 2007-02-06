@@ -63,11 +63,11 @@
         </p>
 
         <ul>
-           <li>Improved support for working with crosscutting changes</li>
-           <li>Improved support for working with pointcuts</li>
+           <li>Improve support for working with crosscutting changes</li>
+           <li>Improve support for working with pointcuts</li>
            <li>Incorporate latest AspectJ release</li>
-           <li>To be part of the Europa Simultaneous Release</li>        
-           <li>To support and benefit from Eclipse 3.3</li>
+           <li>Be part of the Europa Simultaneous Release</li>        
+           <li>Support and benefit from Eclipse 3.3</li>
         </ul>
 </div>
 
