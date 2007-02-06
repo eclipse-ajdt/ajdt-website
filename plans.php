@@ -38,7 +38,7 @@
 	<h1>Plans</h1>
 
 <p>
-<i>Last updated: 29 November 2006</i>
+<i>Last updated: 6 February 2007</i>
 </p>
 
 <p>
@@ -58,6 +58,17 @@
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
 
+		<p>
+          Release themes:
+        </p>
+
+        <ul>
+           <li>Improved support for working with crosscutting changes</li>
+           <li>Improved support for working with pointcuts</li>
+           <li>Incorporate latest AspectJ release</li>
+           <li>To be part of the Europa Simultaneous Release</li>        
+           <li>To support and benefit from Eclipse 3.3</li>
+        </ul>
 </div>
 
 <div class="homeitem3col">
