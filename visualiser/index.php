@@ -94,7 +94,7 @@
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/visualiser/org.eclipse.contribution.visualiser_2.2.0_archive.zip">org.eclipse.contribution.visualiser_2.2.0_archive.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/visualiser/org.eclipse.contribution.visualiser_2.2.0_archive.zip">org.eclipse.contribution.visualiser_2.2.0_archive.zip</a></td>
   </tr>
 </table>
 </li>
@@ -111,7 +111,7 @@
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/visualiser/visualiser_2.1.0_archive.zip">visualiser_2.1.0_archive.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/visualiser/visualiser_2.1.0_archive.zip">visualiser_2.1.0_archive.zip</a></td>
   </tr>
 </table>
 </li>
@@ -152,7 +152,7 @@
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/visualiser/googleprovider_1.0.0_archive.zip">googleprovider_1.0.0_archive.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/visualiser/googleprovider_1.0.0_archive.zip">googleprovider_1.0.0_archive.zip</a></td>
   </tr>
 </table>
 </li>
@@ -172,7 +172,7 @@
   </tr>
   <tr>
     <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/technology/ajdt/visualiser/cvsprovider_0.1.1_archive.zip">cvsprovider_0.1.1_archive.zip</a></td>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/visualiser/cvsprovider_0.1.1_archive.zip">cvsprovider_0.1.1_archive.zip</a></td>
   </tr>
 </table>
 </li>
