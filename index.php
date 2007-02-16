@@ -127,12 +127,6 @@
 				See the <a href="whatsnew141/">New and Noteworthy</a>
 				<br><span class="dates">posted 23-11-06</span>
 			  </li>
-
-			  <li>
-      			<a href="downloads/">AJDT 1.2.3 for Eclipse 3.0 and AJDT 1.3.3 for Eclipse 3.1 released!</a>
-				These releases update the 1.2.2 and 1.3.2 releases with the latest AspectJ 1.5.3 release.
-				<br><span class="dates">posted 23-11-06</span>
-			  </li>
 			  			
 				<li>AJDT and AspectJ have been promoted to Eclipse Tools
 				projects! Read more at
