@@ -85,7 +85,6 @@
 		<h3>Articles</h3>
 			<ul>
 			  <li>
-				<img src="images/new.gif" width="11" height="11">
 			    <a href="http://www.infoq.com/articles/aspectj-with-ajdt">
        			InfoQ article: Making AspectJ development easier with AJDT</a>
        			<br><span class="dates">posted 22-11-06</span>
@@ -114,6 +113,11 @@
 
 			  <li>
 			  	<img src="images/new.gif" width="11" height="11">
+      			<a href="downloads/#milestone">AJDT 1.5M5 for Eclipse 3.3M5 released!</a>
+				<br><span class="dates">posted 16-02-07</span>
+			  </li>
+
+			  <li>
       			<a href="downloads/#milestone">AJDT 1.5M4 for Eclipse 3.3M4 released!</a>
 				<br><span class="dates">posted 22-12-06</span>
 			  </li>
