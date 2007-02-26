@@ -63,7 +63,6 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
-			  	<img src="images/new.gif" width="11" height="11">
       			<a href="newfeatures/#compiler20070116">Updated AspectJ Compiler</a>
 				<br><span class="dates">posted 16-01-07</span>
 			  </li>
