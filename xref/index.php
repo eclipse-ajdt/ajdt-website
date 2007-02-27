@@ -49,12 +49,12 @@
 
 
 	<p>The Cross References view (also known as "XRef") is an extensible Eclipse tool that can be used to 
-       show extra information relating to Java elements shown in the editor or outline view.
+       show information relating to Java elements shown in the editor or outline view.
        It is used in AJDT to show AspectJ crosscutting information, such as when a Java method is
        affected by advice.</p>
       
     <p>The latest version of the XRef tool is available in standalone from the update site below, and is the
-    same version included with the latest development builds of AJDT 1.5 for Eclipse 3.3. Note that
+    version included with the latest development builds of AJDT 1.5 for Eclipse 3.3. Note that
     this standalone version is only for use with other providers - none are included with the tool so it
     is not functional on its own.</p>
    
