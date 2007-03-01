@@ -163,7 +163,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 
 		<li>
-			<a>AJDT 1.4.1 for Eclipse 3.2</a>
+			<a>AJDT 1.4.1 for Eclipse 3.2.1 (NOT 3.2.2)</a>
 		
 <table class="tasklist" width="80%">
   <tr>
