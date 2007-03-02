@@ -387,7 +387,7 @@ $builds33
 			</p>
 			<p>
 			<b>Note:</b> These builds now require Eclipse 3.2.2. They will not
-			work fully on Eclipse 3.2.1 or earlier version.
+			work fully on Eclipse 3.2.1 or earlier versions.
 			</p>
 			<p>
 			<table class="tasklist" width="100%">
