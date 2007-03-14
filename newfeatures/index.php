@@ -71,7 +71,7 @@ or for further discussion or suggestions please visit the
         <p>
            This functionality needs to be enabled by going to
            <b>Window &gt; Preferences...</b> then selecting
-           <b>General &gt; Editors &gt; Text Editors &gt; Annotations.</be>
+           <b>General &gt; Editors &gt; Text Editors &gt; Annotations.</b>
            Now select "<b>AspectJ change in crosscutting</b>" and select
            <b>Vertical ruler</b> option.
         </p>
