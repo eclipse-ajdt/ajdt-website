@@ -52,6 +52,46 @@ or for further discussion or suggestions please visit the
 	<ul>
 	
 	   <li>
+			<a name="ccchanges">Crosscutting Changes</a>	
+			<span class="dates">(posted 14-03-07)</span>
+		<p>
+		   As of development build 1.5.0.200703141018 for Eclipse 3.3M5
+		   new functionality is available to show when there has been a
+		   change in the crosscutting relationships in your project.
+        </p>
+        
+        <img src="changedadvicemarker.png" width="309" height="104" alt="Change in advice marker">     
+        
+        <p>
+           As shown above, advice markers are highlighted when the crosscutting
+           has changed, such when a method is advised for the first time, or when
+           there has been a change in the set of places affected by some advice.
+        </p>
+        
+        <p>
+           This functionality needs to be enabled by going to
+           <b>Window &gt; Preferences...</b> then selecting
+           <b>General &gt; Editors &gt; Text Editors &gt; Annotations.</be>
+           Now select "<b>AspectJ change in crosscutting</b>" and select
+           <b>Vertical ruler</b> option.
+        </p>
+        	
+        <p>
+           You can also right-click the new markers and select
+           <b>AspectJ Tools &gt; Show changes in Crosscutting Comparison view.</b>          
+        </p>
+  
+        <img src="comparisonref.png" width="249" height="107" alt="Reference point for comparison">     
+        
+        <p>
+           The reference point for the comparison can be changed using the new
+           drop-down on the Cromsscutting Comparison view. The choices are
+           to use the last build (of any type), the last full build, or a
+           crosscutting map file in the project.
+        </p>	
+	   </li>
+	
+	   <li>
 			<a name="compiler20070116">Updated AspectJ Compiler</a>	
 			<span class="dates">(posted 16-01-07)</span>
 		<p>
