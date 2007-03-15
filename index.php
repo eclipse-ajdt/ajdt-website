@@ -112,7 +112,6 @@
 			<ul>
 
 			  <li>
-			  	<img src="images/new.gif" width="11" height="11">
       			<a href="downloads/#milestone">AJDT 1.5M5 for Eclipse 3.3M5 released!</a>
 				<br><span class="dates">posted 16-02-07</span>
 			  </li>
