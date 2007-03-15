@@ -40,7 +40,7 @@
 <div class="midlist">
 <ul>
  <li>A very simple <a href="#HELLOWORLD-DEMO">HelloWorld</a> demo.</li>
- <li>An EclipseCon demo: <a href="#ELCIPSECON07">What's New in AJDT</a></li>
+ <li>An EclipseCon demo: <a href="#ECLIPSECON07">What's New in AJDT.</a></li>
  <li>A tour of the <a href="#VISUALISER-DEMO">Visualiser.</a></li>
  <li>A demo of the <a href="#COMPARISON-DEMO">Crosscutting Comparison view.</a></li>
  <li>A demo of <a href="#LTW-DEMO">Load-time Weaving</a> in AJDT.</li>
@@ -67,7 +67,7 @@
 </div>
 
 <div class="homeitem3col">
-	<h3><a name="ELCIPSECON07">EclipseCon 2007 Demo: What's New in AJDT</a></h3>
+	<h3><a name="ECLIPSECON07">EclipseCon 2007 Demo: What's New in AJDT</a></h3>
 		
 	<p>This demo was used for the "What's New in AJDT" short talk given
 	at EclipseCon 2007. It runs for just under 9 minutes.</p>

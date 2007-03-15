@@ -88,7 +88,13 @@ or for further discussion or suggestions please visit the
            drop-down on the Cromsscutting Comparison view. The choices are
            to use the last build (of any type), the last full build, or a
            crosscutting map file in the project.
-        </p>	
+        </p>
+        
+        <p>
+           This new functionality can be seen in action in the
+           animated demo shown at EclipseCon:
+           <a href="http://www.eclipse.org/ajdt/demos/#ECLIPSECON07">What's New In AJDT.</a>
+        </p>
 	   </li>
 	
 	   <li>
