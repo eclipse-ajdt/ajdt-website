@@ -36,7 +36,7 @@ function ListDevBuilds($dir){
 		 } else if ($eclipse == "32") {
 		   $eclipsename = "3.2.2";
 		 } else if ($eclipse == "33") {
-		   $eclipsename = "3.3M6";
+		   $eclipsename = "3.3M7";
 		 } else {
 		   $eclipsename = "";
 		 }
@@ -409,10 +409,6 @@ $builds33
 			<a>Eclipse 3.2 builds</a>
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/32/dev/update</code>
-			</p>
-			<p>
-			<b>Note:</b> These builds now require Eclipse 3.2.2. They will not
-			work fully on Eclipse 3.2.1 or earlier versions.
 			</p>
 			<p>
 			<table class="tasklist" width="100%">
