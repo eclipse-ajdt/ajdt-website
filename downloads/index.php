@@ -276,6 +276,31 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 
 		<li>
+			<a>AJDT 1.5M7 for Eclipse 3.3M7</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th align="left">Release Date:</th><td>May 14, 2007</td>
+  </tr>
+    <tr>
+    <th align="left">AspectJ Version:</th><td>1.5.4.200701151324</td>
+  </tr>
+  <tr>
+    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/tools/ajdt/33/update</code></td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5M7_for_eclipse_3.3M7.zip">ajdt_1.5M7_for_eclipse_3.3M7.zip</a></td>
+  </tr>
+  <tr>
+    <th align="left">More info:</th><td>See the <a href="http://www.eclipse.org/ajdt/newfeatures/">New Features</a> page</td>
+  </tr>
+</table>
+
+		</li>
+
+		<li>
 			<a>AJDT 1.5M6 for Eclipse 3.3M6</a>
 		
 <table class="tasklist" width="80%">
@@ -324,7 +349,8 @@ of /technology, since AJDT become a Tools project.</p>
 </table>
 
 		</li>
-		
+
+<!--		
 		<li>
 			<a>AJDT 1.5M4 for Eclipse 3.3M4</a>
 		
@@ -374,6 +400,7 @@ of /technology, since AJDT become a Tools project.</p>
 </table>
 
 		</li>
+-->
 		
 	</ul>
 	</div>
