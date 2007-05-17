@@ -63,7 +63,6 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
-			    <img src="images/new.gif" width="11" height="11">
       			<a href="newfeatures/#ccchanges">Crosscutting Changes</a>
 				<br><span class="dates">posted 15-03-07</span>
 			  </li>
