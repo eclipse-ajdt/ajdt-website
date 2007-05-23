@@ -112,13 +112,13 @@
 
 			  <li>
 			  	<img src="images/new.gif" width="11" height="11">
-      			<a href="downloads/#milestone">AJDT 1.5M7 for Eclipse 3.3M7 released!</a>
-				<br><span class="dates">posted 14-05-07</span>
+      			<a href="downloads/#milestone">AJDT 1.5RC1 for Eclipse 3.3RC1 released!</a>
+				<br><span class="dates">posted 23-05-07</span>
 			  </li>
 
 			  <li>
-     			<a href="downloads/#milestone">AJDT 1.5M6 for Eclipse 3.3M6 released!</a>
-				<br><span class="dates">posted 30-03-07</span>
+      			<a href="downloads/#milestone">AJDT 1.5M7 for Eclipse 3.3M7 released!</a>
+				<br><span class="dates">posted 14-05-07</span>
 			  </li>
 		
 			  <li>
