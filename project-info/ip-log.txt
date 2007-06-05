@@ -45,6 +45,14 @@ org.eclipse.contribution.visualiser, various, Rory Slaney, unknown, aclement,		c
 org.eclipse.contribution.visualiser, various, Jonathan Davies, unknown, aclement,	contributions made as an IBM Extreme Blue member, 2002
 org.eclipse.contribution.visualiser, various, Nick Huismans, unknown, aclement,		contributions made as an IBM Extreme Blue member, 2002
 
+AJDT includes AspectJ so see also IP Log AspectJ:
+http://www.eclipse.org/aspectj/project-info/ip-log.txt
+
+
 
 Third Party Software
-None used directly, but AJDT includes AspectJ so see IP Log for AspectJ
+
+BCEL 5.1 derivative - reworked for performance and updated to support Java5.  The source files still 
+include the standard apache 1.1 software license. (http://jakarta.apache.org/bcel/index.html)
+
+Eclipse JDT Compiler 3.1 - AspectJ is based on an extended form of this compiler (http://eclipse.org)
