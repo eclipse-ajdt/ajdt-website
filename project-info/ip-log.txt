@@ -45,7 +45,7 @@ org.eclipse.contribution.visualiser, various, Rory Slaney, unknown, aclement,		c
 org.eclipse.contribution.visualiser, various, Jonathan Davies, unknown, aclement,	contributions made as an IBM Extreme Blue member, 2002
 org.eclipse.contribution.visualiser, various, Nick Huismans, unknown, aclement,		contributions made as an IBM Extreme Blue member, 2002
 
-AJDT includes AspectJ so see also IP Log AspectJ:
+AJDT includes AspectJ so see also IP Log for AspectJ:
 http://www.eclipse.org/aspectj/project-info/ip-log.txt
 
 
