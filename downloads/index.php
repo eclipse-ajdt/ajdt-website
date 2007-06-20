@@ -297,7 +297,12 @@ of /technology, since AJDT become a Tools project.</p>
     <th align="left">More info:</th><td>See the <a href="http://www.eclipse.org/ajdt/newfeatures/">New Features</a> page</td>
   </tr>
 </table>
-		
+	
+			</li>
+	
+			<li>
+			<a>AJDT 1.5RC1 for Eclipse 3.3RC1</a>
+				
 <table class="tasklist" width="80%">
   <tr>
     <th align="left">Release Date:</th><td>May 23, 2007</td>
