@@ -47,6 +47,34 @@ for current releases.</p>
 	<ul>
 
 		<li>
+			<a>AJDT 1.4.1 for Eclipse 3.2.1 (NOT 3.2.2)</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th align="left">Release Date:</th><td>November 23, 2006</td>
+  </tr>
+  <tr>
+    <th align="left">AspectJ Version:</th><td>1.5.3</td>
+  </tr>
+  <tr>
+    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/tools/ajdt/32/update</code></td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/32/update/ajdt_1.4.1_for_eclipse_3.2.zip">ajdt_1.4.1_for_eclipse_3.2.zip</a></td>
+  </tr>
+  <tr>
+    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew141/">New & Noteworthy</a></td>
+  </tr>
+  <tr>
+    <th align="left">Update:</th>
+    <td>This release requires Eclipse 3.2.1. It does not work fully with the recent Eclipse 3.2.2 release.</td>
+  </tr>
+</table>
+		</li>
+
+		<li>
 			<a>AJDT 1.4 for Eclipse 3.2</a>
 		
 <table class="tasklist" width="80%">
@@ -158,6 +186,32 @@ for current releases.</p>
 	<div class="homeitem3col">
 	<h3>Archived Release builds for Eclipse 3.0</h3>
 	<ul>
+
+		<li>
+			<a>AJDT 1.2.3 for Eclipse 3.0</a>
+		
+<table class="tasklist" width="80%">
+  <tr>
+    <th align="left">Release Date:</th><td>November 23, 2006</td>
+  </tr>
+    <tr>
+    <th align="left">AspectJ Version:</th><td>1.5.3</td>
+  </tr>
+  <tr>
+    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
+  </tr>
+  <tr>
+    <th align="left">Zip file:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/30/update/ajdt_1.2.3_for_eclipse_3.0.zip">ajdt_1.2.3_for_eclipse_3.0.zip</a></td>
+  </tr>
+  <tr>
+    <th align="left">More info:</th><td>The only change since 1.2.2 is an update to the latest AspectJ release.</td>
+  </tr>
+</table>
+
+		</li>
+
 
 		<li>
 			<a>AJDT 1.2.2 for Eclipse 3.0</a>
