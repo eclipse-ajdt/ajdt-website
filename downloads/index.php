@@ -134,7 +134,7 @@ function ListDevBuilds($dir){
 
 	#$rightcolumn = file_get_contents("../rightcolumn.html");
 	
-	$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/33/dev/update');
+	#$builds33 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/33/dev/update');
 	#$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
 	#$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/31/dev/update');
 	#$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/30/dev/update');
@@ -191,32 +191,8 @@ of /technology, since AJDT become a Tools project.</p>
     </div>
 
 	<div class="homeitem3col">
-	<h3>Release builds for Eclipse 3.1</h3>
+	<h3>Release builds for Eclipse 3.1 and older</h3>
 	<ul>
-
-		<li>
-			<a>AJDT 1.3.3 for Eclipse 3.1</a>
-		
-<table class="tasklist" width="80%">
-  <tr>
-    <th align="left">Release Date:</th><td>November 23, 2006</td>
-  </tr>
-  <tr>
-    <th align="left">AspectJ Version:</th><td>1.5.3</td>
-  </tr>
-  <tr>
-    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/31/update</code></td>
-  </tr>
-  <tr>
-    <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/31/update/ajdt_1.3.3_for_eclipse_3.1.zip">ajdt_1.3.3_for_eclipse_3.1.zip</a></td>
-  </tr>
-  <tr>
-    <th align="left">More info:</th><td>The only change since 1.3.2 is an update to the latest AspectJ release.</td>
-  </tr>
-</table>
-		</li>
 
 		<li>
 			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
@@ -224,17 +200,6 @@ of /technology, since AJDT become a Tools project.</p>
 
     </ul>
     </div>
-
-	<div class="homeitem3col">
-	<h3>Release builds for Eclipse 3.0</h3>
-	<ul>
-
-		<li>
-			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
-		</li>
-		
-	</ul>
-	</div>
 
 
 	<div class="homeitem3col">
@@ -267,7 +232,8 @@ of /technology, since AJDT become a Tools project.</p>
 </table>
 	
 			</li>
-	
+
+<!--	
 			<li>
 			<a>AJDT 1.5RC1 for Eclipse 3.3RC1</a>
 				
@@ -314,7 +280,7 @@ of /technology, since AJDT become a Tools project.</p>
 
 		</li>
 
-<!--		
+		
 		<li>
 			<a>AJDT 1.5M6 for Eclipse 3.3M6</a>
 		
@@ -415,6 +381,8 @@ of /technology, since AJDT become a Tools project.</p>
 	</ul>
 	</div>
 
+
+<!--
 	
 	<div class="homeitem3col">
 	<a name="dev">
@@ -442,7 +410,7 @@ $builds33
 			</p>
 		</li>
 
-<!--				
+				
 		<li>
 			<a>Eclipse 3.2 builds</a>
 			<br>Update Site URL:<br>
@@ -506,10 +474,10 @@ $builds30
 		
 	</ul>
 	
-	-->
 	
 	</div>
 	
+	-->
 		
 		<hr class="clearer" />
 	</div>
