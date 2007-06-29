@@ -58,7 +58,40 @@
           </tr>
 
         </table>
-			 
+
+
+		<div class="homeitem3col">
+			<h3>News and Releases</h3>
+			<ul>
+
+			  <li>
+			  	<img src="images/new.gif" width="11" height="11">
+      			<a href="downloads/">AJDT 1.5 for Eclipse 3.3 released as part of Europa!</a>
+				See the <a href="whatsnew15/">New and Noteworthy</a>
+				<br><span class="dates">posted 29-06-07</span>
+			  </li>
+
+			  <li>
+			  	<img src="images/new.gif" width="11" height="11">
+      			<a href="downloads/">AJDT 1.4.2 for Eclipse 3.2 released!</a>
+				<br><span class="dates">posted 28-06-07</span>
+			  </li>
+
+			  <li>
+      			<a href="downloads/#milestone">AJDT 1.5RC4 for Eclipse 3.3RC4 released!</a>
+				<br><span class="dates">posted 20-06-07</span>
+			  </li>
+					  			
+				<li>AJDT and AspectJ have been promoted to Eclipse Tools
+				projects! Read more at
+				<a href="http://www.infoq.com/news/aspectj-ajdt-eclipse-tools">InfoQ.</a>
+				<br><span class="dates">posted 22-09-06</span><br>
+				</li>
+			</ul>
+		</div>
+				
+		<hr class="clearer" />
+					 
 		<div class="homeitem">
 			<h3>New Features</h3>
 			<ul>
@@ -105,64 +138,7 @@
 		</div>
 		
 		<hr class="clearer" />
-		
-		<div class="homeitem3col">
-			<h3>News and Releases</h3>
-			<ul>
 
-			  <li>
-			  	<img src="images/new.gif" width="11" height="11">
-      			<a href="downloads/">AJDT 1.5 for Eclipse 3.3 released as part of Europa!</a>
-				See the <a href="whatsnew15/">New and Noteworthy</a>
-				<br><span class="dates">posted 29-06-07</span>
-			  </li>
-
-			  <li>
-			  	<img src="images/new.gif" width="11" height="11">
-      			<a href="downloads/">AJDT 1.4.2 for Eclipse 3.2 released!</a>
-				<br><span class="dates">posted 28-06-07</span>
-			  </li>
-
-			  <li>
-      			<a href="downloads/#milestone">AJDT 1.5RC4 for Eclipse 3.3RC4 released!</a>
-				<br><span class="dates">posted 20-06-07</span>
-			  </li>
-					  			
-				<li>AJDT and AspectJ have been promoted to Eclipse Tools
-				projects! Read more at
-				<a href="http://www.infoq.com/news/aspectj-ajdt-eclipse-tools">InfoQ.</a>
-				<br><span class="dates">posted 22-09-06</span><br>
-				</li>
-			</ul>
-		</div>
-		
-		<!--
-		<div class="homeitem3col">
-			<h3>Recent Events</h3>
-			<ul>
-			  <li>EclipseCon 2006: This year's conference contained
-			  a well attended <a href="http://www.eclipsecon.org/2006/Sub.do?id=522">AOP Track.</a>
-			  See the individual sessions for presentation materials, where available. 
-			  The <a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt/demos/EclipseCon2006/">AJDT
-			  demo projects can be found in CVS. </a> The <a href="http://www.eclipse.org/ajdt/EclipseCon2006/">AspectJ
-			  tutorial handouts</a> are also available, which include a link to the plug-in
-			  containing the exercise projects.
-			  	<br><span class="dates">posted 27-03-06</span><br>		  
-			  </li>
-			  			  
-			  <li>AOSD'06: Check out the <a href="http://www.aosd.net/2006/program/">
-			  conference program</a> to see the various AJDT/AspectJ sessions that
-			  took place at this year's conference.
-			  Presentation materials will be added shortly in some cases.
- 			    <br><span class="dates">posted 27-03-06</span><br>				
-          	  </li>
-
-			</ul>			
-		</div>
-		-->
-
-		
-		<hr class="clearer" />
 		
 		<p>
 			The AspectJ compiler is developed by the <a href="http://eclipse.org/aspectj">Eclipse AspectJ project</a>
