@@ -235,6 +235,7 @@ of /technology, since AJDT become a Tools project.</p>
     </ul>
     </div>
 
+<!--
 
 	<div class="homeitem3col">
 	<a name="milestone">
@@ -266,8 +267,7 @@ of /technology, since AJDT become a Tools project.</p>
 </table>
 	
 			</li>
-
-<!--	
+	
 			<li>
 			<a>AJDT 1.5RC1 for Eclipse 3.3RC1</a>
 				
@@ -410,11 +410,11 @@ of /technology, since AJDT become a Tools project.</p>
 </table>
 
 		</li>
--->
 		
 	</ul>
 	</div>
 
+-->
 
 <!--
 	
