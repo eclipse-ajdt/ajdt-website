@@ -112,6 +112,13 @@
 
 			  <li>
 			  	<img src="images/new.gif" width="11" height="11">
+      			<a href="downloads/">AJDT 1.5 for Eclipse 3.3 released as part of Europa!</a>
+				See the <a href="whatsnew15/">New and Noteworthy</a>
+				<br><span class="dates">posted 29-06-07</span>
+			  </li>
+
+			  <li>
+			  	<img src="images/new.gif" width="11" height="11">
       			<a href="downloads/">AJDT 1.4.2 for Eclipse 3.2 released!</a>
 				<br><span class="dates">posted 28-06-07</span>
 			  </li>
@@ -120,13 +127,7 @@
       			<a href="downloads/#milestone">AJDT 1.5RC4 for Eclipse 3.3RC4 released!</a>
 				<br><span class="dates">posted 20-06-07</span>
 			  </li>
-		
-			  <li>
-      			<a href="downloads/">AJDT 1.4.1 for Eclipse 3.2 and AJDT 1.5M3 for Eclipse 3.3M3 released!</a>
-				See the <a href="whatsnew141/">New and Noteworthy</a>
-				<br><span class="dates">posted 23-11-06</span>
-			  </li>
-			  			
+					  			
 				<li>AJDT and AspectJ have been promoted to Eclipse Tools
 				projects! Read more at
 				<a href="http://www.infoq.com/news/aspectj-ajdt-eclipse-tools">InfoQ.</a>
