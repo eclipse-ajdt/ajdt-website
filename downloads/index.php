@@ -167,7 +167,7 @@ of /technology, since AJDT become a Tools project.</p>
 		
 <table class="tasklist" width="80%">
   <tr>
-    <th align="left">Release Date:</th><td>June 29, 2006</td>
+    <th align="left">Release Date:</th><td>June 29, 2007</td>
   </tr>
   <tr>
     <th align="left">AspectJ Version:</th><td>1.5.4.200705211336</td>
