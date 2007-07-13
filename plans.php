@@ -38,7 +38,7 @@
 	<h1>Plans</h1>
 
 <p>
-<i>Last updated: 6 February 2007</i>
+<i>Last updated: 13 July 2007</i>
 </p>
 
 <p>
@@ -53,7 +53,7 @@
 <div class="homeitem3col">
 	<h3>AJDT 1.5</h3>
 		<p>
-		Status: 1.5 planned for June 2007 (as part of the Europa Simultaneous Release)<br>
+		Status: 1.5 released 29 June 2007 (as part of the Europa Simultaneous Release)<br>
         Eclipse version: 3.3<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -74,7 +74,7 @@
 <div class="homeitem3col">
 	<h3>AJDT 1.4</h3>
 		<p>
-		Status: 1.4 released 30 June 2006, 1.4.1 released 23 November 2006<br>
+		Status: 1.4 released 30 June 2006, 1.4.1 released 23 November 2006, 1.4.2 released 28 June 2007<br>
         Eclipse version: 3.2<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
@@ -111,9 +111,6 @@
            <li>To build on AJDT 1.2 with bug fixes and enhanced function</li>
         </ul>
         
-        <p>
-        	Update: The 1.3.3 release updated the included level of AspectJ to 1.5.3.
-        </p>
 </div>
 
 <div class="homeitem3col">
@@ -134,10 +131,7 @@
            <li>To support incremental compilation and structure model generation as the default  mode of operation</li>        
            <li>To provide a comparable editing experience to that offered by the JDT for Java source </li>
         </ul>
-
-       <p>
-        	Update: The 1.2.3 release updated the included level of AspectJ to 1.5.3.
-        </p>      
+            
 </div>
 
 		<hr class="clearer" />
