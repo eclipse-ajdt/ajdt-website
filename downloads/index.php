@@ -444,9 +444,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3 class="tasklist">Development builds</h3>
 	</a>
 
-
 	<ul>
-<!--
 			<li>
 			<a>Eclipse 3.3 builds</a>
 			<br>Update Site URL:<br>
@@ -466,6 +464,8 @@ $builds33
 			</table>
 			</p>
 		</li>
+
+<!--
 				
 		<li>
 			<a>Eclipse 3.2 builds</a>
