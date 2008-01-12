@@ -63,7 +63,12 @@
 		<div class="homeitem3col">
 			<h3>News and Releases</h3>
 			<ul>
-
+ 			  <li>
+			  	<img src="images/new.gif" width="11" height="11">
+      			<a href="downloads/">AJDT 1.5.1 for Eclipse 3.3 released (includes AspectJ 1.5.4)</a>
+				<br><span class="dates">posted 11-01-08</span>
+			  </li>
+			  
 			  <li>
 			  	<img src="images/new.gif" width="11" height="11">
       			<a href="downloads/">AJDT 1.5 for Eclipse 3.3 released as part of Europa!</a>
