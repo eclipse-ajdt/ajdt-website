@@ -42,7 +42,7 @@ function ListDevBuilds($dir){
 		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
-         echo "path = $path <br>";
+         #echo "path = $path <br>";
          #echo "name = $name <br>";
          $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
          $str = $str . "</td>\n<td width=\"30%\">";
