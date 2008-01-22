@@ -65,9 +65,9 @@
 			<ul>
  			  <li>
 			  	<img src="images/new.gif" width="11" height="11">
-      			AJDT 1.5.2 development builds available for Eclipse 3.3.  These include AspectJ1.6.0m1
+      			AJDT 1.5.2 development builds available for Eclipse 3.3.  These builds include AspectJ1.6.0m1
       			which is the first AspectJ compiler version to support Java6. See the <a href="downloads/">downloads</a> page for the .zip file
-      			or use the 33 development update site.
+      			or use the 33 development update site: http://download.eclipse.org/tools/ajdt/33/dev/update
 				<br><span class="dates">posted 22-01-08</span>
 			  </li>
 			  
