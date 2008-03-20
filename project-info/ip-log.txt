@@ -3,6 +3,10 @@ mchapman,hawkins,sjanuary,mkersten,aclement,acolyer,jwaterh
 
 Developers
 
+For AJDT 1.6:
+component,          		bug#,       name,           size,       committer,          description
+none
+
 For AJDT 1.5:
 component,          		bug#,       name,           size,       committer,          description
 org.eclipse.ajdt.examples,	168934,		Steve Young,	<100		mchapman,			bug fix
@@ -55,4 +59,4 @@ Third Party Software
 BCEL 5.1 derivative - reworked for performance and updated to support Java5.  The source files still 
 include the standard apache 1.1 software license. (http://jakarta.apache.org/bcel/index.html)
 
-Eclipse JDT Compiler 3.1 - AspectJ is based on an extended form of this compiler (http://eclipse.org)
+Eclipse JDT Compiler 3.3 - AspectJ is based on an extended form of this compiler (http://eclipse.org)
