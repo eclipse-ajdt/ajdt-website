@@ -56,7 +56,7 @@ http://www.eclipse.org/aspectj/project-info/ip-log.txt
 
 Third Party Software
 
-BCEL 5.1 derivative - reworked for performance and updated to support Java5.  The source files still 
-include the standard apache 1.1 software license. (http://jakarta.apache.org/bcel/index.html)
+BCEL 5.1 derivative - reworked for performance and updated to support Java5.  
+Covered by IPZilla entry 2245: https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2245
 
 Eclipse JDT Compiler 3.3 - AspectJ is based on an extended form of this compiler (http://eclipse.org)
