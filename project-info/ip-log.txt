@@ -59,6 +59,6 @@ Third Party Software
 BCEL 5.1
 Ipzilla CQ Reference - https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2245
 /cvsroot/tools/org.aspectj/modules/lib/bcel/bcel.jar
-Apache 1.1 software license
+Apache 1.1 software license, "modified"
 
 Eclipse JDT Compiler 3.3 - AspectJ is based on an extended form of this compiler (http://eclipse.org)
