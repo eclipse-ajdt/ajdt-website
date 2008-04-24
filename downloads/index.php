@@ -194,10 +194,10 @@ of /technology, since AJDT become a Tools project.</p>
 			  <tr>
 			    <th align="left">AspectJ Version:</th><td>1.5.4.20080111211120 (1.5.4)</td>
 			  </tr>
-			  <!--tr>
+			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/33/update</code></td>
-			  </tr-->
+			    <td><!--code>http://download.eclipse.org/tools/ajdt/33/update</code--></td>
+			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
 			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5.1_for_eclipse_3.3.zip">ajdt_1.5.1_for_eclipse_3.3.zip</a></td>
