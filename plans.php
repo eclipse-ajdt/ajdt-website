@@ -58,7 +58,6 @@
 		AJDT 1.6.0 will ship as soon as possible after Eclipse3.4 is complete.
 		</p>
 
-		<p>Incorporates AspectJ1.6.0</p>
 </div>
 
 <div class="homeitem3col">
