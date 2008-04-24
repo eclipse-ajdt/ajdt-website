@@ -180,9 +180,9 @@ of /technology, since AJDT become a Tools project.</p>
 			    <th align="left">Zip file:</th>
 			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5.2_for_eclipse_3.3.zip">ajdt_1.5.2_for_eclipse_3.3.zip</a></td>
 			  </tr>
-			    <!--tr>
-			    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew15/">New & Noteworthy</a></td>
-			  </tr-->
+			    <tr>
+			    <th align="left">More info:</th><td><!--a href="http://www.eclipse.org/ajdt/whatsnew15/">New & Noteworthy</a--></td>
+			  </tr>
 			</table>
 		</li>
 		<li>
@@ -202,9 +202,9 @@ of /technology, since AJDT become a Tools project.</p>
 			    <th align="left">Zip file:</th>
 			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5.1_for_eclipse_3.3.zip">ajdt_1.5.1_for_eclipse_3.3.zip</a></td>
 			  </tr>
-			    <!--tr>
+			    <tr>
 			    <th align="left">More info:</th><td></td>
-			  </tr-->
+			  </tr>
 			</table>
 		</li>
 		
