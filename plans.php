@@ -55,7 +55,7 @@
 	<h3>Future releases: AJDT 1.5.3 for Eclipse3.3, AJDT 1.6.0 for Eclipse 3.4</h3>
 		<p>
 		AJDT 1.5.3 will incorporate AspectJ 1.6.1: target date June 08<br>
-		AJDT 1.6.0 will ship as soon as possible after Eclipse3.4 is complete.
+		AJDT 1.6.0 will ship as soon as possible after Eclipse3.4.
 		</p>
 
 </div>
