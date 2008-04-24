@@ -196,7 +196,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code><pre>                        </pre></code></td>
+			    <td><code>                              .</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
