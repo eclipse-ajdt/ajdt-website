@@ -195,8 +195,7 @@ of /technology, since AJDT become a Tools project.</p>
 			    <th align="left">AspectJ Version:</th><td>1.5.4.20080111211120 (1.5.4)</td>
 			  </tr>
 			  <tr>
-			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>                              .</code></td>
+			    <th align="left">Update&nbsp;Site&nbsp;URL:</th><td><code><pre>                               </pre></code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
