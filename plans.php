@@ -50,25 +50,26 @@
   in a future release.
 </p>
 
+
 <div class="homeitem3col">
-	<h3>AJDT 1.5</h3>
+	<h3>Future releases: AJDT 1.5.3 for Eclipse3.3, AJDT 1.6.0 for Eclipse 3.4</h3>
 		<p>
-		Status: 1.5 released 29 June 2007 (as part of the Europa Simultaneous Release)<br>
+		AJDT 1.5.3 will incorporate AspectJ 1.6.1: target date June 08<br>
+		AJDT 1.6.0 will ship as soon as possible after Eclipse3.4 is complete.
+		</p>
+
+		<p>Incorporates AspectJ1.6.0</p>
+</div>
+
+<div class="homeitem3col">
+	<h3>AJDT 1.5.2</h3>
+		<p>
+		Status: 1.5.2 released 24 April 2008<br>
         Eclipse version: 3.3<br>
         Platforms: Windows XP, Linux, Mac OS X
 		</p>
 
-		<p>
-          Release themes:
-        </p>
-
-        <ul>
-           <li>Improve support for working with crosscutting changes</li>
-           <li>Improve support for working with pointcuts</li>
-           <li>Incorporate latest AspectJ release</li>
-           <li>Be part of the Europa Simultaneous Release</li>        
-           <li>Support and benefit from Eclipse 3.3</li>
-        </ul>
+		<p>Incorporates AspectJ1.6.0</p>
 </div>
 
 <div class="homeitem3col">
