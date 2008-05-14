@@ -214,7 +214,7 @@ of /technology, since AJDT become a Tools project.</p>
     </div>
 
 	<div class="homeitem3col">
-	<h3>Release builds for Eclipse 3.4</h3>
+	<h3>Development builds for Eclipse 3.4</h3>
 	<ul>
 
 		<li>
