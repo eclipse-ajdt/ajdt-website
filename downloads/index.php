@@ -213,6 +213,37 @@ of /technology, since AJDT become a Tools project.</p>
     </ul>
     </div>
 
+	<div class="homeitem3col">
+	<h3>Release builds for Eclipse 3.4</h3>
+	<ul>
+
+		<li>
+			<a>AJDT 1.6 dev builds for Eclipse 3.4M7</a>
+		
+			<table class="tasklist" width="80%">
+			  <tr>
+			    <th align="left">Release Date:</th><td>April 15, 2008</td>
+			  </tr>
+			  <tr>
+			    <th align="left">AspectJ Version:</th><td>1.6.1.20080514120000</td>
+			  </tr>
+			  <tr>
+			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></td>
+			  </tr>
+			  <tr>
+			    <th align="left">Zip file:</th>
+			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/34/dev/update/ajdt_1.6.0.200805141703_archive.zip">ajdt_1.6.0.200805141703_archive.zip</a></td>
+			  </tr>	  
+			</table>
+		</li>
+				
+		<li>
+			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
+		</li>
+		
+    </ul>
+    </div>
 
 	<div class="homeitem3col">
 	<h3>Release builds for Eclipse 3.2</h3>
