@@ -40,7 +40,11 @@
 	<ol>
 	  			<li><a href="#q:contribute">How can I contribute to the AJDT project?</a> </li>
 	  			<li><a href="#q:source">Where will I find the source for AJDT? </a> </li>
-	  			<li><a href="#q:develop">How do I setup an AJDT development environment in Eclipse? </a> </li>
+	  			<li><a href="#q:versions">What do the version numbers mean?</a> </li>
+					<li><a href="#q:cvs">How can I connect the AJDT CVS repository? </a> </li>
+					<li><a href="#q:cvsbranch">I am looking for the AJDT branch 1.X in the CVS repository, but I can&rsquo;t find it.  
+					What gives? </a> </li>
+					<li><a href="#q:develop">How do I setup an AJDT development environment in Eclipse? </a> </li>
 	  			<li><a href="#q:packaging">How can I package my sample code for contribution to the examples plug-in?</a> </li>
 	  			<li><a href="#q:extend">How can I build tools which extend AJDT?</a> </li>
 	  			
@@ -62,6 +66,7 @@
 				<a href="http://www.eclipse.org/legal/termsofuse.php">terms of the Eclipse website</a> see
 				the Eclipse 
 				<a href="http://www.eclipse.org/legal/legalfaq.php#contributions">contribution and participation FAQ</a>. Sorry, but for legal reasons
+
 				we are unable to accept patches emailed directly to developers, and will
 				 normally ask you to resubmit these either via Bugzilla or the mailing list.
 				AJDT development is run as a meritocracy, developers who have a track 
@@ -73,7 +78,7 @@
 			<li><em>Where will I find the source for AJDT?</em>
 			<p>
 				AJDT source is held in the Eclipse CVS repository under /cvsroot/tools, see the <a
-				href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.ajdt/"> root
+				href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.ajdt/AJDT_src/?root=Tools_Project"> root
 				of the AJDT source tree online</a>.
 				AJDT is organized in subdirectories under org.eclipse.ajdt. The main source
 				tree is in the &#8220;AJDT_src&#8221; subdirectory.
@@ -97,12 +102,12 @@
 				 
 				 <tr>
 				  <td>org.aspectj.runtime<o:p></td>				   
-				  <td>The AspectJ runtime classes</td>				   
+				  <td>The AspectJ runtime classes packaged in a jar file</td>				   
 				 </tr>
 
 				 <tr>
 				  <td>org.aspectj.weaver<o:p></td>				   
-				  <td>The AspectJ weaver</td>				   
+				  <td>The AspectJ weaver packaged in a jar file</td>				   
 				 </tr>
 				 
 				 <tr>
@@ -151,7 +156,7 @@
 				 
 				 <tr>
 				  <td >org.eclipse.aspectj.feature</td>				   
-				  <td>The &quot;feature&quot; plug-in</td>				   
+				  <td>The &ldquot;feature&rdquot; plug-in</td>				   
 				 </tr>
 				 
 				 <tr>
@@ -193,49 +198,111 @@
 		    </li>
 	
 	    <br><br>
+			
+		<a name="q:versions"></a>
+			
+			<li><em>What do the version numbers mean?</em>
+			  <p>Each Eclipse point release has a corresponding AJDT point release.  Eclipse 3.1 
+				requires AJDT 1.3, Eclipse 3.2 requires AJDT 1.4, Eclipse 3.3 requires AJDT 1.5, and 
+				Eclipse 3.4 requires AJDT 1.6.  Future releases are expected to follow the same numbering 
+				system.</p>
+				<p>In the CVS repository, each point release of AJDT has its own branch.  To do development on a 
+				particular version, you must check out the appropriate branch.  See <a href="#q:cvs">How can I connect the AJDT CVS repository? </a> 
+				and <a href="#q:cvsbranch">I am looking for the AJDT branch 1.X in the CVS repository, but I can&rsquo;t find it.  
+  			What gives? </a> for more details/p>
+		    </li>
+	
+	    <br><br>
+		<a name="q:cvs"></a>
+			<li><em>How can I connect the AJDT CVS repository and download?</em>
+			  <p>Use the following credentials to connect to the repository anonymously:<br/>
+								
+				<table>
+				<tr><td>connection type:</td><td>pserver</td></tr>
+				<tr><td>user:</td><td>anonymous</td></tr>
+				<tr><td>password:</td><td><em>&lt;blank&gt;</em></td></tr>
+				<tr><td>host:</td><td>dev.eclipse.org</td></tr>
+				<tr><td>path:</td><td>/cvs/root/tools</td></tr>
+				</table>
+			
+			  If you are connecting to the repository from Eclipse, do the following:
+				<ol>
+				<li>Start with a clean workspace under Eclipse 3.2, 3.3, or 3.4
+				<li>Open the CVS Repository Exploring perspective. 
+				<li>Right-click on the CVS Repositories view.
+				<li>Click &ldquo;New&rdquo; &gt; &ldquo;Repository
+			    Location&rdquo;. 
+				<li>Fill in the blanks using the above credentials. 
+				<li>Click &ldquo;Finish&rdquo;.
+			  <li>Use the CVS Repositories view to navigate to
+			    HEAD/org.eclipse.ajdt/AJDT_src. 
+				</ol>
+		    </li>
+  	    </p>
+	
+	    <br><br>
+
+		<a name="q:cvsbranch"></a>
+			<li><em>I am looking for the AJDT branch 1.X in the CVS repository, but I can&rsquo;t find it.  
+					What gives? </em>
+	
+				<p>Each point version of AJDT has its own branch in the CVS repository.  It may not be 
+				initially visible if you are browsing the repository through Eclsipe.</p>
+				
+				<p>To discover a branch, do the following:
+				<ol>
+				<li>Right-click on the <code>org.eclipse.ajdt</code></li>
+				<li>Select &ldquo;Configure Branches and Versions...&rdquo;
+				<li>In the dialog that opens navigate to
+			    AJDT_src/org.aspect.ajde/.project</li>
+				<li>Various tags should appear in
+			    the right hand side of the dialog</li>
+				<li>Press &ldquo;Add Checked Tags&rdquo;, then
+			    &ldquo;OK&rdquo;</li>
+				<li>Back in the CVS Repositories view you should now be able to
+			    navigate to <code>Branches/ajdt1_6/org.eclipse.ajdt ajdt1_6/AJDT_src</code></li>
+				</ol>
+				</p>
+			</li>	
 		<a name="q:develop"></a>
 			<li><em>How do I setup an AJDT development environment in Eclipse?</em>
-			    <p>There are several stages to this: building AJDT, running the
+			    <p>There are three stages to this: building AJDT, running the
 			    correctness tests, and creating an
-			    Eclipse update site. The first two stages are probably sufficient
+			    Eclipse update site. The first two stages are sufficient
 			    for most purposes.</p>
 			
 			    <h4>Building AJDT</h4>
 			
 				<p>Many of the plugins which implement AJDT contain aspects, and so are
 				AspectJ projects themselves. This means that you first need to install
-				a recent build of AJDT into your development environment from the
+				a <em>recent</em> build of AJDT into your development environment from the
 				update site or zip file.</p>
 							
 			    <p>Note also that in order to build AJDT from source you will probably
 			    need to increase the memory available to Eclipse. This is
-			    typically done by passing something like <code>"-vmargs -Xmx512m"</code> to
+			    typically done by passing something like &ldquo;<code>-vmargs -Xmx512m</code>&rdquo; to
 			    the Eclipse launcher.</p>
 			
-			    <p>Start with a clean workspace under Eclipse 3.2 or
-			    Eclipse 3.1. Now open the CVS Repository Exploring 
-			    perspective. Right-click on the CVS Repositories view, then click "New" > "Repository
-			    Location". Host = dev.eclipse.org, Repository path =
-			    /cvsroot/tools, Username = anonymous, password should be left
-			    blank. Connection type = pserver. Click "Finish".
-			    Use the CVS Repositories view to navigate to
-			    HEAD/org.eclipse.ajdt/AJDT_src. </p>
+			    <p>See <a href="#q:cvs">How can I connect the AJDT CVS repository?</a> for 
+					instructions on how to download the projects from CVS.</p>
 			    
-			    <p>If you are using Eclipse 3.2 you now need to switch to the
-			    "ajdt1_4" branch in CVS. To discover the branch, you need to
-			    right-click on org.eclipse.ajdt and select "Configure Branches
-			    and Versions...", and in the dialog that opens navigate to
-			    AJDT_src/org.aspect.ajde/.project. Various tags should appear in
-			    the right hand side of the dialog. Press "Add Checked Tags", then
-			    "OK". Back in the CVS Repositories view you should now be able to
-			    navigate to Branches/ajdt1_4/org.eclipse.ajdt ajdt1_4/AJDT_src.
-			    </p>
+			    <p>If you are using Eclipse 3.4 you now need to switch to the
+			    &ldquo;ajdt1_6&rdquo; branch in CVS.  See <a href="#q:cvsbranch">
+					I am looking for the AJDT branch 1.X in the CVS repository, but I can&rsquo;t find it.  
+  			  What gives? </a> for information on how to
+					discover this branch.</p>
 			    
-			    <p>If you are using Eclipse 3.1 you need to switch
-			    to the "ajdt1_3" branch instead.</p>
+			    <p>If you are using Eclipse 3.3 you need to switch
+			    to the &ldquo;ajdt1_5&rdquo; branch instead.</p>
+			    
+			    <p>If you are using Eclipse 3.2 you need to switch
+			    to the &ldquo;ajdt1_4&rdquo; branch instead. Note that 
+					AJDT 1.4 is only <em>lightly</em> supported now (i.e., 
+					there is no ongoing development and only major bugs will 
+					be fixed).</p>
 			    
 			    <p>Select the following projects,
-			    right-click and select "Check out" from the context menu:</p>
+			    right-click and select &ldquo;Check out&rdquo; from the context menu:</p>
 			 
 			    <ul>
 			      <li>org.aspectj.ajde,</li>
@@ -253,14 +320,14 @@
 			    which should you be ready to run the plugins inside Eclipse:</p>
 			
 			   <ul>
-			     <li>Switch to the Java Perspective if you're not already in
+			     <li>Switch to the Java Perspective if you&rsquo;re not already in
 			     it...</li>
 			
-			     <li>From the run menu select "Run..."</li>
+			     <li>From the run menu select &ldquo;Run...&rdquo;</li>
 			
-			     <li>Select "Eclipse Application" and click new</li>
+			     <li>Select &ldquo;Eclipse Application&rdquo; and click new</li>
 			
-			     <li>Give your launch configuration a name, and click "Run"</li>
+			     <li>Give your launch configuration a name, and click &ldquo;Run&rdquo;</li>
 			
 			     <li>Subsequent runs can simpy use the launch configuration you
 			     just created</li>
@@ -291,23 +358,23 @@
 			   <p>To run the AJDT core specific tests expand the
 			   org.eclipse.ajdt.core.tests project, then the src folder, then the
 			   org.eclipse.ajdt.core.tests package. Now select the AllCoreTests.java file,
-			   right-click and select "Run As" &gt; "JUnit Plug-in Test". 
+			   right-click and select &ldquo;Run As&rdquo; &gt; &ldquo;JUnit Plug-in Test&rdquo;. 
 			   Progress and test results can be observed from the JUnit
 			   Eclipse view.</p>
 			   
 			   <p>You can then run all of the remaining tests by expanding the
 			   org.eclipse.ajdt.ui.tests project, then the src folder, then the
 			   org.eclipse.ajdt.ui.tests package. Now select the AllUITests.java file,
-			   right-click and select "Run As" &gt; "JUnit Plug-in Test". A new
+			   right-click and select &ldquo;Run As&rdquo; &gt; &ldquo;JUnit Plug-in Test&rdquo;. A new
 			   runtime workbench should then be launched and the tests run inside
 			   that. Progress and test results can be observed from the JUnit
 			   Eclipse view.</p>
 			
-			   <p>Now you're ready to start enhancing the plugins by adding to or
+			   <p>Now you&srquo;re ready to start enhancing the plugins by adding to or
 			   extending the code in your projects - just use run (or debug) to
 			   try out your changes. When you have a patch to submit to the
-			   project, go to the "Team" item in the project context menu and
-			   select "Create Patch...". Naturally the correctness tests should
+			   project, go to the &ldquo;Team&lrquo; item in the project context menu and
+			   select &ldquo;Create Patch...&rdquo;. Naturally the correctness tests should
 			   also be run, and new tests written to accompany fixes or new
 			   features.</p>
 			
@@ -315,8 +382,8 @@
 			
 				<p>Along with the ui tests in the org.eclipse.ajdt.ui.tests project,
 				there are visual ui tests in the org.eclipse.ajdt.ui.visual.tests project.
-				Select the AllVisualTests.java file, right-click and select "Run As" &gt; 
-				"JUnit Plug-in Test".
+				Select the AllVisualTests.java file, right-click and select &ldquo;Run As&rdquo; &gt; 
+				&ldquo;JUnit Plug-in Test&rdquo;.
 				A new runtime work bench will launch and the tests will run inside of that; 
 				although be warned that you will not be able to do anything else while the tests
 				are running (even switching to the other workbench) as the tests will fail.
@@ -359,7 +426,7 @@
 		<a name="q:extend"></a>
 			<li><em>How can I build tools which extend AJDT?</em>
 		    <p>
-		       See this Eclipsepedia page: <a href="http://wiki.eclipse.org/index.php/Developer%27s_guide_to_building_tools_on_top_of_AJDT_and_AspectJ">Developer's guide to building tools on top of AJDT and AspectJ.</a>
+		       See this Eclipsepedia page: <a href="http://wiki.eclipse.org/index.php/Developer%27s_guide_to_building_tools_on_top_of_AJDT_and_AspectJ">Developer&rsquo;s guide to building tools on top of AJDT and AspectJ.</a>
 		    </p>
 		    </li>
 		
