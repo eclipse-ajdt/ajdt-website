@@ -135,7 +135,12 @@ function ListDevBuilds($dir){
 	#$rightcolumn = file_get_contents("../rightcolumn.html");
 	
 	# The longer path with 'local' in here was not finding up to date list of builds...
-	$builds33 = ListDevBuilds('/home/data/httpd/download.eclipse.org/tools/ajdt/33/dev/update');
+	$rootDir = $App->getDownloadBasePath();
+	# This is what AspectJ does:
+ 	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
+	
+	
+	$builds33 = ListDevBuilds('$rootDir/tools/ajdt/33/dev/update');
 	#$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
 	#$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/31/dev/update');
 	#$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/30/dev/update');
