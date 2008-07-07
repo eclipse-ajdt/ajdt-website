@@ -188,9 +188,6 @@ of /technology, since AJDT become a Tools project.</p>
 			</table>
 		</li>
 				
-		<li>
-			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
-		</li>
 		
     </ul>
     </div>
@@ -254,7 +251,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 
 		<li>
-			<a>AJDT 1.6 dev builds for Eclipse 3.4M7</a>
+			<a>AJDT 1.6 dev builds for Eclipse 3.4</a>
 		
 			<table class="tasklist" width="80%">
 			  <tr>
