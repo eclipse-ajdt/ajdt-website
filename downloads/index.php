@@ -163,6 +163,37 @@ of Eclipse you are using.</p>
 
 <p>Note also that the Update Sites are now under /tools instead
 of /technology, since AJDT become a Tools project.</p>
+	<div class="homeitem3col">
+	<h3>Development builds for Eclipse 3.4</h3>
+	<ul>
+
+		<li>
+			<a>AJDT 1.5.3 dev builds for Eclipse 3.3</a>
+		
+			<table class="tasklist" width="80%">
+			  <tr>
+			    <th align="left">Release Date:</th><td></td>
+			  </tr>
+			  <tr>
+			    <th align="left">AspectJ Version:</th><td>1.6.1</td>
+			  </tr>
+			  <tr>
+			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+			    <td><code>http://download.eclipse.org/tools/ajdt/33/dev/update</code></td>
+			  </tr>
+			  <tr>
+			    <th align="left">Zip file:</th>
+			    <td>see 1.5.3 zips below</td>
+			  </tr>	  
+			</table>
+		</li>
+				
+		<li>
+			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
+		</li>
+		
+    </ul>
+    </div>
 
 	<div class="homeitem3col">
 	<h3>Release builds for Eclipse 3.3</h3>
@@ -238,7 +269,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
-			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/34/dev/update/ajdt_1.6.0.200805141703_archive.zip">ajdt_1.6.0.200805141703_archive.zip</a></td>
+			    <td>see below</td>
 			  </tr>	  
 			</table>
 		</li>
