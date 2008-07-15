@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<link rel="STYLESHEET" href="http://www.eclipse.org/default_style.css" charset="ISO-8859-1" type="text/css">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>AJDT 1.5.3 - New and Noteworthy</title>
+
+</head>
+<body>
+<h1>AJDT 1.5.3 - New and Noteworthy</h1>
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td valign="top"><b>Overview</b></td>
+<td valign="top">In addition to supporting the
+latest AspectJ release
+(v1.6.1), the focus of this release has been general bug fixing and
+maintenance. Nevertheless, there have been some significant
+enhancements. Most importantly, there is now considerable flexibility
+in how project in paths
+and project aspect paths can be configured.<br>
+<br>
+This will be the last release in the 1.5.x stream other than releases
+that contain critical bug fixes. The 1.5.x stream targets Eclipse
+3.3.x. All future releases will be part of the 1.6.x stream and target
+Eclipse 3.4.x.</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Aspect path and In path</b></td>
+<td valign="top">The aspect path and the in path for
+an AspectJ project can now
+contain containers, variables, and projects in addition to class
+folders.<br>
+<br>
+<img src="paths.gif" border="1"><br>
+<br>
+As before, adding an element to the aspect path or in path also adds it
+to the Java build path., and removing it from the Java build path also
+removes it from the aspect path or in path. </td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Better support for
+validation of classpaths</b></td>
+<td valign="top">Duplicate or inconsistent classpath
+entries in the in path and aspect path are now found immediately after
+there is a change to the classpath.<br>
+<br>
+<img src="inconsistent_path.gif" border="1"><br>
+<br>
+In the above screenshot, the <code>JUNIT_HOME</code>
+classpath variable and the
+<code>JUnit 3</code> classpath container both resolve
+to the same jar file.&nbsp;This
+gives rise to the error message in the status bar above.
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Inpath outfolder</b></td>
+<td valign="top">It is now possible to set an
+outfolder for all entries on the inpath. A new item in the in path
+properties page has been added to expose this functionality to the
+programmer.<br>
+<br>
+<img src="inpath_outfolder.gif" border="1"><br>
+<br>
+Use the <em>Browse...</em> button to choose a folder or
+type the folder name in directly.
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Suppressing AspectJ
+Autobuilding</b></td>
+<td valign="top">For large projects that take
+advantage of aspects, it
+is sometimes cumbersome to use Eclipse's autobuild feature. But, at the
+same time it is not desirable to turn off autobuilding for the entire
+workspace.
+AJDT 1.5.3 provides an option to suppress autobuilding for AspectJ
+projects only.
+This option is accessible in the AspectJ Compiler preferences page.<br>
+<br>
+<br>
+<img src="suppress_autobuild.gif" border="1"><br>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Incremental compilation
+and building of broken code</b></td>
+<td valign="top">AJDT 1.5.3 includes AspectJ 1.6.1.
+This version of AspectJ allows the capability to build and run <em>broken
+code</em>.<br>
+<br>
+Following on from the work done to improve compilation under Eclipse in
+AspectJ 1.6.0 (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=221427">Bug
+221427</a>)&#8211;we now support the building of 'broken code' (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=102733">Bug
+102733</a>). This is something the JDT has always been doing&#8211;where 
+code containing errors continues to build (if recovery is
+possible) but should the actual methods containing the errors get
+invoked, an exception will be thrown at runtime. A number of users
+typically extract large projects from their library systems, knowing
+that they will only partially build in their current eclipse setup, but
+as long at they do not invoke the code containing the errors then they
+expect the rest of the project to run normally. AspectJ now allows this
+mode of operation, and it has the additional effect that the state of
+the project stays consistent, albeit with known errors, and this means
+AspectJ will more frequently do incremental builds rather than falling
+back to full builds because there was a compilation error.<br><br><img style="border: 1px solid ; width: 618px; height: 406px;" alt="" src="broken_code.gif"><br><br>As
+shown in the screenshot above, if a compilation unit has errors in it,
+the compiler will still produce a valid class file for it.
+&nbsp;However, the weaver will ignore the file and its aspects will not
+be woven.<br>
+<br>
+For a description of all AspectJ 1.6.1 enhancments, see the <a href="http://www.eclipse.org/aspectj/doc/released/README-161.html">AspectJ
+1.6.1 readme</a>.
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>AJDoc on Macs</b></td>
+<td valign="top">AJDoc now works on the Mac. It is
+necessary to select the correct location of
+classes.jar. This is typically found in
+<code>/System/Library/Frameworks/JavaVM.Framework/Versions/&lt;VERSION&gt;/Classes/classes.jar</code>.
+There is otherwise the same behavior as on Windows.<br>
+<br>
+<img src="ajdoc_on_mac.gif" border="1"><br>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Bug fixes</b></td>
+<td valign="top">As usual this release also contains
+a number of bug fixes. The full list is available in <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;product=AJDT&amp;target_milestone=1.5.3&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;resolution=FIXED&amp;bug_severity=blocker&amp;bug_severity=critical&amp;bug_severity=major&amp;bug_severity=normal&amp;bug_severity=minor&amp;bug_severity=trivial&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">Bugzilla</a>.
+The more notable ones are:<br>
+<ul>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=43711">Bug
+43711</a><a> Out folder now completely cleaned on
+incremental builds</a></li>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=76146">Bug
+76146</a> Graceful failure when quick fix for an aspect is
+invoked in a Java editor.</li>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=93316">Bug
+93316</a><a> Add import behaves more robustly</a></li>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=97080">Bug
+97080</a><a> Manifest editor no longer opens
+automatically when AJ nature is added</a></li>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=119853">Bug
+119853</a><a> AJDoc generator tool now works on Macs</a></li>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=215518">Bug
+215518</a><a> Build script generator now fails
+gracefully if <code>org.aspectj.ajde</code>
+is not in target platform.</a></li>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=231324">Bug
+231324</a> <a href="http://www.eclipse.org/ajdt/developers.php">Developer's
+FAQ updated</a></li>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=235204">Bug
+235204</a><a> AspectJ markers are now placed properly on
+recursive calls.</a></li>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=238032">Bug
+238032</a><a> Eclipse now warns before launching a
+project that has errors
+arising from a declare error statement.</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>

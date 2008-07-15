@@ -199,7 +199,7 @@ of /technology, since AJDT become a Tools project.</p>
 			<a>AJDT 1.5.3rc1 for Eclipse 3.3</a>
 			<table class="tasklist" width="80%">
 			  <tr>
-			    <th align="left">Release Date:</th><td>July 14th, 2008 - version 1.5.3.200807141310</td>
+			    <th align="left">Release Date:</th><td>July 14th, 2008</td>
 			  </tr>
 			  <tr>
 			    <th align="left">AJDT Version:</th><td>1.5.3.200807141310</td>
@@ -213,7 +213,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
-			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5.3rc1_for_eclipse_3.3.zip">ajdt_1.5.3rc1_for_eclipse_3.3.zip</a></td>
+			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5.3RC1_for_eclipse_3.3.zip">ajdt_1.5.3RC1_for_eclipse_3.3.zip</a></td>
 			  </tr>
 			    <tr>
 			    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew153/">New & Noteworthy</a></td>
