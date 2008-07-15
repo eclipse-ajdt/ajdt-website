@@ -172,6 +172,9 @@ of /technology, since AJDT become a Tools project.</p>
 		
 			<table class="tasklist" width="80%">
 			  <tr>
+			    <th align="left">AspectJ Version:</th><td>Includes recent AspectJ dev builds</td>
+			  </tr>
+			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
 			    <td><code>http://download.eclipse.org/tools/ajdt/33/dev/update</code></td>
 			  </tr>
