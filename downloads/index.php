@@ -172,18 +172,12 @@ of /technology, since AJDT become a Tools project.</p>
 		
 			<table class="tasklist" width="80%">
 			  <tr>
-			    <th align="left">Release Date:</th><td></td>
-			  </tr>
-			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.1</td>
-			  </tr>
-			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
 			    <td><code>http://download.eclipse.org/tools/ajdt/33/dev/update</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
-			    <td>see <a href="33zips">1.5.3 zips</a> below</td>
+			    <td>see <a href="#33zips">1.5.3 zips</a> below</td>
 			  </tr>	  
 			</table>
 		</li>
