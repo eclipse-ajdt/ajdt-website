@@ -73,7 +73,6 @@
 				<br><span class="dates">posted 15-07-08</span>
 			  </li>
  			  <li>
-			  	<img src="images/new.gif" width="11" height="11">
 			  	AJDT 1.5.2 is now available for Eclipse 3.3.  This includes AspectJ1.6.0 - there are
 			  	more details about AspectJ1.6.0 in <a href="http://www.eclipse.org/aspectj/doc/released/README-160.html">this readme</a>. See the AJDT downloads page for the
 			  	.zip download of 1.5.2 or use the release update site for Eclipse 3.3:
@@ -83,7 +82,6 @@
 			  </li>
 			  
  			  <li>
-			  	<img src="images/new.gif" width="11" height="11">
       			<a href="downloads/">AJDT 1.5.1 for Eclipse 3.3 released (includes AspectJ 1.5.4)</a>
 				<br><span class="dates">posted 11-01-08</span>
 			  </li>
