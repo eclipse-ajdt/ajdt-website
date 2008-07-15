@@ -89,15 +89,14 @@
 			  </li>
 			  
 			  <li>
-			  	<img src="images/new.gif" width="11" height="11">
+			  	
       			<a href="downloads/">AJDT 1.5 for Eclipse 3.3 released as part of Europa!</a>
 				See the <a href="whatsnew15/">New and Noteworthy</a>
 				<br><span class="dates">posted 29-06-07</span>
 			  </li>
 
 			  <li>
-			  	<img src="images/new.gif" width="11" height="11">
-      			<a href="downloads/">AJDT 1.4.2 for Eclipse 3.2 released!</a>
+			  	<a href="downloads/">AJDT 1.4.2 for Eclipse 3.2 released!</a>
 				<br><span class="dates">posted 28-06-07</span>
 			  </li>
 
