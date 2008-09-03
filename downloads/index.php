@@ -139,7 +139,7 @@ function ListDevBuilds($dir){
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 	
-	
+	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update");
 	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update");
 	#$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
 	#$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/31/dev/update');
@@ -163,6 +163,72 @@ of Eclipse you are using.</p>
 
 <p>Note also that the Update Sites are now under /tools instead
 of /technology, since AJDT become a Tools project.</p>
+
+
+	<div class="homeitem3col">
+	<h3>Release builds for Eclipse 3.4</h3>
+	<ul>
+
+		<li>
+			<a>AJDT 1.6.0 builds for Eclipse 3.4</a>
+		
+			<table class="tasklist" width="80%">
+			  <tr>
+			    <th align="left">Release Date:</th><td>September 3, 2008</td>
+			  </tr>
+			  <tr>
+			    <th align="left">AspectJ Version:</th><td>1.6.1.20080828190000</td>
+			  </tr>
+			  <tr>
+			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+			    <td><code>http://download.eclipse.org/tools/ajdt/34/update</code></td>
+			  </tr>
+			  <tr>
+			    <th align="left">Zip file:</th>
+			    <td>http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.0_for_eclipse_3.4.zip</td>
+			  </tr>	  
+			</table>
+		</li>
+				
+		<li>
+			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
+		</li>
+		
+    </ul>
+    </div>
+
+
+	<div class="homeitem3col">
+	<h3>Development builds for Eclipse 3.4</h3>
+	<ul>
+
+		<li>
+			<a>AJDT 1.6.1 dev builds for Eclipse 3.4</a>
+		
+			<table class="tasklist" width="80%">
+			  <tr>
+			    <th align="left">AspectJ Version:</th><td>1.6.1.20080828190000</td>
+			  </tr>
+			  <tr>
+			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></td>
+			  </tr>
+			  <tr>
+			    <th align="left">Zip file:</th>
+			    <td><a href="#34zips">See below</a></td>
+			  </tr>	  
+			</table>
+		</li>
+				
+		<li>
+			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
+		</li>
+		
+    </ul>
+    </div>
+
+
+
 	<div class="homeitem3col">
 	<h3>Development builds for Eclipse 3.3</h3>
 	<ul>
@@ -247,37 +313,6 @@ of /technology, since AJDT become a Tools project.</p>
     </ul>
     </div>
 
-	<div class="homeitem3col">
-	<h3>Development builds for Eclipse 3.4</h3>
-	<ul>
-
-		<li>
-			<a>AJDT 1.6 dev builds for Eclipse 3.4</a>
-		
-			<table class="tasklist" width="80%">
-			  <tr>
-			    <th align="left">Release Date:</th><td>April 15, 2008</td>
-			  </tr>
-			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.1.20080514120000</td>
-			  </tr>
-			  <tr>
-			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></td>
-			  </tr>
-			  <tr>
-			    <th align="left">Zip file:</th>
-			    <td>see below</td>
-			  </tr>	  
-			</table>
-		</li>
-				
-		<li>
-			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
-		</li>
-		
-    </ul>
-    </div>
 
 	<div class="homeitem3col">
 	<h3>Release builds for Eclipse 3.2</h3>
@@ -511,6 +546,27 @@ of /technology, since AJDT become a Tools project.</p>
 	</a>
 
 	<ul>
+	
+		<li>
+			<a name="34zips">Eclipse 3.4 builds</a>
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/tools/ajdt/34/dev/update</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Zip&nbsp;file</th>
+    			<th>Build&nbsp;Date</th>
+    			<th>Build&nbsp;Report</th>
+    			<th>AspectJ&nbsp;Version</th>
+  			</tr>
+
+$builds34
+
+			</table>
+			</p>
+		</li>
+	
 			<li>
 			<a name="33zips">Eclipse 3.3 builds</a>
 			<br>Update Site URL:<br>
