@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<link rel="STYLESHEET" href="http://www.eclipse.org/default_style.css" charset="ISO-8859-1" type="text/css">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>AJDT 1.5.3 - New and Noteworthy</title>
+
+</head>
+<body>
+<h1>AJDT 1.6.0 - New and Noteworthy</h1>
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td valign="top"><b>Overview</b></td>
+<td valign="top">
+This is the first official (non-development) release in the AJDT 1.6.x stream 
+targeting Eclipse 3.4.  The bulk of the work going into this release has been 
+towards migrating the code base to work with Eclipse 3.4 and towards updating 
+the build process to produce proper P2 metadata.  
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td></tr>
+
+
+<tr>
+<td valign="top"><b>AspectJ-aware Jar packager</b></td>
+<td>
+As described in <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111329">Bug 111329</a>, 
+the AspectJ-aware export jar wizard is now available 
+from the context menu of the package explorer.<br><br>
+
+Right-click on a *.jardesc file and there are two new options:
+<br><br>
+<img border="1" src="create_jar.gif"/>
+<br><br>
+The <em>Create Jar (AspectJ)</em> will create the jar from the jardesc file with AspectJ support (that is by using the 
+AspectJ compiler instead of the Java compiler).  The <em>Open Jar Packager (AspectJ)...</em> will open the jar packager
+wizard that creates jars with AspectJ support.
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+
+<tr><td valign="top"><b>Mylyn integration</b></td>
+<td><a href="http://eclipse.org/mylyn/">Mylyn</a>, a task-focused interface for Eclipse
+is now compatible with AJDT.  We have written an AJDT bridge for Mylyn so that AspectJ code will be 
+accessible in your task context.  This is an optional feature and will be automatically disabled if
+Mylyn is not a part of your Eclipse installation.  This feature requires Mylyn v3.0.1.
+<br><br>
+Below, there is a Mylyn task editor showing its task context.  An aspect, a pointcut and a method 
+are part of this context, but as shown in the package explorer to the left, there are more pointcuts and 
+advice that are not part of the task context.<br><br>
+<img src="ajdt-mylyn.gif" border="1"/>
+</td>
+</tr>
+
+
+
+<tr>
+<td colspan="2">
+<hr></td>
+
+
+<tr>
+<td valign="top"><b>Aspect and In Path</b></td>
+<td>
+Aspect path and in path entries that are provided by classpath containers will now
+appear in the AspectJ build UI as read-only.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=243356">Bug 243356</a>.
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+
+
+<tr>
+<td valign="top"><b>Bug fixes</b></td>
+<td>
+We have also spent some
+time fixing bugs and cleaning up the bug repository.  As a result, we have resolved
+over 30 bugs: 
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=98454">98454</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=101489">101489</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=102998">102998</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=104602">104602</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=105822"105822></a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=117911">117911</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=124474">124474</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=128992">128992</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=148538">148538</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=149346">149346</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=149905">149905</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=151730">151730</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=155222">155222</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=159867">159867</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=163541">163541</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=163546">163546</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166210">166210</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166291">166291</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=170043">170043</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=174485">174485</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=190240">190240</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=194362">194362</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=195017">195017</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=200460">200460</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=222755">222755</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=231451">231451</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=233777"233777></a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=235174">235174</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=237196">237196</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=237979">237979</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=238431">238431</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=238571">238571</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=238699">238699</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=239062">239062</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=240689">240689</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242200">242200</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242475">242475</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=243545">243545</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244300">244300</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244347">244347</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244790">244790</a>,
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245318">245318</a>.
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+<tr>
+<td valign="top"><b>Previous Releases</b></td>
+<td>
+See <a href="http://www.eclipse.org/ajdt/whatsnew153/index.html">here</a> 
+for information on the new features in AJDT 1.5.3.
+
+
+
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>

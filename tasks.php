@@ -65,9 +65,9 @@
 <td><h4>AspectJ Search</h4>
 Support searching for AspectJ constructs within the JDT search dialog.
 </td>
-<td>Not yet assigned (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=71073">bug&nbsp;71073</a>)</td>
-<td>Not yet assigned</td>
-<td>Not yet planned</td>
+<td>Will be implemented through JDT-weaving (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=71073">bug&nbsp;71073</a>)</td>
+<td>Andrew Eisenberg</td>
+<td>1.6.1</td>
 </tr>
 
 <tr>

@@ -44,39 +44,11 @@
 	<div class="homeitem">
 		<h3>Committers</h3>
 			<table cellpadding="2">
-<tr>
-        <td>Matt Chapman (project lead)
-	    </td>
-        <td>
-          IBM UK Ltd
-	    </td>
-      </tr>
       <tr>
-        <td>Andy Clement
+        <td>Andy Clement (Project Lead)
 	    </td>
         <td>
-          IBM UK Ltd
-	    </td>
-      </tr>
-      <tr>
-        <td>Adrian Colyer
-	    </td>
-        <td>
-          IBM UK Ltd
-	    </td>
-      </tr>
-      <tr>
-        <td>Helen Hawkins
-	    </td>
-        <td>
-          IBM UK Ltd
-	    </td>
-      </tr>
-      <tr>
-        <td>Sian January
-	    </td>
-        <td>
-          IBM UK Ltd
+          SpringSource
 	    </td>
       </tr>
       <tr>
@@ -84,16 +56,9 @@
 		<a href="http://kerstens.org/mik">Mik Kersten</a>
 	    </td>
         <td>
-          University of British Columbia
+          TaskTop Technologies
 	    </td>
       </tr>
-      <tr>
-        <td>Julie Waterhouse
-	    </td>
-        <td>
-          IBM Canada
-	    </td>
-      </tr>			
 			</table>
 	</div>
 	

@@ -194,7 +194,11 @@
 		<a name="q:version"></a>
 			<li><em>What version of AJDT do I need?</em>
 		    <p>
-		     
+		    The recommended version of AJDT depends on the version of Eclipse that you are using.  Eclipse 3.4 requires AJDT 1.6, 
+		    Eclipse 3.3 requires AJDT 1.5, and Eclipse 3.2 requires AJDT 1.4 (etc.).  Typically, the latest development version is
+		    just as stable as our official releases (we never release anything unless anything unless it passes all tests).  You can find
+		    the latest development release as well as all of the official AJDT release from the 
+		    <a href="eclipse.org/ajdt/downloads">AJDT downloads page</a>. 
 		    </p>
 		    </li>
 		    
@@ -225,7 +229,8 @@
 		      Around advice is inlined by the weaver by default, which
 		      means that breakpoints set in the declaring aspect are
 		      not detected.  To disable inlining
-		      select <strong>Window &gt; Preferences &gt; AspectJ &gt; Compiler</strong>.
+		      select <strong>Window &gt; Preferences &gt; AspectJ &gt; Compiler</strong> (Windows/Linux),
+		      or <strong>Eclipse &gt; Preferences &gt; AspectJ &gt; Compiler</strong> (Mac).
 		      Select the <strong>Advanced</strong> tab, then check <strong>No inline</strong>
 		      and click <strong>OK</strong> to apply.
 		    </p>
@@ -255,7 +260,8 @@
 			<p> To open a
 				.java file with the AspectJ editor right click, then select <strong>Open With 
 				&gt; AspectJ/Java Editor</strong>.  To use the AspectJ editor for all .java files
-				select <strong>Window &gt; Preferences &gt; Workbench &gt; File Associations</strong>.
+				select <strong>Window &gt; Preferences &gt; General &gt; File Associations</strong> (Windows/Linux),
+		      or <strong>Eclipse &gt; Preferences &gt; General &gt; File Associations</strong> (Mac).
 				Select <em>.java</em> in the right-hand window, then use the section below to change the 
 				default editor.
 			</p>

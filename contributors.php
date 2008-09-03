@@ -38,13 +38,28 @@
 	<div align="center"><h1>$pageTitle</h1></div>
 	
 	<p> We are grateful to the following for their contributions to the AJDT project.
-	See also the list of <a href="committers.php">core committers.</a><br>
+	See also the list of <a href="committers.php">core committers</a>.
 	</p>
 
 	<div class="homeitem">
 		<h3>Other Contributors</h3>
 			<table cellpadding="2">
-<tr>
+      <tr>
+        <td>Andrew Eisenberg
+	    </td>
+        <td>
+          SpringSource
+	    </td>
+      </tr>
+      <tr>
+      	<td>Reto Urfer</td>
+      	<td></td>
+      </tr>
+      <tr>
+      	<td>Jason Naylor</td>
+      	<td></td>
+      </tr>
+      <tr>
         <td>Ben Dalziel
 	    </td>
         <td>
