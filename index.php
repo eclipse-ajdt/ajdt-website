@@ -65,7 +65,7 @@
 			<ul>
 			   <li>
 			  	<img src="images/new.gif" width="11" height="11">
-			  	AJDT 1.6.0 is now available for Eclipse 3.4.  This includes AspectJ 1.6.1.
+			  	AJDT 1.6.0 is now available for Eclipse 3.4.  This includes the latest stable build of AspectJ 1.6.2.
 			  	See the <a href="whatsnew16/index.html">New and Noteworthy</a> for more details on AJDT 1.6 and 
 			  	the <a href="http://www.eclipse.org/aspectj/doc/released/README-161.html">AspectJ 1.6.1 Readme</a> for
 			  	more details on AspectJ1.6.1. AJDT 1.6 is available via update site or as a packaged zip of plugins,
