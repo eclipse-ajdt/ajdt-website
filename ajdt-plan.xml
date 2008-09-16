@@ -47,7 +47,7 @@ previous build.
 			<html:div>Service refresh of AJDT 1.6</html:div>
 		</milestone>
 		<postamble>
-			<html:div>html content</html:div>
+			<html:div></html:div>
 		</postamble>
 	</release_milestones>
 	<target_environments>
