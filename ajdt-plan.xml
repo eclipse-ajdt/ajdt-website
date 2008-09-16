@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+<plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan"
+	xmlns:html="http://www.w3.org/1999/xhtml" name="Project Name">
+	<release projectid="tools.ajdt" version="1.6" />
+	<introduction>
+		<html:div>
+<html:p>
+AJDT major versions match up with Eclipse versions.  The current Eclipse version is 3.4, which matches to AJDT 1.6.
+Eclipse 3.3 matches AJDT 1.5, and Eclipse 3.5 will match AJDT 1.7.
+The AJDT project releases service refreshes to that major version every few months. During 2008 there 
+have been 1.5.2, 1.5.3 (the last scheduled version targeting Eclipse 3.3), 1.6.0 (the first version targeting Eclipse 3.4)
+and we are planning two more before year end. This is the release model we plan to continue with.
+</html:p>
+<html:p>
+AJDT always maintains that HEAD will build clean and pass all the tests we have (currently around 350). 
+This means the development builds created from HEAD after every commit are always at least as good as the 
+previous build.
+</html:p>
+     </html:div>
+	</introduction>
+	<release_deliverables>
+		<html:div>
+         <html:p>
+         AJDT releases are available from project update sites.  There are different sites for each 
+         major release see <html:a href="http://eclipse.org/ajdt/downloads">the project download page</html:a> 
+         for a list of the update sites.  Also available are zip files that contain all of the project plugins and 
+         are meant to be installed in the eclipse installation's <html:em>dropins</html:em> folder.
+         </html:p>
+         <html:p>
+         AJDT additionally includes 3 plugins built from code originating in the 
+         <html:a
+			href="http://www.eclipse.org/projects/project-plan.php?projectid=tools.aspectj">AspectJ project</html:a>.
+         These plugins are <html:em>org.aspectj.runtime</html:em>, which contains the AspectJ runtime, 
+         <html:em>org.aspectj.ajde</html:em>, which contains AspectJ support for integrating with a development environment,
+         and <html:em>org.aspectj.weaver</html:em>, which contains the AspectJ weaver and compiler.  
+         </html:p> 
+         </html:div>
+	</release_deliverables>
+	<release_milestones>
+		<preamble>
+		</preamble>
+		<milestone date="10/15/2008" milestone="1.6.1">
+			<html:div>Service refresh of AJDT 1.6</html:div>
+		</milestone>
+		<milestone date="12/31/2008" milestone="1.6.2">
+			<html:div>Service refresh of AJDT 1.6</html:div>
+		</milestone>
+		<postamble>
+			<html:div>html content</html:div>
+		</postamble>
+	</release_milestones>
+	<target_environments>
+		<html:div>AJDT 1.6 requires Eclipse 3.4.  As such, it has the same JRE requirements as Eclipse.</html:div>
+		<internationalization>
+			<html:div>English language bundles are available for many AJDT messages, but they have not been translated.
+          </html:div>
+		</internationalization>
+	</target_environments>
+	<compatibility_with_previous_releases>
+		<html:div>Because each major version of AJDT targets a major version of Eclipse, there is no compatibility
+       between major versions.  Each version of AJDT will only run on the version of Eclipse that it targets.</html:div>
+	</compatibility_with_previous_releases>
+	<themes_and_priorities>
+		<preamble>
+			<html:div>Our current focus is two-fold: performance and compatibility with JDT.  For this version, we are not
+         looking at adding any major new features.</html:div>
+		</preamble>
+		<theme name="Improving build performance (Target1.6.1)">
+			<description>
+				<html:p>As AspectJ as has grown in popularity and matured, programmers have been using the language
+        on larger and larger projects and in ways not originially intended when the language was 
+        first created.  Tool support has had trouble keeping up with the increased prominence of AspectJ
+        use. For example, a bottleneck occurs when the workspace has many interrelated AspectJ projects.
+        </html:p>
+				<html:p>
+        We will explore where such bottlenecks occur and how to avoid them.  Preliminary experiments suggest that
+        the AspectJ weaver itself is not a significant bottleneck, but rather much of the time spent on a build comes 
+        other areas.  Addressing this will likely lead to large performance boosts. 
+        </html:p>
+			</description>
+			<committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=anywordssubstr&amp;short_desc=[incremental]&amp;product=AJDT&amp;product=AspectJ&amp;version=1.6.0&amp;version=1.6.0M1&amp;version=1.6.0M2&amp;version=1.6.0RC1&amp;version=1.6.1&amp;version=1.6.1rc1&amp;version=DEVELOPMENT&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</committed>
+			<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=anywordssubstr&amp;short_desc=[incremental]&amp;product=AJDT&amp;product=AspectJ&amp;version=1.6.0&amp;version=1.6.0M1&amp;version=1.6.0M2&amp;version=1.6.0RC1&amp;version=1.6.1&amp;version=1.6.1rc1&amp;version=DEVELOPMENT&amp;version=unspecified&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</proposed>
+		</theme>
+		<theme name="Compatibility with JDT (Target 1.6.1)">
+			<description>
+				<html:p>
+        A long standing block on user experience with AJDT has been the difficulty plugging into the appropriate
+        places of JDT.  The JDT has been constructed to optimize the development of Java source files.  Java-like source
+        files (such as AspectJ source files) are only minimally supported by JDT.  Some JDT features such as source file 
+        indexing are not available to AspectJ source files.  We seek to address this issue in one of two ways:
+        </html:p>
+				<html:ol>
+					<html:li>Bug 36939 seeks to provide
+        a CompilationUnit provider extension point in JDT so that Java-like languages can override the 
+        ICompilationUnit class.  However, it is unlikely this bug will be resolved until Eclipse 3.5 is released,
+        if it is resolved at all.
+        </html:li>
+					<html:li>Equinox Aspects provides an excellent opportunity to open up JDT through the weaving process 
+        and allow AJDT to more fully integrate with Eclipse.
+        </html:li>
+				</html:ol>
+			</description>
+			<committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=anywordssubstr&amp;short_desc=[jdt-weaving]+Java-like&amp;product=AJDT&amp;product=JDT&amp;version=1.6.0&amp;version=1.6.1&amp;version=2.1&amp;version=DEVELOPMENT&amp;version=unspecified&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</committed>
+			<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=anywordssubstr&amp;short_desc=[jdt-weaving]+Java-like&amp;product=AJDT&amp;product=JDT&amp;version=1.6.0&amp;version=1.6.1&amp;version=2.1&amp;version=DEVELOPMENT&amp;version=unspecified&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</proposed>
+		</theme>
+		<theme name="IDE support for Load Time Weaving (LTW) (Target 1.6.2)">
+			<description>
+				<html:p>
+        Currently, aspects applied to a project through LTW are not visible in the
+        editor in the standard ways that compile time aspects are.  These include 
+        gutter annotations and entries in the crosscutting view.  Because there is
+        no editing support, using LTW can be time consuming and error-prone.  We will
+        explore ways to gather and display LTW information to the programmer while editing.
+        </html:p>
+			</description>
+			<committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=split+matching+weaving&amp;product=AJDT&amp;product=AspectJ&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</committed>
+			<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=split+matching+weaving&amp;product=AJDT&amp;product=AspectJ&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</proposed>
+		</theme>
+		<theme name="Support for Eclipse 3.5 (Target 1.7)">
+			<description>
+				<html:p>Refactor AJDT for the Ecipse 3.5 release.</html:p>
+			</description>
+			</description>
+			<committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[plan-item]+Eclipse+3.5&amp;product=AJDT&amp;product=JDT&amp;version=1.6.0&amp;version=1.6.1&amp;version=2.1&amp;version=DEVELOPMENT&amp;version=unspecified&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</committed>
+			<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[plan-item]+Eclipse+3.5&amp;product=AJDT&amp;product=JDT&amp;version=1.6.0&amp;version=1.6.1&amp;version=2.1&amp;version=DEVELOPMENT&amp;version=unspecified&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</proposed>
+		</theme>
+	</themes_and_priorities>
+</plan>
