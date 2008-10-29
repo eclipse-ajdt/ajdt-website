@@ -185,7 +185,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
-			    <td>http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.1_for_eclipse_3.4.zip</td>
+			    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.1_for_eclipse_3.4.zip">ajdt_1.6.1_for_eclipse_3.4.zip</a></td>
 			  </tr>	  
 			</table>
 		</li>
@@ -202,7 +202,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
-			    <td>http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.0_for_eclipse_3.4.zip</td>
+			    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.0_for_eclipse_3.4.zip">ajdt_1.6.0_for_eclipse_3.4.zip</a></td>
 			  </tr>	  
 			</table>
 		</li>
@@ -245,32 +245,6 @@ of /technology, since AJDT become a Tools project.</p>
     </div>
 
 
-
-	<div class="homeitem3col">
-	<h3>Development builds for Eclipse 3.3</h3>
-	<ul>
-
-		<li>
-			<a>AJDT dev builds for Eclipse 3.3</a>
-		
-			<table class="tasklist" width="80%">
-			  <tr>
-			    <th align="left">AspectJ Version:</th><td>Includes recent AspectJ dev builds</td>
-			  </tr>
-			  <tr>
-			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/33/dev/update</code></td>
-			  </tr>
-			  <tr>
-			    <th align="left">Zip file:</th>
-			    <td>see <a href="#33zips">1.5.4 zips</a> below</td>
-			  </tr>	  
-			</table>
-		</li>
-				
-		
-    </ul>
-    </div>
 
 	<div class="homeitem3col">
 	<h3>Release builds for Eclipse 3.3</h3>
@@ -324,11 +298,32 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			</table>
 		</li>
-		
-
-		
     </ul>
     </div>
+
+	<div class="homeitem3col">
+	<h3>Development builds for Eclipse 3.3</h3>
+	<ul>
+		<li>
+			<a>AJDT dev builds for Eclipse 3.3</a>
+		
+			<table class="tasklist" width="80%">
+			  <tr>
+			    <th align="left">AspectJ Version:</th><td>Includes recent AspectJ dev builds</td>
+			  </tr>
+			  <tr>
+			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+			    <td><code>http://download.eclipse.org/tools/ajdt/33/dev/update</code></td>
+			  </tr>
+			  <tr>
+			    <th align="left">Zip file:</th>
+			    <td>see <a href="#33zips">1.5.4 zips</a> below</td>
+			  </tr>	  
+			</table>
+		</li>
+    </ul>
+    </div>
+
 
 
 	<div class="homeitem3col">

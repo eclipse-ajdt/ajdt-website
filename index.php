@@ -65,6 +65,14 @@
 			<ul>
 			   <li>
 			  	<img src="images/new.gif" width="11" height="11">
+			  	AJDT 1.6.1 is now available for Eclipse 3.4.  This includes the latest stable build of AspectJ 1.6.3.
+			  	See the <a href="whatsnew161/index.html">New and Noteworthy</a> for more details on AJDT 1.6.1 and 
+			  	the <a href="http://www.eclipse.org/aspectj/doc/released/README-162.html">AspectJ 1.6.2 Readme</a> for
+			  	more details on what is in AspectJ1.6.3. AJDT 1.6.1 is available via update site or as a packaged zip of plugins,
+			  	see the <a href="http://eclipse.org/ajdt/downloads">download page</a> for more information.
+				<br><span class="dates">posted 29-10-08</span>
+			  </li>
+			   <li>
 			  	AJDT 1.6.0 is now available for Eclipse 3.4.  This includes the latest stable build of AspectJ 1.6.2.
 			  	See the <a href="whatsnew16/index.html">New and Noteworthy</a> for more details on AJDT 1.6 and 
 			  	the <a href="http://www.eclipse.org/aspectj/doc/released/README-161.html">AspectJ 1.6.1 Readme</a> for
@@ -101,7 +109,7 @@
       			<a href="downloads/">AJDT 1.5.1 for Eclipse 3.3 released (includes AspectJ 1.5.4)</a>
 				<br><span class="dates">posted 11-01-08</span>
 			  </li>
-			  
+			  <!--
 			  <li>
 			  	
       			<a href="downloads/">AJDT 1.5 for Eclipse 3.3 released as part of Europa!</a>
@@ -124,6 +132,7 @@
 				<a href="http://www.infoq.com/news/aspectj-ajdt-eclipse-tools">InfoQ.</a>
 				<br><span class="dates">posted 22-09-06</span><br>
 				</li>
+				-->
 			</ul>
 		</div>
 				
