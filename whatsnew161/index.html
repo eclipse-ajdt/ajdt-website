@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<link rel="STYLESHEET" href="http://www.eclipse.org/default_style.css" charset="ISO-8859-1" type="text/css">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>AJDT 1.6.0- New and Noteworthy</title>
+
+</head>
+<body>
+<h1>AJDT 1.6.1 - New and Noteworthy</h1>
+
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td valign="top"><b>Overview</b></td>
+<td valign="top">For this release, we have focussed on improving the performance
+of AJDT builds, particularly incremental builds in multi-project settings.  Most of 
+our effort for this release has been towards ensuring efficiency in the core of AJDT.
+After upgrading to this release, you should notice that improvements in your build
+times for AspectJ projects.
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td></tr>
+<tr>
+<td valign="top"><b>Crosscutting model enhancements</b></td>
+<td>
+<p>
+In this release, AJDT's internal representation of the crosscutting
+model has been made redundant and has been removed. The old way of
+doing things was that AJDT maintained its own copy of the model
+AspectJ was using internally for builds. And it was recreated from
+scratch after each successful build (both full and incremental builds,
+even if there were no changes!).  The AJDT copy was more suitable for
+AJDT to work with when creating markers, populating views, etc.
+However, with some changes to AspectJ, the compiler's internal model
+has been modified to suit AJDT's needs directly--thereby removing any
+need for a duplicate model and saving memory and computation.  There
+is a significant speed-up.
+</p>
+<p> 
+The following numbers are the times for performing a full build of the
+workspace in a setting where there are 60 interrelated small AspectJ projects
+with some pervasive Aspects. 
+</p>
+
+<table border="1" cellpadding="5">
+<tr><td>Speed up</td><td>AJDT 1.6.0</td><td>AJDT 1.6.1</td></tr>
+<tr><td><b>60%</b></td><td>68 seconds</td><td>42 seconds</td></tr>
+</table>
+
+<p>Note- average of 3 runs running on a Macbook 2.4 GHz Intel Core 2 Duo, 4GB ram.</p>
+
+<p>
+Unfortunately, in order to implement this improvement, we had to
+disable the crosscutting comparisons view, because it requires AJDT's
+specific crosscutting model. Our understanding is that this view was
+not used often, but if there is enough community interest, we will
+re-enable the feature.  Our goal is to optimize for the common use
+case - and we believe that 90% of the time users will be doing quick
+edit/save/build cycles, rather than using views like the crosscutting
+comparisons view.
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+
+<tr><td valign="top"><b>Incremental build optimizations</b></td>
+<td>
+<p>
+The second major improvement in this release has been improved
+performance during incremental builds. There is now more fine-grained
+communication between AJDT and AspectJ before incremental builds.
+Previously AspectJ did comprehensive analysis of the classpath,
+inpath, aspectpath, etc.--in order to determine what needed to be
+compiled.  Even though AJDT already has precise knowledge of what the
+user had changed, there was no communications interface between AJDT
+and the compiler to transfer this information.  Now before an
+incremental build, AJDT instead provides the compiler with specific
+information about what state has changed since the last successful
+build. And the compiler will then only do appropriate analysis. 
+</p>
+<p>
+The following numbers show the times for making a whitespace change to
+a non-aspect java file in a project that 59 other projects depend on.
+</p>
+<table border="1" cellpadding="5">
+<tr><td>Speed up</td><td>AJDT 1.6.0</td><td>AJDT 1.6.1</td></tr>
+<tr><td><b>315%</b></td><td>27 seconds</td><td>6.5 seconds</td></tr>
+</table>
+
+<p>
+These number show the time to build after a change to a non-Java/AspectJ resource
+in a project that 59 other projects depend on:</p>
+
+<table border="1" cellpadding="5">
+<tr><td>Speed up</td><td>AJDT 1.6.0</td><td>AJDT 1.6.1</td></tr>
+<tr><td><b>2500%!</b></td><td>26 seconds</td><td> &lt; 1 second</td></tr>
+</table>
+
+<p>
+These numbers illustrate the kinds of situations we are optimizing for in AJDT. 
+These are situations where a programmer makes a small edit to a file and saves,
+and an incremental build is kicked off.  We have tried hard to ensure that the 
+time for an incremental build of this kind is fast enough so that programmers 
+are not tempted to turn off <i>Build automatically</i> when editing AspectJ 
+projects.
+</p>
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+
+
+<tr><td valign="top"><b>Multi-threaded builds</b></td>
+<td>
+<p>
+The final major improvement in this release is a multi-threaded build.
+Now, the essential part of the build (compilation) occurs in a single
+thread, and the more peripheral post build jobs (updating of gutter
+markers, and displaying error and warning messages) occur in separate
+threads. This frees the UI from sluggish builds and gives the user
+more control over the workspace.
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Bug fixes</b></td>
+<td>
+<ul>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=70774">70774</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242354">242354</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=243376">243376</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244197">244197</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244735">244735</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245566"245566></a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245927">245927</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=246476"246476></a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=246949">246949</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=248512">248512</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=248677">248677</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=249216">249216</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=249380">249380</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=249556">249556</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=249881">249881</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=250375">250375</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251111">251111</a></li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251420">251420</a></li> 
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+<tr>
+<td valign="top"><b>Previous Releases</b></td>
+<td>
+See <a href="http://www.eclipse.org/ajdt/whatsnew16/index.html">here</a> 
+for information on the new features in AJDT 1.6.
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
