@@ -212,7 +212,7 @@ of /technology, since AJDT become a Tools project.</p>
 			    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.0_for_eclipse_3.4.zip">ajdt_1.6.0_for_eclipse_3.4.zip</a></td>
 			  </tr>	  
 			    <tr>
-			    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew160/">New & Noteworthy</a></td>
+			    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew16/">New & Noteworthy</a></td>
 			  </tr>
 			</table>
 		</li>
