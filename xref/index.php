@@ -16,7 +16,7 @@
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "The Cross References view (XRef)";
 	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development, Eclipse, Cross References, XRef";
-	$pageAuthor		= "Matt Chapman";
+	$pageAuthor		= "Matt Chapman, Andrew Eisenberg";
 	
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -54,7 +54,7 @@
        affected by advice.</p>
       
     <p>The latest version of the XRef tool is available in standalone from the update site below, and is the
-    version included with the latest development builds of AJDT 1.5 for Eclipse 3.3. Note that
+    version included with the latest development builds of AJDT 1.6 for Eclipse 3.4. Note that
     this standalone version is only for use with other providers - none are included with the tool so it
     is not functional on its own.</p>
    
@@ -71,7 +71,7 @@
 			<h3>Download</h3>
 <ul>
 <li>
-			<a>XRef 1.5</a>
+			<a>XRef 1.6</a>
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/xref/update</code>
 
