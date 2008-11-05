@@ -174,7 +174,7 @@ of /technology, since AJDT become a Tools project.</p>
 		
 			<table class="tasklist" width="80%">
 			  <tr>
-			    <th align="left">Release Date:</th><td>October 29, 2008</td>
+			    <th align="left">Release Date:</th><td>November 4, 2008</td>
 			  </tr>
 			  <tr>
 			    <th align="left">AspectJ Version:</th><td>1.6.3.20081028135200</td>
@@ -185,7 +185,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
-			    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.1_for_eclipse_3.4.zip">ajdt_1.6.1_for_eclipse_3.4.zip</a></td>
+			    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.1a_for_eclipse_3.4.zip">ajdt_1.6.1a_for_eclipse_3.4.zip</a></td>
 			  </tr>	  
 			    <tr>
 			    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew161/">New & Noteworthy</a></td>
