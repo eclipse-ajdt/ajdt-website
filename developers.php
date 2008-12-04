@@ -227,7 +227,7 @@
 				<tr><td>user:</td><td>anonymous</td></tr>
 				<tr><td>password:</td><td><em>&lt;blank&gt;</em></td></tr>
 				<tr><td>host:</td><td>dev.eclipse.org</td></tr>
-				<tr><td>path:</td><td>/cvs/root/tools</td></tr>
+				<tr><td>path:</td><td>/cvsroot/tools</td></tr>
 				</table>
 			
 			  If you are connecting to the repository from Eclipse, do the following:
