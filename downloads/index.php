@@ -166,6 +166,7 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
+	<a href="1.6"/>
 	<h3>Release builds for Eclipse 3.4</h3>
 	<ul>
 
@@ -226,15 +227,33 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
+	<a href="dev1.6"/>
 	<h3>Development builds for Eclipse 3.4</h3>
 	<ul>
+		<li>
+			<a>AJDT 1.6.2 dev builds for Eclipse 3.4 <em>with JDT weaving</em></a><br>
+			What is <a href="../whatsnew162/jdt-weaving.php">JDT weaving</a>?
+			<table class="tasklist" width="80%">
+			  <tr>
+			    <th align="left">AspectJ Version:</th><td>1.6.3.20081127160000</td>
+			  </tr>
+			  <tr>
+			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/weaving</code></td>
+			  </tr>
+			  <tr>
+			    <th align="left">Zip file:</th>
+			    <td><a href="#34zips">See below</a></td>
+			  </tr>	  
+			</table>
+		</li>
 
 		<li>
 			<a>AJDT 1.6.2 dev builds for Eclipse 3.4</a>
 		
 			<table class="tasklist" width="80%">
 			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.3.20081028135200</td>
+			    <th align="left">AspectJ Version:</th><td>1.6.3.20081127160000</td>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
@@ -257,6 +276,7 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
+	<a href="1.5"/>
 	<h3>Release builds for Eclipse 3.3</h3>
 	<ul>
 		<li>
@@ -312,6 +332,7 @@ of /technology, since AJDT become a Tools project.</p>
     </div>
 
 	<div class="homeitem3col">
+	<a href="dev1.5"/>
 	<h3>Development builds for Eclipse 3.3</h3>
 	<ul>
 		<li>

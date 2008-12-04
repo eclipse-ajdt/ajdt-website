@@ -111,11 +111,6 @@
 				 </tr>
 				 
 				 <tr>
-				  <td>org.eclipse.ajdt.build</td>				   
-				  <td>Automatic build plug-in &#8211; only used by the build process (AJDT 1.2 only)</td>				   
-				 </tr>
-				 
-				 <tr>
 				  <td>org.eclipse.ajdt.core</td>				   
 				  <td>Non-UI parts of AJDT</td>				   
 				 </tr>
@@ -128,6 +123,11 @@
 				 <tr>
 				  <td>org.eclipse.ajdt.examples</td>				   
 				  <td>AspectJ examples plug-in</td>				   
+				 </tr>
+				 
+				 <tr>
+				  <td>org.eclipse.ajdt.pde.build</td>				   
+				  <td>Headless build plugin.  This is used by the headless build process to build AJDT.</td>				   
 				 </tr>
 				 
 				 <tr>
@@ -156,7 +156,7 @@
 				 
 				 <tr>
 				  <td >org.eclipse.aspectj.feature</td>				   
-				  <td>The &ldquot;feature&rdquot; plug-in</td>				   
+				  <td>The <em>feature</em> plug-in</td>				   
 				 </tr>
 				 
 				 <tr>
@@ -167,6 +167,11 @@
 				 <tr>
 				  <td>org.eclipse.contribution.visualiser.tests</td>
 				  <td>Visualiser tests</td>				   
+				 </tr>
+				 
+				 <tr>
+				  <td>org.eclipse.contribution.weaving.jdt</td>
+				  <td>JDT Weaving plugin</td>
 				 </tr>
 				 
 				 <tr>

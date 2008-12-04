@@ -64,7 +64,25 @@
 			<h3>News and Releases</h3>
 			<ul>
 			   <li>
-			  	<img src="images/new.gif" width="11" height="11">
+			    <img src="images/new.gif" width="11" height="11">
+				Some exciting changes are in store for AJDT 1.6.2.  The theme of this release is <em>Aspects Everywhere</em>,
+				where programmers using AJDT should be able to see the effects of their aspects wherever and whenever they apply.
+				Some of the features you can expect to see are:
+				<ul>
+				  <li>ITD-aware content assist</li>
+				  <li>ITD-aware type hierarchies</li>
+				  <li>ITD-aware reconciling/eager parsing</li>
+				  <li>Ablity to search for aspect elements using standard <em>Java search</em> and <em>Open Java type</em></li>
+				</ul>
+				How did we implement this? Well, we started eating our own dog food and are using AspectJ to provide deep integration 
+				with Eclipse.  More specifically, we are using <a href="http://www.eclipse.org/equinox/incubator/aspects/index.php">Equinox Aspects</a>
+				to provide a weaving mechanism for Eclipse plugins.  See the <a href="http://wiki.eclipse.org/JDT_weaving_implementation">wiki</a>
+				for more information.<br>
+				<br>For a preview, see the <a href="http://eclipse.org/ajdt/downloads#dev1.6">download page</a>. For more information, 
+				see the <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving wiki page</a> page.
+				<br><span class="dates">posted 02-12-08</span>
+			   </li> 
+			   <li>
 			  	AJDT 1.6.1 is now available for Eclipse 3.4.  This includes the latest stable build of AspectJ 1.6.3.
 			  	See the <a href="whatsnew161/index.html">New and Noteworthy</a> for more details on AJDT 1.6.1 and 
 			  	the <a href="http://www.eclipse.org/aspectj/doc/released/README-162.html">AspectJ 1.6.2 Readme</a> for
@@ -105,13 +123,12 @@
 				<br><span class="dates">posted 24-04-08</span>
 			  </li>
 			  
+			  <!--
  			  <li>
       			<a href="downloads/">AJDT 1.5.1 for Eclipse 3.3 released (includes AspectJ 1.5.4)</a>
 				<br><span class="dates">posted 11-01-08</span>
 			  </li>
-			  <!--
 			  <li>
-			  	
       			<a href="downloads/">AJDT 1.5 for Eclipse 3.3 released as part of Europa!</a>
 				See the <a href="whatsnew15/">New and Noteworthy</a>
 				<br><span class="dates">posted 29-06-07</span>
