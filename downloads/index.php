@@ -233,7 +233,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 		<li>
 			AJDT 1.6.2 dev builds for Eclipse 3.4 <em>with JDT weaving</em><br>
-			What is <a href="../whatsnew162/jdt-weaving.php">JDT weaving</a>?
+			What is <a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">JDT weaving</a>?
 			<table class="tasklist" width="80%">
 			  <tr>
 			    <th align="left">AspectJ Version:</th><td>1.6.3.20081212174800</td>
@@ -593,7 +593,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 	
 		<li>
-			<a name="34zips"></a>Eclipse 3.4 builds (JDT weaving)
+			<a name="34zips"></a>Eclipse 3.4 builds (<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">JDT weaving</a>)
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/34/dev/update</code>
 			</p>
