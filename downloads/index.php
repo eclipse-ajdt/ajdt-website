@@ -140,6 +140,7 @@ function ListDevBuilds($dir){
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 	
 	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update");
+	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving");
 	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update");
 	#$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
 	#$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/31/dev/update');
@@ -206,7 +207,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>................................................</code></td>
+			    <td><code>.................................</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
@@ -231,15 +232,15 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>Development builds for Eclipse 3.4</h3>
 	<ul>
 		<li>
-			<a>AJDT 1.6.2 dev builds for Eclipse 3.4 <em>with JDT weaving</em></a><br>
+			AJDT 1.6.2 dev builds for Eclipse 3.4 <em>with JDT weaving</em><br>
 			What is <a href="../whatsnew162/jdt-weaving.php">JDT weaving</a>?
 			<table class="tasklist" width="80%">
 			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.3.20081127160000</td>
+			    <th align="left">AspectJ Version:</th><td>1.6.3.20081212174800</td>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/weaving</code></td>
+			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
@@ -249,19 +250,20 @@ of /technology, since AJDT become a Tools project.</p>
 		</li>
 
 		<li>
-			<a>AJDT 1.6.2 dev builds for Eclipse 3.4</a>
+			AJDT 1.6.2 noweaving dev builds for Eclipse 3.4<br>
+			<em>We recommend using the JDT Weaving builds (above) instead.</em>
 		
 			<table class="tasklist" width="80%">
 			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.3.20081127160000</td>
+			    <th align="left">AspectJ Version:</th><td>1.6.3.20081212174800</td>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></td>
+			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/noweaving</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
-			    <td><a href="#34zips">See below</a></td>
+			    <td><a href="#34zipsnoweaving">See below</a></td>
 			  </tr>	  
 			</table>
 		</li>
@@ -317,7 +319,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>................................................</code></td>
+			    <td><code>.................................</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
@@ -591,7 +593,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 	
 		<li>
-			<a name="34zips">Eclipse 3.4 builds</a>
+			<a name="34zips"></a>Eclipse 3.4 builds (JDT weaving)
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/34/dev/update</code>
 			</p>
@@ -603,15 +605,31 @@ of /technology, since AJDT become a Tools project.</p>
     			<th>Build&nbsp;Report</th>
     			<th>AspectJ&nbsp;Version</th>
   			</tr>
-
 $builds34
-
 			</table>
 			</p>
 		</li>
 	
-			<li>
-			<a name="33zips">Eclipse 3.3 builds</a>
+		<li>
+			<a name="34zips"></a>Eclipse 3.4 builds (no weaving)
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/tools/ajdt/34/dev/noweaving</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Zip&nbsp;file</th>
+    			<th>Build&nbsp;Date</th>
+    			<th>Build&nbsp;Report</th>
+    			<th>AspectJ&nbsp;Version</th>
+  			</tr>
+$builds34noweaving
+			</table>
+			</p>
+		</li>
+		
+		<li>
+			<a name="33zips"></a>Eclipse 3.3 builds
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/33/dev/update</code>
 			</p>
