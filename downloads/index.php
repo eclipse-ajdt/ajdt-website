@@ -167,12 +167,12 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
-	<a href="1.6"/>
+	<a name="1.6"/>
 	<h3>Release builds for Eclipse 3.4</h3>
 	<ul>
 
 		<li>
-			<a>AJDT 1.6.1 builds for Eclipse 3.4</a>
+			AJDT 1.6.1 builds for Eclipse 3.4
 		
 			<table class="tasklist" width="80%">
 			  <tr>
@@ -196,7 +196,7 @@ of /technology, since AJDT become a Tools project.</p>
 		</li>
 				
 		<li>
-			<a>AJDT 1.6.0 builds for Eclipse 3.4</a>
+			AJDT 1.6.0 builds for Eclipse 3.4
 		
 			<table class="tasklist" width="80%">
 			  <tr>
@@ -228,7 +228,7 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
-	<a href="dev1.6"/>
+	<a name="dev1.6"/>
 	<h3>Development builds for Eclipse 3.4</h3>
 	<ul>
 		<li>
@@ -278,11 +278,11 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
-	<a href="1.5"/>
+	<a name="1.5"/>
 	<h3>Release builds for Eclipse 3.3</h3>
 	<ul>
 		<li>
-			<a>AJDT 1.5.3 for Eclipse 3.3</a>
+			AJDT 1.5.3 for Eclipse 3.3
 			<table class="tasklist" width="80%">
 			  <tr>
 			    <th align="left">Release Date:</th><td>July 19th, 2008</td>
@@ -308,7 +308,7 @@ of /technology, since AJDT become a Tools project.</p>
 		</li>
 	
 		<li>
-			<a>AJDT 1.5.2 for Eclipse 3.3</a>
+			AJDT 1.5.2 for Eclipse 3.3
 		
 			<table class="tasklist" width="80%">
 			  <tr>
@@ -338,7 +338,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>Development builds for Eclipse 3.3</h3>
 	<ul>
 		<li>
-			<a>AJDT dev builds for Eclipse 3.3</a>
+			AJDT dev builds for Eclipse 3.3
 		
 			<table class="tasklist" width="80%">
 			  <tr>
@@ -364,7 +364,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 
 		<li>
-			<a>AJDT 1.4.2 for Eclipse 3.2.2</a>
+			AJDT 1.4.2 for Eclipse 3.2.2
 		
 <table class="tasklist" width="80%">
   <tr>
@@ -412,7 +412,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 
 		<li>
-			<a>AJDT 1.5RC4 for Eclipse 3.3RC4</a>
+			AJDT 1.5RC4 for Eclipse 3.3RC4
 
 <table class="tasklist" width="80%">
   <tr>
@@ -437,7 +437,7 @@ of /technology, since AJDT become a Tools project.</p>
 			</li>
 	
 			<li>
-			<a>AJDT 1.5RC1 for Eclipse 3.3RC1</a>
+			AJDT 1.5RC1 for Eclipse 3.3RC1
 				
 <table class="tasklist" width="80%">
   <tr>
@@ -462,7 +462,7 @@ of /technology, since AJDT become a Tools project.</p>
 		</li>
 
 		<li>
-			<a>AJDT 1.5M7 for Eclipse 3.3M7</a>
+			AJDT 1.5M7 for Eclipse 3.3M7
 		
 <table class="tasklist" width="80%">
   <tr>
@@ -484,7 +484,7 @@ of /technology, since AJDT become a Tools project.</p>
 
 		
 		<li>
-			<a>AJDT 1.5M6 for Eclipse 3.3M6</a>
+			AJDT 1.5M6 for Eclipse 3.3M6
 		
 <table class="tasklist" width="80%">
   <tr>
@@ -505,7 +505,7 @@ of /technology, since AJDT become a Tools project.</p>
 		</li>
 
 		<li>
-			<a>AJDT 1.5M5 for Eclipse 3.3M5</a>
+			AJDT 1.5M5 for Eclipse 3.3M5
 		
 <table class="tasklist" width="80%">
   <tr>
@@ -530,7 +530,7 @@ of /technology, since AJDT become a Tools project.</p>
 		</li>
 
 		<li>
-			<a>AJDT 1.5M4 for Eclipse 3.3M4</a>
+			AJDT 1.5M4 for Eclipse 3.3M4
 		
 <table class="tasklist" width="80%">
   <tr>
@@ -555,7 +555,7 @@ of /technology, since AJDT become a Tools project.</p>
 		</li>
 			
 		<li>
-			<a>AJDT 1.5M3 for Eclipse 3.3M3</a>
+			AJDT 1.5M3 for Eclipse 3.3M3
 		
 <table class="tasklist" width="80%">
   <tr>
@@ -651,7 +651,7 @@ $builds33
 <!--
 				
 		<li>
-			<a>Eclipse 3.2 builds</a>
+			Eclipse 3.2 builds
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/32/dev/update</code>
 			</p>
@@ -672,7 +672,7 @@ $builds32
 	
 	
 		<li>
-			<a>Eclipse 3.1 builds</a>
+			Eclipse 3.1 builds
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/31/dev/update</code>
 			</p>
@@ -692,7 +692,7 @@ $builds31
 		</li>
 		
 		<li>
-			<a>Eclipse 3.0 builds</a>
+			Eclipse 3.0 builds
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/30/dev/update</code>
 			</p>
