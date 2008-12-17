@@ -243,20 +243,18 @@ of /technology, since AJDT become a Tools project.</p>
 			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></td>
 			  </tr>
 			  <tr>
-				<th colspan="2">We recommend updates from the update site.  
-							<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">See here</a>
-							 for how to install using a zip file
-				</th>
-			  </tr>
-			  <tr>
 			    <th align="left">1.6.2 Release Candidate Zip:</th>
-			    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.2_rc1.zip">ajdt_1.6.2_rc1.zip</a></td>
+			    <td><a href="http://download.eclipse.org/tools/ajdt/34/dev/update/ajdt_1.6.2_rc1.zip">ajdt_1.6.2_rc1.zip</a></td>
 			  </tr>	  
 			  <tr>
 			    <th align="left">Zip file:</th>
 			    <td><a href="#34zips">See below</a></td>
 			  </tr>	  
 			</table>
+			We recommend using the update site to install AJDT.  However, it is still possible
+			to install from a zip file.
+			<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">See here</a>
+		    for how to do this.
 		</li>
 
 		<li>
