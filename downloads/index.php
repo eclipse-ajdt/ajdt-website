@@ -244,7 +244,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">1.6.2 Release Candidate 2 Zip:</th>
-			    <td><a href="http://download.eclipse.org/tools/ajdt/34/dev/update/ajdt_1.6.2_rc1.zip">ajdt_1.6.2_rc2.zip</a></td>
+			    <td><a href="http://download.eclipse.org/tools/ajdt/34/dev/update/ajdt_1.6.2_rc2.zip">ajdt_1.6.2_rc2.zip</a></td>
 			  </tr>	  
 			  <tr>
 			    <th align="left">Zip file:</th>
