@@ -32,16 +32,19 @@
 <td>
 	<p>Inter Type Declared methods, fields, and constructors are available in content assist.  Similarly, appropriate declarations from declare parent super types are available in content assist.</p>
 
-	<p>Currently, this functionality is only available in AJ Editors for *.aj files.  Also, the project is required to have had a successful build.  Making this work in *.java files is a top priority for the next AJDT release.</p>
-
 <p>For example, in the following screen shots, content assist shows the <code>getX()</code> and <code>getY()</code>, which are intertype declarations on the class.</p>
 
-<table>
-	<tr valign="top"><td><img border="1" src="contentassist161.jpg"/><br>
-		<font size="-1"><em>Content assist in AJDT 1.6.1</em></font></td>
-		<td><img border="1" src="contentassist162.jpg"/><br>
-			<font size="-1"><em>Content assist in AJDT 1.6.2</em></font></td></tr>
-</table>
+<p>
+	<font size="-2"><em>Content assist in <strong>AJDT 1.6.2</strong> includes ITDs.</em></font><br/>
+	<img border="1" src="contentassist162.jpg"/>
+	
+</p>
+<p>
+	<font size="-2"><em>Content assist in <strong>AJDT 1.6.1</strong> does not include ITDs.</em></font><br/>
+	<img border="1" src="contentassist161.jpg"/>
+</p>
+
+<p>Currently, this functionality is only available in AJ Editors for *.aj files.  Also, the project is required to have had a successful build.  Adding this functionality to *.java files is a top priority for the next AJDT release.</p>
 
 </td>
 </tr>
@@ -53,14 +56,16 @@
 
 <tr><td valign="top"><b>ITD aware reconciling</b> (*.aj and *.java)</td>
 <td>
-	Intertype declaration aware reconciling and eager parsing are now available in both AJ and Java editors.  This means that ITD references in a compilation unit opened in a Java editor will no longer show spurious error bars.  Furthermore, AJ editors now provide the same kind of eager error detection as you type that is available in Java editors.
+	<p>Intertype declaration aware reconciling and eager parsing are now available in both AJ and Java editors.  This means that ITD references in a compilation unit opened in a Java editor will no longer show spurious error bars.  Furthermore, AJ editors now provide the same kind of eager error detection as you type that is available in Java editors.</p>
 
-	<table>
-		<tr valign="top"><td><img border="1" src="reconciling161.jpg"/><br>
-			<font size="-1"><em>Reconciling in AJDT 1.6.1 and ITD references are marked as errors in Java files</em></font></td>
-			<td><img border="1" src="reconciling162.jpg"/><br>
-				<font size="-1"><em>Reconciling in AJDT 1.6.2 and ITDs are OK</em></font></td></tr>
-	</table>
+<p>
+	<font size="-2"><em>Reconciling in <strong>AJDT 1.6.2</strong> and ITD references are OK</em></font><br/>
+	<img border="1" src="reconciling162.jpg"/>
+</p>
+<p>
+	<font size="-2"><em>Reconciling in <strong>AJDT 1.6.1</strong> and ITD references are marked as errors in Java files</em></font><br/>
+	<img border="1" src="reconciling161.jpg"/>
+</p>
 </td>
 </tr>
 <tr>
@@ -71,15 +76,18 @@
 
 <tr><td valign="top"><b>ITD aware super-type hierarchies</b></td>
 <td>
-	<p>The type hierarchy view now shows types inserted into the hierarchy through a declare parents declaration.</p>
-	<p>Note that in this release, AJDT can only show *super* types that have been declared by declare parents.  The sub-type hierarchy is not yet ITD aware.</p>
+<p>The type hierarchy view now shows types inserted into the hierarchy through a declare parents declaration.</p>
 	
-	<table>
-		<tr valign="top"><td><img border="1" src="hierarchy161.jpg"/><br>
-			<font size="-1"><em>Super-type hierarchies in AJDT 1.6.1 does not include ITDs</em></font></td>
-			<td><img border="1" src="hierarchy162.jpg"/><br>
-				<font size="-1"><em>Super-type hierarchies in AJDT 1.6.2 include ITDs</em></font></td></tr>
-	</table>
+<p>
+	<font size="-2"><em>Super-type hierarchies in <strong>AJDT 1.6.2</strong> include ITDs</em></font><br/>
+	<img border="1" src="hierarchy162.jpg"/>
+</p>
+<p>
+	<font size="-2"><em>Super-type hierarchies in <strong>AJDT 1.6.1</strong> do not include ITDs</em></font><br/>
+	<img border="1" src="hierarchy161.jpg"/>
+</p>
+
+<p>Note that in this release, AJDT can only show *super* types that have been declared by declare parents.  The sub-type hierarchy is not yet ITD aware.</p>
 </td>
 </tr>
 <tr>
@@ -90,13 +98,8 @@
 
 <tr><td valign="top"><b>Aspects in Open-Type dialogs</b></td>
 <td>
-The open type dialog now includes aspects.	
-<table>
-	<tr valign="top"><td><img border="1" src="opentype161.jpg"/><br>
-		<font size="-1"><em>Open Type dialog in AJDT 1.6.1 does not show aspect types</em></font></td>
-		<td><img border="1" src="opentype162.jpg"/><br>
-			<font size="-1"><em>Open Type dialog in AJDT 1.6.1 includesaspect types</em></font></td></tr>
-</table>
+The open type dialog now includes aspect types.	<br/>
+<img border="1" src="opentype162.jpg"/>
 </td>
 </tr>
 <tr>
@@ -106,14 +109,24 @@ The open type dialog now includes aspects.
 
 <tr><td valign="top"><b>Java search for aspects, named pointcuts, and advice</b></td>
 <td>
-Java search now includes aspects, named pointcuts, and advice. In order to search for a named pointcut, use the search dialog and search for <em>methods</em>:<br>
-<img border="1" src="searchdialog.jpg"/><br><br>
+<p>Java search now includes aspects, named pointcuts, and advice.</p> 
 
-If <em>All occurrences</em> is selected, then the results will include all declarations and all uses of the named pointcut:<br>
+<p>In order to search for a named pointcut, use the search dialog and select <em>Method</em>:<br/>
+<img border="1" src="searchdialog.jpg"/><br/><br/>
 
-<img border="1" src="search162.jpg"/><br><br>
+If <em>All occurrences</em> is selected, then the results will include all declarations and all uses of the named pointcut:<br/>
 
-
+<img border="1" src="search162.jpg"/>
+</p>
+<p>
+	Advice can similarly be searched for by entering the kind of advice (before, after, or around), selecting <em>Method</em>, and <em>Declarations</em>:<br/>
+	<img border="1" src="searchdialog-advice.jpg"/><br/><br/>
+	The result shows all advice declarations of the chosen kind:<br/>
+	<img border="1" src="search-advice.jpg"/>
+</p>
+<p> 
+	Aspect references and declarations can be searched in the same way that classes and interfaces are searched for.
+</p>
 
 </td>
 </tr>
@@ -124,7 +137,7 @@ If <em>All occurrences</em> is selected, then the results will include all decla
 
 <tr><td valign="top"><b>Refactoring</b></td>
 <td>
-	Standard rename, move, and copy/paste refactorings can now be applied to aspect compilation units (*.aj files) without errors.
+	Standard rename, move, and copy/paste refactorings can now be applied to aspect compilation units (*.aj files) without errors or uncaught exceptions.
 </td>
 </tr>
 <tr>
@@ -190,8 +203,8 @@ If <em>All occurrences</em> is selected, then the results will include all decla
 <tr>
 <td valign="top"><b>Thanks!</b></td>
 <td>
-	Thanks to all the AJDT users who provided valuable insight into how they are using AJDT and alos for reporting bugs particularly with JDT Weaving installation.<br>
-	<br>
+	Thanks to all the AJDT users who provided valuable insight into how they are using AJDT and alos for reporting bugs particularly with JDT Weaving installation.<br/>
+	<br/>
 	And a special thanks goes out to Martin Lippert and Heiko Seeberger on the Equinox Aspects team for helping out with weaving in OSGi.
 </td>
 </tr>
