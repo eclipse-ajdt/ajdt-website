@@ -1,4 +1,4 @@
--1<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
 <link rel="STYLESHEET" href="http://www.eclipse.org/default_style.css" charset="ISO-8859-1" type="text/css">
 <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>AJDT 1.6.2- New and Noteworthy</title>
@@ -12,7 +12,7 @@
 <tr>
 <td valign="top"><b>Overview</b></td>
 <td valign="top">
-	Our focus for this release has been tighter integration with Eclipse and the JDT.  The theme of this release is <em>Aspects Everywhere</em>, where programmers using AJDT should be able to see the effects of their aspects wherever and whenever they apply.
+	The theme of this release is <em>Aspects Everywhere</em>.  Programmers using AJDT should be able to see the effects of their aspects wherever and whenever they apply.  We have particularly focused on ensuring that the IDE treats intertype declarations more like regular declarations.
 	
 	
 </td>
@@ -33,7 +33,7 @@
 
 <tr><td valign="top"><b>ITD aware content assist</b> (*.aj files only)</td>
 <td>
-	<p>Inter Type Declared methods, fields, and constructors are available in content assist.  Similarly, appropriate declarations from declare parent super types are available in content assist.</p>
+	<p>Intertype declared methods, fields, and constructors are now available in content assist.  Similarly, appropriately scoped declarations from declare parent super types are also available in content assist.</p>
 
 <p>For example, in the following screen shots, content assist shows the <code>getX()</code> and <code>getY()</code>, which are intertype declarations on the class.</p>
 
@@ -42,12 +42,19 @@
 	<img border="1" src="contentassist162.jpg"/>
 	
 </p>
+
+<p>
+	However, this was not possible in AJDT 1.6.1.
+</p>
+
 <p>
 	<font size="-1"><em>Content assist in <strong>AJDT 1.6.1</strong> does not include ITDs.</em></font><br/>
 	<img border="1" src="contentassist161.jpg"/>
 </p>
 
-<p>Currently, this functionality is only available in AJ Editors for *.aj files.  Also, the project is required to have had a successful build.  Adding this functionality to *.java files is a top priority for the next AJDT release.</p>
+<p>
+	Currently, this functionality is only available in AJ Editors for *.aj files.  Also, the project is required to have had a successful build.  Adding this functionality to *.java files is a top priority for the next AJDT release.
+</p>
 
 </td>
 </tr>
@@ -59,7 +66,7 @@
 
 <tr><td valign="top"><b>ITD aware reconciling</b> (*.aj and *.java)</td>
 <td>
-	<p>Intertype declaration aware reconciling and eager parsing are now available in both AJ and Java editors.  This means that ITD references in a compilation unit opened in a Java editor will no longer show spurious error bars.  Furthermore, AJ editors now provide the same kind of eager error detection as you type that is available in Java editors.</p>
+	<p>Intertype declaration aware reconciling and eager parsing are now available in both AJ and Java editors.  This means that ITD references in a compilation unit will no longer show spurious error bars.  Furthermore, AJ editors now provide the same kind of eager error detection as you type that is available in Java editors.</p>
 
 <p>
 	<font size="-1"><em>Reconciling in <strong>AJDT 1.6.2</strong> and ITD references are OK</em></font><br/>
@@ -90,7 +97,7 @@
 	<img border="1" src="hierarchy161.jpg"/>
 </p>
 
-<p>Note that in this release, AJDT can only show *super* types that have been declared by declare parents.  The sub-type hierarchy is not yet ITD aware.</p>
+<p>Note that in this release, AJDT can only show <em>super</em> types that have been declared by declare parents.  The sub-type hierarchy is not yet ITD aware.</p>
 </td>
 </tr>
 <tr>
@@ -117,7 +124,7 @@ The open type dialog now includes aspect types.	<br/>
 <p>In order to search for a named pointcut, use the search dialog and select <em>Method</em>:<br/>
 <img border="1" src="searchdialog.jpg"/><br/><br/>
 
-If <em>All occurrences</em> is selected, then the results will include all declarations and all uses of the named pointcut:<br/>
+If <em>All occurrences</em> is selected, then the results will include both declarations and references of the named pointcut:<br/>
 
 <img border="1" src="search162.jpg"/>
 </p>
@@ -128,7 +135,7 @@ If <em>All occurrences</em> is selected, then the results will include all decla
 	<img border="1" src="search-advice.jpg"/>
 </p>
 <p> 
-	Aspect references and declarations can be searched in the same way that classes and interfaces are searched for.
+	Aspect references and declarations now appear when types are searched for.
 </p>
 
 </td>
@@ -189,8 +196,8 @@ If <em>All occurrences</em> is selected, then the results will include all decla
 	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=253245">253245</a>	[API] AJDT 1.6.1 breaks Spring IDE</li>
 	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=253528">253528</a>	[build] Compilation folder is not marked as 'Derived'</li>
 	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=254980">254980</a>	[editor] Quick fix is not working</li>
-	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255548">255548</a>	Compiler exception using iac in headless build</li>
-	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=257438">257438</a>	[handles] error occured during: Delete and update AspectJ markers</li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255548">255548</a>	Compiler exception using iajc in headless build</li>
+	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=257438">257438</a>	[handles] error occurred during: Delete and update AspectJ markers</li>
 	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=258685">258685</a>	[editor] Editor shows an error on 'case' label with enum constant</li>
 	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=258698">258698</a>	[markers] Class cast exception when adding AspectJ markers to a .class file</li>
 	<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259033">259033</a>	Plug-in org.eclipse.ajdt.ui was unable to load class org.eclipse.ajdt.internal.ui.resources.AJImageDescriptorSelector.</li>
@@ -206,7 +213,7 @@ If <em>All occurrences</em> is selected, then the results will include all decla
 <tr>
 <td valign="top"><b>Thanks!</b></td>
 <td>
-	Thanks to all the AJDT users who provided valuable insight into how they are using AJDT and alos for reporting bugs particularly with JDT Weaving installation.<br/>
+	Thanks to all the AJDT users who provided valuable insight into how they are using AJDT and also for reporting bugs particularly with JDT Weaving installation.<br/>
 	<br/>
 	And a special thanks goes out to Martin Lippert and Heiko Seeberger on the Equinox Aspects team for helping out with weaving in OSGi.
 </td>
