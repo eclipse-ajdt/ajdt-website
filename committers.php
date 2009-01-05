@@ -48,7 +48,14 @@
         <td>Andy Clement (Project Lead)
 	    </td>
         <td>
-          SpringSource
+          <a href="http://springsource.com">SpringSource</a>
+	    </td>
+      </tr>
+      <tr>
+        <td>Andrew Eisenberg
+	    </td>
+        <td>
+          <a href="http://springsource.com">SpringSource</a>
 	    </td>
       </tr>
       <tr>
