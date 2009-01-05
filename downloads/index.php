@@ -172,6 +172,34 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 
 		<li>
+			AJDT 1.6.2 builds for Eclipse 3.4 <em>with JDT weaving</em><br>
+			What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
+			<table class="tasklist" width="80%">
+			  <tr>
+			    <th align="left">Release Date:</th><td>January 5, 2008</td>
+			  </tr>
+			  <tr>
+			    <th align="left">AspectJ Version:</th><td>1.6.3.20081216194500</td>
+			  </tr>
+			  <tr>
+			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+			    <td><code>http://download.eclipse.org/tools/ajdt/34/update</code></td>
+			  </tr>
+			  <tr>
+			    <th align="left">Zip file:</th>
+			    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.2_for_eclipse_3.4.zip">ajdt_1.6.2_for_eclipse_3.4.zip</a></td>
+			  </tr>	  
+			    <tr>
+			    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew162/">New & Noteworthy</a></td>
+			  </tr>
+			</table>
+			We recommend using the update site to install AJDT.  However, it is still possible
+			to install from a zip file.
+			<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">See here</a>
+		    for how to do this.
+		</li>
+				
+		<li>
 			AJDT 1.6.1 builds for Eclipse 3.4
 		
 			<table class="tasklist" width="80%">
@@ -180,10 +208,6 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">AspectJ Version:</th><td>1.6.3.20081028135200</td>
-			  </tr>
-			  <tr>
-			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/34/update</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
@@ -195,7 +219,7 @@ of /technology, since AJDT become a Tools project.</p>
 			</table>
 		</li>
 				
-		<li>
+<!--		<li>
 			AJDT 1.6.0 builds for Eclipse 3.4
 		
 			<table class="tasklist" width="80%">
@@ -217,7 +241,7 @@ of /technology, since AJDT become a Tools project.</p>
 			    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew16/">New & Noteworthy</a></td>
 			  </tr>
 			</table>
-		</li>
+		</li> -->
 				
 		<li>
 			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
