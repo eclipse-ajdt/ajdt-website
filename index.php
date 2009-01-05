@@ -64,6 +64,11 @@
 			<h3>News and Releases</h3>
 			<ul>
 			   <li>
+			     <img src="images/new.gif" width="11" height="11">
+			     AJDT 1.6.2 is released!  See the <a href="downloads/">downloads page</a> for installation instructions.
+			     <br><span class="dates">posted 01-05-09</span>
+			   </li>
+			   <li>
 			    <img src="images/new.gif" width="11" height="11">
 				Some exciting changes are in store for AJDT 1.6.2.  The theme of this release is <em>Aspects Everywhere</em>,
 				where programmers using AJDT should be able to see the effects of their aspects wherever and whenever they apply.

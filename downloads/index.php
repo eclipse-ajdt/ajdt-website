@@ -167,7 +167,7 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
-	<a name="1.6"/>
+	<a name="1.6"></a>
 	<h3>Release builds for Eclipse 3.4</h3>
 	<ul>
 
@@ -252,7 +252,7 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
-	<a name="dev1.6"/>
+	<a name="dev1.6"></a>
 	<h3>Development builds for Eclipse 3.4</h3>
 	<ul>
 		<li>
