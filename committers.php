@@ -63,11 +63,10 @@
 		<a href="http://kerstens.org/mik">Mik Kersten</a>
 	    </td>
         <td>
-          TaskTop Technologies
+          <a href="http://tasktop.com">TaskTop Technologies</a>
 	    </td>
       </tr>
 			</table>
-	</div>
 	
 		<hr class="clearer" />
 	</div>
