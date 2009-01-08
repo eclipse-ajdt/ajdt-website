@@ -256,7 +256,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>Development builds for Eclipse 3.4</h3>
 	<ul>
 		<li>
-			AJDT 1.6.2 dev builds for Eclipse 3.4 <em>with JDT weaving</em><br>
+			AJDT 1.6.3 dev builds for Eclipse 3.4 <em>with JDT weaving</em><br>
 			What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 			<table class="tasklist" width="80%">
 			  <tr>
@@ -266,10 +266,6 @@ of /technology, since AJDT become a Tools project.</p>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
 			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></td>
 			  </tr>
-			  <tr>
-			    <th align="left">1.6.2 Release Candidate 2 Zip:</th>
-			    <td><a href="http://download.eclipse.org/tools/ajdt/34/dev/update/ajdt_1.6.2_rc2.zip">ajdt_1.6.2_rc2.zip</a></td>
-			  </tr>	  
 			  <tr>
 			    <th align="left">Zip file:</th>
 			    <td><a href="#34zips">See below</a></td>
@@ -310,7 +306,7 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
-	<a name="1.5"/>
+	<a name="1.5"></a>
 	<h3>Release builds for Eclipse 3.3</h3>
 	<ul>
 		<li>
@@ -366,7 +362,7 @@ of /technology, since AJDT become a Tools project.</p>
     </div>
 
 	<div class="homeitem3col">
-	<a href="dev1.5"/>
+	<a href="dev1.5"></a>
 	<h3>Development builds for Eclipse 3.3</h3>
 	<ul>
 		<li>
