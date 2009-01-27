@@ -175,12 +175,9 @@
 			<h3>New Features</h3>
 			<ul>
 			  <li>
-      			<a href="newfeatures/#ccchanges">Crosscutting Changes</a>
-				<br><span class="dates">posted 15-03-07</span>
-			  </li>
-			  <li>
-      			<a href="newfeatures/#ccmaps">Crosscutting Maps and View changes</a>
-				<br><span class="dates">posted 12-01-07</span>
+      			<a href="http://wiki.eclipse.org/JDT_weaving_features">JDT Weaving service 
+      			provides tighter integration with Eclipse</a>
+				<br><span class="dates">posted 01-27-09</span>
 			  </li>
 			  <li>
       			<a href="newfeatures/#attributes">AspectJ Build Path configuration</a>
