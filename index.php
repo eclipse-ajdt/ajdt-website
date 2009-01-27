@@ -64,12 +64,24 @@
 			<h3>News and Releases</h3>
 			<ul>
 			   <li>
+			     AJDT 1.6.3 is released!  See the <a href="downloads/">downloads page</a> for installation instructions.
+			     <br><span class="dates">posted 01-27-09</span>
+			   </li>
+			   <li>
 			     <img src="images/new.gif" width="11" height="11">
+			     AJDT is at <a href="http://www.eclipsecon.org/2009/" target="_blank">EclipseCon</a>! 
+			     Come see our talk: <a href="http://www.eclipsecon.org/2009/sessions?id=648">Aspects Everywhere: 
+			     Using Equinox Aspects to Provide Language Developers with Deep Eclipse Integration</a>
+			     <br><a href="http://www.eclipsecon.org/2009/"><img border="0"
+ 								src="http://www.eclipsecon.org/2009/static/image/125x72.gif"
+								 height="72" width="125" alt="EclipseCon 2009"/></a>  
+			     <br><span class="dates">posted 01-27-09</span>
+			   </li>
+			   <li>
 			     AJDT 1.6.2 is released!  See the <a href="downloads/">downloads page</a> for installation instructions.
 			     <br><span class="dates">posted 01-05-09</span>
 			   </li>
 			   <li>
-			    <img src="images/new.gif" width="11" height="11">
 				Some exciting changes are in store for AJDT 1.6.2.  The theme of this release is <em>Aspects Everywhere</em>,
 				where programmers using AJDT should be able to see the effects of their aspects wherever and whenever they apply.
 				Some of the features you can expect to see are:
@@ -103,6 +115,7 @@
 			  	see the <a href="http://eclipse.org/ajdt/downloads">download page</a> for more information.
 				<br><span class="dates">posted 03-09-08</span>
 			  </li>
+			  <!--
 			   <li>
 			  	AJDT 1.5.3 is now available for Eclipse 3.3.  This includes AspectJ1.6.1.
 			  	See the <a href="whatsnew153/index.html">New and Noteworthy</a> for more details on AJDT 1.5.3 and 
@@ -127,8 +140,6 @@
 			  	will now be AJDT 1.5.3 builds incorporating AspectJ 1.6.1 drivers.
 				<br><span class="dates">posted 24-04-08</span>
 			  </li>
-			  
-			  <!--
  			  <li>
       			<a href="downloads/">AJDT 1.5.1 for Eclipse 3.3 released (includes AspectJ 1.5.4)</a>
 				<br><span class="dates">posted 11-01-08</span>
