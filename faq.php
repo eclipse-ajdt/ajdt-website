@@ -62,7 +62,7 @@
 	  			<li><a href="#q:breakpoints">Why don't breakpoints in around advice work?</a> </li>
 	  			<li><a href="#q:visualiser">How does the Visualiser work?</a> </li>
 	  			<li><a href="#q:errors">Why do I sometimes see errors in the editor but not in the problems view?</a> </li>
-	  			<li><a href="#q:ajfiles">What problems are there for types in .aj files?</a> </li>
+	  			<li><a href="#q:ajfiles">What are the limitations of the AspectJ Editor?</a> </li>
 	  			<li><a href="#q:aspectsinjava">What happens if I write my aspects in .java files?</a> </li>
 	  			<li><a href="#q:ant">How do I use Ant to build my AspectJ projects in AJDT?</a> </li>	 
 	  			<li><a href="#q:upgrade">Can I upgrade my AspectJ version?</a> </li>
@@ -268,21 +268,15 @@
 		    </li>	
 
 		<a name="q:ajfiles"></a>
-			<li><em>What problems are there for types in .aj files?</em>
+			<li><em>What are the limitations of the AspectJ Editor?</em>
 			<p>
-				There are several known issues for types contained in .aj files.
-		
-				<ul>
-				<li>They are not found when using code assist (Ctrl+Space).</li>
-				<li>They are not found when using add import (Ctrl+Shift+M).</li>
-				<li>They are not found when using organize imports (Ctrl+Shift+O).</li>
-				<li>There are no quick fixes available (Ctrl+1).</li>
-				<li>They are not included in Java searches.</li>
-				<li>They are not included in Call Hierarchy lists.</li>		
-				<li>It is not possible to run JUnit tests written in .aj files.</li>		
-				<li><strong>Refactor &gt; Move</strong> and drag and drop will not work for .aj files. Use Ctrl+C and Ctrl+V instead.</li>
-				<li><strong>Refactor &gt; Rename</strong> will not work for .aj files. Use <strong>Rename</strong> from the context menu instead.</li>
-				</ul>
+			Although similar, using the AspectJ editor is not exactly the same as using a Java editor.
+			Besides an AspectJ editor providing AspectJ-related capabilities, there is some functionality that it does not 
+			provide, but the Java editor does.  For example, override/implement gutter markers are not shown.
+		    </p>
+		    <p>
+			If there is some functionality that is missing from AspectJ editors that is present in Java editors, please 
+			mention it on the mailing list or raise a bug for it.
 		    </p>
 		    </li>
 	
@@ -425,14 +419,15 @@
 		<a name="q:future"></a>
 			<li><em>Where do I find out about future releases of AJDT?</em>
 		    <p>
-		       See the <a href="http://www.eclipse.org/ajdt/plans.php">plans</a> page for information about future releases.
+		       See the <a href="http://www.eclipse.org/projects/project-plan.php?projectid=tools.ajdt">plans</a> page for information about future releases.
 			</p>
 		    </li>		
 		
 		<a name="q:next"></a>
 			<li><em>What new AJDT features are being worked on at the moment?</em>
 		    <p>
-				See the <a href="http://www.eclipse.org/ajdt/tasks.php">task list</a> on our project home page.
+				Look for <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AJDT&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">open AJDT bugs</a> in bugzilla or ask a question to the mailing list.  We are a friendly bunch and are 
+				happy to answer your questions.
 		    </p>
 		    </li>
 

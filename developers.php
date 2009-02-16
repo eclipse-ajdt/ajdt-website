@@ -35,6 +35,12 @@
 	<div id="midcolumn">
 	
 	<h1>Information for developers</h1>
+	
+	<p>AJDT is changing rapidly and so some of this document may be out of date.  If you find anything that is out of date or you have any problems following these instructions, please send a note to the <a href="https://dev.eclipse.org/mailman/listinfo/ajdt-dev">AJDT mailing list</a>.  We are a friendly bunch and want to encourage new developers to contribute to AJDT.</p>
+	
+<p>There are many ways to contribute to AJDT even if you are not developing code: answering questions (or asking them) on the mailing list, raising bugs and feature requests, submitting documentation and sample programs, and generally being a constructive member of the community.  These are all ways you can help AJDT and AspectJ grow.  Of course, we also appreciate code contributions.
+
+	
 
 	<h2>Contributing</h2>
 	<ol>
@@ -85,16 +91,19 @@
 				The source code for the Eclipse 3.2 version of AJDT is contained in
 				the "ajdt1_4" branch, and the source code for the Eclipse 3.1 version is contained
 				in the "ajdt1_3" branch. Here is a description of the various AJDT
-				plug-ins:
+				plug-ins and features.  Some CVS folders are skipped because they are no longer relevant to the current AJDT implementation.
 			</p>
 
 				<table>
 				
 				 <tr>
-				  <td><strong>Plug-ins under &#8220;AJDT_src&#8221;</strong></td>
+				  <td><strong>Relevant packages under &#8220;AJDT_src&#8221;</strong></td>
 				  <td ><strong>Description</strong></td>
 				 </tr>
 				 
+				 <tr>
+				   <td colspan="2">Plugins</td>
+				 </tr>
 				 <tr>
 				  <td>org.aspectj.ajde</td>
 				  <td>The AspectJ compiler and related classes</td>
@@ -126,22 +135,28 @@
 				 </tr>
 				 
 				 <tr>
+				  <td>org.eclipse.ajdt.mylyn.ui</td>				   
+				  <td>AJDT-Mylyn connector</td>				   
+				 </tr>
+				 
+				 <tr>
+				  <td>org.eclipse.ajdt.mylyn.ui</td>				   
+				  <td>AJDT-Mylyn connector tests</td>				   
+				 </tr>
+				 
+				 <tr>
 				  <td>org.eclipse.ajdt.pde.build</td>				   
 				  <td>Headless build plugin.  This is used by the headless build process to build AJDT.</td>				   
 				 </tr>
 				 
 				 <tr>
 				  <td>org.eclipse.ajdt.source</td>				   
-				  <td>Source code for AJDT plug-ins - only populated by the build process</td>				   
+				  <td>Source code for AJDT plug-ins - only populated by the build process.  Includes visualizer source code</td>				   
 				 </tr>
 				 
 				 <tr>
 				  <td>org.eclipse.ajdt.ui.tests</td>			   
 				  <td>AJDT UI Tests</td>			   
-				 </tr>
-				 <tr>
-				  <td>org.eclipse.ajdt.tests.performance</td>				   
-				  <td>AJDT performance tests</td>				   
 				 </tr>
 				 
 				 <tr>
@@ -150,13 +165,8 @@
 				 </tr>
 				 
 				 <tr>
-				  <td>org.eclipse.aspectj</td>				   
-				  <td>The AspectJ feature</td>				   
-				 </tr>
-				 
-				 <tr>
-				  <td >org.eclipse.aspectj.feature</td>				   
-				  <td>The <em>feature</em> plug-in</td>				   
+				  <td >org.eclipse.aspectj</td>				   
+				  <td>The <em>branding</em> plug-in</td>				   
 				 </tr>
 				 
 				 <tr>
@@ -171,7 +181,12 @@
 				 
 				 <tr>
 				  <td>org.eclipse.contribution.weaving.jdt</td>
-				  <td>JDT Weaving plugin</td>
+				  <td>JDT Weaving plugin.  This plugin contains zips of the Equinox Aspects project that is unzip and added to the update site during the build process.</td>
+				 </tr>
+				 
+				 <tr>
+				  <td>org.eclipse.contribution.weaving.source</td>
+				  <td>JDT Weaving plugin source code</td>
 				 </tr>
 				 
 				 <tr>
@@ -185,6 +200,11 @@
 				 </tr>
 				 
 				 <tr>
+				  <td>org.eclipse.contribution.xref.source</td>				   
+				  <td >The Cross References source code</td>				   
+				 </tr>
+				 
+				 <tr>
 				  <td>org.eclipse.contribution.xref.ui</td>				   
 				  <td>The Cross References UI plug-in</td>				   
 				 </tr>
@@ -195,7 +215,35 @@
 				 </tr>
 				 
 				 <tr>
-				  <td>UpdateSite</td>
+				   <td colspan="2">Features</td>
+				 </tr>
+
+				 <tr>
+				  <td>org.eclipse.ajdt-feature</td>				   
+				  <td>The AJDT feature</td>				   
+				 </tr>
+				 
+				 <tr>
+				  <td>org.eclipse.contribution.weaving-feature</td>				   
+				  <td>Eclipse Weaving service feature (includes JDT Weaving</td>				   
+				 </tr>
+				 
+				 <tr>
+				  <td>org.eclipse.contribution.xref-feature</td>				   
+				  <td>The Cross References feature</td>				   
+				 </tr>
+				 
+				 <tr>
+				  <td >org.eclipse.aspectj.feature-tests</td>				   
+				  <td>The test feature/td>				   
+				 </tr>
+				 
+				 <tr>
+				   <td colspan="2">Other</td>
+				 </tr>
+
+				 <tr>
+				  <td>org.eclipse.ajdt.updatesite</td>
 				  <td>Plug-in used to build an update site</td>
 				 </tr>
 				</table>    
@@ -271,6 +319,7 @@
 			</li>	
 		<a name="q:develop"></a>
 			<li><em>How do I setup an AJDT development environment in Eclipse?</em>
+			
 			    <p>There are three stages to this: building AJDT, running the
 			    correctness tests, and creating an
 			    Eclipse update site. The first two stages are sufficient
@@ -318,7 +367,8 @@
 			      <li>org.eclipse.ajdt.ui,</li>
 			      <li>org.eclipse.contribution.visualiser,</li>
 			      <li>org.eclipse.contribution.xref.core,</li>
-			      <li>org.eclipse.contribution.xref.ui.</li>
+			      <li>org.eclipse.contribution.xref.ui,</li>
+			      <li>org.eclipse.contribution.weaving.jdt.</li>
 			    </ul>
 			
 			    <p>Eclipse will build the projects as you import them, after
@@ -329,6 +379,10 @@
 			     it...</li>
 			
 			     <li>From the run menu select &ldquo;Run...&rdquo;</li>
+			
+				 <li>For Eclipse 3.4, choose <em>AJDT 1.6 Weaving</em></li>
+
+				 <li>For Eclipse 3.5, choose <em>AJDT 1.7 Weaving</em></li>
 			
 			     <li>Select &ldquo;Eclipse Application&rdquo; and click new</li>
 			
@@ -353,6 +407,7 @@
 			     <li>org.eclipse.contribution.visualiser.tests</li>
 			     <li>org.eclipse.contribution.xref.core.tests</li>
 			     <li>org.eclipse.contribution.xref.ui.tests</li>
+			     <li>org.eclipse.contribution.weaving.tests</li>
 			   </ul>
 			
 			   <p>There are two steps to running all of the tests. The
@@ -393,7 +448,7 @@
 				although be warned that you will not be able to do anything else while the tests
 				are running (even switching to the other workbench) as the tests will fail.
                 This is because keyboard events are generated in order to drive the user
-                interface.</p>
+                interface.  <em>Visual tests will only run on Windows.</em></p>
 
 		    </li>
 		
@@ -406,8 +461,8 @@
 				    your workspace as AspectJ projects.
 				    It is easy to add new samples to this plugin, as follows:
 				    <ul>
-				    	<li>Create a jar file containing your source code, and at least one build c
-				    	onfiguration file. Place this
+				    	<li>Create a jar file containing your source code, and at least one build 
+						configuration file. Place this
 				    		in the archive folder of the examples plugin.
 				    	<li>Add an entry to the plugin.xml file for your sample project, by copying 
 				    	one of the existing entries.
