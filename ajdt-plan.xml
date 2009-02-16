@@ -61,17 +61,17 @@ site and feature installation.
 		<milestone date="03/20/2009" milestone="1.6.4">
 			<html:div>Service refresh of AJDT 1.6, made available for EclipseCon</html:div>
 		</milestone>
-		<milestone date="03/20/2009" milestone="1.7 Release Candidate">
-			<html:div>First stable release targeting Eclipse 3.5.  This is meant for early adopters, 
-			specifically for those at EclipseCon.  This version will be largely identical to 1.6.4, 
-			except that it will run on Eclispe 3.5.</html:div>
+		<milestone date="03/20/2009" milestone="1.7 Milestone 1">
+			<html:div>First stable development release targeting Eclipse 3.5.  This is meant for early adopters, 
+			specifically for those at EclipseCon.  This version will be largely similar to 1.6.4, 
+			except that it will run on Eclipse 3.5.</html:div>
 		</milestone>
 		<milestone date="06/20/2009" milestone="1.6.5">
-			<html:div>Service refresh of AJDT 1.6, last planned release targeting Eclipse 3.4</html:div>
+			<html:div>Service refresh of AJDT 1.6.</html:div>
 		</milestone>
 		<milestone date="06/30/2009" milestone="1.7.0">
 			<html:div>First official release targeting Eclipse 3.5. This version will be largely identical to 1.6.5, 
-			except that it will run on Eclispe 3.5.</html:div>
+			except that it will run on Eclipse 3.5.</html:div>
 		</milestone>
 		<postamble>
 			<html:div></html:div>
@@ -125,10 +125,12 @@ site and feature installation.
         no editing support, using LTW can be time consuming and error-prone.  We will
         explore ways to gather and display LTW information to the programmer while editing.
         </html:p>
+        <html:p>
+        </html:p>
 			</description>
-			<committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=split+matching+weaving&amp;product=AJDT&amp;product=AspectJ&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			<committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[plan]+[LTW]&amp;product=AJDT&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
 			</committed>
-			<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[plan]+[LTW]&amp;product=AJDT&amp;target_milestone=1.6.5&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[plan]+[LTW]&amp;product=AJDT&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
 			</proposed>
 		</theme>
 		<theme name="Support for Eclipse 3.5 (Target 1.7 Release Candidate)">
