@@ -87,8 +87,11 @@
 				href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.ajdt/AJDT_src/?root=Tools_Project"> root
 				of the AJDT source tree online</a>.
 				AJDT is organized in subdirectories under org.eclipse.ajdt. The main source
-				tree is in the &#8220;AJDT_src&#8221; subdirectory.
-				The source code for the Eclipse 3.2 version of AJDT is contained in
+				tree is in the &#8220;AJDT_src&#8221; subdirectory.  Currently, the HEAD of this directory contains source code
+				for AJDT 1.6 (for Eclipse 3.4), although this will change to AJDT 1.7 as Eclipse 3.5 moves closer to its final release.  The source code for AJDT 1.7 is in the ajdt1_7 branch.
+			</p><p>
+				Similarly, the source code for the Eclipse 3.3 version of AJDT is contained in the ajdt1_5 branch, 
+				the source code for the Eclipse 3.2 version of AJDT is contained in
 				the "ajdt1_4" branch, and the source code for the Eclipse 3.1 version is contained
 				in the "ajdt1_3" branch. Here is a description of the various AJDT
 				plug-ins and features.  Some CVS folders are skipped because they are no longer relevant to the current AJDT implementation.
@@ -181,12 +184,12 @@
 				 
 				 <tr>
 				  <td>org.eclipse.contribution.weaving.jdt</td>
-				  <td>JDT Weaving plugin.  This plugin contains zips of the Equinox Aspects project that is unzip and added to the update site during the build process.</td>
+				  <td>JDT Weaving plugin.  This plugin contains zips of the Equinox Aspects project that is unzip and added to the update site during the build process.  AJDT 1.6+</td>
 				 </tr>
 				 
 				 <tr>
 				  <td>org.eclipse.contribution.weaving.source</td>
-				  <td>JDT Weaving plugin source code</td>
+				  <td>JDT Weaving plugin source code.  AJDT 1.6+</td>
 				 </tr>
 				 
 				 <tr>
@@ -201,7 +204,7 @@
 				 
 				 <tr>
 				  <td>org.eclipse.contribution.xref.source</td>				   
-				  <td >The Cross References source code</td>				   
+				  <td >The Cross References source code.  AJDT 1.6+</td>				   
 				 </tr>
 				 
 				 <tr>
@@ -225,7 +228,7 @@
 				 
 				 <tr>
 				  <td>org.eclipse.contribution.weaving-feature</td>				   
-				  <td>Eclipse Weaving service feature (includes JDT Weaving</td>				   
+				  <td>Eclipse Weaving service feature (includes JDT Weaving).  AJDT 1.6+</td>				   
 				 </tr>
 				 
 				 <tr>
@@ -243,8 +246,8 @@
 				 </tr>
 
 				 <tr>
-				  <td>org.eclipse.ajdt.updatesite</td>
-				  <td>Plug-in used to build an update site</td>
+				  <td>UpdateSite</td>
+				  <td>Non-Java project used to build an update site</td>
 				 </tr>
 				</table>    
 		    </p>
@@ -256,13 +259,14 @@
 			
 			<li><em>What do the version numbers mean?</em>
 			  <p>Each Eclipse point release has a corresponding AJDT point release.  Eclipse 3.1 
-				requires AJDT 1.3, Eclipse 3.2 requires AJDT 1.4, Eclipse 3.3 requires AJDT 1.5, and 
-				Eclipse 3.4 requires AJDT 1.6.  Future releases are expected to follow the same numbering 
-				system.</p>
+				requires AJDT 1.3, Eclipse 3.2 requires AJDT 1.4, Eclipse 3.3 requires AJDT 1.5, 
+				Eclipse 3.4 requires AJDT 1.6, and Eclipse 3.5 requires AJDT 1.7.  Future releases 
+				are expected to follow the same numbering system.</p>
 				<p>In the CVS repository, each point release of AJDT has its own branch.  To do development on a 
-				particular version, you must check out the appropriate branch.  See <a href="#q:cvs">How can I connect the AJDT CVS repository? </a> 
-				and <a href="#q:cvsbranch">I am looking for the AJDT branch 1.X in the CVS repository, but I can&rsquo;t find it.  
-  			What gives? </a> for more details/p>
+				particular version, you must check out the appropriate branch.  See <a href="#q:cvs">How can 
+				I connect the AJDT CVS repository? </a> 
+				and <a href="#q:cvsbranch">I am looking for the AJDT branch 1.X in the CVS repository, but 
+				I can't find it.  What gives? </a> for more details/p>
 		    </li>
 	
 	    <br><br>
@@ -280,7 +284,7 @@
 			
 			  If you are connecting to the repository from Eclipse, do the following:
 				<ol>
-				<li>Start with a clean workspace under Eclipse 3.2, 3.3, or 3.4
+				<li>Start with a clean workspace under Eclipse 3.3, 3.4, or 3.5
 				<li>Open the CVS Repository Exploring perspective. 
 				<li>Right-click on the CVS Repositories view.
 				<li>Click &ldquo;New&rdquo; &gt; &ldquo;Repository
@@ -296,7 +300,7 @@
 	    <br><br>
 
 		<a name="q:cvsbranch"></a>
-			<li><em>I am looking for the AJDT branch 1.X in the CVS repository, but I can&rsquo;t find it.  
+			<li><em>I am looking for the AJDT branch 1.X in the CVS repository, but I can't find it.  
 					What gives? </em>
 	
 				<p>Each point version of AJDT has its own branch in the CVS repository.  It may not be 
@@ -340,11 +344,13 @@
 			    <p>See <a href="#q:cvs">How can I connect the AJDT CVS repository?</a> for 
 					instructions on how to download the projects from CVS.</p>
 			    
-			    <p>If you are using Eclipse 3.4 you now need to switch to the
-			    &ldquo;ajdt1_6&rdquo; branch in CVS.  See <a href="#q:cvsbranch">
+			    <p>If you are using Eclipse 3.5 you now need to switch to the
+			    &ldquo;ajdt1_7&rdquo; branch in CVS.  See <a href="#q:cvsbranch">
 					I am looking for the AJDT branch 1.X in the CVS repository, but I can&rsquo;t find it.  
   			  What gives? </a> for information on how to
 					discover this branch.</p>
+					
+				<p>Eclipse 3.4 uses HEAD.</p>
 			    
 			    <p>If you are using Eclipse 3.3 you need to switch
 			    to the &ldquo;ajdt1_5&rdquo; branch instead.</p>
@@ -375,7 +381,7 @@
 			    which should you be ready to run the plugins inside Eclipse:</p>
 			
 			   <ul>
-			     <li>Switch to the Java Perspective if you&rsquo;re not already in
+			     <li>Switch to the Java Perspective if you are not already in
 			     it...</li>
 			
 			     <li>From the run menu select &ldquo;Run...&rdquo;</li>
@@ -384,12 +390,16 @@
 
 				 <li>For Eclipse 3.5, choose <em>AJDT 1.7 Weaving</em></li>
 			
-			     <li>Select &ldquo;Eclipse Application&rdquo; and click new</li>
+			     <li>Click &ldquo;Run&rdquo;.  The reason for using predefined launchers is that in order to enable 
+				 JDT Weaving, a custom config.ini is required.</li>
+
+				<li>If weaving is not enabled at startup or if there are any other problems with the runtime workspace, 
+				open up the custom config.ini (org.eclipse.contribution.weaving.jdt/config.ini) and make sure the entries
+				align with your version of Eclipse.  You may need to edit the version number on the <em>osgi.bundles</em>
+				line.</li>
+				
+				<li>If you continue to have problems, please send a message to the mailing list.</em>
 			
-			     <li>Give your launch configuration a name, and click &ldquo;Run&rdquo;</li>
-			
-			     <li>Subsequent runs can simpy use the launch configuration you
-			     just created</li>
 			   </ul>
 			
 			   <h4>Running the correctness tests</h4>
@@ -409,6 +419,20 @@
 			     <li>org.eclipse.contribution.xref.ui.tests</li>
 			     <li>org.eclipse.contribution.weaving.tests</li>
 			   </ul>
+			
+			   <p>Note that since many of these tests require JDT Weaving to be enabled, special launch 
+			 	configurations are provided:</p>
+			
+			   <ul>
+				<li>All Weaving Tests---runs the JDT Weaving tests</li>
+				<li>AllUITests_MaxPermSize---runs the AJDT UI tests</li>
+				<li>AllCoreTests No UI---runs the core tests</li>
+				<li>Some UI Tests---runs a sub-set of the UI tests as specified in the java file SomeUITests.java.  Edit this file to run any sub-set of the UI tests.</li>
+				<li>Some Random Test case---allows you to run any single test case of AJDT.  Edit this launch configuration to specify a project and a test case inside of it.  Useful if you are checking only a single test, but don't want to generate a new, custom launch config for it.</li>
+				
+			   </ul>
+			
+			   <p>If you have any problems with the launch configurations, please send a note to the mailing list.</p>
 			
 			   <p>There are two steps to running all of the tests. The
 			   first is to run the AJDT core specific tests found in
