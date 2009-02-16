@@ -433,27 +433,7 @@
 			   </ul>
 			
 			   <p>If you have any problems with the launch configurations, please send a note to the mailing list.</p>
-			
-			   <p>There are two steps to running all of the tests. The
-			   first is to run the AJDT core specific tests found in
-			   org.eclipse.ajdt.core.tests, and the second is to run
-			   the remaining tests.</p>
-			
-			   <p>To run the AJDT core specific tests expand the
-			   org.eclipse.ajdt.core.tests project, then the src folder, then the
-			   org.eclipse.ajdt.core.tests package. Now select the AllCoreTests.java file,
-			   right-click and select &ldquo;Run As&rdquo; &gt; &ldquo;JUnit Plug-in Test&rdquo;. 
-			   Progress and test results can be observed from the JUnit
-			   Eclipse view.</p>
-			   
-			   <p>You can then run all of the remaining tests by expanding the
-			   org.eclipse.ajdt.ui.tests project, then the src folder, then the
-			   org.eclipse.ajdt.ui.tests package. Now select the AllUITests.java file,
-			   right-click and select &ldquo;Run As&rdquo; &gt; &ldquo;JUnit Plug-in Test&rdquo;. A new
-			   runtime workbench should then be launched and the tests run inside
-			   that. Progress and test results can be observed from the JUnit
-			   Eclipse view.</p>
-			
+						
 			   <p>Now you&srquo;re ready to start enhancing the plugins by adding to or
 			   extending the code in your projects - just use run (or debug) to
 			   try out your changes. When you have a patch to submit to the
