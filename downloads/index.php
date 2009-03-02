@@ -139,6 +139,7 @@ function ListDevBuilds($dir){
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 	
+	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update");
 	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update");
 	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving");
 	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update");
@@ -260,7 +261,7 @@ of /technology, since AJDT become a Tools project.</p>
 			What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 			<table class="tasklist" width="80%">
 			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.4.20090106083800</td>
+			    <th align="left">AspectJ Version:</th><td>1.6.4.20090227125800</td>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
@@ -303,7 +304,32 @@ of /technology, since AJDT become a Tools project.</p>
     </ul>
     </div>
 
-
+	<div class="homeitem3col">
+	<a name="dev1.7"></a>
+	<h3>Development builds for Eclipse 3.5</h3>
+	<ul>
+		<li>
+			AJDT 1.7 dev builds for Eclipse 3.5
+			<table class="tasklist" width="80%">
+			  <tr>
+			    <th align="left">AspectJ Version:</th><td>1.6.4.20090227125800</td>
+			  </tr>
+			  <tr>
+			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+			    <td><code>http://download.eclipse.org/tools/ajdt/35/dev/update</code></td>
+			  </tr>
+			  <tr>
+			    <th align="left">Zip file:</th>
+			    <td><a href="#35zips">See below</a></td>
+			  </tr>	  
+			</table>
+			We recommend using the update site to install AJDT.  However, it is still possible
+			to install from a zip file.
+			<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">See here</a>
+		    for how to do this.
+		</li>
+	</ul>
+	</div>
 
 	<div class="homeitem3col">
 	<a name="1.5"></a>
@@ -620,6 +646,24 @@ of /technology, since AJDT become a Tools project.</p>
 
 	<ul>
 	
+		<li>
+			<a name="35zips"></a>Eclipse 3.5 builds
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/tools/ajdt/35/dev/update</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Zip&nbsp;file</th>
+    			<th>Build&nbsp;Date</th>
+    			<th>Build&nbsp;Report</th>
+    			<th>AspectJ&nbsp;Version</th>
+  			</tr>
+$builds35
+			</table>
+			</p>
+		</li>
+
 		<li>
 			<a name="34zips"></a>Eclipse 3.4 builds (<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">JDT weaving</a>)
 			<br>Update Site URL:<br>

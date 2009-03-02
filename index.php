@@ -63,6 +63,14 @@
 		<div class="homeitem3col">
 			<h3>News and Releases</h3>
 			<ul>
+				 <li>
+				 		Come check out our blogs for <a href="http://contraptionsforprogramming.blogspot.com/">AJDT</a> 
+				 		and <a href="http://andrewclement.blogspot.com/">AspectJ</a>!
+				 </li>
+				 <li>
+				 	  Pre-release of AJDT 1.7 (for Eclispe 3.5) is available.  This build is for people who require Eclipse 3.5
+				 	  and AJDT.  See the <a href="downloads/">downloads page</a> for installation instructions.<span class="dates">posted 03-02-09</span>
+				 </li>
 			   <li>
 			     AJDT 1.6.3 is released!  See the <a href="downloads/">downloads page</a> for installation instructions.
 			     <br><span class="dates">posted 01-27-09</span>
