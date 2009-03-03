@@ -63,12 +63,19 @@
 		<div class="homeitem3col">
 			<h3>News and Releases</h3>
 			<ul>
+				<li>
+				 		<img src="images/new.gif" width="11" height="11">One of the most respected books on AspectJ, 
+				    <em><a href="http://manning.com/laddad2/">AspectJ in Action, Second Edition</a></em> by Ramnivas Laddad
+				    will be available March 2009.
+				</li>
 				 <li>
-				 		Come check out our blogs for <a href="http://contraptionsforprogramming.blogspot.com/">AJDT</a> 
+				 		<img src="images/new.gif" width="11" height="11">
+			      Come check out our blogs for <a href="http://contraptionsforprogramming.blogspot.com/">AJDT</a> 
 				 		and <a href="http://andrewclement.blogspot.com/">AspectJ</a>!
 				 </li>
 				 <li>
-				 	  Pre-release of AJDT 1.7 (for Eclispe 3.5) is available.  This build is for people who require Eclipse 3.5
+				 	  <img src="images/new.gif" width="11" height="11">
+			      Pre-release of AJDT 1.7 (for Eclispe 3.5) is available.  This build is for people who require Eclipse 3.5
 				 	  and AJDT.  See the <a href="downloads/">downloads page</a> for installation instructions.<span class="dates">posted 03-02-09</span>
 				 </li>
 			   <li>
@@ -76,7 +83,6 @@
 			     <br><span class="dates">posted 01-27-09</span>
 			   </li>
 			   <li>
-			     <img src="images/new.gif" width="11" height="11">
 			     AJDT is at <a href="http://www.eclipsecon.org/2009/" target="_blank">EclipseCon</a>! 
 			     Come see our talk: <a href="http://www.eclipsecon.org/2009/sessions?id=648">Aspects Everywhere: 
 			     Using Equinox Aspects to Provide Language Developers with Deep Eclipse Integration</a>
@@ -198,8 +204,13 @@
 		</div>
 				
 		<div class="homeitem">
-		<h3>Articles</h3>
+		<h3>Articles and Books</h3>
 			<ul>
+			<li>
+			    <a href="http://manning.com/laddad2/">AspectJ in Action, Second Edition</a><br>
+					March 2009<br>
+					by Ramnivas Laddad
+			</li>
 			  <li>
 			    <a href="http://www.infoq.com/articles/aspectj-with-ajdt">
        			InfoQ article: Making AspectJ development easier with AJDT</a>
