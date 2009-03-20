@@ -171,6 +171,35 @@ of /technology, since AJDT become a Tools project.</p>
 	<a name="1.6"></a>
 	<h3>Release builds for Eclipse 3.4</h3>
 	<ul>
+	
+	<li>
+		AJDT 1.6.4 builds for Eclipse 3.4 <em>with JDT weaving</em><br>
+		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
+		<table class="tasklist" width="80%">
+		  <tr>
+		    <th align="left">Release Date:</th><td>March 20, 2009</td>
+		  </tr>
+		  <tr>
+		    <th align="left">AspectJ Version:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/dev/aspectj-1.6.4-20090304172355.jar">1.6.4.20090304172355</a></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+		    <td><code>http://download.eclipse.org/tools/ajdt/34/update</code></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Zip file:</th>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_1.6.4_for_eclipse_3.4.zip">ajdt_1.6.4_for_eclipse_3.4.zip</a></td>
+		  </tr>	  
+		    <tr>
+		    <th align="left">List of bugs fixed for this release: <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AJDT&target_milestone=1.6.4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">AJDT</a>, <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&target_milestone=1.6.4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">AspectJ</a></td>
+		  </tr>
+		</table>
+		We recommend using the update site to install AJDT.  However, it is still possible
+		to install from a zip file.
+		<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">See here</a>
+	    for how to do this.
+	</li>
+	
 
 		<li>
 			AJDT 1.6.3 builds for Eclipse 3.4 <em>with JDT weaving</em><br>
@@ -181,10 +210,6 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">AspectJ Version:</th><td>1.6.4.20090106083800</td>
-			  </tr>
-			  <tr>
-			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/34/update</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
