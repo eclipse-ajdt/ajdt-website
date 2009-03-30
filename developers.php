@@ -420,7 +420,7 @@
 			     <li>org.eclipse.contribution.weaving.tests</li>
 			   </ul>
 			
-			   <p>Note that since many of these tests require JDT Weaving to be enabled, special launch 
+			   <p>Note that since many of these tests will only pass if JDT Weaving to be enabled, special launch 
 			 	configurations are provided:</p>
 			
 			   <ul>
@@ -430,10 +430,24 @@
 				<li>Some UI Tests---runs a sub-set of the UI tests as specified in the java file SomeUITests.java.  Edit this file to run any sub-set of the UI tests.</li>
 				<li>Some Random Test case---allows you to run any single test case of AJDT.  Edit this launch configuration to specify a project and a test case inside of it.  Useful if you are checking only a single test, but don't want to generate a new, custom launch config for it.</li>
 				
-			   </ul>
+			  </ul>
 			
-			   <p>If you have any problems with the launch configurations, please send a note to the mailing list.</p>
-						
+			  <p>If you have any problems with the launch configurations, please send a note to the mailing list.</p>
+				
+				
+			  <h4>Trouble Shooting</h4>
+			  <p>
+				If you are having problems starting your runtime workspace or running the tests, specifically, if Eclipse is in an infinite restart loop (see (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=235006">Bug 235006</a>), then try the following:
+				
+				<ol>
+					<li>Edit org.eclipse.contribution.weaving.jdt/config.ini and comment the line: osgi.framework.extensions=org.eclipse.equinox.weaving.hook</li>
+					<li>Run Eclipse (this will run Eclipse with JDT Weaving disabled).  Some tests will fail and some functionality will not work, but it is possible to test some things in this mode.</li>
+					<li>Shut down Eclipse</li>
+					<li>Uncomment the line from config.ini</li>
+					<li>Restart Eclipse</li>
+				</ol>
+			  </p>
+			
 			   <p>Now you&srquo;re ready to start enhancing the plugins by adding to or
 			   extending the code in your projects - just use run (or debug) to
 			   try out your changes. When you have a patch to submit to the
@@ -442,18 +456,6 @@
 			   also be run, and new tests written to accompany fixes or new
 			   features.</p>
 			
-			   <h4>Running the ui visual tests</h4>
-			
-				<p>Along with the ui tests in the org.eclipse.ajdt.ui.tests project,
-				there are visual ui tests in the org.eclipse.ajdt.ui.visual.tests project.
-				Select the AllVisualTests.java file, right-click and select &ldquo;Run As&rdquo; &gt; 
-				&ldquo;JUnit Plug-in Test&rdquo;.
-				A new runtime work bench will launch and the tests will run inside of that; 
-				although be warned that you will not be able to do anything else while the tests
-				are running (even switching to the other workbench) as the tests will fail.
-                This is because keyboard events are generated in order to drive the user
-                interface.  <em>Visual tests will only run on Windows.</em></p>
-
 		    </li>
 		
 		<a name="q:packaging"></a>
