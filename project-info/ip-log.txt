@@ -1,11 +1,49 @@
 Committers
-mchapman,hawkins,sjanuary,mkersten,aclement,acolyer,jwaterh
+aeisenberg,mchapman,hawkins,sjanuary,mkersten,aclement,acolyer
 
 Developers
 
-For AJDT 1.6:
+For AJDT 3.0
 component,          		bug#,       name,           size,       committer,          description
 none
+
+For AJDT 2.0
+component,          		bug#,       name,           size,       committer,          description
+org.eclipse.ajdt.core,		271605,		Neale Upstone, 		<10,		aeisenberg,		[patch] NPE on exiting workbench
+
+
+For AJDT 1.6:
+component,          		bug#,       name,           size,       committer,          description
+org.eclipse.ajdt.core,		43711, 		Andrew Eisenberg,		<100,		aclement,		failure to clean the output folder
+org.eclipse.ajdt.ui,		70774,		Andrew Eisenberg, 		<100,		aclement,		Possible changes for incremental compilation behaviour in the UI
+org.eclipse.ajdt.ui,		76146,		Andrew Eisenberg, 		<100,		aclement,		NPE using quickfix in Aspect opened with java editor
+org.eclipse.ajdt.ui,		93316,		Andrew Eisenberg, 		<10,		aclement,		Add import glitch
+org.eclipse.ajdt.ui,		97080,		Andrew Eisenberg, 		<100,		aclement,		AJDT forces open Plugin.xml Editor / Build when enabling Aspect Nature
+org.eclipse.ajdt.core,		101489,		Andrew Eisenberg, 		<500,		aclement,		[build] Resource files not always copied over to output folder in RAD
+org.eclipse.ajdt.core,		115828,		Andrew Eisenberg, 		<100,		aclement,		problem deleting resources
+org.eclipse.ajdt.ui,		119853,		Andrew Eisenberg, 		<10,		aclement,		Generate AJDoc wizard doesn't work on the Mac
+org.eclipse.ajdt.core,		121810,		Andrew Eisenberg, 		<500,		aclement,		Dependent Project ITD not Picked Up
+org.eclipse.ajdt.ui,		151730,		Andrew Eisenberg, 		<10,		aclement,		automatically show the Crosscutting Comparison in relevant perspectives
+org.eclipse.ajdt.ui,		159867,		Andrew Eisenberg, 		<100,		aclement,		[editor] [navigation] Unable to navigate from matches declare into project on aspectpath
+org.eclipse.ajdt.core,		166210,		Andrew Eisenberg, 		<100,		aclement,		Duplicate .aj files in Project Explorer
+org.eclipse.ajdt.core,		170043,		Andrew Eisenberg, 		<100,		aclement,		[build] Removing AspectJ nature shouldn't always remove aspectjrt.jar from libaries list
+org.eclipse.ajdt.ui,		215518,		Andrew Eisenberg, 		<100,		aclement,		NullPointerException during export
+org.eclipse.ajdt.ui,		233777,		Andrew Eisenberg, 		<1000,		aclement,		AspectJ-Mylyn Structure and UI Bridges
+org.eclipse.ajdt.ui,		233781,		Andrew Eisenberg, 		<100,		aclement,		Various fixes for test cases
+org.eclipse.ajdt.ui,		235204,		Andrew Eisenberg, 		<100,		aclement,		Advice markers not placed properly on recursive calls
+org.eclipse.ajdt.core,		237979,		Andrew Eisenberg, 		<1000,		aclement,		Support classpath containers for AspectJ specific paths
+org.eclipse.ajdt.ui,		238032,		Andrew Eisenberg, 		<100,		aclement,		Errors on projects from declare error is not preventing a launch
+org.eclipse.ajdt.build,		238699,		Andrew Eisenberg, 		<1000,		aclement,		P2 metadata is causing problems with the update site
+org.eclipse.ajdt.ui,		239062,		Andrew Eisenberg, 		<1000,		aclement,		[reactivate34] Export Jar
+org.eclipse.ajdt.ui,		240234,		Andrew Eisenberg, 		<100,		aclement,		[ajdoc] Generate AJDoc command fails on projects with large number of files
+org.eclipse.ajdt.ui and org.eclipse.ajdt.core,		240689,		<500,		Andrew Eisenberg, 		aclement,		Bug fixes and general refactoring for AJDT 1.5.3 release
+org.eclipse.ajdt.build,		244197,		Andrew Eisenberg, 		<1000,		aclement,		Updating build server to use headless builds on Eclipse 3.4
+org.eclipse.ajdt.core,		244300,		Andrew Eisenberg, 		<100,		aclement,		[build] Error when project dependency has output in project root
+org.eclipse.ajdt.ui,		244735,		Andrew Eisenberg, 		<100,		aclement,		An internal error occurred during: Export Features.
+org.eclipse.ajdt.ui,		248677,		Andrew Eisenberg, 		<10,		aclement,		Mylyn AJDT bridge contributes Focus Editor on Active Task button to editor toolbars
+org.eclipse.ajdt.core,		249881,		Andrew Eisenberg, 		<1000,		aclement,		[incremental] Incremental compilation optimizations
+org.eclipse.ajdt.ui,		251111,		Andrew Eisenberg, 		<100,		aclement,		Change in aspect path not being recorded from the project properties page
+org.eclipse.ajdt.core,		264008,		Johan Fabry, 		<100,		aeisenberg,		Getting pointcut information from AdviceElement
 
 For AJDT 1.5:
 component,          		bug#,       name,           size,       committer,          description
@@ -62,3 +100,7 @@ Ipzilla CQ Reference - https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2245
 Apache 1.1 software license, modified
 
 Eclipse JDT Compiler 3.3 - AspectJ is based on an extended form of this compiler (http://eclipse.org)
+
+Equinox Aspects 1.0
+http://dev.eclipse.org/ipzilla/show_bug.cgi?id=3237
+EPL 
