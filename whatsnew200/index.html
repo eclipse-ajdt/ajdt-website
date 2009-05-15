@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<link rel="STYLESHEET" href="http://www.eclipse.org/default_style.css" charset="ISO-8859-1" type="text/css">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>AJDT 2.0.0 - New and Noteworthy</title>
+
+</head>
+<body>
+<h1>AJDT 2.0.0 - New and Noteworthy</h1>
+
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td valign="top"><b>Overview<br>and new versioning scheme</b></td>
+<td valign="top">
+<b>Today, we introduce AJDT 2.0.</b>  Over the past year, there have been many changes to this project.  
+Some have been functional: better intertype declaration support, Java search support for Aspects, Aspect-aware reconciling, etc.
+Some have been non-functional: faster and more robust incremental builds, better inter-project dependency analysis.  Some have been
+structural and API: a new, more compact, and incrementally updated crosscutting model.  Some have been fundamental: using AspectJ to weave 
+into JDT to provide better Eclipse integration.  
+<br>
+<br>
+All these changes so far have been crammed into 1.6 maintenance releases due to 
+the tradition of pegging AJDT minor versions (e.g., <em>1.6</em>) to Eclipse minor versions (e.g., <em>3.4</em>).  We now believe that
+this tradition has outlived its usefulness and is proving to be more confusing than helpful for users.  For the current and future
+releases of AJDT, we have decided to move towards a more common use of versioning based on feature and API changes.
+<br>
+<br>
+From now on, changes to the micro part of the version number will indicate only trivial functionality changes and bug fixes.  
+Changes to the minor part of version number will indicate that no major functionality or API has been introduced or changed.
+And changes to the major part of the version number will indicate that the new version has some significant enhancements
+in it.
+<br>
+<br>
+AJDT releases targeting different Eclipse versions will use the same <code>major.minor.micro</code> scheme, but
+there will be a noticeable difference in the qualifier.  For example:
+<table>
+<tr>
+<td>Release for AJDT targeting Eclipse 3.5:</td><td>2.0.0_e35x2009XXXXXX</td>
+</tr>
+<tr>
+<td>Release for AJDT targeting Eclipse 3.4:</td><td>2.0.0_e34x2009XXXXXX</td>
+</tr>
+</table>
+
+For the first 6 months after a new release of Eclipse, we will be releasing maintenance versions of AJDT 
+targeting the previous versino of Eclipse.  And after that we will only do so if there is a major bug found
+or if there is significant community desire to do so.  Also, around this time, we will start to produce 
+development builds targeting the next version of Eclipse (e.g., <em>e36x</em>)
+<br>
+<br>
+So this means that AJDT 1.6.5 has been renamed AJDT 2.0.0_e34x and AJDT 1.7.0 has been renamed AJDT 2.0.0_e35x.  Although this is 
+potentially confusing in the short term, we believe in the long term, this will be more informative and users will be able to 
+read the version and immediately know which Eclipse version it targets and also what feature level it contains. 
+<br>
+<br>
+With that important bit of information explained, below are the bug fixes and new features introduced in this release since AJDT 1.6.4. 
+</td>
+
+<tr>
+<td colspan="2">
+<hr></td></tr>
+<tr>
+<td valign="top"><b>Crosscutting support for ITDs on the inpath</b></td>
+<td>
+AJDT now shows ITD and declare parents relationships that are targeting elements on the inpath.  For example, 
+below are a simple aspect and a simple class that is on the inpath.  The inpath relationships now appear 
+in the gutter marker and in the X Refs view (<em>C</em> is a class that is on the inpath). 
+<br/>
+<br/>
+<img src="inpath_rels.gif" border="1"/>
+<br/>
+<br/>
+Note that we do not support displaying advice relationships on the inpath, nor do we show the inverse relationship
+on the inpath.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=273086">Bug 273086</a> and
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=273087">Bug 273087</a> respectively.
+
+<p>More information can be found in <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=271269">Bug 271269</a>.</p>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td></tr>
+<tr>
+<td valign="top"><b>Linked source folders</b></td>
+<td>
+AJDT now supports linked source folders.  In the image below, you can see that crosscutting relationships 
+can apply across linked folders.  Here, the <em>fromMyDesktop</em> folder is a linked source folder
+to the file system directory <em>/Users/andrew/Desktop/link</em>.  
+<br/>
+<br/>
+<img src="linked.gif" border="1"/>
+<br/>
+<br/>
+Note that we typically recommend using linked source folders instead of inpath relationships where 
+possible.  The reason is that the AspectJ compiler can perform better incremental analysis on linked
+folders than it can with inpath folders.  This is because linked folders are considered part of the
+source of project and the compiler stores more specific state on these kinds of folders.
+<br/>
+<br/>
+More information can be found in <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=253555">Bug 253555</a>
+and <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=253555">Bug 275903</a>.
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td></tr>
+<tr>
+<td valign="top"><b>AJDT Event Trace enhancements</b></td>
+<td>
+
+It is now possible to print the hierarchies and relationship maps of all projects
+in the workspace into the event trace view.  This information can be accessed by clicking on the this button
+in the AJDT Event Trace view:<br>
+<img src="event_trace.gif" border="1"/><br>
+in the AJDT Event Trace view.
+<br/>
+<br/>
+For example, the hierarchy and relationship map for the <em>DeclareParents on Inpath</em> project displayed above is:
+
+<pre>
+9:2:18 Printing crosscutting model for all AspectJ projects in the workspace
+9:2:18 
+9:2:18 --------------------------------------
+9:2:18 Printing crosscutting model for DeclareParents on Inpath
+9:2:18 
+Hierarchy:
+=DeclareParents on Inpath/src
+  =DeclareParents on Inpath/src<
+    =DeclareParents on Inpath/src<*A.aj
+      =DeclareParents on Inpath/src<*A.aj#
+      =DeclareParents on Inpath/src<*A.aj}A
+        =DeclareParents on Inpath/src<*A.aj}A[E
+        =DeclareParents on Inpath/src<*A.aj}A`declare parents
+        =DeclareParents on Inpath/src<*A.aj}A)C.x
+
+Relationship map:
+=DeclareParents on Inpath/src<*A.aj}A)C.x ::
+	=DeclareParents on Inpath/src<*A.aj}A)C.x --declared on--> [=DeclareParents on Inpath/,<(C.class[C]
+=DeclareParents on Inpath/,<(C.class[C ::
+	=DeclareParents on Inpath/,<(C.class[C --aspect declarations--> 
+	[=DeclareParents on Inpath/binaries<*AnotherAspect.aj}AnotherAspect`declare parents, 
+	=DeclareParents on Inpath/src<*A.aj}A`declare parents, =DeclareParents on Inpath/src<*A.aj}A)C.x]
+=DeclareParents on Inpath/src<*A.aj}A`declare parents ::
+	=DeclareParents on Inpath/src<*A.aj}A`declare parents --declared on--> [=DeclareParents on Inpath/,<(C.class[C]
+
+9:2:18 --------------------------------------
+</pre>
+
+The information spit out here corresponds to internal <em>handles</em> used by AspectJ and AJDT to 
+describe the crosscutting relationships in a project.  These handles correspond to program elements 
+that represent things like advice declarations, method declarations, source folders, etc.
+Although this feature is meant for diagnostic purposes, 
+it can be used to introspect your project and help you understand a little more about AJDT and AspectJ internals.
+<b>Warning:</b> the crosscutting model can be large and dump significant amount of text to the Event Trace view.
+<br/>
+<br/>
+More information can be found in <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=271668">Bug 271668</a>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td></tr>
+<tr>
+<td valign="top"><b>Better support for AJDT and Maven</b></td>
+<td>
+In the past, users of Maven and AJDT who are not using the m2eclipse
+maven integration plugin for Eclipse could not specify Aspect path elements
+through the pom.xml.  Additionally, the projects would often be erroneously 
+configured with the an extra <em>javaBuilder</em>.
+
+AJDT 1.6.5 now addresses both of these issues in a generic way.  To specify aspects libraries to go 
+on the aspect path from within a pom.xml, add the following:
+
+<pre>
+&lt;plugin&gt;
+  &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+  &lt;artifactId&gt;maven-eclipse-plugin&lt;/artifactId&gt;
+  &lt;version&gt;2.5.1&lt;/version&gt;
+  &lt;configuration&gt;
+    &lt;additionalBuildcommands&gt; 
+    &lt;buildCommand&gt;
+      &lt;name&gt;org.eclipse.ajdt.core.ajbuilder&lt;/name&gt; 
+      &lt;arguments&gt;
+        &lt;aspectPath&gt;org.springframework.aspects,org.springframework.aop&lt;/aspectPath&gt; 
+      &lt;/arguments&gt;
+    &lt;/buildCommand&gt; 
+    &lt;/additionalBuildcommands&gt;
+    &lt;additionalProjectnatures&gt;
+      &lt;projectnature&gt;org.eclipse.ajdt.ui.ajnature&lt;/projectnature&gt;
+    &lt;/additionalProjectnatures&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
+</pre>
+
+Inside the <em>arguments</em> element, specify a comma separated list of <em>aspectPath</em> elements.  The
+builder then looks for any jar file or binary folder on the raw classpath that contains the specified string.  So,
+the above would add any of <em>org.springframework.aspects_2.5.1.jar</em>, <em>org.springframework.aspects_3.0.0.jar</em>,
+or <em>org.springframework.aop_2.5.1.jar</em> onto the aspect path of the project if the jar files already 
+exist on the classpath.
+<br/>
+<br/>
+<b>Note the use of version 2.5.1.</b>  Unfortunately, version 2.6 of the Maven-Eclipse-Plugin <a href=http://jira.codehaus.org/browse/MECLIPSE-538">
+does not support AJDT</a>.  Version 2.7 should fix this problem.
+<br/>
+<br/>
+More information can be found in <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=270552">Bug 270552</a>, 
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=270554">Bug 270554</a>, 
+and <a href=http://jira.codehaus.org/browse/MECLIPSE-538">MECLIPSE-538</a>.
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td></tr>
+<tr>
+<td valign="top"><b>Scoping for ITDs in content assist</b></td>
+<td>
+Intertype declarations will now only appear in content assist if they are properly accessible in the current
+scope.  For example, the following two editors show a <em>Point</em> class and an aspect that 
+inserts ITDs into it.  In this first image, you can see that the content assist in the <em>PointSetters</em> aspect 
+correctly shows the <em>logger</em> field, which is private to <em>PointSetters</em>:
+<br/>
+<br/>
+<img src="content_assist1.gif" border="1" />
+<br/>
+<br/>
+In this second image, the content assist inside of <em>Point</em> does not show the <em>logger</em> field, but still shows
+the <em>getX</em> and <em>getY</em> methods.
+<br/>
+<br/>
+<img src="content_assist2.gif" border="1" />
+<br/>
+<br/>
+More information can be found in <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=272547">Bug 272547</a>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>ITD Hyperlinking</b></td>
+<td>
+... yet to do ...
+</td>
+
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Bug Fixes</b></td>
+<td>
+Over 40 bugs have been resolved for 2.0.0 since 1.6.4. 
+See <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AJDT&target_milestone=2.0.0&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">Bugzilla</a> 
+for a complete list of bugs.
+</td>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Thanks!</b></td>
+<td>
+	Thanks to those of you who have submitted patches, bug reports, and contributed to the mailing list for this release.  
+	We appreciate your help.
+	<br/>
+	<br/>
+	Also, AJDT is spreading. The Scala-Eclipse plugin 
+	<a href="http://www.scala-lang.org/node/1493	">is now using JDT Weaving</a> to make its JDT integration deeper and more robust. 
+</td>
+
+
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+<tr>
+<td valign="top"><b>Previous Releases</b></td>
+<td>
+See <a href="http://www.eclipse.org/ajdt/whatsnew164/index.html">here</a> 
+for information on the new features in AJDT 1.6.4.
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
