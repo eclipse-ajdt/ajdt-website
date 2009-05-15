@@ -1,11 +1,10 @@
+Please see the automatically generated IP Log at:
+http://www.eclipse.org/projects/ip_log.php?projectid=tools.ajdt
+
 Committers
 aeisenberg,mchapman,hawkins,sjanuary,mkersten,aclement,acolyer
 
 Developers
-
-For AJDT 3.0
-component,          		bug#,       name,           size,       committer,          description
-none
 
 For AJDT 2.0
 component,          		bug#,       name,           size,       committer,          description

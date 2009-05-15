@@ -17,17 +17,21 @@
 
 	<getting-started url="/ajdt/faq.php"/>
 
-	<ip-log url="http://www.eclipse.org/ajdt/project-info/ip-log.txt"/>
+	<ip-log url="http://www.eclipse.org/projects/ip_log.php?projectid=tools.ajdt"/>
 	
 	<mailing-lists>
 		<list name="ajdt-dev"/>
+		<list name="aspectj-dev"/>
+		<list name="aspectj-users"/>
 	</mailing-lists>
 	
-	<project-plan url="/ajdt/plans.php"/>
+	<project-plan url="http://www.eclipse.org/projects/ip_log.php?projectid=tools.ajdt"/>
 	
 	<releases>
-		<release status="completed" name="1.3" date="20/12/2005" download="/ajdt/downloads/"/>
+		<release status="completed" name="1.3" date="12/2005" download="/ajdt/downloads/"/>
 		<release status="completed" name="1.4.1" date="11/2006" download="/ajdt/downloads/"/>
-		<release status="planned" name="1.5" date="06/2007" plan="/ajdt/plans.php"/>
+		<release status="completed" name="1.5" date="06/2007" download="/ajdt/downloads/"/>
+		<release status="completed" name="1.6" date="06/2008" download="/ajdt/downloads/"/>
+		<release status="planned" name="2.0" date="06/2009" plan="/ajdt/whatsnew200/"/>
 	</releases>
 </project>

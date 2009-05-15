@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+<plan plan-format="1.0" name="Project Name" xmlns="http://www.eclipse.org/project/plan"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<release projectid="tools.ajdt" version="1.6" />
+	<introduction>
+		<html:div>
+			<html:p>
+				As of version 2.0.0, AJDT is using a new versioning scheme, which is
+				more aligned with traditional notions of major/minor/maintenance
+				releases. A maintenance release implies trivial functionality and
+				bug fixes have been added. A minor release implies some
+				significant functionality and features introduced, but API is largely backwards
+				compatible. A major release implies
+				breaking API changes.
+
+				AJDT major versions match up with Eclipse versions. The current Eclipse
+				version is 3.4, which matches to AJDT 1.6.
+				Eclipse 3.3 matches AJDT 1.5, and Eclipse 3.5 will match AJDT 1.7.
+				The AJDT project releases service refreshes to that major version every
+				few months. During 2008 there
+				have been 1.5.2, 1.5.3 (the last scheduled version targeting Eclipse
+				3.3), 1.6.0 (the first version targeting Eclipse 3.4),
+				1.6.1, and 1.6.2. In 2009, there has been 1.6.3, 1.6.4, and 2.0.0
+				releases.
+</html:p>
+			<html:p>
+				There are two streams for the 2.0.0 release: one targeting Eclipse
+				3.4 (this stream uses a version qualifier starting with
+				<html:em>_e34x</html:em>
+				) and one targeting Eclipse 3.5 (using a version qualifier starting
+				with
+				<html:em>_e35x</html:em>
+				.
+			</html:p>
+			<html:p>
+				We tend to release on an approximately 3 month schedule, excluding the
+				recent exception of AJDT 1.6.3. Most
+				of these releases will be maintenance releases, with perhaps one minor
+				release a year. There are no
+				plans for anothe major release in the near future.
+</html:p>
+			<html:p>
+				AJDT always maintains that HEAD will build clean and pass all the tests
+				we have (currently over 500).
+				This is almost 200 more tests than six months ago. The test suite is now
+				in fairly solid shape and tests
+				all major parts of AJDT. This means the development builds created from
+				HEAD after every commit are typically
+				at least as good as the previous build.
+</html:p>
+		</html:div>
+	</introduction>
+	<release_deliverables>
+		<html:div>
+			<html:p>
+				AJDT releases are available from project update sites. There are
+				different sites for each
+				minor release see
+				<html:a href="http://eclipse.org/ajdt/downloads">the project download page</html:a>
+				for a list of the update sites. Also available are zip files that
+				contain all of the project plugins and
+				are meant to be installed in the eclipse installation's
+				<html:em>dropins</html:em>
+				folder.
+			</html:p>
+			<html:p>
+				AJDT includes 6 plugins from two other EPL Eclipse.org projects:
+				<html:ul>
+					<html:li>
+						The
+						<html:a
+							href="http://www.eclipse.org/projects/project-plan.php?projectid=tools.aspectj">AspectJ project</html:a>
+						contributes three plugins.
+						These plugins are
+						<html:em>org.aspectj.runtime</html:em>
+						, which contains the AspectJ runtime,
+						<html:em>org.aspectj.ajde</html:em>
+						, which contains AspectJ support for integrating with a
+						development environment,
+						and
+						<html:em>org.aspectj.weaver</html:em>
+						, which contains the AspectJ weaver and compiler.
+					</html:li>
+
+					<html:li>
+						The
+						<html:a
+							href="http://www.eclipse.org/equinox/incubator/aspects/index.php">Equinox Aspects project</html:a>
+						, part of the Eqinox Incubator also contributes three plugins.
+						These are
+						<html:em>org.eclipse.equinox.weaving.aspectj
+						</html:em>
+						, which contains the equinox weaving service,
+						<html:em>org.eclipse.equinox.weaving.hook
+						</html:em>
+						, which contains the OSGi framework extension for the weaving
+						service to plug in, and
+						<html:em>org.eclipse.equinox.weaving.source
+						</html:em>
+						, which contains Equinox Aspects source code.
+					</html:li>
+				</html:ul>
+			</html:p>
+		</html:div>
+	</release_deliverables>
+	<release_milestones>
+		<preamble>
+		</preamble>
+		<milestone date="06/30/2009" milestone="2.0.0">
+			<html:div>First release that targets both Eclipse 3.4 stream and
+				Eclipse 3.5 stream.</html:div>
+		</milestone>
+		<milestone date="09/20/2009" milestone="2.0.1">
+			<html:div>Service refresh of AJDT 2.0. Streams for both 3.4
+				and 3.5 will be released.</html:div>
+		</milestone>
+		<milestone date="12/20/2009" milestone="2.0.2">
+			<html:div>Service refresh of AJDT 2.0. Streams for both 3.4
+				and 3.5 will be released.</html:div>
+		</milestone>
+		<milestone date="03/20/2010" milestone="2.0.3">
+			<html:div>Service refresh of AJDT 2.0. Only 3.5 stream will be
+				released unless there is
+				significant community desiire for a 3.4 stream.</html:div>
+		</milestone>
+		<postamble>
+		</postamble>
+	</release_milestones>
+	<target_environments>
+		<html:div>AJDT 2.0.0_e34x requires Eclipse 3.4 and AJDT 2.0.0_e35x
+			will requires Eclipse 3.5.
+			As such, AJDT has the same JRE requirements as Eclipse.</html:div>
+		<internationalization>
+			<html:div>English language bundles are available for many AJDT
+				messages, but they have not been translated.
+          </html:div>
+		</internationalization>
+	</target_environments>
+	<compatibility_with_previous_releases>
+		<html:div>
+			Each version of AJDT will only run on the version of Eclipse that is
+			specified in its qualifier (e.g.,
+			<html:em>_e34x</html:em>
+			or
+			<html:em>_e35x. However, we will maintain API compatibility
+				across minor releases and streams.</html:em>
+			.
+		</html:div>
+	</compatibility_with_previous_releases>
+	<themes_and_priorities>
+		<preamble>
+			<html:div>Our current focus is three-fold: Intertype declaration
+				support, IDE support for load-time weaving, and crosscutting model
+				support across projects and binaries. These themes are generated
+				from user requests in the community. As such, we want
+				to maintain flexibility and put effort into new themes if they are
+				coherently generated from the community.
+			</html:div>
+		</preamble>
+		<theme name="Intertype Declaration support (ITD)">
+			<description>
+				<html:p>
+					Third party projects such as <html:a href="http://sringsource.org/roo">ROO</html:a>	are pushing the
+					limits of ITD functionality both in the compiler and the editor.  Since this is a highly visible project
+					with many potential users, we would like to encourage its adoption by facilitating the ITD editor support 
+					that it requires.  This include facility for ITD-aware content assist, reconciling, refactoring, searching 
+					and navigation.  
+				</html:p>
+			</description>
+			<committed
+				bugzilla="http://tinyurl.com/qkated">
+			</committed>
+			<proposed
+				bugzilla="http://tinyurl.com/r6y4vb">
+			</proposed>
+		</theme>
+		<theme name="IDE support for Load Time Weaving (LTW)">
+			<description>
+				<html:p>
+					Currently, aspects applied to a project through LTW are not visible in the
+					editor in the standard ways that compile time aspects are. These
+					include
+					gutter annotations and entries in the crosscutting view. Because there is
+					no editing support, using LTW can be time consuming and
+					error-prone. We will
+					explore ways to gather and display LTW information to the programmer while
+					editing.
+        </html:p>
+			</description>
+			<committed
+				bugzilla="http://tinyurl.com/p6h8wo">
+			</committed>
+			<proposed
+				bugzilla="http://tinyurl.com/odh8a8">
+			</proposed>
+		</theme>
+		<theme
+			name="Crosscutting model support across projects and binaries (model)">
+			<description>
+				<html:p>
+					Provide support for navigation and across the aspect path and in path.
+				</html:p>
+			</description>
+			<committed
+				bugzilla="http://tinyurl.com/qh8mep">
+			</committed>
+			<proposed
+				bugzilla="http://tinyurl.com/pzlzge">
+			</proposed>
+		</theme>
+	</themes_and_priorities>
+</plan>
