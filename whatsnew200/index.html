@@ -53,8 +53,57 @@ potentially confusing in the short term, we believe in the long term, this will 
 read the version and immediately know which Eclipse version it targets and also what feature level it contains. 
 <br>
 <br>
-With that important bit of information explained, below are the bug fixes and new features introduced in this release since AJDT 1.6.4. 
+With that important bit of information explained, below are the bug fixes and new features introduced in the 2.0 release since AJDT 1.6.4. 
 </td>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>ITD Hovers and Hyperlinking</b></td>
+<td>
+AJDT now supports ITD-aware text hovers and hyperlinking.<br/><br/>
+
+Hovering over a method that is declared as an ITD will display the JavaDoc of that method:<br/>
+<img src="itd_hover.gif" border="1"/><br/><br/>
+
+Similarly, pressing <strong>F3</strong> or <strong>CTRL-Click</strong> on an identifier that is declared as an ITD 
+will navigate to the ITD's declaration:<br/>
+<table><tr valign="center">
+<td><img src="itd_opendecl_source.gif" border="1"/></td><td><img src="arrow.gif"/></td><td><img src="itd_opendecl_dest.gif" border="1"/></td>
+</tr></table>
+<br/><br/>
+For more information, see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=273334">Bug 273334</a>. 
+<br/><br/>
+Note, like all other ITD awareness support, a successful build since the last restart of the workspace is required.
+</td>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Push-In refactoring</b></td>
+<td>
+In AJDT 2.0, we have introduced the new <em>Push-In</em> refactoring.  <br/><br/>
+
+Essentially, the refactoring <em>pushes</em> intertype declarations into their target types. 
+So, when a push in refactoring is applied to the following aspect and class:
+<br><br><pre><br>aspect Foo {<br>  int Bar.x;<br>  declare parents : Bar implements I;<br>  declare @type : Bar : @Baz;<br>}<br><br>class Bar { }<br></pre><br><br>
+the result is:
+<br><br><pre><br>@Baz<br>  class Bar implements I {<br>  int x;<br>}<br></pre>
+The Foo aspect is deleted because it is empty.<br/><br/>
+
+This refactoring is available from the package explorer, the outline view, and wherever else Java elements appear in a hierarchy. 
+To use, select the ITDs or set of ITDs that you want to push in. You can select an entire project, source folder, or package to 
+push all of its ITDs into the target types:
+<br>
+<img src="push_in.jpg" border="1"/><br><br>
+
+See <a href="http://contraptionsforprogramming.blogspot.com/2009/05/push-in-refactoring-for-ajdt.html">AJDT's blog</a> for a detailed explanation of the refactoring.
+</td>
+</tr>
 
 <tr>
 <td colspan="2">
@@ -243,22 +292,17 @@ More information can be found in <a href="https://bugs.eclipse.org/bugs/show_bug
 <hr></td>
 </tr>
 <tr>
-<td valign="top"><b>ITD Hyperlinking</b></td>
-<td>
-... yet to do ...
-</td>
-
-
-<tr>
-<td colspan="2">
-<hr></td>
-</tr>
-<tr>
 <td valign="top"><b>Bug Fixes</b></td>
 <td>
-Over 40 bugs have been resolved for 2.0.0 since 1.6.4. 
-See <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AJDT&target_milestone=2.0.0&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">Bugzilla</a> 
-for a complete list of bugs.
+Here are some interesting statistics from our friendly Bugzilla database
+<ul>
+	<li>Bugs closed for this release: <a href="http://tinyurl.com/qc4ymf">52 bugs</a></li>
+	<li>Bug closed since April '08: <a href="http://tinyurl.com/mnvhr4">248 bugs</a></li>
+	<li>Outstanding bugs targeting 2.0.0 and onward: <a href="http://tinyurl.com/ojeqja">53 bugs</a></li>
+	<li>New, unresolved bugs since April '08: <a href="http://tinyurl.com/ko6bp6>71 bugs</a></li>
+	<li><em>All</em> open bugs in AJDT: <a href="http://tinyurl.com/luyfj6">115 bugs</a></li>
+</ul>
+<em>Why April '08?  That's when we added someone full time to work on AJDT, and breathed new life into the project.</em>
 </td>
 
 <tr>
@@ -273,7 +317,7 @@ for a complete list of bugs.
 	<br/>
 	<br/>
 	Also, AJDT is spreading. The Scala-Eclipse plugin 
-	<a href="http://www.scala-lang.org/node/1493	">is now using JDT Weaving</a> to make its JDT integration deeper and more robust. 
+	<a href="http://www.scala-lang.org/node/149">is now using JDT Weaving</a> to make its JDT integration deeper and more robust. 
 </td>
 
 
