@@ -63,25 +63,30 @@
 		<div class="homeitem3col">
 			<h3>News and Releases</h3>
 			<ul>
+			
+				 <li>
+				 		<img src="images/new.gif" width="11" height="11"><a href="whatsnew200">AJDT 2.0.0</a> is coming!  
+				 		The release candidate is available from the <a href="downloads">downloads</a> page.
+				 		<br><span class="dates">posted 06-09-09</span>
+				 </li>
 			   <li>
-			     <img src="images/new.gif" width="11" height="11">The AJDT team is pleased to announce the release of AJDT 1.6.4.  This release includes <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AJDT&target_milestone=1.6.4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">50 bug fixes</a>.  It also includes AspectJ version 1.6.4.20090304172355 which has an additional <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&target_milestone=1.6.4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">48 bugs fixed</a> since 1.6.3.  This version of AspectJ is <a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/dev/aspectj-1.6.4-20090304172355.jar">available for download</a> separately from AJDT.
+			     The AJDT team is pleased to announce the release of AJDT 1.6.4.  This release includes <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AJDT&target_milestone=1.6.4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">50 bug fixes</a>.  It also includes AspectJ version 1.6.4.20090304172355 which has an additional <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=AspectJ&target_milestone=1.6.4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&resolution=FIXED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">48 bugs fixed</a> since 1.6.3.  This version of AspectJ is <a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/dev/aspectj-1.6.4-20090304172355.jar">available for download</a> separately from AJDT.
 			See the <a href="downloads/">downloads page</a> for installation instructions.
 			     <br><span class="dates">posted 03-20-09</span>
 			   </li>
-				<li><img src="images/new.gif" width="11" height="11">One of the most respected books on AspectJ, 
+				<li>One of the most respected books on AspectJ, 
 				    <em><a href="http://manning.com/laddad2/">AspectJ in Action, Second Edition</a></em> by Ramnivas Laddad
 				    will be available April 2009.
 				</li>
 				 <li>
-				 		<img src="images/new.gif" width="11" height="11">
-			      Come check out our blogs for <a href="http://contraptionsforprogramming.blogspot.com/">AJDT</a> 
+				 		Come check out our blogs for <a href="http://contraptionsforprogramming.blogspot.com/">AJDT</a> 
 				 		and <a href="http://andrewclement.blogspot.com/">AspectJ</a>!
 				 </li>
 				 <li>
-				 	  <img src="images/new.gif" width="11" height="11">
-			      Pre-release of AJDT 1.7 (for Eclispe 3.5) is available.  This build is for people who require Eclipse 3.5
+				 	  Pre-release of AJDT 1.7 (for Eclispe 3.5) is available.  This build is for people who require Eclipse 3.5
 				 	  and AJDT.  See the <a href="downloads/">downloads page</a> for installation instructions.<span class="dates">posted 03-02-09</span>
 				 </li>
+			  <!--
 			   <li>
 			     AJDT 1.6.3 is released!  See the <a href="downloads/">downloads page</a> for installation instructions.
 			     <br><span class="dates">posted 01-27-09</span>
@@ -117,7 +122,6 @@
 				see the <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving wiki page</a> page.
 				<br><span class="dates">posted 02-12-08</span>
 			   </li> 
-			  <!--
 			   <li>
 			  	AJDT 1.6.1 is now available for Eclipse 3.4.  This includes the latest stable build of AspectJ 1.6.3.
 			  	See the <a href="whatsnew161/index.html">New and Noteworthy</a> for more details on AJDT 1.6.1 and 
