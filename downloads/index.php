@@ -205,6 +205,7 @@ of /technology, since AJDT become a Tools project.</p>
 	</li>
 	
 
+	<!--
 		<li>
 			AJDT 1.6.3 builds for Eclipse 3.4 <em>with JDT weaving</em><br>
 			What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
@@ -228,7 +229,7 @@ of /technology, since AJDT become a Tools project.</p>
 			<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">See here</a>
 		    for how to do this.
 		</li>
-				
+	-->			
 		<li>
 			AJDT 1.6.1 builds for Eclipse 3.4
 		
@@ -286,11 +287,11 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>Development builds for Eclipse 3.4</h3>
 	<ul>
 		<li>
-			AJDT 1.6.4 dev builds for Eclipse 3.4 <em>with JDT weaving</em><br>
+			AJDT 2.0.0 dev builds for Eclipse 3.4 <em>with JDT weaving</em><br>
 			What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 			<table class="tasklist" width="80%">
 			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.4.20090227125800</td>
+			    <th align="left">AspectJ Version:</th><td>1.6.5.20090528125400</td>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
@@ -307,7 +308,7 @@ of /technology, since AJDT become a Tools project.</p>
 		    for how to do this.
 		</li>
 
-		<li>
+<!--		<li>
 			AJDT 1.6.2 noweaving dev builds for Eclipse 3.4<br>
 			<em>We recommend using the JDT Weaving builds (above) instead.</em>
 		
@@ -325,6 +326,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>	  
 			</table>
 		</li>
+		-->
 				
 		<li>
 			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
@@ -338,10 +340,10 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>Development builds for Eclipse 3.5</h3>
 	<ul>
 		<li>
-			AJDT 1.7 dev builds for Eclipse 3.5
+			AJDT 2.0.0 dev builds for Eclipse 3.5
 			<table class="tasklist" width="80%">
 			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.4.20090227125800</td>
+			    <th align="left">AspectJ Version:</th><td>1.6.5.20090528125400</td>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
