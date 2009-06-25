@@ -168,10 +168,54 @@ of /technology, since AJDT become a Tools project.</p>
 
 
 	<div class="homeitem3col">
+	<a name="2.0"></a>
+	<h3>AJDT 2.0 release builds for Eclipse 3.4 and 3.5</h3>
+	<ul>
+	<li>
+		AJDT 2.0.0 builds for Eclipse 3.5 <em>with JDT weaving</em><br>
+		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
+		<table class="tasklist" width="80%">
+		  <tr>
+		    <th align="left">Release Date:</th><td>June 24, 2009</td>
+		  </tr>
+		  <tr>
+		    <th align="left">AspectJ Version:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.5.jar">1.6.5.20090618034232</a></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Eclipse 3.5 Update Site URL:</th>
+		    <td><code>http://download.eclipse.org/tools/ajdt/35/update</code></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Eclipse 3.4 Update Site URL:</th>
+		    <td><code>http://download.eclipse.org/tools/ajdt/34/update</code></td>
+		  </tr>
+		  <tr>
+		    <th align="left">AJDT for Eclipse 3.5 Zip file:</th>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/35/update/ajdt_2.0.0_for_eclipse_3.5.zip">ajdt_2.0.0_for_eclipse_3.5.zip</a></td>
+		  </tr>	  
+		  <tr>
+		    <th align="left">AJDT for Eclipse 3.4 Zip file:</th>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/35/update/ajdt_2.0.0_for_eclipse_3.4.zip">ajdt_2.0.0_for_eclipse_3.4.zip</a></td>
+		  </tr>	  
+		    <tr>
+		    <th align="left">List of bugs fixed for this release:</th>
+		 	<td><a href="http://tinyurl.com/nues25">AJDT</a>, <a href="http://tinyurl.com/nur598">AspectJ</a></td>
+		  </tr>
+		  <tr>
+		    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew200/">New & Noteworthy</a></td>
+		  </tr>
+		</table>
+		We recommend using the update site to install AJDT.  However, it is still possible
+		to install from a zip file.
+		<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">See here</a>
+	    for how to do this.
+	</li>
+	</ul>
+
+	<div class="homeitem3col">
 	<a name="1.6"></a>
 	<h3>Release builds for Eclipse 3.4</h3>
 	<ul>
-	
 	<li>
 		AJDT 1.6.4 builds for Eclipse 3.4 <em>with JDT weaving</em><br>
 		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
@@ -181,10 +225,6 @@ of /technology, since AJDT become a Tools project.</p>
 		  </tr>
 		  <tr>
 		    <th align="left">AspectJ Version:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/dev/aspectj-1.6.4-20090304172355.jar">1.6.4.20090304172355</a></td>
-		  </tr>
-		  <tr>
-		    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-		    <td><code>http://download.eclipse.org/tools/ajdt/34/update</code></td>
 		  </tr>
 		  <tr>
 		    <th align="left">Zip file:</th>
