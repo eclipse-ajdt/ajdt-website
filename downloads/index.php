@@ -169,10 +169,10 @@ of /technology, since AJDT become a Tools project.</p>
 
 	<div class="homeitem3col">
 	<a name="2.0"></a>
-	<h3>AJDT 2.0 release builds for Eclipse 3.4 and 3.5</h3>
+	<h3>AJDT 2.0 release builds for Eclipse 3.5 and 3.4</h3>
 	<ul>
 	<li>
-		AJDT 2.0.0 builds for Eclipse 3.5 <em>with JDT weaving</em><br>
+		AJDT 2.0.0 builds for Eclipse 3.5 and 3.4<em>with JDT weaving</em><br>
 		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 		<table class="tasklist" width="80%">
 		  <tr>
@@ -183,11 +183,11 @@ of /technology, since AJDT become a Tools project.</p>
 		  </tr>
 		  <tr>
 		    <th align="left">Eclipse 3.5 Update Site URL:</th>
-		    <td><code>http://download.eclipse.org/tools/ajdt/35/update</code></td>
+		    <td<strong>><code>http://download.eclipse.org/tools/ajdt/35/update</code></strong></td>
 		  </tr>
 		  <tr>
 		    <th align="left">Eclipse 3.4 Update Site URL:</th>
-		    <td><code>http://download.eclipse.org/tools/ajdt/34/update</code></td>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/34/update</code></strong></td>
 		  </tr>
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.5 Zip file:</th>
@@ -225,7 +225,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/35/dev/update</code></td>
+			    <td><strong><code>http://download.eclipse.org/tools/ajdt/35/dev/update</code></strong></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
@@ -253,7 +253,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></td>
+			    <td><strong><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></strong></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
