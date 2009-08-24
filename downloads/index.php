@@ -195,7 +195,7 @@ of /technology, since AJDT become a Tools project.</p>
 		  </tr>	  
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.4 Zip file:</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/35/update/ajdt_2.0.0_for_eclipse_3.4.zip">ajdt_2.0.0_for_eclipse_3.4.zip</a></td>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_2.0.0_for_eclipse_3.4.zip">ajdt_2.0.0_for_eclipse_3.4.zip</a></td>
 		  </tr>	  
 		    <tr>
 		    <th align="left">List of bugs fixed for this release:</th>
