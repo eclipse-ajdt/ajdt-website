@@ -1,154 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
-<plan plan-format="1.0" name="Project Name" xmlns="http://www.eclipse.org/project/plan"
-	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<release projectid="tools.ajdt" version="1.6" />
+<plan plan-format="1.0" name="Project Name" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<release projectid="tools.ajdt" version="2.0" />
 	<introduction>
 		<html:div>
-			<html:p>
-				As of version 2.0.0, AJDT is using a new versioning scheme, which is
-				more aligned with traditional notions of major/minor/maintenance
-				releases. A maintenance release implies trivial functionality and
-				bug fixes have been added. A minor release implies some
-				significant functionality and features introduced, but API is largely backwards
-				compatible. A major release implies
-				breaking API changes.
-
-				AJDT major versions match up with Eclipse versions. The current Eclipse
-				version is 3.4, which matches to AJDT 1.6.
-				Eclipse 3.3 matches AJDT 1.5, and Eclipse 3.5 will match AJDT 1.7.
-				The AJDT project releases service refreshes to that major version every
-				few months. During 2008 there
-				have been 1.5.2, 1.5.3 (the last scheduled version targeting Eclipse
-				3.3), 1.6.0 (the first version targeting Eclipse 3.4),
-				1.6.1, and 1.6.2. In 2009, there has been 1.6.3, 1.6.4, and 2.0.0
-				releases.
+<html:p>
+AJDT released 2.0.0 to coincide with Eclipse's Galileo release in late June.  There are two streams,
+of this version, one for Eclipse 3.4, with version 2.0.0.e34x-*, and one for Eclipse 3.5 with version 2.0.0.e35x-*.
+These two streams are maintained as separate branches in CVS.  Because of AJDT's tight integration with JDT, 
+the Eclipse 3.4 stream will not install in Eclipse 3.5 and vice versa.  Excepting these differences, 
+the two streams use the same code base and have the same feature set.  The recent 2.0.1 release is the last 
+scheduled version targeting the Eclipse 3.4 stream.  There will be no more changes to this stream unless a 
+critical bug is discovered and fixed.  We are planning to release an AJDT version for the Eclipse 3.6 stream
+to coincide with the Helios release in June 2010, and we will begin to release development snapshots of this
+stream in early 2010.
 </html:p>
-			<html:p>
-				There are two streams for the 2.0.0 release: one targeting Eclipse
-				3.4 (this stream uses a version qualifier starting with
-				<html:em>_e34x</html:em>
-				) and one targeting Eclipse 3.5 (using a version qualifier starting
-				with
-				<html:em>_e35x</html:em>
-				.
-			</html:p>
-			<html:p>
-				We tend to release on an approximately 3 month schedule, excluding the
-				recent exception of AJDT 1.6.3. Most
-				of these releases will be maintenance releases, with perhaps one minor
-				release a year. There are no
-				plans for anothe major release in the near future.
-</html:p>
-			<html:p>
-				AJDT always maintains that HEAD will build clean and pass all the tests
-				we have (currently over 500).
-				This is almost 200 more tests than six months ago. The test suite is now
-				in fairly solid shape and tests
-				all major parts of AJDT. This means the development builds created from
-				HEAD after every commit are typically
-				at least as good as the previous build.
-</html:p>
-		</html:div>
+     </html:div> 
 	</introduction>
 	<release_deliverables>
 		<html:div>
-			<html:p>
-				AJDT releases are available from project update sites. There are
-				different sites for each
-				minor release see
-				<html:a href="http://eclipse.org/ajdt/downloads">the project download page</html:a>
-				for a list of the update sites. Also available are zip files that
-				contain all of the project plugins and
-				are meant to be installed in the eclipse installation's
-				<html:em>dropins</html:em>
-				folder.
-			</html:p>
-			<html:p>
-				AJDT includes 6 plugins from two other EPL Eclipse.org projects:
-				<html:ul>
-					<html:li>
-						The
-						<html:a
-							href="http://www.eclipse.org/projects/project-plan.php?projectid=tools.aspectj">AspectJ project</html:a>
-						contributes three plugins.
-						These plugins are
-						<html:em>org.aspectj.runtime</html:em>
-						, which contains the AspectJ runtime,
-						<html:em>org.aspectj.ajde</html:em>
-						, which contains AspectJ support for integrating with a
-						development environment,
-						and
-						<html:em>org.aspectj.weaver</html:em>
-						, which contains the AspectJ weaver and compiler.
-					</html:li>
-
-					<html:li>
-						The
-						<html:a
-							href="http://www.eclipse.org/equinox/incubator/aspects/index.php">Equinox Aspects project</html:a>
-						, part of the Eqinox Incubator also contributes three plugins.
-						These are
-						<html:em>org.eclipse.equinox.weaving.aspectj
-						</html:em>
-						, which contains the equinox weaving service,
-						<html:em>org.eclipse.equinox.weaving.hook
-						</html:em>
-						, which contains the OSGi framework extension for the weaving
-						service to plug in, and
-						<html:em>org.eclipse.equinox.weaving.source
-						</html:em>
-						, which contains Equinox Aspects source code.
-					</html:li>
-				</html:ul>
-			</html:p>
-		</html:div>
+         <html:p>
+         AJDT releases are available from project update sites.  There are different sites for each 
+         stream.  See <html:a href="http://eclipse.org/ajdt/downloads">the project download page</html:a> 
+         for a list of the update sites.  Also available are zip files that contain all of the project plugins and 
+         are meant to be installed in the eclipse installation's <html:em>dropins</html:em> folder.
+         </html:p>
+         <html:p>
+         AJDT includes 6 plugins from two other projects:
+         <html:ul>
+	         <html:li>The <html:a
+			href="http://www.eclipse.org/projects/project-plan.php?projectid=tools.aspectj">AspectJ project</html:a>
+				 contributes three plugins.
+         These plugins are <html:em>org.aspectj.runtime</html:em>, which contains the AspectJ runtime, 
+         <html:em>org.aspectj.ajde</html:em>, which contains AspectJ support for integrating with a development environment,
+         and <html:em>org.aspectj.weaver</html:em>, which contains the AspectJ weaver and compiler.</html:li>
+         
+         <html:li>The <html:a href="http://www.eclipse.org/equinox/incubator/aspects/index.php">Equinox Aspects project</html:a>, part of the Eqinox Incubator also contributes three plugins.  These are 
+         <html:em>org.eclipse.equinox.weaving.aspectj</html:em>, which contains the equinox weaving service, 
+         <html:em>org.eclipse.equinox.weaving.hook</html:em>, which contains the OSGi framework extension for the weaving service to plug in, and
+         <html:em>org.eclipse.equinox.weaving.source</html:em>, which contains Equinox Aspects source code.
+         </html:li>
+         </html:ul>
+         </html:p> 
+         </html:div>
 	</release_deliverables>
 	<release_milestones>
 		<preamble>
+		<html:div>Service releases of AJDT are released on an approximately 3 month schedule.</html:div>
 		</preamble>
-		<milestone date="06/30/2009" milestone="2.0.0">
-			<html:div>First release that targets both Eclipse 3.4 stream and
-				Eclipse 3.5 stream.</html:div>
-		</milestone>
-		<milestone date="09/20/2009" milestone="2.0.1">
-			<html:div>Service refresh of AJDT 2.0. Streams for both 3.4
-				and 3.5 will be released.</html:div>
-		</milestone>
-		<milestone date="12/20/2009" milestone="2.0.2">
-			<html:div>Service refresh of AJDT 2.0. Streams for both 3.4
-				and 3.5 will be released.</html:div>
+		<milestone date="01/05/2010" milestone="2.0.2">
+			<html:div>Service refresh of AJDT for the 3.5 stream</html:div>
 		</milestone>
 		<milestone date="03/20/2010" milestone="2.0.3">
-			<html:div>Service refresh of AJDT 2.0. Only 3.5 stream will be
-				released unless there is
-				significant community desiire for a 3.4 stream.</html:div>
+			<html:div>Service refresh of AJDT for the 3.5 stream.  
+			First stable development release targeting Eclipse 3.6.  This is meant for early adopters, 
+			specifically for those at EclipseCon.  The 3.5 and 3.6 streams will be largely similar 
+			although some functionality in the 3.6 may not be available yet.</html:div>
+		</milestone>
+		<milestone date="06/30/2010" milestone="2.0.4">
+			<html:div>First public release of the 3.6 stream and service refresh of the 3.5 stream.</html:div>
+		</milestone>
+		<milestone date="09/30/2010" milestone="2.0.4">
+			<html:div>Final scheduled release of the 3.5 stream and service refresh of the 3.6 stream.</html:div>
 		</milestone>
 		<postamble>
+			<html:div></html:div>
 		</postamble>
 	</release_milestones>
 	<target_environments>
-		<html:div>AJDT 2.0.0_e34x requires Eclipse 3.4 and AJDT 2.0.0_e35x
-			will requires Eclipse 3.5.
-			As such, AJDT has the same JRE requirements as Eclipse.</html:div>
+		<html:div>AJDT 2.0.0.e34x-* requires Eclipse 3.4 and AJDT 2.0.0.e35x-* requires Eclipse 3.5.  As such, AJDT has the same JRE requirements as Eclipse.</html:div>
 		<internationalization>
-			<html:div>English language bundles are available for many AJDT
-				messages, but they have not been translated.
+			<html:div>English language bundles are available for many AJDT messages, but they have not been translated.
           </html:div>
 		</internationalization>
 	</target_environments>
 	<compatibility_with_previous_releases>
-		<html:div>
-			Each version of AJDT will only run on the version of Eclipse that is
-			specified in its qualifier (e.g.,
-			<html:em>_e34x</html:em>
-			or
-			<html:em>_e35x. However, we will maintain API compatibility
-				across minor releases and streams.</html:em>
-			.
-		</html:div>
+		<html:div>ADJT versions are designed to be backwards compatible with older versions of the same stream.  However, since different streams 
+		run on different Eclipse versions, there is no compatibility between streams, even though the feature sets are largely the same.</html:div>
 	</compatibility_with_previous_releases>
-	<themes_and_priorities>
+		<themes_and_priorities>
 		<preamble>
 			<html:div>Our current focus is three-fold: Intertype declaration
 				support, IDE support for load-time weaving, and crosscutting model
