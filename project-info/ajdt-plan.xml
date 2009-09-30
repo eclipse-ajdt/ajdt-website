@@ -19,30 +19,45 @@ stream in early 2010.
 	</introduction>
 	<release_deliverables>
 		<html:div>
-         <html:p>
-         AJDT releases are available from project update sites.  There are different sites for each 
-         stream.  See <html:a href="http://eclipse.org/ajdt/downloads">the project download page</html:a> 
-         for a list of the update sites.  Also available are zip files that contain all of the project plugins and 
-         are meant to be installed in the eclipse installation's <html:em>dropins</html:em> folder.
-         </html:p>
-         <html:p>
-         AJDT includes 6 plugins from two other projects:
-         <html:ul>
-	         <html:li>The <html:a
-			href="http://www.eclipse.org/projects/project-plan.php?projectid=tools.aspectj">AspectJ project</html:a>
-				 contributes three plugins.
-         These plugins are <html:em>org.aspectj.runtime</html:em>, which contains the AspectJ runtime, 
-         <html:em>org.aspectj.ajde</html:em>, which contains AspectJ support for integrating with a development environment,
-         and <html:em>org.aspectj.weaver</html:em>, which contains the AspectJ weaver and compiler.</html:li>
-         
-         <html:li>The <html:a href="http://www.eclipse.org/equinox/incubator/aspects/index.php">Equinox Aspects project</html:a>, part of the Eqinox Incubator also contributes three plugins.  These are 
-         <html:em>org.eclipse.equinox.weaving.aspectj</html:em>, which contains the equinox weaving service, 
-         <html:em>org.eclipse.equinox.weaving.hook</html:em>, which contains the OSGi framework extension for the weaving service to plug in, and
-         <html:em>org.eclipse.equinox.weaving.source</html:em>, which contains Equinox Aspects source code.
-         </html:li>
-         </html:ul>
-         </html:p> 
-         </html:div>
+			<html:p>
+				AJDT includes 6 plugins from two other EPL Eclipse.org projects:
+				<html:ul>
+					<html:li>
+						The
+						<html:a
+							href="http://www.eclipse.org/projects/project-plan.php?projectid=tools.aspectj">AspectJ project</html:a>
+						contributes three plugins.
+						These plugins are
+						<html:em>org.aspectj.runtime</html:em>
+						, which contains the AspectJ runtime,
+						<html:em>org.aspectj.ajde</html:em>
+						, which contains AspectJ support for integrating with a
+						development environment,
+						and
+						<html:em>org.aspectj.weaver</html:em>
+						, which contains the AspectJ weaver and compiler.
+					</html:li>
+
+					<html:li>
+						The
+						<html:a
+							href="http://www.eclipse.org/equinox/incubator/aspects/index.php">Equinox Aspects project</html:a>
+						, part of the Eqinox Incubator also contributes three plugins.
+						These are
+						<html:em>org.eclipse.equinox.weaving.aspectj
+						</html:em>
+						, which contains the equinox weaving service,
+						<html:em>org.eclipse.equinox.weaving.hook
+						</html:em>
+						, which contains the OSGi framework extension for the weaving
+						service to plug in, and
+						<html:em>org.eclipse.equinox.weaving.source
+						</html:em>
+						, which contains Equinox Aspects source code.
+					</html:li>
+				</html:ul>
+			</html:p>
+		</html:div>
 	</release_deliverables>
 	<release_milestones>
 		<preamble>
@@ -78,7 +93,7 @@ stream in early 2010.
 		<html:div>ADJT versions are designed to be backwards compatible with older versions of the same stream.  However, since different streams 
 		run on different Eclipse versions, there is no compatibility between streams, even though the feature sets are largely the same.</html:div>
 	</compatibility_with_previous_releases>
-		<themes_and_priorities>
+		<themes_and_priorities> 
 		<preamble>
 			<html:div>Our current focus is three-fold: Intertype declaration
 				support, IDE support for load-time weaving, and crosscutting model
