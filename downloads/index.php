@@ -184,7 +184,7 @@ of /technology, since AJDT become a Tools project.</p>
 		  </tr>
 		  <tr>
 		    <th align="left">Eclipse 3.5 Update Site URL:</th>
-		    <td<strong>><code>http://download.eclipse.org/tools/ajdt/35/update</code></strong></td>
+		    <td<strong><code>http://download.eclipse.org/tools/ajdt/35/update</code></strong></td>
 		  </tr>
 		  <tr>
 		    <th align="left">Eclipse 3.4 Update Site URL:</th>
