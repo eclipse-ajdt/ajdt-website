@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<link rel="STYLESHEET" href="http://www.eclipse.org/default_style.css" charset="ISO-8859-1" type="text/css">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>AJDT 2.0.2 - New and Noteworthy</title>
+
+</head>
+<body>
+<h1>AJDT 2.0.2 - New and Noteworthy</h1>
+
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td valign="top"><b>Overview</b></td>
+<td valign="top">
+This point release of AJDT contains a number of bug fixes, and a few new features.
+Most importantly, AJDT 2.0.2 includes AspectJ 1.6.7 that provides significantly faster 
+compilation, binary weaving, and load-time weaving.  See the <a href="http://eclipse.org/aspectj/doc/released/README-167.html">
+release notes</a> for more information.
+</td>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>AspectJ-aware PDE Headless builds</b></td>
+<td>
+AJDT now provides plug-in development tools for running AspectJ-aware headless builds.
+This new feature, <em>AJDT Plugin Development Tools</em>, is available as an optional 
+feature from the AJDT update site.<br/>
+<br/>
+See <a href="http://wiki.eclipse.org/AspectJ_Aware_Headless_Builds">Eclipsepedia</a> for more 
+some documentation on how to create AspectJ PDE headless builds.  And see
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=252641">Bug 252641</a>
+for historical information on this feature.  
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Pointcut matching timers</b></td>
+<td>
+How long is ajc (the AspectJ compiler) taking to match your pointcuts?  Are your
+pointcuts poorly written and slowing down incremental builds?  Now you can find out.
+AJDT will display AspectJ's pointcut timing information when properly configured.  
+For more information, see the <a href="http://contraptionsforprogramming.blogspot.com/2009/11/getting-aspectj-pointcut-matching-timer.html">
+blog</a>.
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Non-blocking Update AJ Markers</b></td>
+<td>
+Updating AspectJ markers (advice markers, ITD markers, etc.) will never 
+block the UI.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=289778">Bug 289778</a> 
+for more information.
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>AJDT and Buckminster</b></td>
+<td>
+AJDT is now compatible with headless Buckminster builds.  
+See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=297713">Bug 297713</a> for 
+more details on how to use AJDT and Buckminster together. 
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>AspectJ 1.6.7</b></td>
+<td>
+	AJDT 2.0.2 contains AspectJ 1.6.7.  This version is also <a href="http://eclipse.org/aspectj/downloads.php">available for download</a>
+	separately.  See the <a href="http://eclipse.org/aspectj/doc/released/README-167.html">release notes here</a>.
+	<br/><br/>
+	AspectJ 1.6.7 includes some radical internal changes. These improvements
+	enable faster compilation, faster binary weaving, faster load time 
+	weaving and in some situations faster generated code.
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Bug Fixes</b></td>
+<td>
+See <a href="http://tinyurl.com/yzmusfo">Bugzilla</a> for a list of bugs addressed in this release.
+</td>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Thanks!</b></td>
+<td>
+	Thanks to those of you who have submitted patches, bug reports, and contributed on the mailing list for this release.  
+	We appreciate your help.  Specifically, patches for this release are:
+	<ul>
+		<li>Dave Whitaker on <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=292441">Bug 292441</a></li>
+	</ul>
+</td>
+
+
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+<tr>
+<td valign="top"><b>Previous Releases</b></td>
+<td>
+See <a href="http://www.eclipse.org/ajdt/whatsnew201/index.html">here</a> 
+for information on the new features in AJDT 2.0.1.
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
