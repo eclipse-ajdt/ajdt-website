@@ -173,14 +173,17 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>AJDT 2.0 release builds for Eclipse 3.5 and 3.4</h3>
 	<ul>
 	<li>
-		AJDT 2.0.1 builds for Eclipse 3.5 and 3.4<em>with JDT weaving</em><br>
+		AJDT 2.0.2 and 2.0.1 builds for Eclipse 3.5 and 3.4<em>with JDT weaving</em><br>
 		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 		<table class="tasklist" width="80%">
 		  <tr>
-		    <th align="left">Release Date:</th><td>October 2, 2009</td>
+		    <th align="left">Release Date:</th><td>January 5, 2010 (2.0.2)<br/>October 2, 2009 (2.0.1)</td>
 		  </tr>
 		  <tr>
-		    <th align="left">AspectJ Version:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.6.jar">1.6.6.20090930185500</a></td>
+		    <th align="left">AspectJ Version in 2.0.2:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.7.a.jar">1.6.7.a</a></td>
+		  </tr>
+		  <tr>
+		    <th align="left">AspectJ Version in 2.0.1:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.6.jar">1.6.6.20090930185500</a></td>
 		  </tr>
 		  <tr>
 		    <th align="left">Eclipse 3.5 Update Site URL:</th>
@@ -192,18 +195,14 @@ of /technology, since AJDT become a Tools project.</p>
 		  </tr>
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.5 Zip file:</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/35/update/ajdt_2.0.1_for_eclipse_3.5.zip">ajdt_2.0.1_for_eclipse_3.5.zip</a></td>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/35/update/ajdt_2.0.2_for_eclipse_3.5.zip">ajdt_2.0.2_for_eclipse_3.5.zip</a></td>
 		  </tr>	  
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.4 Zip file:</th>
 		    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_2.0.1_for_eclipse_3.4.zip">ajdt_2.0.1_for_eclipse_3.4.zip</a></td>
 		  </tr>	  
-		    <tr>
-		    <th align="left">List of bugs fixed for this release:</th>
-		 	<td><a href="http://tinyurl.com/yazj5du">AJDT</a>, <a href="http://tinyurl.com/ydpv9xh">AspectJ</a></td>
-		  </tr>
 		  <tr>
-		    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew201/">New & Noteworthy</a></td>
+		    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew202/">New & Noteworthy</a></td>
 		  </tr>
 		</table>
 		We recommend using the update site to install AJDT.  However, it is still possible
@@ -219,7 +218,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>Development builds for Eclipse 3.5</h3>
 	<ul>
 		<li>
-			AJDT 2.0.2 dev builds for Eclipse 3.5
+			AJDT 2.0.3 dev builds for Eclipse 3.5
 			<table class="tasklist" width="80%">
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
