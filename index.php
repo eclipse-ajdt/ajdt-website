@@ -63,9 +63,16 @@
 		<div class="homeitem3col">
 			<h3>News and Releases</h3>
 			<ul>
-			
  				 <li>
-				 		<img src="images/new.gif" width="11" height="11"><a href="whatsnew202">AJDT 2.0.2</a> is here!  
+				 		<img src="images/new.gif" width="11" height="11">AJDT 2.1.0M1 is available from the <a href="downloads">downloads</a> page.
+				 		<br><span class="dates">posted 05-04-10</span>
+				 </li>
+ 				 <li>
+				 		AJDT is now available for Eclipse 3.6.  See the <a href="downloads">downloads</a> page.
+				 		<br><span class="dates">posted 03-21-10</span>
+				 </li>
+ 				 <li>
+				 		<a href="whatsnew202">AJDT 2.0.2</a> is here!  
 				 		The release build is available from the <a href="downloads">downloads</a> page.
 				 		<br><span class="dates">posted 12-31-09</span>
 				 </li>
