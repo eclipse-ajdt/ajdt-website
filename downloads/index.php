@@ -37,66 +37,71 @@ function ListDevBuilds($dir, $eclipsename){
          }
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
          $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
-         $str = $str . "</td>\n<td width=\"30%\">";
-         preg_match('/.*ajdt_([0-9]*\.[0-9]*\.[0-9]*)\.(.*)_archive.zip/',$file, $matches);
-         if ($matches[1] == "") {
-         	preg_match('/.*ajdt-([0-9]*\.[0-9]*\.[0-9]*)\.(.*)\.zip/',$file, $matches);
-         }
-         $version = $matches[1];
-         $datestr = $matches[2];
-         echo "date string = " . $datestr . "<br>";
-         $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
-         $datetime = strtotime($dashes);
-         $hours = substr($datestr,8,2);
-         $mins = substr($datestr,10,2);         
-         # can only determine local daylight savings, which is not necessarily
-         # the same as the daylight savings where the build was done
-         $daylightsavings = date("I");
-         if ($eclipse == "30") {
-           if ($daylightsavings == "1") {
-             $tzstr = " (+0100)";
-           } else {
-             $tzstr = " (+0000)";
-           }
-         } else {
-            if ($daylightsavings == "1") {
-             $tzstr = " (-0400)";
-           } else {
-             $tzstr = " (-0500)";
-           }       
-         }
-         #echo "hours = $hours   mins = $mins <br>";  
-         $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
-         $str = $str . $builddate . "</td>";  
+         $str = $str . "</td>\n";
          
-         $base = dirname($file);
-         #echo "base = $base <br>";
-         $changesName = "changes-" . $version . "." . $datestr;
-         $changesFile = $base . "/" . $changesName . ".html";
-         $changesURL = "http://download.eclipse.org/tools/ajdt/" . $eclipse . "/dev/update/" . $changesName . ".html";
-         #echo "changes file = $changesFile";
-         if (file_exists($changesFile)) {            
-             if (is_readable($changesFile)) {
-   				$str = $str . "<td><a href=\"$changesURL\">changes</a>";
-   				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
-   				$str = $str . "</td>";
-			 } else {
-   			    $str = $str . "<td><i>pending...</i></td>";
-			 }
-         } else {
-             $str = $str . "<td><i>not available</i></td>";
-         }
          
-         # look for AspectJ version file
-         $ajversionFile = $base . "/ajversion-" . $version . "." . $datestr . ".txt";
-         $str = $str . "<td>";
-         if (file_exists($ajversionFile) && is_readable($ajversionFile)) {
-            $ajv = file_get_contents($ajversionFile);
-            $str = $str . $ajv;
-         } else {
-            $str = $str . "<i>unknown</i>";
-         }
-         $str = $str . "</td>";
+#         $str = $str . "</td>\n<td width=\"30%\">";
+#         preg_match('/.*ajdt_([0-9]*\.[0-9]*\.[0-9]*)\.(.*)_archive.zip/',$file, $matches);
+#         if ($matches[1] == "") {
+#         	preg_match('/.*ajdt-([0-9]*\.[0-9]*\.[0-9]*)\.(.*)\.zip/',$file, $matches);
+#         }
+#         
+#         
+#         $version = $matches[1];
+#         $datestr = $matches[2];
+#         #echo "date string = " . $datestr . "<br>";
+#         $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
+#         $datetime = strtotime($dashes);
+#         $hours = substr($datestr,8,2);
+#         $mins = substr($datestr,10,2);         
+#         # can only determine local daylight savings, which is not necessarily
+#         # the same as the daylight savings where the build was done
+3         $daylightsavings = date("I");
+#         if ($eclipse == "30") {
+#           if ($daylightsavings == "1") {
+#             $tzstr = " (+0100)";
+#           } else {
+#             $tzstr = " (+0000)";
+#           }
+#         } else {
+#            if ($daylightsavings == "1") {
+#             $tzstr = " (-0400)";
+#           } else {
+#             $tzstr = " (-0500)";
+#           }       
+#         }
+#         #echo "hours = $hours   mins = $mins <br>";  
+#         $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
+#         $str = $str . $builddate . "</td>";  
+#         
+#         $base = dirname($file);
+#         #echo "base = $base <br>";
+#         $changesName = "changes-" . $version . "." . $datestr;
+#         $changesFile = $base . "/" . $changesName . ".html";
+#         $changesURL = "http://download.eclipse.org/tools/ajdt/" . $eclipse . "/dev/update/" . $changesName . ".html";
+#         #echo "changes file = $changesFile";
+#         if (file_exists($changesFile)) {            
+#             if (is_readable($changesFile)) {
+#   				$str = $str . "<td><a href=\"$changesURL\">changes</a>";
+#   				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
+#   				$str = $str . "</td>";#
+#			 } else {
+#   			    $str = $str . "<td><i>pending...</i></td>";
+#			 }
+#         } else {
+#             $str = $str . "<td><i>not available</i></td>";
+#         }
+#         
+#         # look for AspectJ version file
+#         $ajversionFile = $base . "/ajversion-" . $version . "." . $datestr . ".txt";
+#         $str = $str . "<td>";
+#         if (file_exists($ajversionFile) && is_readable($ajversionFile)) {
+#            $ajv = file_get_contents($ajversionFile);
+#            $str = $str . $ajv;
+#         } else {
+#            $str = $str . "<i>unknown</i>";
+#         }
+#         $str = $str . "</td>";
          $str = $str . "</tr>\n";
    }
    return $str;
@@ -445,9 +450,9 @@ of /technology, since AJDT become a Tools project.</p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
-    			<th>Build&nbsp;Date</th>
-    			<th>Build&nbsp;Report</th>
-    			<th>AspectJ&nbsp;Version</th>
+#    			<th>Build&nbsp;Date</th>
+#    			<th>Build&nbsp;Report</th>
+#    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 $builds36
 			</table>
@@ -463,9 +468,9 @@ $builds36
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
-    			<th>Build&nbsp;Date</th>
-    			<th>Build&nbsp;Report</th>
-    			<th>AspectJ&nbsp;Version</th>
+#    			<th>Build&nbsp;Date</th>
+#    			<th>Build&nbsp;Report</th>
+#    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 $builds35
 			</table>
@@ -481,9 +486,9 @@ $builds35
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
-    			<th>Build&nbsp;Date</th>
-    			<th>Build&nbsp;Report</th>
-    			<th>AspectJ&nbsp;Version</th>
+ #   			<th>Build&nbsp;Date</th>
+ #   			<th>Build&nbsp;Report</th>
+ #   			<th>AspectJ&nbsp;Version</th>
   			</tr>
 $builds34
 			</table>
@@ -499,9 +504,9 @@ $builds34
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
-    			<th>Build&nbsp;Date</th>
-    			<th>Build&nbsp;Report</th>
-    			<th>AspectJ&nbsp;Version</th>
+ #   			<th>Build&nbsp;Date</th>
+ #   			<th>Build&nbsp;Report</th>
+ #   			<th>AspectJ&nbsp;Version</th>
   			</tr>
 $builds34noweaving
 			</table>
@@ -517,9 +522,9 @@ $builds34noweaving
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
-    			<th>Build&nbsp;Date</th>
-    			<th>Build&nbsp;Report</th>
-    			<th>AspectJ&nbsp;Version</th>
+ #   			<th>Build&nbsp;Date</th>
+ #   			<th>Build&nbsp;Report</th>
+ #   			<th>AspectJ&nbsp;Version</th>
   			</tr>
 
 $builds33
