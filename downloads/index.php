@@ -38,13 +38,19 @@ function ListDevBuilds($dir){
 		   $eclipsename = "3.2.2";
 		 } else if ($eclipse == "33") {
 		   $eclipsename = "3.3";
+		 } else if ($eclipse == "34") {
+		   $eclipsename = "3.4.2";
+		 } else if ($eclipse == "35") {
+		   $eclipsename = "3.5.2";
+		 } else if ($eclipse == "36") {
+		   $eclipsename = "3.6";
 		 } else {
 		   $eclipsename = "";
 		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
-         #echo "path = $path <br>";
-         #echo "name = $name <br>";
+         echo "path = $path <br>";
+         echo "name = $name <br>";
          $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
          $str = $str . "</td>\n<td width=\"30%\">";
          preg_match('/.*ajdt_([0-9]*\.[0-9]*\.[0-9]*)\.(.*)_archive.zip/',$file, $matches);
