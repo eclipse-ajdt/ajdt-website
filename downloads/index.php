@@ -7,14 +7,15 @@ function date_cmp($f1, $f2) {
    return $f2stats[9]-$f1stats[9];
 }
 // return entries in the directory that represent dev builds
-function ListDevBuilds($dir, $eclipsename){
+function ListDevBuilds($dir, $eclipsename) {
    ini_set("max_execution_time",10);
    
    if (!($root = @opendir($dir))) {
    	return "";
    }
    while (false!== ($file=readdir($root))) {
-   	 if($file=="." || $file=="..") {continue;}
+   	  if($file=="." || $file=="..") {continue;}
+   	  
       if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
          $files[]="$dir/$file";
       } else if (preg_match('/.*ajdt-[0-9]*\.[0-9]*\.[0-9]*-(.*).zip/',$file, $matches)) {
@@ -37,71 +38,7 @@ function ListDevBuilds($dir, $eclipsename){
          }
 		 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
          $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
-         $str = $str . "</td>\n";
-         
-         
-#         $str = $str . "</td>\n<td width=\"30%\">";
-#         preg_match('/.*ajdt_([0-9]*\.[0-9]*\.[0-9]*)\.(.*)_archive.zip/',$file, $matches);
-#         if ($matches[1] == "") {
-#         	preg_match('/.*ajdt-([0-9]*\.[0-9]*\.[0-9]*)\.(.*)\.zip/',$file, $matches);
-#         }
-#         
-#         
-#         $version = $matches[1];
-#         $datestr = $matches[2];
-#         #echo "date string = " . $datestr . "<br>";
-#         $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
-#         $datetime = strtotime($dashes);
-#         $hours = substr($datestr,8,2);
-#         $mins = substr($datestr,10,2);         
-#         # can only determine local daylight savings, which is not necessarily
-#         # the same as the daylight savings where the build was done
-3         $daylightsavings = date("I");
-#         if ($eclipse == "30") {
-#           if ($daylightsavings == "1") {
-#             $tzstr = " (+0100)";
-#           } else {
-#             $tzstr = " (+0000)";
-#           }
-#         } else {
-#            if ($daylightsavings == "1") {
-#             $tzstr = " (-0400)";
-#           } else {
-#             $tzstr = " (-0500)";
-#           }       
-#         }
-#         #echo "hours = $hours   mins = $mins <br>";  
-#         $builddate = date("D, j M Y",$datetime) . " -- " . $hours . ":" . $mins . $tzstr;
-#         $str = $str . $builddate . "</td>";  
-#         
-#         $base = dirname($file);
-#         #echo "base = $base <br>";
-#         $changesName = "changes-" . $version . "." . $datestr;
-#         $changesFile = $base . "/" . $changesName . ".html";
-#         $changesURL = "http://download.eclipse.org/tools/ajdt/" . $eclipse . "/dev/update/" . $changesName . ".html";
-#         #echo "changes file = $changesFile";
-#         if (file_exists($changesFile)) {            
-#             if (is_readable($changesFile)) {
-#   				$str = $str . "<td><a href=\"$changesURL\">changes</a>";
-#   				#echo substr(sprintf('%o', fileperms($changesFile)), -4);
-#   				$str = $str . "</td>";#
-#			 } else {
-#   			    $str = $str . "<td><i>pending...</i></td>";
-#			 }
-#         } else {
-#             $str = $str . "<td><i>not available</i></td>";
-#         }
-#         
-#         # look for AspectJ version file
-#         $ajversionFile = $base . "/ajversion-" . $version . "." . $datestr . ".txt";
-#         $str = $str . "<td>";
-#         if (file_exists($ajversionFile) && is_readable($ajversionFile)) {
-#            $ajv = file_get_contents($ajversionFile);
-#            $str = $str . $ajv;
-#         } else {
-#            $str = $str . "<i>unknown</i>";
-#         }
-#         $str = $str . "</td>";
+         $str = $str . "</td>\n";         
          $str = $str . "</tr>\n";
    }
    return $str;
@@ -139,11 +76,11 @@ function ListDevBuilds($dir, $eclipsename){
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 	
-	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.6");
-	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update", "3.5");
-	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update", "3.4");
-	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving", "3.4 (no weaving)");
-	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update", "3.3");
+#	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.6");
+##	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update", "3.5");
+#	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update", "3.4");
+#	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving", "3.4 (no weaving)");
+#	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update", "3.3");
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
