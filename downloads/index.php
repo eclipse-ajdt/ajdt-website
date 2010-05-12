@@ -10,6 +10,8 @@ function date_cmp($f1, $f2) {
 function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
    
+   echo "In $dir <br>";
+   
    if (!($root = @opendir($dir))) {
    	return "";
    }
