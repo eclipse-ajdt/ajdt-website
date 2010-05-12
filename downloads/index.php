@@ -360,7 +360,7 @@ of /technology, since AJDT become a Tools project.</p>
     </div>
 
 	<div class="homeitem3col">
-	<h3>Release builds for Eclipse 3.1 and older</h3>
+	<h3>Release builds for Eclipse 3.2 and older</h3>
 	<ul>
 
 		<li>
