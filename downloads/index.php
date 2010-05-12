@@ -7,7 +7,7 @@ function date_cmp($f1, $f2) {
    return $f2stats[9]-$f1stats[9];
 }
 // return entries in the directory that represent dev builds
-function ListDevBuilds($dir){
+function ListDevBuilds($dir, $eclipse){
    ini_set("max_execution_time",10);
    
    echo "In $dir <br>\n";
@@ -19,6 +19,9 @@ function ListDevBuilds($dir){
    	 echo "file is: $file <br>\n";
    	 if($file=="." || $file=="..") {continue;}
       if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
+         $files[]="$dir/$file";
+      } else if (preg_match('/.*ajdt-[0-9]*\.[0-9]*\.[0-9]*-(.*).zip/',$file, $matches)) {
+         // for 3.5+
          $files[]="$dir/$file";
       }
    } 
@@ -32,28 +35,8 @@ function ListDevBuilds($dir){
          preg_match('/(\/tools\/.*\.zip)/',$file, $matches);
          $path = $matches[1];
 		 preg_match('/ajdt\/(\\d\\d)\/dev/',$file, $matches);
-		 $eclipse = $matches[1];
-		 if ($eclipse == "30") {
-		   $eclipsename = "3.0";
-		 } else if ($eclipse == "31") {
-		   $eclipsename = "3.1";
-		 } else if ($eclipse == "32") {
-		   $eclipsename = "3.2.2";
-		 } else if ($eclipse == "33") {
-		   $eclipsename = "3.3";
-		 } else if ($eclipse == "34") {
-		   $eclipsename = "3.4.2";
-		 } else if ($eclipse == "35") {
-		   $eclipsename = "3.5.2";
-		 } else if ($eclipse == "36") {
-		   $eclipsename = "3.6";
-		 } else {
-		   $eclipsename = "";
-		 }
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
-         echo "path = $path <br>";
-         echo "name = $name <br>";
          $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
          $str = $str . "</td>\n<td width=\"30%\">";
          preg_match('/.*ajdt_([0-9]*\.[0-9]*\.[0-9]*)\.(.*)_archive.zip/',$file, $matches);
@@ -149,14 +132,11 @@ function ListDevBuilds($dir){
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 	
-	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update");
-	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update");
-	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update");
-	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving");
-	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update");
-	#$builds32 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/32/dev/update');
-	#$builds31 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/31/dev/update');
-	#$builds30 = ListDevBuilds('/home/local/data/httpd/download.eclipse.org/tools/ajdt/30/dev/update');
+	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.6");
+	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update", "3.5");
+	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update", "3.4");
+	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving", "3.4 (no weaving)");
+	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update", "3.3");
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
