@@ -7,16 +7,13 @@ function date_cmp($f1, $f2) {
    return $f2stats[9]-$f1stats[9];
 }
 // return entries in the directory that represent dev builds
-function ListDevBuilds($dir, $eclipse){
+function ListDevBuilds($dir, $eclipsename){
    ini_set("max_execution_time",10);
-   
-   echo "In $dir <br>\n";
    
    if (!($root = @opendir($dir))) {
    	return "";
    }
    while (false!== ($file=readdir($root))) {
-   	 echo "file is: $file <br>\n";
    	 if($file=="." || $file=="..") {continue;}
       if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
          $files[]="$dir/$file";
@@ -34,12 +31,17 @@ function ListDevBuilds($dir, $eclipse){
          
          preg_match('/(\/tools\/.*\.zip)/',$file, $matches);
          $path = $matches[1];
-		 preg_match('/ajdt\/(\\d\\d)\/dev/',$file, $matches);
          preg_match('/.*ajdt_(.*)_archive.zip/',$file, $matches);
+         if ($matches[1] == "") {
+         	preg_match('/.*ajdt-(.*).zip/',$file, $matches);
+         }
 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
          $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
          $str = $str . "</td>\n<td width=\"30%\">";
          preg_match('/.*ajdt_([0-9]*\.[0-9]*\.[0-9]*)\.(.*)_archive.zip/',$file, $matches);
+         if ($matches[1] == "") {
+         	preg_match('/.*ajdt-([0-9]*\.[0-9]*\.[0-9]*)\.(.*)\.zip/',$file, $matches);
+         }
          $version = $matches[1];
          $datestr = $matches[2];
          #echo "date string = " . $datestr . "<br>";
