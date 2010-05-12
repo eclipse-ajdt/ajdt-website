@@ -35,7 +35,7 @@ function ListDevBuilds($dir, $eclipsename){
          if ($matches[1] == "") {
          	preg_match('/.*ajdt-(.*).zip/',$file, $matches);
          }
-		 $name = $matches[1] . " for Eclipse " . $eclipsename;
+		 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
          $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
          $str = $str . "</td>\n";
          
@@ -450,9 +450,6 @@ of /technology, since AJDT become a Tools project.</p>
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
-#    			<th>Build&nbsp;Date</th>
-#    			<th>Build&nbsp;Report</th>
-#    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 $builds36
 			</table>
@@ -468,9 +465,6 @@ $builds36
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
-#    			<th>Build&nbsp;Date</th>
-#    			<th>Build&nbsp;Report</th>
-#    			<th>AspectJ&nbsp;Version</th>
   			</tr>
 $builds35
 			</table>
@@ -486,9 +480,6 @@ $builds35
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
- #   			<th>Build&nbsp;Date</th>
- #   			<th>Build&nbsp;Report</th>
- #   			<th>AspectJ&nbsp;Version</th>
   			</tr>
 $builds34
 			</table>
@@ -504,9 +495,6 @@ $builds34
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
- #   			<th>Build&nbsp;Date</th>
- #   			<th>Build&nbsp;Report</th>
- #   			<th>AspectJ&nbsp;Version</th>
   			</tr>
 $builds34noweaving
 			</table>
@@ -522,9 +510,6 @@ $builds34noweaving
 			<table class="tasklist" width="100%">
   			<tr align="left">
     			<th>Zip&nbsp;file</th>
- #   			<th>Build&nbsp;Date</th>
- #   			<th>Build&nbsp;Report</th>
- #   			<th>AspectJ&nbsp;Version</th>
   			</tr>
 
 $builds33
