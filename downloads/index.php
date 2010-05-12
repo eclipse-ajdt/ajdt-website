@@ -10,13 +10,14 @@ function date_cmp($f1, $f2) {
 function ListDevBuilds($dir){
    ini_set("max_execution_time",10);
    
-   echo "In $dir <br>";
+   echo "In $dir <br>\n";
    
    if (!($root = @opendir($dir))) {
    	return "";
    }
    while (false!== ($file=readdir($root))) {
-     if($file=="." || $file=="..") {continue;}
+   	 echo "file is: $file <br>\n";
+   	 if($file=="." || $file=="..") {continue;}
       if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
          $files[]="$dir/$file";
       }
