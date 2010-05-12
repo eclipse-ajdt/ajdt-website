@@ -44,7 +44,7 @@ function ListDevBuilds($dir, $eclipsename){
          }
          $version = $matches[1];
          $datestr = $matches[2];
-         #echo "date string = " . $datestr . "<br>";
+         echo "date string = " . $datestr . "<br>";
          $dashes = preg_replace('/([0-9][0-9][0-9][0-9])([0-9][0-9])([0-9][0-9]).*/','${1}-${2}-${3}', $datestr);
          $datetime = strtotime($dashes);
          $hours = substr($datestr,8,2);
