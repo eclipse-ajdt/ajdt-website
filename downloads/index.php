@@ -28,7 +28,7 @@ function ListDevBuilds($dir, $eclipsename) {
    @closedir($dir);
    $str = "";
    foreach ($files as $file) {
-         $str = $str . "<tr><td>\n";
+         $str = $str . "<tr><td>";
          
          preg_match('/(\/tools\/.*\.zip)/',$file, $matches);
          $path = $matches[1];
@@ -36,10 +36,9 @@ function ListDevBuilds($dir, $eclipsename) {
          if ($matches[1] == "") {
          	preg_match('/.*ajdt-(.*).zip/',$file, $matches);
          }
-		 		 $name = $matches[1] . " for Eclipse " . $eclipsename;
+		 		 $name = "$matches[1] for Eclipse $eclipsename";
          $str = $str . "<a href=\"http://www.eclipse.org/downloads/download.php?file=$path\">$name</a>";
-         $str = $str . "</td>\n";         
-         $str = $str . "</tr>\n";
+         $str = $str . "</td></tr>\n";         
    }
    return $str;
 }
@@ -76,11 +75,11 @@ function ListDevBuilds($dir, $eclipsename) {
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 	
-#	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.6");
-##	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update", "3.5");
-#	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update", "3.4");
-#	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving", "3.4 (no weaving)");
-#	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update", "3.3");
+	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.6");
+	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update", "3.5");
+	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update", "3.4");
+	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving", "3.4 (no weaving)");
+	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update", "3.3");
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
@@ -454,71 +453,6 @@ $builds33
 			</table>
 			</p>
 		</li>
-
-<!--
-				
-		<li>
-			Eclipse 3.2 builds
-			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/tools/ajdt/32/dev/update</code>
-			</p>
-			<p>
-			<table class="tasklist" width="100%">
-  			<tr align="left">
-    			<th>Zip&nbsp;file</th>
-    			<th>Build&nbsp;Date</th>
-    			<th>Build&nbsp;Report</th>
-    			<th>AspectJ&nbsp;Version</th>
-  			</tr>
-
-$builds32
-
-			</table>
-			</p>
-		</li>
-	
-	
-		<li>
-			Eclipse 3.1 builds
-			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/tools/ajdt/31/dev/update</code>
-			</p>
-			<p>
-			<table class="tasklist" width="100%">
-  			<tr align="left">
-    			<th>Zip&nbsp;file</th>
-    			<th>Build&nbsp;Date</th>
-    			<th>Build&nbsp;Report</th>
-    			<th>AspectJ&nbsp;Version</th>
-  			</tr>
-
-$builds31
-
-			</table>
-			</p>
-		</li>
-		
-		<li>
-			Eclipse 3.0 builds
-			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/tools/ajdt/30/dev/update</code>
-			</p>
-			<p>
-			<table class="tasklist" width="100%">
-  			<tr align="left">
-    			<th>Zip&nbsp;file</th>
-    			<th>Build&nbsp;Date</th>
-    			<th>Build&nbsp;Report</th>
-    			<th>AspectJ&nbsp;Version</th>
-  			</tr>
-
-$builds30
-
-			</table>
-			</p>
-		</li>
-	-->
-		
 	</ul>
 	
 	
