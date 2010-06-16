@@ -64,13 +64,19 @@
 			<h3>News and Releases</h3>
 			<ul>
  				 <li>
-				 		<img src="images/new.gif" width="11" height="11">AJDT 2.1.0M1 is available from the <a href="downloads">downloads</a> page.
+				 		<img src="images/new.gif" width="11" height="11">AJDT 2.1.0 
+				 		<a href="http://www.eclipse.org/ajdt/release_reviews/AJDT2.1.0ReleaseReview.pdf">release review slides</a> are now available.
+				 		<br><span class="dates">posted 06-16-10</span>
+				 </li>
+ 				 <li>
+				 		AJDT 2.1.0M1 is available from the <a href="downloads">downloads</a> page.
 				 		<br><span class="dates">posted 05-04-10</span>
 				 </li>
  				 <li>
 				 		AJDT is now available for Eclipse 3.6.  See the <a href="downloads">downloads</a> page.
 				 		<br><span class="dates">posted 03-21-10</span>
 				 </li>
+			  <!--
  				 <li>
 				 		<a href="whatsnew202">AJDT 2.0.2</a> is here!  
 				 		The release build is available from the <a href="downloads">downloads</a> page.
@@ -85,7 +91,6 @@
 				    <em><a href="http://manning.com/laddad2/">AspectJ in Action, Second Edition</a></em> by Ramnivas Laddad
 				    is now available.<br><span class="dates">posted 09-15-09</span>
 				 </li>
-			  <!--
 				 <li>
 				 		<a href="whatsnew200">AJDT 2.0.0</a> is here!  
 				 		The release build is available from the <a href="downloads">downloads</a> page.
