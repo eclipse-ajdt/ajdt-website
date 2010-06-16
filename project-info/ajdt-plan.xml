@@ -5,9 +5,9 @@
 	<introduction>
 		<html:div>
 <html:p>
-AJDT released 2.1.0 to coincide with Eclipse's Helios release in late June.  There are two streams,
+AJDT released 2.1.0 to coincide with the Eclipse Helios release in late June.  There are two streams,
 of this version, one for Eclipse 3.5, with version 2.2.0.e34x-*, and one for Eclipse 3.6 with version 2.1.0.e35x-*.
-These two streams are maintained as separate branches in CVS.  Because of AJDT's tight integration with JDT, 
+These two streams are maintained as separate branches in CVS.  Because of the tight integration of AJDT with JDT, 
 the Eclipse 3.5 stream will not install in Eclipse 3.6 and vice versa.  On top of that, the 3.6 stream uses a 
 new APIs available in the PDE project so that AspectJ PDE builds are easier to create. Excepting these differences, 
 the two streams use the same code base and have the same feature set.  The 2.1.1 release is the last 
@@ -130,7 +130,7 @@ stream in March 2011.
 			<description>
 				<html:p>
 				AJDT is a relatively mature programming language tool.  As such, users have high expectations of it.  They
-				expect a similar level of tooling support as they receive from JDT.  One of AJDT's weaker areas is refactoring.
+				expect a similar level of tooling support as they receive from JDT.  One of the weaker areas of AJDT is refactoring.
 				For the 2.1.0 release, we have added new support for renaming ITDs, but there are still problems with the renaming
 				of pointcuts and the types and methods within them.
         </html:p>
