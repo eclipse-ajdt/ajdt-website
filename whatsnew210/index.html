@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<link rel="STYLESHEET" href="http://www.eclipse.org/default_style.css" charset="ISO-8859-1" type="text/css">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>AJDT 2.0.2 - New and Noteworthy</title>
+
+</head>
+<body>
+<h1>AJDT 2.1.0 - New and Noteworthy</h1>
+
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td valign="top"><b>Overview</b></td>
+<td valign="top">In this release, we have gone further with our support for Intertype Declarations (ITDs).  
+Due to frameworks like <a href="http://www.springsource.org/roo">Spring Roo</a>, AspectJ and AJDT
+having been growing in popularity.  Spring Roo uses ITDs heavily and as such, there has been a strong push
+to provide even better support for them in the IDE. 
+</td>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>ITD-Aware search</b></td>
+<td>
+AJDT now supports ITD-aware searching.  There are two parts to this feature:
+
+<ol>
+<li>Standard Java search will find references to Java elements inside an ITD.  For example, in this snippet of code, 
+a search for the references to the <code>name</code> field yields two references inside of ITDs:<br/>
+<img src="img/searchInsideOfITD.gif" border="1" /><br/><br/>
+</li>
+<li>Now, invoking Java search on an ITD will locate all of its valid references as shown in this example:><br/>
+  <img src="img/searchOfITD.gif" border="1" /><br/><br/>
+</li>
+</ol>
+For more information, see <a href="https://bugs.eclipse.org/273335">Bug 273335</a>. 
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>ITD rename refactoring</b></td>
+<td>
+Building on top of our new support for ITD-aware searches, we now support rename refactoring of ITD fields and methods.  You can invoke rename
+refactoring for ITDs in the same way that you invoke rename refactoring for Java elements using keyboard commands (e.g.- CTRL-Shift-R on Windows)
+or from the context menu.  As much as reasonable, we follow the same conventions of JDT's rename refactoring.  For example, rename an ITD and all
+overriding methods will be renamed as well as the following example shows:
+
+<ol>
+<li>In the following code, notice that the <code>Person.getName()</code> is overridden in the <code>Cyborg</code>
+class.  This is the method that we want to rename:<br/>
+  <img src="img/rename1.gif" border="1" /><br/><br/>
+</li>
+<li>Select the method, right-click, Refactor, Rename...:<br/>
+  <img src="img/rename2.gif" border="1" /><br/><br/>
+</li>
+<li>The rename dialog pops up:<br/>
+  <img src="img/rename3.gif" border="1" /><br/><br/>
+</li>
+
+<li>After choosing the new name, select <em>Preview</em>:<br/>
+  <img src="img/rename4.gif" border="1" /><br/>
+  Notice how <code>Cyborg.getName()</code> is renamed along with the Person.getName() intertype declaration.<br/><br/>
+</li>
+
+<li>Finally, click OK to finish the refactoring and get the following result, with all references to <code>Person.getName()</code> renamed:<br/>
+  <img src="img/rename5.gif" border="1" /><br/><br/>
+</li>
+</ol>
+
+The rename refactoring is hooked into Eclipse's undo facility, so that all renames, even those that span multiple files, are undoable.
+For more information, see <a href="https://bugs.eclipse.org/303558">Bug 303558</a>. 
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>ITD-aware renaming of getters and setters</b></td>
+<td>
+AJDT has added a refactoring participant to allow ITD getters and setters to be renamed when their associated field is renamed.
+In order to access this functionality, the <em>Rename Getter</em> and/or <em>Rename Setter</em> check boxes must be checked
+in the rename field dialog:<br/>
+  <img src="img/participant1.gif" border="1" /><br/><br/>
+With these check boxes selected, renaming the <code>name</code> field to <code>firstName</code> in the previous example will 
+produce the following results:<br/>
+  <img src="img/participant2.gif" border="1" /><br/><br/>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Pull-out refactoring</b></td>
+<td>
+We have implemented the Pull-Out refactoring, which is the analog to the 
+<a href="http://contraptionsforprogramming.blogspot.com/2009/05/push-in-refactoring-for-ajdt.html">Push-In refactoring</a>.
+This refactoring will pull out a Java field, method, or constructor into a target Aspect as an intertype declaration.
+<br/><br/>
+This refactoring can be invoked from the package explorer, Java editor, outline view, or anywhere that Java elements appear.  For example:
+
+<ol>
+<li>Select the elements that you would like to pull out and invoke the refactoring wizard:<br/>
+<img src="img/pullOut1.gif" border="1" /><br/><br/></li>
+<li>Choose the target aspect and the appropriate options:<br/>
+<img src="img/pullOut2.gif" border="1" /><br/><br/></li>
+<li>Click Preview to see the proposed results (if desired):<br/>
+<img src="img/pullOut3.gif" border="1" /><br/><br/></li>
+</ol>
+
+The pull out refactoring is hooked into Eclipse's undo and redo mechanism and so it 
+can be undone with a single command.  For more information, see <a href="https://bugs.eclipse.org/277055">Bug 277055</a>.
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b><code>@Test</code> and Intertype declarations</b></td>
+<td>
+It is now possible to run intertype declarations that are JUnit 4 tests through the 
+Eclipse JUnit test launcher:<br/>
+<img src="img/runTest1.gif" border="1" />
+<br/><br/>
+Notice here that the <code>Target</code> class is empty, and it has 2 tests declared on it as ITDs.
+<br/><br/>
+To run these kinds of tests, simply choose the container (type, compilation unit, package, etc) that the
+tests are contained in and launch:<br/>
+<img src="img/runTest2.gif" border="1" />
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>AspectJ-aware PDE Build (Helios only)</b></td>
+<td>
+For the Helios (Eclipse 3.6) stream, AJDT now provides PDE build integration on top of 
+<a href="https://bugs.eclipse.org/303960">Bug 303960</a>.  This means that the old AJDT-PDE 
+feature and wizards are superfluous and no longer exist in the 3.6 stream.
+<br/><br/>
+Now, plug-ins that require AspectJ can use the same PDE export wizards and headless PDE support as any other Java
+plug-in.  All that is required is adding two lines to your <code>build.properties</code> file 
+on all of your plug-ins that require AspectJ:
+<pre>compilerAdapter=org.eclipse.ajdt.core.ant.AJDT_AjcCompilerAdapter
+sourceFileExtensions=*.java, *.aj</pre>
+For more information, see: <a href="http://contraptionsforprogramming.blogspot.com/2010/03/ajdt-pde-builds-redux.html">
+AJDT-PDE builds redux</a>.
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Modernize the build server</b></td>
+<td>
+We have moved the AJDT continuous integration builds to a modern Atlassian Bamboo server.  From an end user's
+perspective this does not mean much, except that you can browse the build processes as they occur.  However,
+from a developer's point of view, the build process is faster, more robust, and easier to maintain over time.
+<br/><br/>
+From an end-user's perspective, it is now possible to closely monitor the development releases of AJDT. 
+If you are interested, you can see the build server at: <a href="http://build.springframework.org/browse/AJDT">http://build.springframework.org/browse/AJDT</a>.
+For more information, see <a href="https://bugs.eclipse.org/298913">Bug 298913</a>.
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Bug Fixes</b></td>
+<td>
+See <a href="http://tinyurl.com/35h4asy">Bugzilla</a> for a list of bugs addressed in this release.
+</td>
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>Thanks!</b></td>
+<td>
+We now have a new member on the AJDT team, Kris De Volder.  Kris is joining us from the University of British 
+Columbia, where his focus was AOP and code browsing using AOP techniques to help understand large code-bases.  Kris 
+is the implementor of the pull out refactoring.  Welcome aboard! 
+</td>
+
+
+</tr>
+<tr>
+<td colspan="2">
+<hr></td>
+<tr>
+<td valign="top"><b>Previous Releases</b></td>
+<td>
+See <a href="http://www.eclipse.org/ajdt/whatsnew202/index.html">here</a> 
+for information on the new features in AJDT 2.0.2.
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
