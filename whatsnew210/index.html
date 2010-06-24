@@ -127,6 +127,31 @@ can be undone with a single command.  For more information, see <a href="https:/
 <hr></td>
 </tr>
 <tr>
+<td valign="top"><b>Aspect-aware type renaming</b></td>
+<td>
+Type references inside of Aspects are now renamed when the associated type declaration is renamed.
+
+Here, the <code>Wibble</code> aspect contains several references to <code>Target</code> inside of
+its aspect elements:<br/>
+<img src="img/renameType1.gif" border="1" />
+<br/><br/>
+When <code>Target</code> is renamed, all references in referring aspects are renamed as well:<br/>
+<img src="img/renameType3.gif" border="1" />
+<br/><br/>
+In some circumstances, you will see a refactoring warning:<br/>
+<img src="img/renameType2.gif" border="1" />
+<br/><br/>
+This warning occurs due to some limitations we have with searching for references inside of aspects and
+it can safely be ignored.
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
 <td valign="top"><b><code>@Test</code> and Intertype declarations</b></td>
 <td>
 It is now possible to run intertype declarations that are JUnit 4 tests through the 
@@ -179,6 +204,17 @@ For more information, see <a href="https://bugs.eclipse.org/298913">Bug 298913</
 </td>
 </tr>
 
+<tr>
+<td colspan="2">
+<hr></td>
+</tr>
+<tr>
+<td valign="top"><b>AspectJ 1.6.9</b></td>
+<td>
+AJDT 2.1.0 includes AspectJ 1.6.9.  This release has several new features including
+transparent weaving, intertype inner types, overweaving, and a reduction of class
+file size.  See the <a href="http://eclipse.org/aspectj/doc/released/README-169.html">readme</a> for all details. 
+</td>
 
 <tr>
 <td colspan="2">
@@ -189,6 +225,7 @@ For more information, see <a href="https://bugs.eclipse.org/298913">Bug 298913</
 <td>
 See <a href="http://tinyurl.com/35h4asy">Bugzilla</a> for a list of bugs addressed in this release.
 </td>
+
 <tr>
 <td colspan="2">
 <hr></td>
