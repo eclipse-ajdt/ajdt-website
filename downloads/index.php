@@ -146,7 +146,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>Development builds for Eclipse 3.6</h3>
 	<ul>
 		<li>
-			AJDT 2.1.0 dev builds for Eclipse 3.6
+			AJDT 2.1.1 dev builds for Eclipse 3.6
 			<table class="tasklist" width="80%">
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
@@ -168,7 +168,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>Development builds for Eclipse 3.5</h3>
 	<ul>
 		<li>
-			AJDT 2.1.0 dev builds for Eclipse 3.5
+			AJDT 2.1.1 dev builds for Eclipse 3.5
 			<table class="tasklist" width="80%">
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
