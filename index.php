@@ -64,7 +64,17 @@
 			<h3>News and Releases</h3>
 			<ul>
  				 <li>
-				 		<img src="images/new.gif" width="11" height="11">AJDT 2.1.0 
+				 		<img src="images/new.gif" width="11" height="11"><a href="whatsnew210">AJDT 2.1.0</a> is here!  
+				 		The release build is available from the <a href="downloads">downloads</a> page.
+				 		<br><span class="dates">posted 07-05-10</span>
+				 </li>
+ 				 <li>
+				 		<img src="images/new.gif" width="11" height="11">AJDT build server has moved.  Keep track of the latest AJDT builds on 
+				 		the <a href="http://build.springframework.org/browse/AJDT">new server</a>.
+				 		<br><span class="dates">posted 07-05-10</span>
+				 </li>
+ 				 <li>
+				 		AJDT 2.1.0 
 				 		<a href="http://www.eclipse.org/ajdt/release_reviews/AJDT2.1.0ReleaseReview.pdf">release review slides</a> are now available.
 				 		<br><span class="dates">posted 06-16-10</span>
 				 </li>

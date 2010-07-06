@@ -110,7 +110,7 @@ of /technology, since AJDT become a Tools project.</p>
 		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 		<table class="tasklist" width="80%">
 		  <tr>
-		    <th align="left">Release Date:</th><td>January 5, 2010 (2.0.2)<br/>October 2, 2009 (2.0.1)</td>
+		    <th align="left">Release Date:</th><td>July 5, 2010</td>
 		  </tr>
 		  <tr>
 		    <th align="left">AspectJ Version in 2.1.0:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.9.jar">1.6.9</a></td>
@@ -129,13 +129,14 @@ of /technology, since AJDT become a Tools project.</p>
 		  </tr>	  
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.5 Zip file:</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/35/update/ajdt_2.1.9_for_eclipse_3.5.zip">ajdt_2.1.0_for_eclipse_3.5.zip</a></td>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/35/update/ajdt_2.1.0_for_eclipse_3.5.zip">ajdt_2.1.0_for_eclipse_3.5.zip</a></td>
 		  </tr>	  
 		  <tr>
 		    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew210/">New & Noteworthy</a></td>
 		  </tr>
 		</table>
 		To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+		Do <em>not</em> unzip the update site into the dropins directory.
 	</li>
 	</ul>
 	</div>
@@ -157,6 +158,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>	  
 			</table>
 		To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+		Do <em>not</em> unzip the update site into the dropins directory.
 		</li>
 	</ul>
 	</div>
@@ -178,6 +180,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>	  
 			</table>
 		To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+		Do <em>not</em> unzip the update site into the dropins directory.
 		</li>
 	</ul>
 	</div>
@@ -187,7 +190,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>AJDT 2.0 release builds for Eclipse 3.5 and 3.4</h3>
 	<ul>
 	<li>
-		AJDT 2.0.2 and 2.0.1 builds for Eclipse 3.5 and 3.4<em>with JDT weaving</em><br>
+		AJDT 2.0.2 and 2.0.1 builds for Eclipse 3.5 and 3.4 <em>with JDT weaving</em><br>
 		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 		<table class="tasklist" width="80%">
 		  <tr>
