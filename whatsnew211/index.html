@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<link rel="STYLESHEET" href="http://www.eclipse.org/default_style.css" charset="ISO-8859-1" type="text/css">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>AJDT 2.1.1 - New and Noteworthy</title>
+
+</head>
+<body>
+<h1>AJDT 2.1.1 - New and Noteworthy</h1>
+
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td valign="top"><b>Overview</b></td>
+<td valign="top">In this release, we have focussed on searching and refactoring support
+for Intertype Declarations (ITDs) and Declare declarations.  This will particularly benefit users
+of <a href="http://www.springsource.org/roo">Spring Roo</a> who will be better able to search 
+and refactor source code that contains Roo-style aspects.
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2">
+<hr></td></tr>
+<tr>
+<td colspan="2" valign="top" align="center"><h3>Searching</h3></td>
+</tr>
+
+
+<tr>
+<td valign="top"><b>Searching for ITD target types</b></td>
+<td>
+Target types of intertype declarations now appear in the search results when searching for type references:
+<br/>
+<br/>
+<img/>
+<br/>
+<br/>
+</td>
+</tr>
+
+<tr>
+<td valign="top"><b>Searching for Declare parents</b></td>
+<td>
+Types referenced inside of declare parents declarations are also returned in search results where appropriate:
+<br/>
+<br/>
+<img/>
+<br/>
+<br/>
+This even works for referenced annotations:
+<br/>
+<br/>
+<img/>
+<br/>
+<br/>
+There are some caveates, however.  Wild cards are not supported.  Also, type bindings are sometimes not respected, meaning that
+two types with the same name, but different packages may be inappropriately matched.  
+</td>
+</tr>
+
+<tr>
+<td valign="top"><b>Searching for Declare annotation</b></td>
+<td>
+And finally, types, methods, and fields referenced inside of declare annotation declarations are similarly found when searching
+for references:
+<br/>
+<br/>
+<img/>
+
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2">
+<hr></td></tr>
+<tr>
+<td colspan="2" valign="top" align="center"><h3>Refactoring</h3></td>
+</tr>
+
+
+<tr>
+<td valign="top"><b>Rename refactoring</b></td>
+<td>
+Rename refactoring is working in almost all situations. Intertype declarations can be renamed; fields, methods, and types referenced 
+inside of Aspects will be appropriately renamed; and AJ Compilation units will be renamed when appropriate.  Most of this work 
+was completed for the <a href="../whatsnew210/index.html">2.1.0 release</a>, with some small fixes included in this release.  The most significant 
+improvement in this area is that package renames are properly reflected in the import statements and fully qualified names of 
+AJ compilation units.
+<br/>
+<br/>
+<img/>
+<br/>
+<br/>
+AJDT does not currently support the renaming of named pointcuts.
+</td>
+</tr>
+
+<tr>
+<td valign="top"><b>Move refactoring</b></td>
+<td>
+Similarly, move refactoring is AspectJ-aware.  Import statements and fully qualified names will be properly updated in Aspects when types and compilation units move.
+It is also possible to drag and drop types, fields, and methods into aspects, with the same behavior as you would expect when the project is pure Java.   
+</td>
+</tr>
+
+<tr>
+<td valign="top"><b>Pull-out refactoring enhancements</b></td>
+<td>
+It is now possible to choose a non-existant aspect as the target of a Pull-out refactoring.  This aspect will be created as 
+part of the refactoring operation.
+</td>
+</tr>
+
+
+<tr>
+<td valign="top"><b>Catalog of working refactorings in AJ files</b></td>
+<td>
+In this release, we have done significant work in making sure that the standard JDT refactorings are available 
+when inside an Aspect.  We have focussed on the more widely used refactorings, and left some of the less
+popular refactorings unimplemented.
+
+In addition to the AspectJ-specific <strong>Push in</strong> abd <strong>Pull out</strong> refactorings, and the 
+standard <strong>Rename</strong> and <strong>Move</strong>here are the JDT 
+refactorings that are currently known to work in AJDT:
+
+<ul>
+<li>Push Down</li>
+<li>Extract Class</li>
+<li>Pull up</li>
+<li>Push down</li>
+<li>Use super type where possible</li>
+<li>Inline</li>
+<li>Extract Method</li>
+<li>Extract Local Variable</li>
+<li>Extract Constant</li>
+<li>Introduce indirection</li> 
+<li>Introduce parameter (non-advice)</li> 
+</ul> 
+
+The following refactorings will produce correct results, even though the refactoring wizard complains about compilation errors:
+<ul>
+<li>Change method signature</li>
+<li>Introduce Parameter Object (inside non-ITD method)</li>
+</ul>
+
+And finally, the following refactorings produce errors and do not work inside aspects:
+
+<ul>
+<li>Extract super class</li>
+<li>Infer generic arguments where possible</li>
+<li>Introduce Parameter (inside advice)</li>
+<li>Introduce Parameter Object</li>
+<li>Convert Local variable to a field</li>
+<li>Encapsulate field</li> 
+</ul>
+
+If you want us to fix any of the above refactorings, or you notice a problem with one of the existing refactorings, please notify us
+on the mailing list or raise a bugzilla request for it.
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr></td></tr>
+<tr>
+<td valign="top"><b>Previous Releases</b></td>
+<td>
+See <a href="http://www.eclipse.org/ajdt/whatsnew210/index.html">here</a> 
+for information on the new features in AJDT 2.1.0.
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
