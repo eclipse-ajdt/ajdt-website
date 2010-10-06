@@ -36,39 +36,57 @@
 
 
 		<tr>
-			<td valign="top"><b>Searching for ITD target types</b></td>
+			<td valign="top"><b>Searching and hovers for ITD target
+			types</b></td>
 			<td>Target types of intertype declarations now appear in the
 			search results when searching for type references: <br />
 			<br />
-			<img /> <br />
+			<img src="img/search_itd_target_type.png" border="1" /><br />
+			Notice here that simple as well as fully qualified names are found
+			through searches.<br>
 			<br />
-			</td>
+			Similarly, hovering over ITD target types will display its type
+			information: <br />
+			<br />
+			<img src="img/hover_itd_target_type.png" border="1" /> <br />
+			Navigation (i.e., hyperlinks and F3) works as well.</td>
 		</tr>
 
 		<tr>
-			<td valign="top"><b>Searching for Declare parents</b></td>
+			<td valign="top"><b>Searching inside Declare parents</b></td>
 			<td>Types referenced inside of declare parents declarations are
 			also returned in search results where appropriate: <br />
 			<br />
-			<img /> <br />
-			<br />
-			This even works for referenced annotations: <br />
-			<br />
-			<img /> <br />
-			<br />
-			There are some caveates, however. Wild cards are not supported. Also,
-			type bindings are sometimes not respected, meaning that two types
-			with the same name, but different packages may be inappropriately
-			matched.</td>
+			<img src="img/search_declare_parents.png" border="1" /></td>
 		</tr>
 
 		<tr>
-			<td valign="top"><b>Searching for Declare annotation</b></td>
-			<td>And finally, types, methods, and fields referenced inside of
-			declare annotation declarations are similarly found when searching
-			for references: <br />
+			<td valign="top"><b>Searching inside Declare annotation</b></td>
+			<td>And finally, types referenced inside of declare annotation
+			declarations are similarly found when searching for references: <br />
 			<br />
-			<img /></td>
+			<img src="img/search_declare_annotation.png" border="1" /><br />
+			<br />
+			The annotation itself is also found through searching: <br />
+			<br />
+			<img src="img/search_declare_annotation2.png" border="1" /><br />
+			<br />
+			There are some limitations to these new searching features:
+			<ul>
+				<li>Wild cards are not supported.</li>
+				<li>Type bindings are sometimes not respected, meaning that two
+				types with the same name, but different packages may be
+				inappropriately matched. You will notice that the search result for
+				<code>@Loggable</code> inside of the <code>declare parents</code> is
+				marked as potential. This means that we could not match on the fully
+				qualified name, but only the type's simple name.</li>
+				<li>Field and method references in declare annotations are not
+				returned in search results. See, <a
+					href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327117">Bug
+				327117</a>.</li>
+				<li>Hovers and navigation are not yet implemented inside of
+				declare declarations.
+			</ul>
 		</tr>
 
 
@@ -88,15 +106,16 @@
 			<td valign="top"><b>Rename refactoring</b></td>
 			<td>Rename refactoring is working in almost all situations.
 			Intertype declarations can be renamed; fields, methods, and types
-			referenced inside of Aspects will be appropriately renamed; and AJ
-			Compilation units will be renamed when appropriate. Most of this work
-			was completed for the <a href="../whatsnew210/index.html">2.1.0
-			release</a>, with some small fixes included in this release. The most
-			significant improvement in this area is that package renames are
-			properly reflected in the import statements and fully qualified names
-			of AJ compilation units. <br />
+			referenced inside of Aspects will be appropriately renamed; and
+			AspectJ Compilation units will be renamed when appropriate. Most of
+			this work was completed for the <a href="../whatsnew210/index.html">2.1.0
+			release</a>, with some small fixes included in this release. <br>
+			<br>
+			The most significant improvement in this area is that package renames
+			are properly reflected in fully qualified names that are referenced
+			in aspects: <br />
 			<br />
-			<img /> <br />
+			<img src="img/rename_package.png" border="1" /> <br />
 			<br />
 			AJDT does not currently support the renaming of named pointcuts.</td>
 		</tr>
@@ -105,18 +124,35 @@
 			<td valign="top"><b>Move refactoring</b></td>
 			<td>Similarly, move refactoring is AspectJ-aware. Import
 			statements and fully qualified names will be properly updated in
-			Aspects when types and compilation units move. It is also possible to
+			Aspects when types and compilation units move. For example, moving 
+			a type referenced by an Aspect will force import statements to be
+			added/removed and fully qualified names to be updated:
+			<br/><br/> 
+			<img src="img/move_cu.png" border="1" />
+			<br/><br/>
+			Note that you will sometimes receive an error message like this:
+			<br/><br/>
+			<img src="img/potential_matches.png" border="1" />
+			<br/><br/>
+			This message means that there are some type reference matches that 
+			the refactoring is not sure about.  This happens because there are
+			some situations where AJDT cannot determine type bindings and performs
+			matches on simple, rather than qualified, names.  This message can generally
+			be ignored, but you may want to examine all changes to make sure.
+			<br/><br/>
+			It is also possible to
 			drag and drop types, fields, and methods into aspects, with the same
-			behavior as you would expect when the project is pure Java.</td>
+			behavior as you would expect when the project is pure Java.
+			For example, when dragging and dropping a type into an AspectJ
+			compilation unit, fully qualifed references to that type are properly
+			updated: <br />
+			<br />
+			<img src="img/move_type_into_aspect.png" border="1" /> <br />
+			<br />
+			Note that currently, only drag and dropping of fields and methods
+			into aspects are working. Using the Move Refactoring wizard is
+			throwing exceptions.</td>
 		</tr>
-
-		<tr>
-			<td valign="top"><b>Pull-out refactoring enhancements</b></td>
-			<td>It is now possible to choose a non-existant aspect as the
-			target of a Pull-out refactoring. This aspect will be created as part
-			of the refactoring operation.</td>
-		</tr>
-
 
 		<tr>
 			<td valign="top"><b>Catalog of working refactorings in AJ
@@ -125,9 +161,10 @@
 			sure that the standard JDT refactorings are available when inside an
 			Aspect. We have focussed on the more widely used refactorings, and
 			left some of the less popular refactorings unimplemented. In addition
-			to the AspectJ-specific <strong>Push in</strong> abd <strong>Pull
-			out</strong> refactorings, and the standard <strong>Rename</strong> and <strong>Move</strong>here
-			are the JDT refactorings that are currently known to work in AJDT:
+			to the AspectJ-specific <strong>Push in</strong> and <strong>Pull
+			out</strong> refactorings, and the standard <strong>Rename</strong> and <strong>Move</strong>
+			here are the JDT refactorings that are currently known to work in
+			AJDT:
 
 			<ul>
 				<li>Push Down</li>
@@ -160,6 +197,9 @@
 				<li>Introduce Parameter Object</li>
 				<li>Convert Local variable to a field</li>
 				<li>Encapsulate field</li>
+				<li>Move type to new file, when the type is an inner type of an Aspect</li>
+				<li>Move static field or method into aspect (using move wizard,
+				drag and drop is working)</li>
 			</ul>
 
 			If you want us to fix any of the above refactorings, or you notice a
