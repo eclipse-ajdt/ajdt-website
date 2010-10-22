@@ -113,7 +113,7 @@ of /technology, since AJDT become a Tools project.</p>
 		    <th align="left">Release Date:</th><td>October 22, 2010</td>
 		  </tr>
 		  <tr>
-		    <th align="left">AspectJ Version in 2.1.1:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.10.RC1.jar">1.6.10</a></td>
+		    <th align="left">AspectJ Version in 2.1.1:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.10.jar">1.6.10</a></td>
 		  </tr>
 		  <tr>
 		    <th align="left">Eclipse 3.6 Update Site URL:</th>
