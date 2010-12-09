@@ -16,10 +16,7 @@ function ListDevBuilds($dir, $eclipsename) {
    while (false!== ($file=readdir($root))) {
    	  if($file=="." || $file=="..") {continue;}
    	  
-      if (preg_match('/.*ajdt_[0-9]*\.[0-9]*\.[0-9]*\.(.*)_archive.zip/',$file, $matches)) {
-         $files[]="$dir/$file";
-      } else if (preg_match('/.*ajdt-[0-9]*\.[0-9]*\.[0-9]*-(.*).zip/',$file, $matches)) {
-         // for 3.5+
+      if (preg_match('/.*ajdt-e[0-9][0-9]x-(.*).zip/',$file, $matches)) {
          $files[]="$dir/$file";
       }
    } 
@@ -77,9 +74,9 @@ function ListDevBuilds($dir, $eclipsename) {
 	
 	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.6");
 	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update", "3.5");
-	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update", "3.4");
-	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving", "3.4 (no weaving)");
-	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update", "3.3");
+#	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update", "3.4");
+#	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving", "3.4 (no weaving)");
+#	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update", "3.3");
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
@@ -204,7 +201,7 @@ of /technology, since AJDT become a Tools project.</p>
 		  </tr>
 		  <tr>
 		    <th align="left">Eclipse 3.4 Update Site URL:</th>
-		    <td><strong><code>http://download.eclipse.org/tools/ajdt/34/update</code></strong></td>
+		    <td><strong><code>http://archive.eclipse.org/tools/ajdt/34/update</code></strong></td>
 		  </tr>
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.5 Zip file:</th>
@@ -212,7 +209,7 @@ of /technology, since AJDT become a Tools project.</p>
 		  </tr>	  
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.4 Zip file:</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/34/update/ajdt_2.0.1_for_eclipse_3.4.zip">ajdt_2.0.1_for_eclipse_3.4.zip</a></td>
+		    <td><a href="http://archive.eclipse.org/tools/ajdt/34/update/ajdt_2.0.1_for_eclipse_3.4.zip">ajdt_2.0.1_for_eclipse_3.4.zip</a></td>
 		  </tr>	  
 		  <tr>
 		    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew202/">New & Noteworthy</a></td>
@@ -237,7 +234,7 @@ of /technology, since AJDT become a Tools project.</p>
 			<table class="tasklist" width="80%">
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><strong><code>http://download.eclipse.org/tools/ajdt/34/dev/update</code></strong></td>
+			    <td><strong><code>http://archive.eclipse.org/tools/ajdt/34/dev/update</code></strong></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
@@ -261,7 +258,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/34/dev/noweaving</code></td>
+			    <td><code>http://archive.eclipse.org/tools/ajdt/34/dev/noweaving</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
@@ -278,127 +275,8 @@ of /technology, since AJDT become a Tools project.</p>
     </ul>
     </div>
 
-	
-	
-
-
 	<div class="homeitem3col">
-	<a name="1.5"></a>
-	<h3>Release builds for Eclipse 3.3</h3>
-	<ul>
-		<li>
-			AJDT 1.5.3 for Eclipse 3.3
-			<table class="tasklist" width="80%">
-			  <tr>
-			    <th align="left">Release Date:</th><td>July 19th, 2008</td>
-			  </tr>
-			  <tr>
-			    <th align="left">AJDT Version:</th><td>1.5.3.200807141310</td>
-			  </tr>
-			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.1.20080703120000 (1.6.1 final)</td>
-			  </tr>
-			  <tr>
-			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://archive.eclipse.org/tools/ajdt/33/update</code></td>
-			  </tr>
-			  <tr>
-			    <th align="left">Zip file:</th>
-			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5.3_for_eclipse_3.3.zip">ajdt_1.5.3_for_eclipse_3.3.zip</a></td>
-			  </tr>
-			    <tr>
-			    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew153/">New & Noteworthy</a></td>
-			  </tr>
-			</table>
-		</li>
-	
-		<li>
-			AJDT 1.5.2 for Eclipse 3.3
-		
-			<table class="tasklist" width="80%">
-			  <tr>
-			    <th align="left">Release Date:</th><td>April 24, 2008</td>
-			  </tr>
-			  <tr>
-			    <th align="left">AspectJ Version:</th><td>1.6.0.20080423100000 (1.6.0)</td>
-			  </tr>
-			  <tr>
-			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>.................................</code></td>
-			  </tr>
-			  <tr>
-			    <th align="left">Zip file:</th>
-			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5.2_for_eclipse_3.3.zip">ajdt_1.5.2_for_eclipse_3.3.zip</a></td>
-			  </tr>
-			    <tr>
-			    <th align="left">More info:</th><td><!--a href="http://www.eclipse.org/ajdt/whatsnew15/">New & Noteworthy</a--></td>
-			  </tr>
-			</table>
-		</li>
-    </ul>
-    </div>
-
-	<div class="homeitem3col">
-	<a href="dev1.5"></a>
-	<h3>Development builds for Eclipse 3.3</h3>
-	<ul>
-		<li>
-			AJDT dev builds for Eclipse 3.3
-		
-			<table class="tasklist" width="80%">
-			  <tr>
-			    <th align="left">AspectJ Version:</th><td>Includes recent AspectJ dev builds</td>
-			  </tr>
-			  <tr>
-			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/33/dev/update</code></td>
-			  </tr>
-			  <tr>
-			    <th align="left">Zip file:</th>
-			    <td>see <a href="#33zips">1.5.4 zips</a> below</td>
-			  </tr>	  
-			</table>
-		</li>
-    </ul>
-    </div>
-
-
-
-	<div class="homeitem3col">
-	<h3>Release builds for Eclipse 3.2</h3>
-	<ul>
-
-		<li>
-			AJDT 1.4.2 for Eclipse 3.2.2
-		
-<table class="tasklist" width="80%">
-  <tr>
-    <th align="left">Release Date:</th><td>June 28, 2006</td>
-  </tr>
-  <tr>
-    <th align="left">AspectJ Version:</th><td>1.5.4.200705211336</td>
-  </tr>
-  <tr>
-    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/32/update</code></td>
-  </tr>
-  <tr>
-    <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/32/update/ajdt_1.4.2_for_eclipse_3.2.zip">ajdt_1.4.2_for_eclipse_3.2.zip</a></td>
-  </tr>
-  
-</table>
-		</li>
-				
-		<li>
-			<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
-		</li>
-		
-    </ul>
-    </div>
-
-	<div class="homeitem3col">
-	<h3>Release builds for Eclipse 3.2 and older</h3>
+	<h3>Release builds for Eclipse 3.3 and older</h3>
 	<ul>
 
 		<li>
@@ -448,7 +326,7 @@ $builds35
 		<li>
 			<a name="34zips"></a>Eclipse 3.4 builds (<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">JDT weaving</a>)
 			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/tools/ajdt/34/dev/update</code>
+			<code>http://archive.eclipse.org/tools/ajdt/34/dev/update</code>
 			</p>
 			<p>
 			<table class="tasklist" width="100%">
@@ -463,7 +341,7 @@ $builds34
 		<li>
 			<a name="34zips"></a>Eclipse 3.4 builds (no weaving)
 			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/tools/ajdt/34/dev/noweaving</code>
+			<code>http://archive.eclipse.org/tools/ajdt/34/dev/noweaving</code>
 			</p>
 			<p>
 			<table class="tasklist" width="100%">
@@ -475,22 +353,7 @@ $builds34noweaving
 			</p>
 		</li>
 		
-		<li>
-			<a name="33zips"></a>Eclipse 3.3 builds
-			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/tools/ajdt/33/dev/update</code>
-			</p>
-			<p>
-			<table class="tasklist" width="100%">
-  			<tr align="left">
-    			<th>Zip&nbsp;file</th>
-  			</tr>
 
-$builds33
-
-			</table>
-			</p>
-		</li>
 	</ul>
 	
 	

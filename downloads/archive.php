@@ -42,6 +42,122 @@
 <a href="http://eclipse.org/ajdt/downloads/">AJDT Download page</a>
 for current releases.</p>
 
+
+
+		<div class="homeitem3col">
+		<a name="1.5"></a>
+		<h3>Release builds for Eclipse 3.3</h3>
+		<ul>
+			<li>
+				AJDT 1.5.3 for Eclipse 3.3
+				<table class="tasklist" width="80%">
+				  <tr>
+				    <th align="left">Release Date:</th><td>July 19th, 2008</td>
+				  </tr>
+				  <tr>
+				    <th align="left">AJDT Version:</th><td>1.5.3.200807141310</td>
+				  </tr>
+				  <tr>
+				    <th align="left">AspectJ Version:</th><td>1.6.1.20080703120000 (1.6.1 final)</td>
+				  </tr>
+				  <tr>
+				    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+				    <td><code>http://archive.eclipse.org/tools/ajdt/33/update</code></td>
+				  </tr>
+				  <tr>
+				    <th align="left">Zip file:</th>
+				    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5.3_for_eclipse_3.3.zip">ajdt_1.5.3_for_eclipse_3.3.zip</a></td>
+				  </tr>
+				    <tr>
+				    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew153/">New & Noteworthy</a></td>
+				  </tr>
+				</table>
+			</li>
+
+			<li>
+				AJDT 1.5.2 for Eclipse 3.3
+
+				<table class="tasklist" width="80%">
+				  <tr>
+				    <th align="left">Release Date:</th><td>April 24, 2008</td>
+				  </tr>
+				  <tr>
+				    <th align="left">AspectJ Version:</th><td>1.6.0.20080423100000 (1.6.0)</td>
+				  </tr>
+				  <tr>
+				    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+				    <td><code>.................................</code></td>
+				  </tr>
+				  <tr>
+				    <th align="left">Zip file:</th>
+				    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/33/update/ajdt_1.5.2_for_eclipse_3.3.zip">ajdt_1.5.2_for_eclipse_3.3.zip</a></td>
+				  </tr>
+				    <tr>
+				    <th align="left">More info:</th><td><!--a href="http://www.eclipse.org/ajdt/whatsnew15/">New & Noteworthy</a--></td>
+				  </tr>
+				</table>
+			</li>
+	    </ul>
+	    </div>
+
+		<div class="homeitem3col">
+		<a href="dev1.5"></a>
+		<h3>Development builds for Eclipse 3.3</h3>
+		<ul>
+			<li>
+				AJDT dev builds for Eclipse 3.3
+
+				<table class="tasklist" width="80%">
+				  <tr>
+				    <th align="left">AspectJ Version:</th><td>Includes recent AspectJ dev builds</td>
+				  </tr>
+				  <tr>
+				    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+				    <td><code>http://archive.eclipse.org/tools/ajdt/33/dev/update</code></td>
+				  </tr>
+				  <tr>
+				    <th align="left">Zip file:</th>
+				    <td>see <a href="#33zips">1.5.4 zips</a> below</td>
+				  </tr>	  
+				</table>
+			</li>
+	    </ul>
+	    </div>
+
+
+
+		<div class="homeitem3col">
+		<h3>Release builds for Eclipse 3.2</h3>
+		<ul>
+
+			<li>
+				AJDT 1.4.2 for Eclipse 3.2.2
+
+	<table class="tasklist" width="80%">
+	  <tr>
+	    <th align="left">Release Date:</th><td>June 28, 2006</td>
+	  </tr>
+	  <tr>
+	    <th align="left">AspectJ Version:</th><td>1.5.4.200705211336</td>
+	  </tr>
+	  <tr>
+	    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
+	    <td><code>http://archive.eclipse.org/tools/ajdt/32/update</code></td>
+	  </tr>
+	  <tr>
+	    <th align="left">Zip file:</th>
+	    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/32/update/ajdt_1.4.2_for_eclipse_3.2.zip">ajdt_1.4.2_for_eclipse_3.2.zip</a></td>
+	  </tr>
+
+	</table>
+			</li>
+
+			<li>
+				<a href="http://eclipse.org/ajdt/downloads/archive.php">Archived builds</a>
+			</li>
+
+	    </ul>
+	    </div>
 	<div class="homeitem3col">
 	<h3>Archived Release builds for Eclipse 3.2</h3>
 	<ul>
