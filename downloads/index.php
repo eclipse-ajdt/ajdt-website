@@ -55,7 +55,7 @@ function ListDevBuilds($dir, $eclipsename) {
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "AJDT Downloads";
 	$pageKeywords	= "AspectJ, AJDT, Aspect Oriented Software Development, Eclipse";
-	$pageAuthor		= "Matt Chapman";
+	$pageAuthor		= "Andrew Eisenberg";
 	
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -74,9 +74,6 @@ function ListDevBuilds($dir, $eclipsename) {
 	
 	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.6");
 	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update", "3.5");
-#	$builds34 = ListDevBuilds("$rootDir/tools/ajdt/34/dev/update", "3.4");
-#	$builds34noweaving = ListDevBuilds("$rootDir/tools/ajdt/34/dev/noweaving", "3.4 (no weaving)");
-#	$builds33 = ListDevBuilds("$rootDir/tools/ajdt/33/dev/update", "3.3");
 
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
@@ -238,7 +235,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
-			    <td><a href="#34zips">See below</a></td>
+			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/34/dev/update/ajdt_2.0.1.e34x-20091118-1600_archive.zip">ajdt_2.0.1.e34x-20091118-1600_archive.zip</a></td>
 			  </tr>	  
 			</table>
 			We recommend using the update site to install AJDT.  However, it is still possible
@@ -262,7 +259,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>
-			    <td><a href="#34zipsnoweaving">See below</a></td>
+			    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/34/dev/noweaving/ajdt_1.6.2.20081217200931_archive.zip">ajdt_1.6.2.20081217200931_archive.zip</a></td>
 			  </tr>	  
 			</table>
 		</li>
@@ -322,38 +319,6 @@ $builds35
 			</table>
 			</p>
 		</li>
-
-		<li>
-			<a name="34zips"></a>Eclipse 3.4 builds (<a href="http://wiki.eclipse.org/JDT_weaving_features#Installation">JDT weaving</a>)
-			<br>Update Site URL:<br>
-			<code>http://archive.eclipse.org/tools/ajdt/34/dev/update</code>
-			</p>
-			<p>
-			<table class="tasklist" width="100%">
-  			<tr align="left">
-    			<th>Zip&nbsp;file</th>
-  			</tr>
-$builds34
-			</table>
-			</p>
-		</li>
-	
-		<li>
-			<a name="34zips"></a>Eclipse 3.4 builds (no weaving)
-			<br>Update Site URL:<br>
-			<code>http://archive.eclipse.org/tools/ajdt/34/dev/noweaving</code>
-			</p>
-			<p>
-			<table class="tasklist" width="100%">
-  			<tr align="left">
-    			<th>Zip&nbsp;file</th>
-  			</tr>
-$builds34noweaving
-			</table>
-			</p>
-		</li>
-		
-
 	</ul>
 	
 	
