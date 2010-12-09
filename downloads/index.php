@@ -300,7 +300,7 @@ of /technology, since AJDT become a Tools project.</p>
 			  </tr>
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-			    <td><code>http://download.eclipse.org/tools/ajdt/33/update</code></td>
+			    <td><code>http://archive.eclipse.org/tools/ajdt/33/update</code></td>
 			  </tr>
 			  <tr>
 			    <th align="left">Zip file:</th>

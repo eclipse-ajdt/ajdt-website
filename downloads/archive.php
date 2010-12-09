@@ -86,7 +86,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/32/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/32/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -120,7 +120,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/31/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/31/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -145,7 +145,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/31/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/31/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -166,7 +166,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/31/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/31/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -190,7 +190,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/31/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/31/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -224,7 +224,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/30/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -250,7 +250,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/30/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -275,7 +275,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/30/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -297,7 +297,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/30/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -319,7 +319,7 @@ for current releases.</p>
   </tr>
   <tr>
     <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/30/update</code></td>
+    <td><code>http://archive.eclipse.org/tools/ajdt/30/update</code></td>
   </tr>
   <tr>
     <th align="left">Zip file:</th>
@@ -339,19 +339,15 @@ for current releases.</p>
 	<ul>
 
 		<li>
-			<a>AJDT 1.1.4 for Eclipse 2.1</a>
+			<a>AJDT 1.1.3 for Eclipse 2.1</a>
 			
 <table class="tasklist" width="80%">
   <tr>
-    <th align="left">Release Date:</th><td>September 22, 2003</td>
+    <th align="left">Release Date:</th><td>August 25, 2003</td>
   </tr>
   <tr>
-    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
-    <td><code>http://download.eclipse.org/tools/ajdt/update</code></td>
-  </tr>
-  <tr>
-    <th align="left">Zip file:</th>
-    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/update/ajdt_1.1.4_archive.zip">ajdt_1.1.4_archive.zip</a></td>
+    <th align="left">Archived Update site:</th>
+    <td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/ajdt/oldreleases/ajdt-1.1.3-update.tgz">ajdt-1.1.3-update.tgz</a></td>
   </tr>
 </table>
 
