@@ -94,10 +94,39 @@ of Eclipse you are using.</p>
 <p>Note also that the Update Sites are now under /tools instead
 of /technology, since AJDT become a Tools project.</p>
 
+<div class="homeitem3col">
+<a name="dev36"></a>
+<h3>Development builds for Eclipse 3.6</h3>
+<ul>
+	<li>
+		AJDT 2.1.2 dev builds for Eclipse 3.6
+		<table class="tasklist" width="80%">
+		  <tr>
+		    <th align="left">2.1.2 M1 Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/dev/milestone</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Zip file:</th>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/36/dev/milestone/ajdt_2.1.2.M1_for_eclipse_3.6.zip">ajdt_2.1.2.M1_for_eclipse_3.6.zip</a></td>
+		  </tr>	  
+		  <tr>
+		    <th align="left">Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/dev/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Zip file:</th>
+		    <td><a href="#36zips">See below</a></td>
+		  </tr>	  
+		</table>
+	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+	Do <em>not</em> unzip the update site into the dropins directory.
+	</li>
+</ul>
+</div>
 
 	<div class="homeitem3col">
 	<a name="2.1"></a>
-	<h3>AJDT 2.1 release builds for Eclipse 3.6 and 3.6</h3>
+	<h3>AJDT 2.1 release builds for Eclipse 3.6 and 3.5</h3>
 	<ul>
 	<li>
 		AJDT 2.1.0 for Eclipse 3.6 and 3.5 <em>with JDT weaving</em><br>
@@ -135,28 +164,6 @@ of /technology, since AJDT become a Tools project.</p>
 	</ul>
 	</div>
 	
-	<div class="homeitem3col">
-	<a name="dev36"></a>
-	<h3>Development builds for Eclipse 3.6</h3>
-	<ul>
-		<li>
-			AJDT 2.1.2 dev builds for Eclipse 3.6
-			<table class="tasklist" width="80%">
-			  <tr>
-			    <th align="left">Update Site URL:</th>
-			    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/dev/update</code></strong></td>
-			  </tr>
-			  <tr>
-			    <th align="left">Zip file:</th>
-			    <td><a href="#36zips">See below</a></td>
-			  </tr>	  
-			</table>
-		To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
-		Do <em>not</em> unzip the update site into the dropins directory.
-		</li>
-	</ul>
-	</div>
-
 	<div class="homeitem3col">
 	<a name="dev35"></a>
 	<h3>Development builds for Eclipse 3.5</h3>
