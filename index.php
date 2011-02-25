@@ -64,7 +64,7 @@
 			<h3>News and Releases</h3>
 			<ul>
  				 <li>
-						<img src="images/new.gif" width="11" height="11"><a href="whatsnew212M1">AJDT 2.1.2 M2</a>
+						<img src="images/new.gif" width="11" height="11">AJDT 2.1.2 M2
 						is now available.  This release includes <a
 						href="http://eclipse.org/aspectj/doc/released/README-1611.html">AspectJ 1.6.11 M2</a>.
 						The release build is available from the <a href="downloads#dev36">downloads</a> page.
