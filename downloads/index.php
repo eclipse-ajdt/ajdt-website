@@ -109,6 +109,7 @@ of /technology, since AJDT become a Tools project.</p>
 		    <th align="left">Zip file:</th>
 		    <td><a href="http://download.eclipse.org/tools/ajdt/36/dev/milestone/ajdt_2.1.2.M2_for_eclipse_3.6.zip">ajdt_2.1.2.M2_for_eclipse_3.6.zip</a></td>
 		  </tr>	  
+		    <th align="left">AspectJ Version in 2.1.2.M2:</th><td><a href="http://eclipse.org/aspectj/doc/released/README-1611.html">1.6.11 M2</a></td>
 		  <tr>
 		    <th align="left">Zip file (2.1.2.M1):</th>
 		    <td><a href="http://download.eclipse.org/tools/ajdt/36/dev/milestone/ajdt_2.1.2.M1_for_eclipse_3.6.zip">ajdt_2.1.2.M1_for_eclipse_3.6.zip</a></td>
