@@ -102,11 +102,15 @@ of /technology, since AJDT become a Tools project.</p>
 		AJDT 2.1.2 dev builds for Eclipse 3.6
 		<table class="tasklist" width="80%">
 		  <tr>
-		    <th align="left">2.1.2 M1 Update Site URL:</th>
+		    <th align="left">2.1.2 M2 Update Site URL:</th>
 		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/dev/milestone</code></strong></td>
 		  </tr>
 		  <tr>
 		    <th align="left">Zip file:</th>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/36/dev/milestone/ajdt_2.1.2.M2_for_eclipse_3.6.zip">ajdt_2.1.2.M2_for_eclipse_3.6.zip</a></td>
+		  </tr>	  
+		  <tr>
+		    <th align="left">Zip file (2.1.2.M1):</th>
 		    <td><a href="http://download.eclipse.org/tools/ajdt/36/dev/milestone/ajdt_2.1.2.M1_for_eclipse_3.6.zip">ajdt_2.1.2.M1_for_eclipse_3.6.zip</a></td>
 		  </tr>	  
 		  <tr>

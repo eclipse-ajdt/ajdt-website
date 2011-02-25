@@ -64,14 +64,21 @@
 			<h3>News and Releases</h3>
 			<ul>
  				 <li>
-						<img src="images/new.gif" width="11" height="11"><a href="whatsnew212M1">AJDT 2.1.2 M1</a>
+						<img src="images/new.gif" width="11" height="11"><a href="whatsnew212M1">AJDT 2.1.2 M2</a>
+						is now available.  This release includes <a
+						href="http://eclipse.org/aspectj/doc/released/README-1611.html">AspectJ 1.6.11 M2</a>.
+						The release build is available from the <a href="downloads#dev36">downloads</a> page.
+						<br><span class="dates">posted 02-24-11</span>
+				 </li>
+ 				 <li>
+						<a href="whatsnew212M1">AJDT 2.1.2 M1</a>
 						is now available.  This release includes <a
 						href="http://eclipse.org/aspectj/doc/released/README-1611.html">AspectJ 1.6.11 M1</a>.
-						The release build is available from the <a href="downloads">downloads#dev36</a> page.
+						The release build is available from the <a href="downloads#dev36">downloads</a> page.
 						<br><span class="dates">posted 12-09-10</span>
 				 </li>
  				 <li>
-				 		<<a href="whatsnew211">AJDT 2.1.1</a> is here!  
+				 		<a href="whatsnew211">AJDT 2.1.1</a> is here!  
 				 		The release build is available from the <a href="downloads">downloads</a> page.  This
 				 		release includes better AspectJ-aware searching and refactoring.
 				 		<br><span class="dates">posted 10-22-10</span>
