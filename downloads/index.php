@@ -72,6 +72,7 @@ function ListDevBuilds($dir, $eclipsename) {
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 	
+	$builds37 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.7");
 	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.6");
 	$builds35 = ListDevBuilds("$rootDir/tools/ajdt/35/dev/update", "3.5");
 
@@ -99,23 +100,8 @@ of /technology, since AJDT become a Tools project.</p>
 <h3>Development builds for Eclipse 3.6</h3>
 <ul>
 	<li>
-		AJDT 2.1.2 dev builds for Eclipse 3.6
+		AJDT 2.1.3 dev builds for Eclipse 3.6
 		<table class="tasklist" width="80%">
-		  <tr>
-		    <th align="left">2.1.2 M2 Update Site URL:</th>
-		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/dev/milestone</code></strong></td>
-		  </tr>
-		  <tr>
-		    <th align="left">Zip file:</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/36/milestone/ajdt_2.1.2.M2_for_eclipse_3.6.zip">ajdt_2.1.2.M2_for_eclipse_3.6.zip</a></td>
-		  </tr>	  
-		  <tr>
-		    <th align="left">Zip file (2.1.2.M1):</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/36/milestone/ajdt_2.1.2.M1_for_eclipse_3.6.zip">ajdt_2.1.2.M1_for_eclipse_3.6.zip</a></td>
-		  </tr>	  
-		  <tr>
-		    <th align="left">AspectJ Version in 2.1.2.M2:</th><td><a href="http://eclipse.org/aspectj/doc/released/README-1611.html">1.6.11 M2</a></td>
-		  </tr>
 		  <tr>
 		    <th align="left">Update Site URL:</th>
 		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/dev/update</code></strong></td>
@@ -131,16 +117,44 @@ of /technology, since AJDT become a Tools project.</p>
 </ul>
 </div>
 
+<div class="homeitem3col">
+<a name="dev37"></a>
+<h3>Development builds for Eclipse 3.7</h3>
+<ul>
+	<li>
+		AJDT 2.1.3 dev builds for Eclipse 3.7
+		<table class="tasklist" width="80%">
+		  <tr>
+		    <th align="left">Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/37/dev/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Zip file:</th>
+		    <td><a href="#37zips">See below</a></td>
+		  </tr>	  
+		</table>
+	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+	Do <em>not</em> unzip the update site into the dropins directory.
+	</li>
+</ul>
+</div>
+
 	<div class="homeitem3col">
 	<a name="2.1"></a>
 	<h3>AJDT 2.1 release builds for Eclipse 3.6 and 3.5</h3>
 	<ul>
 	<li>
-		AJDT 2.1.0 for Eclipse 3.6 and 3.5 <em>with JDT weaving</em><br>
+		AJDT 2.1.2 and 2.1.2 for Eclipse 3.6 and 3.5 <em>with JDT weaving</em><br>
 		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 		<table class="tasklist" width="80%">
 		  <tr>
-		    <th align="left">Release Date:</th><td>October 22, 2010</td>
+		    <th align="left">2.1.2 Release Date:</th><td>March 14, 2010</td>
+		  </tr>
+		  <tr>
+		    <th align="left">AspectJ Version in 2.1.2:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.11.jar">1.6.11</a></td>
+		  </tr>
+		  <tr>
+		    <th align="left">2.1.1 Release Date:</th><td>October 22, 2010</td>
 		  </tr>
 		  <tr>
 		    <th align="left">AspectJ Version in 2.1.1:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.10.jar">1.6.10</a></td>
@@ -155,14 +169,14 @@ of /technology, since AJDT become a Tools project.</p>
 		  </tr>
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.6 Zip file:</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/36/update/ajdt_2.1.1_for_eclipse_3.6.zip">ajdt_2.1.1_for_eclipse_3.6.zip</a></td>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/36/update/ajdt_2.1.2_for_eclipse_3.6.zip">ajdt_2.1.2_for_eclipse_3.6.zip</a></td>
 		  </tr>	  
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.5 Zip file:</th>
 		    <td><a href="http://download.eclipse.org/tools/ajdt/35/update/ajdt_2.1.1_for_eclipse_3.5.zip">ajdt_2.1.1_for_eclipse_3.5.zip</a></td>
 		  </tr>	  
 		  <tr>
-		    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew211/">New & Noteworthy</a></td>
+		    <th align="left">More info:</th><td><a href="http://www.eclipse.org/ajdt/whatsnew212/">New & Noteworthy</a></td>
 		  </tr>
 		</table>
 		To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
@@ -176,7 +190,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3>Development builds for Eclipse 3.5</h3>
 	<ul>
 		<li>
-			AJDT 2.1.1 dev builds for Eclipse 3.5
+			AJDT 2.1.1 dev builds for Eclipse 3.5 (no longer under active development)
 			<table class="tasklist" width="80%">
 			  <tr>
 			    <th align="left">Update&nbsp;Site&nbsp;URL:</th>
