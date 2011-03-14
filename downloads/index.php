@@ -154,23 +154,23 @@ of /technology, since AJDT become a Tools project.</p>
 		    <th align="left">AspectJ Version in 2.1.2:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.11.jar">1.6.11</a></td>
 		  </tr>
 		  <tr>
+		    <th align="left">Eclipse 3.6 Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">AJDT for Eclipse 3.6 Zip file:</th>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/36/update/ajdt_2.1.2_for_eclipse_3.6.zip">ajdt_2.1.2_for_eclipse_3.6.zip</a></td>
+		  </tr>	  
+		  <tr>
 		    <th align="left">2.1.1 Release Date:</th><td>October 22, 2010</td>
 		  </tr>
 		  <tr>
 		    <th align="left">AspectJ Version in 2.1.1:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.10.jar">1.6.10</a></td>
 		  </tr>
 		  <tr>
-		    <th align="left">Eclipse 3.6 Update Site URL:</th>
-		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/update</code></strong></td>
-		  </tr>
-		  <tr>
 		    <th align="left">Eclipse 3.5 Update Site URL:</th>
 		    <td><strong><code>http://download.eclipse.org/tools/ajdt/35/update</code></strong></td>
 		  </tr>
-		  <tr>
-		    <th align="left">AJDT for Eclipse 3.6 Zip file:</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/36/update/ajdt_2.1.2_for_eclipse_3.6.zip">ajdt_2.1.2_for_eclipse_3.6.zip</a></td>
-		  </tr>	  
 		  <tr>
 		    <th align="left">AJDT for Eclipse 3.5 Zip file:</th>
 		    <td><a href="http://download.eclipse.org/tools/ajdt/35/update/ajdt_2.1.1_for_eclipse_3.5.zip">ajdt_2.1.1_for_eclipse_3.5.zip</a></td>
