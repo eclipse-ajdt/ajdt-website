@@ -319,6 +319,21 @@ of /technology, since AJDT become a Tools project.</p>
 	<ul>
 	
 		<li>
+			<a name="37zips"></a>Eclipse 3.7 builds
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/tools/ajdt/37/dev/update</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Zip&nbsp;file</th>
+  			</tr>
+$builds37
+			</table>
+			</p>
+		</li>
+
+		<li>
 			<a name="36zips"></a>Eclipse 3.6 builds
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/36/dev/update</code>
