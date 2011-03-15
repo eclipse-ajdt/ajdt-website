@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<link rel="STYLESHEET" href="http://www.eclipse.org/default_style.css"
+	charset="ISO-8859-1" type="text/css">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>AJDT 2.1.2 - New and Noteworthy</title>
+
+</head>
+<body>
+	<h1>AJDT 2.1.2 - New and Noteworthy</h1>
+
+	<table border="0" cellpadding="10" cellspacing="0" width="80%">
+		<tbody>
+			<tr>
+				<td valign="top"><b>Overview</b>
+				</td>
+				<td valign="top">In this milestone, we have introduced the <a
+					href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=169857"
+					target="_blank">JDT Compilation Participant API for the
+						AJBuilder</a> and JDT Weaving is now <a
+					href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328779"
+					target="_blank">enabled by default</a> for new AJDT installs.</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<hr></td>
+			</tr>
+			<tr>
+				<td valign="top"><b>Intertype Inner Type support</b>
+				</td>
+				<td>AspectJ 1.6.11 has a new language feature, Intertype Inner
+					Types (ITITs), which allows for the declaration of static inner
+					types inside of an aspect with a specific target type. In the
+					following screenshot, there is an ITIT defined in the
+					TrafficCalculator aspect, which is being used in the
+					CityIntegrationTest class. <br /> <br /> <img src="itit.png"
+					border="1" /> <br /> <br /> AJDT provides editing support for
+					ITITs. In 2.1.2, we provide:
+					<ul>
+						<li>Content assist:<br /> <img src="itit_content_assist.png"
+							border="1" /></li>
+						<li>Hover support:<br /> <img src="itit_hover.png"
+							border="1" />
+						</li>
+						<li>Navigation:<br /> <img src="itit_navigation.png"
+							border="1" />
+						</li>
+						<li>Push-in Refactoring:<br /> <img src="itit_pushin.png"
+							border="1" />
+						</li>
+						</li>
+					</ul></td>
+			</tr>
+
+
+			<tr>
+				<td colspan="2">
+					<hr></td>
+			</tr>
+			<tr>
+				<td valign="top"><b>AspectJ 1.6.11</b>
+				</td>
+				<td>AJDT 2.1.2 includes AspectJ 1.6.11. See the <a
+					href="http://eclipse.org/aspectj/doc/released/README-1611.html">readme</a>
+					for details. This AspectJ release includes new syntax for
+					annotation removal <code>declare @field</code> declarations. There
+					is also new syntax for supporting Intertype Inner-Types (although
+					this is not yet supported in AJDT).</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<hr></td>
+			</tr>
+			<tr>
+				<td valign="top"><b>Bug Fixes</b>
+				</td>
+				<td>See <a href="http://tinyurl.com/ajdt212" target="_blank">bugzilla</a>
+					for a list of bugs addressed in this release.</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<hr></td>
+			</tr>
+			<tr>
+				<td valign="top"><b>Previous Releases</b>
+				</td>
+				<td>See <a
+					href="http://www.eclipse.org/ajdt/whatsnew211/index.html">here</a>
+					for information on the new features in AJDT 2.1.1.</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<hr></td>
+			</tr>
+			<tr>
+				<td valign="top"><b>Thanks!</b>
+				</td>
+				<td>Thanks for community help and feedback during this release
+					cycle. You can contact the AJDT team on the <a
+					href="https://dev.eclipse.org/mailman/listinfo/ajdt-dev">mailing
+						list</a>, and raise bugs on <a href="https://bugs.eclipse.org/bugs/">bugzilla</a>.
+					We also lurk on the <a
+					href="http://eclipse.org/aspectj/userlists.php">AspectJ users
+						list</a>, and on the <a
+					href="http://forum.springsource.org/forumdisplay.php?f=32">SpringSource
+						Tool Suite forum</a>.</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
