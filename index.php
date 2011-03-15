@@ -69,7 +69,7 @@
 						<br><span class="dates">posted 03-14-11</span>
 				 </li>
  				 <li>
-						<img src="images/new.gif" width="11" height="11">AJDT 2.1.2
+						<img src="images/new.gif" width="11" height="11"><a href="whatsnew212">AJDT 2.1.2</a>
 						is now available.  This release includes <a
 						href="http://eclipse.org/aspectj/doc/released/README-1611.html">AspectJ 1.6.11</a>.
 						The release build is available from the <a href="downloads#dev36">downloads</a> page.
@@ -265,6 +265,15 @@
 		<div class="homeitem">
 			<h3>New Features</h3>
 			<ul>
+				<li>
+					Support for Intertype Inner Types with <a href="whatsnew212/">AJDT 2.1.2</a>.
+					<br><span class="dates">posted 03-14-11</span>
+				</li>
+				<li>
+					Java search and rename refactoring now <a href="whatsnew211">recognizes</a>
+					intertype declarations and declare declarations. 
+					<br><span class="dates">posted 10-22-10</span>
+				</li>
 			  <li>
       			<a href="http://wiki.eclipse.org/JDT_weaving_features">JDT Weaving service 
       			provides tighter integration with Eclipse</a>
