@@ -95,28 +95,58 @@ of Eclipse you are using.</p>
 <p>Note also that the Update Sites are now under /tools instead
 of /technology, since AJDT become a Tools project.</p>
 
-<div class="homeitem3col">
-<a name="dev36"></a>
-<h3>Development builds for Eclipse 3.6</h3>
-<ul>
+
+	<div class="homeitem3col">
+	<a name="2.1"></a>
+	<h3>AJDT 2.1 release builds for Eclipse 3.7 and 3.6</h3>
+	<ul>
 	<li>
-		AJDT 2.1.3 dev builds for Eclipse 3.6
+		AJDT 2.1.3 for Eclipse 3.7 and 3.6 <em>with JDT weaving</em><br>
+		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 		<table class="tasklist" width="80%">
 		  <tr>
-		    <th align="left">Update Site URL:</th>
-		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/dev/update</code></strong></td>
+		    <th align="left">2.1.3 Release Date:</th><td>June 29, 2011</td>
 		  </tr>
 		  <tr>
-		    <th align="left">Zip file:</th>
-		    <td><a href="#36zips">See below</a></td>
+		    <th align="left">AspectJ Version in 2.1.3:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.12.M1.jar">1.6.12.M1</a></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Eclipse 3.7 Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/37/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Eclipse 3.6 Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">AJDT for Eclipse 3.7 Zip file:</th>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/37/update/ajdt_2.1.3_for_eclipse_3.7.zip">ajdt_2.1.3_for_eclipse_3.7.zip</a></td>
+		  </tr>	  
+		  <tr>
+		    <th align="left">AJDT for Eclipse 3.6 Zip file:</th>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/36/update/ajdt_2.1.3_for_eclipse_3.6.zip">ajdt_2.1.3_for_eclipse_3.6.zip</a></td>
+		  </tr>	  
+		  <tr>
+		    <th align="left">2.1.2 Release Date:</th><td>March 14, 2011</td>
+		  </tr>
+		  <tr>
+		    <th align="left">AspectJ Version in 2.1.2:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.11.jar">1.6.11</a></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Eclipse 3.6 Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">AJDT for Eclipse 3.6 Zip file:</th>
+		    <td><a href="http://download.eclipse.org/tools/ajdt/36/update/ajdt_2.1.2_for_eclipse_3.6.zip">ajdt_2.1.2_for_eclipse_3.6.zip</a></td>
 		  </tr>	  
 		</table>
-	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
-	Do <em>not</em> unzip the update site into the dropins directory.
+		To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+		Do <em>not</em> unzip the update site into the dropins directory.
 	</li>
-</ul>
-</div>
-
+	</ul>
+	</div>
+	
 <div class="homeitem3col">
 <a name="dev37"></a>
 <h3>Development builds for Eclipse 3.7</h3>
@@ -139,28 +169,34 @@ of /technology, since AJDT become a Tools project.</p>
 </ul>
 </div>
 
-	<div class="homeitem3col">
-	<a name="2.1"></a>
-	<h3>AJDT 2.1 release builds for Eclipse 3.6 and 3.5</h3>
-	<ul>
+<div class="homeitem3col">
+<a name="dev36"></a>
+<h3>Development builds for Eclipse 3.6</h3>
+<ul>
 	<li>
-		AJDT 2.1.2 and 2.1.2 for Eclipse 3.6 and 3.5 <em>with JDT weaving</em><br>
-		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
+		AJDT 2.1.3 dev builds for Eclipse 3.6
 		<table class="tasklist" width="80%">
 		  <tr>
-		    <th align="left">2.1.2 Release Date:</th><td>March 14, 2010</td>
+		    <th align="left">Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/dev/update</code></strong></td>
 		  </tr>
 		  <tr>
-		    <th align="left">AspectJ Version in 2.1.2:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.6.11.jar">1.6.11</a></td>
-		  </tr>
-		  <tr>
-		    <th align="left">Eclipse 3.6 Update Site URL:</th>
-		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/update</code></strong></td>
-		  </tr>
-		  <tr>
-		    <th align="left">AJDT for Eclipse 3.6 Zip file:</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/36/update/ajdt_2.1.2_for_eclipse_3.6.zip">ajdt_2.1.2_for_eclipse_3.6.zip</a></td>
+		    <th align="left">Zip file:</th>
+		    <td><a href="#36zips">See below</a></td>
 		  </tr>	  
+		</table>
+	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+	Do <em>not</em> unzip the update site into the dropins directory.
+	</li>
+</ul>
+</div>
+
+	<h3>AJDT 2.1 release builds for Eclipse 3.7 and 3.6</h3>
+	<ul>
+	<li>
+		AJDT 2.1.1 for Eclipse 3.5 <em>with JDT weaving</em><br>
+		What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
+		<table class="tasklist" width="80%">
 		  <tr>
 		    <th align="left">2.1.1 Release Date:</th><td>October 22, 2010</td>
 		  </tr>
@@ -184,7 +220,6 @@ of /technology, since AJDT become a Tools project.</p>
 	</li>
 	</ul>
 	</div>
-	
 	<div class="homeitem3col">
 	<a name="dev35"></a>
 	<h3>Development builds for Eclipse 3.5</h3>
