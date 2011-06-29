@@ -136,10 +136,6 @@ of /technology, since AJDT become a Tools project.</p>
 		    <th align="left">Eclipse 3.6 Update Site URL:</th>
 		    <td><strong><code>http://download.eclipse.org/tools/ajdt/36/update</code></strong></td>
 		  </tr>
-		  <tr>
-		    <th align="left">AJDT for Eclipse 3.6 Zip file:</th>
-		    <td><a href="http://download.eclipse.org/tools/ajdt/36/update/ajdt_2.1.2_for_eclipse_3.6.zip">ajdt_2.1.2_for_eclipse_3.6.zip</a></td>
-		  </tr>	  
 		</table>
 		To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
 		Do <em>not</em> unzip the update site into the dropins directory.
