@@ -347,7 +347,7 @@ of /technology, since AJDT become a Tools project.</p>
 	<h3 class="tasklist">Development builds</h3>
 	</a>
 
-	Keep track of the latest AJDT builds on the <a href="build.springframework.org/browse/AJDT">AJDT build server</a>.
+	Keep track of the latest AJDT builds on the <a href="https://build.springsource.org/browse/AJDT">AJDT build server</a>.
 
 	<ul>
 	
