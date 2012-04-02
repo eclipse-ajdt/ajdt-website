@@ -114,10 +114,10 @@ critical bug is discovered and fixed.  We are planning to release AJDT version 2
         </html:p>
 			</description>
 			<committed
-				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced;list_id=1102967;short_desc=%5Bplan%5D%20%5Baspect17%5D;bug_status=RESOLVED;bug_status=VERIFIED;bug_status=CLOSED;short_desc_type=allwordssubstr;product=AJDT">
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced%3Blist_id%3D1102967%3Bshort_desc%3D%255Bplan%255D%2520%255Baspect17%255D%3Bbug_status%3DRESOLVED%3Bbug_status%3DVERIFIED%3Bbug_status%3DCLOSED%3Bshort_desc_type%3Dallwordssubstr%3Bproduct%3DAJDT">
 			</committed>
 			<proposed
-				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced;list_id=1103055;short_desc=%5Bplan%5D%20%5Baspect17%5D;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;short_desc_type=allwordssubstr;product=AJDT">
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced%3Blist_id%3D1103055%3Bshort_desc%3D%255Bplan%255D%2520%255Baspect17%255D%3Bbug_status%3DUNCONFIRMED%3Bbug_status%3DNEW%3Bbug_status%3DASSIGNED%3Bbug_status%3DREOPENED%3Bshort_desc_type%3Dallwordssubstr%3Bproduct%3DAJDT">
 			</proposed>
 		</theme>
 	</themes_and_priorities>
