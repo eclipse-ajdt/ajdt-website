@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
 <plan plan-format="1.0" name="Project Name" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<release projectid="tools.ajdt" version="2.1.0" />
+	<release projectid="tools.ajdt" version="2.2.0" />
 	<introduction>
 		<html:div>
 <html:p>
-AJDT released 2.1.0 to coincide with the Eclipse Helios release in late June.  There are two streams,
-of this version, one for Eclipse 3.5, with version 2.2.0.e34x-*, and one for Eclipse 3.6 with version 2.1.0.e35x-*.
-These two streams are maintained as separate branches in CVS.  Because of the tight integration of AJDT with JDT, 
-the Eclipse 3.5 stream will not install in Eclipse 3.6 and vice versa.  On top of that, the 3.6 stream uses a 
-new APIs available in the PDE project so that AspectJ PDE builds are easier to create. Excepting these differences, 
-the two streams use the same code base and have the same feature set.  The 2.1.1 release is the last 
-scheduled version targeting the Eclipse 3.5 stream.  There will be no more changes to this stream unless a 
-critical bug is discovered and fixed.  We are planning to release AJDT version 2.2.0 for the Eclipse 3.7 stream
-to coincide with the Indigo release in June 2011, and we will begin to release development snapshots of this
-stream in March 2011.
+AJDT released 2.2.0 to coincide with the Eclipse Juno release in late June 2012.  In this release of AJDT, 
+there will only be one stream of AJDT that is compatible with both Eclipse Indigo and Eclipse Juno.  Pervious 
+releases of AJDT had separate streams for different Eclipse releases.  AJDT 2.2.0 will no longer support
+Eclipse Helios.  There will be no more changes to the Eclipse Helios stream unless a 
+critical bug is discovered and fixed.  We are planning to release AJDT version 2.2.1 in late 2012 and 2.3.0 for the Kepler release/
 </html:p>
      </html:div> 
 	</introduction>
@@ -62,30 +57,18 @@ stream in March 2011.
 	</release_deliverables>
 	<release_milestones>
 		<preamble>
-		<html:div>There will be two service releases of AJDT before 2.2.0.  Typically, they
-		coincide with releases of AspectJ.</html:div>
+		<html:div>Milestones and service refreshes will be released as required.  Typically, AJDT goes on a 
+		6 month cycle for service refreshes.</html:div>
 		</preamble>
-		<milestone date="09/05/2010" milestone="2.1.1">
-			<html:div>Service refresh of AJDT for the 3.6 stream and final release of the 3.5 stream</html:div>
-		</milestone>
-		<milestone date="03/10/2010" milestone="2.1.2">
-			<html:div>Service refresh of AJDT for the 3.6 stream.  
-			First stable development release targeting Eclipse 3.7.  This is meant for early adopters, 
-			specifically for those at EclipseCon.  The 3.6 and 3.7 streams will be largely similar 
-			although some functionality in the 3.7 stream may not be available yet.</html:div>
-		</milestone>
-		<milestone date="06/30/2010" milestone="2.2.0">
-			<html:div>First public release of the 3.7 stream and service refresh of the 3.6 stream.</html:div>
-		</milestone>
-		<milestone date="09/30/2010" milestone="2.2.1">
-			<html:div>Final scheduled release of the 3.6 stream and service refresh of the 3.7 stream.</html:div>
+		<milestone date="12/05/2012" milestone="2.2.1">
+			<html:div>Service refresh of AJDT</html:div>
 		</milestone>
 		<postamble>
 			<html:div></html:div>
 		</postamble>
 	</release_milestones>
 	<target_environments>
-		<html:div>AJDT 2.1.0.e35x-* requires Eclipse 3.5 and AJDT 2.1.0.e36x-* requires Eclipse 3.6.  As such, AJDT has the same JRE requirements as Eclipse.</html:div>
+		<html:div>AJDT 2.2.0 requires Eclipse 3.7, 3.8, or 4.2.  As such, AJDT has the same JRE requirements as Eclipse.</html:div>
 		<internationalization>
 			<html:div>English language bundles are available for many AJDT messages, but they have not been translated.
           </html:div>
@@ -93,55 +76,17 @@ stream in March 2011.
 	</target_environments>
 	<compatibility_with_previous_releases>
 		<html:div>ADJT versions are designed to be backwards compatible with older versions of the same stream.  However, since different streams 
-		run on different Eclipse versions, there is no compatibility between streams, even though the feature sets are largely the same.</html:div>
+		run on different Eclipse versions, there is no compatibility between streams, even though the feature sets and APIs are largely the same.</html:div>
 	</compatibility_with_previous_releases>
 		<themes_and_priorities> 
 		<preamble>
-			<html:div>Our current focus is three-fold: Intertype innertype
-				support, refactoring support, and IDE support for load-time weaving. 
+			<html:div>Our current focus is two-fold: AspectJ 1.7 support, and IDE support for load-time weaving. 
 				These themes are generated
 				from user requests in the community. As such, we want
 				to maintain flexibility and put effort into new themes if they are
 				coherently generated from the community.
 			</html:div>
 		</preamble>
-		<theme name="Intertype Innertype support (ITIT)">
-			<description>
-				<html:p>
-					Third party projects such as <html:a href="http://sringsource.org/roo">Spring Roo</html:a>	are pushing the
-					limits of intertype declaration (ITD) functionality both in the compiler and the editor.  Since this is a highly visible project
-					with many potential users, we would like to encourage its adoption by facilitating the ITD editor support 
-					that it requires.
-				</html:p>
-				<html:p>
-				  A new feature of AspectJ 1.6.9 is <html:a href="http://bugs.eclipse.org/310501">intertype inner types</html:a>.
-				  This is feature has required changes to the AspectJ grammar.  As such, it has large ripple effects throughout
-				  AJDT.  We need to support things like reconciling, navigation, content assist, search, and refactoring of ITITs.  
-				</html:p>
-			</description>
-			<committed
-				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwords&amp;short_desc=[itit]+[plan]&amp;product=AJDT&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
-			</committed>
-			<proposed
-				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwords&amp;short_desc=[itit]+[plan]&amp;product=AJDT&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
-			</proposed>
-		</theme>
-		<theme name="Refactoring support">
-			<description>
-				<html:p>
-				AJDT is a relatively mature programming language tool.  As such, users have high expectations of it.  They
-				expect a similar level of tooling support as they receive from JDT.  One of the weaker areas of AJDT is refactoring.
-				For the 2.1.0 release, we have added new support for renaming ITDs, but there are still problems with the renaming
-				of pointcuts and the types and methods within them.
-        </html:p>
-			</description>
-			<committed
-				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwords&amp;short_desc=[refactoring]+[plan]&amp;product=AJDT&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
-			</committed>
-			<proposed
-				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwords&amp;short_desc=[refactoring]+[plan]&amp;product=AJDT&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
-			</proposed>
-		</theme>
 		<theme name="IDE support for Load Time Weaving (LTW)">
 			<description>
 				<html:p>
@@ -160,6 +105,19 @@ stream in March 2011.
 			</committed>
 			<proposed
 				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwords&amp;short_desc=[ltw]+[plan]&amp;product=AJDT&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</proposed>
+		</theme>
+		<theme name="AspectJ 1.7 support">
+			<description>
+				<html:p>
+				AspectJ 1.7 will be introducing new language features.  AJDT must support them when they are available.
+        </html:p>
+			</description>
+			<committed
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwords&amp;short_desc=[ltw]+[plan]&amp;product=AJDT&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			</committed>
+			<proposed
+				https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced;list_id=1102967;short_desc=%5Bplan%5D%20%5Baspect17%5D;bug_status=RESOLVED;bug_status=VERIFIED;bug_status=CLOSED;short_desc_type=allwordssubstr;product=AJDT">
 			</proposed>
 		</theme>
 	</themes_and_priorities>
