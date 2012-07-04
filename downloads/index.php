@@ -115,8 +115,8 @@ of Eclipse you are using.</p>
 	    <td><strong><code>http://download.eclipse.org/tools/ajdt/37/update</code></strong></td>
 	  </tr>
 	  <tr>
-	    <th align="left">AJDT for Eclipse 3.6 Zip file:</th>
-	    <td><a href="http://download.eclipse.org/tools/ajdt/36/update/ajdt_2.2.0_for_eclipse_4.2.zip">ajdt_2.2.0_for_eclipse_4.2.zip</a></td>
+	    <th align="left">AJDT for Eclipse 4.2 Zip file:</th>
+	    <td><a href="http://download.eclipse.org/tools/ajdt/42/update/ajdt_2.2.0_for_eclipse_4.2.zip">ajdt_2.2.0_for_eclipse_4.2.zip</a></td>
 	  </tr>	  
 	  <tr>
 	    <th align="left">AJDT for Eclipse 3.7 Zip file:</th>
@@ -131,7 +131,7 @@ of Eclipse you are using.</p>
 
 <div class="homeitem3col">
 <a name="dev42"></a>
-<h3>Development builds for Eclipse 3.7</h3>
+<h3>Development builds for Eclipse 4.2</h3>
 <ul>
 	<li>
 		AJDT 2.2.1 dev builds for Eclipse 4.2
