@@ -71,10 +71,7 @@
 			<h3>Download</h3>
 <ul>
 <li>
-			<a>XRef 1.6</a>
-			<br>Update Site URL:<br>
-			<code>http://download.eclipse.org/tools/ajdt/xref/update</code>
-
+			<a href="http://eclipse.org/ajdt/downloads">See the AJDT downloads page</a>
 </li>
 
 </ul>
