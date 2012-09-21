@@ -92,22 +92,24 @@ function ListDevBuilds($dir, $eclipsename) {
 <p>Please make sure you pick a version of AJDT which matches the version
 of Eclipse you are using.</p>
 
+<p>All downloads are provided under the terms and conditions of <a href="http://www.eclipse.org/legal/epl/notice.php">the Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
+
 <div class="homeitem3col">
 <a name="2.2"></a>
 <h3>AJDT 2.2 release builds for Eclipse 4.2 and 3.7</h3>
 <ul>
 <li>
-	AJDT 2.2.0 for Eclipse 4.2 and 3.7 <em>with JDT weaving</em><br>
+	AJDT 2.2.1 for Eclipse 4.2, 3.8, and 3.7 <em>with JDT weaving</em><br>
 	What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 	<table class="tasklist" width="80%">
 	  <tr>
-	    <th align="left">2.2.0 Release Date:</th><td>July 5, 2012</td>
+	    <th align="left">2.2.1 Release Date:</th><td>September 21, 2012</td>
 	  </tr>
 	  <tr>
-	    <th align="left">AspectJ Version in 2.2.0:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.7.0.jar">1.7.0</a></td>
+	    <th align="left">AspectJ Version in 2.2.1:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.7.2.20120920133900.jar">1.7.2.20120920133900</a></td>
 	  </tr>
 	  <tr>
-	    <th align="left">Eclipse 4.2 Update Site URL:</th>
+	    <th align="left">Eclipse 3.8 and 4.2 Update Site URL:</th>
 	    <td><strong><code>http://download.eclipse.org/tools/ajdt/42/update</code></strong></td>
 	  </tr>
 	  <tr>
@@ -115,11 +117,15 @@ of Eclipse you are using.</p>
 	    <td><strong><code>http://download.eclipse.org/tools/ajdt/37/update</code></strong></td>
 	  </tr>
 	  <tr>
-	    <th align="left">AJDT for Eclipse 4.2 Zip file:</th>
+	    <th align="left">AJDT for Eclipse 4.2 and 3.8 Zip file:</th>
+	    <td><a href="http://download.eclipse.org/tools/ajdt/42/update/ajdt_2.2.1_for_eclipse_4.2.zip">ajdt_2.2.1_for_eclipse_4.2.zip</a></td>
+	  </tr>	  
+	  <tr>
+	    <th align="left">AJDT for Eclipse 4.2 and 3.8 Zip file:</th>
 	    <td><a href="http://download.eclipse.org/tools/ajdt/42/update/ajdt_2.2.0_for_eclipse_4.2.zip">ajdt_2.2.0_for_eclipse_4.2.zip</a></td>
 	  </tr>	  
 	  <tr>
-	    <th align="left">AJDT for Eclipse 3.7 Zip file:</th>
+	    <th align="left">AJDT for Eclipse 3.7 Zip file: (2.2.0 is the latest release on Eclipse 3.7)</th>
 	    <td><a href="http://download.eclipse.org/tools/ajdt/37/update/ajdt_2.2.0_for_eclipse_3.7.zip">ajdt_2.2.0_for_eclipse_3.7.zip</a></td>
 	  </tr>	  
 	</table>
