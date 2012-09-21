@@ -140,7 +140,7 @@ of Eclipse you are using.</p>
 <h3>Development builds for Eclipse 4.2</h3>
 <ul>
 	<li>
-		AJDT 2.2.1 dev builds for Eclipse 4.2
+		AJDT 2.2.2 dev builds for Eclipse 4.2
 		<table class="tasklist" width="80%">
 		  <tr>
 		    <th align="left">Update Site URL:</th>

@@ -65,13 +65,11 @@
 			<ul>
 				 <li>
 						<img src="images/new.gif" width="11" height="11">
-						<a href="whatsnew220">AJDT 2.2.0</a>
-						is now available.  This is the first release that targets Juno.  This release includes <a
-						href="http://eclipse.org/aspectj/doc/released/README-170.html">AspectJ 1.7.0</a>.
-						The release build is available from the <a href="downloads">downloads</a> page.
-						<br><span class="dates">posted 07-05-12</span>
+						<a href="whatsnew220">AJDT 2.2.1</a>
+						is now available.
+						<br><span class="dates">posted 09-21-12</span>
 				 </li>
- 				 <li>
+				 <li>
 						AJDT configurator for m2e v1.0 is now available at 
 						<a href="http://dist.springsource.org/release/AJDT/configurator/">http://dist.springsource.org/release/AJDT/configurator/</a>.
 						Add this update site to your Eclipse install manager to install the configurator.  This configurator will ensure that 
@@ -79,6 +77,14 @@
 						<br><span class="dates">posted 09-30-11</span>
 				 </li>
 			  <!--
+				 <li>
+						<img src="images/new.gif" width="11" height="11">
+						<a href="whatsnew220">AJDT 2.2.0</a>
+						is now available.  This is the first release that targets Juno.  This release includes <a
+						href="http://eclipse.org/aspectj/doc/released/README-170.html">AspectJ 1.7.0</a>.
+						The release build is available from the <a href="downloads">downloads</a> page.
+						<br><span class="dates">posted 07-05-12</span>
+				 </li>
  				 <li>
 						<a href="whatsnew213">AJDT 2.1.3</a>
 						is now available.  This is the first release that targets Indigo.  This release includes <a
