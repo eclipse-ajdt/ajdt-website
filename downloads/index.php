@@ -99,14 +99,14 @@ of Eclipse you are using.</p>
 <h3>AJDT 2.2 release builds for Eclipse 4.2 and 3.7</h3>
 <ul>
 <li>
-	AJDT 2.2.1 for Eclipse 4.2, 3.8, and 3.7 <em>with JDT weaving</em><br>
+	AJDT 2.2.2 for Eclipse 4.2, 3.8, and 3.7 <em>with JDT weaving</em><br>
 	What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 	<table class="tasklist" width="80%">
 	  <tr>
-	    <th align="left">2.2.1 Release Date:</th><td>September 21, 2012</td>
+	    <th align="left">2.2.2 Release Date:</th><td>February 21, 2012</td>
 	  </tr>
 	  <tr>
-	    <th align="left">AspectJ Version in 2.2.1:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.7.2.20120920133900.jar">1.7.2.20120920133900</a></td>
+	    <th align="left">AspectJ Version in 2.2.2:</th><td><a href="http://www.eclipse.org/downloads/download.php?file=/tools/aspectj/aspectj-1.7.2.jar">1.7.2</a></td>
 	  </tr>
 	  <tr>
 	    <th align="left">Eclipse 3.8 and 4.2 Update Site URL:</th>
@@ -118,6 +118,10 @@ of Eclipse you are using.</p>
 	  </tr>
 	  <tr>
 	    <th align="left">AJDT for Eclipse 4.2 and 3.8 Zip file:</th>
+	    <td><a href="http://download.eclipse.org/tools/ajdt/42/update/ajdt_2.2.2_for_eclipse_4.2.zip">ajdt_2.2.2_for_eclipse_4.2.zip</a></td>
+	  </tr>	  
+	  <tr>
+	    <th align="left">AJDT for Eclipse 4.2 and 3.8 Zip file:</th>
 	    <td><a href="http://download.eclipse.org/tools/ajdt/42/update/ajdt_2.2.1_for_eclipse_4.2.zip">ajdt_2.2.1_for_eclipse_4.2.zip</a></td>
 	  </tr>	  
 	  <tr>
@@ -125,7 +129,11 @@ of Eclipse you are using.</p>
 	    <td><a href="http://download.eclipse.org/tools/ajdt/42/update/ajdt_2.2.0_for_eclipse_4.2.zip">ajdt_2.2.0_for_eclipse_4.2.zip</a></td>
 	  </tr>	  
 	  <tr>
-	    <th align="left">AJDT for Eclipse 3.7 Zip file: (2.2.0 is the latest release on Eclipse 3.7)</th>
+	    <th align="left">AJDT for Eclipse 3.7 Zip file:</th>
+	    <td><a href="http://download.eclipse.org/tools/ajdt/37/update/ajdt_2.2.2_for_eclipse_3.7.zip">ajdt_2.2.2_for_eclipse_3.7.zip</a></td>
+	  </tr>	  
+	  <tr>
+	    <th align="left">AJDT for Eclipse 3.7 Zip file: </th>
 	    <td><a href="http://download.eclipse.org/tools/ajdt/37/update/ajdt_2.2.0_for_eclipse_3.7.zip">ajdt_2.2.0_for_eclipse_3.7.zip</a></td>
 	  </tr>	  
 	</table>
@@ -137,10 +145,32 @@ of Eclipse you are using.</p>
 
 <div class="homeitem3col">
 <a name="dev42"></a>
+<h3>Development builds for Eclipse 4.3</h3>
+<ul>
+	<li>
+		AJDT 2.2.3 dev builds for Eclipse 4.3
+		<table class="tasklist" width="80%">
+		  <tr>
+		    <th align="left">Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/43/dev/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Zip file:</th>
+		    <td><a href="#43zips">See below</a></td>
+		  </tr>	  
+		</table>
+	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+	Do <em>not</em> unzip the update site into the dropins directory.
+	</li>
+</ul>
+</div>
+
+<div class="homeitem3col">
+<a name="dev42"></a>
 <h3>Development builds for Eclipse 4.2</h3>
 <ul>
 	<li>
-		AJDT 2.2.2 dev builds for Eclipse 4.2
+		AJDT 2.2.3 dev builds for Eclipse 4.2
 		<table class="tasklist" width="80%">
 		  <tr>
 		    <th align="left">Update Site URL:</th>
@@ -162,7 +192,7 @@ of Eclipse you are using.</p>
 <h3>Development builds for Eclipse 3.7</h3>
 <ul>
 	<li>
-		AJDT 2.2.1 dev builds for Eclipse 3.7
+		AJDT 2.2.3 dev builds for Eclipse 3.7
 		<table class="tasklist" width="80%">
 		  <tr>
 		    <th align="left">Update Site URL:</th>
@@ -410,6 +440,21 @@ of Eclipse you are using.</p>
 
 	<ul>
 	
+		<li>
+			<a name="42zips"></a>Eclipse 4.3 builds
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/tools/ajdt/43/dev/update</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Zip&nbsp;file</th>
+  			</tr>
+$builds43
+			</table>
+			</p>
+		</li>
+		
 		<li>
 			<a name="42zips"></a>Eclipse 4.2 builds
 			<br>Update Site URL:<br>

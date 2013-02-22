@@ -65,7 +65,12 @@
 			<ul>
 				 <li>
 						<img src="images/new.gif" width="11" height="11">
-						<a href="whatsnew220">AJDT 2.2.1</a>
+						<a href="whatsnew222">AJDT 2.2.2</a>
+						is now available.
+						<br><span class="dates">posted 02-22-13</span>
+				 </li>
+				 <li>
+						<a href="whatsnew221">AJDT 2.2.1</a>
 						is now available.
 						<br><span class="dates">posted 09-21-12</span>
 				 </li>
