@@ -72,6 +72,7 @@ function ListDevBuilds($dir, $eclipsename) {
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 
+	$builds43 = ListDevBuilds("$rootDir/tools/ajdt/43/dev/update", "4.3");	
 	$builds42 = ListDevBuilds("$rootDir/tools/ajdt/42/dev/update", "4.2");	
 	$builds37 = ListDevBuilds("$rootDir/tools/ajdt/37/dev/update", "3.7");
 	$builds36 = ListDevBuilds("$rootDir/tools/ajdt/36/dev/update", "3.6");
