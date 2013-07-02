@@ -97,10 +97,10 @@ of Eclipse you are using.</p>
 
 <div class="homeitem3col">
 <a name="2.2"></a>
-<h3>AJDT 2.2 release builds for Eclipse 4.2 and 3.7</h3>
+<h3>AJDT 2.2 release builds for Eclipse 4.3, 4.2, 3.8, and 3.7</h3>
 <ul>
 <li>
-	AJDT 2.2.3 for Eclipse 4.3 <em>with JDT weaving</em><br>
+	AJDT for Eclipse 4.3 <em>with JDT weaving</em><br>
 	What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 	<table class="tasklist" width="80%">
 	  <tr>
@@ -122,7 +122,7 @@ of Eclipse you are using.</p>
 	Do <em>not</em> unzip the update site into the dropins directory.
 </li>
 <li>
-	AJDT 2.2.2 for Eclipse 4.2, 3.8, and 3.7 <em>with JDT weaving</em><br>
+	AJDT for Eclipse 4.2, 3.8, and 3.7 <em>with JDT weaving</em><br>
 	What is <a href="http://wiki.eclipse.org/JDT_weaving_features">JDT weaving</a>?
 	<table class="tasklist" width="80%">
 	  <tr>
@@ -201,7 +201,7 @@ of Eclipse you are using.</p>
 
 <div class="homeitem3col">
 <a name="dev42"></a>
-<h3>Development builds for Eclipse 4.2</h3>
+<h3>Development builds for Eclipse 4.2 and 3.8</h3>
 <ul>
 	<li>
 		AJDT 2.2.4 dev builds for Eclipse 4.2
