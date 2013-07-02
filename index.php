@@ -64,11 +64,16 @@
 			<h3>News and Releases</h3>
 			<ul>
 				 <li>
-						<img src="images/new.gif" width="11" height="11">
+						<a href="whatsnew223">AJDT 2.2.3</a>
+						is now available.
+						<br><span class="dates">posted 06-22-13</span>
+				 </li>
+				 <li>
 						<a href="whatsnew222">AJDT 2.2.2</a>
 						is now available.
 						<br><span class="dates">posted 02-22-13</span>
 				 </li>
+			  <!--
 				 <li>
 						<a href="whatsnew221">AJDT 2.2.1</a>
 						is now available.
@@ -81,7 +86,6 @@
 						Maven projects in Eclipse are properly configured with AspectJ and AJDT.
 						<br><span class="dates">posted 09-30-11</span>
 				 </li>
-			  <!--
 				 <li>
 						<img src="images/new.gif" width="11" height="11">
 						<a href="whatsnew220">AJDT 2.2.0</a>
