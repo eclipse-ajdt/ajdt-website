@@ -72,6 +72,7 @@ function ListDevBuilds($dir, $eclipsename) {
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 
+	$builds44 = ListDevBuilds("$rootDir/tools/ajdt/44/dev/update", "4.4");	
 	$builds43 = ListDevBuilds("$rootDir/tools/ajdt/43/dev/update", "4.3");	
 	$builds42 = ListDevBuilds("$rootDir/tools/ajdt/42/dev/update", "4.2");	
 	$builds37 = ListDevBuilds("$rootDir/tools/ajdt/37/dev/update", "3.7");
@@ -174,6 +175,28 @@ of Eclipse you are using.</p>
 	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
 	Do <em>not</em> unzip the update site into the dropins directory.
 </li>
+</ul>
+</div>
+
+<div class="homeitem3col">
+<a name="dev44"></a>
+<h3>Development builds for Eclipse 4.4</h3>
+<ul>
+	<li>
+		AJDT 2.2.4 dev builds for Eclipse 4.4
+		<table class="tasklist" width="80%">
+		  <tr>
+		    <th align="left">Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/44/dev/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Zip file:</th>
+		    <td><a href="#44zips">See below</a></td>
+		  </tr>
+		</table>
+	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+	Do <em>not</em> unzip the update site into the dropins directory.
+	</li>
 </ul>
 </div>
 
@@ -475,7 +498,22 @@ of Eclipse you are using.</p>
 	<ul>
 	
 		<li>
-			<a name="42zips"></a>Eclipse 4.3 builds
+			<a name="44zips"></a>Eclipse 4.4 builds
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/tools/ajdt/44/dev/update</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Zip&nbsp;file</th>
+  			</tr>
+$builds44
+			</table>
+			</p>
+		</li>
+
+		<li>
+			<a name="43zips"></a>Eclipse 4.3 builds
 			<br>Update Site URL:<br>
 			<code>http://download.eclipse.org/tools/ajdt/43/dev/update</code>
 			</p>
