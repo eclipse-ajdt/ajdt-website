@@ -98,7 +98,7 @@ of Eclipse you are using.</p>
 
 <div class="homeitem3col">
 <a name="2.2"></a>
-<h3>AJDT 2.2 release builds for Eclipse 4.3, 4.2, 3.8, and 3.7</h3>
+<h3>AJDT 2.2 release builds for Eclipse 4.4, 4.3, 4.2, 3.8, and 3.7</h3>
 <ul>
 <li>
 	AJDT for Eclipse 4.3 <em>with JDT weaving</em><br>

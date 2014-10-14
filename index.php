@@ -63,6 +63,10 @@
 		<div class="homeitem3col">
 			<h3>News and Releases</h3>
 			<ul>
+				<li>
+					AJDT 2.2.4 dev builds are available for Eclipse 4.4. See the <a href="downloads/index.php">downloads page</a> for the update site.
+						<br><span class="dates">posted 10-15-14</span>
+				</li>
 				 <li>
 						<a href="whatsnew223">AJDT 2.2.3</a>
 						is now available.
