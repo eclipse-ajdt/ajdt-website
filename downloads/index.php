@@ -16,7 +16,7 @@ function ListDevBuilds($dir, $eclipsename) {
    while (false!== ($file=readdir($root))) {
    	  if($file=="." || $file=="..") {continue;}
    	  
-      if (preg_match('/.*ajdt-e[0-9][0-9]x-(.*).zip/',$file, $matches)) {
+      if (preg_match('/.*ajdt-e[0-9][0-9]x*-(.*).zip/',$file, $matches)) {
          $files[]="$dir/$file";
       }
    } 
