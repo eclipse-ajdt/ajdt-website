@@ -98,6 +98,8 @@ of Eclipse you are using.</p>
 
 <p>All downloads are provided under the terms and conditions of <a href="http://www.eclipse.org/legal/epl/notice.php">the Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
 
+<p>There are dev builds available for Eclipse 4.5 and 4.6, see below!</p>
+
 <div class="homeitem3col">
 <a name="2.2"></a>
 <h3>AJDT 2.2 release builds for Eclipse 4.4, 4.3, 4.2, 3.8, and 3.7</h3>
@@ -543,6 +545,34 @@ of Eclipse you are using.</p>
 
 	<ul>
 	
+		<li>
+			<a name="46zips"></a>Eclipse 4.6 builds
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/tools/ajdt/46/dev/update</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Zip&nbsp;file</th>
+  			</tr>
+$builds46
+			</table>
+			</p>
+		</li>
+		<li>
+			<a name="45zips"></a>Eclipse 4.5 builds
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/tools/ajdt/45/dev/update</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Zip&nbsp;file</th>
+  			</tr>
+$builds45
+			</table>
+			</p>
+		</li>
 		<li>
 			<a name="44zips"></a>Eclipse 4.4 builds
 			<br>Update Site URL:<br>
