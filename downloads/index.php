@@ -98,7 +98,7 @@ of Eclipse you are using.</p>
 
 <p>All downloads are provided under the terms and conditions of <a href="http://www.eclipse.org/legal/epl/notice.php">the Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
 
-<p>There are dev builds available for Eclipse 4.5 and 4.6, see below!</p>
+<p>There are no 'official' releases for Eclipse 4.5 and 4.6 but the most recent dev builds are available for these eclipse versions - see below!</p>
 
 <div class="homeitem3col">
 <a name="2.2"></a>
