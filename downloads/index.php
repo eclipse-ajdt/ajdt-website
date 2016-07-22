@@ -72,6 +72,8 @@ function ListDevBuilds($dir, $eclipsename) {
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 
+	$builds46 = ListDevBuilds("$rootDir/tools/ajdt/46/dev/update", "4.4");	
+	$builds45 = ListDevBuilds("$rootDir/tools/ajdt/45/dev/update", "4.4");	
 	$builds44 = ListDevBuilds("$rootDir/tools/ajdt/44/dev/update", "4.4");	
 	$builds43 = ListDevBuilds("$rootDir/tools/ajdt/43/dev/update", "4.3");	
 	$builds42 = ListDevBuilds("$rootDir/tools/ajdt/42/dev/update", "4.2");	
@@ -175,6 +177,50 @@ of Eclipse you are using.</p>
 	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
 	Do <em>not</em> unzip the update site into the dropins directory.
 </li>
+</ul>
+</div>
+
+<div class="homeitem3col">
+<a name="dev46"></a>
+<h3>Development builds for Eclipse 4.6</h3>
+<ul>
+	<li>
+		AJDT dev builds for Eclipse 4.6
+		<table class="tasklist" width="80%">
+		  <tr>
+		    <th align="left">Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/46/dev/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Zip file:</th>
+		    <td><a href="#46zips">See below</a></td>
+		  </tr>
+		</table>
+	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+	Do <em>not</em> unzip the update site into the dropins directory.
+	</li>
+</ul>
+</div>
+
+<div class="homeitem3col">
+<a name="dev45"></a>
+<h3>Development builds for Eclipse 4.5</h3>
+<ul>
+	<li>
+		AJDT dev builds for Eclipse 4.5
+		<table class="tasklist" width="80%">
+		  <tr>
+		    <th align="left">Update Site URL:</th>
+		    <td><strong><code>http://download.eclipse.org/tools/ajdt/45/dev/update</code></strong></td>
+		  </tr>
+		  <tr>
+		    <th align="left">Zip file:</th>
+		    <td><a href="#45zips">See below</a></td>
+		  </tr>
+		</table>
+	To install from a zip file, download the zip and point your p2 installer to that file.  Then proceed as if it were a normal update site.
+	Do <em>not</em> unzip the update site into the dropins directory.
+	</li>
 </ul>
 </div>
 
