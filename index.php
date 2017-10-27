@@ -63,6 +63,11 @@
 		<div class="homeitem3col">
 			<h3>News and Releases</h3>
 			<ul>
+			<li>Finally updated the downloads page so it is obvious what the update site is for 4.7 - no guesswork required.
+			AspectJ 9 enabled AJDT dev build are also available for Eclipse 4.7. Regular 4.7 builds include AspectJ 1.8 currently,
+			this will likely switch to AspectJ 9 only when AspectJ 9 is released (currently at RC1).
+			<br><span class="dates">posted 27-Oct-2017</span>
+			</li>
 				<li>
 					AJDT 2.2.4 dev builds are available for Eclipse 4.4. See the <a href="downloads/index.php">downloads page</a> for the update site.
 						<br><span class="dates">posted 10-15-14</span>
