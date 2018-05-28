@@ -63,6 +63,10 @@
 		<div class="homeitem3col">
 			<h3>News and Releases</h3>
 			<ul>
+			<li>Downloads page now includes snapshot builds for Eclipse 4.8, these will include AspectJ 1.9.2 snapshots (which
+			supports Java 9 and Java 10).
+			<br><span class="dates">posted 28-May-2018</span>
+			</li>
 			<li>Finally updated the downloads page so it is obvious what the update site is for 4.7 - no guesswork required.
 			AspectJ 9 enabled AJDT dev build are also available for Eclipse 4.7. Regular 4.7 builds include AspectJ 1.8 currently,
 			this will likely switch to AspectJ 9 only when AspectJ 9 is released (currently at RC1).
