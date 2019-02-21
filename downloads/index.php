@@ -72,6 +72,7 @@ function ListDevBuilds($dir, $eclipsename) {
 	# This is what AspectJ does:
  	# $builds = ListDevBuilds("$rootDir/tools/aspectj/dev");
 
+	$builds410 = ListDevBuilds("$rootDir/tools/ajdt/410/dev/update", "4.10");	
 	$builds48 = ListDevBuilds("$rootDir/tools/ajdt/48/dev/update", "4.8");	
 	$builds47 = ListDevBuilds("$rootDir/tools/ajdt/47/dev/update", "4.7");	
 	$builds46 = ListDevBuilds("$rootDir/tools/ajdt/46/dev/update", "4.6");	
@@ -615,6 +616,20 @@ of Eclipse you are using.</p>
 
 	<ul>
 	
+		<li>
+			<a name="410zips"></a>Eclipse 4.10 builds
+			<br>Update Site URL:<br>
+			<code>http://download.eclipse.org/tools/ajdt/410/dev/update</code>
+			</p>
+			<p>
+			<table class="tasklist" width="100%">
+  			<tr align="left">
+    			<th>Zip&nbsp;file</th>
+  			</tr>
+$builds410
+			</table>
+			</p>
+		</li>
 		<li>
 			<a name="48zips"></a>Eclipse 4.8 builds
 			<br>Update Site URL:<br>
