@@ -1,20 +1,5 @@
 <?php
 
-	# Set the theme for your project's web pages.
-	# See the Committer Tools "How Do I" for list of themes
-	# https://dev.eclipse.org/committers/ 
-	$theme = "Lazarus";
-
-	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
-	#$projectInfo = new ProjectInfo("technology.ajdt");
-	#$projectInfo->generate_common_nav( $Nav );
-
-#<STYLE TYPE="text/css">
-#  .sideitem { border-width: 1px 1px; margin: 20px 0; }
-#  #midcolumn { margin-top: 5px; }
-#  body { font-size: small; }
-#</STYLE>
-
 $branding = <<<EOBRANDING
 <div id="branding">
 <h1>AJDT: AspectJ Development Tools</h1>
